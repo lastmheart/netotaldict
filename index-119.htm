@@ -1,0 +1,1950 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<link rel="icon" type="image/png" href="/images/favicon.svg" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="датабанк" />
+<meta name="description" content="&quot;Датабанк&quot; - АО, акционерное общество. Один из крупнейших банков Удмуртской Республики." />
+<title>АО "Датабанк" - частным лицам</title>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+<meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+
+<meta name="google-site-verification" content="eBe25tPmBlgkQDzjJB9_L0VwgdzUMyzUJgKrlnTS3EE">
+<meta name="yandex-verification" content="40280e88ea74d0ba" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="датабанк" />
+<meta name="description" content="&quot;Датабанк&quot; - АО, акционерное общество. Один из крупнейших банков Удмуртской Республики." />
+<link href="/bitrix/cache/css/s1/izhkombank/page_2d2970bdea3bd1cda16efc4df5aa6f13/page_2d2970bdea3bd1cda16efc4df5aa6f13.css?16285853435216" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/izhkombank/template_e84ab7db64ea20a05b862b3047bf1bf9/template_e84ab7db64ea20a05b862b3047bf1bf9.css?1637045119466080" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript" src="/bitrix/cache/js/s1/izhkombank/template_0b821e537598cfd633978045df0be436/template_0b821e537598cfd633978045df0be436.js?1628585308609099"></script>
+<script type="text/javascript" src="/bitrix/cache/js/s1/izhkombank/page_b40837fd07fb500edc8ae2b81ad93dec/page_b40837fd07fb500edc8ae2b81ad93dec.js?162858534315415"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "c2c367935301a0c149928a34a564707c"]); _ba.push(["host", "databank.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&load=package.full&name=pro100api&key=AIzaSyBYGhS9p49bpQh4P2XW__cA3Jrjr4DRiRU"></script>
+</head>
+
+
+<body>
+<div class="sms-popup js-popup">
+    <div class="sms-popup-content js-popup-content">
+        <button type="button" class="fancybox-close-small js-close">×</button><br>
+            <form name="verification_form" class="js-form">
+                <p class="sms-popup-msg">На ваш номер мобильного телефона отправлен SMS-код</p>
+                <label for="code">Введите его ниже и нажмите "Подтвердить"<br></label>
+                <div>
+                    <input type="text" name="code" id="code" class="js-input" pattern="^\d+$" minlength="4"/>
+                    <button type="submit" class="js-btn btn blue" value="Отправить">Подтвердить</button>
+                </div>
+            </form>
+            <form class ="js-formresend">
+                <button type="submit" class="btn-resend js-btn-resend" value="Отправить пароль еще раз">Отправить пароль еще раз</button>
+            </form>
+        <p class="sms-popup-message js-popup-message"></p>
+    </div>
+</div>
+<style>
+    .btn-resend {
+        margin: 20px 0 0;
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 5px 5px;
+        color: black;
+        font-size: 16px;
+    }
+    .sms-popup {
+        display: none;
+        z-index: 99999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .sms-popup-content {
+        font-family: "PT Sans", Helvetica, Arial, sans-serif;
+        width: 600px;
+        padding: 40px 60px;
+        background-color: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    @media (max-width: 430px) {
+        .sms-popup-content {
+            font-family: "PT Sans", Helvetica, Arial, sans-serif;
+            width: 100%;
+            padding: 40px 60px;
+            background-color: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+
+    .sms-popup-content label {
+        margin-left: 0;
+        padding: 0 0 20px;
+        font-size: 18px;
+    }
+
+    .sms-popup-msg {
+        display: inline-block;
+        padding: 10px 0 40px;
+    }
+
+    .show {
+        display: inline-block;
+    }
+
+    .sms-popup-content input {
+        vertical-align: middle;
+        width: 30%;
+        padding: 5px;
+        font-size: 20px;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    @media (max-width: 430px) {
+        .sms-popup-content input {
+            vertical-align: middle;
+            width: 50%;
+            padding: 5px;
+            font-size: 20px;
+            border: 1px solid #DDDDDD;
+            border-radius: 4px;
+            text-align: center;
+            margin: 10px 0;
+        }
+    }
+
+    #code + button {
+        vertical-align: middle;
+    }
+
+    .alertPhone {
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .alertText {
+        visibility: hidden;
+        width: 160px;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 96%;
+        left: -5px;
+        border: 1px solid;
+    }
+
+    .alertText::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    .alertPhone .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+    }
+</style>
+<script>
+    var sendForm = document.querySelector('.js-form');
+    var resendForm = document.querySelector('.js-formresend');
+    var jModal = $('.js-popup');
+
+    function sendCode(formElement) {
+        formElement.addEventListener( 'submit', function (e) {
+            var code = document.querySelector('.js-input');
+            var key = document.querySelector('input[name=WEB_FORM_ID]').value;
+            var secondKey = document.querySelector('.js-hide').textContent;
+            var admcode = document.querySelector('.creditFormSmsCodeHidden');
+
+            $.ajax({
+                url: '/local/src/Handlers/validateSmsAuthCodeHandler.php',
+                type: 'POST',
+                data: {
+                    smsCode: code.value,
+                    key: key,
+                    key2: secondKey
+                },
+                success: function (data) {
+                    const modal = document.querySelector('.js-popup');
+                    const msg = document.querySelector('.js-popup-message');
+                    var form = $('input[name=WEB_FORM_ID]').parent('form');
+                    msg.innerHTML = '';
+                    const response = JSON.parse(data);
+                    if(response.status == 'success') {
+                        var template = jModal.detach();
+                        $('body').append(template);
+                        modal.classList.remove('show');
+                        submitStatus = true;
+                        form.submit();
+                    }
+                    if(response.status == 'error') {
+                        msg.innerHTML = 'SMS-код введен неверно';
+                    }
+                }
+            });
+
+            admcode.value = code.value;
+            code.value = '';
+            e.preventDefault();
+        });
+    }
+
+    function resendCode(formElement) {
+        formElement.addEventListener( 'submit' , function (e) {
+            var creditPhone = document.getElementsByName('form_text_35')[0];
+            var ipotekaPhone = document.getElementsByName('form_text_196')[0];
+            var phone = document.querySelector('#PHONE');
+
+            if(creditPhone != null) {
+                $.ajax({
+                    url: '/local/src/Handlers/sendSmsHandler.php',
+                    type: 'POST',
+                    data: {
+                        phoneNumber: creditPhone.value.replace(/\s/g, ''),
+                        key: 9
+                    },
+                    success: function (data) {
+                        const msg = document.querySelector('.js-popup-message');
+                        const response = JSON.parse(data);
+                        if(response.status == 'success') {
+                            msg.innerHTML = 'SMS-код отправлен на указанный вами телефон';
+                        }
+                        if(response.status == 'error') {
+                            msg.innerHTML = response.message;
+                        }
+                    }
+                });
+            }
+            if(ipotekaPhone != null) {
+                $.ajax({
+                    url: '/local/src/Handlers/sendSmsHandler.php',
+                    type: 'POST',
+                    data: {
+                        phoneNumber: ipotekaPhone.value.replace(/\s/g, ''),
+                        key: 33
+                    },
+                    success: function (data) {
+                        const msg = document.querySelector('.js-popup-message');
+                        const response = JSON.parse(data);
+                        if(response.status == 'success') {
+                            msg.innerHTML = 'SMS-код отправлен на указанный вами телефон';
+                        }
+                        if(response.status == 'error') {
+                            msg.innerHTML = response.message;
+                        }
+                    }
+                });
+            }
+
+            if (phone != null) {
+                $.ajax({
+                    url: '/local/src/Handlers/sendSmsHandler.php',
+                    type: 'POST',
+                    data: {
+                        phoneNumber: phone.value.replace(/\s/g, ''),
+                        key: document.querySelector('input[name=WEB_FORM_ID]').value
+                    },
+                    success: function (data) {
+                        const msg = document.querySelector('.js-popup-message');
+                        const response = JSON.parse(data);
+                        if(response.status == 'success') {
+                            msg.innerHTML = 'SMS-код отправлен на указанный вами телефон';
+                        }
+                        if(response.status == 'error') {
+                            msg.innerHTML = response.message;
+                        }
+                    }
+                });
+            }
+            e.preventDefault();
+        })
+    }
+    sendCode(sendForm);
+    resendCode(resendForm);
+</script><div class="preloader">
+      <div class="circ1"></div>
+      <div class="circ2"></div>
+      <div class="circ3"></div>
+      <div class="circ4"></div>
+</div>
+<div id="panel"></div>
+<div style="display: none">
+	<div id="modal_confirm">
+		<div class="col-xs-12">
+			<h2 class="pb-30">Перейти на страницу?</h2>
+		</div>
+		<div class="col-xs-6">
+			<a class="btn blue modal_yes">Да</a>
+		</div>
+		<div class="col-xs-6">
+			<a class="btn blue modal_no">Нет</a>
+		</div>
+	</div>
+</div>
+<div class="header">
+
+	<div class="container">
+		<div class="row">
+			<div class="flex_blok_header">
+				<div class="col-lg-3">
+					<a href="/" class="logo_top"><svg width="147" height="40" viewBox="0 0 147 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.9591 25.8236H17.461V14.3264H5.19538C5.19538 17.2407 5.16336 19.5786 4.68291 21.8524C4.39473 23.1975 3.97846 24.5105 3.33791 25.8236H1.03202L1 34.054H5.13134L5.29144 29.9868H15.5395L15.8277 34.054H19.9591V25.8236ZM8.14168 25.8236C8.52593 24.9909 8.84627 24.1262 9.07042 23.2295C9.45466 21.6923 9.64693 20.091 9.77501 18.3617H12.5612V25.8236H8.14168ZM28.2856 30.275C30.1751 30.275 31.5842 29.6346 32.609 28.3215L32.673 28.3535V29.9868H37.4449V14.3264H32.4168V15.9598L32.3528 15.9918C31.264 14.7108 29.6947 14.0383 28.0295 14.0383C23.9942 14.0383 20.8878 17.3689 20.8878 22.1727C20.8878 27.0085 23.9942 30.275 28.2856 30.275ZM29.3424 25.8556C27.3569 25.8556 25.9797 24.3824 25.9797 22.1727C25.9797 19.9309 27.4209 18.4578 29.3424 18.4578C31.1999 18.4578 32.641 20.0269 32.641 22.1727C32.641 24.4144 31.1359 25.8556 29.3424 25.8556ZM43.8498 29.9868H48.8777V18.3937H53.1051V14.3264H39.5905V18.3937H43.8498V29.9868ZM61.5598 30.275C63.4493 30.275 64.8583 29.6346 65.8831 28.3215L65.9471 28.3535V29.9868H70.719V14.3264H65.691V15.9598L65.6269 15.9918C64.5381 14.7108 62.9688 14.0383 61.3036 14.0383C57.2683 14.0383 54.1619 17.3689 54.1619 22.1727C54.1619 27.0085 57.2683 30.275 61.5598 30.275ZM62.6166 25.8556C60.6311 25.8556 59.2539 24.3824 59.2539 22.1727C59.2539 19.9309 60.6951 18.4578 62.6166 18.4578C64.4741 18.4578 65.9151 20.0269 65.9151 22.1727C65.9151 24.4144 64.41 25.8556 62.6166 25.8556ZM82.1839 30.275C86.7315 30.275 90.2543 26.9124 90.2543 22.1087C90.2543 17.6251 87.0839 14.5507 83.433 14.5507C80.7428 14.5507 79.0135 15.8957 78.0847 17.497L78.0207 17.465C78.2128 13.9102 78.9814 12.2448 82.6003 11.6043L89.1014 10.4194L87.8844 6L81.7036 7.08884C75.1064 8.24171 73.6332 12.5652 73.6012 19.6747C73.5691 25.4072 75.811 30.275 82.1839 30.275ZM81.9598 25.8556C80.1023 25.8556 78.6612 24.3184 78.6612 22.1407C78.6612 20.6355 79.7501 18.842 81.8637 18.842C83.7212 18.842 85.1944 20.2192 85.1944 22.2688C85.1944 24.4464 83.6891 25.8556 81.9598 25.8556ZM99.4456 30.275C101.335 30.275 102.744 29.6346 103.769 28.3215L103.833 28.3535V29.9868H108.605V14.3264H103.577V15.9598L103.513 15.9918C102.424 14.7108 100.855 14.0383 99.1894 14.0383C95.1541 14.0383 92.0477 17.3689 92.0477 22.1727C92.0477 27.0085 95.1541 30.275 99.4456 30.275ZM100.502 25.8556C98.5169 25.8556 97.1397 24.3824 97.1397 22.1727C97.1397 19.9309 98.5809 18.4578 100.502 18.4578C102.36 18.4578 103.801 20.0269 103.801 22.1727C103.801 24.4144 102.296 25.8556 100.502 25.8556ZM111.967 29.9868H116.963V24.3824H121.927V29.9868H126.955V14.3264H121.927V20.3473H116.963V14.3264H111.967V29.9868ZM130.382 29.9868H135.314V25.5993L136.819 23.8059L140.758 29.9868H146.427L140.598 20.9877L146.106 14.3264H140.278L135.378 20.5394H135.314V14.3264H130.382V29.9868Z" fill="#1D478C"/>
+</svg>
+</a>
+				</div>
+				<div class="on_mob">
+					<div class="burger">
+						<div id="nav-icon3">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</div>
+					</div>
+					<a href="https://online.databank.ru/" target="_blank"  class="login_igcom on_mob"></a>
+				</div>
+			</div>
+
+			<div class="col-lg-9  col-xs-12 pad_header fix_width">
+					<div class="flex_align">
+						<!--div class="forhow">
+							<div class="btn active">
+								Частные клиенты
+							</div>
+							<div class="btn">
+								Бизнесу
+							</div>
+						</div-->
+						<div class="radio_switches_wrapper radio_switches_wrapper_header hidden-md hidden-sm  hidden-xs">
+							<input type="radio" class="radio_switches radio_switches_chastnym_klientam" id="chastnym_klientam" name="for_visitors" value="3" checked="true">
+							<label for="chastnym_klientam">Частным клиентам
+							</label>
+							<input type="radio" class="radio_switches radio_switches_business" id="business" name="for_visitors" value="5">
+							<label for="business">Бизнесу
+							</label>
+						</div>
+						<a class="url_bor_b" href="/ofisy-banki/"><span>Офисы/банкоматы</span></a>
+						<a class="tel" href="tel:88003019191">8 800 301-91-91</a>
+						<a href="https://online.databank.ru/" target="_blank" class="btn blue login  hidden-md hidden-sm  hidden-xs"><span class="go_toSite">Датабанк Онлайн</span></a>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+<div class="menu_box">
+		<div class="container">
+			<div class="on_mob">
+				<div class="burger active abs">
+					<div id="nav-icon3" class="open">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="row menu_klientam chastnym_klientam menu_opacity">
+				<div class="col-xl-8 col-lg-9 col-xs-12">
+					<ul class="menu flex_align ml_hover">
+												<li><a class="title with_sub" href="/person/cards/">Карты</a>
+							<span class="menu_sub">
+								<a href="/person/cards/" class="on_mob_menu_item">Карты</a>
+								<a href="/person/cards/debetovaya-karta/"  class="">Дебетовые карты</a>
+								<!--a href="/person/cards/karta-kreditka/"  class="">Карта "Кредитка"</a-->
+								<!--a href="/person/cards/karta-zarplatnaya/"  class="">Зарплатные карты</a-->
+								<a href="/person/cards/privilegirovannye-karty/"  class="">Привилегированные карты</a>
+								<a href="/person/cards/karta-sotsialnaya/"  class="">Социальная карта</a>
+								<!--a href="/person/cards/teencard/" class="">Молодежная карта</a-->
+								<a href="/person/cards/cifrovaya-karta/"  class="">Цифровая карта "Мир"</a>
+								<a href="/person/cards/karta-bystroy-vydachi/" class="">Карта быстрой выдачи</a>
+<a href="https://www.myschoolcard.ru/" target="_blank" class="">Школьная карта</a>
+							</span>
+						</li>
+						<li><a class="title with_sub" href="/person/kredity/">Кредиты</a>
+							<span class="menu_sub">
+								<a href="/person/kredity/" class="on_mob_menu_item">Кредиты</a>
+<a href="/person/kredity/kredit-na-lyubye-tseli/"  class="">Кредит на любые цели</a>
+<!--a href="/person/kredity/refinansirovanie-kredita/"  class="">Рефинансирование кредита</a-->
+<a href="/person/kredity/kredit-byudzhetnikam/"  class="">Кредит для бюджетников</a>
+<a href="/person/kredity/kredit-pensioneram/"  class="">Кредит для пенсионеров</a>
+								<!--a href="/person/kredity/kredit-pod-zalog-avto/"  class="">Кредит под залог авто</a-->
+								<a href="/person/kredity/kredit-na-avto/"  class="">Автокредит</a>
+								<!--a href="/person/kredity/refinansirovanie-avtokredita/"  class="">Рефинансирование автокредита</a-->
+								<!--a href="/person/kredity/kredit-pod-zalog-nedvizhimosti/"  class="">Кредит под залог недвижимости</a-->
+<!--a href="/person/cards/karta-kreditka/"  class="">Карта "Кредитка"</a-->
+								<!--a href="/person/kredity/kredit-na-karty/"  class="">Овердрафт на зарплатную карту</a-->
+								<!--a href="/person/kredity/kredit-na-gazifikatsiyu/"  class="">Кредит на газификацию жилья</a-->
+<a href="/person/kredity/kredit-kanikuly/"  class="">Кредитные каникулы</a>
+
+							</span>
+						</li>
+						<li><a class="title with_sub" href="/person/vklady/">Вклады</a>
+							<span class="menu_sub">
+								<a class="on_mob_menu_item" href="/person/vklady/">Вклады</a>
+<a href="/person/vklady/vklad-legko-priumnozhit/"  class="">Легко приумножить</a>
+<a href="/person/vklady/data-vklad-upravlyaj/"  class="">Дата-вклад Управляй</a>
+<a href="/person/vklady/schet-kopilka/"  class="">Счет для накоплений "Копилка"</a>
+<a href="/person/vklady/data-vklad-dollar/"  class="">Дата-вклад доллар</a>
+<a href="/person/vklady/data-vklad-evro/"  class="">Дата-вклад евро</a>
+
+<a href="/person/vklady/#section_p1"  class="">Другие вклады</a>
+
+
+<!--a href="/person/vklady/vklad-upravlyaj-dohodom/"  class="">Управляй доходом</a>
+<a href="/person/vklady/vklad-vygodnaya-pensiya/"  class="">Выгодная пенсия</a>
+
+
+								<a href="/person/vklady/vklad-zalogovyy-1/"  class="">Залоговый 1</a>
+								<a href="/person/vklady/vklad-pensiya/"  class="">Пенсия</a>
+								<a href="/person/vklady/vklad-sberegatelnyy/"  class="">Сберегательный</a>
+								<a href="/person/vklady/vklad-sotsialnyy/"  class="">Социальный</a>
+
+								<a href="/person/vklady/vklad-dollar-2020/"  class="">Доллар-2020</a>
+
+								<a href="/person/vklady/vklad-valyutnyy-do-vostrebovaniya/"  class="">Валютный до востребования</a-->
+							</span>
+
+						</li>
+						<li><a class="title title_no_hover with_sub" style="cursor: default;" href="javascript: void(0)">Платежи и переводы</a>
+					<span class="menu_sub">
+								<a class=""  href="/person/perevody/">Переводы</a>
+								<a class=""  href="/person/perevody/perevody-s-karty-na-kartu/">Переводы с карты на карту</a>
+<a class=""  href="/person/perevody/sbp/">Переводы по номеру телефона (СБП)</a>
+								<!--a class=""  href="/person/perevody/perevody-western-union/">Переводы Wester Union</a-->
+								<a class=""  href="/person/perevody/perevody-zolotaya-korona/">Переводы "Золотая корона"</a>
+								<a class=""  href="/person/perevody/perevody-v-inostrannoy-valyute/">Банковские переводы в иностранной валюте</a>
+								<a href="/person/platezhi/">Оплата услуг</a>
+							</span>
+
+						</li>
+						<li><a class="title with_sub" href="/person/ipoteka/ipoteka/">Ипотека</a>
+							<span class="menu_sub">
+																<a href="/person/ipoteka/ipoteka/matkapital/" class="">Ипотека - Материнский капитал</a>
+<a href="/person/ipoteka/ipoteka/ipoteka-dlya-mnogodetnyh-semej/" class="" >Ипотека для многодетных семей</a>
+																<a href="/person/ipoteka/ipoteka/vtorichka-domrf/" class="">Программа на покупку квартир на вторичном рынке (программа «Банк ДОМ.РФ»)</a>
+								<a href="/person/ipoteka/ipoteka/novostroyka-domrf/" class="">Программа «Новостройка» (программа «Банк ДОМ.РФ»)</a>
+								<a href="/person/ipoteka/ipoteka/perekreditovka/" class="">Программа «Перекредитовка» (программа «Банк ДОМ.РФ»)</a>
+
+								<!--a href="/person/ipoteka/ipoteka/semeynaya/" class="" >Программа «Семейная ипотека с господдержкой» (программа «Банк ДОМ.РФ»)</a-->
+								<a href="/person/ipoteka/ipoteka/dom-domrf/" class="" >Программа на покупку дома с земельным участком (программа «Банк ДОМ.РФ»)</a>
+
+
+<!--a href="/person/kredity/kredit-kanikuly/"  class="">Кредитные каникулы</a-->
+</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xl-4 col-lg-3 col-xs-12 text-right">
+					<ul class="menu flex_align mr_hover">
+						<li><a class="title title_no_hover with_sub mr_hover_li" href="javascript: void(0)">Другие продукты</a>
+							<span class="menu_sub text-left">
+								<a href="/samozanyatym/"  class="">Самозанятым</a>
+
+								<a href="/person/brokerskie-uslugi/"  class="">Инвестиции и брокерские услуги</a>
+<a href="/person/brokerskie-uslugi/di/"  class="">Датабанк Инвестиции</a>
+								<a href="/person/databank-bonus/"  class="">Датабанк.Бонус</a>
+								<a href="/person/bolshaya-pensiya/"  class="">Большая пенсия</a>
+								<a href="/person/strakhovanie/"  class="">Страхование</a>
+								<a href="/person/uslugi-dlya-pensionerov/"  class="">Услуги для пенсионеров</a>
+								<a href="/person/seyfovye-yacheyki/"  class="">Индивидуальные банковские сейфы</a>
+								<a href="/person/scheta-dlya-fizicheskikh-lits/"  class="">Счета для физ лиц</a>
+								<a href="/person/realizatsiya-zalogovogo-imushchestva/"  class="">Реализация залогового имущества</a>
+								<a href="/person/universalnyy-dogovor-bankovskogo-obsluzhivaniya/"  class="">Универсальный договор банковского обслуживания</a>
+								<a href="/person/databank-bonus/#section_pp6"  class="">Рекламные акции</a>
+								<a href="/person/doveritelnoe-upravlenie/"  class="">Доверительное управление</a>
+								<a href="/person/spravochnaya-informatsiya/"  class="">Справочная информация</a>
+
+							</span>
+
+						</li>
+						<li class="title search"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row menu_klientam business menu_opacity" style="display:none">
+				<div class="col-xl-8 col-lg-9 col-xs-12">
+					<ul class="menu flex_align ml_hover">
+						<li><a class="title with_sub" href="/business/kredity-malomu-i-srednemu-biznesu/">Кредиты</a>
+							<span class="menu_sub">
+								<a class="on_mob_menu_item" href="/business/kredity-malomu-i-srednemu-biznesu/">Кредиты</a>
+<!--a href="/business/kredity-malomu-i-srednemu-biznesu/lgotnyy-kredit-fot-3-0/" class=" title_dubl">Госпрограмма поддержки бизнеса ФОТ 3.0</a-->
+<a href="/business/kredity-malomu-i-srednemu-biznesu/kredit-na-obespechenie-ispolneniya-kontraktov/" class=" title_dubl">Кредит на обеспечение исполнения контрактов</a>
+								<a href="/business/kredity-malomu-i-srednemu-biznesu/kreditovaniye-malogo-i-srednego-biznesa/" class=" title_dubl">Программа кредитования МСП</a>
+								<a href="/business/kredity-malomu-i-srednemu-biznesu/programma-stimulirovaniya-kreditovaniya-msp/" class="">Льготные кредиты и гарантии Корпорации МСП </a>
+								<a href="/business/kredity-malomu-i-srednemu-biznesu/kredit-na-pokupku-avtospetstekhniki/"  class="">Кредит на покупку автотранспорта, автоспецтехники</a>
+								<a href="/business/kredity-malomu-i-srednemu-biznesu/kredit-na-pokupku-kommercheskoy-nedvizhimosti-v-udmurtskoy-respublike/"  class="">Кредит на покупку коммерческой недвижимости в УР</a>
+								<a href="/business/kredity-malomu-i-srednemu-biznesu/kredit-na-obespechenie-zayavki-na-uchastie-v-elektronnykh-auktsionakh/"  class="">Кредит на участие в электронных аукционах</a>
+								<a href="/business/kredity-malomu-i-srednemu-biznesu/kredit-v-forme-overdrafta/"  class="">Овердрафт</a>
+								<a href="/business/kredity-malomu-i-srednemu-biznesu/kredit-na-popolnenie-zarplatnykh-kart/"  class="">Кредит на пополнение зарплатных карт</a>
+							</span>
+						</li>
+						<li><a class="title with_sub" href="/business/raschetno-kassovoe-obsluzhivanie/">РКО</a>
+							<span class="menu_sub">
+								<a href="/business/raschetno-kassovoe-obsluzhivanie/"  class="">Расчетно-кассовое обслуживание</a>
+								<a href="/business/raschetno-kassovoe-obsluzhivanie/cardlock/"  class="">Как избежать блокировки счета</a>
+<a href="/business/izhcombank-business/"  class="">Интернет-банкинг</a>
+                            </span>
+
+						</li>
+						<li><a class="title with_sub no_arr" href="/business/konversionnye-operatsii-i-ved/">ВЭД</a>
+							
+						</li>
+						<li><a class="title no_arr" href="/business/acquiring/">Эквайринг</a><!--a class="title no_arr" href="/business/deposits/">Депозиты</a--></li>
+												<li><a class="title with_sub no_arr" href="/business/bankovskie-garantii/">Гарантии</a>
+							
+						</li>
+					</ul>
+				</div>
+				<div class="col-xl-4 col-lg-3 col-xs-12 text-right">
+					<ul class="menu flex_align mr_hover">
+						<li><a class="title title_no_hover with_sub mr_hover_li" href="javascript: void(0)">Другие продукты</a>
+							<span class="menu_sub text-left">
+								<a href="/business/faktoring/"  class="">Факторинг</a>
+								<a href="/business/korporativnaya-karta/"  class="">Корпоративная карта (Бизнес-карта)</a>
+								<a href="/business/konversionnye-operatsii-i-ved/"  class="">Конверсионные операции и ВЭД</a>
+								<a href="/business/operatsii-na-rynke-tsennykh-bumag/"  class="">Операции на рынке ценных бумаг</a>
+<a href="/business/priem-platezhey/"  class="">Прием платежей</a>
+								<a href="/person/realizatsiya-zalogovogo-imushchestva/"  class="">Реализация залогового имущества</a>
+								<a href="/business/documents/"  class="">Документы</a>
+															</span>
+
+						</li>
+						<li class="title search"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="search-form">
+<form action="/search/index.php">
+	<input type="text" placeholder="Поиск..." class="search-input" name="q" value="" size="15" maxlength="50" />		<input name="s" class="search-btn-go" type="submit" value="" />
+		<!-- <button class="close-search">×</button> -->
+
+</form>
+</div>			<div class="radio_switches_wrapper radio_switches_wrapper_mob radio_switches_wrapper_header hidden-xl hidden-lg">
+				<input type="radio" class="radio_switches mob_chastnym_klientam radio_switches_chastnym_klientam" id="chastnym_klientam" name="for_visitors" value="3" checked="true">
+				<label for="chastnym_klientam">Частным клиентам</label>
+				<input type="radio" class="radio_switches mob_business radio_switches_business" id="business" name="for_visitors" value="5">
+				<label for="business">Бизнесу</label>
+			</div>
+		</div>
+	</div>
+<script>
+    $(document).ready(function(){
+      $('.scroll-container').mCustomScrollbar({
+        theme: "my-theme",
+        axis:"x",
+        scrollbarPosition: "outside",
+        autoDraggerLength: false,
+        mouseWheel:{ enable: true },
+        advanced:{ updateOnContentResize: true },
+        scrollInertia: 0
+      });
+    });
+</script>
+<script>
+	$(function(){
+		$("#business").css("display", "none");
+		var url = window.location.href;
+		var regV = "business";
+		var result = url.match(regV);
+		if (result) {
+			$("#business").click();
+			$('.header').find('a.login').attr("href", "https://ibank.databank.ru/").html('<span class="go_toSite mr-0">Интернет-банкинг</span>');
+		} else {
+			$("#chastnym_klientam").click();
+
+		}
+	});
+</script>
+
+<div id="content-load-anim">
+<style>
+	/*section {
+		opacity: 0;
+	}*/
+</style>
+
+ <div class="title_banner_box">
+ 	<div class="nav_prev">
+        <img src="/images/slider_arrow_left.svg" alt="">
+    </div>
+    <div class="nav_next">
+        <img src="/images/slider_arrow_right.svg" alt="">
+    </div>
+ 	<div class="title_banner title_banner--main owl-carousel">
+
+
+ 		
+
+        <div class="item_owl" style="background: linear-gradient(180deg, #8AADD4 0%, #B5E9FC 100%);">
+			<div class="banner_cont ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-xs-12">
+							<h3>Вклады</h3>
+							<div class="info">
+							    <div class="col-12">
+                                    <div class="h1">Вклад <br> "Легко приумножить"</div>
+                                        <div class="box_more_info fs-16 f_18">
+                                            <div class="svg_bl clock_svg">
+ <img src="/images/IconPercentN.svg">
+</div>
+<div class="about_action">
+	 <span>До 20,51%</span> годовыx
+</div>
+<div class="box_more_info">
+	<div class="svg_bl clock_svg">
+ <img src="/images/icon_clocks.svg">
+	</div>
+	<div class="about_action">
+		 <span>До 24</span> месяцев
+	</div>
+</div>
+ <br>                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="more_info">
+                                <div class="row">
+                                                                            <div class="col-xs-12">
+                                            <a href="https://databank.ru/person/vklady/vklad-legko-priumnozhit/" class="btn blue hidden-md hidden-sm  hidden-xs">
+                                                Узнать больше                                            </a>
+                                        </div>
+                                                                    </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container banner_img banner_img--slider" style="background-image:url(/upload/iblock/768/76855b612ec219371acfa1d8cdf65b28.png)" alt="Вклад &lt;br&gt; &quot;Легко приумножить&quot;"></div>
+		</div>
+        <div class="item_owl" style="background: linear-gradient(180deg, #ABCDE0 0%, #C5DBE4 100%);">
+			<div class="banner_cont ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-xs-12">
+							<h3></h3>
+							<div class="info">
+							    <div class="col-12">
+                                    <div class="h1">Будьте в курсе <br>важных событий.<br>Присоединяйтесь!</div>
+                                        <div class="box_more_info fs-16 f_18">
+                                                                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="more_info">
+                                <div class="row">
+                                                                            <div class="col-xs-12">
+                                            <a href="https://databank.ru/about/press-tsentr/detail_news.php?ID=3207" class="btn blue hidden-md hidden-sm  hidden-xs">
+                                                Узнать больше                                            </a>
+                                        </div>
+                                                                    </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container banner_img banner_img--slider" style="background-image:url(/upload/iblock/b06/b06c67732dde9b324db6ccaa22916c72.png)" alt="Будьте в курсе &lt;br&gt;важных событий.&lt;br&gt;Присоединяйтесь!"></div>
+		</div>
+        <div class="item_owl" style="background: linear-gradient(180deg, #6B9EEB 0%, #A3C1FA 100%);">
+			<div class="banner_cont ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-xs-12">
+							<h3>Карты</h3>
+							<div class="info">
+							    <div class="col-12">
+                                    <div class="h1">Цифровая <br>карта "Мир"</div>
+                                        <div class="box_more_info fs-16 f_18">
+                                                                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="more_info">
+                                <div class="row">
+                                                                            <div class="col-xs-12">
+                                            <a href="https://databank.ru/person/cards/cifrovaya-karta/" class="btn blue hidden-md hidden-sm  hidden-xs">
+                                                Узнать больше                                            </a>
+                                        </div>
+                                                                    </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container banner_img banner_img--slider" style="background-image:url(/upload/iblock/0fa/0fab8d144f8bc5f66f2ac1a409f4e42a.jpg)" alt="Цифровая &lt;br&gt;карта &quot;Мир&quot;"></div>
+		</div>
+        <div class="item_owl" style="background: linear-gradient(180deg, #E1E1E1 0%, #E1E1E1 100%);">
+			<div class="banner_cont ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-xs-12">
+							<h3>Ипотека</h3>
+							<div class="info">
+							    <div class="col-12">
+                                    <div class="h1"><div style="color:#1D478C;">Господдержка<br>для многодетных<br> семей</div></div>
+                                        <div class="box_more_info fs-16 f_18">
+                                                                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="more_info">
+                                <div class="row">
+                                                                            <div class="col-xs-12">
+                                            <a href="https://databank.ru/person/ipoteka/ipoteka/ipoteka-dlya-mnogodetnyh-semej/" class="btn blue hidden-md hidden-sm  hidden-xs">
+                                                Узнать больше                                            </a>
+                                        </div>
+                                                                    </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container banner_img banner_img--slider" style="background-image:url(/upload/iblock/1e4/1e4497940a10cff1b8f26a23949a1c77.png)" alt="&lt;div style=&quot;color:#1D478C;&quot;&gt;Господдержка&lt;br&gt;для многодетных&lt;br&gt; семей&lt;/div&gt;"></div>
+		</div>
+        <div class="item_owl" style="background: linear-gradient(180deg, #050505 0%, #050505 100%);">
+			<div class="banner_cont ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-xs-12">
+							<h3>Индивидуальные банковские сейфы</h3>
+							<div class="info">
+							    <div class="col-12">
+                                    <div class="h1">Надежность, <br>доступная всем </div>
+                                        <div class="box_more_info fs-16 f_18">
+                                                                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="more_info">
+                                <div class="row">
+                                                                            <div class="col-xs-12">
+                                            <a href="https://databank.ru/person/seyfovye-yacheyki/" class="btn blue hidden-md hidden-sm  hidden-xs">
+                                                Узнать больше                                            </a>
+                                        </div>
+                                                                    </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container banner_img banner_img--slider" style="background-image:url(/upload/iblock/3b0/3b012e6b0ae8ddb7841afbf537f89e7d.png)" alt="Надежность, &lt;br&gt;доступная всем "></div>
+		</div>
+        <div class="item_owl" style="background: linear-gradient(180deg, #2EA9A9 0%, #6BC3C4 100%);">
+			<div class="banner_cont ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-xs-12">
+							<h3>Датабанк.Бонус</h3>
+							<div class="info">
+							    <div class="col-12">
+                                    <div class="h1">Кешбэк 6% за покупки<br>в интернет-магазине<br> "Тау-Март"</div>
+                                        <div class="box_more_info fs-16 f_18">
+                                                                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="more_info">
+                                <div class="row">
+                                                                            <div class="col-xs-12">
+                                            <a href="https://databank.ru/person/databank-bonus/" class="btn blue hidden-md hidden-sm  hidden-xs">
+                                                Узнать больше                                            </a>
+                                        </div>
+                                                                    </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container banner_img banner_img--slider" style="background-image:url(/upload/iblock/23f/23fb694a675348b5adffef49d264d14c.jpg)" alt="Кешбэк 6% за покупки&lt;br&gt;в интернет-магазине&lt;br&gt; &quot;Тау-Март&quot;"></div>
+		</div>
+		 	</div>
+ </div>
+
+ <section class="home-categories section_padding_top">
+	<div class="container">
+		<div class="home-categories__items">
+			<div class="home-categories__item">
+				<a href="/person/uslugi-dlya-pensionerov/" class="home-categories__link">Пенсионерам</a>
+			</div>
+			<div class="home-categories__item">
+				<a href="/person/seyfovye-yacheyki/" class="home-categories__link">Сейфовые ячейки</a>
+			</div>
+			<div class="home-categories__item">
+				<a href="/person/brokerskie-uslugi/di/"class="home-categories__link">Инвестиции</a>
+			</div>
+			<div class="home-categories__item">
+				<a href="/person/databank-bonus/#section_pp6" class="home-categories__link">Акции</a>
+			</div>
+		</div>
+	</div> 
+ </section>
+
+ <section class="services section_padding_top section_padding_bottom">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-xs-12 ff-services-title">
+ 				<h2>Услуги Банка</h2>
+ 			</div>
+ 			<div class="col-xs-12">
+ 				<div class="row pad_mob wow fadeInUp">
+                    <div class="scroll-container" id="draggBar">
+                        <div class="scroll-container-item">
+                            <a href="/person/cards/" class="services_item">
+                                <div class="service_cont">
+									<div class="img">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M51 17C51 14.2386 48.7614 12 46 12H8C5.23857 12 3 14.2386 3 17V37C3 39.7614 5.23857 42 8 42H51V17Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M6 19H48C48.5523 19 49 19.4477 49 20V21C49 21.5523 48.5523 22 48 22H6C5.44772 22 5 21.5523 5 21V20C5 19.4477 5.44772 19 6 19Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M19 33C19 30.2386 21.2386 28 24 28H62C64.7614 28 67 30.2386 67 33V53C67 55.7614 64.7614 58 62 58H19V33Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M25 37H31C31.5523 37 32 37.4477 32 38V42C32 42.5523 31.5523 43 31 43H25C24.4477 43 24 42.5523 24 42V38C24 37.4477 24.4477 37 25 37Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M25 47H61C61.5523 47 62 47.4477 62 48V49C62 49.5523 61.5523 50 61 50H25C24.4477 50 24 49.5523 24 49V48C24 47.4477 24.4477 47 25 47Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>
+                                    <div class="text"><div>Карты</div></div>
+                                </div>
+                            </a>
+                        </div>
+<div class="scroll-container-item">
+                            <a href="https://databank.ru/person/perevody/perevody-zolotaya-korona/" class="services_item">
+                                <div class="service_cont">
+									<div class="img">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13 25.0545H57.9323C61.7983 25.0545 64.9323 28.1885 64.9323 32.0545V54.8238C64.9323 58.6898 61.7983 61.8238 57.9323 61.8238H6V32.0545C6 28.1885 9.13401 25.0545 13 25.0545Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M13 34H19C19.5523 34 20 34.4477 20 35V39C20 39.5523 19.5523 40 19 40H13C12.4477 40 12 39.5523 12 39V35C12 34.4477 12.4477 34 13 34Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M13 46H58C58.5523 46 59 46.4477 59 47V48C59 48.5523 58.5523 49 58 49H13C12.4477 49 12 48.5523 12 48V47C12 46.4477 12.4477 46 13 46Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M13 53H28C28.5523 53 29 53.4477 29 54V55C29 55.5523 28.5523 56 28 56H13C12.4477 56 12 55.5523 12 55V54C12 53.4477 12.4477 53 13 53Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M47.7433 25.9027H42.1123C41.112 24.4107 40.5283 22.6151 40.5283 20.6801C40.5283 15.502 44.7134 11.3091 49.8701 11.3091C55.0268 11.3091 59.2119 15.502 59.2119 20.6801C59.2119 23.5284 57.9461 26.0792 55.9457 27.7988C53.4696 26.5843 50.6848 25.9027 47.7433 25.9027Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+    <path d="M40.4632 6.74115C40.4632 9.91457 37.8986 12.4823 34.741 12.4823C31.5834 12.4823 29.0188 9.91457 29.0188 6.74115C29.0188 3.56774 31.5834 1 34.741 1C37.8986 1 40.4632 3.56774 40.4632 6.74115Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>
+                                    <div class="text"><div>Переводы "Золотая корона"</div></div>
+                                </div>
+                            </a>
+                        </div>
+<div class="scroll-container-item">
+                            <a href="/person/vklady/" class="services_item">
+                                <div class="service_cont">
+                                    <div class="img">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M58.4952 34.1494L59.1359 35.9227L60.2445 34.3975L61.5924 32.5433L63.5502 34.2052L64.2596 34.8075L64.9113 34.1431L66.5419 32.4806L67.5905 33.5228L64.3503 36.8263L62.6692 35.3992L61.8472 34.7014L61.2131 35.5736L59.6889 37.6705L59.4571 37.9893L59.5052 38.3805C59.6022 39.1697 59.6522 39.9738 59.6522 40.7901C59.6522 47.221 56.5468 52.9264 51.7483 56.4891L51.3444 56.7889V57.292V59.8765C51.3444 62.6724 49.0695 64.9414 46.2754 64.9414C43.8952 64.9414 41.8966 63.3018 41.3526 61.0908L41.1628 60.3193L40.3684 60.3298C40.2806 60.3309 40.1927 60.3315 40.1047 60.3315H29.2577C29.1695 60.3315 29.0814 60.3309 28.9935 60.3298L28.1995 60.3193L28.0094 61.0903C27.4642 63.3015 25.4614 64.9414 23.087 64.9414C20.2867 64.9414 18.0179 62.6735 18.0179 59.8765V57.2917V56.7887L17.614 56.4888C14.7493 54.3619 12.4874 51.4704 11.1302 48.1179L10.8773 47.4931H10.2033H6V35.9545H9.55091H10.298L10.5098 35.2381C11.3799 32.2964 12.9246 29.6427 14.9661 27.4567L15.2353 27.1685V26.7742V17.5848H20.3043C22.4694 17.5848 24.3212 18.9467 25.0468 20.8624L25.3355 21.6245L26.1401 21.4956C27.1546 21.3332 28.1959 21.2487 29.2577 21.2487H40.1047C48.5673 21.2487 55.776 26.6237 58.4952 34.1494Z" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M39.2091 23.9172H34.2725C33.4043 22.5989 32.8986 21.0179 32.8986 19.315C32.8986 14.7044 36.6098 10.978 41.1739 10.978C45.738 10.978 49.4493 14.7044 49.4493 19.315C49.4493 21.8311 48.344 24.0853 46.595 25.6143C44.3632 24.5269 41.8561 23.9172 39.2091 23.9172Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+    <path d="M34.058 6.06905C34.058 8.87486 31.8002 11.1381 29.029 11.1381C26.2578 11.1381 24 8.87486 24 6.06905C24 3.26323 26.2578 1 29.029 1C31.8002 1 34.058 3.26323 34.058 6.06905Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>
+                                    <div class="text"><div>Вклады до 20,51%</div></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="scroll-container-item">
+                            <a href="/person/kredity/" class="services_item">
+                                <div class="service_cont">
+									<div class="img">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.5314 21.77L50.2964 7.62307L59.1107 24.9221L31.3457 39.0691L22.5314 21.77Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M15 18H56C59.866 18 63 21.134 63 25V50C63 53.866 59.866 57 56 57H8V25C8 21.134 11.134 18 15 18Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M49.9971 30C45.589 30 42 33.5813 42 38C42 42.4093 45.5793 46 49.9971 46H61.0029C65.411 46 69 42.4187 69 38C69 33.5907 65.4207 30 61.0029 30H49.9971ZM48 38C48 36.8983 48.898 36 50 36C51.102 36 52 36.8983 52 38C52 39.1023 51.1022 40 50 40C48.8978 40 48 39.1023 48 38Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+</svg>
+
+
+
+</div>
+                                    <div class="text"><div>Кредиты</div></div>
+                                </div>
+                            </a>
+                        </div>
+
+
+					 <div class="scroll-container-item">
+                            <a href="/person/ipoteka/ipoteka/" class="services_item">
+                                <div class="service_cont">
+									<div class="img">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.739 29.706L14 29.4197V29.0323V15H21V19.1613V21.7423L22.739 19.835L34.0116 7.47145L63.6856 39H59H58V40V54C58 57.866 54.866 61 51 61H11V40V39H10H5.26503L13.739 29.706Z" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M28 43C28 39.134 31.134 36 35 36H41V61H28V43Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>
+                                    <div class="text"><div>Ипотека</div></div>
+                                </div>
+                            </a>
+                        </div>
+
+
+ <div class="scroll-container-item">
+                            <a href="/person/databank-bonus/" class="services_item">
+                                <div class="service_cont">
+                                    <div class="img">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M51.1786 16.0694C51.1786 21.0807 47.1269 25.1389 42.134 25.1389C37.1411 25.1389 33.0894 21.0807 33.0894 16.0694C33.0894 11.0582 37.1411 7 42.134 7C47.1269 7 51.1786 11.0582 51.1786 16.0694Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+    <path d="M38.3215 21.7083C38.3215 26.7196 34.2697 30.7778 29.2768 30.7778C24.2839 30.7778 20.2322 26.7196 20.2322 21.7083C20.2322 16.6971 24.2839 12.6389 29.2768 12.6389C34.2697 12.6389 38.3215 16.6971 38.3215 21.7083Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+    <path d="M56 27.1944V32.3994C55.0963 32.4973 54.3929 33.2627 54.3929 34.1924V54C54.3929 57.866 51.2589 61 47.3929 61H14.6071V34.1924C14.6071 33.2627 13.9037 32.4973 13 32.3994V27.1944C13 24.3256 15.3256 22 18.1944 22H50.8056C53.6744 22 56 24.3256 56 27.1944Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <rect x="13" y="31" width="17" height="2" fill="#2F72CB"/>
+    <rect x="39" y="31" width="17" height="2" fill="#2F72CB"/>
+    <path d="M37 22C37.5523 22 38 22.4477 38 23L38 60C38 60.5523 37.5523 61 37 61H32C31.4477 61 31 60.5523 31 60L31 23C31 22.4477 31.4477 22 32 22H37Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>
+                                    <div class="text"><div>Кешбэк до 10%</div></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="scroll-container-item">
+                            <a href="/person/strakhovanie/" class="services_item">
+                                <div class="service_cont">
+                                    <div class="img">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.8475 23.0545H23.8475V22.0545C23.8475 15.9543 28.8204 11 34.9661 11C41.1118 11 46.0847 15.9543 46.0847 22.0545V23.0545H47.0847H54C57.866 23.0545 61 26.1886 61 30.0545V60H15C11.134 60 8 56.866 8 53V30.0545C8 26.1886 11.134 23.0545 15 23.0545H22.8475ZM28.4052 22.1535L28.4948 23.0545H29.4003H40.5319H41.4374L41.527 22.1535C41.5484 21.9383 41.5593 21.7203 41.5593 21.5001C41.5593 17.8702 38.6024 14.9365 34.9661 14.9365C31.3298 14.9365 28.3729 17.8702 28.3729 21.5001C28.3729 21.7203 28.3838 21.9383 28.4052 22.1535Z" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M13 33C13 32.4477 13.4477 32 14 32H55C55.5523 32 56 32.4477 56 33V35C56 35.5523 55.5523 36 55 36H14C13.4477 36 13 35.5523 13 35V33Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>
+                                    <div class="text"><div>Страхование</div></div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <div class="scroll-container-item">
+                            <a href="/person/" data-fancybox="" data-src="#all_products_chastnym_klientam" class="services_item">
+                                <div class="service_cont">
+                                    <img src="/images/8.svg" alt="">
+                                    <div class="text"><div>Все услуги</div></div>
+                                </div>
+                            </a>
+                            <div  style="display: none;" id="all_products_chastnym_klientam" class="downloads_files downloads_files_padding">
+                                <div class="title_services">Все услуги</div>
+                                <ul class="ul_services">
+                                    <li><a href="https://online.databank.ru/" target="_blank">Датабанк Онлайн</a></li>
+<li><a href="/samozanyatym/">Самозанятым</a></li>
+                                    <li><a href="/person/vklady/">Вклады</a></li>
+                                    <li><a href="/person/kredity/">Кредиты</a></li>
+                                    <li><a href="/person/ipoteka/ipoteka/">Ипотека</a></li>
+                                    <li><a href="/person/cards/">Карты</a></li>
+                                    <li><a href="/person/perevody/">Переводы</a></li>
+                                    <li><a href="/person/platezhi/">Платежи</a></li>
+                                    <li><a href="/person/strakhovanie/">Страхование</a></li>
+                                    <li><a href="/person/databank-bonus/">Датабанк.Бонус</a></li>
+                                    <li><a href="/person/udobnaya-pensiya/">Программа «Удобная пенсия»</a></li>
+                                    <li><a href="/person/seyfovye-yacheyki/">Индивидуальные банковские сейфы</a></li>
+                                    <li><a href="/person/scheta-dlya-fizicheskikh-lits/">Счета для физ лиц</a></li>
+                                    <li><a href="/person/realizatsiya-zalogovogo-imushchestva/">Реализация залогового имущества</a></li>
+                                    <li><a href="/person/universalnyy-dogovor-bankovskogo-obsluzhivaniya/">Универсальный договор банковского обслуживания</a></li>
+                                    <li><a href="/person/databank-bonus/">Рекламные акции</a></li>
+									<li><a href="/person/brokerskie-uslugi/di/">Инвестиции и брокерские услуги</a></li>
+                                    <li><a href="/person/brokerskie-uslugi/">Датабанк Инвестиции</a></li>
+                                    <li><a href="/person/doveritelnoe-upravlenie/">Доверительное управление</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+<!--					<div class="col-lg-3 col-md-4 col-xs-6 no_pad_mob  wow fadeInUp">-->
+<!--						<a href="/person/kredity/" class="services_item">-->
+<!--							<div class="service_cont">-->
+<!--							<div class="img">-->
+<!--							<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.5314 21.77L50.2964 7.62307L59.1107 24.9221L31.3457 39.0691L22.5314 21.77Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M15 18H56C59.866 18 63 21.134 63 25V50C63 53.866 59.866 57 56 57H8V25C8 21.134 11.134 18 15 18Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M49.9971 30C45.589 30 42 33.5813 42 38C42 42.4093 45.5793 46 49.9971 46H61.0029C65.411 46 69 42.4187 69 38C69 33.5907 65.4207 30 61.0029 30H49.9971ZM48 38C48 36.8983 48.898 36 50 36C51.102 36 52 36.8983 52 38C52 39.1023 51.1022 40 50 40C48.8978 40 48 39.1023 48 38Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+</svg>
+
+
+
+</div>-->
+<!--								<div class="text"><div>Кредиты от 11%</div></div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--					<div class="col-lg-3  col-md-4 col-xs-6 no_pad_mob wow fadeInUp">-->
+<!--						<a href="/person/ipoteka/ipoteka/" class="services_item">-->
+<!--							<div class="service_cont">-->
+<!--								<div class="img">-->
+<!--								<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.739 29.706L14 29.4197V29.0323V15H21V19.1613V21.7423L22.739 19.835L34.0116 7.47145L63.6856 39H59H58V40V54C58 57.866 54.866 61 51 61H11V40V39H10H5.26503L13.739 29.706Z" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M28 43C28 39.134 31.134 36 35 36H41V61H28V43Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>-->
+<!--								<div class="text"><div>Ипотека от 6%</div></div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--					<div class="col-lg-3  col-md-4 col-xs-6 no_pad_mob wow fadeInUp">-->
+<!--						<a href="/person/vklady/" class="services_item">-->
+<!--							<div class="service_cont">-->
+<!--								<div class="img">-->
+<!--								<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M58.4952 34.1494L59.1359 35.9227L60.2445 34.3975L61.5924 32.5433L63.5502 34.2052L64.2596 34.8075L64.9113 34.1431L66.5419 32.4806L67.5905 33.5228L64.3503 36.8263L62.6692 35.3992L61.8472 34.7014L61.2131 35.5736L59.6889 37.6705L59.4571 37.9893L59.5052 38.3805C59.6022 39.1697 59.6522 39.9738 59.6522 40.7901C59.6522 47.221 56.5468 52.9264 51.7483 56.4891L51.3444 56.7889V57.292V59.8765C51.3444 62.6724 49.0695 64.9414 46.2754 64.9414C43.8952 64.9414 41.8966 63.3018 41.3526 61.0908L41.1628 60.3193L40.3684 60.3298C40.2806 60.3309 40.1927 60.3315 40.1047 60.3315H29.2577C29.1695 60.3315 29.0814 60.3309 28.9935 60.3298L28.1995 60.3193L28.0094 61.0903C27.4642 63.3015 25.4614 64.9414 23.087 64.9414C20.2867 64.9414 18.0179 62.6735 18.0179 59.8765V57.2917V56.7887L17.614 56.4888C14.7493 54.3619 12.4874 51.4704 11.1302 48.1179L10.8773 47.4931H10.2033H6V35.9545H9.55091H10.298L10.5098 35.2381C11.3799 32.2964 12.9246 29.6427 14.9661 27.4567L15.2353 27.1685V26.7742V17.5848H20.3043C22.4694 17.5848 24.3212 18.9467 25.0468 20.8624L25.3355 21.6245L26.1401 21.4956C27.1546 21.3332 28.1959 21.2487 29.2577 21.2487H40.1047C48.5673 21.2487 55.776 26.6237 58.4952 34.1494Z" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M39.2091 23.9172H34.2725C33.4043 22.5989 32.8986 21.0179 32.8986 19.315C32.8986 14.7044 36.6098 10.978 41.1739 10.978C45.738 10.978 49.4493 14.7044 49.4493 19.315C49.4493 21.8311 48.344 24.0853 46.595 25.6143C44.3632 24.5269 41.8561 23.9172 39.2091 23.9172Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+    <path d="M34.058 6.06905C34.058 8.87486 31.8002 11.1381 29.029 11.1381C26.2578 11.1381 24 8.87486 24 6.06905C24 3.26323 26.2578 1 29.029 1C31.8002 1 34.058 3.26323 34.058 6.06905Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>-->
+<!--								<div class="text"><div>Вклады до 7,5%</div></div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--					<div class="col-lg-3  col-md-4 col-xs-6 no_pad_mob wow fadeInUp">-->
+<!--						<a href="/person/platezhi/" class="services_item">-->
+<!--							<div class="service_cont">-->
+<!--								<div class="img">-->
+<!--								<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13 25.0545H57.9323C61.7983 25.0545 64.9323 28.1885 64.9323 32.0545V54.8238C64.9323 58.6898 61.7983 61.8238 57.9323 61.8238H6V32.0545C6 28.1885 9.13401 25.0545 13 25.0545Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M13 34H19C19.5523 34 20 34.4477 20 35V39C20 39.5523 19.5523 40 19 40H13C12.4477 40 12 39.5523 12 39V35C12 34.4477 12.4477 34 13 34Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M13 46H58C58.5523 46 59 46.4477 59 47V48C59 48.5523 58.5523 49 58 49H13C12.4477 49 12 48.5523 12 48V47C12 46.4477 12.4477 46 13 46Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M13 53H28C28.5523 53 29 53.4477 29 54V55C29 55.5523 28.5523 56 28 56H13C12.4477 56 12 55.5523 12 55V54C12 53.4477 12.4477 53 13 53Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M47.7433 25.9027H42.1123C41.112 24.4107 40.5283 22.6151 40.5283 20.6801C40.5283 15.502 44.7134 11.3091 49.8701 11.3091C55.0268 11.3091 59.2119 15.502 59.2119 20.6801C59.2119 23.5284 57.9461 26.0792 55.9457 27.7988C53.4696 26.5843 50.6848 25.9027 47.7433 25.9027Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+    <path d="M40.4632 6.74115C40.4632 9.91457 37.8986 12.4823 34.741 12.4823C31.5834 12.4823 29.0188 9.91457 29.0188 6.74115C29.0188 3.56774 31.5834 1 34.741 1C37.8986 1 40.4632 3.56774 40.4632 6.74115Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>-->
+<!--								<div class="text"><div>Платежи</div></div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--					<div class="col-lg-3  col-md-4 col-xs-6 no_pad_mob wow fadeInUp">-->
+<!--						<a href="/person/strakhovanie/" class="services_item">-->
+<!--							<div class="service_cont">-->
+<!--								<div class="img">-->
+<!--								<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.8475 23.0545H23.8475V22.0545C23.8475 15.9543 28.8204 11 34.9661 11C41.1118 11 46.0847 15.9543 46.0847 22.0545V23.0545H47.0847H54C57.866 23.0545 61 26.1886 61 30.0545V60H15C11.134 60 8 56.866 8 53V30.0545C8 26.1886 11.134 23.0545 15 23.0545H22.8475ZM28.4052 22.1535L28.4948 23.0545H29.4003H40.5319H41.4374L41.527 22.1535C41.5484 21.9383 41.5593 21.7203 41.5593 21.5001C41.5593 17.8702 38.6024 14.9365 34.9661 14.9365C31.3298 14.9365 28.3729 17.8702 28.3729 21.5001C28.3729 21.7203 28.3838 21.9383 28.4052 22.1535Z" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M13 33C13 32.4477 13.4477 32 14 32H55C55.5523 32 56 32.4477 56 33V35C56 35.5523 55.5523 36 55 36H14C13.4477 36 13 35.5523 13 35V33Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>-->
+<!--								<div class="text"><div>Страхование</div></div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--					<div class="col-lg-3  col-md-4 col-xs-6 no_pad_mob wow fadeInUp">-->
+<!--						<a href="/person/databank-bonus/" class="services_item">-->
+<!--							<div class="service_cont">-->
+<!--								<div class="img">-->
+<!--								<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M51.1786 16.0694C51.1786 21.0807 47.1269 25.1389 42.134 25.1389C37.1411 25.1389 33.0894 21.0807 33.0894 16.0694C33.0894 11.0582 37.1411 7 42.134 7C47.1269 7 51.1786 11.0582 51.1786 16.0694Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+    <path d="M38.3215 21.7083C38.3215 26.7196 34.2697 30.7778 29.2768 30.7778C24.2839 30.7778 20.2322 26.7196 20.2322 21.7083C20.2322 16.6971 24.2839 12.6389 29.2768 12.6389C34.2697 12.6389 38.3215 16.6971 38.3215 21.7083Z" fill="#F5F5F5" stroke="#FFA200" stroke-width="2"/>
+    <path d="M56 27.1944V32.3994C55.0963 32.4973 54.3929 33.2627 54.3929 34.1924V54C54.3929 57.866 51.2589 61 47.3929 61H14.6071V34.1924C14.6071 33.2627 13.9037 32.4973 13 32.3994V27.1944C13 24.3256 15.3256 22 18.1944 22H50.8056C53.6744 22 56 24.3256 56 27.1944Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <rect x="13" y="31" width="17" height="2" fill="#2F72CB"/>
+    <rect x="39" y="31" width="17" height="2" fill="#2F72CB"/>
+    <path d="M37 22C37.5523 22 38 22.4477 38 23L38 60C38 60.5523 37.5523 61 37 61H32C31.4477 61 31 60.5523 31 60L31 23C31 22.4477 31.4477 22 32 22H37Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>-->
+<!--								<div class="text"><div>Бонусы до 7%</div></div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--					<div class="col-lg-3  col-md-4 col-xs-6 no_pad_mob wow fadeInUp">-->
+<!--						<a href="/person/cards/" class="services_item">-->
+<!--							<div class="service_cont">-->
+<!--								<div class="img">-->
+<!--								<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M51 17C51 14.2386 48.7614 12 46 12H8C5.23857 12 3 14.2386 3 17V37C3 39.7614 5.23857 42 8 42H51V17Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M6 19H48C48.5523 19 49 19.4477 49 20V21C49 21.5523 48.5523 22 48 22H6C5.44772 22 5 21.5523 5 21V20C5 19.4477 5.44772 19 6 19Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M19 33C19 30.2386 21.2386 28 24 28H62C64.7614 28 67 30.2386 67 33V53C67 55.7614 64.7614 58 62 58H19V33Z" fill="#F5F5F5" stroke="#2F72CB" stroke-width="2"/>
+    <path d="M25 37H31C31.5523 37 32 37.4477 32 38V42C32 42.5523 31.5523 43 31 43H25C24.4477 43 24 42.5523 24 42V38C24 37.4477 24.4477 37 25 37Z" stroke="#FFA200" stroke-width="2"/>
+    <path d="M25 47H61C61.5523 47 62 47.4477 62 48V49C62 49.5523 61.5523 50 61 50H25C24.4477 50 24 49.5523 24 49V48C24 47.4477 24.4477 47 25 47Z" stroke="#FFA200" stroke-width="2"/>
+</svg>
+</div>-->
+<!--								<div class="text"><div>Карты</div></div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--					<div class="col-lg-3  col-md-4 col-xs-6 no_pad_mob wow fadeInUp">-->
+<!--						<a href="/person/" data-fancybox="" data-src="#all_products_chastnym_klientam" class="services_item">-->
+<!--							<div class="service_cont">-->
+<!--								<img src="/images/8.svg" alt="">-->
+<!--								<div class="text"><div>Все услуги</div></div>-->
+<!--							</div>-->
+<!--						</a>-->
+<!--						<div  style="display: none;" id="all_products_chastnym_klientam" class="downloads_files downloads_files_padding">-->
+<!--                        	<div class="title_services">Все услуги</div>-->
+<!--							<ul class="ul_services">-->
+<!--								<li><a href="https://online.databank.ru/" target="_blank">Датабанк Онлайн</a></li>-->
+<!--								<li><a href="/person/vklady/">Вклады</a></li>-->
+<!--								<li><a href="/person/kredity/">Кредиты</a></li>-->
+<!--								<li><a href="/person/ipoteka/">Ипотека</a></li>-->
+<!--								<li><a href="/person/cards/">Карты</a></li>-->
+<!--								<li><a href="/person/perevody/">Переводы</a></li>-->
+<!--								<li><a href="/person/platezhi/">Платежи</a></li>-->
+<!--								<li><a href="/person/strakhovanie/">Страхование</a></li>-->
+<!--								<li><a href="/person/databank-bonus/">Датабанк.Бонус</a></li>-->
+<!--								<li><a href="/person/udobnaya-pensiya/">Программа «Удобная пенсия»</a></li>-->
+<!--								<li><a href="/person/seyfovye-yacheyki/">Индивидуальные банковские сейфы</a></li>-->
+<!--								<li><a href="/person/scheta-dlya-fizicheskikh-lits/">Счета для физ лиц</a></li>-->
+<!--								<li><a href="/person/realizatsiya-zalogovogo-imushchestva/">Реализация залогового имущества</a></li>-->
+<!--								<li><a href="/person/universalnyy-dogovor-bankovskogo-obsluzhivaniya/">Универсальный договор банковского обслуживания</a></li>-->
+<!--								<li><a href="/person/databank-bonus/">Рекламные акции</a></li>-->
+<!--								<li><a href="/person/brokerskie-uslugi/">Брокерские услуги</a></li>-->
+<!--								<li><a href="/person/doveritelnoe-upravlenie/">Доверительное управление</a></li>-->
+<!--							</ul>-->
+<!--						</div>-->
+<!--					</div>-->
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<div class="row">
+ 			
+<div class="container services-container  section_padding_top">
+		    	    <div class="service-card"  style="background: linear-gradient(180deg, #3D9ACE 0%, #4EB2EB 100%);">
+	    		    		<a href="https://databank.dengisend.ru/" class="service-card-container">
+	    	                <span class="service-card__title"><?/*Переводы с карты на карту*/?></span>
+	            <img class="service-card__img"  src="/upload/iblock/909/90968ca5204ddc1bf60caf69f2a6c08d.png" alt="&lt;?/*Переводы с карты на карту*/?&gt;">
+            <div class="message-box message-box--service-card-bg"  style="background: #4EB2EB;"> 
+	            </div>
+	        	    		</a>
+	    		    </div>
+		    	    <div class="service-card"  style="background: linear-gradient(180deg, #3FBCC3 0%, #8DDCE1 100%);">
+	    		    		<a href="https://databank.ru/person/cards/karta-bystroy-vydachi/" class="service-card-container">
+	    	                <span class="service-card__title"><?/*Карта "Мир"*/?></span>
+	            <img class="service-card__img"  src="/upload/iblock/ab4/ab4de3c5d49ea7ba4bf8fe4c0c4bcfbc.png" alt="&lt;?/*Карта &quot;Мир&quot;*/?&gt;">
+            <div class="message-box message-box--service-card-bg"  style="background: #3FBCC3;"> 
+	            </div>
+	        	    		</a>
+	    		    </div>
+		    	    <div class="service-card"  style="background: linear-gradient(180deg, #E2E2E3 0%, #E2E2E3 100%);">
+	    		    		<a href="https://databank.ru/person/ipoteka/ipoteka/ipoteka-dlya-mnogodetnyh-semej/" class="service-card-container">
+	    	                <span class="service-card__title"><?/*Ипотека*/?></span>
+	            <img class="service-card__img"  src="/upload/iblock/ad9/ad9dce2cdb7d23026ee6da4fe99558c3.png" alt="&lt;?/*Ипотека*/?&gt;">
+            <div class="message-box message-box--service-card-bg"  style="background: #E2E2E3;"> 
+	            </div>
+	        	    		</a>
+	    		    </div>
+	</div>
+ 		<!-- Баннеры услуг -->
+            <!-- <div class="container services-container  section_padding_top">
+                    <div class="service-card">
+                        <div class="service-card-container">
+                            <div class="message-box message-box--service-card-title">
+                                <span class="service-card__title">Автокредит без КАСКО под 11%</span>
+                            </div>
+                            <img class="service-card__img"  src="images/kredit_bez_kasko.png">
+                            <div class="message-box message-box--service-card-bg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-container">
+                            <div class="message-box message-box--service-card-title">
+                                <span class="service-card__title">Кредитка с льготным периодом</span>
+                            </div>
+                            <img class="service-card__img"  src="images/kreditka_lgot.png">
+                            <div class="message-box message-box--service-card-bg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-container">
+                            <div class="message-box message-box--service-card-title">
+                                <span class="service-card__title">Расчетно-кассовое обслуживание 0 ₽</span>
+                            </div>
+                            <img class="service-card__img"  src="images/kassovoe_obsluzhivanie.png">
+                            <div class="message-box message-box--service-card-bg">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /Баннеры услуг-->
+ 		</div>
+
+ 	</div>
+ </section>
+
+<!--
+ <section class="about_card section_padding_top section_padding_bottom">
+ 	<div class="container">
+ 		<div class="row flex_align">
+ 			<div class="col-lg-9 col-xs-12 item_big">
+ 				<a href="/person/kredity/kredit-na-gazifikatsiyu/" class="item b_p_75 h_768 wow fadeInUp" style="background-image:url(/images/gaz.jpg)">
+ 					<div class="sub_title color_fff">Кредиты</div>
+					<h4 class="color_fff">Кредит на<br><span class="section-title-accent">газификацию<br> жилья</span></h4>
+ 					<div class="more_info">
+						<div class="row">
+							<div class="col-xs-12 fs_0 mt-10">
+								<div class="box_more_info">
+									<div class="svg_bl clock_svg fill_fff">
+										<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>percent-icon@1x</title>
+    <desc></desc>
+    <defs></defs>
+    <g id="Responsive" stroke="none" stroke-width="1" >
+        <g id="index-(sug)-mobile" transform="translate(-26.000000, -320.000000)">
+            <g id="Group" transform="translate(27.000000, 185.000000)">
+                <g id="percent-icon" transform="translate(0.000000, 136.000000)">
+                    <g>
+                        <ellipse id="Oval" stroke-width="2" fill-opacity="0" cx="20" cy="20" rx="20" ry="20"></ellipse>
+                        <path d="M11.0141715,15.2987829 C11.0141715,14.4971431 11.1210552,13.8113059 11.3348259,13.2412508 C11.5485965,12.6711958 11.8380732,12.1991261 12.2032647,11.8250275 C12.5684562,11.4509288 13.0048981,11.1792661 13.5126033,11.010031 C14.0203086,10.8407959 14.5680877,10.7561796 15.1559569,10.7561796 C15.7438262,10.7561796 16.2916052,10.8363424 16.7993105,10.9966704 C17.3070157,11.1569984 17.7434576,11.4153007 18.1086491,11.7715851 C18.4738406,12.1278695 18.7633173,12.5954857 18.9770879,13.1744479 C19.1908586,13.75341 19.2977423,14.4615146 19.2977423,15.2987829 C19.2977423,16.1360513 19.1908586,16.8441559 18.9770879,17.423118 C18.7633173,18.0020802 18.4738406,18.4696964 18.1086491,18.8259808 C17.7434576,19.1822652 17.3070157,19.4405675 16.7993105,19.6008955 C16.2916052,19.7612235 15.7438262,19.8413863 15.1559569,19.8413863 C14.5680877,19.8413863 14.0203086,19.7612235 13.5126033,19.6008955 C13.0048981,19.4405675 12.5684562,19.1822652 12.2032647,18.8259808 C11.8380732,18.4696964 11.5485965,18.0020802 11.3348259,17.423118 C11.1210552,16.8441559 11.0141715,16.1360513 11.0141715,15.2987829 Z M12.99154,15.2987829 C12.99154,16.3676361 13.18304,17.1336361 13.5660457,17.5968058 C13.9490515,18.0599755 14.4790166,18.2915569 15.1559569,18.2915569 C15.4944271,18.2915569 15.7972643,18.2425685 16.0644776,18.1445903 C16.3316909,18.0466121 16.5588188,17.8862865 16.7458681,17.6636088 C16.9329174,17.4409311 17.075429,17.1380939 17.1734072,16.7550881 C17.2713854,16.3720824 17.3203738,15.8866522 17.3203738,15.2987829 C17.3203738,14.7109137 17.2713854,14.2254835 17.1734072,13.8424778 C17.075429,13.459472 16.9329174,13.1566348 16.7458681,12.9339571 C16.5588188,12.7112793 16.3316909,12.5509538 16.0644776,12.4529756 C15.7972643,12.3549974 15.4944271,12.306009 15.1559569,12.306009 C14.4790166,12.306009 13.9490515,12.5153229 13.5660457,12.9339571 C13.18304,13.3525913 12.99154,14.1408587 12.99154,15.2987829 Z M20.5536385,25.1856255 C20.5536385,24.3839856 20.6605222,23.6981484 20.8742929,23.1280934 C21.0880635,22.5580384 21.3775402,22.0859686 21.7427317,21.71187 C22.1079232,21.3377714 22.5443651,21.0661086 23.0520703,20.8968735 C23.5597756,20.7276384 24.1075547,20.6430222 24.6954239,20.6430222 C25.2832932,20.6430222 25.8310722,20.723185 26.3387775,20.8835129 C26.8464827,21.0438409 27.2829246,21.3021432 27.6481161,21.6584276 C28.0133076,22.014712 28.3027843,22.4823283 28.5165549,23.0612904 C28.7303256,23.6402526 28.8372093,24.3483572 28.8372093,25.1856255 C28.8372093,26.0228938 28.7303256,26.7309984 28.5165549,27.3099606 C28.3027843,27.8889227 28.0133076,28.356539 27.6481161,28.7128234 C27.2829246,29.0691078 26.8464827,29.3274101 26.3387775,29.4877381 C25.8310722,29.648066 25.2832932,29.7282288 24.6954239,29.7282288 C24.1075547,29.7282288 23.5597756,29.648066 23.0520703,29.4877381 C22.5443651,29.3274101 22.1079232,29.0691078 21.7427317,28.7128234 C21.3775402,28.356539 21.0880635,27.8889227 20.8742929,27.3099606 C20.6605222,26.7309984 20.5536385,26.0228938 20.5536385,25.1856255 Z M22.531007,25.1856255 C22.531007,26.2544787 22.722507,27.0204787 23.1055127,27.4836484 C23.4885185,27.9468181 24.0184836,28.1783995 24.6954239,28.1783995 C25.0338941,28.1783995 25.3367313,28.1294111 25.6039446,28.0314329 C25.8711579,27.9334547 26.0982858,27.7731291 26.2853351,27.5504514 C26.4723844,27.3277736 26.614896,27.0249364 26.7128742,26.6419307 C26.8108524,26.258925 26.8598408,25.7734948 26.8598408,25.1856255 C26.8598408,24.5977562 26.8108524,24.112326 26.7128742,23.7293203 C26.614896,23.3463146 26.4723844,23.0434774 26.2853351,22.8207996 C26.0982858,22.5981219 25.8711579,22.4377963 25.6039446,22.3398181 C25.3367313,22.2418399 25.0338941,22.1928515 24.6954239,22.1928515 C24.0184836,22.1928515 23.4885185,22.4021655 23.1055127,22.8207996 C22.722507,23.2394338 22.531007,24.0277012 22.531007,25.1856255 Z M26.1650897,10.7294584 L27.4744283,11.7448639 L13.7664547,30.1023256 L12.4303949,29.0601989 L26.1650897,10.7294584 Z" id="%"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>									</div>
+									<div class="about_action color_fff">от <span>11,5<sup>%</sup></span> годовыx</div>
+								</div>
+
+								<div class="box_more_info cor">
+									<div class="svg_bl clock_svg fill_fff">
+										<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icom-clo-blue@1x</title>
+    <desc></desc>
+    <defs></defs>
+    <g id="Responsive" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="index-(sug)" transform="translate(-556.000000, -1492.000000)">
+            <g id="baner-1" transform="translate(330.000000, 1294.000000)">
+                <g id="icom-clo-blue" transform="translate(227.000000, 199.000000)">
+                    <g>
+                        <ellipse id="Oval" stroke-width="2" fill-opacity="0" cx="16.5" cy="16.5" rx="16.5" ry="16.5"></ellipse>
+                        <path d="M13.3187919,20.5436242 C13.3187919,20.3422819 13.3993289,20.1409396 13.5201342,20.0201342 L16.4194631,17.1610738 L19.4395973,20.0201342 C19.6006711,20.1409396 19.6812081,20.3422819 19.6812081,20.5436242 L19.6812081,23.2818792 L13.3187919,23.2818792 L13.3187919,20.5436242 Z M13.3187919,11.5234899 L13.3187919,8.7852349 L19.6812081,8.7852349 L19.6812081,11.5234899 C19.6812081,11.7248322 19.6006711,11.9261745 19.4798658,12.0469799 L16.5805369,14.9060403 L13.5604027,12.0469799 C13.3993289,11.9261745 13.3187919,11.7248322 13.3187919,11.5234899 L13.3187919,11.5234899 Z M21.6946309,23.3221477 L21.2919463,23.3221477 L21.2919463,20.5838926 C21.2919463,19.9395973 21.0100671,19.3355705 20.5671141,18.8926174 L17.6677852,16.1543624 L20.6073826,13.2550336 C21.0503356,12.8120805 21.2919463,12.2080537 21.2919463,11.5637584 L21.2919463,8.82550336 L21.6946309,8.82550336 C22.1375839,8.82550336 22.5,8.46308725 22.5,8.02013423 C22.5,7.57718121 22.1375839,7.2147651 21.6946309,7.2147651 L21.2919463,7.2147651 L11.7080537,7.2147651 L11.3053691,7.2147651 C10.8624161,7.2147651 10.5,7.57718121 10.5,8.02013423 C10.5,8.46308725 10.8624161,8.82550336 11.3053691,8.82550336 L11.7080537,8.82550336 L11.7080537,11.5637584 C11.7080537,12.2080537 11.9899329,12.8120805 12.4328859,13.2550336 L15.3322148,15.9932886 L12.3926174,18.8926174 C11.9496644,19.3355705 11.7080537,19.9395973 11.7080537,20.5838926 L11.7080537,23.3221477 L11.3053691,23.3221477 C10.8624161,23.3221477 10.5,23.6845638 10.5,24.1275168 C10.5,24.5704698 10.8624161,24.9328859 11.3053691,24.9328859 L11.7080537,24.9328859 L21.2919463,24.9328859 L21.6946309,24.9328859 C22.1375839,24.9328859 22.5,24.5704698 22.5,24.1275168 C22.5,23.6845638 22.1375839,23.3221477 21.6946309,23.3221477 L21.6946309,23.3221477 Z" id="Page-1" fill="#3A70C6"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>									</div>
+									<div class="about_action color_fff">до <span>5<sup></sup></span> лет</div>
+								</div>
+								<div class="card_img">
+									<img src="/images/card1.png" alt="">
+								</div>
+
+							</div>
+						</div>
+					</div>
+ 				</a>
+ 			</div>
+ 			<div class="col-lg-3 col-xs-12 flex_al_card flex_align">
+ 				<a href="/person/databank-bonus/#section_pp6" class="item small  wow fadeInUp" style="background-image:url(/images/ng_konkurs.png)">
+ 					<div class="sub_title"></div>
+ 				</a>
+
+ 				<a href="/person/ipoteka/ipoteka/ipoteka_5-55/" target="_blank" class="item small  wow fadeInUp" style="background-image:url(/upload/iblock/95b/95b8a3dac7c112eed34197663929ed2e.jpg">
+ 					<div class="sub_title">Ипотека от 5,55%</div>
+ 					<div class="more_info">
+						<img src="" class="box-shadow_card" alt="">
+					</div>
+ 				</a>
+
+ 			</div>
+ 		</div>
+ 	</div>
+ </section>
+ -->
+ <section class="transfer_currency none_business_page" style="margin-bottom: 45px">
+	<div class="container">
+		<div class="row no_flex_min_xl wow fadeInUp footer-info">
+			<div class="col-xl-8">
+			
+
+<h2 class="section__title">Новости</h2>
+
+<div class="news__content">
+
+	
+		<div class="news-card">
+	        <small class="news-card__date">25 Апреля 2022</small>
+	        <a class="news-card__text" href="/about/press-tsentr/detail_news.php?ID=3223">Розыгрыш подарков от Датабанка и проекта &quot;Моя школьная карта&quot;</a>
+	    </div>
+		
+	
+		<div class="news-card">
+	        <small class="news-card__date">25 Апреля 2022</small>
+	        <a class="news-card__text" href="/about/press-tsentr/detail_news.php?ID=3222">Изменение условий по вкладу «Легко приумножить».</a>
+	    </div>
+		
+	
+		<div class="news-card">
+	        <small class="news-card__date">19 Апреля 2022</small>
+	        <a class="news-card__text" href="/about/press-tsentr/detail_news.php?ID=3219">Датабанк снизил комиссию за эквайринг до 1%</a>
+	    </div>
+		
+	
+		<div class="news-card">
+	        <small class="news-card__date">18 Апреля 2022</small>
+	        <a class="news-card__text" href="/about/press-tsentr/detail_news.php?ID=3221">Вниманию клиентов: изменение условий в программе лояльности «Датабанк. Бонус».</a>
+	    </div>
+		
+	
+</div>
+
+
+        
+			</div>
+			<div class="col-xl-3 col-xs-12 ff-services-title footer-exchanges">
+				<h2>Курс валют<span>*</span></h2>
+				<!--svg width='100%' height='100' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='gradient' y1='0' y2='1'><stop stop-color='#00247D' offset='0'/><stop stop-color='rgba(0,0,0,0)' offset='1'/></linearGradient></defs> </svg-->
+				<div class="statistics_currencies">
+					<div class="chart_box">
+						<div class="ct-chart ct-perfect-fourth"></div>
+					</div>
+					<div class="curs_today">
+						<!--div class="row torg">
+							<div class="col-xs-3"></div>
+							<div class="col-xs-3">Покупка</div>
+							<div class="col-xs-3">Продажа</div>
+							<div class="col-xs-3">ЦБ РФ</div>
+						</div-->
+							<!--  FOREXPF.RU - Forex start -->
+							<table class="currencies currencies_tbody" >
+								<!--tr bgcolor="" style="display:none;">
+									<td height="10" valign="top" colspan="3">
+										<style>
+											A.forexpf_ {
+												text-decoration: none;
+											}
+
+											A.forexpf_:visited {
+												color: #000000;
+											}
+										</style><a href="http://www.forexpf.ru/" title="Курсы валют" target="_blank" class="forexpf_">Курсы валют</a></td>
+								</tr-->
+								<tr class="torg" bgcolor="">
+									<td></td>
+									<td class="valTitle">Покупка</td>
+									<td class="valTitle">Продажа</td>
+									<td class="valTitle">ЦБ РФ</td>
+								</tr>
+								<tr class="border_bot" bgcolor="">
+									<td class="val" style="color:#3A70C6">USD</td>
+									<td>80,000</td>
+									<td>85,000</td>
+									<td class="valueUSD">ЦБ РФ</td>
+								</tr>
+								<tr >
+									<td class="val" style="color:#DADADA" >EUR</td>
+									<td>80,000</td>
+									<td>90,000</td>
+									<td class="valueEUR">0.00</td>
+								</tr>
+								<!--tr bgcolor="">
+									<td colspan="3" id="euusrutm">Данные на</td>
+								</tr-->
+							</table>
+							<script type="text/javascript" charset="utf-8" src="https://informers.forexpf.ru/export/euusrub.js"></script>
+							<!--  FOREXPF.RU - Forex end -->
+							<!--div class="col-xs-3">USD</div>
+							<div class="col-xs-3">Покупка</div>
+							<div class="col-xs-3">Продажа</div-->
+
+					</div>
+				</div>
+				<p style="font-size: 12px;">*Информация носит справочный характер</p>
+				</div>
+		</div>
+	</div>
+</section>
+
+<section class="article pt-40-lg pt-30-xs section_padding_bottom bank-news-section" style="display: none">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-lg-9  col-xs-12  wow fadeInUp">
+ 				<div class="row">
+
+<div class="infoBl infoBl_index flex_align">
+
+	
+	
+		<a class="info_block" href="/about/press-tsentr/detail_article.php?ID=2505">
+
+			<div class="article_preview-img" style="background-image: url(/upload/iblock/1dc/1dc384b9e0afe99ff80a264813041682.JPG);"></div>
+			<span class="title">Ижкомбанк уходит в Дата</span>
+			<span class="prew"><p>Один из двух региональных банков, оставшихся в Удмуртии после решительной зачистки рынка Центробанком,– Ижкомбанк – всерьёз задумался над изменением стратегии развития и ребрендингом.</p></span>
+		</a>
+	
+	
+	
+		<a class="info_block" href="/about/press-tsentr/detail_article.php?ID=2504">
+
+			<div class="article_preview-img" style="background-image: url(/upload/iblock/da4/da4ed6196a8fb3c629cdc6872baf6eb2.jpg);"></div>
+			<span class="title">Ветер перемен Ижкомбанка</span>
+			<span class="prew"><p> Елена Шубникова: «Стратегическое планирование не только о том, что будем делать, но и о том, что точно — нет»</p></span>
+		</a>
+	
+	
+	
+		<a class="info_block" href="/about/press-tsentr/detail_article.php?ID=2325">
+
+			<div class="article_preview-img" style="background-image: url(/upload/iblock/f4c/f4cc499417e2a5e6611f8956c185a4e1.jpg);"></div>
+			<span class="title">Стратегическая сессия</span>
+			<span class="prew">	<p> Эльман Мехтиев: «Хорошо - не значит, что не может быть лучше»</p>
+</span>
+		</a>
+	
+</div>
+	<br />
+<div class="pagination">
+<div class="page-wrap">
+
+
+			<div class="page-item current">1</div>
+		
+			<div class="page-item"><a href="/?PAGEN_8=2">2</a></div>
+			<div class="page-item next"><a href="/?PAGEN_8=2"></a></div>
+<div class="clear"></div>
+</div>
+</div>			</div>
+
+			</div>
+			<div class="col-lg-3  col-xs-12  wow fadeInUp width_big_1440 ff-PTSans ff-services-title">
+				
+
+<h2 class="mb-10 ff-services-title">Новости банка</h2>
+
+<div class="infoBl news_index flex_align pl-0 pr-0">
+
+
+
+
+	<div class="info_block news_prev mb-15">
+		<div class="data">25.04.2022</div>
+		<a class="title" href="/about/press-tsentr/detail_news.php?ID=3223">Розыгрыш подарков от Датабанка и проекта &quot;Моя школьная карта&quot;</a>
+	</div>
+	
+	
+
+	<div class="info_block news_prev mb-15">
+		<div class="data">25.04.2022</div>
+		<a class="title" href="/about/press-tsentr/detail_news.php?ID=3222">Изменение условий по вкладу «Легко приумножить».</a>
+	</div>
+	
+	
+
+	<div class="info_block news_prev mb-15">
+		<div class="data">19.04.2022</div>
+		<a class="title" href="/about/press-tsentr/detail_news.php?ID=3219">Датабанк снизил комиссию за эквайринг до 1%</a>
+	</div>
+	
+	
+
+</div>
+				<a href="/about/press-tsentr/">Все новости</a>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section class="container">
+	</section>
+<script>
+	$(function(){
+
+		$(".ct-point").addClass("no_opacity");
+
+		$.getJSON( "/cbr/index.php", function( json ) {
+
+			var status = json.status;
+
+			if (status == true) {
+
+				$(".curs_today .currencies .valueUSD").html(json.data.USD.value);
+				$(".curs_today .currencies .valueEUR").html(json.data.EUR.value);
+			} else {
+
+			}
+		});
+
+		$.getJSON( "/cbr/?action=dynamic", function( json ) {
+
+
+			$(".ct-point").addClass("no_opacity");
+
+			var status = json.status;
+
+			if (status == true) {
+
+				var dat = json.usd.data;
+				var dat2 = json.eur.data;
+				/*
+				var arr = $.map(json.data, function(el, i) { return el, i; });*/
+
+
+				var value_cur = [];
+				var month = ['Янв','Фев','Мар','Апр','Май','Июн',
+					'Июл','Авг','Сен','Окт','Ноя','Дек'];
+
+
+				mounths = {
+					"01": "ЯНВ",
+					"02": "ФЕВ",
+					"03": "МАР",
+					"04": "АПР",
+					"05": "МАЙ",
+					"06": "ИЮН",
+					"07": "ИЮЛ",
+					"08": "АВГ",
+					"09": "СЕН",
+					"10": "ОКТ",
+					"11": "НОЯ",
+					"12": "ДЕК"
+				};
+
+				var date = new Date();
+				var mounthNow = date.getMonth() + 1;
+				arrMounth = [];
+				arrMounths = [];
+				arrMounths2 = [];
+				for (var i = 0; i < 6; i++) {
+					if(mounthNow == 0) {
+						mounthNow = 12;
+					}
+					if(mounthNow<10) {
+						var datM = "0"+mounthNow;
+					} else {
+						var datM = mounthNow;
+					}
+
+					arrMounth.push(mounths[datM]);
+
+					arrMounths.push(dat[datM]);
+
+
+
+					arrMounths2.push(dat2[datM]);
+
+					mounthNow=mounthNow-1;
+				}
+
+				arrMounth.reverse();
+				arrMounths.reverse();
+				arrMounths2.reverse();
+
+				console.log(json.eur.data);
+
+				var chart = new Chartist.Line('.ct-chart', {
+				  labels: arrMounth,
+				  series: [
+					arrMounths, arrMounths2
+				  ]
+				},
+					{
+					high: 90,
+					low: 50,
+					  showArea: true,
+					  showPoint: true,
+					  fullWidth: true,
+					  lineSmooth: false,
+					axisY: {
+						position: "end",
+						showGrid: false,
+						showLabel: false,
+						 onlyInteger: true,
+						offset: 20
+
+						}
+
+
+				});
+					chart.on('draw', function(data) {
+				  if(data.type === 'line' || data.type === 'area') {
+					data.element.animate({
+					  d: {
+						begin: 2000 * data.index,
+						dur: 2000,
+						from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+						to: data.path.clone().stringify(),
+						easing: Chartist.Svg.Easing.easeOutQuint
+					  }
+					});
+				  }
+				});
+
+					} else {
+
+					}
+				});
+
+			var creditly = Creditly.initialize(
+		'.creditly-wrapper .expiration-month-and-year',
+		'.creditly-wrapper .credit-card-number',
+		'.creditly-wrapper .security-code',
+		'.creditly-wrapper .card-type');
+
+		var creditly2 = Creditly.initialize(
+		'.creditly-wrapper.white_card .expiration-month-and-year',
+		'.creditly-wrapper.white_card .credit-card-number',
+		'.creditly-wrapper.white_card .security-code',
+		'.creditly-wrapper.white_card .card-type');
+	});
+
+	/*$(".ct-chart").html("<svg width='100%' height='100' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='gradient' y1='0' y2='1'><stop stop-color='#00247D' offset='0'/><stop stop-color='rgba(0,0,0,0)' offset='1'/></linearGradient></defs> </svg>");*/
+</script>
+
+<section class="article mob-banner">
+    <div class="mob-banner-container">
+	    <div class="mob-banner-col mob-banner-col--first">
+	        <div class="message-box message-box--mob-banner-orange">
+	        </div>
+	        <img class="mob-banner__phone-img" src="/images/Mob-izhcard.png">
+	        <div class="message-box message-box--mob-banner-blue">
+	        </div>
+	    </div>
+	    <div class="mob-banner-col mob-banner-col--second">
+	        <span class="mob-banner__title">
+	            Мобильное</br>приложение
+	        </span>
+	        <span class="mob-banner__text">
+	            Любые платежи и переводы</br>в любое время в удобном месте!
+	        </span>
+	        <div class="mob-banner__links">
+                <a class="mob-banner__link mob-banner__link--appstore" href="https://apps.apple.com/ru/app/izkombank/id667439865" target="_blank">
+                    <img class="mob-banner__link-img" src="/images/front/mobbanner/AppStore_n.svg">
+                </a>
+                <a class="mob-banner__link mob-banner__link--appstore" href="https://play.google.com/store/apps/details?id=com.mifors.izhcombank&hl=ru" target="_blank">
+                    <img class="mob-banner__link-img" src="/images/front/mobbanner/GooglePlay_n.svg">
+                </a>
+
+                <a class="mob-banner__link mob-banner__link--googleplay" href="https://appgallery.huawei.com/#/app/C103112269" target="_blank">
+                    <img class="mob-banner__link-img" src="/images/front/mobbanner/HuaweiApp_n.svg">
+                </a>
+            </div>
+	    </div>
+	</div>
+</section>
+
+
+
+
+	 <footer class="footer  section_padding_top section_padding_bottom">
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 hidden_footer hidden_footer_align">
+				<a href="/" class="logo_card">
+					<svg width="147" height="40" viewBox="0 0 147 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.9591 25.8236H17.461V14.3264H5.19538C5.19538 17.2407 5.16336 19.5786 4.68291 21.8524C4.39473 23.1975 3.97846 24.5105 3.33791 25.8236H1.03202L1 34.054H5.13134L5.29144 29.9868H15.5395L15.8277 34.054H19.9591V25.8236ZM8.14168 25.8236C8.52593 24.9909 8.84627 24.1262 9.07042 23.2295C9.45466 21.6923 9.64693 20.091 9.77501 18.3617H12.5612V25.8236H8.14168ZM28.2856 30.275C30.1751 30.275 31.5842 29.6346 32.609 28.3215L32.673 28.3535V29.9868H37.4449V14.3264H32.4168V15.9598L32.3528 15.9918C31.264 14.7108 29.6947 14.0383 28.0295 14.0383C23.9942 14.0383 20.8878 17.3689 20.8878 22.1727C20.8878 27.0085 23.9942 30.275 28.2856 30.275ZM29.3424 25.8556C27.3569 25.8556 25.9797 24.3824 25.9797 22.1727C25.9797 19.9309 27.4209 18.4578 29.3424 18.4578C31.1999 18.4578 32.641 20.0269 32.641 22.1727C32.641 24.4144 31.1359 25.8556 29.3424 25.8556ZM43.8498 29.9868H48.8777V18.3937H53.1051V14.3264H39.5905V18.3937H43.8498V29.9868ZM61.5598 30.275C63.4493 30.275 64.8583 29.6346 65.8831 28.3215L65.9471 28.3535V29.9868H70.719V14.3264H65.691V15.9598L65.6269 15.9918C64.5381 14.7108 62.9688 14.0383 61.3036 14.0383C57.2683 14.0383 54.1619 17.3689 54.1619 22.1727C54.1619 27.0085 57.2683 30.275 61.5598 30.275ZM62.6166 25.8556C60.6311 25.8556 59.2539 24.3824 59.2539 22.1727C59.2539 19.9309 60.6951 18.4578 62.6166 18.4578C64.4741 18.4578 65.9151 20.0269 65.9151 22.1727C65.9151 24.4144 64.41 25.8556 62.6166 25.8556ZM82.1839 30.275C86.7315 30.275 90.2543 26.9124 90.2543 22.1087C90.2543 17.6251 87.0839 14.5507 83.433 14.5507C80.7428 14.5507 79.0135 15.8957 78.0847 17.497L78.0207 17.465C78.2128 13.9102 78.9814 12.2448 82.6003 11.6043L89.1014 10.4194L87.8844 6L81.7036 7.08884C75.1064 8.24171 73.6332 12.5652 73.6012 19.6747C73.5691 25.4072 75.811 30.275 82.1839 30.275ZM81.9598 25.8556C80.1023 25.8556 78.6612 24.3184 78.6612 22.1407C78.6612 20.6355 79.7501 18.842 81.8637 18.842C83.7212 18.842 85.1944 20.2192 85.1944 22.2688C85.1944 24.4464 83.6891 25.8556 81.9598 25.8556ZM99.4456 30.275C101.335 30.275 102.744 29.6346 103.769 28.3215L103.833 28.3535V29.9868H108.605V14.3264H103.577V15.9598L103.513 15.9918C102.424 14.7108 100.855 14.0383 99.1894 14.0383C95.1541 14.0383 92.0477 17.3689 92.0477 22.1727C92.0477 27.0085 95.1541 30.275 99.4456 30.275ZM100.502 25.8556C98.5169 25.8556 97.1397 24.3824 97.1397 22.1727C97.1397 19.9309 98.5809 18.4578 100.502 18.4578C102.36 18.4578 103.801 20.0269 103.801 22.1727C103.801 24.4144 102.296 25.8556 100.502 25.8556ZM111.967 29.9868H116.963V24.3824H121.927V29.9868H126.955V14.3264H121.927V20.3473H116.963V14.3264H111.967V29.9868ZM130.382 29.9868H135.314V25.5993L136.819 23.8059L140.758 29.9868H146.427L140.598 20.9877L146.106 14.3264H140.278L135.378 20.5394H135.314V14.3264H130.382V29.9868Z" fill="#FEFEFE"/>
+</svg>
+				</a>
+			</div>
+
+			<div class="col-lg-3 col-xs-12 hidden_footer_3">
+				<div class="flex_align">
+					<div class="col_footer">
+						<div class="top_controls">
+							<a href="/" class="logo_card">
+								<svg width="147" height="40" viewBox="0 0 147 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.9591 25.8236H17.461V14.3264H5.19538C5.19538 17.2407 5.16336 19.5786 4.68291 21.8524C4.39473 23.1975 3.97846 24.5105 3.33791 25.8236H1.03202L1 34.054H5.13134L5.29144 29.9868H15.5395L15.8277 34.054H19.9591V25.8236ZM8.14168 25.8236C8.52593 24.9909 8.84627 24.1262 9.07042 23.2295C9.45466 21.6923 9.64693 20.091 9.77501 18.3617H12.5612V25.8236H8.14168ZM28.2856 30.275C30.1751 30.275 31.5842 29.6346 32.609 28.3215L32.673 28.3535V29.9868H37.4449V14.3264H32.4168V15.9598L32.3528 15.9918C31.264 14.7108 29.6947 14.0383 28.0295 14.0383C23.9942 14.0383 20.8878 17.3689 20.8878 22.1727C20.8878 27.0085 23.9942 30.275 28.2856 30.275ZM29.3424 25.8556C27.3569 25.8556 25.9797 24.3824 25.9797 22.1727C25.9797 19.9309 27.4209 18.4578 29.3424 18.4578C31.1999 18.4578 32.641 20.0269 32.641 22.1727C32.641 24.4144 31.1359 25.8556 29.3424 25.8556ZM43.8498 29.9868H48.8777V18.3937H53.1051V14.3264H39.5905V18.3937H43.8498V29.9868ZM61.5598 30.275C63.4493 30.275 64.8583 29.6346 65.8831 28.3215L65.9471 28.3535V29.9868H70.719V14.3264H65.691V15.9598L65.6269 15.9918C64.5381 14.7108 62.9688 14.0383 61.3036 14.0383C57.2683 14.0383 54.1619 17.3689 54.1619 22.1727C54.1619 27.0085 57.2683 30.275 61.5598 30.275ZM62.6166 25.8556C60.6311 25.8556 59.2539 24.3824 59.2539 22.1727C59.2539 19.9309 60.6951 18.4578 62.6166 18.4578C64.4741 18.4578 65.9151 20.0269 65.9151 22.1727C65.9151 24.4144 64.41 25.8556 62.6166 25.8556ZM82.1839 30.275C86.7315 30.275 90.2543 26.9124 90.2543 22.1087C90.2543 17.6251 87.0839 14.5507 83.433 14.5507C80.7428 14.5507 79.0135 15.8957 78.0847 17.497L78.0207 17.465C78.2128 13.9102 78.9814 12.2448 82.6003 11.6043L89.1014 10.4194L87.8844 6L81.7036 7.08884C75.1064 8.24171 73.6332 12.5652 73.6012 19.6747C73.5691 25.4072 75.811 30.275 82.1839 30.275ZM81.9598 25.8556C80.1023 25.8556 78.6612 24.3184 78.6612 22.1407C78.6612 20.6355 79.7501 18.842 81.8637 18.842C83.7212 18.842 85.1944 20.2192 85.1944 22.2688C85.1944 24.4464 83.6891 25.8556 81.9598 25.8556ZM99.4456 30.275C101.335 30.275 102.744 29.6346 103.769 28.3215L103.833 28.3535V29.9868H108.605V14.3264H103.577V15.9598L103.513 15.9918C102.424 14.7108 100.855 14.0383 99.1894 14.0383C95.1541 14.0383 92.0477 17.3689 92.0477 22.1727C92.0477 27.0085 95.1541 30.275 99.4456 30.275ZM100.502 25.8556C98.5169 25.8556 97.1397 24.3824 97.1397 22.1727C97.1397 19.9309 98.5809 18.4578 100.502 18.4578C102.36 18.4578 103.801 20.0269 103.801 22.1727C103.801 24.4144 102.296 25.8556 100.502 25.8556ZM111.967 29.9868H116.963V24.3824H121.927V29.9868H126.955V14.3264H121.927V20.3473H116.963V14.3264H111.967V29.9868ZM130.382 29.9868H135.314V25.5993L136.819 23.8059L140.758 29.9868H146.427L140.598 20.9877L146.106 14.3264H140.278L135.378 20.5394H135.314V14.3264H130.382V29.9868Z" fill="#FEFEFE"/>
+</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-xs-12 hidden_footer_9">
+				<div class="flex_align flex_align_block">
+					<div class="col_footer col_footer_1">
+						<div class="top_controls rate_the_site">
+<a class="url_bor_b" href="/person/databank-bonus/#section_pp6"><span>Акции</span></a>
+							<!--a class="url_bor_b  popup" data-fancybox="" data-type="ajax" data-src="/forms/site_evaluation.ajax.php"><span>Оцените сайт</span></a-->
+						</div>
+						<div class="top_controls ask_question">							<a class="popup" data-fancybox="" data-type="ajax" data-src="/forms/question.ajax.php"><span>Написать письмо</span></a>
+						</div>
+						<div class="top_controls">
+							<a class="url_bor_b" href="/ofisy-banki/"><span>Офисы/банкоматы</span></a>
+						</div>
+						<div class="top_controls inline_box mr_tel_footer" style="margin-bottom: 1px;">
+							<a class="tel" href="tel:88003019191"><span>8 800 301-91-91</span></a>
+						</div>
+					</div>
+					<div class="col_footer col_footer_2">
+						<div class="top_controls inline_box floa">
+							<a href="https://t.me/ao_databank" class="sotial" target="_blank">
+								<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1194_6)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41.9999 21.0002C41.9999 9.40212 32.5981 0 21.0001 0C9.402 0 0.000274658 9.40212 0.000274658 21.0002C0.000274658 32.5982 9.40203 42 21.0001 42C32.5981 42 41.9999 32.5982 41.9999 21.0002ZM10.0128 19.8884L22.4261 14.7736C23.6515 14.2412 27.8071 12.5364 27.8071 12.5364C27.8071 12.5364 29.7251 11.7904 29.5649 13.6016C29.5119 14.3476 29.0859 16.9582 28.6595 19.782L27.3273 28.1461C27.3273 28.1461 27.2209 29.3715 26.3151 29.5847C25.4093 29.7979 23.9178 28.8387 23.6515 28.6255C23.4383 28.4657 19.6557 26.0687 18.2706 24.8964C17.8976 24.5767 17.4715 23.9372 18.324 23.1912C20.2416 21.4334 22.5326 19.2492 23.9178 17.864C24.5573 17.2244 25.1965 15.7324 22.5326 17.544L15.0208 22.6054C15.0208 22.6054 14.168 23.1382 12.57 22.6588C10.972 22.179 9.10701 21.5398 9.10701 21.5398C9.10701 21.5398 7.82822 20.7408 10.0128 19.8884L10.0128 19.8884Z" fill="#FEFEFE"/>
+</g>
+<defs>
+<clipPath id="clip0_1194_6">
+<rect width="42" height="42" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+							</a>
+							<a href="https://vk.com/ao_databank" class="sotial" target="_blank">
+								<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.39947 0 21 0C32.598 0 42 9.39947 42 21C42 32.598 32.6005 42 21 42C9.40202 42 0 32.6005 0 21ZM30.015 26.9946C32.2179 26.9946 30.2549 24.7858 28.7029 23.3468C27.2273 21.9784 27.1581 21.9461 28.4288 20.299C30.0063 18.2549 32.0677 15.621 30.2437 15.621H26.76C26.0841 15.621 26.0353 16.0155 25.7953 16.582C24.9253 18.6332 23.2703 21.2911 22.6415 20.8854C21.984 20.4606 22.2851 19.0208 22.3355 16.5252C22.3488 15.8661 22.3454 15.4133 21.3372 15.1795C18.5843 14.5411 16.1987 15.7967 17.1733 15.9781C18.5476 16.2341 18.4159 18.9672 18.0953 20.2503C17.537 22.4844 15.439 18.4805 14.5643 16.487C14.3539 16.0072 14.2896 15.621 13.5364 15.621H10.6882C10.139 15.621 9.86994 15.8722 10.0614 16.3818C10.2532 16.8913 12.457 21.817 15.0627 24.6272C17.4743 27.2281 19.858 26.9946 21.5166 26.9946C22.0491 26.9946 22.2677 26.6392 22.2607 26.1946C22.2335 24.5185 22.8856 23.6167 24.0622 24.7926C25.3648 26.0938 25.6342 26.9946 27.2148 26.9946H30.015Z" fill="white"/>
+</svg>
+							</a>
+							<a href="https://ok.ru/aodatabank" class="sotial" target="_blank">
+								<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 0C32.5244 0 42 9.47561 42 21C42 32.5244 32.5244 42 21 42C9.47561 42 0 32.5244 0 21C0 9.47561 9.47561 0 21 0ZM26.1219 21.5122C25.8659 21 25.0976 20.7439 24.0732 21.5122C23.0488 22.2805 21 22.2805 21 22.2805C21 22.2805 18.9512 22.2805 17.6707 21.5122C16.9024 20.7439 16.1341 21 15.878 21.5122C15.3659 22.5366 15.878 22.7927 17.1585 23.561C17.9268 24.0732 19.2073 24.3293 20.2317 24.5854L19.4634 25.0976C18.439 26.1219 17.4146 27.1463 16.9024 27.6585C16.3902 28.1707 16.3902 28.6829 16.9024 29.1951C17.1585 29.4512 17.4146 29.7073 17.6707 29.7073C17.9268 29.7073 18.1829 29.4512 18.439 29.1951L21 26.6341C22.0244 27.6585 22.7927 28.6829 23.561 29.1951C23.8171 29.7073 24.5854 29.7073 24.8415 29.1951H25.0976C25.3537 28.6829 25.3537 28.1707 25.0976 27.6585L22.5366 25.0976L21.7683 24.5854C22.5366 24.3293 23.8171 24.0732 24.8415 23.561C25.8659 22.7927 26.378 22.5366 26.1219 21.5122ZM21 14.5976C22.0244 14.5976 23.0488 15.6219 23.0488 16.6463C23.0488 17.9268 22.0244 18.9512 21 18.9512C19.7195 18.9512 18.6951 17.9268 18.6951 16.6463C18.6951 15.6219 19.7195 14.5976 21 14.5976ZM21 21C23.3049 21 25.3537 19.2073 25.3537 16.6463C25.3537 14.3415 23.3049 12.2927 21 12.2927C18.439 12.2927 16.6463 14.3415 16.6463 16.6463C16.6463 19.2073 18.439 21 21 21Z" fill="#FEFEFE"/>
+</svg>
+							</a>
+
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row section_padding_top">
+			<div class="col-lg-3 col-md-6 col-xs-12">
+				<div class="site_map">
+					<div class="site_section_title"> <a href="/about/">О банке</a></div>
+					<div class="site_section_inr_box">
+						<a href="/about/" class="site_section_inner title_dubl">О банке</a>
+						<a href="/about/rekvizity-i-obshchie-svedeniya/"  class="site_section_inner">Общие сведения</a>
+						<a href="/about/organy-upravleniya/"  class="site_section_inner">Органы управления</a>
+						<!--a href="/about/30-let/"  class="site_section_inner">Датабанку 30 лет</a-->
+						<!--a href="/about/rebrending/"  class="site_section_inner">Ребрендинг</a-->
+						<a href="/about/bank-v-reytingakh/"  class="site_section_inner">Банк в рейтингах</a>
+						<a href="/about/press-tsentr/"  class="site_section_inner">Пресс-центр</a>
+						<a href="/vacancies/"  class="site_section_inner">Вакансии</a>
+						<a href="/litsenzii-i-svidetelstva/"  class="site_section_inner">Лицензии и свидетельства</a>
+						<a href="/about/inostrannomu-nalogoplatelshchiku/"  class="site_section_inner">Иностранному налогоплательщику</a>
+						<a href="/faq/"  class="site_section_inner">Вопросы и ответы</a>
+						<a href="/about/#tarif" class="site_section_inner">Тарифы</a>
+						<a href="/about/politika-konfidentsialnosti/" class="site_section_inner">Политика конфиденциальности</a>
+<a href="/about/secure/" class="site_section_inner">Безопасность</a>
+<a href="https://fincult.info/" class="site_section_inner">Финансовая культура</a>
+<!--a href="/about/oprosy/" class="site_section_inner">Голосование "Лучшая школа"</a-->
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-xs-12">
+				<div class="site_map">
+					<div class="site_section_title"><a href="/">Частным клиентам</a></div>
+					<div class="site_section_inr_box">
+						<a href="/"  class="site_section_inner title_dubl">Частным клиентам</a>
+						<a href="https://online.databank.ru/" target="_blank" class="site_section_inner"><b>Датабанк Онлайн</b></a>
+						<a href="/person/vklady/"  class="site_section_inner">Вклады</a>
+						<a href="/person/kredity/"  class="site_section_inner">Кредиты</a>
+						<a href="/person/ipoteka/ipoteka/"  class="site_section_inner">Ипотека</a>
+						<a href="/person/cards/"  class="site_section_inner">Карты</a>
+						<a href="/person/perevody/"  class="site_section_inner">Переводы</a>
+						<a href="/person/platezhi/"  class="site_section_inner">Платежи</a>
+						<a href="/person/strakhovanie/"  class="site_section_inner">Страхование</a>
+						<a href="/person/databank-bonus/"  class="site_section_inner">Датабанк.Бонус</a>
+						<a href="/person/" data-fancybox="" data-src="#other_products_chastnym_klientam" class="site_section_inner">Другие продукты</a>
+                        <div  style="display: none;" id="other_products_chastnym_klientam" class="downloads_files downloads_files_padding">
+                        	<div class="title_services">Другие продукты</div>
+							<ul class="ul_services">
+<li><a href="/samozanyatym/">Самозанятым</a></li>
+								<li><a href="/person/udobnaya-pensiya/">Программа «Удобная пенсия»</a></li>
+								<li><a href="/person/seyfovye-yacheyki/">Индивидуальные банковские сейфы</a></li>
+								<li><a href="/person/scheta-dlya-fizicheskikh-lits/">Счета для физ лиц</a></li>
+								<li><a href="/person/realizatsiya-zalogovogo-imushchestva/">Реализация залогового имущества</a></li>
+								<li><a href="/person/universalnyy-dogovor-bankovskogo-obsluzhivaniya/">Универсальный договор банковского обслуживания</a></li>
+								<li><a href="/person/databank-bonus/">Рекламные акции</a></li>
+								<li><a href="/person/brokerskie-uslugi/">Инвестиции и брокерские услуги</a></li>
+								<li><a href="/person/brokerskie-uslugi/di/">Датабанк Инвестиции</a></li>
+								<li><a href="/person/doveritelnoe-upravlenie/">Доверительное управление</a></li>
+								<li><a href="/person/spravochnaya-informatsiya/">Справочная информация</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-xs-12">
+				<div class="site_map">
+					<div class="site_section_title"><a href="/business/">Бизнесу</a></div>
+					<div class="site_section_inr_box">
+						<a href="/business/" class="site_section_inner title_dubl">Бизнесу</a>
+						<a href="https://ibank.databank.ru/"  class="site_section_inner"><b>Датабанк Бизнес</b></a>
+						<a href="/business/kredity-malomu-i-srednemu-biznesu/"  class="site_section_inner">Кредиты</a>
+						<a href="/business/raschetno-kassovoe-obsluzhivanie/"  class="site_section_inner">РКО</a>
+<a href="/business/acquiring/"  class="site_section_inner">Эквайринг</a>
+						<a href="/business/bankovskie-garantii/"  class="site_section_inner">Банковские гарантии</a>
+						<a href="/business/korporativnaya-karta/"  class="site_section_inner">Корпоративная карта</a>
+						<a href="/business/konversionnye-operatsii-i-ved/"  class="site_section_inner">Конверсионные операции и ВЭД</a>
+						<a href="/business/zarplatnyy-proekt/"  class="site_section_inner">Зарплатный проект</a>
+						<a href="/business/" data-fancybox="" data-src="#other_products_business"  class="site_section_inner">Другие продукты</a>
+                        <div  style="display: none;" id="other_products_business" class="downloads_files downloads_files_padding">
+                        	<div class="title_services">Другие продукты</div>
+							<ul class="ul_services">
+								<li><a href="/business/faktoring/">Факторинг</a></li>
+								<li><a href="/business/deposits/">Депозиты для юридических лиц</a></li>
+								<li><a href="/business/operatsii-na-rynke-tsennykh-bumag/">Операции на рынке ценных бумаг</a></li>
+<li><a href="/business/priem-platezhey/">Прием платежей</a></li>
+								<li><a href="/business/documents/">Документы</a></li>
+															</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-xs-12">
+				<div class="site_map">
+					<div class="site_section_title"><a href="/aktsioneram-i-investoram/">Акционерам и инвесторам</a></div>
+					<div class="site_section_inr_box">
+						<a href="/aktsioneram-i-investoram/" class="site_section_inner title_dubl">Акционерам и инвесторам</a>
+						<a href="/aktsioneram-i-investoram/ustav-banka-i-izmeneniya-v-nego/"  class="site_section_inner">Устав Банка</a>
+						<a href="/aktsioneram-i-investoram/vnutrennie-dokumenty-reguliruyushchie-deyatelnost-organov-upravleniya"  class="site_section_inner">Внутренние документы, регулирующие деятельность органов управления Банка</a>
+						<a href="/aktsioneram-i-investoram/otchetnost/"  class="site_section_inner">Отчетность</a>
+						<a href="/aktsioneram-i-investoram/emissionnyye-dokumenty/"  class="site_section_inner">Эмиссионные документы</a>
+						<a href="/aktsioneram-i-investoram/cpiski-affilirovannykh-lits/"  class="site_section_inner">Списки аффилированных лиц</a>
+						<a href="/aktsioneram-i-investoram/soobshcheniya-o-sushchestvennykh-faktakh/"  class="site_section_inner">Сообщения о существенных фактах</a>
+						<a href="/aktsioneram-i-investoram/aktsioneram/"  class="site_section_inner">Акционерам</a>
+						<a href="/aktsioneram-i-investoram/investoram/"  class="site_section_inner">Инвесторам</a>
+						<a href="/aktsioneram-i-investoram/insayderam/"  class="site_section_inner">Инсайдерам</a>
+						<a href="/aktsioneram-i-investoram/raskrytie-informatsii-dlya-regulyativnykh-tseley/"  class="site_section_inner" style="max-width: 180px;">Раскрытие информации для регулятивных целей</a>
+						<a href="/aktsioneram-i-investoram/aktsionery-izhkombanka/"  class="site_section_inner title_dubl">Акционеры Датабанка</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row section_padding_top footer_flex">
+			<div class="footer_flex_item">
+				<div class="copir col-lg-6 col-xs-12">
+					© АО «Датабанк», 2022 <br> Лицензия ЦБ РФ №646
+				</div>
+				<div class="col-lg-6 col-xs-12 pr_footer">
+					<a href="/aktsioneram-i-investoram/aktsioneram/" class="persent_inf">
+						Информация о лицах, под контролем либо значительным влиянием которых находится Банк
+					</a>
+				</div>
+				<div class="col-lg-6 col-xs-12 pr_footer">
+					<a href="/upload/iblock/285/285c9e93f0289956960eaf47139289d0.pdf" target="_blank" class="persent_inf">
+						Информация, подлежащая раскрытию профучастником в соответствии с Указанием Банка России от 28.12.2015 г. № 3921-У
+					</a>
+				</div>
+				<div class="col-lg-6 col-xs-12">
+					<a href="/aktsioneram-i-investoram/raskrytie-informatsii-dlya-regulyativnykh-tseley/#section_pp1" class="persent_inf">
+						Информация о процентных ставках по договорам банковского вклада с физическими лицами
+					</a>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+</footer>
+</div>
+<div class="cookie-wrap">
+		<div class="cookie">
+			<div class="cookie-txt"><span>АО "Датабанк" использует файлы «cookie» с целью персонализации сервисов и повышения удобства пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. </span><br><br> Если вы не хотите использовать файлы «cookie», измените настройки браузера.
+			</div>
+			<button class="fancybox-close-small cookie-close">×</button>
+		</div>
+	</div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(60734908, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/60734908" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-161611299-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161611299-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161611299-1');
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDHLTR0S9F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RDHLTR0S9F');
+</script>
+
+
+<!-- {literal} -->
+        <script type='text/javascript'>
+        window['li'+'veT'+'ex'] = true,
+        window['liv'+'eTe'+'xID'] = 165045,
+        window['liv'+'eTex_ob'+'j'+'ect'] = true;
+        (function() {
+        var t = document['creat'+'eEl'+'ement']('script');
+        t.type ='text/javascript';
+        t.async = true;
+        t.src = '//cs15.'+'li'+'v'+'et'+'ex'+'.'+'r'+'u/js'+'/client.j'+'s';
+        var c = document['getE'+'lemen'+'tsByTagNa'+'me']('script')[0];
+        if ( c ) c['par'+'e'+'ntNod'+'e']['insert'+'Befo'+'re'](t, c);
+        else document['docu'+'ment'+'El'+'eme'+'n'+'t']['fi'+'rst'+'Chil'+'d']['a'+'ppen'+'dChil'+'d'](t);
+        })();
+        </script>
+        <!-- {/literal} -->
+
+
+</body>
+</html>

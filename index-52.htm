@@ -1,0 +1,1605 @@
+
+
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Сегодня в Ангарске, самые свежие новости</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+			<meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=yes">
+			<link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/icons/favicon.png">	
+	<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
+	<link rel="stylesheet" href="/assets/semantic.min.css" />	
+	<link rel="stylesheet" href="/assets/fotorama.min.css" />
+	<style>
+
+	html { padding: 0px 0px 0px 0px !important;	}
+
+	.ui.centered.segment { margin: 0px auto; }
+	.ui.segment { border-radius: 0px !important; border: none !important; }
+	.ui.very.padded.segment {
+		padding: 25px 30px 30px !important;
+	}
+
+	body , body.pushable {
+		/* min-width: 600px; */
+		margin: 0px 0px !important;
+		background-color: transparent;
+	}
+
+	body.light, body.light.pushable { background: transparent url('/assets/icons/whirlpool.png') repeat center center !important; }
+	body.dark, body.dark.pushable { background: transparent url('/assets/icons/tex2res4.png') repeat center center !important; }
+
+	body.pushable > .pusher { background: transparent; }
+
+	#header { background: transparent url('/assets/images/angarsk12.jpg') no-repeat center center !important; background-size: cover !important; }
+	#header {
+		position: relative;
+		padding: 50px 0px 0px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		margin-top: 0px;
+	}
+
+	#footer {
+		border-bottom-left-radius: 5px !important;
+		border-bottom-right-radius: 5px !important;
+	}
+
+	.ui.logo.header {
+		color: #fff;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 15px;
+		margin-top: -15px;
+		margin-bottom: 30px;
+		text-shadow: -1px -1px 1px #000;
+	}
+
+	#mainmenu { position: relative; overflow: hidden; border-radius: 0px; z-index: 999 !important; }
+
+	#lines {
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+		background-color: #DDD;
+		z-index: 2;
+		color: #fff !important;
+		margin: 0px 0px 0px;
+		padding: 44px 0px 0px 50%;
+		width: 100%;
+	}
+
+	#clock {
+		position: absolute;
+		top: 140px;
+		left: 27px;
+		color: #fff;
+		text-shadow: -1px -1px 1px #000;
+	}
+
+	.transparent { background-color: transparent !important; }
+
+	.ui.container { background-color: transparent;  border-radius: 0px !important; }
+
+	.ui.nopadding { padding: 0px !important; }
+	.highlight { background-color: yellow; }
+	.ui.inverted a:not(.button, .item):not(.button) { color: #fff;  }
+	.ui.inverted a:not(.button, .item):hover { color: #DDD; text-decoration: none; }
+	h5.ui.header { margin: 10px 0px 3px 0px; }
+
+	a:not(.button, .item) { color: #222; }
+	.ui.header a:not(.button, .item):visited { color: #BBB;  }
+	a:not(.button, .item):hover { color: #777; text-decoration: none; }
+
+	.inverted a:not(.button) { color: #fff !important; text-decoration: underline; }
+	.inverted a:not(.button):hover { color: #EEE !important; text-decoration: none; }
+
+	.ui.header a { border-bottom: 1px solid #DDD; }
+	.ui.header a:hover { border-bottom: none; }
+
+	.ui.menu .item.active, .ui.menu .ui.list a.active, .ui.menu .ui.list a.active:hover { font-weight: bold !important; }
+
+	.input *:focus, .field *:focus, .ui.selection.active.dropdown, .ui.selection.active.dropdown .menu { border-color: #DDD !important; background-color: #f9f9f9 !important;  }
+
+
+	.ui.menu.segment { background-color: #fff; }
+	.ui.attached.segment { border: none !important; }
+
+	.ui.full.attached.segment { border-radius: 0px; }
+	.ui.dimmer { background-color: rgba(205,205,205,0.8); }
+	.ui.bordered.segment { border-bottom: 1px solid #DDD !important; }
+
+	.statya:hover { background-color: rgba(205,205,205,0.3); border-radius: 4px; }
+	.statya .black { background-color: rgba(0,0,0,0.3); color: #fff; position: absolute; left: 0px; bottom: 0px; width: 100%; height: 40px; }
+	.statya .white { background-color: transparent; color: #999; position: relative; width: 100%; height: 20px; }
+
+	.statya .date { position: absolute; left: 20px; bottom: 10px; }
+	.statya .author { position: absolute; left: 20px; bottom: 30px; }
+	.statya .watch { position: absolute; right: 20px; bottom: 10px; }
+
+	.statya .white .date { left: 0px; }
+	.statya .white .watch { right: 0px; }
+
+	.muted { color: #999; font-size: 13px; margin-top: 10px; }
+	.muted.center { text-align: center; }
+
+
+	#board-menu {
+		box-shadow: none;
+		border: none;
+		padding: 0px !important;
+		margin: 0px !important;
+		border: 1px solid #DDD;
+	}
+
+	#menu-sub div.active {
+		background-color: transparent !important;
+	}
+
+	#menu {
+		padding-top: 20px;
+		padding-left: 15px;
+		background-color: transparent;
+	}
+
+	#menu .item {
+		padding: 0px;
+		margin-top: 10px;
+		border-radius: 0px !important;
+		border-top-left-radius: 3px !important;
+		border-top-right-radius: 3px !important;
+		background-color: #DDD;
+		margin-right: 10px;
+	}
+
+	#menu .item a {
+			padding: 10px 20px !important;
+		color: #333 !important;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	#menu .item:hover {
+		background-color: #000;
+
+	}
+
+	#menu .item:hover a, #menu .item:hover .icon {
+		color: #fff !important;
+	}
+
+	#menu .active.item {
+		margin-top: 0px;
+		background-color: #fff !important;
+	}
+
+	#menu .active.item a {
+		color: #222 !important;
+	}
+
+	#board-blocks { padding: 0px; }
+
+	#board-content .bboard {
+		width: 48%;
+		margin-bottom: 20px;
+		color: #000;
+		box-shadow: 0px 0px 3px #BBB;
+	}
+
+	#board-content .bboard:hover {
+		box-shadow: 0px 3px 10px #BBB;
+	}
+
+	.meta {
+		font-size: 13px;
+		color: #999;
+	}
+
+	#board-content .bboard .images.content {
+		overflow: hidden;
+	}
+
+	#vipusk_now { position: absolute; left: 0px; top: -40px; width: 300px; z-index: -1; }
+	.vipusk_now { width: 70px; border: 2px solid #fff; box-shadow: 0px 4px 10px #DDD; }
+
+
+	.ui.ribbon.label { text-transform: uppercase; margin: 0px 0px 20px -15px; }
+
+	#a_images {
+		width: 100%;
+		height: 60px;
+		padding: 10px;
+		background-color: #fafafa;
+		border: 1px dashed #777;
+		border-radius: 3px;
+	}
+
+	#a_images .item {
+		position: relative;
+	}
+
+	.item .remove {
+		position: absolute;
+		top: -5px;
+		right: -15px;
+	}
+
+	.fotorama  {
+		background-color: #DDD;
+	}
+
+	.fotorama__caption {
+		text-align: center;
+		display: none;
+		bottom: 40px;
+	}
+
+	.fotorama__caption__wrap {
+		background-color: lightyellow;
+	}
+
+	.ui.fluid.card { margin-bottom: 30px; }
+	.ui.yes.card { background-color: #fff; }
+
+	.gold.label {
+		background-color: gold !important;
+	}
+
+	.usluga {
+		width: 330px !important;
+		margin-bottom: 20px;
+	}
+
+	.bgimage {
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	[data-toggle-pay] { display: none; }
+
+	.dz-preview.dz-processing { opacity: 0.1; }
+	.dz-preview.dz-processing.dz-success { opacity: 1; }
+
+	@media only screen and (max-width: 800px) {
+		.ui.overflow.segment { overflow: hidden; }
+		#header {
+			background-size: 140% 140% !important;
+		}
+
+		#tree { display: none; }
+		body {
+			margin: 0px !important;
+		}
+
+		.ui.segment {
+			border-radius: 0px !important;
+		}
+
+		.ui.container {
+			margin: 0px !important;
+		}
+	}
+
+	#board-blocks .ui.bboard.card { margin-top: 0px !important; }
+	.red.status { color: orangered; }
+	.bold.status { font-weight: bold; }
+	.green.status { color: forestgreen; }
+
+	.str_wrap {
+		height: 30px !important;
+		overflow:hidden;
+		width:100%;
+		position:relative;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		user-select: none;
+		background: #333;
+		white-space:nowrap;
+	}
+
+	.str_wrap.str_active {
+		background:#333;
+	}
+	.str_move {
+		white-space:nowrap;
+		position:absolute;
+		top:11px;
+		left:0;
+		cursor:move;
+	}
+	.str_move_clone {
+		display:inline-block;
+		//display:inline;
+		//zoom:1;
+		vertical-align:top;
+		position:absolute;
+		left:100%;
+		top:0;
+	}
+	.str_vertical .str_move_clone {
+		left:0;
+		top:100%;
+	}
+
+	.str_down .str_move_clone {
+		left:0;
+		bottom:100%;
+	}
+
+	.str_vertical .str_move,
+	.str_down .str_move {
+		white-space:normal;
+		width:100%;
+	}
+
+	.str_static .str_move,
+	.no_drag .str_move,
+	.noStop .str_move{
+		cursor:inherit;
+	}
+
+	.str_wrap img {
+		max-width:none !important;
+	}
+
+	@media only screen and (max-width: 1000px) { #board-content .bboard { width: 48% !important; } }
+	@media print {
+
+		*,
+		*:before,
+		*:after,
+		*:first-letter,
+		p:first-line,
+		div:first-line,
+		blockquote:first-line,
+		li:first-line,
+		.ui.green.label,
+		.ui.yellow.label,
+		.ui.blue.label,
+		.ui.red.label {
+			background: transparent !important;
+			color: #000 !important;
+			background-color: #fff !important;
+			box-shadow: none !important;
+			text-shadow: none !important;
+			border: none !important;
+		}
+
+		.ui.container {
+			width: 100% !important;
+		}
+
+		#header, #header + .segment, .five.wide.computer.only.column, #footer  { display: none; }
+
+		#board-content {
+			width: 100% !important;
+		}
+
+		.bboard {
+			float: left !important;
+			width: 400px !important;
+			background-color: #000 !important;
+			min-width: 48% !important;
+			max-width: 48% !important;
+			border: 1px solid #333 !important;
+		}
+
+	}
+
+
+	</style>
+</head>
+
+<body data-servertime="1651105420" class="light">
+	<div class="ui container">
+		<div class="ui wide sidebar" id="mobile_category">
+			<div class="ui vertical fluid attached menu">
+									<div class="item">
+						<b><a href="/board//"></a></b><div class="ui tiny blue label" style="margin-top: 3px;"></div>
+											</div>
+							</div>
+		</div>  
+		<div class="ui pusher">
+							<div class="ui attached text segment tiny transparent menu">
+					<div class="right menu">
+						<div class="item">
+							<a class="ui button getmodal" href="#" data-modal="auth-modal">Вход для пользователей</a>
+						</div>
+						<div class="item">
+							<a class="ui button getmodal" href="#" data-modal="register-modal">Регистрация</a>
+						</div>
+						<div class="item">
+							<a href="/redakciya/" title="Редакция Свечи, телефоны, адреса"><i class="black address book icon"></i> Редакция газеты</a>
+						</div>
+					</div>
+				</div>
+							
+			<section id="header">
+				<div id="clock"></div>
+				<div class="ui attached very padded basic segment">
+					<div class="ui top aligned grid">
+						<div class="five wide computer seven wide tablet seven wide mobile column">
+							<a href="/">
+								<img src="/assets/icons/logo2.png" class="ui image">
+								<h3 class="ui inverted logo header">Ангарская информационно-рекламная газета</h3>
+							</a> 
+						</div>
+					</div>
+				</div>
+			
+				<div class="ui inverted red compact menu" id="mainmenu">
+					<div class="item"><i class="newspaper icon"></i> <a href="/" title="Повестка дня в Ангарске">Свежий номер</a></div>
+					<div class="item"><i class="grid layout icon"></i> <a href="/board/" title="Все объявления Ангарска">Объявления</a></div>
+					<!-- <div class="item"><i class="shop icon"></i> <a href="/firms/" title="Каталог фирм Ангарска с услугами и товарами">Товары и услуги</a></div> -->
+					<!-- <div class="item"><i class="cloud icon"></i> <a href="/pogoda/" title="Погода в Ангарске на 5 дней вперед">Погода</a></div> -->
+					<!-- <div class="item"><i class="bookmark icon"></i> <a href="/afisha/" title="Афиша Ангарска, события, кино, театр">Афиша</a></div> -->
+					<!-- <div class="item"><i class="star icon"></i> <a href="/goroskop/" title="Гороскоп для всех знаков на неделю">Гороскоп</a></div> -->
+					
+				</div>
+				<div id="lines"></div>
+			</section>
+			<section id="pozdravlenie" style="padding: 15px 20px; background-color: #d8d8d8;">
+				<p>Уважаемые читатели! Следующий номер газеты «Свеча» выйдет 12 мая. С 29 апреля по 9 мая в редакции выходные. С 10 мая работаем по обычному графику. <b>С Днем Победы!</b></p>
+			</section>
+			
+			<div class="ui very padded attached bordered segment">
+	<div class="ui middle aligned grid">
+		<div class="sixteen wide tablet sixteen wide mobile six wide computer column">
+						<a href="/novosti/vipusk/1715/"><img src="/picture/issue/1715.jpg" class="ui left floated image vipusk_now" /></a>
+			<h4 class="ui header" style="margin-top: 10px">Вы читаете номер №1715<div class="sub header">15.04.2022 - 21.04.2022</div></h4>
+			<a href="/novosti/vipusk/1715/" class="ui small blue left labeled icon button"><i class="table icon"></i>Содержание номера</a>
+					</div>
+		<div class="eight wide tablet eight wide mobile six wide computer column">
+			<div class="ui small fluid left labeled icon input">
+				<input type="text" placeholder="Поиск по статьям" id="search" data-table="novosti" value="">
+				<i class="search icon"></i>
+			</div>
+			<div class="center muted">Вы можете искать по слову, номеру статьи, номеру выпуска</div>
+		</div>
+		<div class="eight wide tablet eight wide mobile four wide computer right aligned column">
+			<div class="ui floating right labeled icon dropdown button">
+				<i class="dropdown icon"></i>
+				<div class="text">
+				Архив выпусков газеты
+				</div>
+				<div class="menu">
+					<a class="item" href="/novosti/arhiv/2022/">за 2022 год</a>
+					<a class="item" href="/novosti/arhiv/2021/">за 2021 год</a>
+					<a class="item" href="/novosti/arhiv/2020/">за 2020 год</a>
+					<a class="item" href="/novosti/arhiv/2019/">за 2019 год</a>
+					<a class="item" href="/novosti/arhiv/2018/">за 2018 год</a>
+					<a class="item" href="/novosti/arhiv/2017/">за 2017 год</a>
+					<a class="item" href="/novosti/arhiv/2016/">за 2016 год</a>
+					<a class="item" href="/novosti/arhiv/2015/">за 2015 год</a>
+					<a class="item" href="/novosti/arhiv/2014/">за 2014 год</a>
+					<a class="item" href="/novosti/arhiv/2013/">за 2013 год</a>
+					<a class="item" href="/novosti/arhiv/2012/">за 2012 год</a>
+					<a class="item" href="/novosti/arhiv/2011/">за 2011 год</a>
+					<a class="item" href="/novosti/arhiv/2010/">за 2010 год</a>
+				</div>
+			</div>
+			<div class="center muted">Цифровой архив за 10 лет</div>
+		</div>
+	</div>
+</div>
+<div class="search">
+
+<div class="ui very padded attached segment">
+						
+						<div class="ui yellow ribbon large label">Ангарск и Ангарчане</div>
+			<div class="ui relaxed three column stackable doubling grid">
+							<div class="column statya">
+											<a href="/novosti/statya/24056/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24056/ac3e303b791d4c20cd9f5a9f4777e524_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>539</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24056/"> Спасибо жильцам! Но не управляющей компании</a>
+						</h4>
+						<p>Уже третий год собственники дома №8 участвуют в традиционном муниципальном конкурсе «Двор, в котором я живу». Несмотря на проблемы с самоизоляцией из-за коронавируса, наша работа не приостановилась. Летом придомовая территория радовала глаз – кругом всё цвело, и в этом большая заслуга наших активных жильцов, среди которых Ольга Пчёлкина, Николай Васильев, Евгения Близняк-Куликова, Виктор Куприков, Владимир Зусайлов, Инна Городниченко и многие другие (прошу прощения, но невозможно назвать всех активистов в рамках газетной публикации).</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24080/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24080/a46ba30839029143f54e976b76e2c60e_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>470</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24080/"> Сергей Петров: «За каждой победой Ангарска стоит конкретный человек, его умение работать на результат»</a>
+						</h4>
+						<p>20 апреля состоялся традиционный публичный отчет главы
+
+Ангарского округа Сергея Петрова – со сцены ДК «Нефтехимик» мэр представил главные результаты деятельности администрации АГО в 2021 году и рассказал представителям регионального правительства и муниципалитетов, депутатам и жителям Ангарска об основных направлениях муниципальной политики в 2022 году. </p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24051/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24051/5e56ab02c86a24eb2db7bbc49cf5b902_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>458</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24051/"> Семейные реликвии – письма с фронта</a>
+						</h4>
+						<p>В преддверии приближающегося Дня Победы в Великой Отечественной войне я вновь перечитываю письма, присланные с фронта старшим братом Александром. Каждый раз, вспоминая о нем, я рассматриваю фотографии, сохранившиеся в семейном альбоме, и фронтовые треугольники, в которых уже трудно разобрать текст написанного, но некоторые фрагменты которых чудом уцелели. </p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24053/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24053/5b2541bc8770aabe408e2a26fe658ee6_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>486</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24053/"> Жизнь с СМА</a>
+						</h4>
+						<p>21-летний ангарчанин Данил Гавриченко бесплатно получил одно из самых дорогих в мире лекарств
+
+Сколько стоит жизнь человека? Жизнь Данил Гавриченко стоит 20 миллионов рублей. Именно такова стоимость годового курса жизненно необходимого ему препарата рисдиплам. И с начала апреля он получает его бесплатно. Для Данила, страдающего спинально-мышечной атрофией, это означает второе рождение. Мы хотим рассказать его историю, чтобы люди, оказавшиеся в трудной, а порой просто отчаянной жизненной ситуации, не опускали руки, верили в лучшее и боролись за себя и своих близких до конца.</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24052/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24052/446c158c39ba7d345aeed59c56e9f3eb_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>467</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24052/"> Солдаты-срочники не будут участвовать в спецоперации!</a>
+						</h4>
+						<p>13 апреля в помещении военного комиссариата прошла пресс-конференция, посвященная весеннему призыву в ряды Российской армии. На вопросы журналистов местных СМИ ответил недавно назначенный на должность военного комиссара нашего города подполковник Александр Сурин.</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24058/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24058/1ee330a61b169ae06489d1236964f370_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>502</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24058/"> Тотальных слонов раздали. Работаем над ошибками!</a>
+						</h4>
+						<p>В понедельник, 18 апреля, в литературной гостиной библиотеки №3 имени Леонида Беспрозванного состоялось награждение отличников «Тотального диктанта-2022». Из 136 ангарчан – участников международной акции по проверке грамотности – десять человек получили за диктант, достаточно сложный с точки зрения пунктуации, «пятерку».</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24055/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24055/1c49f7cd5f907c0d6274b38c2fde4aec_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>498</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24055/"> Гаражи под снос!</a>
+						</h4>
+						<p>Еще неделю назад между домами №2 и №3 в квартале 95б находились новенькие гаражные боксы – с улицы Алешина можно было видеть длинное строение с кровлей из металлочерепицы и воротами-рольставнями. А семь лет назад на этом месте был пустырь, и мало кто из местных жителей тогда догадывался, что этот земельный участок имеет владельца с большими коммерческими планами. По нашей информации, речь идет о предпринимателе Романе Савченко, который в 2019 году был кандидатом в депутаты Думы АГО, а сейчас проживает в Краснодарском крае.
+Именно он и затеял строительство гаражей, которое было частично реализовано. Второе строение не было закончено. А в пятницу, 15 апреля, начался их снос. Рабочие сначала сняли металлочерепицу, а потом стали разбирать деревянные перекрытия кровли. Работали аккуратно – потому что была вероятность, что в боксах могут находиться автомобили. К понедельнику целой оставалась только бетонная конструкция боксов, но ее ждет разрушительное действие тяжелой техники. Через несколько дней демонтаж должен завершиться – и на месте гаражей вновь будет пустырь...</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24057/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24057/0a89cca95e8f20f23cef97de7c728ed4_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>446</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24057/"> Любовь без коррозии</a>
+						</h4>
+						<p>65-летие супружества не зря называют железной свадьбой – в этом возрасте семейные узы крепки, как металл, который уже неспособна повредить коррозия бытовых проблем. Такой юбилей отмечают те немногие, кто сумел пронести свои чувства сквозь шесть с половиной десятков лет. Да и самим юбилярам, как правило, давно за 80. В минувшую субботу в Ангарском ЗАГСе чествовали «железных» супругов Сыпало – счастливых, дружных, окруженных своими близкими и смущенных всеобщим вниманием.</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24059/"> 26 апреля – День участников ликвидации последствий радиационных аварий и катастроф и памяти жертв этих аварий и катастроф</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>447</div>
+						</div>
+						<p>Чернобыльская трагедия 1986 года затронула жизни множества людей, авария стала одной из крупнейших как по масштабам причиненного ущерба, так и по количеству тех, кто был задействован в ее ликвидации.</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24060/"> Когда ждать президентских выплат на детей</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>447</div>
+						</div>
+						<p>Совсем скоро в Ангарском отделении Пенсионного фонда РФ начнут принимать заявления на выплаты семьям, воспитывающим детей от 8 до 16 лет. О том, как это будет происходить, в минувший понедельник нам рассказала заместитель начальника управления организации работы клиентских служб ОПФР по Иркутской области Раиса Белоусова-Милославцева. </p>
+									</div>
+						</div>
+			<div class="ui section hidden divider"></div>
+				
+					
+					
+						<div class="ui yellow ribbon large label">Происшествия и криминал</div>
+			<div class="ui relaxed three column stackable doubling grid">
+							<div class="column statya">
+											<a href="/novosti/statya/24074/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24074/5a75dd8701636864c5add1008bb3dc00_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>281</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24074/"> Опасное интернет-знакомство</a>
+						</h4>
+						<p>Если вы ищете вторую половинку через соцсети, заблаговременно вооружитесь информацией о подставных свиданиях, под которые нередко замаскированы преступления с целью грабежа и вымогательства. Как правило, подобные рандеву происходят по схожему сценарию: симпатичная девушка после виртуального знакомства соглашается на очную встречу с якобы понравившимся ей незнакомцем. На деле же она оказывается всего лишь приманкой, используемой злоумышленниками.</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24078/"> Мать-алиментщицу взяли под стражу в зале суда</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>261</div>
+						</div>
+						<p>На днях Ангарский городской суд рассмотрел уголовное дело в отношении 25-летней ангарчанки, которая в течение длительного времени умышленно уклонялась от возложенной на нее обязанности ежемесячно выплачивать алименты.</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24076/"> Месть по-соседски</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>250</div>
+						</div>
+						<p>На этой неделе в дежурную часть полиции поступило заявление о поджоге легкового автомобиля. Владелец сообщил оперативникам, что поздним вечером увидел из окна вспышку, а затем пламя в задней части своего транспортного средства. Мужчина сразу выбежал на улицу, и ему удалось быстро справиться с огнем. Однако повреждения его транспорт всё же получил.</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24079/"> Похищали людей и «воспитывали»</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>265</div>
+						</div>
+						<p>Оружие, балаклавы, банковские карты и мобильные телефоны – эти предметы были обнаружены в ходе обыска у четверых жителей областного центра, обвиняемых в совершении ряда эпизодов преступления, предусмотренного п.п. «а», «в», «г» ч. 2 ст. 126 УК РФ «Похищение человека, совершенное группой лиц по предварительному сговору, с применением насилия, опасного для жизни или здоровья, либо с угрозой применения такого насилия, с применением оружия или предметов, используемых в качестве оружия».</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24077/"> Розыск подозреваемого в краже аккумулятора</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>260</div>
+						</div>
+						<p>Полиция Ангарска разыскивает подозреваемого в краже аккумулятора из магазина бытовой техники: потенциальный покупатель взял товар с витрины, спрятал его в сумку и ушел из магазина, не оплатив товар на кассе.</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24075/"> Ты – мне, я – тебе</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>251</div>
+						</div>
+						<p>ритон для наркозависимых устроила у себя в квартире жительница 16 квартала Ангарска. Женщина более 15 лет сама страдала пагубной зависимостью, нигде не работала, и, естественно, денег на при-обретение «отравы» у нее не было. Тогда она предложила своим знакомым употреблять наркотики у нее дома, поскольку на улице их могли задержать сотрудники полиции.</p>
+									</div>
+						</div>
+			<div class="ui section hidden divider"></div>
+				
+						<div class="ui yellow ribbon large label">Культпоход</div>
+			<div class="ui relaxed three column stackable doubling grid">
+							<div class="column statya">
+											<a href="/novosti/statya/24063/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24063/f7209c1fec252ff666e1c0796a76e83b_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>285</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24063/"> Четверть века с «Перезвонами»</a>
+						</h4>
+						<p>14 апреля сцена Дворца культуры «Нефтехимик» стала местом проведения значимого для города события. Здесь при полном аншлаге прошел юбилейный концерт образцового оркестра русских народных инструментов «Перезвоны» детской школы искусств №3. Коллектив, возглавляемый директором школы Татьяной Зелениной, отметил свое 25-летие ярким и радостным музыкальным представлением «С любовью в сердце, с музыкой в душе!». </p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24064/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24064/cae1dea950aaece3a92d9ac759314e8d_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>235</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24064/"> Чемпионат мира в Ангарске</a>
+						</h4>
+						<p>И такое случается в нашем провинциальном, но стремительно развивающемся городе. Первый в истории настоящий чемпионат мира состоялся в минувшее воскресенье в центре чтения Центральной городской библиотеки. Соревнования проходили в рамках городского отборочного этапа всемирного чемпионата по чтению вслух на русском языке «Открой рот». Напомним, турнир организован Межрегиональной федерацией чтения. В Ангарске масштабный просветительский проект поддержало одно из крупных предприятий Ангарска – торговая марка «Марчук». </p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24065/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24065/bfd45e894ed6a1df53ff300b6fb31048_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>321</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24065/"> Музей часов «выходит в люди»</a>
+						</h4>
+						<p>Просмотр уникальной часовой коллекции Ангарского городского музея теперь доступен тем, кто в силу возраста или здоровья не может посещать культурные учреждения. 15 апреля музейная экскурсия состоялась… дома у председателя организации жителей блокадного Ленинграда Светланы Путильцевой.</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24066/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24066/b100d60232f5f90e5afa88d0fda2c359_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>242</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24066/"> «Приятно быть рождённым в апреле»</a>
+						</h4>
+						<p>Так заявил на творческом вечере, посвященном своему 70-летию, Валерий Дмитриевский. Геолог, поэт, писатель, редактор, член Союза писателей России, он отметил свой юбилей 16 апреля в литературной гостиной библиотеки №3 имени Леонида Беспрозванного. Хотя день рождения у Валерия Васильевича был 3 апреля.</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24062/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24062/afbe4de509fb5be1a36be7aa86ff74ca_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>234</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24062/"> «Родничок» – в финале!</a>
+						</h4>
+						<p>У нас хорошая новость! В конце прошлой недели, 15 апреля, ребята из театрального объединения «Родничок» ангарского Дворца творчества детей и молодежи ездили в Иркутск со спектаклем «Детвора» по рассказам Антона Чехова.</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24067/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24067/9c0ab6721396d58fd43acdc073ea80ac_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>245</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24067/"> Чтобы вспомнили…</a>
+						</h4>
+						<p>Ежегодно перед Днем Победы в Великой Отечественной войне 1941-1945 годов в «Ретрозале» Централизованной библиотечной системы Ангарска открывается тематическая книжная выставка.</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24061/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24061/1dbe864ecf5c29daee7d42b9700600a2_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>255</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24061/"> Хрупкие создания Сергея Малявина</a>
+						</h4>
+						<p>Древнее предание гласило, что, когда Мария Магдалина принесла императору Тиберию весть о воскресении Иисуса Христа, не поверивший в эту новость властитель узрел чудо: в руках его, где он держал куриное яйцо, оно окрасилось в красный цвет. В наше время именно это предание связывают с традицией окрашивать пасхальные яйца во всевозможные цвета.</p>
+									</div>
+						</div>
+			<div class="ui section hidden divider"></div>
+				
+						<div class="ui yellow ribbon large label">Ваше здоровье</div>
+			<div class="ui relaxed three column stackable doubling grid">
+							<div class="column statya">
+											<a href="/novosti/statya/24050/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24050/7083747b5ed9d27b02bc58e69aaccfd8_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>244</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24050/"> Взрослые дети</a>
+						</h4>
+						<p>Социальных работников Ангарска обучают работе со сложными пациентами
+
+Надо сразу пояснить, что под словом «сложные» подразумеваются нездоровые люди, страдающие серьезными физическими и психическими недугами. На прошлой неделе в актовом зале Ангарского психоневро-логического интерната для соцработников была организована лекция на тему «Общение с людьми с ментальной инвалидностью». Заместитель директора по медицинской части ОГАУСО «АПНИ» Яна Юринская рассказывала об особенностях развития и поведения людей с психико-эмоциональными нарушениями.</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24054/"> Как победить варикоз?</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>258</div>
+						</div>
+						<p>Сохранить красоту и здоровье наших ног сегодня позволяют новые технологии. Многие слышали о лечении варикоза лазером, но мало кто знает подробности.</p>
+									</div>
+						</div>
+			<div class="ui section hidden divider"></div>
+				
+					
+					
+						<div class="ui yellow ribbon large label">Стадион</div>
+			<div class="ui relaxed three column stackable doubling grid">
+							<div class="column statya">
+											<a href="/novosti/statya/24072/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24072/d776f20ec970fdcb273f88cecd9f323e_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>237</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24072/"> 28 медалей из 29 возможных</a>
+						</h4>
+						<p>С 15 по 17 апреля в Иркутске прошли чемпионат и первенство города по кикбоксингу памяти Героя Советского Союза Аркадия Сударева. По итогам соревнований в копилке сборной школы имени Валерия Башурова 28 медалей: 11 золотых, 10 серебряных и 7 бронзовых. </p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24068/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24068/95810e41d4158089dc525d2e655dccf4_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>238</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24068/"> Генеральная репетиция перед Кубком Сибири</a>
+						</h4>
+						<p>Прыжки на батуте – красивый олимпийский вид спорта, включающий в себя такие спортивные дисциплины, как индивидуальные прыжки, синхронные прыжки, акробатическая дорожка и двойной минитрамп. Ангарские спортсмены, воспитанники тренеров СШОР «Ермак» Геннадия Старыгина и Ирины Красниковой, делают успехи в этих дициплинах.</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24069/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24069/9471d5d3f16b198f743e3a51752d0736_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>233</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24069/"> Александр Некрасов – чемпион СФО</a>
+						</h4>
+						<p>В Краснодаре завершились Всероссийские соревнования по настольному теннису среди сборных команд территориальных органов МЧС России по федеральным округам России. В личных зачетах все представители команды Сибирского федерального округа заняли призовые места, а сама сборная стала победителем турнира.</p>
+									</div>
+							<div class="column statya">
+											<a href="/novosti/statya/24073/">
+							<div style="position: relative; border-radius: 2px; height: 230px !important; width: 100% !important; margin: 0px 0 0 0px; background: #f5f5f5 url('/images/novosti/24073/516506d3ad5d6c0ad7095ddce06514a6_b.jpg') no-repeat left top; background-size: cover;">
+								<div class="black">
+									<div class="date"></div>
+									<div class="watch"><i class="eye icon"></i>241</div>
+								</div>
+							</div>
+						</a>
+						<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24073/"> Кубок вызова остается в Ангарске</a>
+						</h4>
+						<p>Спортивный зал школы олимпийского резерва «Ангара» в минувшую субботу стал местом проведения баскетбольного Кубка вызова. Два коллектива – баскетбольные клубы «Ангара» (Ангарск) и «Иркут» (Иркутск) – задались целью провести своеобразный мини-фестиваль по самой популярной игре с мячом в мире. Организаторы решили, что помериться силами должны юноши 13-14 лет, показав, чему их научили, как они любят баскетбол и какие у них перспективы на будущее. Кроме того, целью этого мероприятия было укрепление спортивных и дружеских связей между баскетбольными центрами Приангарья. Цели благородные, задачи выполнимые, плюс настроение праздничное и настрой боевой.
+</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24070/"> Золотой «Триумф» Ангарского политехникума</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>226</div>
+						</div>
+						<p>14-15 апреля в городе Черемхово состоялся финал первенства по волейболу в зачёт XIV спартакиады «Молодёжно-спортивная лига «Юность России» и «Олимпийские надежды» среди сильнейших юношеских команд профессиональных образовательных организаций Иркутской области.</p>
+									</div>
+							<div class="column statya">
+											<h4 class="ui header" style="margin-top: 10px;">
+							<a href="/novosti/statya/24071/"> Новости СШОР «Сибиряк»</a>
+						</h4>
+						<div class="white">
+							<div class="date"></div>
+							<div class="watch"><i class="eye icon"></i>247</div>
+						</div>
+						<p>Школа олимпийского резерва «Сибиряк» всегда была в авангарде спортивной жизни нашего города, командируя на соревнования различного уровня – от областного до международного – своих воспитанников.  Правда, в свете последних событий главными становятся  новости межрегиональных  и российских арен.</p>
+									</div>
+						</div>
+			<div class="ui section hidden divider"></div>
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+	</div></div>
+
+			<div class="ui very padded attached inverted segment" id="footer">
+				
+				<div class="ui doubling three column grid">
+					<div class="left aligned column">
+						<h4 class="ui inverted header">РЕДАКЦИЯ</h4>
+						<div class="ui inverted list">
+							<a class="item" href="/redakciya/">Информация о газете</a>
+							<a class="item" href="/redakciya/bloki_v_gazete/">Расценки на рекламу</a>
+						</div>
+						Телефон: <a href="tel:83955522491">8 (3955) 52-24-91</a><br>
+						Почта: <a href="mailto:svecha_1992@mail.ru">svecha_1992@mail.ru</a>
+					</div>
+					
+					<div class="left aligned column">
+						<h4 class="ui inverted header">РАЗДЕЛЫ</h4>
+						<div class="ui inverted list">
+							<a class="item" href="/board/">Объявления Ангарска</a>
+							<a class="item" href="/novosti/arhiv/2021/">Архив газеты за 2021 год</a>
+						</div>
+					</div>
+				</div>
+				<div class="ui section big divider"></div>
+			
+				<div class="ui doubling bottom aligned grid">
+					<div class="left aligned twelve wide column">
+						<p>&copy; 1992-2020 &bull; Информационно-рекламная газета города Ангарска «СВЕЧА»</p>
+						<p><a href="/redakciya/personal_data">Соглашение на обработку персональных данных</a><br>
+						По вопросам удаления ваших данных из системы пришлите запрос в свободной форме на&nbsp;редакционую почту.
+					</div>
+					<div class="right aligned four wide column">
+						 
+							<!--LiveInternet counter--><script type="text/javascript">document.write("<a href='//www.liveinternet.ru/click' "+"target=_blank><img src='//counter.yadro.ru/hit?t44.7;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,80))+";"+Math.random()+"' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script><!--/LiveInternet-->
+											</div>
+				</div>
+			</div>
+		</div>
+		<br />
+
+		<div class="ui basic small long modal" id="auth-modal">
+			<div class="content">
+				<div class="ui very padded segment" style="margin: 0 auto; width: 400px;">
+					<h2 class="ui header">Вход для пользователей<div class="sub header">Чтобы добавлять объявления нужно авторизоваться, если вы не зарегистрированы, то нажмите <a href="#" class="getmodal" data-modal="register-modal">здесь</a>.</div></h2>
+					<div class="ui sending form" id="auth">
+						<div class="field">
+							<label>Логин</label>
+							<input type="text" name="auth[login]" placeholder="">
+						</div>
+
+						<div class="field" id="sms_code">
+							<label>Пароль</label>
+							<input type="password" name="auth[password]" placeholder="">
+						</div>
+						<button class="ui basic button" data-action="close">Закрыть окно</button>
+						<button class="ui green left labeled icon submit button"><i class="sign in icon"></i>Войти</button>
+					</div>
+					<div class="ui negative result message" style="display: none;"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui basic small long modal" id="register-modal">
+			<div class="content">
+			<div class="ui very padded segment" style="margin: 0 auto; width: 500px;">
+				<h2 class="ui header">Регистрация нового пользователя</h2>
+				<div class="ui sending form" id="register">
+					<div class="two fields">
+						<div class="field">
+							<label>Выберите себе логин</label>
+							<input type="text" name="register[login]" placeholder="" id="regcheck">
+							<div class="ui message" style="display: none;"></div>
+						</div>
+
+						<div class="field">
+							<label>Придумайте пароль</label>
+							<input type="password" name="register[password]" placeholder="">
+						</div>
+					</div>
+					<div class="ui positive message">
+						<p>Логин и пароль могут состоять из латинских букв и цифр.
+						<br />Логин и пароль принимаются больше 6 символов!</p>
+					</div>
+
+					<div class="field">
+						<label>Ваша электронная почта</label>
+						<input type="text" name="register[email]" placeholder="">
+					</div>
+
+					<div class="field">
+						<label>Как вас зовут</label>
+						<input type="text" name="register[name]" placeholder="">
+					</div>
+
+					<div class="field">
+						<label>Номер вашего сотового телефона</label>
+						<input type="text" name="register[phone]" class="phonemask" placeholder="">
+					</div>
+
+					<!--<div class="ui positive message">
+						<p>На него будет отправлена смс с кодом завершения регистрации</p>
+					</div>-->
+					
+					<div class="field">
+						<div class="ui checkbox">
+							<input type="checkbox" name="register[agree]" value="argee">
+							<label>Я даю <u><a href="/redakciya/personal_data/">согласие на обработку персональных данных</a></u></label>
+						</div>
+					</div>
+
+					<button class="ui basic button" data-action="close">Закрыть окно</button>
+					<button class="ui left labeled icon submit green button"><i class="add user icon"></i>Зарегистрироваться</button>
+				</div>
+				<div class="ui negative result message" style="display: none;"></div>
+			</div>
+				
+			</div>
+		</div>
+
+		<div class="ui basic long small modal" id="usluga"><i class="close icon"></i><div class="image content"></div></div>
+	</div>
+
+	<script src="/assets/jquery.min.js" type="text/javascript"></script>
+	<script src="/assets/semantic.min.js" type="text/javascript"></script>
+	<script src="/assets/fotorama.min.js" type="text/javascript"></script>
+	<script src="/assets/masonry.pkgd.min.js" type="text/javascript"></script>
+	<script src="/assets/functions.min.js" type="text/javascript"></script>
+	<!-- <script src="/assets/snowstorm.js" type="text/javascript"></script>-->
+	<script type="text/javascript">
+
+$(document).ready(function() {	
+	$('#stroka').liMarquee({
+		direction: 'left',
+		scrollamount: 100,
+		drag: false,
+		xml: '/json/lines.xml'
+	});
+	
+	$('#clock').clock({
+		'timestamp': parseInt($('body').attr('data-servertime')),
+		'langSet': 'ru',
+		'dateFormat': 'Сегодня '+'l, d M Y, ',
+		'timeFormat': ''
+	});
+
+	// countable textarea [модифицированна под подсчет строк для новых объявлений платных]
+	(function(a){a.fn.simplyCountable=function(c){c=a.extend({counter:".symbol_counter",countType:"characters",maxCount:140,strictMax:false,countDirection:"down",safeClass:"safe",overClass:"over",thousandSeparator:",",onOverCount:function(){},onSafeCount:function(){},onMaxCount:function(){}},c);var b=[33,34,35,36,37,38,39,40];return a(this).each(function(){var f=a(this);var e=a(c.counter);if(!e.length){return false}var d=function(){var m;var l;var i=function(o){return o-(o*2)+c.maxCount}; var n=function(){return(c.countDirection==="up")?l:m};var g=function(p){var q="";if(c.thousandSeparator){p=p.toString();if(p.match(/^-/)){p=p.substr(1);q="-"}for(var o=p.length-3;o>0;o-=3){p=p.substr(0,o)+c.thousandSeparator+p.substr(o)}}return q+p};var h=function(o){f.val(o).trigger("change")};if(c.countType==="words"){m=c.maxCount-a.trim(f.val()).split(/\s+/).length;if(f.val()===""){m+=1}}else{m=c.maxCount-f.val().length}l=i(m);if(c.strictMax&&m<=0){var k=f.val();if(m<0){c.onMaxCount(n(),f,e)}if(c.countType==="words"){var j=k.match(new RegExp("\\s?(\\S+\\s+){"+c.maxCount+"}"));if(j){h(j[0])}}else{h(k.substring(0,c.maxCount))}m=0,l=c.maxCount}e.text(g(n()));  NEW_STROK = Math.ceil(g(n())/26); $('.stoit_stroka').html(NEW_PAY); $('.strok_counter').html(NEW_STROK+' '+ending(NEW_STROK, ['строка', 'строки', 'строк'])); $('.money_counter').html(NEW_STROK*NEW_PAY); if (NEW_STROK > 0) $('#board_summ').show(); else  $('#board_summ').hide(); if(!e.hasClass(c.safeClass)&&!e.hasClass(c.overClass)){if(m<0){e.addClass(c.overClass)}else{e.addClass(c.safeClass)}}else{if(m<0&&e.hasClass(c.safeClass)){e.removeClass(c.safeClass).addClass(c.overClass);c.onOverCount(n(),f,e)}else{if(m>=0&&e.hasClass(c.overClass)){e.removeClass(c.overClass).addClass(c.safeClass);c.onSafeCount(n(),f,e)}}} };d();f.on("keyup blur paste",function(g){switch(g.type){case"keyup":if(a.inArray(g.which,b)<0){d()}break;case"paste":setTimeout(d,(g.type==="paste"?3000:0));break;default:d();break}})})}})(jQuery);
+
+	// атлас и тэги
+	var ATLAS = {"novosti":{"rubrics":{"25":{"title":"\u0413\u043b\u0430\u0432\u043d\u044b\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438 \u0433\u043e\u0440\u043e\u0434\u0430","link":"glavnoe","id":"25"},"15":{"title":"\u0410\u043d\u0433\u0430\u0440\u0441\u043a \u0438 \u0410\u043d\u0433\u0430\u0440\u0447\u0430\u043d\u0435","link":"article","id":"15"},"1":{"title":"\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430","link":"politic","id":"1"},"14":{"title":"\u041a\u043e\u0440\u043e\u0442\u043a\u0438\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438","link":"short_news","id":"14"},"17":{"title":"\u041f\u0440\u043e\u0438\u0441\u0448\u0435\u0441\u0442\u0432\u0438\u044f \u0438 \u043a\u0440\u0438\u043c\u0438\u043d\u0430\u043b","link":"criminal","id":"17"},"16":{"title":"\u041a\u0443\u043b\u044c\u0442\u043f\u043e\u0445\u043e\u0434","link":"culture","id":"16"},"13":{"title":"\u0412\u0430\u0448\u0435 \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u0435","link":"health","id":"13"},"23":{"title":"\u0412\u043e\u043f\u0440\u043e\u0441-\u043e\u0442\u0432\u0435\u0442","link":"question","id":"23"},"24":{"title":"\u0412\u0441\u0442\u0440\u0435\u0447\u043d\u0430\u044f \u043f\u043e\u043b\u043e\u0441\u0430","link":"auto","id":"24"},"19":{"title":"\u0421\u0442\u0430\u0434\u0438\u043e\u043d","link":"sport","id":"19"},"18":{"title":"\u0428\u043a\u043e\u043b\u044c\u043d\u0430\u044f \u0436\u0438\u0437\u043d\u044c","link":"school","id":"18"},"20":{"title":"\u0414\u0435\u0442\u0441\u043a\u0430\u044f \u043a\u043e\u043c\u043d\u0430\u0442\u0430","link":"child","id":"20"},"21":{"title":"\u041b\u044e\u0434\u0438 \u0438 \u0437\u0432\u0435\u0440\u0438","link":"zver","id":"21"},"26":{"title":"\u0421 \u043c\u0438\u0440\u0443 \u043f\u043e \u043d\u0438\u0442\u043a\u0435","link":"po_nitke","id":"26"},"27":{"title":"\u0412\u0441\u0451 \u043e\u0431\u043e \u0432\u0441\u0451\u043c","link":"vse_obo_vsem","id":"27"},"28":{"title":"\u0413\u0440\u043e\u043c\u043a\u043e\u0435 \u0434\u0435\u043b\u043e","link":"gromkoe_delo","id":"28"},"29":{"title":"\u0410\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u043e","link":"actualno","id":"29"},"30":{"title":"\u041f\u0435\u0440\u0441\u043e\u043d\u0430","link":"persona","id":"30"},"31":{"title":"\u041e\u0442 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u043b\u0438\u0446\u0430","link":"first_person","id":"31"},"32":{"title":"\u0416\u041a\u0425","link":"gkh","id":"32"},"33":{"title":"\u0412\u0435\u0437\u0434\u0435\u0445\u043e\u0434","link":"vezdehod","id":"33"},"34":{"title":"\u042e\u0431\u0438\u043b\u0435\u0439","link":"yubiley","id":"34"},"35":{"title":"\u0424\u0438\u0442\u0438\u043b\u0435\u043a","link":"fitilek","id":"35"},"36":{"title":"\u041f\u0438\u0441\u044c\u043c\u0430 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u0435\u0439","link":"letters","id":"36"}},"authors":{"10":{"name":"\u0418\u0440\u0438\u043d\u0430 \u0421\u0443\u0442\u044b\u0440\u0438\u043d\u0430","id":"10"},"11":{"name":"\u0412\u0435\u0440\u0430 \u0418\u043d\u0451\u0448\u0438\u043d\u0430","id":"11"},"12":{"name":"\u0414\u0430\u0440\u044c\u044f \u041c\u0430\u043c\u043e\u043d\u043e\u0432\u0430","id":"12"},"13":{"name":"\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u0414\u0430\u043d\u0447\u0438\u043d\u043e\u0432\u0430","id":"13"},"14":{"name":"\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430 \u0421\u043f\u0435\u0448\u0438\u043b\u043e\u0432\u0430","id":"14"},"15":{"name":"\u0412\u0435\u0440\u043e\u043d\u0438\u043a\u0430 \u0422\u0438\u0445\u043e\u043d\u043e\u0432\u0430","id":"15"},"16":{"name":"\u041c\u0430\u0440\u0438\u044f \u041e\u0442\u0440\u0430\u0434\u0438\u043d\u0430","id":"16"},"17":{"name":"\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u0421\u0430\u0442\u043a\u0438\u043d\u0430","id":"17"},"18":{"name":"\u041e\u043b\u0435\u0441\u044f \u041f\u0430\u0432\u043b\u044e\u0447\u0435\u043d\u043a\u043e","id":"18"},"19":{"name":"\u0418\u0440\u0438\u043d\u0430 \u041a\u0430\u043b\u043c\u044b\u043a\u043e\u0432\u0430","id":"19"},"20":{"name":"\u041e\u043b\u0435\u0433 \u0413\u0430\u0440\u0430\u0435\u0432","id":"20"},"21":{"name":"\u0414\u0435\u043d\u0438\u0441 \u0421\u043e\u043a\u043e\u043b\u043e\u0432","id":"21"},"22":{"name":"\u0414\u0438\u043d\u0430 \u0421\u0432\u0435\u0442\u043b\u043e\u0432\u0430","id":"22"},"23":{"name":"\u0410\u043d\u043d\u0430 \u0421\u043e\u0440\u043e\u043a\u0438\u043d\u0430","id":"23"},"24":{"name":"\u041c\u0430\u0448\u0430 \u0420\u0443\u0441\u0438\u043d\u0430","id":"24"},"25":{"name":"\u0418\u0440\u0438\u043d\u0430 \u041c\u0430\u043b\u044c\u0446\u0435\u0432\u0430","id":"25"},"26":{"name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u042e\u0440\u044c\u0435\u0432","id":"26"},"27":{"name":"\u0410\u043d\u0444\u0438\u0441\u0430 \u041c\u0430\u043a\u0430\u0440\u043e\u0432\u0430","id":"27"},"28":{"name":"\u0415\u0432\u0433\u0435\u043d\u0438\u0439 \u041a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0438\u043d\u043e\u0432","id":"28"},"29":{"name":"\u0422\u0430\u043c\u0430\u0440\u0430 \u041d\u0435\u0444\u0435\u0434\u044c\u0435\u0432\u0430","id":"29"},"30":{"name":"\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430 \u041f\u0430\u0432\u043b\u043e\u0432\u0430","id":"30"},"31":{"name":"\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u0412\u0430\u0432\u0438\u043b\u043e\u0432\u0430","id":"31"},"32":{"name":"\u0412\u0438\u043a\u0442\u043e\u0440 \u0413\u0440\u0438\u0433\u043e\u0440\u044c\u0435\u0432","id":"32"},"33":{"name":"\u0412\u0430\u0448 \u043a\u043e\u0442 \u0424\u0438\u0442\u0438\u043b\u044c","id":"33"},"34":{"name":"\u0412\u0435\u0440\u043e\u043d\u0438\u043a\u0430 \u0422\u0438\u0445\u043e\u043d\u043e\u0432\u0430","id":"34"},"35":{"name":"\u0415\u0432\u0433\u0435\u043d\u0438\u044f \u0414\u0430\u0432\u044b\u0434\u043e\u0432\u0430","id":"35"},"37":{"name":"\u041d\u044d\u043b\u043b\u0438 \u0428\u0435\u0432\u044f\u043a\u043e\u0432\u0430","id":"37"},"38":{"name":"\u041b\u044e\u0431\u043e\u0432\u044c \u0411\u0443\u0440\u043b\u0430\u043a\u043e\u0432\u0430","id":"38"},"39":{"name":"\u041e\u043b\u044c\u0433\u0430 \u041a\u0440\u044b\u043b\u043e\u0432\u0430","id":"39"},"40":{"name":"\u0415\u043b\u0435\u043d\u0430 \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432\u0430","id":"40"},"41":{"name":"\u0421\u0435\u0440\u0433\u0435\u0439 \u0415\u0432\u0440\u043e\u0448\u0438\u043d","id":"41"},"42":{"name":"\u041c\u0430\u0440\u043a \u041a\u043e\u043f\u044b\u043b\u043e\u0432","id":"42"},"43":{"name":"\u041a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0438\u043d \u0415\u0432\u0442\u0443\u0448\u0435\u043d\u043a\u043e","id":"43"},"44":{"name":"\u041b\u044e\u0434\u043c\u0438\u043b\u0430 \u041e\u0433\u043d\u0435\u0432\u0430","id":"44"},"45":{"name":"\u041b\u0435\u043e\u043d\u0438\u0434 \u0411\u0435\u0441\u043f\u0440\u043e\u0437\u0432\u0430\u043d\u043d\u044b\u0439","id":"45"},"46":{"name":"\u042d\u043b\u044f \u041f\u043e\u043a\u0440\u043e\u0432\u0441\u043a\u0430\u044f","id":"46"},"47":{"name":"\u0410\u043b\u0451\u043d\u0430 \u0420\u043e\u043c\u0430\u043d\u044e\u043a","id":"47"},"48":{"name":"\u0410\u043b\u0438\u0441\u0430 \u041a\u043d\u044f\u0437\u0435\u0432\u0430","id":"48"},"49":{"name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u0417\u043b\u0435\u043d\u043a\u043e","id":"49"},"50":{"name":"\u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u042f\u043a\u043e\u0432\u043b\u0435\u0432\u0430","id":"50"},"52":{"name":"\u0413\u0430\u043b\u0438\u043d\u0430 \u0421\u043c\u044b\u0448\u043b\u044f\u0435\u0432\u0430","id":"52"},"53":{"name":"\u041c\u0430\u0440\u0438\u043d\u0430 \u041a\u043b\u0438\u043c\u043e\u0432\u0430","id":"53"},"54":{"name":"\u041c\u0438\u0445\u0430\u0438\u043b \u0410\u043d\u0442\u043e\u043d\u043e\u0432","id":"54"},"55":{"name":"\u0415\u043b\u0435\u043d\u0430 \u041d\u043e\u0432\u0435\u043d\u044c\u043a\u0430\u044f","id":"55"},"57":{"name":"\u0418\u0440\u0438\u043d\u0430 \u041b\u043e\u0431\u0430\u0447\u0451\u0432\u0430","id":"57"},"58":{"name":"\u0418\u0433\u043e\u0440\u044c \u041c\u0435\u0434\u0432\u0435\u0434\u0435\u0432","id":"58"},"59":{"name":"\u0410\u043d\u0442\u043e\u043d \u0421\u0435\u043b\u0438\u0432\u0430\u043d\u043e\u0432","id":"59"},"60":{"name":"\u041c\u0438\u0445\u0430\u0438\u043b \u0421\u0435\u043b\u0438\u0432\u0430\u043d\u043e\u0432","id":"60"},"61":{"name":"\u042f\u043d\u0430 \u0410\u0440\u0445\u0438\u043f\u043e\u0432\u0430","id":"61"},"63":{"name":"\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u0421\u0438\u0434\u043e\u0440\u043e\u0432","id":"63"},"64":{"name":"\u041a\u0440\u0438\u0441\u0442\u0438\u043d\u0430 \u0420\u043e\u043c\u0430\u043d\u043e\u0432\u0430","id":"64"},"65":{"name":"\u0410\u043b\u0451\u043d\u0430 \u0410\u043a\u0441\u0451\u043d\u043e\u0432\u0430","id":"65"},"66":{"name":"\u0412\u0430\u043b\u0435\u0440\u0438\u0439 \u041a\u0438\u0440\u0438\u043b\u043b\u043e\u0432, \u043f\u0440\u0435\u0441\u0441-\u0441\u043b\u0443\u0436\u0431\u0430 \u0410\u043d\u0433\u0430\u0440\u0441\u043a\u043e\u0439 \u0413\u0418\u0411\u0414\u0414","id":"66"},"67":{"name":"\u041c\u0430\u043a\u0441\u0438\u043c \u0424\u0451\u0434\u043e\u0440\u043e\u0432","id":"67"},"68":{"name":"\u0410\u043d\u0434\u0440\u0435\u0439 \u0418\u0432\u0430\u043d\u043e\u0432","id":"68"},"71":{"name":"\u0421\u0435\u0440\u0433\u0435\u0439 \u0411\u0443\u0440\u043b\u0430\u043a\u043e\u0432","id":"71"},"72":{"name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u0410\u0432\u0440\u0430\u043c\u0435\u043d\u043a\u043e, \u0438\u043d\u0441\u043f\u0435\u043a\u0442\u043e\u0440 \u043e\u0442\u0434\u0435\u043b\u0430 \u043f\u0440\u043e\u043f\u0430\u0433\u0430\u043d\u0434\u044b \u0411\u0414 \u0413\u0418\u0411\u0414\u0414","id":"72"},"73":{"name":"\u0414\u0435\u043d\u0438\u0441 \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432","id":"73"},"75":{"name":"\u0418\u0440\u0438\u043d\u0430 \u0421\u0443\u0442\u044b\u0440\u0438\u043d\u0430, \u043f\u0440\u0435\u0441\u0441-\u0441\u043b\u0443\u0436\u0431\u0430 \u0414\u0443\u043c\u044b \u0410\u041c\u041e","id":"75"},"76":{"name":"\u0410\u043b\u0435\u043d\u0430 \u0413\u0440\u044f\u0437\u043d\u043e\u0432\u0430, \u043f\u0440\u0435\u0441\u0441-\u0441\u043b\u0443\u0436\u0431\u0430 \u0423\u041c\u0412\u0414 \u043f\u043e \u0433. \u0410\u043d\u0433\u0430\u0440\u0441\u043a\u0443","id":"76"},"77":{"name":"\u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u0428\u0435\u0440\u0441\u0442\u043d\u0451\u0432\u0430, \u043f\u0440\u0435\u0441\u0441-\u0441\u043b\u0443\u0436\u0431\u0430 \u0414\u0443\u043c\u044b \u0410\u041c\u041e","id":"77"},"78":{"name":"\u0410\u043b\u0451\u043d\u0430 \u0417\u043e\u0440\u0438\u043d\u0430","id":"78"},"79":{"name":"\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u041c\u0435\u0442\u043b\u044f\u043a\u043e\u0432\u0430","id":"79"},"80":{"name":"\u0418\u0440\u0438\u043d\u0430 \u041c\u043e\u0440\u043e\u0437\u043e\u0432\u0430","id":"80"},"81":{"name":"\u041d\u0430\u0442\u0430\u043b\u044c\u044f \u0411\u0435\u0434\u0440\u0430\u043a","id":"81"},"82":{"name":"\u041b\u0438\u0434\u0438\u044f \u0410\u0444\u0430\u043d\u0430\u0441\u044c\u0435\u0432\u0430","id":"82"},"83":{"name":"\u0415\u043b\u0438\u0437\u0430\u0432\u0435\u0442\u0430 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u043d\u0430","id":"83"},"84":{"name":"\u041d\u0430\u0442\u0430\u043b\u044c\u044f \u0411\u0435\u0434\u0440\u0430\u043a","id":"84"},"85":{"name":"\u0415\u043b\u0438\u0437\u0430\u0432\u0435\u0442\u0430 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0430","id":"85"},"86":{"name":"\u041b\u0438\u0434\u0438\u044f \u0410\u0444\u0430\u043d\u0430\u0441\u044c\u0435\u0432\u0430","id":"86"},"87":{"name":"\u0414\u0430\u0440\u044c\u044f \u0415\u0433\u043e\u0440\u043e\u0432\u0430","id":"87"}},"issues":{"1720":"1720","1719":"1719","1718":"1718","1717":"1717","1716":"1716","1715":"1715","1714":"1714","1713":"1713","1712":"1712","1711":"1711","1710":"1710","1709":"1709","1708":"1708","1707":"1707","1706":"1706","1705":"1705","1704":"1704","1703":"1703","1702":"1702","1701":"1701","1700":"1700","1699":"1699","1698":"1698","1697":"1697","1696":"1696","1695":"1695","1694":"1694","1693":"1693","1692":"1692","1691":"1691","1690":"1690","1689":"1689","1688":"1688","1687":"1687","1686":"1686","1685":"1685","1684":"1684","1683":"1683","1682":"1682","1681":"1681","1680":"1680","1679":"1679","1678":"1678","1677":"1677","1676":"1676","1675":"1675","1674":"1674","1673":"1673","1672":"1672","1671":"1671","1670":"1670","1669":"1669","1668":"1668","1667":"1667","1666":"1666","1665":"1665","1664":"1664","1663":"1663","1662":"1662","1661":"1661","1660":"1660","1659":"1659","1658":"1658","1657":"1657","1656":"1656","1655":"1655","1654":"1654","1653":"1653","1652":"1652","1651":"1651","1650":"1650","1649":"1649","1648":"1648","1647":"1647","1646":"1646","1645":"1645","1644":"1644","1643":"1643","1642":"1642","1641":"1641","1640":"1640","1639":"1639","1638":"1638","1637":"1637","1636":"1636","1635":"1635","1634":"1634","1633":"1633","1632":"1632","1631":"1631","1630":"1630","1629":"1629","1628":"1628","1627":"1627","1626":"1626","1625":"1625","1624":"1624","1623":"1623","1622":"1622","1621":"1621","1620":"1620","1619":"1619","1618":"1618","1617":"1617","1616":"1616","1615":"1615","1614":"1614","1613":"1613","1612":"1612","1611":"1611","1610":"1610","1609":"1609","1608":"1608","1607":"1607","1606":"1606","1605":"1605","1604":"1604","1603":"1603","1602":"1602","1601":"1601","1600":"1600","1599":"1599","1598":"1598","1597":"1597","1596":"1596","1595":"1595","1594":"1594","1593":"1593","1592":"1592","1591":"1591","1590":"1590","1589":"1589","1588":"1588","1587":"1587","1586":"1586","1585":"1585","1584":"1584","1583":"1583","1582":"1582","1581":"1581","1580":"1580","1579":"1579","1578":"1578","1577":"1577","1576":"1576","1575":"1575","1574":"1574","1573":"1573","1572":"1572","1571":"1571","1570":"1570","1569":"1569","1568":"1568","1567":"1567","1566":"1566","1565":"1565","1564":"1564","1563":"1563","1562":"1562","1561":"1561","1560":"1560","1559":"1559","1558":"1558","1557":"1557","1556":"1556","1555":"1555","1554":"1554","1553":"1553","1552":"1552","1551":"1551","1550":"1550","1549":"1549","1548":"1548","1547":"1547","1546":"1546","1545":"1545","1544":"1544","1543":"1543","1542":"1542","1541":"1541","1540":"1540","1539":"1539","1538":"1538","1537":"1537","1536":"1536","1535":"1535","1534":"1534","1533":"1533","1532":"1532","1531":"1531","1530":"1530","1529":"1529","1528":"1528","1527":"1527","1526":"1526","1525":"1525","1524":"1524","1523":"1523","1522":"1522","1521":"1521","1520":"1520","1519":"1519","1518":"1518","1517":"1517","1516":"1516","1515":"1515","1514":"1514","1513":"1513","1512":"1512","1511":"1511","1510":"1510","1509":"1509","1508":"1508","1507":"1507","1506":"1506","1505":"1505","1504":"1504","1503":"1503","1502":"1502","1501":"1501","1500":"1500","1499":"1499","1498":"1498","1497":"1497","1496":"1496","1495":"1495","1494":"1494","1493":"1493","1492":"1492","1491":"1491","1490":"1490","1489":"1489","1488":"1488","1487":"1487","1486":"1486","1485":"1485","1484":"1484","1483":"1483","1482":"1482","1481":"1481","1480":"1480","1479":"1479","1478":"1478","1477":"1477","1476":"1476","1475":"1475","1474":"1474","1473":"1473","1472":"1472","1471":"1471","1470":"1470","1469":"1469","1468":"1468","1467":"1467","1466":"1466","1465":"1465","1464":"1464","1463":"1463","1462":"1462","1461":"1461","1460":"1460","1459":"1459","1458":"1458","1457":"1457","1456":"1456","1455":"1455","1454":"1454","1453":"1453","1452":"1452","1451":"1451","1450":"1450","1449":"1449","1448":"1448","1447":"1447","1446":"1446","1445":"1445","1444":"1444","1443":"1443","1442":"1442","1441":"1441","1440":"1440","1439":"1439","1438":"1438","1437":"1437","1436":"1436","1435":"1435","1434":"1434","1433":"1433","1432":"1432","1431":"1431","1430":"1430","1429":"1429","1428":"1428","1427":"1427","1426":"1426","1425":"1425","1424":"1424","1423":"1423","1422":"1422","1421":"1421","1420":"1420","1419":"1419","1418":"1418","1417":"1417","1416":"1416","1415":"1415","1414":"1414","1413":"1413","1412":"1412","1411":"1411","1410":"1410","1409":"1409","1408":"1408","1407":"1407","1406":"1406","1405":"1405","1404":"1404","1403":"1403","1402":"1402","1401":"1401","1400":"1400","1399":"1399","1398":"1398","1397":"1397","1396":"1396","1395":"1395","1394":"1394","1393":"1393","1392":"1392","1391":"1391","1390":"1390","1389":"1389","1388":"1388","1387":"1387","1386":"1386","1385":"1385","1384":"1384","1383":"1383","1382":"1382","1381":"1381","1380":"1380","1379":"1379","1378":"1378","1377":"1377","1376":"1376","1375":"1375","1374":"1374","1373":"1373","1372":"1372","1371":"1371","1370":"1370","1369":"1369","1368":"1368","1367":"1367","1366":"1366","1365":"1365","1364":"1364","1363":"1363","1362":"1362","1361":"1361","1360":"1360","1359":"1359","1358":"1358","1357":"1357","1356":"1356","1355":"1355","1354":"1354","1353":"1353","1352":"1352","1351":"1351","1350":"1350","1349":"1349","1348":"1348","1347":"1347","1346":"1346","1345":"1345","1344":"1344","1343":"1343","1342":"1342","1341":"1341","1340":"1340","1339":"1339","1338":"1338","1337":"1337","1336":"1336","1335":"1335","1334":"1334","1333":"1333","1332":"1332","1331":"1331","1330":"1330","1329":"1329","1328":"1328","1327":"1327","1326":"1326","1325":"1325","1324":"1324","1323":"1323","1322":"1322","1321":"1321","1320":"1320","1319":"1319","1318":"1318","1317":"1317","1316":"1316","1315":"1315","1314":"1314","1313":"1313","1312":"1312","1311":"1311","1310":"1310","1309":"1309","1308":"1308","1307":"1307","1306":"1306","1305":"1305","1304":"1304","1303":"1303","1302":"1302","1301":"1301","1300":"1300","1299":"1299","1298":"1298","1297":"1297","1296":"1296","1295":"1295","1294":"1294","1293":"1293","1292":"1292","1291":"1291","1290":"1290","1289":"1289","1288":"1288","1287":"1287","1286":"1286","1285":"1285","1284":"1284","1283":"1283","1282":"1282","1281":"1281","1280":"1280","1279":"1279","1278":"1278","1277":"1277","1276":"1276","1275":"1275","1274":"1274","1273":"1273","1272":"1272","1271":"1271","1270":"1270","1269":"1269","1268":"1268","1267":"1267","1266":"1266","1265":"1265","1264":"1264","1263":"1263","1262":"1262","1261":"1261","1260":"1260","1259":"1259","1258":"1258","1257":"1257","1256":"1256","1255":"1255","1254":"1254","1253":"1253","1252":"1252","1251":"1251","1250":"1250","1249":"1249","1248":"1248","1247":"1247","1246":"1246","1245":"1245","1244":"1244","1243":"1243","1242":"1242","1241":"1241","1240":"1240","1239":"1239","1238":"1238","1237":"1237","1236":"1236","1235":"1235","1234":"1234","1233":"1233","1232":"1232","1231":"1231","1230":"1230","1229":"1229","1228":"1228","1227":"1227","1226":"1226","1225":"1225","1224":"1224","1223":"1223","1222":"1222","1221":"1221","1220":"1220","1219":"1219","1218":"1218","1217":"1217","1216":"1216","1215":"1215","1214":"1214","1213":"1213","1212":"1212","1211":"1211","1210":"1210","1209":"1209","1208":"1208","1207":"1207","1206":"1206","1205":"1205","1204":"1204","1203":"1203","1202":"1202","1201":"1201","1200":"1200","1199":"1199","1198":"1198","1197":"1197","1196":"1196","1195":"1195","1194":"1194","1193":"1193","1192":"1192","1191":"1191","1190":"1190","1189":"1189","1188":"1188","1187":"1187","1186":"1186","1185":"1185","1184":"1184","1183":"1183","1182":"1182","1181":"1181","1180":"1180","1179":"1179","1178":"1178","1177":"1177","1176":"1176","1175":"1175","1174":"1174","1173":"1173","1172":"1172","1171":"1171","1170":"1170","1169":"1169","1168":"1168","1167":"1167","1166":"1166","1165":"1165","1164":"1164","1163":"1163","1162":"1162","1161":"1161","1160":"1160","1159":"1159","1158":"1158","1157":"1157","1156":"1156","1155":"1155","1154":"1154","1153":"1153","1152":"1152","1151":"1151","1150":"1150","1149":"1149","1148":"1148","1147":"1147","1146":"1146","1145":"1145","1144":"1144","1143":"1143","1142":"1142","1141":"1141","1140":"1140","1139":"1139","1138":"1138","1137":"1137","1136":"1136","1135":"1135","1134":"1134","1133":"1133","1132":"1132","1131":"1131","1130":"1130","1129":"1129","1128":"1128","1127":"1127","1126":"1126","1125":"1125","1124":"1124","1123":"1123","1122":"1122","1121":"1121","1120":"1120","1119":"1119","1118":"1118","1117":"1117","1116":"1116","1115":"1115","1114":"1114","1113":"1113","1112":"1112","1111":"1111","1110":"1110","1109":"1109","1108":"1108","1107":"1107","1106":"1106","1105":"1105","1104":"1104","1103":"1103","1102":"1102","1101":"1101"}}}; // массив категорий
+	var TAGS = null; // массив тэгов
+	var NEW_STROK = 0; // строк при подсчете в объявлении
+	var NEW_VIHOD = 0; //
+	var NEW_PAY = 80; // столько рублей стоит одна строка объявлени
+	var NEW_ALREADY_VIHOD = 0;
+	var NEW_KOMPENSACIYA = 0;
+	var NEW_DOP = 0;
+	var ADS_PAGE = 1; // текущая подгруженная страница с объявлениями
+
+	// $('.ui.sticky').sticky({pushing: false, observeChanges: false}); 
+ 
+	// ставим активные ссылки
+	var hash = window.location.pathname.split('/');
+	if (!hash[1] || hash[1] == '/') $('[href="/"]').parents('.item').addClass('active');
+	$('.item [href="/'+hash[1]+'/"]').parent().addClass('active');
+	if (hash[2] != '') $('[href="/'+hash[1]+'/'+hash[2]+'/"]').addClass('active').parents('.item').addClass('active');
+	if (hash[3] != '') $('[href="/'+hash[1]+'/'+hash[2]+'/'+hash[3]+'/"]').addClass('active');
+
+	$('[href="'+window.location.pathname+'"]').addClass('active');
+
+	// поведение элементов формы
+	$('.ui.dropdown').dropdown({ fullTextSearch: true, selectOnKeydown: false, forceSelection: false  });
+	$('.ui.checkbox').checkbox();
+
+	// как себя должно вести модальное окно
+	$('.ui.modal').modal({ 
+		duration: 600, 
+		autofocus: false,
+		observeChanges: true,
+		transition: 'fade', 
+		allowMultiple: true,
+		closable: false,
+		dimmerSettings: {
+			opacity: 0.7
+		},
+		onShow: function() { 
+			$('.ui.dropdown').dropdown({ on: 'click', fullTextSearch: true, selectOnKeydown: false, forceSelection: false  }); 
+		}
+	});
+	
+	// открывашка модального окна
+	$('body').on('click', '.getmodal', function() { $('.modal').modal('hide'); var $modal = $(this).attr('data-modal'); $('#'+$modal).modal('show'); });
+	
+	// закрывашка модального окна
+	$('body').on('click', '[data-action="close"]', function() {
+		$('.modal').modal('hide');
+	});
+	
+	// телефон только по маске
+	$('.phonemask').mask("+7-999-999-99-99");
+
+	// попап с деталями по услуге
+	$('body').on('click', '.get_usluga', function() {
+			$.ajax({
+			type: "GET", dataType: 'json',
+			url: "/uslugi/"+$(this).attr('data-usluga')+"/json",
+			success: function(data){
+				if (data.status == 'success') { 
+					$('#usluga .content').html(data.content);
+					$('#usluga').modal('setting', 'closable', true).modal('show');
+				}
+			}
+		});
+		return false;
+	});
+
+	$('body').on('click', '#crash_ok', function() {
+		$.cookie('crash_ok', '1', { expires: 365, path: '/' });
+		$('#crash_div').transition('fade out');
+		return false;
+	});
+
+	$('body').on('click', '.open_sidebar', function(e) {
+		$('#'+$(this).attr('data-sidebar')).sidebar({scrollLock: true, transition: 'uncover', dimPage: false}).sidebar('show');
+	});
+
+	// раскидываем объявления по сетке
+	if ($('.bboard').length > 0) {
+		var msnry = $('#board-blocks').masonry({ itemSelector: '.bboard',  gutter: 20, transitionDuration: 0 });
+		msnry.imagesLoaded().progress( function() {
+			msnry.masonry('layout');
+		});
+	}
+
+	// подгружаем объявления, когда внизу страницы
+	$('#board-blocks').visibility({
+		once: false,
+		includeMargin: true,
+		offset: 500,
+		observeChanges: true,
+		onBottomVisible: function() {
+			if (ADS_PAGE < $('#board-blocks').attr('data-pages')) {
+				$.ajax({
+					type: "POST",
+					url: "/board/tail/",
+					data: "&search="+$('#board-blocks').attr('data-search')+"&page="+ADS_PAGE,
+					dataType: 'html',
+					success: function(data){
+						var $content = $( data );
+						msnry.append( $content ).masonry( 'appended', $content ).imagesLoaded().progress( function() { msnry.masonry('layout'); });
+						ADS_PAGE++;
+						search_highlight();
+					}
+				});
+			}
+		}
+	});
+
+	// ентер по форме поиска
+	$('body').on('keypress', '#search', function(e) {
+		if (e.keyCode === 13) {
+			window.location.href = '/'+$(this).attr('data-table')+'/poisk/'+$('#search').val();
+		}
+	});
+
+	// подсвечиваем слова поиска
+	function search_highlight() {
+		if ($('#search').length>0) {
+			if ( $('#search').val().length>=2) {
+				$.each($('#search').val().split(' '), function(index,value){
+					$('.statya').highlight(value);
+					$('.bboard').highlight(value);
+				});
+			}
+		}
+	}
+	
+	search_highlight();
+	
+	
+	// проверка занят ли логин при регистрации
+	$('body').on('change keyup paste', '#regcheck', function() {
+			var th = $(this);
+		th.next().transition('hide');
+		if ($(this).val().length >= 6) {
+			$.ajax({
+				type: "POST", data: '&login='+$(this).val(), dataType: 'json',
+				url: "/regcheck",
+				success: function(data){
+					if (data.status == 'success') { 
+					th.next().addClass('positive').removeClass('negative').html('Логин не занят').transition('slide down');
+					} else { th.next().removeClass('positive').addClass('negative').html('Такой логин существует').transition('slide down'); }
+				}
+			});
+		}
+	});
+
+	// верификации формы авторизации и регистрации
+	$('.sending.form').form({
+		on: 'submit',
+		inline: true,
+		fields: {
+			auth_login: {
+				identifier: 'auth[login]',
+				rules: [{
+					type   : 'regExp[/^[A-Za-z0-9_-]{6,20}$/]',
+					prompt : 'Введите ваш логин'
+				}]
+			},
+			auth_passw: {
+				identifier: 'auth[password]',
+				rules: [{
+					type   : 'regExp[/^[A-Za-z0-9_-]{6,20}$/]',
+					prompt : 'Введите ваш пароль'
+				}]
+			},
+			register_login: {
+				identifier: 'register[login]',
+				rules: [{
+					type   : 'regExp[/^[A-Za-z0-9_-]{6,20}$/]',
+					prompt : 'Минимум 6 символов в логине'
+				}]
+			},
+			register_passw: {
+				identifier: 'register[password]',
+				rules: [{
+					type   : 'regExp[/^[A-Za-z0-9_-]{6,20}$/]',
+					prompt : 'Минимум 6 символов в пароле'
+				}]
+			},
+			register_email: {
+				identifier: 'register[email]',
+				rules: [{
+					type   : 'email',
+					prompt : 'Минимум 6 символов в почте'
+				}]
+			},
+			register_phone: {
+				identifier: 'register[phone]',
+				rules: [{
+					type   : 'empty',
+					prompt : 'Введите номер вашего сотового'
+				}]
+			},
+			register_agree: {
+				identifier: 'register[agree]',
+				rules: [{
+					type   : 'checked',
+					prompt : 'Без согласия вы не можете зарегистрироваться'
+				}]
+			},
+		},
+		onSuccess: function () { 
+			var $form = $(this).attr('id');
+			var $vals = $(this).form('get values');
+	//            alert(print_r($vals));
+			if ($form == 'auth') {
+				$.ajax({
+					type: "POST", data: $vals, dataType: 'json',
+					url: "/enter",
+					success: function(data){
+					if (data.status == 'success') { 
+						window.location.reload();
+					} else { $('#'+$form).transition('jiggle').find('.result.message').html('Неправильный логин или пароль').transition('slide down'); }
+					}
+				});
+			} 
+			
+			if ($form == 'register') {
+				$.ajax({
+					type: "POST", data: $vals, dataType: 'json',
+					url: "/register",
+					success: function(data){
+					if (data.status == 'success') { 
+						window.location.href = '/board/';
+					} else { $('#'+$form).transition('jiggle').find('.result.message').html('Регистрация не удалась').transition('slide down'); }
+					}
+				});
+			} 
+			
+			if ($form == 'message') {
+				$.ajax({
+					type: "POST", data: $vals, dataType: 'json',
+					url: "/message",
+					success: function(data){
+					if (data.status == 'success') { 
+						alert('Ваше сообщение отправлено');
+					} else {  }
+					}
+				});
+			} 
+		}
+	});
+
+
+	// ОБЪЯВЛЕНИЕ. напечатать снова
+	$('body').on('click','[data-action="reprint"]', function() {
+		var $tt = $(this).parents('.card .ui.segment');
+		$tt.addClass('loading');
+		var $id = $(this).parents('.card').attr('id');
+		$.ajax({
+			type: "POST",
+			url: "/actions/board/reprint/",
+			data: '&board_id='+$id,
+			dataType: 'json',
+			success: function(data){
+				if (data.status == 'success') { 
+					$('#'+$id).transition({animation: 'bounce', duration: '1000ms'}).find('.reprint').html(data.content);
+					$tt.removeClass('loading');
+				}
+			}
+		});
+	});
+
+	// ОБЪЯВЛЕНИЕ. восстановить актуальность
+	$('body').on('click','[data-action="recover"]', function() {
+		var $tt = $(this).parents('.card .ui.segment');
+		var $id = $(this).parents('.card').attr('id');
+		$.ajax({
+			type: "POST",
+			url: "/actions/board/recover/",
+			data: '&board_id='+$id,
+			dataType: 'json',
+			success: function(data){
+				if (data.status == 'success') { 
+					$('#'+$id).transition({animation: 'bounce', duration: '1000ms'}).find('.recover').html(data.content);
+					$tt.removeClass('loading');
+				} 
+			}
+		});
+	});
+	
+	// ОБЪЯВЛЕНИЕ. удалить
+	$('body').on('click','[data-action="redelete"]', function() {
+		var $tt = $(this).parents('.card .ui.segment');
+		var $id = $(this).parents('.card').attr('id');
+		if (confirm('Точно удаляем?')) {
+			$.ajax({
+				type: "POST",
+				url: "/actions/board/redelete/",
+				data: '&board_id='+$id,
+				dataType: 'json',
+				success: function(data){
+					if (data.status == 'success') { 
+						$('#'+$id).transition({animation: 'scale down', duration: '1000ms', onHide: function() { $(this).remove(); } });
+					} 
+				}
+			});
+		}
+	});
+
+	// добавить новое объявление
+	$('body').on('click', '[data-action="rekeep"]', function(){
+		var $tt = $(this);
+		$tt.addClass('loading');
+		var $fields = $('.board.form').form('refresh').form('get values');
+
+		var $old_imgs = new Array(); $('div.dz-image-already img').each(function() { $old_imgs.push($(this).attr('alt')); });
+		var $imgs = new Array(); $('div.dz-image-preview img').each(function() { $imgs.push($(this).attr('alt')); });
+		$fields['imgs[new]'] = $imgs;
+		$fields['imgs[old]'] = $old_imgs;
+		
+		$.ajax({
+			type: "POST",
+			url: "/actions/board/keep/",
+			data: $fields,
+			dataType: 'json',
+			success: function(data){
+				if (data.status == 'success') { 
+					$tt.removeClass('loading');
+					window.location.replace('/my/board/');
+				} 
+			}
+		});	
+	});
+
+	// ОБЪЯВЛЕНИЕ. оплатить
+	$('body').on('click','[data-action="repay"]', function() {
+		var $id = $(this).parents('.card').attr('id');
+		$.ajax({
+			type: "POST",
+			url: "/actions/board/repay/",
+			data: 'id='+$id,
+			dataType: 'json',
+			success: function(data){ 
+				if (data.status == 'success') { 
+					$('#pay-modal').html(data.html).modal('show');
+				}
+			}
+		});
+	});
+
+	/*****
+	 ******
+	НОВОЕ ОБЪЯВЛЕНИЕ
+	******
+	*****/
+	
+	// дроп для картинок в новое объявление 
+	if (hash[1] == 'my' || hash[2] == 'board') {
+		function drop() {
+			$("#a_images").dropzone({ 
+				url: "/actions/board/post_image/", 
+				maxFilesize: 2, 
+				previewTemplate: $('#preview').html(), 
+				complete: function(file) {
+				}
+			});  
+		}
+
+		drop();
+		
+		if (hash[3] == 'edit') {
+			NEW_ALREADY_VIHOD = $('[name="set[print_pay_vihod]"]').val();
+			NEW_KOMPENSACIYA = $('[name="set[print_pay_strok]"]').val();
+			$('#arr_text_gazeta').simplyCountable({ maxCount: 400, countType: 'characters', strictMax: true, countDirection: 'up'});
+			set_tags($('[name="set[action]"]').val());
+		}
+
+		$('body').on('click', '[data-action="img-delete"]', function() { $(this).parent().remove();	});
+
+		$('body').on('keyup paste change', '#arr_category', function(event) { set_tags(); });
+
+		// тронули платное/бесплатное и все задвигалось
+		$('body').on('click','[data-toggle-pay]', function() {
+			$('[data-toggle-pay]').removeClass('active');
+			$(this).addClass('active');
+			var pay = $(this).attr('data-toggle-pay');
+
+			$('[data-visible-pay]').hide();
+			$('[data-visible-pay="'+pay+'"]').show();
+
+			if (pay == 'oplat') {
+				$('#arr_text_gazeta').simplyCountable({ maxCount: 400, countType: 'characters', strictMax: true, countDirection: 'up' });
+				$('#mew-form [name="print[new]"]').dropdown('clear');
+				$('.stoit_stroka').html(NEW_PAY);
+				$('#mew-form [name="arr[paid]"]').val(1);
+			} else {
+				$('#mew-form [name="print[new]"]').dropdown('clear');
+				$('#mew-form [name="arr[paid]"]').val(0);
+				$('#mew-form').form('set value', 'print[new]', $('#print_date_bez').attr('data-print'));
+			}
+
+			if ($('#arr_category').length > 0) {
+				$('#arr_category').dropdown('destroy').dropdown('clear');
+				$('#arr_category').html(option(pay));
+				$('#arr_category').dropdown({ fullTextSearch: true }).dropdown('clear');
+				$('#a_tags').empty();  
+			}
+		});
+
+		// по умолчанию тронуто бесплатное
+		$('[data-toggle-pay="oplat"]').click();
+
+		// тронули принт — закинули дату в поле
+		$('body').on('change', '[name="print[new]"]', function() {
+			check_vihod();
+		});
+
+		setInterval(oplat_refresh, 2000);
+
+		function check_vihod() {
+			var gg = String($('[name="print[new]"]').dropdown('get value'));
+			if (gg.split(',')[0] != '' && gg.split(',')[0] != ',') {
+				NEW_VIHOD = gg.split(',').length/2;
+			} else {
+				NEW_VIHOD = 0;
+			}
+		}
+
+		function oplat_refresh() {
+			check_vihod();
+			var VIHOD = NEW_VIHOD;
+			//if (VIHOD == 0) VIHOD = 1;
+			var itogo = NEW_PAY*NEW_STROK*VIHOD;
+			var BR = NEW_KOMPENSACIYA/NEW_ALREADY_VIHOD;
+
+			if (NEW_STROK > BR) {
+				DOP = (NEW_ALREADY_VIHOD*(NEW_STROK - BR))*NEW_PAY;
+			} else {
+				DOP = 0;
+			}
+
+			itogo = itogo + DOP;
+			$('.print_counter').html(VIHOD+' '+ending(VIHOD, ['выход', 'выхода', 'выходов']));
+			$('.dop_counter').html(DOP);
+			$('.itogo_counter').html(itogo);
+
+			//if (itogo > 0) $('#mew_oplat').prop('disabled', false); else $('#mew_oplat').prop('disabled', true); 
+		}
+
+		function option($pay) {
+			var $out = '';
+			if ($pay == 'bez') {
+				$.each(ATLAS, function(indx, vl) {
+					if (vl['pay'] != null && vl['pay'] == 0) $out += '<option value="'+vl['id']+'_0">'+vl['title']+'</option>';
+					$.each(vl['subcategory'], function(indx2, vl2) { 
+						if (vl2['pay'] == 0) $out += '<option value="'+vl['id']+'_'+vl2['id']+'">'+vl['title']+'/'+vl2['title']+'</option>';
+					});
+				});
+			}
+			if ($pay == 'oplat') {
+				$.each(ATLAS, function(indx, vl) {
+					if (vl['pay'] != null) $out += '<option value="'+vl['id']+'_0">'+vl['title']+'</option>';
+					$.each(vl['subcategory'], function(indx2, vl2) { 
+						//if (vl2['pay'] != null && vl2['pay'] > 0)
+						$out += '<option value="'+vl['id']+'_'+vl2['id']+'">'+vl['title']+'/'+vl2['title']+'</option>';
+					});
+				});
+			}
+			return $out;
+		}
+
+		// показать тэги после выбора категории
+		function set_tags($action) {
+			if ($('.board.form').form('get value', 'arr[category]')!=null) {
+				var temp = $('.board.form').form('get value', 'arr[category]').split('_'); var cat = temp[0]; var subcat = temp[1];
+
+				$('#a_tags').empty(); var $gg = ''; var arr = []; var money = 0;
+
+				if (subcat != 0) { 
+					if (ATLAS[cat].subcategory[subcat].actions != '') { 
+					arr_actions = ATLAS[cat].subcategory[subcat].actions; 
+					money = ATLAS[cat].subcategory[subcat].pay; 
+					} else { arr_actions = ATLAS[cat].actions; money = ATLAS[cat].pay; }	
+				} else { if (cat!=0) { arr_actions = ATLAS[cat].actions; money = ATLAS[cat].pay; } }
+
+				if (typeof arr_actions !== "undefined") {
+					$gg += '<div class="eight wide column"><div class="field"><label>Действие</label><select class="ui fluid dropdown" id="arr_action" name="arr[action]">';
+					$.each(arr_actions, function(indx, vl) {
+					if ($action == vl['id']) $gg += '<option value="'+vl['id']+'" selected="selected">'+vl['value']+'</option>';
+					else $gg += '<option value="'+vl['id']+'">'+vl['value']+'</option>';
+					});
+					$gg += '</select></div></div>';
+				}
+				/*
+				if (subcat != 0) { 
+					if (ATLAS[cat].subcategory[subcat].tags != '') { arr_tags = ATLAS[cat].subcategory[subcat].tags; } else { arr_tags = ATLAS[cat].tags; }	
+				} else { arr_tags = ATLAS[cat].tags; }
+
+				if (arr_tags) {
+					$.each(arr_tags, function(indx, vl) {
+					if (vl.type == 'select') {
+						$gg += '<div class="four wide column"><div class="field"><label>'+vl.title+'</label><select class="ui fluid dropdown" id="a_tags_'+indx+'" name="a_tags_'+indx+'">';
+							$.each(vl.values, function(i, val) { $gg += '<option value="'+i+'">'+val['title']+'</option>'; });
+						$gg += '</select></div></div>';
+					}
+
+					if (vl.type == 'text') {
+						$gg += '<div class="four wide column"><div class="field"><label>'+vl.title+'</label><input type="text" id="a_tags_'+indx+'" name="a_tags_'+indx+'"></div></div>';
+					}
+					});
+
+				}
+				*/
+
+				$('#a_tags').html($gg); $('#a_tags .ui.dropdown').dropdown({ fullTextSearch: true, on: 'hover' });
+			}
+			return false;
+		}
+	}
+});
+
+</script>	
+	<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter720112 = new Ya.Metrika2({ id:720112, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/720112" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	
+</body>
+</html>

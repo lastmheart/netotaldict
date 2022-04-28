@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<base href="https://bendery-fortress.com/"/>
+	<title>Бендерская крепость - Исторический военно-мемориальный комплекс</title>
+	
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="" />
+	<meta name="keywords"    content="Бендерская крепость - Исторический военно-мемориальный комплекс" />
+    <meta name="yandex-verification" content="b6f17daf5881b9fb" />
+	
+	
+	
+	<link rel="canonical" href="https://bendery-fortress.com"/>	
+	
+	<link href="design/krepost/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="design/krepost/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="design/krepost/css/bootstrap.offcanvas.min.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css"/>
+	<link href="design/krepost/images/favicon.ico" rel="icon"          type="image/x-icon"/>
+	<link href="design/krepost/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+				
+ 
+ 
+ <script src="js/jquery/jquery-3.2.1.min.js"  type="text/javascript"></script>
+ 
+     <script src="js/jquery/bootstrap.min.js"  type="text/javascript"></script>
+    <script src="js/jquery/bootstrap.offcanvas.min.js"  type="text/javascript"></script>	
+ <script src="js/owl-carousel/owl.carousel.min.js"></script>
+ 
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+ 
+<script>
+$(document).ready(function(){
+	
+	var carousel = $("#carousel");
+	
+	carousel.owlCarousel({
+		//singleItem: true, // Показывать только 1 блок на всю ширину
+		items: 3,
+		// 5 блоков на компьютерах (экран от 1400px до 901px)
+		itemsDesktop : [1400,3],
+		// 3 блока на маленьких компьютерах (экран от 900px до 601px)
+		itemsDesktopSmall : [900,3],
+		// 2 элемента на планшетах (экран от 600 до 480 пикселей)
+		itemsTablet: [600,2],
+		// Настройки для телефона отключены, в этом случае будут
+		// использованы настройки планшета
+		itemsMobile : false ,
+
+		// Точки под каруселью
+		pagination: true
+	});
+
+	// Назад
+	// При клике на "Назад"
+	$('#js-prev').click(function () {
+	
+		// Запускаем перемотку влево
+		carousel.trigger('owl.prev');
+	
+		return false;
+	});
+	
+	// Вперед
+	// При клике на "Вперед"
+	$('#js-next').click(function () {
+	
+		// Запускаем перемотку вправо
+		carousel.trigger('owl.next');
+	
+		return false;
+	});
+});
+$(function() {
+	// Зум картинок
+	$("a.zoom").fancybox({
+		prevEffect	: 'fade',
+		nextEffect	: 'fade'
+	});
+});
+</script>
+ 
+ <script>
+  jQuery(document).ready(function() {
+        $("#various").fancybox({
+            'titlePosition'		: 'inside',
+            'transitionIn'		: 'none',
+            'transitionOut'		: 'none'
+        });
+       });
+ $(function () { 
+ $('#call-link').click(function (event) {
+            var dataObj = {};
+          
+            dataObj['fname'] = $('#call-form input[name=fname]').val()
+            dataObj['email'] = $('#call-form input[name=email]').val()
+            dataObj['vrem'] = $('#call-form input[name=vrem]').val()
+            dataObj['kolch'] = $('#call-form input[name=kolch]').val()
+            dataObj['lang_l'] = $('#call-form input[name=lang_l]').val()
+            dataObj['type'] = 'callback';
+ if (dataObj['fname'] == '') {  $('.errorLabelContainerCallForm').text('Введите имя'); }
+  else 
+   if (dataObj['email'] == '') {  $('.errorLabelContainerCallForm').text('Введите телефон, e-mail');   }
+       else 
+   if (dataObj['vrem'] == '') {  $('.errorLabelContainerCallForm').text('Введите дату экскурсии');   }
+   else
+    if (dataObj['kolch'] == '') {  $('.errorLabelContainerCallForm').text('Введите количество человек');   }
+   else
+            $.ajax({
+                url: 'mail.php',
+                type: 'POST',
+                dataType: 'json',
+                data: dataObj,
+                success: function (response) {
+
+                    $("#call-us").show();
+                     $("#call-form").hide();
+                }
+            })
+        }); 
+  });
+ 
+  $(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},900);
+ 
+});
+ 
+});
+</script>
+ 
+ 
+ 
+ 
+ <script>
+    var lang_id = 1;
+	</script>
+<script src="//code-ya.jivosite.com/widget/QXlzkQ7aZq" async></script> 
+</head>
+<body>
+<div class="head_bg">
+ <div class = "container">
+ <div class = "row">
+  <div class = "col-md-12 top_m"> 
+   <div class="logo"><a href="/"><img src="design/krepost/images/logo.png"/></a></div>
+   <div class="slog_menu ">
+      <div class="slog_b fMC7">Бендерская крепость</div>
+      <div class="slog_m fMC3">Исторический Военно-мемориальный комплекс</div> 
+      <div class="menu_top hidden-sm hidden-xs">
+         <!-- Меню -->
+		 <ul id="menu" class="fMSC5">
+							
+											
+								<li >
+					 
+                    <a data-page="79" href="about-us">О нас</a>
+                
+                                                   
+                 
+				</li>
+											
+								<li >
+					 
+                    <a data-page="80" href="news">Новости</a>
+                
+                                                   
+                 
+				</li>
+											
+								<li >
+					 <a>Услуги</a>
+                                                     <ul class="submenu">
+                   				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                       <li >
+					<a data-page="89" href="price-list">Прайс-лист</a> </li> 
+                                     
+                  				                      
+                  				                      
+                  				                      
+                  				                       <li >
+					<a data-page="90" href="excursions">Экскурсии</a> </li> 
+                                     
+                  				                       <li >
+					<a data-page="91" href="сrossbow-shooting-range">Арбалетный тир</a> </li> 
+                                     
+                  				                       <li >
+					<a data-page="92" href="gift-shop">Сувенирный магазин</a> </li> 
+                                     
+                  				                       <li >
+					<a data-page="93" href="showroom">Выставочный зал</a> </li> 
+                                     
+                  				                       <li >
+					<a data-page="94" href="other">Другое</a> </li> 
+                                     
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                                 </ul>
+                                  
+                 
+				</li>
+											
+								<li >
+					 
+                    <a data-page="85" href="history">История</a>
+                
+                                                   
+                 
+				</li>
+											
+											
+								<li >
+					 
+                    <a data-page="86" href="publications">Публикации</a>
+                
+                                                   
+                 
+				</li>
+											
+								<li >
+					 
+                    <a data-page="87" href="partners">Партнеры</a>
+                
+                                                   
+                 
+				</li>
+											
+								<li >
+					 
+                    <a data-page="88" href="contact">Контакты</a>
+                
+                                                   
+                 
+				</li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+									 </ul>
+		 <!-- Меню (The End) -->      
+      </div>
+   </div>
+   
+   <div class="top_sm">
+       <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+        <span class="sr-only">Toggle navigation</span>
+        <span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </span>
+      </button>
+   </div>
+   
+   <div class="contact_top  hidden-sm hidden-xs">
+      <div class="contact_tel fMSC5"><div>+373 552 48032</div><div>+373 779 08728</div></div>
+      <div class="contact_email fMSC3"><a href="#">bendery-fortress@inbox.ru</a></div> 
+      <div class="contact_icon">
+         <div class="icon_lang">
+                             			                                      			                                                             <a href="en/">en</a>
+                                                                        </div>
+         <div class="icon_map"><a href="mestopolozhenie"><img src="design/krepost/images/map.png"/></a></div>
+         <div class="icon_call"><a href="contact"><img src="design/krepost/images/telefon.png"/></a></div>
+      </div>
+   </div>
+  </div>
+ </div>
+</div>  
+</div>  
+  <div class="top_banner">
+  
+  <div class="slider">  
+    <ul class="js__slider__images slider__images">
+                                       <li class="slider__images-item">
+       <div class="slid1 slider__images-image" style="background-image: url(/files/photos/tower.jpg);"></div>
+     </li>
+                                                                  <li class="slider__images-item">
+       <div class="slid1 slider__images-image" style="background-image: url(/files/photos/slid12.jpg);"></div>
+     </li>
+                      <li class="slider__images-item">
+       <div class="slid1 slider__images-image" style="background-image: url(/files/photos/slid11.jpg);"></div>
+     </li>
+                      <li class="slider__images-item">
+       <div class="slid1 slider__images-image" style="background-image: url(/files/photos/slid7.JPG);"></div>
+     </li>
+                      <li class="slider__images-item">
+       <div class="slid1 slider__images-image" style="background-image: url(/files/photos/slid4.jpg);"></div>
+     </li>
+                      <li class="slider__images-item">
+       <div class="slid1 slider__images-image" style="background-image: url(/files/photos/slid2.jpg);"></div>
+     </li>
+              </ul>
+    <div class="slider__controls">
+      <span class="slider__control js__slider__control--prev slider__control--prev">Prev</span>
+      
+      <ol class="js__slider__pagers slider__pagers"></ol>
+      
+      <span class="slider__control js__slider__control--next slider__control--next">Next</span>
+    </div>
+  </div>
+  
+  <script>
+     // create pager list items
+var sliderImage = $('.slider__images-image');
+
+sliderImage.each(function (index) {
+    $('.js__slider__pagers').append('<li>'+(index+1)+'</li>');
+});
+
+// set up vars
+var sliderPagers       = 'ol.js__slider__pagers li',
+    sliderPagersActive = '.js__slider__pagers li.active',
+    sliderImages       = '.js__slider__images',
+    sliderImagesItem   = '.slider__images-item',
+    sliderControlNext  = '.slider__control--next',
+    sliderControlPrev  = '.slider__control--prev',
+    sliderSpeed        = 8000,
+    lastElem           = $(sliderPagers).length-1,
+    sliderTarget;
+
+// add css heigt to slider images list
+function checkImageHeight() {
+    var sliderHeight = $('.slider__images-image:visible').height(); 
+   
+};
+
+sliderImage.on('load', function() {
+    checkImageHeight();
+    $(sliderImages).addClass('loaded')
+});
+$(window).resize(function(){
+    checkImageHeight();
+});
+
+// set up first slide
+$(sliderPagers).first().addClass('active');
+$(sliderImagesItem).hide().first().show();
+
+// transition function
+function sliderResponse(sliderTarget) {
+    $(sliderImagesItem).fadeOut(300).eq(sliderTarget).fadeIn(300);
+    $(sliderPagers).removeClass('active').eq(sliderTarget).addClass('active');
+}
+
+// pager controls
+$(sliderPagers).on('click', function() {
+    if ( !$(this).hasClass('active') ) {
+        sliderTarget = $(this).index();
+        sliderResponse(sliderTarget);
+        resetTiming();
+    }
+});
+
+// next/prev controls
+$(sliderControlNext).on('click', function() {
+    sliderTarget = $(sliderPagersActive).index();
+    sliderTarget === lastElem ? sliderTarget = 0 : sliderTarget = sliderTarget+1;
+    sliderResponse(sliderTarget);
+    resetTiming();
+});
+$(sliderControlPrev).on('click', function() {
+    sliderTarget = $(sliderPagersActive).index();
+    lastElem = $(sliderPagers).length-1;
+    sliderTarget === 0 ? sliderTarget = lastElem : sliderTarget = sliderTarget-1;
+    sliderResponse(sliderTarget);
+    resetTiming();
+});
+
+// slider timing
+function sliderTiming() {
+    sliderTarget = $(sliderPagersActive).index();
+    sliderTarget === lastElem ? sliderTarget = 0 : sliderTarget = sliderTarget+1;
+    sliderResponse(sliderTarget);
+}
+
+// slider autoplay
+var timingRun = setInterval(function() {
+    sliderTiming();
+}, sliderSpeed);
+
+function resetTiming() {
+    clearInterval(timingRun);
+    timingRun = setInterval(function() {
+      sliderTiming();
+    }, sliderSpeed);
+}
+  </script>
+  
+ </div>
+ <div class="bg_content">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-12">
+       <div class="dopmenu fMSC5 hidden-sm hidden-xs">
+          <!-- Меню -->
+		 <ul id="menu" class="fMSC5">
+							
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+								<li >
+					<a data-page="95" href="-our-museums">Наши музеи</a>
+                
+                 
+                                  <ul class="submenu">
+                   				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       <li >
+					<a data-page="101" href="historical">Исторический</a>
+                  </li> 
+                                      
+                  				                       <li >
+					<a data-page="102" href="museum-of-forture">Музей пыток</a>
+                  </li> 
+                                      
+                  				                       <li >
+					<a data-page="103" href="memorial-places">Мемориальные участки</a>
+                  </li> 
+                                      
+                  				                       <li >
+					<a data-page="104" href="military-necropolis">Военный некрополь</a>
+                  </li> 
+                                      
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                  				                       
+                                 </ul>
+                                  
+                 
+				</li>
+											
+								<li >
+					<a data-page="96" href="events">Объявления/анонсы</a>
+                
+                 
+                                  
+                 
+				</li>
+											
+								<li >
+					<a data-page="97" href="-media">Медиа</a>
+                
+                 
+                                  
+                 
+				</li>
+											
+								<li >
+					<a data-page="98" href="library">Библиотека</a>
+                
+                 
+                                  
+                 
+				</li>
+											
+								<li >
+					<a data-page="100" href="-useful-links">Полезные ссылки</a>
+                
+                 
+                                  
+                 
+				</li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+								<li >
+					<a data-page="169" href="buildings-and-constructions">Экспертиза</a>
+                
+                 
+                                  
+                 
+				</li>
+											
+								<li >
+					<a data-page="170" href="war-memorial">Мемориал</a>
+                
+                 
+                                  
+                 
+				</li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+									 </ul>
+		 <!-- Меню (The End) -->     
+        
+       </div>
+      </div>
+    </div> 
+   
+
+
+
+
+
+
+ 
+
+<div class = "row">
+<div class = "col-md-9 col-sm-12 col-xs-12">
+    <div class = "row knoptop">
+        <div class = "col-md-4 col-sm-4 col-xs-12"><div class="zakaz fMSC5"><a href="/tendery" >Закупки</a></div></div> 
+     <div class = "col-md-4 col-sm-4 col-xs-6"><div class="grafic ekskur fMSC7"><a href="grafik-ekskursij-onlajn">График экскурсий онлайн</a></div></div> 
+        <div class = "col-md-4 col-sm-4 col-xs-6"><div class="grafic work fMSC5">
+           <a class="link1" href="grafik-raboty">График работы</a><br/>
+           <a class="link2" href="chema-memoriala">Схема мемориала</a></div></div> 
+       </div> 
+ 
+    <div class = "row"><div class = "col-md-12 fAS2 head_block"><div><span>О крепости</span></div></div></div> 
+      <div class = "row">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        <div class = "col-md-4 col-sm-4 col-xs-12"><div class="img100"><img src="/files/uploads/history-1.png" /></div></div>
+        <div class = "col-md-8 col-sm-8 col-xs-12"><div class="text_news_t1">Бендерская крепость &ndash; одно из древнейших сооружений нашего края, ее история уникальна. Еще в ХIII веке сюда, из Черного моря от крепости Аккерман, по реке Днестр поднялись генуэзские суда. Генуэзцы &ndash; мореплаватели и торговцы, на высоком правом берегу реки строят крепость-факторию, чтобы ...</div>
+         <div class="readmore fMSC7"><a href="o_kreposti">Подробнее</a></div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </div>
+      </div> 
+   
+    <div class = "row"><div class = "col-md-12 fAS2 head_block"><div><span>Последние новости</span></div></div></div> 
+   <div class = "row">    
+                                                                                                                                                           <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="cpisok-festivalej-v-benderskoj-kreposti-na-2022-god"><img src="/files/uploads/news/2022/23.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="cpisok-festivalej-v-benderskoj-kreposti-na-2022-god">Cписок фестивалей в Бендерской крепости на 2022 год</a></div>
+          <div class="text_news_t">СПИСОКкультурно-массовых мероприятий (фестивалей), запланированных к проведению в Бендерской крепости (парк им. А. Невск...</div>
+    </div>
+                              <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="nachat-pervyj-etap-rekonstruktsii-kreposti"><img src="/files/uploads/news/2021/second_quartal/reconstruction/20211213_084923.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="nachat-pervyj-etap-rekonstruktsii-kreposti">НАЧАТ ПЕРВЫЙ ЭТАП РЕКОНСТРУКЦИИ КРЕПОСТИ</a></div>
+          <div class="text_news_t">14.12.2021 года. Начался первый этап реконструкции консервации Бендерской крепости. Общая стоимость работ составляет бол...</div>
+    </div>
+                          <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="kak-my-rabotaem-na-novyj-god"><img src="/files/uploads/news/2021/second_quartal/5.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="kak-my-rabotaem-na-novyj-god">КАК МЫ РАБОТАЕМ НА НОВЫЙ ГОД</a></div>
+          <div class="text_news_t">...</div>
+    </div>
+         <div class = "col-md-12"></div>               <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="v-kreposti-ustanovili-byust-grafa-vorontsova"><img src="/files/uploads/news/2021/second_quartal/voroncov/054050055051052.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="v-kreposti-ustanovili-byust-grafa-vorontsova">В КРЕПОСТИ УСТАНОВИЛИ БЮСТ ГРАФА ВОРОНЦОВА</a></div>
+          <div class="text_news_t">5.11.2021 года. Бендерская крепость, сохраняя свою историческую основу, продолжает наполняться современными элементами, ...</div>
+    </div>
+                      <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="anons-meropriyatij-avgust-sentyabr"><img src="/files/uploads/news/2021/second_quartal/10851072_1089107210811090.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="anons-meropriyatij-avgust-sentyabr">АНОНС МЕРОПРИЯТИЙ АВГУСТ-СЕНТЯБРЬ</a></div>
+          <div class="text_news_t">27 августа 2021 года, в 20.00 час., в цитадели крепости состоится тетатральная постановка пьеса-рагикомедия &laquo;ВЫПЕЙ...</div>
+    </div>
+                      <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="v-kreposti-prozvuchala-muzyka-oskar"><img src="/files/uploads/news/2021/second_quartal/Oscar/20210731-img_0936.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="v-kreposti-prozvuchala-muzyka-oskar">В КРЕПОСТИ ПРОЗВУЧАЛА МУЗЫКА ОСКАР</a></div>
+          <div class="text_news_t">Накануне 31.07.2021 г. в цитадели Бендерской крепости состоялся концерт Молдавского национального молодежного оркестра. ...</div>
+    </div>
+         <div class = "col-md-12"></div>                   <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="anons-muzykalnyj-festival-oskar-skoro"><img src="/files/uploads/news/2021/second_quartal/213153345_1555033764851411_5395039824911434769_n.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="anons-muzykalnyj-festival-oskar-skoro">АНОНС. МУЗЫКАЛЬНЫЙ ФЕСТИВАЛЬ ОСКАР. СКОРО</a></div>
+          <div class="text_news_t">&laquo;Музыка &bdquo;Оскар&rdquo; - это часть серии мероприятий, посвященных 10-летию основания Национального молодежног...</div>
+    </div>
+                      <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="800-let-so-dnya-rozhdeniya-aleksandra-nevskogo---v-benderskoj-kreposti-proshel-prazdnichnyj-kontsert"><img src="/files/uploads/news/2021/second_quartal/2.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="800-let-so-dnya-rozhdeniya-aleksandra-nevskogo---v-benderskoj-kreposti-proshel-prazdnichnyj-kontsert">800 лет со дня рождения Александра Невского - в Бендерской крепости прошел праздничный концерт</a></div>
+          <div class="text_news_t">Бендеры, 15 мая 2021 года. В Бендерах прошло торжественное мероприятие, приуроченное к 800-летию со дня рождения Великог...</div>
+    </div>
+                      <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="v-kanun-dnya-pobedy-v-parke-aleksandra-nevskogo-proshel-prazdnichnyj-kontsert"><img src="/files/uploads/news/2021/first_quartal/20210508-img_1211.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="v-kanun-dnya-pobedy-v-parke-aleksandra-nevskogo-proshel-prazdnichnyj-kontsert">В канун Дня Победы в парке Александра Невского прошёл праздничный концерт</a></div>
+          <div class="text_news_t">Бендеры, 8 мая 2021 года. /Новости Приднестровья/.&nbsp;В парке&nbsp;Александра Невского&nbsp;Бендерской крепости состоя...</div>
+    </div>
+         <div class = "col-md-12"></div>        </div>
+<div class = "col-md-12"><div class="all_cat fMSC7"><a href="news">ВСЕ НОВОСТИ</a></div></div>
+
+ 
+ 
+ 
+      <div class = "row"><div class = "col-md-12 fAS2 head_block"><div><span>История крепости</span></div></div></div> 
+      <div class = "row">                                                                                                           <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="istoriya-nashego-kraya-s-drevnih-vremen"><img src="/files/uploads/history/historia_ch1/original.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="istoriya-nashego-kraya-s-drevnih-vremen">ИСТОРИЯ НАШЕГО КРАЯ С ДРЕВНИХ ВРЕМЕН ч.1</a></div>
+          <div class="text_news_t">Древнейшие следы обитания человека на берегах Днестра датируются возрастом от 300 тыс. лет назад до периода раннего пале...</div>
+   </div>
+                      <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="istoriya-goroda-bendery-tiginy"><img src="/files/uploads/history/2018/july/kruc899evan1.png" /></a> </div>
+          <div class="head_news_t fMC9"><a href="istoriya-goroda-bendery-tiginy">ИСТОРИЯ ГОРОДА БЕНДЕРЫ (ТИГИНЫ)</a></div>
+          <div class="text_news_t">В процессе упадка Золотой Орды, усиления королевств Венгрии и Польши, а также начала формирования Молдавского княжества ...</div>
+   </div>
+                      <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="versii-vozniknoveniya-benderskoj-kreposti"><img src="/files/uploads/history/2018/july/pered22.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="versii-vozniknoveniya-benderskoj-kreposti">ВЕРСИИ ВОЗНИКНОВЕНИЯ БЕНДЕРСКОЙ КРЕПОСТИ</a></div>
+          <div class="text_news_t">Самая распространенная и общеизвестная (и весьма научно обоснованная) версия происхождения Бендерской крепости заключает...</div>
+   </div>
+         <div class = "col-md-12"></div>                                                                                                                                                                                                                                                                                                                                                                                               <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="zavoevanie-osmanskoj-imperiej-moldavskogo-knyazhestva"><img src="/files/uploads/publication/2021/022dceb788ff0ec01b44863101b73ed904c7732f.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="zavoevanie-osmanskoj-imperiej-moldavskogo-knyazhestva">ЗАВОЕВАНИЕ ОСМАНСКОЙ ИМПЕРИЕЙ МОЛДАВСКОГО КНЯЖЕСТВА</a></div>
+          <div class="text_news_t">В 1415 году господарь Валахии[1] Мирча Старый соглашается платить Османской империи ежегодный харач[2] &nbsp;в 3 000 зол...</div>
+   </div>
+                                                                  <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="construction-phase-of-the-bendery-fortress-written-by-georgy-astvatsaturov-2007"><img src="/files/uploads/history/2021/6.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="construction-phase-of-the-bendery-fortress-written-by-georgy-astvatsaturov-2007">ЭТАПЫ СТРОИТЕЛЬСТВА БЕНДЕРСКОЙ КРЕПОСТИ ОТ ГЕОРГИЯ АСТВАЦАТУРОВА, 2007 г.</a></div>
+          <div class="text_news_t">Бендерская крепость поражала воображение путешественников и писателей прошлых и нынешнего столетий не только мощью оборо...</div>
+   </div>
+                                          
+      </div>
+       <div class = "col-md-12"><div class="all_cat fMSC7"><a href="history">Все статьи</a></div></div>
+ 
+ 
+      <div class = "row"><div class = "col-md-12 fAS2 head_block"><div><span>Наши публикации</span></div></div></div> 
+      <div class = "row">                                                                                                                       <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="the-pridnestrovian-trace-in-the-history-of-the-great-french-revolution-of-the-xviii-century"><img src="/files/uploads/publication/2021/1050108610881092_1053.1040..jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="the-pridnestrovian-trace-in-the-history-of-the-great-french-revolution-of-the-xviii-century">Приднестровский «след» в истории Великой Французской революции   XVIII в.    </a></div>
+          <div class="text_news_t">Переплетение исторических судеб, самым причудливым и иногда почти непостижимым образом формируя картину исторического пр...</div>
+    </div>
+                                                          <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="the-mystery-of-the-kauffers-clock"><img src="/files/uploads/publication/2020/2_part/clock3.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="the-mystery-of-the-kauffers-clock">ЗАГАДКА «ЧАСОВ КАУФФЕРА»</a></div>
+          <div class="text_news_t">На настоящее время на стенах Бендерской крепости описано около 60 эпиграфических памятников в виде граффити, барельефов,...</div>
+    </div>
+                          <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="description-of-the-bendery-fortress-summer-1657-evliya-chelebi-book-of-travel-with-comments"><img src="/files/uploads/publication/2020/2_part/Chelebi.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="description-of-the-bendery-fortress-summer-1657-evliya-chelebi-book-of-travel-with-comments">ОПИСАНИЕ КРЕПОСТИ БЕНДЕРЫ, ЛЕТО 1657 Г. ЭВЛИЯ ЧЕЛЕБИ "КНИГА ПУТЕШЕСТВИЙ" С КОММЕНТАРИЯМИ</a></div>
+          <div class="text_news_t">Когда в 889 г. х. (1484 г от р.х.) году Баезид хан завоевал крепость Ак-керман, то Гедик Ахмед-паша построил в этом мест...</div>
+    </div>
+         <div class = "col-md-12"></div>                       <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="pamyatnik-podoltsam-"><img src="/files/uploads/publication/2020/2_part/OREL/57.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="pamyatnik-podoltsam-">ПАМЯТНИК ПОДОЛЬЦАМ.</a></div>
+          <div class="text_news_t">Здесь, у Бендерской переправы, Где ратных битв порой не счесть, Не раз спасал орел двуглавый России воинскую честь. И, п...</div>
+    </div>
+                                                              <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="the-datum-on-the-regiments-that-were-part-of-the-general-and-earl-p-panins-second-army-in-1769-1770"><img src="/files/uploads/publication/2020/2_part/shturm_1770/123.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="the-datum-on-the-regiments-that-were-part-of-the-general-and-earl-p-panins-second-army-in-1769-1770">СВЕДЕНИЯ ПО ПОЛКАМ, ВХОДИВШИМ ВО ВТОРУЮ АРМИЮ ГЕНЕРАЛА, ГРАФА П.И. ПАНИНА 1769-1770 ГГ.</a></div>
+          <div class="text_news_t">В основной своей массе, полки, вошедшие в состав Второй армии Петра Панина являлись полками так называемой Украинской ли...</div>
+    </div>
+                      <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="the-march-of-the-russian-troops-to-the-dniester-river-the-siege-and-assault-of-the-ottoman-fortress-bendery-in-1770"><img src="/files/uploads/publication/2020/2_part/3104210791103109010801077_104110771085107610771088.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="the-march-of-the-russian-troops-to-the-dniester-river-the-siege-and-assault-of-the-ottoman-fortress-bendery-in-1770">ПОХОД  РУССКИХ  ВОЙСК НА ДНЕСТР,  ОСАДА  И ВЗЯТИЕ ИМИ ОСМАНСКОЙ КРЕПОСТИ БЕНДЕРЫ В 1770 ГОДУ</a></div>
+          <div class="text_news_t">Во второй половине XVIII в. Бендерская крепость являлась оплотом турецкого господства в Пруто-Днестровском регионе. Нака...</div>
+    </div>
+         <div class = "col-md-12"></div>               <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="memorable-dates-in-the-history-of-the-town-of-bendery-and-the-fortress-"><img src="/files/uploads/publication/2020/2_part/6304993.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="memorable-dates-in-the-history-of-the-town-of-bendery-and-the-fortress-">ПАМЯТНЫЕ ДАТЫ В ИСТОРИИ ГОРОДА БЕНДЕРЫ И КРЕПОСТИ</a></div>
+          <div class="text_news_t">Памятные даты в истории города Бендеры и Бендерской крепости охватывают период с X века н.э., с момента первого упоминан...</div>
+    </div>
+                          <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="location-of-mosques-in-the-bendery-fortress-"><img src="/files/uploads/publication/2020/april-may/local_3.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="location-of-mosques-in-the-bendery-fortress-">ЛОКАЛИЗАЦИЯ МЕЧЕТЕЙ В БЕНДЕРСКОЙ КРЕПОСТИ</a></div>
+          <div class="text_news_t">В ходе систематизации и изучения источников, в том числе и новых, обнаруженных в турецких архивах, и, в особенности карт...</div>
+    </div>
+                              <div class = "col-md-4 col-sm-4 col-xs-12">
+          <div class="img100 h200"><a href="pb-kampengauzen-opisanie-bender-1789-goda-sokr-otryvok-"><img src="/files/uploads/publication/2020/april-may/6.jpg" /></a> </div>
+          <div class="head_news_t fMC9"><a href="pb-kampengauzen-opisanie-bender-1789-goda-sokr-otryvok-">Л.П.Б. Кампенгаузен. ОПИСАНИЕ БЕНДЕР 1789 ГОДА (Сокр. отрывок)  </a></div>
+          <div class="text_news_t">Бендеры [Bender] &ndash; столица Бессарабии расположена на Днестре&hellip; Крепость примечательна только огромным рвом, ...</div>
+    </div>
+         <div class = "col-md-12"></div>        
+      </div>
+       <div class = "col-md-12"><div class="all_cat fMSC7"><a href="publications">Все публикации</a></div></div>
+ 
+ 
+      <div class = "row"><div class = "col-md-12 fAS2 head_block"><div><span>3-D тур</span></div></div></div> 
+      <div class = "row">
+        <div class = "col-md-12">
+         <div class="img100"><a href="/media-3d"><img src="images/3dtur.jpg"></a></div>
+        </div>
+      </div>
+ 
+ 
+      <div class = "row"><div class = "col-md-12 fAS2 head_block"><div><span>Наши партнеры</span></div></div></div> 
+     
+ <div id="carousel">
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="carousel-element"><a href="https://pridnestrovie-tourism.com/visitpridnestrovie/" target="_blank"><img src="/files/uploads/banners/2022/105810481062.png" width="270" height="172" /></a></div><div class="carousel-element"><a href="https://moldovatovisit.eu/" style="font-size: 16px;" target="_blank"><img src="/files/uploads/banners/23456.jpg" width="250" height="150" /></a></div><div class="carousel-element"><a href="http://www.bendery-ga.org" target="_blank"><img src="/files/uploads/other/2019/GA_Bendery1.png" width="220" height="104" /></a></div><div class="carousel-element"><a href="http://www.kvint.md/" target="_blank"><img src="/images/kvint.jpg" /></a></div><div class="carousel-element"><a href="http://artstil.md/" target="_blank"><img src="/images/artstil.jpg" /></a></div><div class="carousel-element"><a href="http://buketmoldavii.md" target="_blank"><img src="/files/uploads/banners/buket.png" width="200px" style="font-size: 16px;" /></a></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 </div>
+ 
+ <div class = "row">
+ <div class = "col-md-12"><br/><br/><div class="all_cat fMSC7"><a href="partners">Все партнеры</a></div></div>
+ </div>
+ 
+     </div> 
+     <div class = "col-md-3 col-sm-12 col-xs-12"> 
+      <div class="headg  fMSC5">ФОТОГАЛЕРЕЯ</div>
+      <div class="img100"><a href="photos"><img src="images/gall1.jpg"></a></div>
+      <div class="headg1 fMSC7"><a href="photos"></a></div>
+      
+      <div class="img100"><a href="photos/video"><img src="images/video1.jpg"></a></div>
+      <div class="headg1 fMSC7"><a href="photos/video">Видео</a></div>
+      
+      <div class="anons_m">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <div class="anons_hh fAS2"><a href="virtualnyj-tur-po-kreposti-vr360">Виртуальный тур по крепости (VR360)</a></div>
+       <div class="anons_tt fMSC5">Загляни во все уголки старой крепости! 3D экскурсия....</div>
+       <div class="img100"><a href="virtualnyj-tur-po-kreposti-vr360"><img src="/files/uploads/anons/Vr360.png" /></a></div>
+       
+      
+      </div>
+      
+      <div class="kursi"><iframe  width="175" height="215" src="http://cbpmr.net/infoprb.php?color=gray&info=val" scrolling="no" align="center" frameborder="1" style="border: 1px solid #382f2d"></iframe></div>
+      
+    <!-- Gismeteo informer START -->
+<link rel="stylesheet" type="text/css" href="https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
+    <div id="gsInformerID-A6d186ayJ3tHSR" class="gsInformer" style="width:100%;height:189px">
+        <div class="gsIContent">
+            <div id="cityLink">
+                                    <a href="https://www.gismeteo.ru/weather-bender-11294/" target="_blank">Погода в Бендерах</a>
+            </div>
+            <div class="gsLinks">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="leftCol">
+                                <a href="https://www.gismeteo.ru/" target="_blank">
+                                    <img alt="Gismeteo" title="Gismeteo" src="https://nst1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0" />
+                                    <span>Gismeteo</span>
+                                </a>
+                            </div>
+                            <div class="rightCol">
+                                <a href="https://www.gismeteo.ru/weather-bender-11294/2-weeks/" target="_blank">Прогноз на 2 недели</a>
+                            </div>
+                        </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+    </div>
+<script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=A6d186ayJ3tHSR" type="text/javascript"></script>
+<!-- Gismeteo informer END -->
+      
+      <div class="soc_t fMSC7">мы в соцсетях</div>
+      <div class="soc_i"><a href='https://www.instagram.com/bendery_fortress/?hl=ru'  target="_blank"><img src="images/instagram.png"></a>  
+       <a href="https://www.facebook.com/groups/1547176932178361/" target="_blank"><img src="images/fb.png"></a></div>
+      <div class="ban_p"></div>
+      <div class="ban_p"></div>
+      <div class="ban_p"></div>
+      
+      <!-- Меню блога -->
+			
+			
+											
+					<div class="ban_p"><p style="text-align: center;"><span style="color: #ffffff;">Посетите Приднестровье</span></p><p style="text-align: center;"><span style="color: #ffffff;">Visit to Pridnestrovie</span></p><p><a href="https://pridnestrovie-tourism.com/" target="_blank"><img src="/files/uploads/banners/2022/visit.png" width="4328" height="2187" /></a></p></div>
+								
+					<div class="ban_p"><p style="text-align: center;"><span style="color: #ffffff;">Гостинично-ресторанный комплекс "Старый Бастион"</span></p><p style="text-align: center;"><a href="http://bastion-pmr.com"><img src="/files/uploads/banners/3_interactive-lightmix-2.600x600.jpg" width="454" height="324" /></a></p><p style="text-align: center;"><span style="color: #ffffff;">+373 777 33182 (Viber)</span></p></div>
+								
+					<div class="ban_p"><p style="text-align: center;"><span color="#ffff99" style="color: #ffffff;">Хотинская крепость</span></p><p><a href="http://khotynska-fortecya.cv.ua/"><img src="/files/uploads/banners/hotin4.jpg" width="454" height="291" /></a></p></div>
+								
+					<div class="ban_p"><p style="text-align: center;"><span style="color: #ffffff;">Аккерманская крепость, Мон-Кастро</span></p><p style="text-align: center;"><a href="http://akkerman-fort.com/ru.html" target="_blank" style="font-size: 16px;"><img src="/files/uploads/banners/akkerman4.jpg" width="454" height="290" style="display: block; margin-left: auto; margin-right: auto;" /></a></p></div>
+								
+					<div class="ban_p"><p style="text-align: center;"><a href="http://www.allcastles.ru/finder/results/%D0%91%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C" target="_blank" style="font-size: 16px;"><img src="/files/uploads/banners/zamki_i_kreposti.jpg" width="454" height="292" /></a></p></div>
+										<!-- Меню блога  (The End) -->
+      
+     </div> 
+ </div> 
+  </div>
+</div> 
+ 
+
+
+
+        
+<div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+ <div class="contact_icon1">
+         <div class="icon_lang">
+                             			                                      			                                        <a href="en/">en</a>                                     </div>
+         <div class="icon_map"><a href="mestopolozhenie"><img src="design/krepost/images/map.png"/></a></div>
+         <div class="icon_call"><a href="contact"><img src="design/krepost/images/telefon.png"/></a></div>
+      </div>
+ <div class="mento fMSC5">
+  <div>+373 552 48032</div>
+  <div>+373 779 08728</div>
+  <div class="mentom fMSC5">bendery-fortress@inbox.ru</div>
+ </div>   
+ <ul class="nav navm1 navbar-nav fMSC5">
+        					
+											
+								<li >
+					<a data-page="79" href="about-us">О нас</a>
+                              
+				</li>
+											
+								<li >
+					<a data-page="80" href="news">Новости</a>
+                              
+				</li>
+											
+								<li >
+					<a data-page="81" href="#">Услуги</a>
+                                  <ul class="submenu1 fMSC3">
+                   				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                       <li >
+					<a data-page="89" href="price-list">Прайс-лист</a> </li> 
+                                     
+                  				                      
+                  				                      
+                  				                      
+                  				                       <li >
+					<a data-page="90" href="excursions">Экскурсии</a> </li> 
+                                     
+                  				                       <li >
+					<a data-page="91" href="сrossbow-shooting-range">Арбалетный тир</a> </li> 
+                                     
+                  				                       <li >
+					<a data-page="92" href="gift-shop">Сувенирный магазин</a> </li> 
+                                     
+                  				                       <li >
+					<a data-page="93" href="showroom">Выставочный зал</a> </li> 
+                                     
+                  				                       <li >
+					<a data-page="94" href="other">Другое</a> </li> 
+                                     
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                  				                      
+                                 </ul>
+                              
+				</li>
+											
+								<li >
+					<a data-page="85" href="history">История</a>
+                              
+				</li>
+											
+											
+								<li >
+					<a data-page="86" href="publications">Публикации</a>
+                              
+				</li>
+											
+								<li >
+					<a data-page="87" href="partners">Партнеры</a>
+                              
+				</li>
+											
+								<li >
+					<a data-page="88" href="contact">Контакты</a>
+                              
+				</li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+							      </ul>
+      <div class="sep_men"></div>
+      <ul class="nav navbar-nav fMSC5">
+        					
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+								<li >
+					<a data-page="95" href="-our-museums">Наши музеи</a>
+				</li>
+											
+								<li >
+					<a data-page="96" href="events">Объявления/анонсы</a>
+				</li>
+											
+								<li >
+					<a data-page="97" href="-media">Медиа</a>
+				</li>
+											
+								<li >
+					<a data-page="98" href="library">Библиотека</a>
+				</li>
+											
+								<li >
+					<a data-page="100" href="-useful-links">Полезные ссылки</a>
+				</li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+								<li >
+					<a data-page="169" href="buildings-and-constructions">Экспертиза</a>
+				</li>
+											
+								<li >
+					<a data-page="170" href="war-memorial">Мемориал</a>
+				</li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+							       </ul>
+</div>
+      
+    
+     
+     
+     
+	
+
+ 
+
+ 
+	<!-- Футер -->
+<div class="footer_bg"> 
+ <div class = "container">
+    <div class = "row">
+      <div class = "col-md-12 footer_c">
+       
+        <div class="foot_l"><img src="design/krepost/images/logo_f.png"/></div>
+        <div class="foot_soc  fMSC3">
+         <div class="foot_soc_i"><div style="float: left;margin-right: 25px;">Поделитесь информацией о нас в социальных сетях</div>
+          <div> 
+          <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter"></div>
+          </div>
+          </div>
+          <div class="foot_prav"><span>Все права защищены © «Бендерская крепость», 2018</span> 
+            <a target="_blank" href="http://sitemaking.ws">Создание сайта: Веб-студия Тира</a>
+            <img src="design/krepost/images/favicon_tira.png"/>
+          </div>
+        </div>
+        <div class="foot_tel fMSC5">
+          <div>+373 552 48032</div><div>+373 779 08728</div><div><a href="#">bendery-fortress@inbox.ru</a></div>
+        </div>
+       <div style="margin: 20px 0 0 60px;">
+        <!-- HotLog -->
+<span id="hotlog_counter"></span>
+<span id="hotlog_dyn"></span>
+<script type="text/javascript"> var hot_s = document.createElement('script');
+hot_s.type = 'text/javascript'; hot_s.async = true;
+hot_s.src = 'http://js.hotlog.ru/dcounter/2570738.js';
+hot_d = document.getElementById('hotlog_dyn');
+hot_d.appendChild(hot_s);
+</script>
+<noscript>
+<a href="http://click.hotlog.ru/?2570738" target="_blank">
+<img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2570738&im=411" border="0" 
+title="HotLog" alt="HotLog"></a>
+</noscript>
+<!-- /HotLog -->
+       </div>
+       
+     </div>
+    </div>
+ </div>
+</div> 
+	<!-- Футер (The End)--> 
+ 
+<div id="inline" class="fe2m" style="width:400px; text-align:justify;display:none">
+  <div class="form_head">Заказать экскурсию</div>   
+  <form action="" id="call-form">
+         <div class="errorLabelContainerCallForm"></div>
+                <input type="text" name="fname" placeholder="Имя или название организации">
+                <input type="text" name="email" placeholder="Телефон, e-mail">
+                <input type="text" name="vrem" placeholder="Дата, время экскурсии">
+                <input type="text" name="kolch" placeholder="Количество чел.(снг, дальнее зарубежье)">
+                <input type="text" name="lang_l" placeholder="Язык экскурсии">
+                <input type="button" id="call-link" name="submit" value="Заказать">
+            </form>
+  <div id="call-us" style="display:none;" title="Звонок принят!">
+                    <p>Специалист свяжется с Вами в ближайшее время.</p>
+                </div>
+</div> 
+ <div id="toTop"> ^ Наверх </div>
+</body>
+</html><!--
+memory peak usage: 7688912 bytes
+page generation time: 0.15525794029236 seconds
+-->

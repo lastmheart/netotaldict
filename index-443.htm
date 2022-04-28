@@ -1,0 +1,816 @@
+    <!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/assets/3d66b6a8/styles.css" />
+<title>Рязанская областная специальная библиотека для слепых</title>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="generator" content="Блокнот">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet"
+              type="text/css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="/themes/bds/assets/css/normalize.css?nocache=1651081689"> <!-- Normalize.css -->
+        <link rel="stylesheet" href="/themes/bds/assets/css/main.css?nocache=1651081689" type="text/css">
+
+        <link rel="stylesheet" href="/themes/bds/assets/css/jquery.css?nocache=1651081689" type="text/css">
+
+
+        <!-- Scripts -->
+        <script src="/themes/bds/assets/js/uppod.js?nocache=1651081689"></script>
+        <script src="/themes/bds/assets/js/jquery.js?nocache=1651081689"></script> <!-- jQuery -->
+        <script src="/themes/bds/assets/js/blind-mode.js?nocache=1651081689"></script>
+        <script src="/themes/bds/assets/js/jquery.fancybox.js?nocache=1651081689"></script>
+        <script src="/themes/bds/assets/js/main.js?nocache=1651081689"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                //$(".room_image").fancybox();
+                $(".fancybox").fancybox({
+                    openEffect: 'none',
+                    closeEffect: 'none'
+                });
+            });
+
+            function validate_form() {
+                valid = true;
+                if ($(".search").val() == "") {
+                    alert("Пожалуйста заполните поле поиска");
+                    valid = false;
+                }
+                return valid;
+            }
+
+        </script>
+
+        
+        <!-- Support html5 and media queries in ie -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.js"></script>
+        <![endif]-->
+        <script src="https://webasr.yandex.net/jsapi/v1/webspeechkit.js"
+                type="text/javascript">
+        </script>
+    </head>
+    <!-- Content -->
+    <body>
+
+    <header>
+        <div class="a">
+            <div onclick="location.href='/'" class="b-left"></div>
+            <div class="b-center">
+                <div class="h-title"><a href='/'>Рязанская областная <br>специальная библиотека <br>для слепых</a></div>
+
+                <div class="h-btn-wrap">
+                    <a class="btn hd" id="blindMode">
+                        <span style="margin-right: 6px;"><span style="font-size: 24px">A</span><span
+                                    style="font-size: 16px">A</span></span>
+                        Версия для слабовидящих
+                    </a>
+
+                    <a href="#" class="l-map">Карта сайта</a>
+                </div>
+
+            </div>
+            <div class="b-right">
+                <a href="mailto:rosbds@ryazangov.ru"
+                   class="br-mail">rosbds@ryazangov.ru</a>
+                <span class="br-phone">тел. (4912) 96-61-40, <br/> факс (4912) 76-14-63</span>
+                <span class="br-place">390005, г. Рязань, ул. Татарская, д. 29/44</span>
+                <a href="/pages/rezhim-raboty" class="br-info">Контакты,
+                    схема проезда и режим работы</a>
+            </div>
+        </div>
+    </header>
+    <nav id="main_menu">
+    <div class="mobile-button">
+        <span></span>
+    </div>
+    <ul class="a">
+        
+                                    <li >
+                    <ul>
+
+                                                    <li class="black"><a
+                                        href="/about/istorija.html">История</a></li>
+                                                    <li class="black"><a
+                                        href="/about/pravila-polzovanija.html">Правила пользования</a></li>
+                                                    <li class="black"><a
+                                        href="/about/pamjatka-dlja-invalidov.html">Памятка для инвалидов</a></li>
+                                                    <li class="black"><a
+                                        href="/about/rezhim-raboty.html">Режим работы,схема проезда</a></li>
+                                                    <li class="black"><a
+                                        href="/about/struktura.html">Структура</a></li>
+                                                    <li class="black"><a
+                                        href="/about/dokumenty.html">Документы</a></li>
+                                                    <li class="black"><a
+                                        href="/about/uslugi.html">Услуги</a></li>
+                                                    <li class="black"><a
+                                        href="/smi">СМИ о нас</a></li>
+                                                    <li class="black"><a
+                                        href="/gallery">Фотогалерея</a></li>
+                                                    <li class="black"><a
+                                        href="/video">Видеогалерея</a></li>
+                                                    <li class="black"><a
+                                        href="/about/protivodejstvie-korruptsii.html">Противодействие коррупции</a></li>
+                        
+                    </ul>
+                    <a href="/about.html">
+                        <div>О библиотеке</div>
+                    </a>
+                </li>
+            
+                                    <li >
+                    <ul>
+
+                                                    <li class="black"><a
+                                        href="/anons">Анонсы</a></li>
+                                                    <li class="black"><a
+                                        href="/arhive">Архив</a></li>
+                                                    <li class="black"><a
+                                        href="/afisha/konkursy.html">Конкурсы</a></li>
+                                                    <li class="black"><a
+                                        href="/afisha/pozdravlenija.html">Поздравляем</a></li>
+                        
+                    </ul>
+                    <a href="/afisha.html">
+                        <div>Афиша</div>
+                    </a>
+                </li>
+            
+                                    <li >
+                    <ul>
+
+                                                    <li class="black"><a
+                                        href="/resursy/fond.html">Фонд</a></li>
+                                                    <li class="black"><a
+                                        href="/resursy/periodicheskie-izdanija.html">Периодические издания</a></li>
+                                                    <li class="black"><a
+                                        href="/resursy/biblioteka-mihajlova.html">Библиотека Михайлова</a></li>
+                                                    <li class="black"><a
+                                        href="/resursy/izdanija-biblioteki.html">Издания библиотеки</a></li>
+                                                    <li class="black"><a
+                                        href="/resursy/stsenarii.html">Сценарии</a></li>
+                                                    <li class="black"><a
+                                        href="/resursy/tsifrovye-govorjaschie-knigi-s-kriptozaschitoj.html">Цифровые «говорящие» книги с криптозащитой</a></li>
+                                                    <li class="black"><a
+                                        href="/resursy/filmy-s-tiflokommentarijami.html">Фильмы с тифлокомментариями</a></li>
+                        
+                    </ul>
+                    <a href="/resursy.html">
+                        <div>Ресурсы</div>
+                    </a>
+                </li>
+            
+                                    <li >
+                    <ul>
+
+                                                    <li class="black"><a
+                                        href="/novye-postuplenija/«govorjaschie»-knigi-np.html">«Говорящие» книги</a></li>
+                                                    <li class="black"><a
+                                        href="/novye-postuplenija/izdanija-rtsh-np.html">Издания рельефно-точечного шрифта (РТШ)</a></li>
+                                                    <li class="black"><a
+                                        href="/novye-postuplenija/izdanija-s-ukrupnennym-shriftom.html">Издания с укрупненным шрифтом</a></li>
+                                                    <li class="black"><a
+                                        href="/novye-postuplenija/ploskopechatnye-izdanija-np.html">Плоскопечатные издания</a></li>
+                                                    <li class="black"><a
+                                        href="/novye-postuplenija/relefno-graficheskie-posobija-np.html">Рельефно-графические пособия</a></li>
+                        
+                    </ul>
+                    <a href="/novye-postuplenija.html">
+                        <div>Новые <br/> поступления</div>
+                    </a>
+                </li>
+            
+                                    <li class="l-ln" data-color="#3f9f04">
+                    <ul>
+
+                                                    <li class="black"><a
+                                        href="/detskaja-stranichka/sovety-roditeljam.html">Советы родителям</a></li>
+                                                    <li class="black"><a
+                                        href="/detskaja-stranichka/meroprijatija.html">Мероприятия</a></li>
+                                                    <li class="black"><a
+                                        href="/detskaja-stranichka/bibliogid.html">Библиогид</a></li>
+                                                    <li class="black"><a
+                                        href="/guestBook">Обратная связь</a></li>
+                                                    <li class="black"><a
+                                        href="/detskaja-stranichka/v-chasy-dosuga2022.html">«В часы досуга»</a></li>
+                        
+                    </ul>
+                    <a href="/detskaja-stranichka.html">
+                        <div>Детская<br/> страничка</div>
+                    </a>
+                </li>
+            
+                                    <li class="l-ln" data-color="#007db3">
+                    <ul>
+
+                                                    <li class="black"><a
+                                        href="/o-tsentre/o-tsentre.html">О центре</a></li>
+                                                    <li class="black"><a
+                                        href="/o-tsentre/dejatelnost.html">Деятельность</a></li>
+                                                    <li class="black"><a
+                                        href="/o-tsentre/kollegam.html">Коллегам</a></li>
+                                                    <li class="black"><a
+                                        href="/o-tsentre/partnery.html">Партнеры</a></li>
+                        
+                    </ul>
+                    <a href="/o-tsentre.html">
+                        <div>Региональный <br/> методический центр	</div>
+                    </a>
+                </li>
+            
+                                    <li class="l-ln" data-color="#f48a1a">
+                    <ul>
+
+                                                    <li class="black"><a
+                                        href="/informatsionnyj-navigator/ljudi-bezgranichnyh-vozmozhnostej.html">Люди безграничных возможностей</a></li>
+                                                    <li class="black"><a
+                                        href="/informatsionnyj-navigator/prava-lgoty-zakony.html">Права, льготы, законы</a></li>
+                                                    <li class="black"><a
+                                        href="/informatsionnyj-navigator/dostupnyj-turizm.html">Доступный туризм</a></li>
+                                                    <li class="black"><a
+                                        href="/informatsionnyj-navigator/poleznye-kontakty.html">Полезные ссылки</a></li>
+                                                    <li class="black"><a
+                                        href="/informatsionnyj-navigator/pozitivnyj-razdel.html">Интересное</a></li>
+                        
+                    </ul>
+                    <a href="/informatsionnyj-navigator.html">
+                        <div>Информационный <br/> навигатор</div>
+                    </a>
+                </li>
+            
+            </ul>
+</nav>
+
+
+
+    <main class="mobile_content">
+        <div class="a">
+                                        <div id="mobile_main" class="b-center">
+                    
+             <div class ="articles-text" >
+                <p>&nbsp;&nbsp;</p>
+            </div>
+
+
+				<h1 class="page-title">Новости библиотеки</h1>
+				 
+<div class="cf">
+            
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/7ttolwrzo4fgjstjicw6b9kd7qeptwfphabjcskhwrpxlbeczxtstdqzcqhhhylx6ibi0benn-sedo4sdfnkq5oz.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/23-aprelja-vsemirnyj-den-knigi-i-avtorskogo-prava.html" class="ev-link">23 апреля - Всемирный день книги и авторского права</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>суббота, 23 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/ggyxb-ejfr8.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/21-aprelja-2022-goda-v-1100-mezhregionalnyj-seminar-ravnye-sredi-ravnyh-inkljuzivnoe-kulturnoe-prostranstvo.html" class="ev-link">Межрегиональный семинар «Равные среди равных: инклюзивное культурное пространство»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>четверг, 21 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/img_20220416_121114.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/ekoviktorina-ot-pochki-do-tsvetochka.html" class="ev-link">Эковикторина «От почки до цветочка»</a>
+
+                                    <div class="ev-text">
+                                            В детском отделе библиотеки                                    </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>понедельник, 18 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/gdqipmfj7we.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/14-aprelja-2022-goda-literaturnyj-vecher-vse-skazano-strokoj.html" class="ev-link">Литературный вечер «Всё сказано строкой…»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>четверг, 14 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/ldj_czsm3d8.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/14-aprelja-2022-goda-v-1400-ocherednoe-zasedanie-kruzhka-ljubitelej-literaturnogo-tvorchestva-sredi-nezrjachih-chitatelej-svetljachok.html" class="ev-link">Очередное заседание кружка любителей литературного творчества среди незрячих читателей «Светлячок»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>четверг, 14 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/qkpdtqh1qfo.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/proekt-%C2%ABeplo-serdets-pravila-zdorovja-v-ramkah-konkursa-sotsialno-znachimyh-prosvetitelskih-proektov-dlja-pozhilyh-ljudej-erebrjanyj-vozrast.html" class="ev-link">Проект «Тепло сердец: правила здоровья» в рамках конкурса социально-значимых просветительских проектов для пожилых людей «Серебряный возраст»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>среда, 13 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/xk7fs6_5lrw-1.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/oblastnoj-konkurs-literaturnogo-tvorchestva-ljudej-s-ogranichennymi-vozmozhnostjami-zdorovja-des-kraj-moj-istok-moj-doroga-moja.html" class="ev-link">Областной конкурс литературного творчества людей с ограниченными возможностями здоровья  «Здесь край мой, исток мой, дорога моя...»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>среда, 13 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/nadikm2nmbq.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/12-aprelja-2022-goda-v-1100-lektsija-petra-anatolevicha-zavisho-gagarin-v-rjazani.html" class="ev-link">Лекция Петра Анатольевича Завишо «Гагарин в Рязани»</a>
+
+                                    <div class="ev-text">
+                                            Мероприятие посвящено Всемирному дню авиации и космонавтики.                                    </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>вторник, 12 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                         
+                    
+                
+                 
+
+</div>
+				<a href="/news" class="ev-alllink">Смотреть все новости</a>
+
+                </div>			
+                        <div class="b-left">
+                <a href="/ainforamator" class="btn-autoinfo">Автоинформатор</a>
+
+                <form action="/search" name="contact_form" id="search-box" method="get"
+                      onsubmit="return validate_form ( );">
+                    <div class="sb-search">
+                        <input class="search" name="search" type="text" placeholder="Поиск по сайту">
+                        <input class="text_search" type="submit" value="">
+                    </div>
+                </form>
+                <ul class="s-menu">
+                    <ul class="menu" id="yw1">
+<li data-color="#f48b1a"><a href="/elektronnyj-katalog.html">Электронный каталог</a></li>
+<li data-color="#4ba706"><a href="/biblioteka-mihajlova.html">Онлайн-библиотека &quot;Логос&quot;</a></li>
+<li data-color="#f41a1a"><a href="/plan-meroprijatij.html">План мероприятий</a></li>
+<li data-color="#f41a1a"><a href="/proekty-i-granty.html">Проекты и гранты</a></li>
+<li data-color="#00aaee"><a href="/tiflologija.html">Тифлология</a></li>
+<li data-color="#4ba706"><a href="/bibliotechnye-punkty.html">Библиотечные пункты</a></li>
+<li data-color="#00aaee"><a href="/klubnye-obedinenija.html">Клубные объединения</a></li>
+<li data-color="#f48b1a"><a href="/otsenka-kachestva.html">Оценка качества</a></li>
+</ul>                </ul>
+                <div class="ls-pad">
+                    <div class="sb-box">
+                        <div class="sb-title">
+                            <a href="/guestBook">
+                                Гостевая книга
+                            </a>
+                        </div>
+                                                    <form id="login-form68" action="/user/login" method="post">                            <div class="sb-logform">
+                                <input name="LoginForm[username]" id="LoginForm_username" type="text" />                                <input name="LoginForm[password]" id="LoginForm_password" type="password" />                                <input type="submit" name="yt0" value="Войти" />                                <div class="clear"></div>
+                                <div class="error-text" id="LoginForm_username_em_" style="display:none"></div>                                <div class="error-text" id="LoginForm_password_em_" style="display:none"></div>                                <div class="sb-sblock clearfix">
+                                    <div class="row rememberMe">
+                                        <input id="ytLoginForm_rememberMe" type="hidden" value="0" name="LoginForm[rememberMe]" /><input name="LoginForm[rememberMe]" id="LoginForm_rememberMe" value="1" type="checkbox" />                                        <label for="LoginForm_rememberMe">Запомнить меня</label>                                    </div>
+                                                                        <a href="/user/register">регистрация</a>
+                                </div>
+                            </div>
+                            </form>                                            </div>
+                    <div class="sb-box">
+                        <div class="sb-title">События</div>
+
+                            
+        <a 
+            href="/events/nikolaj-ljubimov-nagradil-rjazanskih-volonterov.html" 
+            class="ev-link">
+            Николай Любимов наградил рязанских волонтеров        </a>
+        <div class="ev-content">
+                <div class="ev-img">
+                        <img src="/image.php?image=/uploads/gallery/2021/bezymyannyi22.jpg" alt="">
+                </div>
+            
+                
+                <div class="ev-pub"><i>Опубликовано: </i>понедельник, 20 декабря 2021 г.</div>
+
+                
+        </div>
+
+                           <a href="/events" class="ev-alllink">Смотреть все
+                            события</a>
+                    </div>
+					                </div>
+            </div>
+                                        <div id="desktop_main" class="b-center active">
+                    
+             <div class ="articles-text" >
+                <p>&nbsp;&nbsp;</p>
+            </div>
+
+
+				<h1 class="page-title">Новости библиотеки</h1>
+				 
+<div class="cf">
+            
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/7ttolwrzo4fgjstjicw6b9kd7qeptwfphabjcskhwrpxlbeczxtstdqzcqhhhylx6ibi0benn-sedo4sdfnkq5oz.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/23-aprelja-vsemirnyj-den-knigi-i-avtorskogo-prava.html" class="ev-link">23 апреля - Всемирный день книги и авторского права</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>суббота, 23 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/ggyxb-ejfr8.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/21-aprelja-2022-goda-v-1100-mezhregionalnyj-seminar-ravnye-sredi-ravnyh-inkljuzivnoe-kulturnoe-prostranstvo.html" class="ev-link">Межрегиональный семинар «Равные среди равных: инклюзивное культурное пространство»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>четверг, 21 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/img_20220416_121114.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/ekoviktorina-ot-pochki-do-tsvetochka.html" class="ev-link">Эковикторина «От почки до цветочка»</a>
+
+                                    <div class="ev-text">
+                                            В детском отделе библиотеки                                    </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>понедельник, 18 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/gdqipmfj7we.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/14-aprelja-2022-goda-literaturnyj-vecher-vse-skazano-strokoj.html" class="ev-link">Литературный вечер «Всё сказано строкой…»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>четверг, 14 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/ldj_czsm3d8.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/14-aprelja-2022-goda-v-1400-ocherednoe-zasedanie-kruzhka-ljubitelej-literaturnogo-tvorchestva-sredi-nezrjachih-chitatelej-svetljachok.html" class="ev-link">Очередное заседание кружка любителей литературного творчества среди незрячих читателей «Светлячок»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>четверг, 14 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/qkpdtqh1qfo.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/proekt-%C2%ABeplo-serdets-pravila-zdorovja-v-ramkah-konkursa-sotsialno-znachimyh-prosvetitelskih-proektov-dlja-pozhilyh-ljudej-erebrjanyj-vozrast.html" class="ev-link">Проект «Тепло сердец: правила здоровья» в рамках конкурса социально-значимых просветительских проектов для пожилых людей «Серебряный возраст»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>среда, 13 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/xk7fs6_5lrw-1.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/oblastnoj-konkurs-literaturnogo-tvorchestva-ljudej-s-ogranichennymi-vozmozhnostjami-zdorovja-des-kraj-moj-istok-moj-doroga-moja.html" class="ev-link">Областной конкурс литературного творчества людей с ограниченными возможностями здоровья  «Здесь край мой, исток мой, дорога моя...»</a>
+
+                                    <div class="ev-text">
+                                                                                </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>среда, 13 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                        
+                            <div class="ev-newsblock-smi">
+                                    <img src="/image.php?image=/uploads/gallery/2022/nadikm2nmbq.jpg&width=192&height=200" alt="">
+                                          
+                                    <a href="/news/12-aprelja-2022-goda-v-1100-lektsija-petra-anatolevicha-zavisho-gagarin-v-rjazani.html" class="ev-link">Лекция Петра Анатольевича Завишо «Гагарин в Рязани»</a>
+
+                                    <div class="ev-text">
+                                            Мероприятие посвящено Всемирному дню авиации и космонавтики.                                    </div>
+
+                                    <div>
+                                            <div class="ev-pub"><i>Опубликовано: </i>вторник, 12 апреля 2022 г.</div>
+    
+                                    </div>
+                            </div>
+                         
+                    
+                
+                 
+
+</div>
+				<a href="/news" class="ev-alllink">Смотреть все новости</a>
+
+                </div>
+                <div class="b-right">
+
+                    <div class="br-wrap">
+                                                <h1 class="page-title">Анонсы</h1>
+                            
+            <div class="b-ann">
+                    <a 
+                        href="/anons/28-aprelja-2022-goda-v-1400-inkljuzivnaja-kontsertnaja-programma-byla-vesna-vesna-pobedy.html" 
+                        class="ev-link">
+                        28 апреля 2022 года в 14.00 ИНКЛЮЗИВНАЯ КОНЦЕРТНАЯ ПРОГРАММА «Была весна – весна Победы»                    </a>
+                    <div class="ev-pub"><i>Опубликовано: </i>пятница, 22 апреля 2022 г.</div>
+            </div>
+    
+            <div class="b-ann">
+                    <a 
+                        href="/anons/s-1-fevralja-2022-goda-knizhnaja-vystavka-nashi-izdanija.html" 
+                        class="ev-link">
+                        С 1 февраля 2022 года Книжная выставка «Наши издания»                    </a>
+                    <div class="ev-pub"><i>Опубликовано: </i>четверг, 27 января 2022 г.</div>
+            </div>
+    
+            <div class="b-ann">
+                    <a 
+                        href="/anons/urok-4-android-prilozhenie-telefon-sozdanie-vidzhetov.html" 
+                        class="ev-link">
+                        Урок 4. Android. Приложение телефон. Создание виджетов.                    </a>
+                    <div class="ev-pub"><i>Опубликовано: </i>среда, 15 декабря 2021 г.</div>
+            </div>
+   
+                        <a href="/anons" class="ev-alllink ann-all">Смотреть все
+                            анонсы</a>
+
+                        <div class="cl-b">
+                            <a href='https://docs.google.com/forms/d/e/1FAIpQLSeMcD9Wv83bS2tAweEA-KE1WvMjwQHlE9cFxfgBhZcByGSvog/viewform?usp=sf_link'>
+    <img src="/image.php?image=/uploads/slider/8/xk7fs6_5LRw.jpg" alt="">
+</a>    
+<a href='http://svetapp.rusneb.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/нэбСвет.jpg" alt="">
+</a>    
+<a href='https://profflider.ru/ucastnikikult'>
+    <img src="/image.php?image=/uploads/slider/8/загруженное.jpg" alt="">
+</a>    
+<a href='https://www.rcsm-ryazan.ru/100-luchshih-tovarov-rossii.html'>
+    <img src="/image.php?image=/uploads/slider/8/Презентация1.jpg" alt="">
+</a>    
+<a href='https://internetforkids.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/хартия.jpg" alt="">
+</a>    
+<a href='http://osbs-rzn.ru/news/hochu-pomogat-kak-ne-popastsja-moshennikam.html'>
+    <img src="/image.php?image=/uploads/slider/8/Безымянный.jpg" alt="">
+</a>    
+<a href='https://livingheritage.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/живое наследие.jpg" alt="">
+</a>    
+<a href='http://osbs-rzn.ru/news/zaschitis-ot-grippa-koronavirusa-i-orvi.html'>
+    <img src="/image.php?image=/uploads/slider/8/_T9OzEYLRLQ.jpg" alt="">
+</a>    
+<a href='https://vk.com/youfrf'>
+    <img src="/image.php?image=/uploads/slider/8/контакт.jpg" alt="">
+</a>    
+<a href='https://premia.fedorabramov.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/ck.jpg" alt="">
+</a>    
+<a href='https://многодетные-семьи.рф/turizm2021'>
+    <img src="/image.php?image=/uploads/slider/8/lg!cnj.jpg" alt="">
+</a>    
+<a href='http://iac62.ru/map'>
+    <img src="/image.php?image=/uploads/slider/8/интерактивная.png" alt="">
+</a>    
+<a href='/afisha/anons/meroprijatija-k-75-letiju-pobedy.html'>
+    <img src="/image.php?image=/uploads/slider/8/wJ9rr5oTEeM.jpg" alt="">
+</a>    
+<a href='https://drive.google.com/drive/folders/1LxCdZR4WfNRGFN4bCx-uygosT5TYWYTR?fbclid=IwAR3KD53tnjvS18GvOwRI8cvn7NYdqNkLTv7JR_i8TMeUeHXwb257GANCfEQ'>
+    <img src="/image.php?image=/uploads/slider/8/proxy.imgsmail.ru.jpg" alt="">
+</a>    
+<a href='https://www.culture.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/kultura.jpg" alt="">
+</a>    
+<a href='https://rusneb.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/neb_KNIGI.jpg" alt="">
+</a>    
+<a href='https://bus.gov.ru/info-card/79691'>
+    <img src="/image.php?image=/uploads/slider/8/3IgBmJJE_g.jpg" alt="">
+</a>    
+<a href='http://www.vezdekultura.ru/25-polls-udovletvoreni-li-vi-uslugami-v-sfere-kulturi-predo'>
+    <img src="/image.php?image=/uploads/slider/8/3IgBmJJE_gM.jpg" alt="">
+</a>    
+<a href='https://trudvsem.ru/auth/login/manager'>
+    <img src="/image.php?image=/uploads/slider/8/QPQzFPYtxZF5NWtnoTqagiefbIkDbm0YnpFacY9I.jpeg" alt="">
+</a>    
+<a href='http://www.vezdekultura.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/logo.png" alt="">
+</a>    
+<a href='https://fincult.info/'>
+    <img src="/image.php?image=/uploads/slider/8/фИНАНСЫ.jpg" alt="">
+</a>    
+<a href='https://grants.culture.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/Гранты_Баннер прямоугольный.jpg" alt="">
+</a>    
+<a href='https://polpred.com/'>
+    <img src="/image.php?image=/uploads/slider/8/polpred_banner.png" alt="">
+</a>    
+<a href='https://rusneb.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/neb.jpg" alt="">
+</a>    
+<a href='https://arch.rgdb.ru/xmlui/'>
+    <img src="/image.php?image=/uploads/slider/8/p1.jpg" alt="">
+</a>    
+<a href='http://tlib.gbs.spb.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/logo-min-ru.png" alt="">
+</a>    
+<a href='https://culture.gov.ru/'>
+    <img src="/image.php?image=/uploads/slider/8/compressed_file.jpg" alt="">
+</a>    
+ 
+
+                        </div>
+                    </div>
+
+                </div>
+
+                    </div>
+            		<div class="gosuslugi-widget">
+		<script src='https://pos.gosuslugi.ru/bin/script.min.js'></script> <style> @charset "UTF-8";#js-show-iframe-wrapper{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-width:293px;max-width:100%;background:linear-gradient(138.4deg,#38bafe 26.49%,#2d73bc 79.45%);color:#fff; cursor: pointer;}#js-show-iframe-wrapper .pos-banner-fluid *{box-sizing:border-box}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{display:block;width:195px;min-height:56px;font-size:18px;line-height:24px;cursor:pointer;background:#0d4cd3;color:#fff;border:none;border-radius:8px;outline:0}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#1d5deb}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus{background:#2a63ad}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active{background:#2a63ad}@-webkit-keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@font-face{font-family:LatoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.ttf) format("truetype");font-style:normal;font-weight:400;text-rendering:optimizeLegibility}@font-face{font-family:LatoWeb;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.ttf) format("truetype");font-style:normal;font-weight:400;text-rendering:optimizeLegibility}@font-face{font-family:LatoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.ttf) format("truetype");font-style:normal;font-weight:400;text-rendering:optimizeLegibility} </style> <style> #js-show-iframe-wrapper .bf-2{position:relative;display:grid;grid-template-columns:var(--pos-banner-fluid-2__grid-template-columns);grid-template-rows:var(--pos-banner-fluid-2__grid-template-rows);width:100%;max-width:1060px;font-family:LatoWeb,sans-serif;box-sizing:border-box}#js-show-iframe-wrapper .bf-2__decor{grid-column:var(--pos-banner-fluid-2__decor-grid-column);grid-row:var(--pos-banner-fluid-2__decor-grid-row);padding:var(--pos-banner-fluid-2__decor-padding);background:var(--pos-banner-fluid-2__bg-url) var(--pos-banner-fluid-2__bg-position) no-repeat;background-size:var(--pos-banner-fluid-2__bg-size)}#js-show-iframe-wrapper .bf-2__logo-wrap{position:absolute;top:var(--pos-banner-fluid-2__logo-wrap-top);bottom:var(--pos-banner-fluid-2__logo-wrap-bottom);right:0;display:flex;flex-direction:column;align-items:flex-end;padding:var(--pos-banner-fluid-2__logo-wrap-padding);background:#2d73bc;border-radius:var(--pos-banner-fluid-2__logo-wrap-border-radius)}#js-show-iframe-wrapper .bf-2__logo{width:128px}#js-show-iframe-wrapper .bf-2__slogan{font-family:LatoWebBold,sans-serif;font-size:var(--pos-banner-fluid-2__slogan-font-size);line-height:var(--pos-banner-fluid-2__slogan-line-height)}#js-show-iframe-wrapper .bf-2__content{padding:var(--pos-banner-fluid-2__content-padding)}#js-show-iframe-wrapper .bf-2__description{display:flex;flex-direction:column;margin-bottom:24px}#js-show-iframe-wrapper .bf-2__text{margin-bottom:12px;font-size:24px;line-height:32px;font-family:LatoWebBold,sans-serif}#js-show-iframe-wrapper .bf-2__text_small{margin-bottom:0;font-size:16px;line-height:24px;font-family:LatoWeb,sans-serif}#js-show-iframe-wrapper .bf-2__btn-wrap{display:flex;align-items:center;justify-content:center} </style > <div id='js-show-iframe-wrapper'> <div class='pos-banner-fluid bf-2'> <div class='bf-2__decor'> <div class='bf-2__logo-wrap'> <img class='bf-2__logo' src='https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo.svg' alt='Госуслуги' /> <div class='bf-2__slogan'>Жалобы на всё</div > </div > </div > <div class='bf-2__content'> <div class='bf-2__description'> <span class='bf-2__text'> Не убран мусор, яма на дороге, не горит фонарь? <!-- Не убран мусор, яма на дороге, не горит фонарь?--> </span > <span class='pos-banner-fluid__text pos-banner-fluid__text_small'> Столкнулись с проблемой&nbsp;— сообщите о ней! <!-- Столкнулись с проблемой&nbsp;— сообщите о ней!--> </span > </div > <div class='bf-2__btn-wrap'> <!-- pos-banner-btn_2 не удалять; другие классы не добавлять --> <button class='pos-banner-btn_2' type='button' >Подать жалобу </button > </div > </div > </div > </div > <script> (function(){ "use strict"; var root=document.documentElement,banner=document.getElementById("js-show-iframe-wrapper");function displayWindowSize(){var o=banner.offsetWidth;o<=405&&(root.style.setProperty("--pos-banner-fluid-2__grid-template-columns","100%"),root.style.setProperty("--pos-banner-fluid-2__grid-template-rows","310px auto"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-column","initial"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-row","initial"),root.style.setProperty("--pos-banner-fluid-2__decor-padding","30px 30px 0 30px"),root.style.setProperty("--pos-banner-fluid-2__content-padding","0 30px 30px 30px"),root.style.setProperty("--pos-banner-fluid-2__bg-url","url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')"),root.style.setProperty("--pos-banner-fluid-2__bg-position","calc(10% + 64px) calc(100% - 20px)"),root.style.setProperty("--pos-banner-fluid-2__bg-size","cover"),root.style.setProperty("--pos-banner-fluid-2__slogan-font-size","20px"),root.style.setProperty("--pos-banner-fluid-2__slogan-line-height","32px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-padding","20px 30px 30px 40px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-top","0"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-bottom","initial"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-border-radius","0 0 0 80px")),o>405&&o<=500&&(root.style.setProperty("--pos-banner-fluid-2__grid-template-columns","100%"),root.style.setProperty("--pos-banner-fluid-2__grid-template-rows","310px auto"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-column","initial"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-row","initial"),root.style.setProperty("--pos-banner-fluid-2__decor-padding","30px 30px 0 30px"),root.style.setProperty("--pos-banner-fluid-2__content-padding","0 30px 30px 30px"),root.style.setProperty("--pos-banner-fluid-2__bg-url","url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')"),root.style.setProperty("--pos-banner-fluid-2__bg-position","calc(10% + 64px) calc(100% - 20px)"),root.style.setProperty("--pos-banner-fluid-2__bg-size","cover"),root.style.setProperty("--pos-banner-fluid-2__slogan-font-size","24px"),root.style.setProperty("--pos-banner-fluid-2__slogan-line-height","32px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-padding","30px 50px 30px 70px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-top","0"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-bottom","initial"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-border-radius","0 0 0 80px")),o>500&&o<=585&&(root.style.setProperty("--pos-banner-fluid-2__grid-template-columns","min-content 1fr"),root.style.setProperty("--pos-banner-fluid-2__grid-template-rows","100%"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-column","2"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-row","1"),root.style.setProperty("--pos-banner-fluid-2__decor-padding","30px 30px 30px 0"),root.style.setProperty("--pos-banner-fluid-2__content-padding","30px"),root.style.setProperty("--pos-banner-fluid-2__bg-url","url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')"),root.style.setProperty("--pos-banner-fluid-2__bg-position","0% calc(100% - 70px)"),root.style.setProperty("--pos-banner-fluid-2__bg-size","cover"),root.style.setProperty("--pos-banner-fluid-2__slogan-font-size","24px"),root.style.setProperty("--pos-banner-fluid-2__slogan-line-height","32px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-padding","30px 30px 24px 40px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-top","initial"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-bottom","0"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-border-radius","80px 0 0 0")),o>585&&o<=800&&(root.style.setProperty("--pos-banner-fluid-2__grid-template-columns","min-content 1fr"),root.style.setProperty("--pos-banner-fluid-2__grid-template-rows","100%"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-column","2"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-row","1"),root.style.setProperty("--pos-banner-fluid-2__decor-padding","30px 30px 30px 0"),root.style.setProperty("--pos-banner-fluid-2__content-padding","30px"),root.style.setProperty("--pos-banner-fluid-2__bg-url","url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')"),root.style.setProperty("--pos-banner-fluid-2__bg-position","0% calc(100% - 6px)"),root.style.setProperty("--pos-banner-fluid-2__bg-size","cover"),root.style.setProperty("--pos-banner-fluid-2__slogan-font-size","24px"),root.style.setProperty("--pos-banner-fluid-2__slogan-line-height","32px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-padding","30px 30px 24px 40px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-top","initial"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-bottom","0"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-border-radius","80px 0 0 0")),o>800&&o<=1020&&(root.style.setProperty("--pos-banner-fluid-2__grid-template-columns","min-content 1fr"),root.style.setProperty("--pos-banner-fluid-2__grid-template-rows","100%"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-column","2"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-row","1"),root.style.setProperty("--pos-banner-fluid-2__decor-padding","30px 30px 30px 0"),root.style.setProperty("--pos-banner-fluid-2__content-padding","30px"),root.style.setProperty("--pos-banner-fluid-2__bg-url","url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2.svg')"),root.style.setProperty("--pos-banner-fluid-2__bg-position","0% center"),root.style.setProperty("--pos-banner-fluid-2__bg-size","cover"),root.style.setProperty("--pos-banner-fluid-2__slogan-font-size","24px"),root.style.setProperty("--pos-banner-fluid-2__slogan-line-height","32px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-padding","30px 30px 24px 40px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-top","initial"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-bottom","0"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-border-radius","80px 0 0 0")),o>1020&&(root.style.setProperty("--pos-banner-fluid-2__grid-template-columns","min-content 1fr"),root.style.setProperty("--pos-banner-fluid-2__grid-template-rows","100%"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-column","2"),root.style.setProperty("--pos-banner-fluid-2__decor-grid-row","1"),root.style.setProperty("--pos-banner-fluid-2__decor-padding","30px 30px 30px 0"),root.style.setProperty("--pos-banner-fluid-2__content-padding","30px"),root.style.setProperty("--pos-banner-fluid-2__bg-url","url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2.svg')"),root.style.setProperty("--pos-banner-fluid-2__bg-position","0% center"),root.style.setProperty("--pos-banner-fluid-2__bg-size","cover"),root.style.setProperty("--pos-banner-fluid-2__slogan-font-size","24px"),root.style.setProperty("--pos-banner-fluid-2__slogan-line-height","32px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-padding","30px 30px 24px 40px"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-top","initial"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-bottom","0"),root.style.setProperty("--pos-banner-fluid-2__logo-wrap-border-radius","80px 0 0 0"))}displayWindowSize();var resizeListener=window.addEventListener("resize",displayWindowSize);window.onunload=function(){window.removeEventListener("resize",resizeListener)}; })() </script> <script>Widget("https://pos.gosuslugi.ru/form", 224798)</script>
+		</div>
+                    <div class="recom">
+            <div class="recom-content">
+                <a href="/books/recomend">
+                    <h1 class="sb-title">Советуем почитать</h1>
+                </a>
+                <div class="clearfix">
+                            <div class="r-col">
+                <img src="/image.php?image=/uploads/books/2022/45138587-sara-dzhio-vse-cvety-parizha.jpg&width=100" alt="">
+                <div class="rec-text">
+                        Джио С. Все цветы Парижа: роман / Сара Джио; (перевод с английского И.Н. Гиляровой). – М.: Эксмо, 2020. – 384 с.                        <br><br>
+                        <a href="/books/dzhio-s-vse-tsvety-parizha.html">Подробнее</a>
+                </div>
+        </div>
+        <div class="r-col">
+                <img src="/image.php?image=/uploads/books/2022/1021039396.jpg&width=100" alt="">
+                <div class="rec-text">
+                        Басаргин И.У. В горах Тигровых: роман / Иван Басаргин. –М.: Вече, 2017. – 416 с. – (Сибириада)                        <br><br>
+                        <a href="/books/basargin-iu-v-gorah-tigrovyh.html">Подробнее</a>
+                </div>
+        </div>
+        <div class="r-col">
+                <img src="/image.php?image=/uploads/books/2022/6025592927.jpg&width=100" alt="">
+                <div class="rec-text">
+                        Соболева Л.П. Девятый круг удачи: роман / Лариса Соболева. – М.: Издательство АСТ, 2019. – 352 с. – (она всегда с тобой. Детективы Ларисы Соболевой)                        <br><br>
+                        <a href="/books/soboleva-lp-devjatyj-krug-udachi.html">Подробнее</a>
+                </div>
+        </div>
+   
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer clearfix">
+            <div class="foot-fl">
+                390005, г. Рязань, ул. Татарская, д. 29/44<br>
+                © 2016 Рязанская областная специальная библиотека для слепых
+            </div>
+            <div class="foot-fc">
+                <a href="#">rosbds@ryazangov.ru</a><br>
+                тел. (4912) 96-61-40, <br/> факс (4912) 76-14-63            </div>
+            <div class="foot-fr">
+                  <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=41825479&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/41825479/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="41825479" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41825479 = new Ya.Metrika({ id:41825479, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41825479" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->            </div>
+            <div class="foot-fr">
+                <span id="sputnik-informer"></span>
+            </div>
+        </div>
+    </footer>
+    <!-- <sputnik> -->
+    <script type="text/javascript">
+        (function (d, t, p) {
+            var j = d.createElement(t);
+            j.async = true;
+            j.type = "text/javascript";
+            j.src = ("https:" == p ? "https:" : "http:") + "//stat.sputnik.ru/cnt.js";
+            var s = d.getElementsByTagName(t)[0];
+            s.parentNode.insertBefore(j, s);
+        })(document, "script", document.location.protocol);
+    </script>
+    <!-- </sputnik> -->
+	<script src="https://culturaltracking.ru/static/js/spxl.js" data-pixel-id="3953"></script>
+    <script type="text/javascript" src="/assets/34d1c6d6/jquery.yiiactiveform.js"></script>
+<script type="text/javascript" src="/assets/e377697b/jquery.cookie.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+$("#blindMode").blindMode({sizes:[12,13,14],
+		onBeforeInit:function(){
+			var defaultSizes = {
+				".a-tabs li a": parseFloat($(".a-tabs li a").css("font-size")),
+				".btn-autoinfo": parseFloat($(".btn-autoinfo").css("font-size"))
+			};
+			$.blindMode.defaultSizes = defaultSizes;
+		},
+		onAfterChange:function(){
+			var fontSize = $.blindMode.defaultSizes[".a-tabs li a"];
+			fontSize = fontSize + parseFloat($.blindMode.fontSize)/100*10;
+			$(".a-tabs li a").css("font-size",fontSize);
+			
+			var fontSize = $.blindMode.defaultSizes[".btn-autoinfo"];
+			fontSize = fontSize + parseFloat($.blindMode.fontSize)/100*10;
+			$(".btn-autoinfo").css("font-size",fontSize);
+		},
+		onAfterShow:function(){
+			$("#blindMode").hide();
+		},
+		onAfterClose:function(){
+			$("#blindMode").show();
+		}});
+jQuery('#login-form68').yiiactiveform({'validateOnSubmit':true,'attributes':[{'id':'LoginForm_username','inputID':'LoginForm_username','errorID':'LoginForm_username_em_','model':'LoginForm','name':'username','enableAjaxValidation':true},{'id':'LoginForm_password','inputID':'LoginForm_password','errorID':'LoginForm_password_em_','model':'LoginForm','name':'password','enableAjaxValidation':true}],'errorCss':'error'});
+        jQuery(document).ready(function () {
+            $("#privacy_accept").on('click', function () {
+                $.cookie('privacy_gdr', 'true', {expires: 365, path: '/'});
+                $(".privacy_panel").hide();
+            });
+        });
+        
+});
+/*]]>*/
+</script>
+</body>
+
+    <div class="privacy_panel">
+        <div class="privacy_wrapper">
+            <div class="privacy_text">
+                Данный <a href="/info-pages/politika-konfidentsialnosti-sajta.html">сайт использует cookie-файлы</a> для хранения информации на персональном компьютере пользователя. Некоторые из этих фалов необходимы для работы нашего сайта; другие помогают улучшить пользовательский интерфейс.Пользование сайтом означает согласие на хранение cookie-файлов.                                    <a href="/info-pages/politika-konfidentsialnosti-sajta.html">Политика конфиденциальности</a>
+                            </div>
+            <a id="privacy_accept" class="privacy_btn"><strong>Хорошо</strong></a>
+        </div>
+    </div>
+
+    <script>
+            </script>

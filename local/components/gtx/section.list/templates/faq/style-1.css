@@ -1,0 +1,27 @@
+.faq {
+    margin-bottom: 60px;
+}
+
+.faq ul {
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.faq ul li {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+.faq ul li a {
+    font-size: 20px;
+    border-bottom: 1px dashed black;
+}
+
+@media screen and (max-width: 767px){
+    .faq ul li {
+        width: 100%;
+    }
+}

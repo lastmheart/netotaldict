@@ -1,0 +1,196 @@
+@font-face {
+  font-family: MullerRegular;
+  src: url(../fonts/muller-regular.eot);
+  src: url(../fonts/muller-regular-1.eot) format("embedded-opentype"), url(../fonts/muller-regular.woff) format("woff"), url(../fonts/muller-regular.ttf) format("truetype"), url(../fonts/muller-regular.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: MullerBold;
+  src: url(../fonts/muller-bold.eot);
+  src: url(../fonts/muller-bold-1.eot) format("embedded-opentype"), url(../fonts/muller-bold.woff) format("woff"), url(../fonts/muller-bold.ttf) format("truetype"), url(../fonts/muller-bold.svg) format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal; }
+@font-face {
+  font-family: MullerExtraBold;
+  src: url(../fonts/muller-extrabold.eot);
+  src: url(../fonts/muller-extrabold-1.eot) format("embedded-opentype"), url(../fonts/muller-extrabold.woff) format("woff"), url(../fonts/muller-extrabold.ttf) format("truetype"), url(../fonts/muller-extrabold.svg) format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal; }
+.mainmenu {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-width: 0 0 1px 0;
+  margin: 30px 0 20px; }
+  .mainmenu .container {
+    max-width: 700px; }
+    .mainmenu .container ul#nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .mainmenu .container ul#nav li {
+        padding: 8px 12px 0px; }
+        .mainmenu .container ul#nav li.current {
+          color: #d81f26; }
+          .mainmenu .container ul#nav li.current span.bordered a {
+            border-color: #d81f26; }
+        .mainmenu .container ul#nav li span.bordered {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 42px;
+          padding: 1px 1px 0px 1px; }
+          .mainmenu .container ul#nav li span.bordered:hover {
+            color: #d81f26; }
+          .mainmenu .container ul#nav li span.bordered a {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 43px;
+            min-height: 43px;
+            font-size: 20px;
+            border: 1px solid transparent;
+            border-width: 0 0 1px 0;
+            transition: 0.1s; }
+            .mainmenu .container ul#nav li span.bordered a span.basket {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              width: 35px;
+              position: relative;
+              color: #d81f26;
+              margin-right: 5px; }
+              .mainmenu .container ul#nav li span.bordered a span.basket span {
+                flex: 1 1 50%; }
+                .mainmenu .container ul#nav li span.bordered a span.basket span.count {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-end;
+                  align-items: flex-start;
+                  flex-grow: 1;
+                  padding-top: 2px; }
+  .mainmenu span .icon {
+    margin-top: -5px;
+    display: inline-block;
+    width: 17px;
+    height: 20px; }
+    .mainmenu span .icon.bag {
+      background-repeat: no-repeat;
+      background-image: url("../images/icons/shape.svg");
+      background-size: contain; }
+
+body {
+  background-color: #f4f2f1;
+  font-family: MullerRegular, sans-serif; }
+
+.container {
+  max-width: 1140px;
+  padding-left: 0;
+  padding-right: 0; }
+
+.main-container-class {
+  padding-top: 30px; }
+  .main-container-class h1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: MullerExtraBold, sans-serif; }
+  .main-container-class .content-container {
+    min-height: 600px; }
+    .main-container-class .content-container .pane {
+      background: transparent; }
+      .main-container-class .content-container .pane .pane__top .pane__name {
+        text-align: center;
+        font-size: 1.2em; }
+
+@media (max-width: 479px) and (min-width: 320px) {
+  .padd {
+    padding: 15px; } }
+@media (max-width: 768px) {
+  /*body {
+    background: red;
+  }*/
+  body {
+    user-select: none;
+    -webkit-user-select: none; }
+
+  .padd {
+    padding: 15px; }
+
+  .container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .container.main-container-class {
+      padding: 30px 0 0 0; }
+      .container.main-container-class h1 {
+        font-size: 2.5em;
+        text-align: left;
+        line-height: 1.1;
+        padding: 0 15px; }
+      .container.main-container-class .mainmenu {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 53px;
+        margin-top: 20px; }
+        .container.main-container-class .mainmenu nav {
+          overflow: scroll; }
+          .container.main-container-class .mainmenu nav .container {
+            padding-left: 205px; }
+            .container.main-container-class .mainmenu nav .container #nav {
+              height: 52px; }
+              .container.main-container-class .mainmenu nav .container #nav li {
+                white-space: nowrap; }
+                .container.main-container-class .mainmenu nav .container #nav li:first-child {
+                  padding-left: 0; }
+
+  .catalog-main .item {
+    flex: 0 0 100%;
+    min-width: 100%;
+    border-radius: 0;
+    min-height: 240px; }
+    .catalog-main .item img {
+      height: 240px; }
+    .catalog-main .item .link {
+      height: 240px; }
+    .catalog-main .item .button {
+      right: 10px;
+      bottom: 10px; }
+    .catalog-main .item .title {
+      left: 10px;
+      bottom: 10px; }
+
+  #basket-root .basket-items-list-wrapper .basket-items-list .basket-items-list-table .basket-items-list-item-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0; }
+    #basket-root .basket-items-list-wrapper .basket-items-list .basket-items-list-table .basket-items-list-item-container .description {
+      flex: 1 1 100%;
+      max-width: 100%;
+      min-width: 100%; } }
+@media (min-width: 769px) and (max-width: 991px) {
+  /*body {
+    background: green;
+  }*/ }
+@media (min-width: 992px) and (max-width: 1999px) {
+  /*body {
+    background: yellow;
+  }*/ }
+@media (min-width: 1200px) {
+  /*body {
+    background: orange;
+  }*/ }
+/*@media screen and (max-width: 1024px) {
+  body {
+    background: purple;
+  }
+}*/
+
+/*# sourceMappingURL=shop.css.map */

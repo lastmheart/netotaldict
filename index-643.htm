@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="itsummaApp" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+
+    
+    <link rel="alternate" hreflang="ru" href="https://www.itsumma.ru/"/>
+    <link rel="icon" href="/img/favicon/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="yandex-verification" content="499e913d94e65335"/>
+
+    <meta property="fb:app_id" content="542448845923317"/>
+    <meta property="og:url" content="https://www.itsumma.ru"/>
+    <meta property="og:site_name" content="itsumma.ru"/>
+    <meta property="og:type" content="website"/>
+
+                <title>Круглосуточная техподдержка сайтов, web-разработка, DevOps — ITSumma</title>
+    <meta property="og:title" content="Круглосуточная техподдержка сайтов, web-разработка, DevOps — ITSumma"/>
+    <meta name="description" content="Если вам нужна круглосуточная техподдержка сайта, перевод проекта в Kubernetes или создание инфраструктуры с нуля — наша команда готова взять на себя ваши заботы! Мы используем информационные технологии для решения ваших бизнес‑задач.">
+    <meta property="og:description" content="Если вам нужна круглосуточная техподдержка сайта, перевод проекта в Kubernetes или создание инфраструктуры с нуля — наша команда готова взять на себя ваши заботы! Мы используем информационные технологии для решения ваших бизнес‑задач."/>
+    <meta property="og:image" content="https://www.itsumma.ru/uploads/meta/7d6fecbfba84f471e73548d3e70adf9a.jpg"/>
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Круглосуточная техподдержка сайтов, web-разработка, DevOps — ITSumma">
+    <meta name="twitter:description" content="Если вам нужна круглосуточная техподдержка сайта, перевод проекта в Kubernetes или создание инфраструктуры с нуля — наша команда готова взять на себя ваши заботы! Мы используем информационные технологии для решения ваших бизнес‑задач.">
+    <meta name="twitter:image:src"
+          content="https://www.itsumma.ru/uploads/meta/7d6fecbfba84f471e73548d3e70adf9a.jpg">
+    <meta name="twitter:url" content="https://www.itsumma.ru">
+    <meta name="twitter:domain" content="itsumma.ru">
+    <meta name="twitter:site" content="@itsumma">
+    <meta name="twitter:creator" content="@itsumma">
+    
+    <script src="/js/modernizr-webp.js"></script>
+    <link rel="stylesheet" href="/css/style.css?id=1904bd4d37abc81d05a2">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <link rel="preload" href="/fonts/Akrobat-Light.otf" as="font"
+          type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/Akrobat-SemiBold.otf" as="font"
+          type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/Akrobat-Black.otf" as="font"
+          type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/MuseoSansCyrl_100.otf" as="font"
+          type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/MuseoSansCyrl_300.otf" as="font"
+          type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/MuseoSansCyrl_500.woff2" as="font"
+          type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MuseoSansCyrl_700.woff" as="font"
+          type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/MuseoSansCyrl_900.otf" as="font"
+          type="font/otf" crossorigin>
+
+            <script async src="/js/head-tracking.js"></script>
+    
+<!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PKWBW26');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- CoMagic Tracking Code for https://www.itsumma.ru/ -->
+    <script type="text/javascript">
+        var __cs = __cs || [];
+        __cs.push(["setCsAccount", "neL3sUmUxLwkRxA_ffWolYBBcDs_GQuO"]);
+    </script>
+    <script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js"></script>
+
+
+    <!-- Hotjar Tracking Code for https://www.itsumma.ru/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {hjid: 1858697, hjsv: 6};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script src="https://metric.analytics.itsumma.ru/its-metric.js"></script>
+
+            <script src="/js/footer-tracking.js"></script>
+    </head>
+
+<body ng-controller="mainCtrl"
+      class="body body_black" ng-class="{'body_menu-opened': opt.menu,
+                 'nooverflow': zoom}">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKWBW26"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="iphonex" id="iphonex"></div>
+<script>
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (iOS) {
+        document.getElementById('iphonex').setAttribute('style', 'display:block;');
+    }
+</script>
+
+    <header class="header header_black">
+    <div class="container">
+        <nav class="header__btns">
+                            <a href="tel:88005559199" class="header__phone_white">
+                    8 800 555-91-99
+                </a>
+                        <a class="header__btn header__btn_red"
+               href="https://telegram.me/its_site_bot" target="_blank"
+               onclick="
+            ga('send', 'event', 'button', 'telegram_g');
+            ym(24525593, 'reachGoal', 'y_telegram');">
+                <i class="icon icon_tg-plain mr-2"></i><span>Telegram чат</span>
+            </a>
+        </nav>
+        <div class="header__content">
+            <a href="/" class="header__logo"></a>
+
+                                    <nav class="header-menu">
+                <div
+                        class="header-menu__item header-menu__item_has-submenu
+                     ">
+               <span class="header-menu__label">
+                  Услуги
+               </span>
+                    <nav class="header-menu__submenu">
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/support">Поддержка 24/7</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/migration">Миграция IT-инфраструктуры</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/devops">Инфраструктурные проекты</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/load-testing">Нагрузочное тестирование</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/dataops-mlops-support">DataOps и MLOps сопровождение</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/kubernetes">Kubernetes</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/k8s_audit">Аудит Kubernetes</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/audit">Аудит инфраструктуры</a>
+
+                        <a class="header-menu__submenu-link" href="/development">Web-разработка</a>
+
+                        <a class="header-menu__submenu-link" href="/mvp">Разработка MVP</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/bitrix-support">Техподдержка 1С-Битрикс</a>
+
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/blackfriday">Поддержка магазинов в Черную
+                            Пятницу</a>
+                    </nav>
+                </div>
+
+                <div
+                        class="header-menu__item header-menu__item_has-submenu ">
+               <span class="header-menu__label">
+                  Продукты
+               </span>
+                    <nav class="header-menu__submenu">
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/products/bigdata">Big Data</a>
+                    <!-- <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/products/iiot">IIoT-решения</a> -->
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/products/kubegraf">DevOpsProdigy Kubegraf</a>
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/products/isolate">DevOpsProdigy Isolate</a>
+                    </nav>
+                </div>
+
+                <div
+                        class="header-menu__item header-menu__item_has-submenu ">
+               <span class="header-menu__label">
+                  О компании
+               </span>
+                    <nav class="header-menu__submenu">
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/about">О компании</a>
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/partner-program">Партнёрская программа</a>
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/news">Новости</a>
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/smi">СМИ о нас</a>
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/job">Вакансии</a>
+                    </nav>
+                </div>
+
+                <a href="https://www.itsumma.ru/reviews"
+                   class="header-menu__item ">
+               <span class="header-menu__label">
+                  Отзывы
+               </span>
+                </a>
+                <div
+                        class="header-menu__item header-menu__item_has-submenu ">
+                    <a href="https://www.itsumma.ru/knowledges"
+                       class="header-menu__label border-0 ">
+                        База знаний
+                    </a>
+                    <nav class="header-menu__submenu">
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/knowledges/blog">Блог</a>
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/knowledges/webinars">Вебинары</a>
+                        <a class="header-menu__submenu-link "
+                           href="https://www.itsumma.ru/knowledges/conferences">Конференции и выступления</a>
+                    </nav>
+                </div>
+
+                <a href="https://www.itsumma.ru/press"
+                   class="header-menu__item ">
+               <span class="header-menu__label">
+                  Издательство
+               </span>
+                </a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<header class="header-mobile header_black">
+    <a ng-click="opt.menu = !opt.menu" class="header-mobile__menu-btn"></a>
+    <a href="/" class="header-mobile__logo"></a>
+    <div class="header-mobile__buttons">
+        <a class="header-mobile__phone"
+           href="tel:88005559199">
+        </a>
+        <a class="header-mobile__chat"
+           href="https://telegram.me/its_site_bot"
+           target="_blank"
+           onclick="
+         ga('send', 'event', 'zayav-chat', 'click');
+         ym(24525593, 'reachGoal', 'zayav-chat');">
+        </a>
+    </div>
+</header>
+
+
+<div class="header-mobile-menu">
+    <nav class="header-mobile-menu__list" ng-cloak>
+        <a class="header-mobile-menu__item header-mobile-menu__item_has-submenu
+                "
+           ng-click="toggleMobileMenu(1)"
+           ng-class="{'header-mobile-menu__item_opened': opt.mobileMenu === 1}">
+            <i class="icon icon_m-services"></i> Услуги
+        </a>
+        <nav class="header-mobile-menu__submenu"
+             ng-class="{'header-mobile-menu__submenu_opened': opt.mobileMenu === 1}">
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/support">Поддержка 24/7</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/migration">Миграция IT-инфраструктуры</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/devops">Инфраструктурные проекты</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/load-testing">Нагрузочное тестирование</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/dataops-mlops-support">DataOps и MLOps сопровождение</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/kubernetes">Kubernetes</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/k8s_audit">Аудит Kubernetes</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/audit">Аудит инфраструктуры</a>
+
+            <a class="header-mobile-menu__submenu-link" href="/development">Web-разработка</a>
+
+            <a class="header-mobile-menu__submenu-link" href="/mvp">Разработка MVP</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/bitrix-support">Техподдержка 1С-Битрикс</a>
+
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/blackfriday">Поддержка магазинов в Черную Пятницу</a>
+
+        </nav>
+
+        <a class="header-mobile-menu__item header-mobile-menu__item_has-submenu
+         "
+           ng-click="toggleMobileMenu(3)"
+           ng-class="{'header-mobile-menu__item_opened': opt.mobileMenu === 3}">
+            <i class="icon icon_m-about"></i> Продукты
+        </a>
+        <nav class="header-mobile-menu__submenu"
+             ng-class="{'header-mobile-menu__submenu_opened': opt.mobileMenu === 3}">
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/products/bigdata">Big Data</a>
+        <!-- <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/products/iiot/">IIoT-решения</a> -->
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/products/kubegraf">KubeGraf</a>
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/products/isolate">Isolate</a>
+        </nav>
+
+        <a href="https://www.itsumma.ru/reviews"
+           class="header-mobile-menu__item ">
+            <i class="icon icon_m-reviews"></i> Отзывы
+        </a>
+
+        <a class="header-mobile-menu__item header-mobile-menu__item_has-submenu "
+           ng-click="toggleMobileMenu(2)"
+           ng-class="{'header-mobile-menu__item_opened': opt.mobileMenu === 2}">
+            <i class="icon icon_m-about"></i> О компании
+        </a>
+        <nav class="header-mobile-menu__submenu"
+             ng-class="{'header-mobile-menu__submenu_opened': opt.mobileMenu === 2}">
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/about">О компании</a>
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/partner-program">Партнёрская программа</a>
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/news">Новости</a>
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/smi">СМИ о нас</a>
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/job">Вакансии</a>
+        </nav>
+
+        <a class="header-mobile-menu__item header-mobile-menu__item_has-submenu "
+           ng-click="toggleMobileMenu(4)"
+           ng-class="{'header-mobile-menu__item_opened': opt.mobileMenu === 4}">
+            <i class="icon icon_m-blog"></i> База знаний
+        </a>
+        <nav class="header-mobile-menu__submenu"
+             ng-class="{'header-mobile-menu__submenu_opened': opt.mobileMenu === 4}">
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/knowledges/blog">Блог</a>
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/knowledges/webinars">Вебинары</a>
+            <a class="header-mobile-menu__submenu-link "
+               href="https://www.itsumma.ru/knowledges/conferences">Конференции и выступления</a>
+        </nav>
+
+        <a href="https://www.itsumma.ru/press"
+           class="header-mobile-menu__item ">
+            <i class="icon icon_m-books"></i> Издательство
+        </a>
+    </nav>
+    <div class="header-mobile-menu__footer">
+        <p>
+            Вы всегда можете получить бесплатную консультацию:
+        </p>
+        <a href="tel:+78005559199">
+            8 800 555-91-99
+        </a>
+        <a href="mailto:info@itsumma.ru">
+            info@itsumma.ru
+        </a>
+    </div>
+</div>
+
+
+
+
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/24525593"
+              style="position:absolute; left:-9999px;" alt="#"/></div>
+</noscript>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="#"
+             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1047659977/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+    <section class="slide-support">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>Управление инфраструктурой, администрирование серверов, мониторинг и поддержка 24/7</h2>
+                    <p>Проектируем отказоустойчивые инфраструктуры. Строим системы Continuous Integration. Замечаем
+                        неполадки до того, как они вырастают в проблемы. Проблемы &mdash; исправляем сами. На связи
+                        24/7 без выходных.</p>
+                    <div class="slide-support__footer">
+                        <p>Остались вопросы? С удовольствием ответим!
+                        <p>
+                            <a href="#request-form" class="btn btn_big slide-support__btn"
+                               onclick="yaCounter24525593.reachGoal('form'); itsm.reachGoal('CTAform'); return true;">
+                                Получите консультацию
+                            </a>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="pt-9 pb-0 md:pb-4 bg-white">
+        <div class="container">
+            <h2 class="m-0 text-2xl md:text-5xl md:leading-relaxed leading-7 md:text-left text-center">Наши клиенты</h2>
+        </div>
+    </div>
+    <section class="about-clients">
+    <div class="container">
+        <input type="checkbox" id="about-clients__btn" class="about-clients__checkbox" checked>
+        <div class="about-clients__wrapper gap-x-28 xl:gap-x-36">
+                            <div class="about-clients__box">
+                    <h3 class="about-clients__heading whitespace-nowrap">Интернет-сми</h3>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/5.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/19.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/15.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/25.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/6.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/22.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/8.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/reminder-small.png" alt="#">
+                        </picture>
+                                    </div>
+                            <div class="about-clients__box">
+                    <h3 class="about-clients__heading whitespace-nowrap">Интернет-магазины</h3>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/36.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/26.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/12.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/16.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/28.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/34.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/24.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/ekonika-small.png" alt="#">
+                        </picture>
+                                    </div>
+                            <div class="about-clients__box">
+                    <h3 class="about-clients__heading whitespace-nowrap">Сервисы</h3>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/4.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/13.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/27.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/35.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/3.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/17.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/20.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/ros-tender-small.png" alt="#">
+                        </picture>
+                                    </div>
+                            <div class="about-clients__box">
+                    <h3 class="about-clients__heading whitespace-nowrap">Сайты</h3>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/18.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/23.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/9.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/21.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/30.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/1.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/29.png" alt="#">
+                        </picture>
+                                            <picture>
+                            <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/31.png" alt="#">
+                        </picture>
+                                    </div>
+                    </div>
+        <div class="about-clients__btn">
+            <p class="about-clients__subtext">И ещё 470+ компаний</p>
+            <label for="about-clients__btn" class="about-clients__label"></label>
+        </div>
+    </div>
+</section>
+
+<section class="about-clients-mobile">
+    <div class="container">
+        <div class="about-clients-mobile__item-box">
+                            <div class="about-clients-mobile__item">
+                    <input type="radio" id="about-clients-mobile__radio-0"
+                        name="about-clients-mobile__radio" class="about-clients-mobile__radio"
+                        checked>
+                    <h3 class="about-clients-mobile__heading">
+                        <label for="about-clients-mobile__radio-0">Интернет-сми</label>
+                    </h3>
+                    <div class="about-clients-mobile__content">
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/5.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/19.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/15.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/25.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/6.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/22.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/8.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/reminder-small.png" alt="#">
+                            </picture>
+                                            </div>
+                </div>
+                            <div class="about-clients-mobile__item">
+                    <input type="radio" id="about-clients-mobile__radio-1"
+                        name="about-clients-mobile__radio" class="about-clients-mobile__radio"
+                        >
+                    <h3 class="about-clients-mobile__heading">
+                        <label for="about-clients-mobile__radio-1">Интернет-магазины</label>
+                    </h3>
+                    <div class="about-clients-mobile__content">
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/36.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/26.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/12.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/16.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/28.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/34.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/24.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/ekonika-small.png" alt="#">
+                            </picture>
+                                            </div>
+                </div>
+                            <div class="about-clients-mobile__item">
+                    <input type="radio" id="about-clients-mobile__radio-2"
+                        name="about-clients-mobile__radio" class="about-clients-mobile__radio"
+                        >
+                    <h3 class="about-clients-mobile__heading">
+                        <label for="about-clients-mobile__radio-2">Сервисы</label>
+                    </h3>
+                    <div class="about-clients-mobile__content">
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/4.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/13.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/27.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/35.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/3.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/17.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/20.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/ros-tender-small.png" alt="#">
+                            </picture>
+                                            </div>
+                </div>
+                            <div class="about-clients-mobile__item">
+                    <input type="radio" id="about-clients-mobile__radio-3"
+                        name="about-clients-mobile__radio" class="about-clients-mobile__radio"
+                        >
+                    <h3 class="about-clients-mobile__heading">
+                        <label for="about-clients-mobile__radio-3">Сайты</label>
+                    </h3>
+                    <div class="about-clients-mobile__content">
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/18.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/23.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/9.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/21.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/30.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/1.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/29.png" alt="#">
+                            </picture>
+                                                    <picture>
+                                <img loading="lazy" src="https://www.itsumma.ru/img/about/clients/31.png" alt="#">
+                            </picture>
+                                            </div>
+                </div>
+                    </div>
+    </div>
+</section>
+
+    <section class="slide-services">
+        <div class="container">
+            <h2>Популярные услуги</h2>
+            <div class="row slide-services__row">
+                <div class="col-md-6">
+                    <div class="slide-services__block slide-services__block_must-have">
+                        <div class="slide-services__text">
+                            <h3 class="slide-services__title"><a
+                                        href="https://www.itsumma.ru/support/support-all">Техподдержка
+                                    24/7</a>
+                            </h3>
+                            <p>
+                                Обеспечиваем круглосуточное сопровождение<br>и бесперебойную работу веб-проектов.<br>Среднее
+                                время реагирования на инциденты<br>и обращения — 8 минут. Ведём непрерывный мониторинг,
+                                отслеживаем бизнес-показатели, повышаем отказоустойчивость.
+                            </p>
+                        </div>
+                        <div class="slide-services__price">
+                            от 60 000 рублей в месяц с НДС
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="slide-services__block slide-services__block_professional">
+                        <div class="slide-services__text">
+                            <h3 class="slide-services__title">
+                                <a href="https://www.itsumma.ru/migration">
+                                    Миграция инфраструктуры
+                                </a>
+                            </h3>
+                            <p>
+                                Осуществим перенос вашей инфраструктуры<br>с любых платформ —
+                                быстро, бесшовно и без потерь данных. Работаем с ведущими российскими и зарубежными
+                                хостерами и обеспечиваем разнонаправленную миграцию между on-premise и облаком.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row slide-services__row">
+                <div class="col-md-6">
+                    <div class="slide-services__block slide-services__block_highload d-flex flex-column">
+                        <div class="slide-services__text">
+                            <h3 class="slide-services__title">
+                                <a href="https://www.itsumma.ru/load-testing">
+                                    Нагрузочное тестирование
+                                </a>
+                            </h3>
+                            <p>
+                                Выявляем слабые места в инфраструктуре вашего проекта для предотвращения аварий.
+                                Предоставляем детальный отчёт и рекомендации по устранению проблем. Теперь вы точно
+                                будете знать предел прочности инфраструктуры — и что делать, если проект подошёл к нему
+                                вплотную.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="slide-services__block slide-services__block_audit_kubernetes d-flex flex-column">
+                        <div class="slide-services__text">
+                            <h3 class="slide-services__title"><a
+                                        href="https://www.itsumma.ru/k8s_audit">Аудит
+                                    Kubernetes</a></h3>
+                            <p>
+                                Обследуем ваш кластер K8s, чтобы найти причины рандомных рестартов или застраховать вас
+                                от проблем в процессе деплоя новых версий приложений. Вы будете знать, готов ли кластер<br>к масштабированию и переходу на новый этап развития.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row slide-services__row">
+                <div class="col-md-6">
+                    <div class="audit__block audit__block_audit-development">
+                        <div class="audit__text">
+                            <h3 class="audit__title"><a href="https://www.itsumma.ru/devops">Инфраструктурные
+                                    проекты</a></h3>
+                            <p>
+                                Построим информационные системы любой сложности для решения любых задач. Задействуем Real-Time BigData и IoT, Machine Learning и Data science. Создадим OLAP-платформы и PaaS-системы. Сократим зависимость от железа и обеспечим быстрое развертывание посредством Kubernetes, инструментов стека Hashicorp и подхода Infrastructure as a Code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="slide-services__block slide-services__block_devops d-flex flex-column">
+                        <div class="slide-services__text">
+                            <h3 class="slide-services__title"><a
+                                        href="https://www.itsumma.ru/products/bigdata">Внедрение платформ
+                                    обработки данных</a></h3>
+                            <p>
+                                Быстро развернём платформу хранения<br>и обработки больших данных на базе Apache Spark,
+                                Apache Hadoop, Apache Kafka, Greenplum. Улучшайте вашу аналитику, автоматизируйте
+                                построение отчетов, прогнозируйте изменения запросов клиентов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+    <div class="testimonials-caption">
+        <h2>Отзывы клиентов</h2>
+        <a href="https://www.itsumma.ru/reviews" class="testimonials-caption__btn">все отзывы</a>
+    </div>
+
+    <div class="container">
+        <div class="testimonials">
+                    <a href="https://www.itsumma.ru/reviews/totaldict" class="testimonials__item col-md-6">
+            <div class="testimonial testimonial_color-lightgrey ">
+                <div class="testimonial__content">
+                    <h2 class="testimonial__title">
+                        <!--a href="https://www.itsumma.ru/reviews/totaldict">Даже в период пиковой посещаемости все желающие смотрели трансляции и писали «Тотальный диктант» онлайн без каких-либо затруднений</a-->
+                        Даже в период пиковой посещаемости все желающие смотрели трансляции и писали «Тотальный диктант» онлайн без каких-либо затруднений
+                    </h2>
+                    <div class="testimonial__intro">
+                        ITSumma вот уже более пяти лет обеспечивает работоспособность сайта всемирной акции «Тотальный диктант». 10 апреля 2021 года онлайн писали диктант свыше полумиллиона человек!
+                    </div>
+                </div>
+                <div class="testimonial__caption">
+                    <div class="testimonial__ava">
+                        <img loading="lazy" src="/uploads/review/author/9516bc4fa93a0c27a77b3ccc6f8bdee8.jpg" alt="#"/>
+                    </div>
+                    <div class="testimonial__text">
+                        <div class="testimonial__name">Ольга Ребковец</div>
+                        <div class="testimonial__site">
+                            <img loading="lazy" src="/uploads/review/site/bb188d8f042e499b78ba468891fbe6de.jpg" alt="#">
+                            Тотальный диктант
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+                    <a href="https://www.itsumma.ru/reviews/toyru" class="testimonials__item col-md-6">
+            <div class="testimonial testimonial_color-grey ">
+                <div class="testimonial__content">
+                    <h2 class="testimonial__title">
+                        <!--a href="https://www.itsumma.ru/reviews/toyru">Рекомендуем всем компанию ITSumma!</a-->
+                        Рекомендуем всем компанию ITSumma!
+                    </h2>
+                    <div class="testimonial__intro">
+                        Наше сотрудничество продолжается уже несколько лет, и за это время мы ни разу не усомнились в сделанном выборе.
+                    </div>
+                </div>
+                <div class="testimonial__caption">
+                    <div class="testimonial__ava">
+                        <img loading="lazy" src="/uploads/review/author/b712fac3ca340527ceacdfa9fbdf864c.jpg" alt="#"/>
+                    </div>
+                    <div class="testimonial__text">
+                        <div class="testimonial__name">Иван Будник</div>
+                        <div class="testimonial__site">
+                            <img loading="lazy" src="/uploads/review/site/81f0cc9bd992dcfe4087028d8d557f18.jpg" alt="#">
+                            Toy.ru
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+                    <a href="https://www.itsumma.ru/reviews/reminder" class="testimonials__item col-md-4">
+            <div class="testimonial testimonial_color-lightgrey  testimonial_tine ">
+                <div class="testimonial__content">
+                    <h2 class="testimonial__title">
+                        <!--a href="https://www.itsumma.ru/reviews/reminder">Впервые в жизни не надо было проводить полночи без сна накануне запуска</a-->
+                        Впервые в жизни не надо было проводить полночи без сна накануне запуска
+                    </h2>
+                    <div class="testimonial__intro">
+                        Было очень приятно работать с командой ITSumma на запуске сайта Reminder, разработкой которого она занималась. Все прошло гладко и без сбоев. Впервые в жизни не надо было проводить полночи без сна накануне запуска: все включили в означенное время и — заработало!
+                    </div>
+                </div>
+                <div class="testimonial__caption">
+                    <div class="testimonial__ava">
+                        <img loading="lazy" src="/uploads/review/author/a5a82824b5233620b128cc13f6c71478.jpg" alt="#"/>
+                    </div>
+                    <div class="testimonial__text">
+                        <div class="testimonial__name">Максим Кашулинский</div>
+                        <div class="testimonial__site">
+                            <img loading="lazy" src="/uploads/review/site/501976d49c19adaff0d5b6d19bf339c6.jpg" alt="#">
+                            Reminder
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+                    <a href="https://www.itsumma.ru/reviews/gosuslugispb" class="testimonials__item col-md-4">
+            <div class="testimonial testimonial_color-lightgrey  testimonial_tine ">
+                <div class="testimonial__content">
+                    <h2 class="testimonial__title">
+                        <!--a href="https://www.itsumma.ru/reviews/gosuslugispb">Благодарим за участие в тестировании и оптимизации Портала госуслуг Санкт-Петербурга</a-->
+                        Благодарим за участие в тестировании и оптимизации Портала госуслуг Санкт-Петербурга
+                    </h2>
+                    <div class="testimonial__intro">
+                        Профессионализм сотрудников ITSumma позволил в краткие сроки повысить производительность информационных ресурсов Портала, выполнить социально значимые задачи, стоящие перед Санкт-Петербургом.
+                    </div>
+                </div>
+                <div class="testimonial__caption">
+                    <div class="testimonial__ava">
+                        <img loading="lazy" src="/uploads/review/author/d2f22e6a2e1cffaff41273450560611a.jpg" alt="#"/>
+                    </div>
+                    <div class="testimonial__text">
+                        <div class="testimonial__name">Евгений Герус</div>
+                        <div class="testimonial__site">
+                            <img loading="lazy" src="/uploads/review/site/518d9d35ae0de740e84726ce4a001dc9.jpg" alt="#">
+                            gov.spb.ru
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+                    <a href="https://www.itsumma.ru/reviews/tilda" class="testimonials__item col-md-4">
+            <div class="testimonial testimonial_color-lightgrey  testimonial_tine ">
+                <div class="testimonial__content">
+                    <h2 class="testimonial__title">
+                        <!--a href="https://www.itsumma.ru/reviews/tilda">Благодаря экспертизе ребят мы решаем вопросы развития вовремя и за вменяемые деньги</a-->
+                        Благодаря экспертизе ребят мы решаем вопросы развития вовремя и за вменяемые деньги
+                    </h2>
+                    <div class="testimonial__intro">
+                        «Тильда» — сложный и высоконагруженный продукт. Это SAAS-платформа, и она должна работать без сбоев 24 часа. Нам было бы очень сложно, если бы мы были со всеми этими проблемами один на один. Слава богу, что я познакомился с ITSumma и всегда могу быть уверенным, что если происходит проблема — то мы ее в разумное время точно решим.
+                    </div>
+                </div>
+                <div class="testimonial__caption">
+                    <div class="testimonial__ava">
+                        <img loading="lazy" src="/uploads/review/author/fb90744b8366458f6cd33db51735f297.jpg" alt="#"/>
+                    </div>
+                    <div class="testimonial__text">
+                        <div class="testimonial__name">Никита Обухов</div>
+                        <div class="testimonial__site">
+                            <img loading="lazy" src="/uploads/review/site/ee88d6769f98c550e7d4365ea037a66e.jpg" alt="#">
+                            Tilda Publishing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+                    <a href="https://www.itsumma.ru/reviews/lingualeo" class="testimonials__item col-md-6">
+            <div class="testimonial testimonial_color-grey ">
+                <div class="testimonial__content">
+                    <h2 class="testimonial__title">
+                        <!--a href="https://www.itsumma.ru/reviews/lingualeo">С командой ITSumma мы обеспечили нашим сервисам uptime 99,98%</a-->
+                        С командой ITSumma мы обеспечили нашим сервисам uptime 99,98%
+                    </h2>
+                    <div class="testimonial__intro">
+                        Любой ИТ-бизнес знает, что такое 500 и 503 ошибки сервера. Это потеря прибыли. С командой ITSumma мы обеспечили нашим сервисам uptime 99,98%. Более того, мы стали отличными друзьями.
+                    </div>
+                </div>
+                <div class="testimonial__caption">
+                    <div class="testimonial__ava">
+                        <img loading="lazy" src="/uploads/review/author/02d6a48009b27852e63ba15a9648c663.jpg" alt="#"/>
+                    </div>
+                    <div class="testimonial__text">
+                        <div class="testimonial__name">Антон Регеда</div>
+                        <div class="testimonial__site">
+                            <img loading="lazy" src="/uploads/review/site/f4847853c01aadeb785b09df67a98c52.jpg" alt="#">
+                            Lingualeo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    </div>
+</section>
+    </section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="sl ide-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 slide-news__news">
+                    <h2 class="slide-news__h2"><a href="https://www.itsumma.ru/news">Новости</a></h2>
+                                            <div class="slide-news__news-item">
+                            <div class="slide-news__news-date">28 марта 2022</div>
+                            <h3 class="slide-news__news-title"><a
+                                        href="/news/migration">Обновление услуги миграции</a></h3>
+                        </div>
+                                            <div class="slide-news__news-item">
+                            <div class="slide-news__news-date">24 декабря 2021</div>
+                            <h3 class="slide-news__news-title"><a
+                                        href="/news/mvp">Создание MVP — новая услуга от ITSumma</a></h3>
+                        </div>
+                                            <div class="slide-news__news-item">
+                            <div class="slide-news__news-date">29 ноября 2021</div>
+                            <h3 class="slide-news__news-title"><a
+                                        href="/news/newsupport">Техподдержка от ITSumma: глобальное обновление</a></h3>
+                        </div>
+                                            <div class="slide-news__news-item">
+                            <div class="slide-news__news-date">19 ноября 2021</div>
+                            <h3 class="slide-news__news-title"><a
+                                        href="/news/load-testing">Обновлённая услуга нагрузочного тестирования</a></h3>
+                        </div>
+                                            <div class="slide-news__news-item">
+                            <div class="slide-news__news-date">17 ноября 2021</div>
+                            <h3 class="slide-news__news-title"><a
+                                        href="/news/editoricatarifs">Editorica — CMS для СМИ и блогеров от 5 000 рублей в месяц</a></h3>
+                        </div>
+                                    </div>
+                <div class="col-md-8 slide-news__smi">
+                    <h2 class="slide-news__h2"><a href="https://www.itsumma.ru/smi">СМИ о нас</a></h2>
+                                            <div class="slide-news__smi-item">
+                            <h3 class="slide-news__smi-title"><a href="https://sia.ru/?section=484&amp;action=show_news&amp;id=412980" target="_blank"
+                                                                 rel="noreferrer">Компания из Иркутска вошла в рейтинг высокотехнологичных компаний &quot;ТехУспех&quot;</a></h3>
+
+                            <div class="massmedia">
+                                <img class="massmedia--logo" src="/uploads/smis/logo/small/169e9d3b467805e2be00f6e9251a867d.jpg" alt="#">
+                                <span class="massmedia__name">СИА</span>
+                            </div>
+                        </div>
+                                            <div class="slide-news__smi-item">
+                            <h3 class="slide-news__smi-title"><a href="https://snews.ru/news/irkutskaya-it-kompaniya-vtoroy-raz-voshla-v-federalnyy-reyting-tehuspeh" target="_blank"
+                                                                 rel="noreferrer">Иркутская IT-компания второй раз вошла в федеральный рейтинг &quot;ТехУспех&quot;</a></h3>
+
+                            <div class="massmedia">
+                                <img class="massmedia--logo" src="/uploads/smis/logo/small/94b2ca3e9d25970f13401d9642596812.jpg" alt="#">
+                                <span class="massmedia__name">ИА &quot;Сибирские новости&quot;</span>
+                            </div>
+                        </div>
+                                            <div class="slide-news__smi-item">
+                            <h3 class="slide-news__smi-title"><a href="https://i38.ru/obichnie-ekonomika/irkutskie-kompanii-voshli-v-natsionalniy-reyting-techuspech-2020" target="_blank"
+                                                                 rel="noreferrer">Иркутские компании вошли в национальный рейтинг «ТехУспех-2020»</a></h3>
+
+                            <div class="massmedia">
+                                <img class="massmedia--logo" src="/uploads/smis/logo/small/30aaa0652358e949a6b129111e353522.jpg" alt="#">
+                                <span class="massmedia__name">ИА «Телеинформ»</span>
+                            </div>
+                        </div>
+                                            <div class="slide-news__smi-item">
+                            <h3 class="slide-news__smi-title"><a href="https://youtu.be/X9FV7LLDgMg" target="_blank"
+                                                                 rel="noreferrer">&quot;Региональные чемпионы&quot;: Asia Music и ITSumma</a></h3>
+
+                            <div class="massmedia">
+                                <img class="massmedia--logo" src="/uploads/smis/logo/small/3c0693b447f2cd791ffafb0d57cb0740.jpg" alt="#">
+                                <span class="massmedia__name">ГТРК &quot;Иркутск&quot;</span>
+                            </div>
+                        </div>
+                                            <div class="slide-news__smi-item">
+                            <h3 class="slide-news__smi-title"><a href="https://sia.ru/?section=398&amp;action=show_news&amp;id=395720" target="_blank"
+                                                                 rel="noreferrer">Технологии на экспорт: как иркутская компания ITSumma работает на зарубежных рынках</a></h3>
+
+                            <div class="massmedia">
+                                <img class="massmedia--logo" src="/uploads/smis/logo/small/d9b768d34302edc99a2ae22eb3f80a48.jpg" alt="#">
+                                <span class="massmedia__name">Газета &quot;Дело&quot;</span>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide-blog">
+        <div class="container">
+            <h2 class="slide-blog__h2">Популярное <a href="https://www.itsumma.ru/knowledges">в блоге</a></h2>
+            <section class="blog-post__container">
+                                                            <div class="blog-post__item">
+                            <a href="/knowledges/blog/servernoePO" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/eb112171743e0dd9de00ad5364da8a49.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/support"
+                                               class="blog-post__tag">техподдержка</a>
+                                                                                    <a href="/knowledges/blog/tag/monitoring"
+                                               class="blog-post__tag">мониторинг</a>
+                                                                                    <a href="/knowledges/blog/tag/administrirovanie"
+                                               class="blog-post__tag">администрирование</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/servernoePO">Мониторинг начинается с метрик. Часть 2: серверное ПО</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/loadtesting" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/1f1924ccf7089288f36f30137bd75b53.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/highload"
+                                               class="blog-post__tag">Highload</a>
+                                                                                    <a href="/knowledges/blog/tag/monitoring"
+                                               class="blog-post__tag">мониторинг</a>
+                                                                                    <a href="/knowledges/blog/tag/administrirovanie"
+                                               class="blog-post__tag">администрирование</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/loadtesting">Найти предел: в чём смысл нагрузочного тестирования IT-инфраструктуры</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/alerts" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/1da4774286e194a379a73f0e2cbefa35.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/highload"
+                                               class="blog-post__tag">Highload</a>
+                                                                                    <a href="/knowledges/blog/tag/support"
+                                               class="blog-post__tag">техподдержка</a>
+                                                                                    <a href="/knowledges/blog/tag/monitoring"
+                                               class="blog-post__tag">мониторинг</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/alerts">Мониторинг начинается с метрик, или Как не сделать из алертов белый шум</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/support24x7" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/5f94a3e744dbe1c7226c08986f1812da.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/support"
+                                               class="blog-post__tag">техподдержка</a>
+                                                                                    <a href="/knowledges/blog/tag/monitoring"
+                                               class="blog-post__tag">мониторинг</a>
+                                                                                    <a href="/knowledges/blog/tag/administrirovanie"
+                                               class="blog-post__tag">администрирование</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/support24x7">Техподдержка сайта 24/7: ищем равновесие в вариантах организации</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/editorica" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/5b32ea683ec656d1fb6eb44eb633b2d8.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/dev"
+                                               class="blog-post__tag">разработка</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/editorica">Почему использование бесплатных CMS обходится в полмиллиона рублей в год?</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/devopsismoney" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/df178bf44d81e6ae659f4d55016416ec.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/devops"
+                                               class="blog-post__tag">DevOps</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/devopsismoney">Почему DevOps — это про деньги</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/kubenetes_audit" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/270f4630d5c8d8f454f6d5a41393112d.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/monitoring"
+                                               class="blog-post__tag">мониторинг</a>
+                                                                                    <a href="/knowledges/blog/tag/administrirovanie"
+                                               class="blog-post__tag">администрирование</a>
+                                                                                    <a href="/knowledges/blog/tag/kubernetes"
+                                               class="blog-post__tag">Kubernetes</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/kubenetes_audit">«Доктор, помогите, у меня Kubernetes!»</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/thebell" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/ebb8aeb5ad960fd347e12f3d3dd45b62.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/dev"
+                                               class="blog-post__tag">разработка</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/thebell">Новый сайт для популярного медиа за 2 месяца</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/tanuki" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/37faa5165b24ab305a50a9f35bb61945.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/highload"
+                                               class="blog-post__tag">Highload</a>
+                                                                                    <a href="/knowledges/blog/tag/support"
+                                               class="blog-post__tag">техподдержка</a>
+                                                                                    <a href="/knowledges/blog/tag/administrirovanie"
+                                               class="blog-post__tag">администрирование</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/tanuki">Инфраструктура еды: как мы саппортим «Тануки»</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/rostnagruzki" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/7695995bf6518d2cbf7deb2b2b631121.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/highload"
+                                               class="blog-post__tag">Highload</a>
+                                                                                    <a href="/knowledges/blog/tag/support"
+                                               class="blog-post__tag">техподдержка</a>
+                                                                                    <a href="/knowledges/blog/tag/monitoring"
+                                               class="blog-post__tag">мониторинг</a>
+                                                                                    <a href="/knowledges/blog/tag/administrirovanie"
+                                               class="blog-post__tag">администрирование</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/rostnagruzki">Как подготовить сайт к росту нагрузки</a>
+                                    </h2>
+                                </div>
+                                                                    <div class="blog-post__item">
+                            <a href="/knowledges/blog/problemy-proizvoditelnosti-saytov-na-1c-bitrix" class="border-none">
+                                <img class="blog-post__image" loading="lazy" src="/uploads/post/image/small/a8815f35b5d384c64fa12886edff684d.jpg" alt="#">
+                            </a>
+                                                                <nav class="blog-post__tags">
+                                                                                    <a href="/knowledges/blog/tag/bitrix"
+                                               class="blog-post__tag">Битрикс</a>
+                                                                            </nav>
+                                    <h2 class="blog-post__title">
+                                        <a href="/knowledges/blog/problemy-proizvoditelnosti-saytov-na-1c-bitrix">Проблемы производительности сайтов на «1С-Битрикс»</a>
+                                    </h2>
+                                </div>
+                                    </section>
+        </div>
+    </section>
+
+    <section class="slide-request" id="request-form">
+        <div class="container">
+            <div class="slide-request__wrapper">
+                <div class="slide-request__wrapper-text">
+                                            <h2 class="slide-request__title">
+                            Оставьте заявку, и мы свяжемся с вами в ближайшие 24 часа!
+                        </h2>
+                                        <div class="slide-request__contacts">
+                        Мы также всегда готовы проконсультировать вас
+                        <br>
+                        по&nbsp;телефону:
+                        <a href="tel:88005559199" style="color: #fff">
+                            <strong>8 800 555-91-99</strong>
+                        </a>
+                        <br>
+                        или по почте:
+                        <a href="mailto:info@itsumma.ru" style="color: #fff;">
+                            <strong>info@itsumma.ru</strong>
+                        </a>
+                    </div>
+                </div>
+                <form
+                    class="request-form" name="requestForm" ng-controller="requestCtrl"
+                     ng-init="
+                        request.type = 'support';
+                        request.url = 'https://www.itsumma.ru';"
+                                    >
+                    <div class="request-form__wrapper" ng-show="!showText">
+                        <div class="request-form__input-group">
+                            <label for="nameInput" class="request-form__label">имя и фамилия</label>
+                            <input type="text" class="request-form__input" id="nameInput" ng-model="request.name"
+                                required>
+                        </div>
+                        <div class="request-form__input-group">
+                            <label for="phoneInput" class="request-form__label">телефон</label>
+                            <input type="tel" class="request-form__input" id="phoneInput" placeholder="+7"
+                                ng-model="request.phone" required>
+                        </div>
+                        <div class="request-form__input-group">
+                            <label for="emailInput" class="request-form__label">электронная почта</label>
+                            <input type="email" class="request-form__input" id="emailInput" ng-model="request.email"
+                                required>
+                        </div>
+                        <div class="request-form__input-group">
+                            <label for="siteInput" class="request-form__label">адрес сайта</label>
+                            <input type="text" class="request-form__input" id="siteInput" placeholder="www."
+                                ng-model="request.site">
+                        </div>
+                        <div class="request-form__input-group request-form__input-group_wide request-form__input-group_comment">
+                            <label for="commentInput" class="request-form__label">комментарий</label>
+                            <textarea class="request-form__input" id="commentInput"
+                                ng-model="request.comment">
+                            </textarea>
+                        </div>
+                        <div class="request-form__footer request-form__input-group_wide">
+                            <input
+                                type="submit" class="btn btn_big request-form__submit"
+                                value="Отправить"
+                                ng-click="submit(request)"
+                                onclick="yaCounter24525593.reachGoal('zayav'); return true;"
+                                ng-disabled="requestForm.$pristine || busy"
+                                disabled="disabled"
+                            >
+                            <p class="request-form__text">
+                                Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;отправку и обработку своих
+                                <a href="https://www.itsumma.ru/agreements" target="_blank">
+                                    персональных&nbsp;данных
+                                </a>.
+                            </p>
+                        </div>
+                        <div class="load" ng-cloak ng-show="busy"></div>
+
+                        <input type="hidden" id="planInput" ng-model="request.plan">
+                    </div>
+                    <div class="request-form__input-group" ng-show="sended && isUnchanged(request)" ng-cloak>
+                        <img loading="lazy" src="/img/logo_r.svg" alt="#">
+                        <br>
+                        <br>
+                        <p style="font-size: 25px; text-align: center">
+                            Ваша заявка принята. Мы свяжемся с вами в ближайшее время.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+    <div class="container relative">
+        <div class="row">
+            <div class="col-sm-3 col-lg-5">
+                <a href="/" class="footer__logo"></a>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <nav class="footer__menu">
+                    <span class="footer__menu-item footer__menu-item_accent footer__menu-title-service">
+                        Услуги
+                    </span>
+                    <a href="https://www.itsumma.ru/support" class="footer__menu-item">
+                        Поддержка 24/7
+                    </a>
+                    <a href="https://www.itsumma.ru/migration" class="footer__menu-item">
+                        Миграция IT-инфраструктуры
+                    </a>
+                    <a href="https://www.itsumma.ru/dataops-mlops-support" class="footer__menu-item">
+                        DataOps и MLOps сопровождение
+                    </a>
+                    <a href="https://www.itsumma.ru/kubernetes" class="footer__menu-item">
+                        Kubernetes
+                    </a>
+                    <a href="/mvp" class="footer__menu-item">
+                        Разработка MVP
+                    </a>
+                    <a href="/development" class="footer__menu-item">
+                        Web-разработка
+                    </a>
+                    <a href="https://www.itsumma.ru/load-testing" class="footer__menu-item">
+                        Нагрузочное тестирование
+                    </a>
+                    <a href="https://www.itsumma.ru/k8s_audit" class="footer__menu-item">
+                        Аудит Kubernetes
+                    </a>
+                    <a href="https://www.itsumma.ru/devops" class="footer__menu-item">
+                        Инфраструктурные проекты
+                    </a>
+                    <a href="https://www.itsumma.ru/audit" class="footer__menu-item">
+                        Аудит инфраструктуры
+                    </a>
+                    <a href="https://www.itsumma.ru/bitrix-support" class="footer__menu-item">
+                        Техподдержка 1С-Битрикс
+                    </a>
+                    <a href="https://www.itsumma.ru/blackfriday" class="footer__menu-item">
+                        Поддержка магазинов<br>в Черную Пятницу
+                    </a>
+                </nav>
+            </div>
+            <div class="col-sm-3 col-lg-2">
+                <nav class="footer__menu">
+                    <a href="https://www.itsumma.ru/reviews" class="footer__menu-item footer__menu-item_accent">
+                        Отзывы
+                    </a>
+                    <a href="https://www.itsumma.ru/knowledges" class="footer__menu-item footer__menu-item_accent">
+                        Блог
+                    </a>
+                    <a href="https://www.itsumma.ru/about" class="footer__menu-item footer__menu-item_accent">
+                        О компании
+                    </a>
+                    <a href="https://www.itsumma.ru/partner-program" class="footer__menu-item">
+                        Партнёрская программа
+                    </a>
+                    <a href="https://www.itsumma.ru/smi" class="footer__menu-item">
+                        СМИ о нас
+                    </a>
+                    <a href="https://www.itsumma.ru/job" class="footer__menu-item">
+                        Вакансии
+                    </a>
+                    <a href="https://www.itsumma.ru/news" class="footer__menu-item">
+                        Новости
+                    </a>
+                </nav>
+
+                <nav class="footer__menu">
+                    <span class="footer__menu-item footer__menu-item_accent">
+                        Контакты
+                    </span>
+                    <a href="mailto:info@itsumma.ru" class="footer__menu-item">
+                        info@itsumma.ru
+                    </a>
+                    <a href="tel:+78005559199" class="footer__menu-item">
+                        8 800 555-91-99
+                    </a>
+                </nav>
+            </div>
+            <div class="col-sm-3 col-lg-2">
+                <nav class="footer__menu">
+                    <span class="footer__menu-item footer__menu-item_accent footer__menu-title-service">
+                        Комьюнити
+                    </span>
+                    <a href="https://t.me/itsumma" class="footer__menu-item footer__menu-item_telegram">
+                        Telegram
+                    </a>
+                    <a href="https://vk.com/itsumma" class="footer__menu-item footer__menu-item_vk">
+                        ВКонтакте
+                    </a>
+                    <a href="http://www.youtube.com/c/ItsummaRu" class="footer__menu-item footer__menu-item_yt">
+                        Ютьюб
+                    </a>
+                    <a href="https://habr.com/ru/company/itsumma/" class="footer__menu-item footer__menu-item_habr">
+                        Хабр
+                    </a>
+                    <a href="https://github.com/devopsprodigy/" class="footer__menu-item footer__menu-item_github">
+                        Гитхаб
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <nav class="footer__mobile-menu">
+            <a href="http://www.youtube.com/c/ItsummaRu" class="footer__mobile-menu-item">
+                <i class="icon icon_yt-f"></i>
+            </a>
+            <a href="https://twitter.com/itsumma" class="footer__mobile-menu-item">
+                <i class="icon icon_twitter-f"></i>
+            </a>
+            <a href="https://vk.com/itsumma" class="footer__mobile-menu-item">
+                <i class="icon icon_vk-f"></i>
+            </a>
+            <a href="https://t.me/itsumma" class="footer__mobile-menu-item">
+                <i class="icon icon_tg-f"></i>
+            </a>
+        </nav>
+        <div class="footer__copyright">
+            © 2008–2022, ООО «Сумма АйТи» <br/>
+            <a href="https://www.itsumma.ru/agreements" class="footer__menu-item">Политика приватности</a>
+            <a href="https://www.itsumma.ru/policy" class="footer__menu-item">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+<div class="cookies_agree ng-cloak" ng-if="!cookieAgree">
+    Мы используем cookies для быстрой и удобной работы сайта. Продолжая пользоваться сайтом, вы даёте <a
+            href="https://www.itsumma.ru/agreements" target="_blank">согласие</a> и принимаете <a href="https://www.itsumma.ru/policy"
+                                                                                          target="_blank">политику</a>
+    обработки персональных данных
+    <label for="" ng-click="setCookieAgree()" class="close_this">×</label>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/js/app.js?id=ed153fa58bff1fe0d7f9"></script>
+<script src="/app/app.js?1651102545"></script>
+
+
+<script>
+    angular.module("itsummaApp").constant("CSRF_TOKEN", 't64OC3JxllY4IO7fdo8uqZw84fMmV3XdgTX6Zcd0');
+</script>
+
+
+
+<script type="text/javascript">
+    window._mfq = window._mfq || [];
+    (function () {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript";
+        mf.defer = true;
+        mf.src = "//cdn.mouseflow.com/projects/6a3716ff-f5fb-4481-acd6-58f62db2af88.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+    })();
+
+    window.itsm = ItsMetric;
+    itsm.init(function (visit_data) {
+        if (visit_data.itss) {
+            window._mfq.push(["setVariable", "uid", visit_data.itss]);
+            hj('identify', visit_data.itss, {});
+        }
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+<script src="/bitrix/js/main/jquery/jquery-1.9.0.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/bitrix/components/bitrix/player/mediaplayer/jwplayer.js"></script>
+
+<script type="text/javascript" src="/bitrix/templates/gr_main/js/iphone_detect.js"></script>
+
+<script type="text/javascript" src="/bitrix/templates/gr_main/js/datetime.js"></script>
+
+<script type="text/javascript" src="/bitrix/templates/gr_main/js/modernizr-custom.js"></script>
+
+
+<link type="text/css"  rel="stylesheet" href="/bitrix/templates/gr_main/css/smslider.css" />
+
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="/bitrix/templates/gr_main/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/bitrix/templates/gr_main/js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/bitrix/templates/gr_main/js//fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/bitrix/templates/gr_main/js/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/bitrix/templates/gr_main/js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/bitrix/templates/gr_main/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="/bitrix/templates/gr_main/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/bitrix/templates/gr_main/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<script type="text/javascript" src="https://yastatic.net/share/share.js" charset="utf-8"></script>
+
+<meta name="keywords" content="ТВН, Телеканал Новокузнецка, Новости Новокузнецка" />
+<meta name="description" content="Официальный сайт телекомпании ТВН" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="ТВН, Телеканал Новокузнецка, Новости Новокузнецка" />
+<meta name="description" content="Официальный сайт телекомпании ТВН" />
+<link href="/bitrix/cache/css/s1/gr_main/kernel_main/kernel_main.css?16092943613041" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/gr_main/template_9ca17c7fcbfad337e8438990f6e9237f/template_9ca17c7fcbfad337e8438990f6e9237f.css?163903400733313" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'25200','SITE_ID':'s1','USER_ID':'','SERVER_TIME':'1651079296','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'74420b3fdc991fc2c4f0181856aacaf3'});</script>
+
+
+<script type="text/javascript" src="/bitrix/cache/js/s1/gr_main/kernel_main/kernel_main.js?1609305770196053"></script>
+<script type="text/javascript" src="/bitrix/js/main/ajax.min.js?143399584522194"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js?143399584965494','/bitrix/js/main/core/core_ajax.js?143399584920575','/bitrix/js/main/json/json2.min.js?14339947193467','/bitrix/js/main/core/core_ls.js?14339958497365','/bitrix/js/main/session.js?14339958452511','/bitrix/js/main/core/core_window.js?143399584974831','/bitrix/js/main/utils.js?143399584519858']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css?14339958452854','/bitrix/templates/.default/ajax/ajax.css?1433995845420','/bitrix/templates/gr_main/components/bitrix/news.list/header_banners/style.css?1488254860301','/bitrix/templates/gr_main/components/bitrix/menu/top_menu/style.css?14882595422658','/bitrix/templates/gr_main/components/bitrix/news.list/middle_banners/style.css?1627282851277','/bitrix/templates/gr_main/template_styles.css?163903400128412']); </script>
+
+
+<script type="text/javascript">
+bxSession.Expand(1440, '74420b3fdc991fc2c4f0181856aacaf3', false, '3f3f2b0e118ae08f3dd4528ac4f86976');
+</script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "130dbaac9f20f2fb59c7ec49f3fcc92c"]); _ba.push(["host", "tvn-tv.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Главная страница</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+	function grTest(param,item_id)
+	{
+		$.post(
+			"/mainpage_ajax.php",
+			{
+				params: param,
+				currItem: item_id
+			},
+			grSetNews
+		);
+		
+	}
+	
+	function grSetNews(data)
+	{
+		grHighLightNews();	
+		
+		$('#news_list').html(data);
+		
+			
+		
+	}
+	
+	
+	function grDoomsday(param,item_id)
+	{
+		$.post(
+			"/mainpage_ajax_doomsday.php",
+			{
+				params: param,
+				currItem: item_id
+			},
+			grSetDoomsDay
+		);
+		
+	}
+	
+	function grSetDoomsDay(data)
+	{
+		grHighLightDoomsDay();
+		
+		$('#news_list').html(data);
+		
+	
+	}
+	
+	function grHighLightDoomsDay()
+	{
+	
+		$('#sd_link').removeClass("sd_link");
+		$('#sd_link').addClass("sd_link_active");
+	
+		$('#news_link').removeClass("news_link_active");
+		$('#news_link').addClass("news_link");
+		
+		$('#sevend_link').removeClass("sevend_link_active");
+		$('#sevend_link').addClass("sevend_link");	
+
+		$('#nav_links_news').css("display","none");
+			
+		
+	}
+	
+	function grHighLightNews()
+	{
+	
+		$('#sd_link').removeClass("sd_link_active");
+		$('#sd_link').addClass("sd_link");
+	
+		$('#news_link').removeClass("news_link");
+		$('#news_link').addClass("news_link_active");
+		
+		$('#sevend_link').removeClass("sevend_link_active");
+		$('#sevend_link').addClass("sevend_link");
+
+		$('#nav_links_news').css("display","block");			
+		
+	}
+	
+	function grHighLightSevenD()
+	{
+	
+		$('#sd_link').removeClass("sd_link_active");
+		$('#sd_link').addClass("sd_link");
+	
+		$('#news_link').removeClass("news_link_active");
+		$('#news_link').addClass("news_link");
+		
+		$('#sevend_link').removeClass("sevend_link");
+		$('#sevend_link').addClass("sevend_link_active");
+
+		$('#nav_links_news').css("display","none");
+		
+	}
+	
+	
+	function grSevenD(param,item_id)
+	{
+		$.post(
+			"/mainpage_ajax_sevend.php",
+			{
+				params: param,
+				currItem: item_id
+			},
+			grSetSevenD
+		);
+		
+	}
+	
+	function grSetSevenD(data)
+	{
+		
+		grHighLightSevenD();
+		
+		$('#news_list').html(data);
+		
+		
+	}
+	
+	
+	
+	function grMore(block_id_from, block_id_to)
+	{
+	
+	if (($('#page_3').length)==0){
+		$('#'+block_id_from).css("display","none");
+		$('#'+block_id_to).css("display","block");
+	
+	} else {
+			
+			if(('#'+block_id_to)=="#page_2")
+			{
+				$("#page_1").css("display","none");
+				$("#page_3").css("display","none");
+				$("#page_2").css("display","block");
+				$("#nav_left").attr("onClick","javascript:grMore('page_2','page_1')");
+				$("#nav_right").attr("onClick","javascript:grMore('page_2','page_3')");
+	
+				
+			}
+
+
+			if(('#'+block_id_to)=="#page_3")
+			{
+				$("#page_1").css("display","none");
+				$("#page_2").css("display","none");
+				$("#page_3").css("display","block");
+				$("#nav_left").attr("onClick","javascript:grMore('page_3','page_2')");
+				$("#nav_right").attr("onClick","javascript:grMore('page_2','page_3')");
+				
+			}
+
+			
+			if(('#'+block_id_to)=="#page_1")
+			{
+				$("#page_2").css("display","none");
+				$("#page_3").css("display","none");
+				$("#page_1").css("display","block");
+				$("#nav_left").attr("onClick","javascript:grMore('page_2','page_1')");
+				$("#nav_right").attr("onClick","javascript:grMore('page_1','page_2')");
+				
+			}
+		}
+		
+		
+	}
+	
+	function grSelectAuthor(param)
+	{
+		
+		$.post(
+			"/mainpage_ajax_author.php",
+			{
+				params: param
+			},
+			grSetAuth
+		);
+						
+		
+	}
+	
+	function grSetAuth(data)
+	{
+			$('#author_n_banner').html(data);
+	}
+	
+	function grHighlightAuthor()
+	{
+		
+	}
+	
+	
+	
+	function grGotoArchive()
+	{
+		location.href="/arkhiv";
+	}
+	
+	
+	
+	
+	function grSelectSpecial(param)
+	{
+		
+		$.post(
+			"/mainpage_ajax_special.php",
+			{
+				params: param
+			},
+			grSetSpecial
+		);
+						
+		
+	}
+	
+	function grSetSpecial(data)
+	{
+			$('#author_n_banner').html(data);
+			
+			
+	}
+	
+
+
+	
+	
+	
+</script>
+
+
+
+
+
+
+
+
+	<div id="wrapper">
+		<div id="header">
+			<div class="left">
+				<div id="logo">
+					<a href="http://tvn-tv.ru">Главная страница</a>
+				</div>
+				<div id="weather_informer">
+					
+	<div id="datetime_time">
+		00:08	</div>
+		
+	<div id="datetime_temperature">
+		<div id="datetime_value">
+		7
+		</div>
+		<div id="degree">
+		&degC
+		</div>
+	</div>
+
+	
+				</div>
+			</div>
+			<div id="online">
+				<a href="/online/"><img src="/images/bt_online.gif"></a>
+			</div>
+			<div class="right">
+				<div class="header_banner">
+
+
+
+	
+	<div style="background:url(/upload/iblock/b60/nasvyazy.jpg) no-repeat center center;">
+
+	
+		
+		<a href="tvn-tv.ru" title="На связи">На связи</a>
+		
+	
+	
+			
+	</div>
+	 
+
+</div>
+
+<script type="text/javascript">
+
+	$('#link63325').fancybox({
+		width: 400,
+		autoSize: true,
+		type: 'ajax',
+		ajax: {
+			type : "POST",
+			data : 'arItem=63325&iblockId=1&video=&screen='
+		}	
+	});
+
+
+
+</script>
+
+			
+	
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="menu">
+			
+			
+<div id="menu_16_plus">12+</div>
+
+<div class="grey-tabs-menu">
+	<ul>
+
+			<li><a href="/"><nobr>На главную</nobr></a></li>
+	
+
+			<li><a href="/about_us/"><nobr>О компании</nobr></a></li>
+	
+
+			<li><a href="/advertising_agency/"><nobr>Рекламное агентство</nobr></a></li>
+	
+
+			<li><a href="/teleprogramma/"><nobr>Программа передач</nobr></a></li>
+	
+
+			<li><a href="/questions/"><nobr>Вопрос-ответ</nobr></a></li>
+	
+
+			<li><a href="/bs/"><nobr>Бегущая строка</nobr></a></li>
+	
+
+			<li><a href="/arkhiv/news/"><nobr>Архив</nobr></a></li>
+	
+
+	</ul>
+</div>
+
+<div id="menu_search">
+		<div class="search-form">
+<form action="/search/index.php">
+	<input id="search_input" type="text" name="q" value="" size="15" maxlength="50" />&nbsp;<input id="search_button" name="s" type="submit" value="" />
+</form>
+</div> 
+</div>
+<div class="menu-clear-left"></div>
+		</div>
+		
+		<div class="clear"></div>
+
+	<div id="news_container">	
+		
+		<div id="news">			
+
+			<div id="news_list">
+				
+				
+				
+						
+			</div>
+			
+			<div class="clear"></div>	
+					
+			<script type="text/javascript">
+
+				grTest(1651079296,0);
+
+			</script>			
+		</div>				
+			
+				
+		
+		
+		
+					<div class="links">
+				<div id="news_link" class="news_link_active"  onClick="javascript:grTest('1651079296','')">
+					Новости
+				</div>
+					
+				
+				<div id="sd_link" class="sd_link" onClick="javascript:grDoomsday('1651079296','')">
+					Судный день
+				</div>
+				
+				<div id="sevend_link" class="sevend_link" onClick="javascript:grSevenD('1651079296','')"> 
+					7 дней
+				</div>
+				<div class="nav_links" id="nav_links_news"> 
+					<div class="nav_links" id="nav_left" onClick="javascript:grMore('page_2','page_1')">
+						<div id="link_text_left">< Назад</div>
+					</div>
+					<div id="nav_interval">
+					
+					</div>
+					<div class="nav_links" id="nav_right" onClick="javascript:grMore('page_1','page_2')">
+						<div id="link_text_right">Вперед ></div>
+					</div>
+				
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+	</div>
+		
+	<div class="clear"></div>
+
+
+		
+		<div id="middle_banners">
+			<div class="middle_left">
+				
+
+
+
+
+<div class="middle_banner">
+	
+
+	
+	<div style="background:url(/upload/iblock/4e1/zombie.jpg) no-repeat center center;">
+
+	
+		
+		<a href="https://tvn-tv.ru/special_projects/zzz/" title="zzz">zzz</a>
+		
+	
+	
+			
+	</div>
+	 
+</div>
+
+<script type="text/javascript">
+
+	$('#link106869').fancybox({
+		width: 400,
+		autoSize: true,
+		type: 'ajax',
+		ajax: {
+			type : "POST",
+			data : 'arItem=106869&iblockId=1&video=&screen='
+		}	
+	});
+
+
+
+</script>
+			</div>
+			
+			<div class="middle_right">
+				
+
+
+
+
+<div class="middle_banner">
+	
+
+	
+	<div style="background:url(/upload/iblock/a03/zazaza.gif) no-repeat center center;">
+
+	
+		
+		<a href="https://tvn-tv.ru/special_projects/zarossiyu/" title="зароссию">зароссию</a>
+		
+	
+	
+			
+	</div>
+	 
+</div>
+
+<script type="text/javascript">
+
+	$('#link106916').fancybox({
+		width: 400,
+		autoSize: true,
+		type: 'ajax',
+		ajax: {
+			type : "POST",
+			data : 'arItem=106916&iblockId=1&video=&screen='
+		}	
+	});
+
+
+
+</script>
+			</div>
+		
+		
+		</div>
+		<div class="clear"></div>
+	
+
+	<div id="author_container">
+		<div id="author_n_banner">
+			
+		</div>
+		
+		
+	</div>
+			<div class="clear"></div>
+			<div class="auth_links">
+				<div id="author_link">
+					<a href="/arkhiv/author/">Авторские программы</a>
+					<div class="link_corner">
+						<div class="active_link_top"></div>
+						<div class="active_link_bottom"></div>
+					</div>
+				</div>
+				<div id="special_link">
+					<a href="/arkhiv/special/">Специальные проекты</a>
+				</div>
+				<div id="za_kadrom_link">
+					<a href="/arkhiv/behind/">"ТВН" за кадром</a>
+				</div>
+				
+				<div class="nav_links" id="nav_links_autor">
+					<div id="auth_nav_left" onClick="javascript:grMore('auth_page_2','auth_page_1')">
+						<div id="link_text_left">< Назад</div>
+					</div>
+					<div id="nav_interval">
+					
+					</div>
+					<div id="auth_nav_right" onClick="javascript:grMore('auth_page_1','auth_page_2')">
+						<div id="link_text_right">Вперед ></div>
+					</div>
+				
+				</div>
+				
+			</div>
+</div>
+		
+<script type="text/javascript">
+	grSelectAuthor(0);
+</script>	</div>
+		<div class="clear"></div>
+		
+	<div id="footer_wrapper">
+		<div id="footer_left">
+			<div id="footer_stat">
+				<div id="counter">
+					<!--LiveInternet counter--><script type="text/javascript"><!--
+					document.write("<a href='http://www.liveinternet.ru/click' "+
+					"target=_blank><img src='//counter.yadro.ru/hit?t44.1;r"+
+					escape(document.referrer)+((typeof(screen)=="undefined")?"":
+					";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+					screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+					";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+					"' alt='' title='LiveInternet' "+
+					"border='0' width='31' height='31'><\/a>")
+					//--></script><!--/LiveInternet-->
+				</div>
+
+				<div id="yandex">
+					<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter47361586 = new Ya.Metrika2({ id:47361586, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47361586" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+				</div>
+			</div>
+			<div id="footer_address">
+				﻿<a href="http://vk.com/tvn_tv" target="new">
+<div id="footer_vk_logo">
+</div>
+</a>
+<a href="https://ok.ru/group/54663364673775" target="new">
+<div id="footer_ok_logo">
+</div>
+</a>
+<a href="https://www.youtube.com/channel/UC_Z3smC0aEpB0FXPHEAORYQ" target="new">
+<div id="footer_youtube_logo">
+</div>
+</a>
+
+<div id="footer_phone">
+	тел. 8(3843) 46-44-22
+</div>
+<div id="footer_mail">
+	e-mail: <a href="mailto:office@tvn-tv.ru">office@tvn-tv.ru</a>
+</div>
+			</div>	
+		</div>
+	
+		<div id="footer_right">
+			<div class="copyright">
+				2008-2022 ООО &quot;ТВН&quot;. Все права защищены. 
+<br />
+ При полном или частичном использовании материалов 
+ <br />
+ активная ссылка на<a href="https://tvn-tv.ru" > https://tvn-tv.ru</a> обязательна.
+ <br>
+<a href="https://tvn-tv.ru/politika_konfidentsialnosti.pdf">Политика конфиденциальности</a>			</div>	
+		</div>
+	</div>
+</body>
+</html>

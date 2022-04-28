@@ -1,0 +1,101 @@
+.newmainslider .slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newmainslider .slide.white h2,
+.newmainslider .slide.white p,
+.newmainslider .slide.white h2,
+.newmainslider .slide.white .timerblock span {
+    color: white;
+}
+
+.newmainslider .slick-track .slick-slide {
+    height: /*420*/600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.newmainslider .slick-arrow {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    font-size: 0;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: rgba(79, 79, 79, 0.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.newmainslider .slick-arrow.slick-next {
+    right: 15px;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.newmainslider .slick-arrow.slick-next:after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+
+.newmainslider .slick-arrow.slick-next:before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 30px;
+    left: 16px;
+}
+
+.newmainslider .slick-arrow.slick-prev {
+    left: 15px;
+}
+
+.newmainslider .slick-arrow.slick-prev:after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 30px;
+    left: 12px;
+}
+
+
+.newmainslider .slick-arrow.slick-prev:before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 16px;
+    left: 12px;
+}

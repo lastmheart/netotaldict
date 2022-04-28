@@ -1,0 +1,233 @@
+.gicon {
+  display: block;
+}
+
+.gicon.arrow-left {
+  background: url('../images/icons-s664a2f68c3.png') 0 0 no-repeat;
+  width: 20px;
+  height: 16px;
+}
+
+.gicon.arrow-right {
+  background: url('../images/icons-s664a2f68c3.png') 0 -16px no-repeat;
+  width: 20px;
+  height: 16px;
+}
+
+.gicon.ball {
+  background: url('../images/icons-s664a2f68c3.png') 0 -32px no-repeat;
+  width: 36px;
+  height: 36px;
+}
+
+.gicon.check {
+  background: url('../images/icons-s664a2f68c3.png') 0 -68px no-repeat;
+  width: 12px;
+  height: 9px;
+}
+
+.gicon.close-14-grey {
+  background: url('../images/icons-s664a2f68c3.png') 0 -77px no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.gicon.close-14 {
+  background: url('../images/icons-s664a2f68c3.png') 0 -91px no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.gicon.close-icon {
+  background: url('../images/icons-s664a2f68c3.png') 0 -105px no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.gicon.cup {
+  background: url('../images/icons-s664a2f68c3.png') 0 -135px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.gicon.facebook {
+  background: url('../images/icons-s664a2f68c3.png') 0 -151px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.gicon.facebook_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -177px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.gicon.icon-down-o {
+  background: url('../images/icons-s664a2f68c3.png') 0 -209px no-repeat;
+  width: 12px;
+  height: 7px;
+}
+
+.gicon.icon-down {
+  background: url('../images/icons-s664a2f68c3.png') 0 -216px no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.gicon.icon-up {
+  background: url('../images/icons-s664a2f68c3.png') 0 -241px no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.gicon.instagram {
+  background: url('../images/icons-s664a2f68c3.png') 0 -266px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.gicon.instagram_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -292px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.gicon.logout {
+  background: url('../images/icons-s664a2f68c3.png') 0 -324px no-repeat;
+  width: 16px;
+  height: 15px;
+}
+
+.gicon.ok {
+  background: url('../images/icons-s664a2f68c3.png') 0 -339px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.gicon.ok_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -365px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.gicon.p-p-play {
+  background: url('../images/icons-s664a2f68c3.png') 0 -397px no-repeat;
+  width: 49px;
+  height: 18px;
+}
+
+.gicon.question-hover {
+  background: url('../images/icons-s664a2f68c3.png') 0 -415px no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.gicon.question-s-hover {
+  background: url('../images/icons-s664a2f68c3.png') 0 -439px no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.gicon.question-s {
+  background: url('../images/icons-s664a2f68c3.png') 0 -459px no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+.gicon.question {
+  background: url('../images/icons-s664a2f68c3.png') 0 -481px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.gicon.refresh {
+  background: url('../images/icons-s664a2f68c3.png') 0 -507px no-repeat;
+  width: 16px;
+  height: 13px;
+}
+
+.gicon.reg-icon {
+  background: url('../images/icons-s664a2f68c3.png') 0 -520px no-repeat;
+  width: 11px;
+  height: 11px;
+}
+
+.gicon.search-icon {
+  background: url('../images/icons-s664a2f68c3.png') 0 -531px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.gicon.shape {
+  background: url('../images/icons-s664a2f68c3.png') 0 -547px no-repeat;
+  width: 16px;
+  height: 15px;
+}
+
+.gicon.slide-next {
+  background: url('../images/icons-s664a2f68c3.png') 0 -562px no-repeat;
+  width: 21px;
+  height: 14px;
+}
+
+.gicon.slide-prev {
+  background: url('../images/icons-s664a2f68c3.png') 0 -576px no-repeat;
+  width: 21px;
+  height: 14px;
+}
+
+.gicon.triangle-down {
+  background: url('../images/icons-s664a2f68c3.png') 0 -590px no-repeat;
+  width: 12px;
+  height: 9px;
+}
+
+.gicon.triangle {
+  background: url('../images/icons-s664a2f68c3.png') 0 -599px no-repeat;
+  width: 14px;
+  height: 10px;
+}
+
+.gicon.trud-logo {
+  background: url('../images/icons-s664a2f68c3.png') 0 -609px no-repeat;
+  width: 48px;
+  height: 19px;
+}
+
+.gicon.twitter {
+  background: url('../images/icons-s664a2f68c3.png') 0 -628px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.gicon.twitter_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -654px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.gicon.vk {
+  background: url('../images/icons-s664a2f68c3.png') 0 -686px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.gicon.vk_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -712px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.gicon.youtube_2 {
+  background: url('../images/icons-s664a2f68c3.png') 0 -744px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.gicon.youtube_2_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -770px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=gicons.css.map */

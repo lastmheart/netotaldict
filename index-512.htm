@@ -1,0 +1,498 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- <script src="http://code.jquery.com/jquery-1.7.js"></script> -->
+    <script language="javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta name="robots" content="index, follow" />
+<link href="/bitrix/cache/css/s1/favorit/kernel_main/kernel_main.css?159292476050918" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/favorit/template_27311dc4cc9194b1176a48d7306ecc3b/template_27311dc4cc9194b1176a48d7306ecc3b.css?1649401823148594" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','USER_ID':'','SERVER_TIME':'1651082405','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'3a43ffed258e73b0fb666460898d1afe'});</script>
+
+
+<script type="text/javascript" src="/bitrix/cache/js/s1/favorit/kernel_main/kernel_main.js?1592924760367729"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js?157712265294768','/bitrix/js/main/core/core_ajax.js?157712265235166','/bitrix/js/main/json/json2.min.js?15771226523467','/bitrix/js/main/core/core_ls.js?157712265210330','/bitrix/js/main/session.js?15771226523170','/bitrix/js/main/core/core_window.js?157712265296525','/bitrix/js/main/utils.js?157712265230972','/bitrix/js/main/core/core_popup.js?157712265239369','/bitrix/js/main/core/core_date.js?157712265253093','/bitrix/templates/favorit/bootstrap/js/bootstrap.min.js?157712266627748','/bitrix/templates/favorit/js/jcarousel/jquery.jcarousel.js?157712266743968','/bitrix/templates/favorit/js/custom.js?15771226679790','/bitrix/templates/favorit/js/jquery.mask.js?15771226673142','/bitrix/templates/favorit/js/fancybox/source/jquery.fancybox.js?157712266747880','/bitrix/templates/favorit/js/map/jquery.maphilight.min.js?157712266713025','/bitrix/templates/favorit/js/map/jquery.canvasFrontEndAreaDraw.js?157712266713605','/bitrix/templates/favorit/js/map/rubricks.js?15771226673643','/bitrix/components/bitrix/search.title/script.js?15771226508716','/bitrix/components/bitrix/menu/templates/horizontal_multilevel/script.js?1577122648469']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css?15771226528964','/bitrix/js/main/core/css/core_popup.css?157712265228664','/bitrix/js/main/core/css/core_date.css?157712265210189','/bitrix/templates/favorit/bootstrap/css/bootstrap.min.css?1577122666106015','/bitrix/templates/favorit/js/fancybox/source/jquery.fancybox.css?15771226674140','/bitrix/templates/favorit/components/bitrix/search.title/classic/style.css?15771226662130','/bitrix/components/bitrix/menu/templates/horizontal_multilevel/style.css?15771226485079','/bitrix/components/bitrix/menu/templates/.default/style.css?1577122648626','/bitrix/templates/favorit/components/bitrix/news.list/modals/style.css?1577122666108','/bitrix/templates/favorit/styles.css?164940182127972']); </script>
+
+
+<script type="text/javascript" src="/bitrix/cache/js/s1/favorit/template_dadcf9ade59137b705f0baea7d46c8c5/template_dadcf9ade59137b705f0baea7d46c8c5.js?1584080793173422"></script>
+<script type="text/javascript">
+bxSession.Expand(1440, '3a43ffed258e73b0fb666460898d1afe', false, '060310c8352d535a261fcb2ae5cfa45c');
+</script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "2b5da8545c950c8eaf2e6432df048e86"]); _ba.push(["host", "trkfavorit.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+	<title>ТРЦ "Фаворит"</title>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M8H1C3JS2T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M8H1C3JS2T');
+</script>
+
+</head>
+<body>
+	<div id="panel"></div>
+	<div class="wrapper-background">
+		<div class="wrapper-home">
+			<header>
+				<div class="wrapper">
+					<div class="row-fluid">
+						<div class="span2">
+							<div class="fastmenu">
+								<div class="row-fluid">
+									<div class="span4">
+										<a href="/" class="home"></a>
+									</div>
+									<div class="span4">
+										<a href="/feedback/" class="mail"></a>
+									</div>
+									<div class="span4">
+										<a href="/sitemap/" class="sitemap"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="span7">
+	
+						</div>
+						<div class="span3">
+
+	<div id="title-search">
+	<form  class="search-form" id="searchform"  action="/search/index.php">
+	
+		<div class="span9">
+			<input id="title-search-input" type="text" name="q" value="" autocomplete="off" />
+		</div>
+		<div class="span3">
+			<submit onClick="searchform.submit()" name="s">
+				<span class="myicon-search"></span>
+			</submit>
+		</div>
+	</form>
+	</div>
+<script type="text/javascript">
+var jsControl_047d514cb78d27614405030735c0b002 = new JCTitleSearch({
+	//'WAIT_IMAGE': '/bitrix/themes/.default/images/wait.gif',
+	'AJAX_PAGE' : '/',
+	'CONTAINER_ID': 'title-search',
+	'INPUT_ID': 'title-search-input',
+	'MIN_QUERY_LEN': 2
+});
+</script>
+
+						
+						
+												</div>
+					</div>
+				</div>
+			</header>
+			<nav>
+				<div class="wrapper">
+					<div class="row-fluid">
+						<div class="span4">
+							
+<ul id="horizontal-multilevel-menu">
+
+
+	
+	
+		
+							<li><a href="/o-trc/" class="root-item">О ТРЦ</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/putevoditel/53/#4" class="root-item">Путеводитель</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/poleznyy-trts/" class="root-item">ПолезныйТРЦ</a></li>
+			
+		
+	
+	
+
+
+</ul>
+<div class="menu-clear-left"></div>
+						
+						</div>
+						<div class="span3 logo-container">
+							<a href="/" class="logo">
+							</a>
+						</div>
+						<script type="application/javascript">
+							$( document ).ready(function() {
+								$('#menu-cds > ul > li:nth-child(3)').before('<li class="kino-button"><a href="http://azbukakino.com/" target="_blank"><span class="besuns"></span><br>Расписание</a></li>');
+							});
+						</script>
+						<div class="span5" id="menu-cds">
+							
+<ul id="horizontal-multilevel-menu">
+
+
+	
+	
+		
+							<li><a href="/arendatoru/" class="root-item">Арендатору</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="/contacty/" class="root-item">Контакты</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+							<li><a href="https://malloko.ru/" class="root-item">Malloko</a></li>
+			
+		
+	
+	
+
+
+</ul>
+<div class="menu-clear-left"></div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+
+							
+
+				 
+<div class="front-slider"> 	 
+  <div class="jcarousel-front"> 	
+<ul class="gallery carousel">
+<li>
+
+<!--	<span  style="background:no-repeat center top url('/upload/resize_cache/iblock/68f/908_405_1/68ffd3a4bd64568213d6a984dd6230f3.png'); width:908px; height:405px">
+</span>
+	 -->
+	<img href="/upload/resize_cache/iblock/68f/908_405_1/68ffd3a4bd64568213d6a984dd6230f3.png" style="background:no-repeat center top url('/upload/resize_cache/iblock/68f/908_405_1/68ffd3a4bd64568213d6a984dd6230f3.png'); width:908px; height:405px; box-shadow: 0px 0px 5px #222; -moz-box-shadow: 0px 0px 5px #222; -webkit-box-shadow: 0px 0px 5px #222; -moz-border-radius: 25px; -webkit-border-radius: 25px;  border-radius: 25px;">
+
+</li>
+<li>
+
+<!--	<span  style="background:no-repeat center top url('/upload/resize_cache/iblock/b42/908_405_1/b423e2638766fc8a89092ec093c6a5cf.png'); width:908px; height:405px">
+</span>
+	 -->
+	<img href="/upload/resize_cache/iblock/b42/908_405_1/b423e2638766fc8a89092ec093c6a5cf.png" style="background:no-repeat center top url('/upload/resize_cache/iblock/b42/908_405_1/b423e2638766fc8a89092ec093c6a5cf.png'); width:908px; height:405px; box-shadow: 0px 0px 5px #222; -moz-box-shadow: 0px 0px 5px #222; -webkit-box-shadow: 0px 0px 5px #222; -moz-border-radius: 25px; -webkit-border-radius: 25px;  border-radius: 25px;">
+
+</li>
+<li>
+
+<!--	<span  style="background:no-repeat center top url('/upload/resize_cache/iblock/0b6/908_405_1/0b66ad179c6b84511de2ba7370a9bc6b.jpg'); width:908px; height:405px">
+</span>
+	 -->
+	<img href="/upload/resize_cache/iblock/0b6/908_405_1/0b66ad179c6b84511de2ba7370a9bc6b.jpg" style="background:no-repeat center top url('/upload/resize_cache/iblock/0b6/908_405_1/0b66ad179c6b84511de2ba7370a9bc6b.jpg'); width:908px; height:405px; box-shadow: 0px 0px 5px #222; -moz-box-shadow: 0px 0px 5px #222; -webkit-box-shadow: 0px 0px 5px #222; -moz-border-radius: 25px; -webkit-border-radius: 25px;  border-radius: 25px;">
+
+</li>
+</ul>
+ 	</div>
+ 	 
+  <div class="jcarousel-control-prev"> 	</div>
+ 	 
+  <div class="jcarousel-control-next"> 	</div>
+ 	 
+  <div class="jcarousel-pagination"> 	</div>
+ 	 </div>
+ 
+<div class="front-banners"> 	 
+  <div class="wrapper"> 	 	<div class="news-list">
+	<div class="row-fluid">
+					<div class="span4" id="bx_651765591_1154">
+
+			<div class="increase-banner-container"> 					
+				<div class="increase-banner"> 						
+					<div class="row-fluid"> 							
+						<div class="span4"> 
+						<a href="/novosti/1154/"><img
+								class="preview_picture"
+								border="1"
+								src="/upload/resize_cache/iblock/74e/100_100_2/74e033d3f89bd9f2b791a7243805f204.jpg"
+								width="100"
+								height="100"
+								alt="Программа 8 марта"
+								title="Программа 8 марта"
+								/></a>													
+						</div>					
+						<div class="span8"> 								
+							<div class="increase-banner-text"> 									
+								<div class="h3">Программа 8 марта</div>
+																<a href="/novosti/1154/" class="button" > Подробнее </a>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+						
+			
+		
+					<div class="span4" id="bx_651765591_1153">
+
+			<div class="increase-banner-container"> 					
+				<div class="increase-banner"> 						
+					<div class="row-fluid"> 							
+						<div class="span4"> 
+						<a href="/novosti/1153/"><img
+								class="preview_picture"
+								border="1"
+								src="/upload/resize_cache/iblock/dcc/100_100_2/dcc97b24cbfedd2f232e395c7019f732.png"
+								width="100"
+								height="100"
+								alt="День защитника отечества"
+								title="День защитника отечества"
+								/></a>													
+						</div>					
+						<div class="span8"> 								
+							<div class="increase-banner-text"> 									
+								<div class="h3">День защитника отечества</div>
+								23 февраля рисуем и играем в ТРЦ Фаворит!								<a href="/novosti/1153/" class="button" > Подробнее </a>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+						
+			
+		
+		</div>
+</div>
+</div>
+</div>
+  			</div>
+		<div class="empty-footer">
+		</div>
+		</div>
+<footer>
+	<div class="wrapper">
+		<div class="row-fluid">	
+			<div class="span2 borderleft">
+				<div class="footer-block-container">
+					<div class="h2">
+						Меню
+					</div>	
+					
+<ul class="left-menu">
+
+			<li><a href="/" class="selected">Главная</a></li>
+		
+			<li><a href="/o-trc/">О ТРЦ</a></li>
+		
+			<li><a href="/putevoditel/">Путеводитель</a></li>
+		
+			<li><a href="/arendatoru/">Арендаторам</a></li>
+		
+			<li><a href="/contacty/">Контакты</a></li>
+		
+
+</ul>
+					
+				</div>
+			</div>
+			<div class="span3 borderleft">	
+				<div class="footer-block-container socials">
+<div class="h2">
+						Контакты
+					</div>	
+
+					<div class="footer-icons">
+<div class="ficon-container">
+	<div class="ficon ficon-map">
+		Валерии Гнаровской, 12
+	</div>
+</div>
+<!--<div class="ficon-container">
+	<div class="ficon ficon-mail">
+		info@favorit.ru
+	</div>
+</div>-->
+<!--<div class="ficon-container">
+	<div class="ficon ficon-phone">
+	</div>
+</div>-->
+<div class="ficon-container">
+	<div class="ficon ficon-phone" align="left">
+		Аренда: <br/>+7 (3452) 383 - 515, 
+доб. 1039 (1)
+	</div>
+</div>
+<div class="ficon-container">
+	<div class="ficon ficon-phone" align="left">
+		Маркетинг: <br/>trcfavorit@gmail.com
+	</div>
+</div>
+<div class="ficon-container">
+	<div class="ficon ficon-phone" align="left">
+		Администратор : <br/>+7 (982) 938-71-70
+	</div>
+</div>
+
+</div>	
+
+				</div>
+			</div>
+			<div class="span2 borderleft">	
+				<div class="footer-block-container socials">
+					<div class="h2">
+						Malloko
+					</div>	
+
+					<div class="footer-icons">
+	<a href="https://twitter.com/MallokoDiscount" target="_blank" rel="nofollow">
+		<div class="ficon ficon-tw">
+		</div>
+	</a>
+	<a href="http://vk.com/malloko" target="_blank" rel="nofollow">
+		<div class="ficon ficon-vk">
+		</div>
+	</a>
+        <a href="http://ok.ru/malloko.tyumen" target="_blank" rel="nofollow">
+		<div class="ficon ficon-ok">
+		</div>
+	</a>
+        <a href="https://www.youtube.com/user/MallokoDiscount" target="_blank" rel="nofollow">
+		<div class="ficon ficon-yu">
+		</div>
+	</a>
+        <a href="https://t.me/malloko_tmn" target="_blank" rel="nofollow">
+		<div class="ficon ficon-tg">
+		</div>
+	</a>
+
+
+</div>
+
+	
+	
+
+					
+				</div>
+			</div>
+
+			<div class="span2 borderleft">
+				<div class="footer-block-container socials">	
+<div class="h2">
+						МЫ В СОЦСЕТЯХ
+					</div>	
+
+					</div>
+<div class="footer-icons"> 
+        <a href="http://vk.com/trkfavorit" target="_blank" rel="nofollow"">
+		<div class="ficon ficon-vk">
+		</div>
+	</a>
+	
+
+        <a href="https://t.me/trkfavorit" target="_blank" rel="nofollow"">
+		<div class="ficon ficon-tg">
+		</div>
+	</a>
+		
+
+
+				</div>
+			</div>
+			<div class="span3 borderleft">
+				<div class="footer-block-container copyright">
+					<a href="/" class="footer-logo"></a>
+					Режим работы: 10:00-22:00 </br>
+
+					“ФАВОРИТ”<br>
+торгово-развлекательный центр<br>
+все права защищены, 2022 г.
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+		<div class="fancy-hide"></div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter25349240 = new Ya.Metrika({id:25349240,
+                    webvisor:true,
+                    clickmap:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/25349240" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t26.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число посетителей за"+
+" сегодня' "+
+"border='0' width='88' height='15'><\/a>")
+//--></script><!--/LiveInternet-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52705130-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

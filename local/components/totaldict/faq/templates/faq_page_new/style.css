@@ -1,0 +1,144 @@
+.faqpage {
+    display: inline-block;
+    width: 100%;
+}
+
+.faq_tabs {
+    float: right;
+    width: calc(100% - 245px);
+    display: inline-block;
+}
+
+.faq_sections {
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 4px;
+    float: left;
+    width: 215px;
+}
+
+.faq_sections .section {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    width: 100%;
+    line-height: 22px;
+}
+
+.faq_sections .section.active {
+    font-weight: 600;
+}
+
+.faq_tabs .tab {
+    display: none;
+    width: 100%;
+}
+
+.faq_tabs .tab.active {
+    display: inline-block;;
+}
+
+.faq_tabs .tab .question {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.faq_tabs .tab .question .head {
+    padding: 20px;
+    padding-right: 100px;
+    position: relative;
+}
+
+.faq_tabs .tab .question .head p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.faq_tabs .tab .question .head .expand {
+    position: absolute;
+    right: 20px;
+    border-bottom: 1px solid;
+    top: calc(50% - 9px);
+    color: #1454e7;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.faq_tabs .tab .question .answer {
+    padding: 20px;
+    border-top: 1px solid whitesmoke;
+    display: none;
+    width: 100%;
+}
+
+.faq_tabs .tab .question .answer p,
+.faq_tabs .tab .question .answer li {
+    line-height: 22px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.faq_search {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.faq_search input[type="text"] {
+    padding: 15px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding-right: 100px;
+}
+
+.faq_search input[type="submit"] {
+    background-image: url(search.svg);
+    display: inline-block;
+    width: 62px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .faq_tabs .tab .question .head .expand {
+        display: inline-block;
+        line-height: 16px;
+    }
+
+    .faq_tabs .tab .question .head p {
+        font-size: 17px;
+    }
+
+    .faq_tabs .tab .question .answer p, .faq_tabs .tab .question .answer li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .faq_sections,
+    .faq_tabs {
+        width: 100%;
+    }
+
+    .faq_tabs .tab .question .head .expand {
+        display: none;
+    }
+
+    .faq_tabs .tab .question .head {
+        padding-right: 20px;
+    }
+
+}

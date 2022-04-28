@@ -1,0 +1,856 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Copied from https://totaldict.ru/shop/ by Cyotek WebCopy 1.8.0.652, 27 апреля 2022 г., 15:22:06 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Тотальный диктант">
+<link href="../bitrix/js/main/core/css/core.css?16007998183963" type="text/css" rel="stylesheet">
+
+
+
+<link href="../local/templates/shop/components/bitrix/catalog/.default/style.css?15403946401122" type="text/css" rel="stylesheet">
+<link href="../local/templates/shop/components/bitrix/catalog/.default/bitrix/catalog.section.list/.default/style.css?15403946417151" type="text/css" rel="stylesheet">
+<link href="../local/templates/shop/components/bitrix/catalog/.default/bitrix/catalog.top/.default/style.css?1540394641101" type="text/css" rel="stylesheet">
+<link href="../local/templates/shop/components/bitrix/catalog/.default/bitrix/catalog.top/.default/section/style.css?15440255352806" type="text/css" rel="stylesheet">
+<link href="../local/templates/shop/styles.css?15518410994352" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="../local/css/reaspekt/reaspekt.geobase/style.css?1490952186974" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="../local/templates/shop/stylesheets/build.min.css?1535438756128584" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="../local/templates/voting_capital/css/gicons.css?15229900654834" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="../local/templates/shop/stylesheets/custom.css?154151811366072" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="../local/templates/shop/stylesheets/shop.css?15517644246555" type="text/css" data-template-style="true" rel="stylesheet">
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="../bitrix/js/main/core/core.js?1591110038544313"></script>
+
+<script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1651084914','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'a504ca1560d8adde8aeccc8bb37bc8b3'});</script>
+
+
+<script type="text/javascript" src="../bitrix/js/main/jquery/jquery-1.8.3.min.js?154026014793637"></script>
+<script type="text/javascript" src="../bitrix/js/main/core/core.min.js?1591110038249634"></script>
+<script type="text/javascript" src="../bitrix/js/main/jquery/jquery-2.1.3.min.js?160079981884320"></script>
+<script type="text/javascript">BX.setJSList(['/local/templates/shop/components/bitrix/catalog/.default/bitrix/catalog.top/.default/section/script.js','/local/templates/shop/components/bitrix/menu/shop/script.js','/local/js/reaspekt/reaspekt.geobase/script.js']);</script>
+<script type="text/javascript">
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+<script type="text/javascript"> window.siteData = {"user":{"is_authorized":false,"is_participate":false,"avatar":null,"is_registered":false,"registered_stage":null,"stage":null,"is_registered_en":false,"registered_stage_en":null,"stage_en":null,"links":{"profile":"\/profile\/","profile_settings":"\/profile\/participate\/","profile_info":"\/profile\/info\/"}},"city":{"id":"157","name":"\u042f\u0440\u0435\u043d\u0441\u043a","code":"yarensk","detail_page_url":"\/yarensk\/","property_city_is_popular":"","property_totaldict_geo_cities_base_city":"","property_totaldict_geo_cities_name_genetive":"\u042f\u0440\u0435\u043d\u0441\u043a\u0435","property_totaldict_geo_cities_country_id":"1","property_totaldict_geo_cities_country_name":"\u0420\u043e\u0441\u0441\u0438\u044f","property_totaldict_geo_cities_country_property_country_continent":"\u0420\u043e\u0441\u0441\u0438\u044f","property_totaldict_geo_cities_coords":"62.173208390423,49.092234253635","property_totaldict_geo_cities_timezone":"Europe\/Moscow","property_totaldict_geo_cities_td_timezone":"3387","property_totaldict_geo_cities_state_id":"47","property_totaldict_geo_cities_state_name":"\u0410\u0440\u0445\u0430\u043d\u0433\u0435\u043b\u044c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c","property_totaldict_geo_cities_name_in":"","property_city_stages_search_dictor":"","property_icon_small":"","property_icon":"","property_capital_dictation":"","satellites":{"45969":{"ID":"45969","NAME":"\u041b\u0438\u0442\u0432\u0438\u043d\u043e (\u0410\u0440\u0445\u0430\u043d\u0433\u0435\u043b\u044c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c)"},"63939":{"ID":"63939","NAME":"\u0418\u0440\u0442\u0430 (\u0410\u0440\u0445\u0430\u043d\u0433\u0435\u043b\u044c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c)"},"63941":{"ID":"63941","NAME":"\u041b\u0435\u043d\u0430 (\u0410\u0440\u0445\u0430\u043d\u0433\u0435\u043b\u044c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c)"},"63943":{"ID":"63943","NAME":"\u0421\u043e\u0439\u0433\u0430 (\u0410\u0440\u0445\u0430\u043d\u0433\u0435\u043b\u044c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c)"},"63945":{"ID":"63945","NAME":"\u041a\u043e\u0437\u044c\u043c\u0438\u043d\u043e (\u0410\u0440\u0445\u0430\u043d\u0433\u0435\u043b\u044c\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c)"}}}}</script>
+
+
+
+<script type="text/javascript" src="../bitrix/cache/js/s1/shop/template_347bd5e61917afd927b70f45d978eb01/template_347bd5e61917afd927b70f45d978eb01_v1.js?16508873575515"></script>
+<script type="text/javascript" src="../bitrix/cache/js/s1/shop/page_7c254c9bb22a37408f8724cd0083562c/page_7c254c9bb22a37408f8724cd0083562c_v1.js?165088735739885"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "36a13af3ed26e9a16303b7705a275dcb"]); _ba.push(["host", "totaldict.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<title>Тотальный магазин</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Тотальный магазин">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="/local/templates/shop/images/totallogo.png">
+<meta name="twitter:url" content="/shop/">
+<meta name="twitter:domain" content="totaldict.ru">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@...">
+<meta property="fb:app_id" content="1832342837038353"><meta property="og:type" content="website">
+<meta property="og:site_name" content="Тотальный диктант">
+<meta property="og:title" content="Тотальный магазин">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://totaldict.ru/shop/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://totaldict.ru/local/templates/shop/images/totallogo.png"><script src="//vk.com/js/api/openapi.js"></script>
+<script src="../2.1/json.txt?lang=ru_RU" type="text/javascript"></script><!-- Removed by WebCopy --><!--<base href="/shop/">--><!-- Removed by WebCopy -->
+</head>
+        <body class="isPage ">
+            			<!--Header Area Start-->
+    <div class="header header-new clearfix">
+        <div class="visible-xs mobile-header-line clearfix">
+            <a href="../index.htm" class="pull-left icon_logo-m"><img src="../local/templates/shop/images/logo.svg" alt=""></a>
+            
+ <a href="#authorize" class="pull-right login-m link_js_popup">Вход</a>
+            <a href="#menu" class="center-block clearfix menu-header-button link_js_popup">
+                        <span class="pull-left menu__tg">
+                            <span class="menu__tr_bar"></span>
+                            <span class="menu__tr_bar"></span>
+                            <span class="menu__tr_bar"></span>
+                        </span>
+                <span class="pull-left title">Меню</span>
+            </a>
+        </div>
+        
+<div class="visible-xs mobile-header-line mobile-header-line-city">
+    <a href="../yarensk/index-1.htm" class="clearfix">
+        <span class="pull-left">О диктанте в вашем городе</span>
+        <span class="pull-right clearfix">
+            <span class="name pull-left clearfix"><span class="pull-left">Яренск</span></span>
+        </span>
+    </a>
+</div>
+
+        <div class="visible-xs mobile-header-line mobile-header-line-city mobile-header-line-city-change">
+            <a href="#locations" data-toggle="modal" class="clearfix other-city" activate-locations="">
+                        <span class="pull-left">
+                            Другой город?
+                        </span>
+                <span class="pull-right">
+                            <i class="gicon shape"></i>
+                        </span>
+            </a>
+        </div>
+        <div class="hidden-xs">
+            <a href="../index.htm" class="pull-left icon_logo_page"><img src="../local/templates/shop/images/logo.svg" alt=""></a>
+            <div class="seporator pull-left"></div>
+            <a href="../yarensk/index-1.htm" class="pull-left city__name clearfix">Диктант в Яренске</a>
+<a href="#locations" data-toggle="modal" class="pull-left city__change" activate-locations=""><i class="gicon shape"></i>Другой город?</a>
+
+            <a href="#authorize" class="pull-right link_js_popup">Вход</a>
+<div class="seporator pull-right"></div>
+
+
+	<div id="authorize" class="window window_s_s mfp-hide">
+		<div class="window__content">
+			<div class="window-tabs">
+				<div class="window-tabs__pane" id="tab-signin">
+					<tabs class="signin-tabs">
+						<pane title="Войти">
+							<form class="signin__form form form_theme_red" name="form" ng-controller="UserSigninController" ng-submit="send()">
+								<div class="form__section form__section_s_m">
+									<div class="social-sign r r_s_s r_j_c">
+										<div class="social-sign__item r__c">
+											<a class="social-sign__link social-sign__link_fb" ng-click="loginFacebook()"><span class="icon icon_facebook" style="vertical-align: -0.0625rem; margin-right: .5rem;"></span><span>Войти через Facebook</span></a>
+										</div>
+										<div class="social-sign__item r__c">
+											<a class="social-sign__link social-sign__link_vk" ng-click="loginVk()"><span class="icon icon_vk_2" style="margin-right: .5rem; font-size: .75rem;"></span><span>Войти через ВКонтакте</span></a>
+										</div>
+									</div>
+								</div>
+								<div class="form__section form__section_s_m">
+									<input class="form__input" type="text" name="login" ng-model="data.login" placeholder="Эл. почта или телефон" required="">
+								</div>
+								<div class="form__section form__section_s_m">
+									<input class="form__input" type="password" name="name" ng-model="data.password" placeholder="Пароль" required="">
+									<div class="r">
+										<div class="form__secondary-action r__c r__c_r">
+											<a class="link link_display_default" href="#tab-password" swipetab="" style="vertical-align: -2px;">Забыли пароль?</a>
+										</div>
+									</div>
+								</div>
+								<div class="form__section form__section_s_m in-adaptive center">
+									<a class="link link_display_default" href="#tab-password" swipetab="" style="vertical-align: -2px;">Забыли пароль?</a>
+								</div>
+								<div class="form__section">
+									<input class="form__submit" type="submit" value="Вход" ng-disabled="!form.$valid">
+								</div>
+								<div class="form__section form__section_s_s form__section_type_error" ng-repeat="error in errors" ng-if="error.errors">
+									<p ng-bind="error.errors"></p>
+								</div>
+								<div class="form__section form__section_reference">
+									<label class="checkbox">
+										<input class="checkbox__control" type="checkbox" name="remember" ng-model="data.remember" value="">
+										<span class="checkbox__box"></span>
+										<span class="checkbox__label">Запомнить меня</span>
+									</label>
+								</div>
+							</form>
+						</pane> 
+						<pane title="Создать учетную запись">
+							<form class="signin__form form form_theme_red" name="form" ng-controller="UserSignupController" ng-submit="send()">
+								<div ng-if="!sms_form" class="form__section form__section_s_m">
+									<input class="form__input" type="email" name="email" ng-model="data.email" placeholder="Эл. почта" required="">
+								</div>
+								<div ng-if="!sms_form" class="form__section form__section_s_m">
+									<input class="form__input" type="password" name="password" ng-model="data.password" placeholder="Пароль" required="">
+								</div>
+                                                                <div ng-if="sms_form" class="form__section form__section_s_s">
+                                                                    <p class="text-center">На номер {{phone}} был выслан код подтверждения.</p>
+                                                                </div>
+                                                                <div ng-if="sms_form" class="form__section form__section_s_m">
+                                                                    <input class="form__input" type="text" name="sms_code" ng-model="data.sms_code" placeholder="SMS код подтверждения" required="">
+                                                                </div>
+								<div class="form__section">
+									<input class="form__submit" type="submit" value="Продолжить" ng-disabled="!form.$valid">
+								</div>
+								<div class="form__section form__section_s_s form__section_type_error" ng-repeat="error in errors" ng-if="error.errors">
+									<p ng-bind="error.errors"></p>
+								</div>
+								<div class="form__section form__section_reference">
+									<div class="wysiwyg">
+										<div class="wysiwyg__p wysiwyg__p_s_14">
+                                                                                    <p>
+                                                                                        <label class="checkbox">
+                                                                                            <input class="checkbox__control ng-pristine ng-untouched" type="checkbox" name="confirm" ng-model="data.confirm" value="1" required="">
+                                                                                            <span class="checkbox__box">
+
+                                                                                            </span>
+                                                                                            <span class="checkbox__label">*Нажимая «Продолжить», Вы соглашаетесь на <a class="link link_type_solid" ng-click="show_peronsonal = show_peronsonal === true ? false : true" title="Обработка персональных данных" href="#"><span class="link__text">обработку указанных Вами персональных данных</span></a>.</span>
+                                                                                        </label>
+                                                                                    </p>
+
+										</div>
+									</div>
+								</div>
+								<div class="form__section form__section_reference" ng-hide="!show_peronsonal">
+									<div class="wysiwyg">
+										<div class="wysiwyg__p wysiwyg__p_s_14">
+                                                                                    <p>Согласно Федеральному закону от 27.07.2006 № 152-ФЗ «О персональных данных» даю согласие Фонду "Тотальный диктант"  путем нажатия на кнопку «зарегистрироваться» на обработку, а именно совершение действий, предусмотренных п. 3 ст. 3 данного Федерального закона, в том числе с использованием средств автоматизации, моих персональных данных, указанных в этой форме, любыми не запрещенными законодательством РФ способами. Настоящее согласие является свободным, информированным, сознательным и действует со дня  нажатия на кнопку «зарегистрироваться» до дня его отзыва в письменной форме.</p>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="form__section form__section_reference">
+									<div class="wysiwyg">
+										<div class="wysiwyg__p wysiwyg__p_s_14">
+											<p>Нажимая на кнопку, вы принимаете <a class="link link_type_solid" href="#"><span class="link__text">Условия использования</span></a>.<br><a class="link link_type_solid" href="#"><span class="link__text">Политика конфиденциальности</span></a>.</p>
+											<p>У вас нет аккаунтов  в социальных сетях и адреса электронной почты?<br>Получите доступ <a class="link link_type_solid" href="#"><span class="link__text">с помощью номера мобильного телефона</span></a>.</p>
+										</div>
+									</div>
+								</div> -->
+							</form>
+						</pane>
+					</tabs>
+				</div>
+				<div class="window-tabs__pane" id="tab-password" style="display: none;">
+
+					<form class="form form_theme_red" name="password_form" ng-submit="send()" ng-controller="UserResetPasswordController">
+						<div ng-hide="!success || send_to_user" style="padding: 30px;">
+							<div class="form__section form__section_s_m">
+								<div class="wysiwyg wysiwyg_a_c">
+									<div class="wysiwyg__p wysiwyg__p_s_m">На Ваш адрес электронной почты <span ng-bind="data.email"></span> отправлена инструкция по восстановлению пароля.
+									 Указанная в письме ссылка для восстановления пароля будет активна в течение 15 минут.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div ng-hide="!success || !send_to_user" style="padding: 30px;">
+							<div class="form__section form__section_s_m">
+								<div class="wysiwyg wysiwyg_a_c">
+									<div class="wysiwyg__p wysiwyg__p_s_m">Пароль успешно изменён</div>
+								</div>
+							</div>
+						</div>
+							<div ng-hide="success">
+							<div class="form__section form__section_s_m">
+								<div class="wysiwyg wysiwyg_a_c" ng-if="!send_to_user">
+										<div class="wysiwyg__p wysiwyg__p_s_m">Укажите Ваш адрес эл.почты, <br>который Вы используете для входа на сайт</div>
+									</div>
+								<div class="wysiwyg wysiwyg_a_c" ng-if="send_to_user">
+										<div class="wysiwyg__p wysiwyg__p_s_m">На номер <span ng-bind="data.email"></span> был отправлен код.</div>
+									</div>
+								</div>
+								<div ng-if="!send_to_user" class="form__section form__section_s_m">
+									<input class="form__input" type="text" name="email" ng-model="data.email" placeholder="Эл. почта или телефон" required="">
+									<!-- <div class="r">
+										<div class="r__c r__c_r">
+											<div class="form__secondary-action">
+												<a class="link link_blue" href="#" style="vertical-align: -2px;">Не пришло письмо</a>
+											</div>
+										</div>
+									</div> -->
+								</div>
+								<div ng-if="send_to_user" class="form__section form__section_s_m">
+                                                                    <input class="form__input" type="text" name="sms" ng-model="data.sms" placeholder="SMS код подтверждения" required="">
+								</div>
+								<div ng-if="send_to_user" class="form__section form__section_s_m">
+                                                                    <input class="form__input" type="password" name="password" ng-model="data.password" placeholder="Новый пароль" required="">
+								</div>
+								<div ng-if="send_to_user" class="form__section form__section_s_m">
+                                                                    <input class="form__input" type="password" name="password_confirm" ng-model="data.password_confirm" placeholder="Подтверждение пароля" required="">
+								</div>
+								<div class="form__section">
+									<input ng-if="!send_to_user && !success" class="form__submit" type="submit" value="Восстановить пароль" ng-disabled="!password_form.$valid || saving">
+                                                                        <input ng-if="send_to_user && !success" class="form__submit" type="submit" value="Изменить пароль" ng-disabled="!password_form.$valid || saving || data.password !== data.password_confirm">
+                                                                </div>
+								<div class="form__section form__section_s_s form__section_type_error" ng-repeat="error in errors">
+									<p ng-bind="error"></p>
+								</div>
+							</div>
+					</form>
+					<a class="window__back icon icon_arrow_left" swipetab="" href="#tab-signin"></a>
+					<a class="window__close icon icon_close js-popup-close" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+            <a href="#menu" class="clearfix menu-header-button link_js_popup header__menu menu-header-button-c">
+                        <span class="pull-left menu__tg">
+                            <span class="menu__tr_bar"></span>
+                            <span class="menu__tr_bar"></span>
+                            <span class="menu__tr_bar"></span>
+                        </span>
+                <span class="pull-left title">Меню</span>
+            </a>
+        </div>
+    </div>
+<!--End of Header Area-->
+<!--main_wrap-->
+        <div class="main-wrap">
+            <!--container-->
+            <div class="container main-container-class">
+<h1>Тотальный магазин</h1>
+<!--/menu-->
+<div class="mainmenu">
+    <nav class="menu_0">
+        <div class="container ">
+            <ul id="nav">
+                                    <li class="current">
+                        <span class="bordered">
+                            <a href="index.htm">
+                                                                Магазин                            </a>
+                        </span>
+                    </li>
+                                    <li class="">
+                        <span class="bordered">
+                            <a href="../personal/cart/index.htm">
+                                                                <span class="basket"><span class="count">0</span><span class="icon bag"></span></span>
+                                                                Корзина                            </a>
+                        </span>
+                    </li>
+                                    <li class="">
+                        <span class="bordered">
+                            <a href="../shop_about/delivery/index.htm">
+                                                                Доставка, оплата, возврат                            </a>
+                        </span>
+                    </li>
+                            </ul>
+        </div>
+    </nav>
+</div>
+
+
+
+<!--/end menu-->
+<!--/content-container-->
+<div class="content-container">
+
+
+<div class="bx_sitemap"></div>        <!--/end content-container-->
+        </div>
+    <!--/container main-container-class-->
+    </div>
+<!--/end main-wrap-->
+</div>
+<div class="page-footer">
+			<div class="c r_def">
+				<div class="page-footer__section">
+					<div class="r r_s_m r_a_b r_def">
+						<div class="r__c r__c_s_3 r__c_s_full">
+							<div class="page-footer__copyright">© ООО «Диктант», 2019</div>
+							    <div class="clearfix socials-icons">
+            <a href="https://vk.com/totaldict" target="_blank" class="pull-left">
+            <i class="gicon vk  hidden-xs"></i>
+            <i class="gicon vk_big  visible-xs"></i>
+        </a>
+        
+            <a href="../group/54245804146797.html" target="_blank" class="pull-left">
+            <i class="gicon ok  hidden-xs"></i>
+            <i class="gicon ok_big  visible-xs"></i>
+        </a>
+        
+            <a href="../channel/UCAiIGg2F6O5oyVUBno8NMAQ.html" target="_blank" class="pull-left">
+            <i class="gicon youtube_2  hidden-xs"></i>
+            <i class="gicon youtube_2_big  visible-xs"></i>
+        </a>
+        
+        </div>
+						</div>
+						<div class="r__c r__c_s_3 r__c_s_full">
+							
+	<div class="page-footer-group">
+					<div class="page-footer-group__caption">Информация</div>
+							<div class="page-footer-group__item">
+				<a href="../about/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">О проекте</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../about/geography/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">География диктанта</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../news/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Новости и события</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../about/trud/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Тест TruD</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../about/faq/index-5.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Вопросы и ответы</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../privacy-policy/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Политика конфиденциальности</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../about/contact-us/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Контакты</span></a>
+			</div>
+			</div>
+						</div>
+						<div class="r__c r__c_s_3 r__c_s_full">
+							
+	<div class="page-footer-group">
+					<div class="page-footer-group__caption">Подготовка</div>
+							<div class="page-footer-group__item">
+				<a href="../education/russkaya-punktuatsiya/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Онлайн-школа</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../education/materialy-ochnykh-kursov/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Материалы очных курсов</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../education/old/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Коллекция диктантов</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../education/never/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Курс «Никогда не пиши "ни когда"»</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../education/mouse/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Курс «Мыш кродеться»</span></a>
+			</div>
+					<div class="page-footer-group__item">
+				<a href="../education/russkaya-punktuatsiya/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Курс «Русская пунктуация: болевые точки... и двоеточия»</span></a>
+			</div>
+			</div>
+
+						</div>
+						<div class="r__c r__c_s_3 r__c_s_full">
+                            
+	<div class="page-footer-group">
+					<div class="page-footer-group__caption">Сервисы</div>
+							<div class="page-footer-group__item">
+				<a href="../about/organize/index.htm" class="page-footer-group__link link link_type_p"><span class="link__text">Организовать акцию в своем городе</span></a>
+			</div>
+			</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-footer__section clearfix">
+					<div class="page-footer-developer r__c pull-left">
+						<a rel="nofollow" href="../index-610.htm" target="_blank" class="page-footer-developer__link link link_type_p">
+							<span class="page-footer-developer__meta">Тех.поддержка</span>
+							<span class="page-footer-developer__name">БИТРИКСОИД</span>
+						</a>
+					</div>
+					<div class="page-footer-developer r__c pull-left">
+						<a rel="nofollow" href="http://shoroshilov.ru" target="_blank" class="page-footer-developer__link link link_type_p">
+							<span class="page-footer-developer__meta">Дизайн</span>
+							<span class="page-footer-developer__name">shoroshilov.ru</span>
+						</a>
+					</div>
+					<div class="page-footer-developer r__c pull-left">
+						<a rel="nofollow" href="../index-611.htm" target="_blank" class="page-footer-developer__link link link_type_p">
+							<span class="page-footer-developer__meta">Хостинг</span>
+							<span class="page-footer-developer__name">servionica.ru</span>
+						</a>
+					</div>
+                                        <div class="page-footer-developer r__c pull-right last">
+                                            <a href="../privacy-policy/index.htm" class="page-footer-developer__link link link_type_p">
+                                                <span class="page-footer-developer__meta">Политика конфиденциальности</span>
+                                            </a>
+                                        </div>
+				</div>
+			</div>
+		</div>
+
+<div id="locations" class="window window_decorated mfp-hide">
+	<a href="#" class="window__close icon icon_close js-popup-close"></a>
+	<div class="window__topbar">
+		<a href="#" class="window__logo icon icon_logo">
+			<span class="path1"></span><span class="path2"></span>
+		</a>
+	</div>
+	<div ng-controller="SearchController" class="window__container">
+		<div style="margin: 4rem 0;" ng-hide="!loading">
+			<svg width="100%" height="48px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" preserveaspectratio="xMidYMid" class="uil-ring">
+				<rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+				<defs>
+					<filter id="uil-ring-shadow" x="-100%" y="-100%" width="300%" height="300%">
+						<feoffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feoffset>
+						<fegaussianblur result="blurOut" in="offOut" stddeviation="0"></fegaussianblur>
+						<feblend in="SourceGraphic" in2="blurOut" mode="normal"></feblend>
+					</filter>
+				</defs>
+				<path d="M10,50c0,0,0,0.5,0.1,1.4c0,0.5,0.1,1,0.2,1.7c0,0.3,0.1,0.7,0.1,1.1c0.1,0.4,0.1,0.8,0.2,1.2c0.2,0.8,0.3,1.8,0.5,2.8 c0.3,1,0.6,2.1,0.9,3.2c0.3,1.1,0.9,2.3,1.4,3.5c0.5,1.2,1.2,2.4,1.8,3.7c0.3,0.6,0.8,1.2,1.2,1.9c0.4,0.6,0.8,1.3,1.3,1.9 c1,1.2,1.9,2.6,3.1,3.7c2.2,2.5,5,4.7,7.9,6.7c3,2,6.5,3.4,10.1,4.6c3.6,1.1,7.5,1.5,11.2,1.6c4-0.1,7.7-0.6,11.3-1.6 c3.6-1.2,7-2.6,10-4.6c3-2,5.8-4.2,7.9-6.7c1.2-1.2,2.1-2.5,3.1-3.7c0.5-0.6,0.9-1.3,1.3-1.9c0.4-0.6,0.8-1.3,1.2-1.9 c0.6-1.3,1.3-2.5,1.8-3.7c0.5-1.2,1-2.4,1.4-3.5c0.3-1.1,0.6-2.2,0.9-3.2c0.2-1,0.4-1.9,0.5-2.8c0.1-0.4,0.1-0.8,0.2-1.2 c0-0.4,0.1-0.7,0.1-1.1c0.1-0.7,0.1-1.2,0.2-1.7C90,50.5,90,50,90,50s0,0.5,0,1.4c0,0.5,0,1,0,1.7c0,0.3,0,0.7,0,1.1 c0,0.4-0.1,0.8-0.1,1.2c-0.1,0.9-0.2,1.8-0.4,2.8c-0.2,1-0.5,2.1-0.7,3.3c-0.3,1.2-0.8,2.4-1.2,3.7c-0.2,0.7-0.5,1.3-0.8,1.9 c-0.3,0.7-0.6,1.3-0.9,2c-0.3,0.7-0.7,1.3-1.1,2c-0.4,0.7-0.7,1.4-1.2,2c-1,1.3-1.9,2.7-3.1,4c-2.2,2.7-5,5-8.1,7.1 c-0.8,0.5-1.6,1-2.4,1.5c-0.8,0.5-1.7,0.9-2.6,1.3L66,87.7l-1.4,0.5c-0.9,0.3-1.8,0.7-2.8,1c-3.8,1.1-7.9,1.7-11.8,1.8L47,90.8 c-1,0-2-0.2-3-0.3l-1.5-0.2l-0.7-0.1L41.1,90c-1-0.3-1.9-0.5-2.9-0.7c-0.9-0.3-1.9-0.7-2.8-1L34,87.7l-1.3-0.6 c-0.9-0.4-1.8-0.8-2.6-1.3c-0.8-0.5-1.6-1-2.4-1.5c-3.1-2.1-5.9-4.5-8.1-7.1c-1.2-1.2-2.1-2.7-3.1-4c-0.5-0.6-0.8-1.4-1.2-2 c-0.4-0.7-0.8-1.3-1.1-2c-0.3-0.7-0.6-1.3-0.9-2c-0.3-0.7-0.6-1.3-0.8-1.9c-0.4-1.3-0.9-2.5-1.2-3.7c-0.3-1.2-0.5-2.3-0.7-3.3 c-0.2-1-0.3-2-0.4-2.8c-0.1-0.4-0.1-0.8-0.1-1.2c0-0.4,0-0.7,0-1.1c0-0.7,0-1.2,0-1.7C10,50.5,10,50,10,50z" fill="#fb0000" filter="url(#uil-ring-shadow)">
+					<animatetransform attributename="transform" type="rotate" from="0 50 50" to="360 50 50" repeatcount="indefinite" dur="1s"></animatetransform>
+				</path>
+			</svg>
+		</div>
+		<form action="" class="location" name="location" ng-hide="loading" ng-submit="submit($event)">
+			<div class="location__search search">
+				<input type="text" ng-model="search_cities_query" class="search__control" placeholder="Искать свой город...">
+				<div class="search-actions r r_s_m">
+					<div class="search-actions__item r__c" style="display: none;">
+						<a href="#" class="search-actions__icon icon icon_geo"></a>
+					</div>
+					<div class="search-actions__item r__c">
+						<a href="#" class="search-actions__icon icon icon_search"></a>
+					</div>
+				</div>
+				<div class="search-results" ng-if="search_cities_query">
+					<a href="{{city.url}}.html?city={{city.id}}{{city.satelit ? '&satelit=y':''}}" class="search-results__item" ng-repeat="city in cities | filter:search_cities_filter | orderBy:'name'" ng-class="{'search-results__item_current': city.id == current_city}">
+						<span ng-bind="city.name"></span>
+						<span class="search-results__meta" ng-bind="city.country_name"></span>
+					</a>
+				</div>
+			</div>
+			<div class="location__tabs tabs r r_s_m r_j_c">
+				<div ng-repeat="continent in continents" class="tabs__item r__c">
+					<a class="tabs__link" ng-click="set_continent(continent)" ng-class="{'tabs__link_active': continent.name == current_continent}">
+						<span ng-bind="continent.name"></span>
+					</a>
+				</div>
+			</div>
+			<div class="location__toolbar toolbar r r_s_s r_aib" ng-if="current_country">
+				<div class="toolbar__item r__c">
+					<div class="location__current" ng-bind="current_country"></div>
+				</div>
+				<div class="toolbar__item r__c" ng-if="has_popular">
+					<switcher ng-model="is.popular" ll="Популярные города" lr="Все города" class="switcher"></switcher>
+				</div>
+			</div>
+
+			<div class="location-list r" ng-if="!current_country">
+				<a class="location-list__item r__c r__c_s_2" ng-repeat="country in countries | filter:countries_filter | orderBy:'name'" ng-click='set_country(country)' href="">
+					<span ng-bind="country.name"></span>
+				</a>
+			</div>
+
+			<div class="location-list r" ng-if="current_country">
+				<a class="location-list__item r__c r__c_s_2" ng-repeat="city in cities | filter:cities_filter | orderBy:'name'" href="{{city.url}}.html?city={{city.id}}{{city.satelit ? '&satelit=y':''}}">
+                                        <span ng-if="city.cup" class="gicon cup icon-cup" title="Столица Тотального диктанта"></span>
+					<span ng-bind="city.name"></span>
+				</a>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="toOnlineWindow" class="window window_s_m mfp-hide">
+	<a href="#" class="window__close icon icon_close js-popup-close"></a>
+        <div class="window__container">
+            <div class="window__section">
+                <p>
+					К сожалению, в этом году в вашем городе не проводится
+Тотальный диктант. 
+<a href="../about/organize/index.htm" class="link_blue">Хотите его организовать?</a>                </p>
+            </div>
+        </div>
+</div>
+<div id="menu" class="window window_decorated mfp-hide">
+	<a href="#" class="window__close icon icon_close js-popup-close"></a>
+	<div class="window__topbar">
+		<!-- <a href="#menu" class="window__menu-button button button_d_1 button_hovered js-popup-close">
+		<span class="window__icon icon icon_cross"></span>
+		<span class="window__text">Меню</span>
+		</a> -->
+		<a href="#" class="window__logo icon icon_logo">
+			<span class="path1"></span><span class="path2"></span>
+		</a>
+	</div>
+	<div class="window__container">
+		<form action="" class="search ng-hide">
+			<input type="text" class="search__control">
+			<div class="search-actions r r_s_m">
+				<div class="search-actions__item r__c">
+					<a href="#" class="search-actions__icon icon icon_search"></a>
+				</div>
+			</div>
+		</form>
+		<div class="menu r r_a_b">
+			<div class="r__c r__c_s_3 r__c_s_full">
+				
+	
+		
+					<div class="menu__section">
+				<div class="menu__name">
+					<a href="../about/index.htm" class="link link_t_p">О проекте</a>
+				</div>
+			</div>
+		
+		
+	
+		
+					<div class="menu__section">
+				<div class="menu__name">
+					<a href="../about/geography/index.htm" class="link link_t_p">География диктанта</a>
+				</div>
+			</div>
+		
+		
+	
+		
+					<div class="menu__section">
+				<div class="menu__name">
+					<a href="../about/team/index.htm" class="link link_t_p">Команда Тотального диктанта</a>
+				</div>
+			</div>
+		
+		
+	
+		
+					<div class="menu__section">
+				<div class="menu__name">
+					<a href="../news/index.htm" class="link link_t_p">Новости и события</a>
+				</div>
+			</div>
+		
+		
+	
+		
+					<div class="menu__section">
+				<div class="menu__name">
+					<a href="../about/trud/index.htm" class="link link_t_p">Тест TRUD</a>
+				</div>
+			</div>
+		
+		
+	
+		
+					<div class="menu__section">
+				<div class="menu__name">
+					<a href="../filolog/index.htm" class="link link_t_p">#Тотфилолог</a>
+				</div>
+			</div>
+		
+		
+	
+		
+					<div class="menu__section">
+				<div class="menu__name">
+					<a href="../index-15.htm" class="link link_t_p">Тотальное путешествие</a>
+				</div>
+			</div>
+		
+		
+	
+		
+					<div class="menu__section">
+				<div class="menu__name">
+					<a href="../about/contact-us/index.htm" class="link link_t_p">Контакты</a>
+				</div>
+			</div>
+		
+		
+	
+	
+			</div>
+
+			<div class="r__c r__c_s_3 r__c_s_full">
+					<div class="menu__section">
+
+		<div class="menu__name">
+			<a href="../dictants/index.htm" class="link link_t_p">
+				<span class="link__text">Тексты диктантов</span>
+			</a>
+		</div>
+
+					<div class="menu__item">
+				<a href="../dictants/devyatisotyy/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2022</span>
+											<span class="menu-dict__author">Марина Степнова</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/obeshchaniya/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2021</span>
+											<span class="menu-dict__author">Дмитрий  Глуховский</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/per-aspera/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2020</span>
+											<span class="menu-dict__author">Андрей Геласимов</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/literaturnyy-detektiv/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2019</span>
+											<span class="menu-dict__author">Павел Басинский</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/uchitel-slovesnosti/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2018</span>
+											<span class="menu-dict__author">Гузель Яхина</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/gorod-na-reke/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2017</span>
+											<span class="menu-dict__author">Леонид Юзефович</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/etot-drevniy-drevniy-drevniy-mir/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2016</span>
+											<span class="menu-dict__author">Андрей Усачёв</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/volshebnyy-fonar/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2015</span>
+											<span class="menu-dict__author">Евгений Водолазкин</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/poezd-chusovskaya-tagil/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2014</span>
+											<span class="menu-dict__author">Алексей Иванов</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/evangelie-ot-interneta/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2013</span>
+											<span class="menu-dict__author">Дина Рубина</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/a-vam-ne-vsye-ravno/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2012</span>
+											<span class="menu-dict__author">Захар Прилепин</span>
+									</a>
+			</div>
+					<div class="menu__item">
+				<a href="../dictants/orfografiya-kak-zakon-prirody/index.htm" class="menu-dict link link_t_p">
+					<span class="menu-dict__meta">2011</span>
+											<span class="menu-dict__author">Дмитрий Быков</span>
+									</a>
+			</div>
+		                <div class="menu__item"><a href="../dictants/index.htm" class="menu-dict link link_t_p all_link">
+                        <span class="menu-dict__meta"></span>
+                        <span class="menu-dict__author">смотреть все &rarr;</span>
+                </a></div>
+	</div>
+			</div>
+
+			<div class="r__c r__c_s_3 r__c_s_full">
+				
+	<div class="menu__section">
+					<div class="menu__name">Подготовка</div>
+							<div class="menu__item">
+				<a href="../education/russkaya-punktuatsiya/index.htm" class="link link_t_p">Онлайн-школа</a>
+			</div>
+					<div class="menu__item">
+				<a href="../education/materialy-ochnykh-kursov/index.htm" class="link link_t_p">Материалы очных курсов</a>
+			</div>
+					<div class="menu__item">
+				<a href="../education/old/index.htm" class="link link_t_p">Коллекция диктантов</a>
+			</div>
+					<div class="menu__item">
+				<a href="../education/never/index.htm" class="link link_t_p">Курс «Никогда не пиши "ни когда"»</a>
+			</div>
+					<div class="menu__item">
+				<a href="../education/mouse/index.htm" class="link link_t_p">Курс «Мыш кродеться»</a>
+			</div>
+					<div class="menu__item">
+				<a href="../education/russkaya-punktuatsiya/index.htm" class="link link_t_p">Курс «Русская пунктуация: болевые точки... и двоеточия»</a>
+			</div>
+			</div>
+				
+			</div>
+
+			<div class="r__c r__c_s_3 r__c_s_full">
+					<div class="menu__section menu__section_social">
+					<div class="wysiwyg">
+				<div class="wysiwyg__p wysiwyg__p_meta">Присоединяйтесь к Тотальному диктанту в социальных сетях:</div>
+			</div>
+				<div class="social social_s_l">
+			<div class="r r_s_s">
+									<div class="r__c">
+						<a href="https://vk.com/totaldict" class="social__button icon icon_vk"></a>
+					</div>
+									<div class="r__c">
+						<a href="../group/54245804146797.html" class="social__button icon icon_ok"></a>
+					</div>
+									<div class="r__c">
+						<a href="../channel/UCAiIGg2F6O5oyVUBno8NMAQ.html" class="social__button icon icon_youtube_2"></a>
+					</div>
+							</div>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<!-- scripts -->
+		<script src="../share2/share.js"></script>
+		<script src="../local/templates/shop/javascripts/build.min.js?1460820970657541"></script>
+		<script src="../local/templates/shop/javascripts/application.min.js?164337756582869"></script>
+		<script src="../local/templates/shop/javascripts/application.blocks.min.js?1460820970604"></script>
+		<script src="../local/templates/shop/javascripts/stickyfill.min.js?15166930716291"></script>
+		<script src="../local/templates/shop/javascripts/custom.js?15233482956509"></script>
+
+
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37989619-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+		(function (d, w, c) {
+		    (w[c] = w[c] || []).push(function() {
+		        try {
+		            w.yaCounter931140 = new Ya.Metrika({id:931140,
+		                    webvisor:true,
+		                    clickmap:true,
+		                    trackLinks:true,
+		                    accurateTrackBounce:true});
+		        } catch(e) { }
+		    });
+
+		    var n = d.getElementsByTagName("script")[0],
+		        s = d.createElement("script"),
+		        f = function () { n.parentNode.insertBefore(s, n); };
+		    s.type = "text/javascript";
+		    s.async = true;
+		    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+		    if (w.opera == "[object Opera]") {
+		        d.addEventListener("DOMContentLoaded", f, false);
+		    } else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="../watch/931140/1.gif" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+
+	</body>
+<!-- Copied from https://totaldict.ru/shop/ by Cyotek WebCopy 1.8.0.652, 27 апреля 2022 г., 15:22:06 -->
+</html>

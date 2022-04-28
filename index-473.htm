@@ -1,0 +1,848 @@
+ 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" dir="ltr">
+<head>
+<!--[if lte IE 8]>
+      <div id="ieerror"><p>К сожалению, браузер, которым вы пользуетесь, устарел, и не может нормально отображать сайт.</p></div>
+<![endif]-->
+<!--Стиль всплывающего окна-->
+
+<style>
+#boxes1 {
+    font-family:Arial, Tahoma;
+    font-size:15px;}  
+    .link123 {color:#fff !important; text-decoration:none}
+    .link123:hover {text-decoration:underline}  
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+    }
+#boxes .window {
+    position:fixed;
+    left:0;
+    top:0px;
+    -top: 40px;
+    width:440px;
+    height:200px;
+    display:none;
+    z-index:9999;
+    padding: 20px;
+    overflow: hidden;
+    }  
+#boxes #dialog {
+    width:375px; 
+    height:203px;
+    padding:10px;
+    background-color:#fafafa;
+    }  
+.top {
+    position:absolute;
+    left:0;
+    top:0;
+    width:370px;
+    height:30px;
+    background: #9E0E13;
+    padding: 8px 20px 6px 10px;
+    }
+.close123 {
+    float:right;
+    }
+.content {
+    padding-top: 35px;
+}
+.close1231 {
+  float:right;
+}
+#boxes #dialog1 {
+    width:375px; 
+    height:203px;
+    padding:10px;
+    background-color:#fafafa;
+    }  
+.top1 {
+    position:absolute;
+    left:0;
+    top:0;
+    width:370px;
+    height:30px;
+    background: #0292C7;
+    padding: 8px 20px 6px 10px;
+    }
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <base href="https://sfsamgtu.com/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Главная СФ СамГТУ</title>
+  <link href="/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link href="/templates/it_university2/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/plugins/system/iceshortcodes/assets/iceshortcodes.css" type="text/css" />
+  <link rel="stylesheet" href="https://sfsamgtu.com/media/ext_tss/assets/css/ext_tss.css" type="text/css" />
+  <link rel="stylesheet" href="/cache/widgetkit/widgetkit-b0e39c15.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/bootstrap/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/css/joomla.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/css/modules.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/css/general.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/css/pages.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/css/responsive.css" type="text/css" />
+  <link rel="stylesheet" href="/media/system/css/modal.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_slideshowck/themes/default/css/camera.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/html/mod_icemegamenu/css/default_icemegamenu.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/it_university2/html/mod_icemegamenu/css/default_icemegamenu-reponsive.css" type="text/css" />
+  <style type="text/css">
+.mooquee-text{position:absolute;}.mod_simple_marquee_content{overflow:hidden;white-space:nowrap;position:relative;}#camera_wrap_500 .camera_pag_ul li img, #camera_wrap_500 .camera_thumbs_cont ul li > img {height:75px;}
+#camera_wrap_500 .camera_caption {
+	display: block;
+	position: absolute;
+}
+#camera_wrap_500 .camera_caption > div {
+	background: rgba(0,61,124,0.6);-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;border-radius: 5px 5px 5px 5px;font-size: 12px;
+}
+#camera_wrap_500 .camera_caption > div div.slideshowck_description {
+	font-size: 12px;
+}
+
+  </style>
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="https://sfsamgtu.com/media/ext_tss/assets/js/ext_tss.js" type="text/javascript" defer="defer"></script>
+  <script src="/media/widgetkit/js/jquery.js" type="text/javascript"></script>
+  <script src="/cache/widgetkit/widgetkit-d3a4f08a.js" type="text/javascript"></script>
+  <script src="/templates/it_university2/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+  <script src="/templates/it_university2/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/modules/mod_mh_simple_marquee/tmpl/mooquee.js" type="text/javascript"></script>
+  <script src="/media/system/js/modal.js" type="text/javascript"></script>
+  <script src="/modules/mod_slideshowck/assets/jquery.easing.1.3.js" type="text/javascript"></script>
+  <script src="/modules/mod_slideshowck/assets/jquery.mobile.customized.min.js" type="text/javascript"></script>
+  <script src="/modules/mod_slideshowck/assets/camera.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;
+    $(document).ready(function(){ 
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+			
+			$("[rel='tooltip']").tooltip();
+ 
+		});
+var elle_sliders_nfa = 0;var elle_sliders_nfa = 0;window.addEvent("domready", function() {var options = {};$$(".mod_simple_marquee").each(function(item) {options["marWidth"] = item.getParent("div").getSize().x;options["marHeight"] = item.getParent("div").getSize().y;var config = item.getChildren()[0].getProperty("rel").split("|");config.each(function(cfg) {var tmp = cfg.split("=");options[tmp[0]] = tmp[1];});new mooquee(item.getChildren()[1], options);});});
+		window.addEvent('domready', function() {
+
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($$('a.modal'), {
+				parse: 'rel'
+			});
+		});
+  </script>
+
+
+    <style type="text/css" media="screen">
+
+/* Hide Content From HOMEPAGE */
+
+
+
+
+
+	
+#header { margin-bottom:0}
+
+
+
+
+/* IE10-only styles go here */  
+.ie10 ul#ice-switcher {
+	padding-right:20px;}  
+	.ie10 ul#ice-switcher:hover {
+		padding-right:35px}
+
+
+
+/* Custom CSS code throught paramters */
+</style>
+
+
+<!-- Template Styles  -->
+<link id="stylesheet" rel="stylesheet" type="text/css" href="/templates/it_university2/css/styles/style4.css" />
+
+<!-- Resposnive Template Styles -->
+<link id="stylesheet-responsive" rel="stylesheet" type="text/css" href="/templates/it_university2/css/styles/style4_responsive.css" />
+
+
+
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans|Coming+Soon' rel='stylesheet' type='text/css'>
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="/templates/it_university2/css/ie8.css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="/templates/it_university2/js/html5.js"></script>
+<![endif]-->
+
+
+<!--[if !IE]><!--><script>  
+if(Function('/*@cc_on return document.documentMode===10@*/')()){
+    document.documentElement.className+=' ie10';
+}
+</script><!--<![endif]-->  
+
+<link rel="icon" href="http://sfsamgtu.com/templates/it_university2/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://sfsamgtu.com/templates/it_university2/favicon.ico" type="image/x-icon"> 
+
+	<link href="https://sfsamgtu.com/plugins/system/jutooltip/assets/css/styles.css" type="text/css" rel="stylesheet"/>
+	<link href="https://sfsamgtu.com/plugins/system/jutooltip/assets/themes/default/styles.css" type="text/css" rel="stylesheet"/>
+	<script src="https://sfsamgtu.com/plugins/system/jutooltip/assets/js/jutooltip.min.js" type="text/javascript"></script>
+	<script src="https://sfsamgtu.com/plugins/system/jutooltip/assets/js/jutooltip.effects.min.js" type="text/javascript"></script>
+	<script src="https://sfsamgtu.com/plugins/system/jutooltip/assets/js/jutooltip.dynamic.min.js" type="text/javascript"></script>
+	<script type="text/javascript">jQuery(document).ready(function($){
+			jutooltip_api = $('.jutooltip').jutooltip({effect: 'fade', showDuration: 200, hideDuration: 200, easing: 'linear', predelay: 0, delay: 30, opacity: 1, tip: '', fadeIE: false, position : ['top','center'], offset: [0, 0], cancelDefault: true, manualCloseTooltip: false, direction: 'up', bounce: false, slideOffset: 10}).jutooltip_dynamic({top: { direction: 'up' } });
+			});</script>
+</head>
+
+<body class="">
+
+
+<!--Начало шаблона для слабовидящих-->
+<div itemprop="copy">
+<script src="/js/uhpv-full.min.js.new"></script>
+</div>
+<!--Шаблон для слабовидящих конец-->  
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script><!--/LiveInternet-->
+
+
+
+<div style="position:absolute;top:0;left:-9999px;">
+<a href="http://joomla4ever.ru/icetheme/1991-it-university-2.html" title="IT University 2 - шаблон joomla" target="_blank">IT University 2 - шаблон joomla</a>
+<a href="http://paper-life.ru/" title="Оригами" target="_blank">Оригами</a>
+</div>
+
+
+
+<!-- main container --> 
+<div class="container">
+ 
+
+       <!-- top bar --> 
+    <div id="topbar" class="clearfix">
+    
+            <!-- search --> 
+        <div id="search">
+            
+
+<div class="customverh"  >
+	<div class="topimg" style="float: left; margin: -9px 0px 14px 100px;"><a id="specialButton" href="#"><img src="/templates/blind.png" width="180" /></a></div>
+<p class="logotop">Самарский Государственный Технический Университет</p>
+<p class="logotop"><a href="/sveden" style="font-size: 15px; padding-right: 229px; color: #004282; font-family: arial; text-decoration: none; text-shadow: none;">Сведения об образовательной организации</a><span class="logotops">филиал в г. Сызрани</span></p></div>
+
+        </div><!-- /search --> 
+        
+                
+              
+                    
+    </div><!-- /top bar --> 
+  
+    <!-- header -->
+    <header id="header">
+         <div id="logo">  
+        <p><a href="/"><img src="https://sfsamgtu.com/images/logo_blue_rus_png.png" alt="СФ СамГТУ – официальный портал" /></a></p>  
+        </div>
+         <div class="icemegamenu"><div class="ice-megamenu-toggle"><a data-toggle="collapse" data-target=".nav-collapse" href="#">Нажмите, чтобы раскрыть</a></div><div class="nav-collapse icemegamenu collapse"><ul id="icemegamenu" class="meganizr mzr-slide mzr-responsive"><li id="iceMenu_538" class="iceMenuLiLevel_1 mzr-drop parent"><a href="#" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Университет</span></a><ul class="icesubMenu icemodules sub_level_1" style="width:280px"><li><div style="float:left;width:280px" class="iceCols"><ul><li id="iceMenu_544" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/2015-02-20-05-20-49" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Лицензия и аккредитация</span></a></li><li id="iceMenu_542" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/2015-02-20-05-15-59" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">История</span></a></li><li id="iceMenu_543" class="iceMenuLiLevel_2"><a href="/sveden" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Сведения об образовательной организации</span></a></li><li id="iceMenu_803" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/rekvizity" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Реквизиты</span></a></li><li id="iceMenu_761" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/normativnye-dokumenty" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Нормативные документы</span></a></li><li id="iceMenu_546" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/2015-02-20-05-24-48" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Профсоюзная организация</span></a></li><li id="iceMenu_809" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/kampus" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Кампус</span></a></li><li id="iceMenu_810" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/veterany" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Ветераны</span></a></li><li id="iceMenu_811" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/partnjory" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Партнёры</span></a></li><li id="iceMenu_667" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/rabota-v-sf-samgtu" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Работа в Сф СамГТУ</span></a></li><li id="iceMenu_547" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/2015-02-20-05-25-15" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Закупки</span></a></li><li id="iceMenu_672" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/profilaktika-ekstremizma-i-terrorizma" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Профилактика экстремизма и терроризма</span></a></li><li id="iceMenu_804" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-04-26/kontakty" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Контакты</span></a></li></ul></div></li></ul></li><li id="iceMenu_539" class="iceMenuLiLevel_1 mzr-drop parent"><a href="#" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Обучающимся</span></a><ul class="icesubMenu icemodules sub_level_1" style="width:280px"><li><div style="float:left;width:280px" class="iceCols"><ul><li id="iceMenu_666" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/uchebnye-plany" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Учебные планы</span></a></li><li id="iceMenu_548" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/2015-02-20-05-41-55" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Расписание занятий и экзаменов</span></a></li><li id="iceMenu_802" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/oplata-za-obuchenie" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Оплата обучения</span></a></li><li id="iceMenu_776" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/biblioteka" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Библиотека</span></a></li><li id="iceMenu_683" class="iceMenuLiLevel_2"><a href="https://lk.samgtu.ru" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Информационная образовательная среда</span></a></li><li id="iceMenu_550" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/2015-02-20-05-43-28" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Трудоустройство</span></a></li><li id="iceMenu_551" class="iceMenuLiLevel_2 mzr-drop parent"><a href="/2015-02-20-05-05-32/2015-02-20-05-48-09" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Отдел воспитательной работы</span></a><ul class="icesubMenu icemodules sub_level_2" style="width:280px"><li><div style="float:left;width:280px" class="iceCols"><ul><li id="iceMenu_552" class="iceMenuLiLevel_3"><a href="/2015-02-20-05-05-32/2015-02-20-05-48-09/2015-02-20-05-52-04" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Планы работы кураторов</span></a></li><li id="iceMenu_553" class="iceMenuLiLevel_3"><a href="/2015-02-20-05-05-32/2015-02-20-05-48-09/2015-02-20-06-02-16" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Нормативные документы</span></a></li></ul></div></li></ul></li><li id="iceMenu_570" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/konferentsii-olimpiady" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Конференции, олимпиады, конкурсы</span></a></li><li id="iceMenu_590" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/spravochnik-vypusknika" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Справочник выпускников</span></a></li><li id="iceMenu_554" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/2015-02-20-06-03-39" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Полезная информация</span></a></li><li id="iceMenu_799" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-05-32/fotogalereya" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Фотогалерея</span></a></li></ul></div></li></ul></li><li id="iceMenu_540" class="iceMenuLiLevel_1 mzr-drop parent"><a href="#" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Абитуриентам</span></a><ul class="icesubMenu icemodules sub_level_1" style="width:280px"><li><div style="float:left;width:280px" class="iceCols"><ul><li id="iceMenu_671" class="iceMenuLiLevel_2"><a href="/abitur" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Приёмная кампания</span></a></li><li id="iceMenu_697" class="iceMenuLiLevel_2"><a href="http://military.samgtu.ru/" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Военная кафедра</span></a></li><li id="iceMenu_556" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-06-56/2015-02-20-06-53-38" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Довузовская подготовка и дополнительное образование</span></a></li><li id="iceMenu_557" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-06-56/2015-02-20-06-54-28" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Профориентационный календарь старшеклассника</span></a></li><li id="iceMenu_559" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-06-56/2015-02-20-06-55-49" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Конференции, олимпиады, конкурсы</span></a></li><li id="iceMenu_615" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-06-56/ekskursii-shkolnikov" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Экскурсии школьников</span></a></li><li id="iceMenu_668" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-06-56/eto-interesno" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Центр технического творчества</span></a></li></ul></div></li></ul></li><li id="iceMenu_541" class="iceMenuLiLevel_1 mzr-drop parent"><a href="#" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Образование</span></a><ul class="icesubMenu icemodules sub_level_1" style="width:280px"><li><div style="float:left;width:280px" class="iceCols"><ul><li id="iceMenu_560" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-07-52/2015-02-20-06-58-47" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Система менеджмента качества</span></a></li><li id="iceMenu_562" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-07-52/2015-02-20-06-59-46" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Образовательные стандарты</span></a></li><li id="iceMenu_571" class="iceMenuLiLevel_2"><a href="/2015-02-20-05-07-52/uchebnyj-otdel-filiala" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Учебный отдел филиала</span></a></li><li id="iceMenu_572" class="iceMenuLiLevel_2"><a href="http://uup.samgtu.ru/" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Управление высшего образования СамГТУ</span></a></li><li id="iceMenu_673" class="iceMenuLiLevel_2"><a href="http://www.nica.ru/ru/byexperts/reglament" target="_blank" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Национальное аккредитационное агентство в сфере образования</span></a></li></ul></div></li></ul></li></ul></div></div>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var browser_width1 = jQuery(window).width();
+		jQuery("#icemegamenu").find(".icesubMenu").each(function(index){
+			var offset1 = jQuery(this).offset();
+			var xwidth1 = offset1.left + jQuery(this).width();
+			if(xwidth1 >= browser_width1){
+				jQuery(this).addClass("ice_righttoleft");
+			}
+		});
+		
+	})
+	jQuery(window).resize(function() {
+		var browser_width = jQuery(window).width();
+		jQuery("#icemegamenu").find(".icesubMenu").removeClass("ice_righttoleft");
+		jQuery("#icemegamenu").find(".icesubMenu").each(function(index){
+			var offset = jQuery(this).offset();
+			var xwidth = offset.left + jQuery(this).width();
+			
+			if(xwidth >= browser_width){
+				jQuery(this).addClass("ice_righttoleft");
+			}
+		});
+	});
+</script>
+    
+    </header><!-- /header -->   
+
+
+      <div id="iceslideshow">
+      
+		<!--[if lte IE 7]>
+		<link href="/modules/mod_slideshowck/themes/default/css/camera_ie.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<!--[if IE 8]>
+		<link href="/modules/mod_slideshowck/themes/default/css/camera_ie8.css" rel="stylesheet" type="text/css" />
+		<![endif]--><script type="text/javascript"> <!--
+       jQuery(function(){
+        jQuery('#camera_wrap_500').camera({
+                height: '390px',
+                minHeight: '',
+                pauseOnClick: false,
+                hover: 1,
+                fx: 'random',
+                loader: 'none',
+                pagination: 1,
+                thumbnails: 0,
+                thumbheight: 75,
+                thumbwidth: 100,
+                time: 7000,
+                transPeriod: 1500,
+                alignment: 'center',
+                autoAdvance: 1,
+                mobileAutoAdvance: 1,
+                portrait: 0,
+                barDirection: 'leftToRight',
+                imagePath: '/modules/mod_slideshowck/images/',
+                lightbox: 'mediaboxck',
+                fullpage: 0,
+				mobileimageresolution: '0',
+                navigationHover: false,
+                navigation: false,
+                playPause: false,
+                barPosition: 'bottom',
+				container: ''
+        });
+}); //--> </script><!-- debut Slideshow CK -->
+<div class="slideshowck camera_wrap camera_amber_skin" id="camera_wrap_500">
+			<div data-thumb="/images/th/Slide_Vkonf_th.jpg" data-src="/images/Slide_Vkonf.jpg" data-link="https://sfsamgtu.com/2015-02-20-05-05-32/konferentsii-olimpiady" data-target="_parent" >
+													 				<div class="camera_caption moveFromLeft">
+					<div class="camera_caption_title">
+														</div>
+					<div class="camera_caption_desc">
+						Начала работу V Всероссийская научно-практическая конференция студентов и молодых учёных "Молодёжная наука: вызовы и перспективы".											</div>
+				</div>
+					</div>
+		<div data-thumb="/images/th/Slide_LPS_th.jpg" data-src="/images/Slide_LPS.jpg" >
+													 				<div class="camera_caption moveFromLeft">
+					<div class="camera_caption_title">
+						Летняя профильная смена - 2022								</div>
+					<div class="camera_caption_desc">
+						Открыт прием в «Летнюю профильную смену - 2022» 											</div>
+				</div>
+					</div>
+		<div data-thumb="/images/th/Slide_DNK_th.jpg" data-src="/images/Slide_DNK.jpg" data-link="component/content/article/87-universitet/tsentr-dp-i-do/3423-dom-nauchnoj-kollaboratsii" data-target="_parent" >
+													 				<div class="camera_caption moveFromLeft">
+					<div class="camera_caption_title">
+						"Дом научной коллаборации"								</div>
+					<div class="camera_caption_desc">
+						Центр развития современных компетенций Самарского Политеха на базе Сызранского филиала.											</div>
+				</div>
+					</div>
+		<div data-thumb="/images/th/Slide_Dop_obrazovan_th.jpg" data-src="/images/Slide_Dop_obrazovan.jpg" data-link="http://sfsamgtu.com/2015-02-20-05-06-56/2015-02-20-06-53-38/87-universitet/tsentr-dp-i-do/1586-tsentr-dovuzovskoj-podgotovki-i-dopolnitelnogo-obrazovaniya-12" data-target="_parent" >
+													 				<div class="camera_caption moveFromLeft">
+					<div class="camera_caption_title">
+						Дополнительное образование детей и взрослых								</div>
+					<div class="camera_caption_desc">
+						Центр довузовской подготовки и дополнительного образования реализует программы различной направленности, ориентированные на  целевую аудиторию различного возраста и состава.											</div>
+				</div>
+					</div>
+		<div data-thumb="/images/th/Slide_Sdai_ekzamen_th.jpg" data-src="/images/Slide_Sdai_ekzamen.jpg" data-link="http://sfsamgtu.com/2015-02-20-05-06-56/2015-02-20-06-53-38/87-universitet/tsentr-dp-i-do/277-on-line-zapis-na-kursy" data-target="_parent" >
+													 				<div class="camera_caption moveFromLeft">
+					<div class="camera_caption_title">
+						Подготовительные курсы 								</div>
+					<div class="camera_caption_desc">
+						On-Line запись на курсы по подготовке к ЕГЭ/ОГЭ/ВПР											</div>
+				</div>
+					</div>
+</div>
+<div style="clear:both;"></div>
+<!-- fin Slideshow CK -->
+
+    </div>
+        
+    
+
+  
+
+
+    
+    
+
+
+    <!-- content -->
+    <section id="content" class="row clearfix">
+    
+        <!-- Middle Col -->
+        <div id="middlecol" class="span8">
+            
+             <div class="inside">
+        
+                                <div id="breadcrumbs" class="clearfix">
+                    <div class="mod_simple_marquee">
+    <a name="marqueeconfig" rel="pauseOnOver=1|speed=7|direction=left"></a>
+    <div class="mod_simple_marquee_content"><a href="http://sfsamgtu.com/Doc/Pod_kurs"><font color="blue" face="Courier New" style="font-size:20px"><i><b>Центр довузовской подготовки продолжает набор на подготовительные курсы на 2019-2020 учебный год,</font> <font face="Courier New" style="font-size:20px" color="#f90c06">тел. 8(8464)-986038</font></b></i></a></div>
+</div>
+
+<div class="custom"  >
+	<p style="text-align: center;"><a href="/tekhnologiya-mashinostroeniya-bazovaya" title="Ссылка на информацию "><img src="/images/banner_tyazhmash.jpg" alt="Базовая кафедра &quot;Технология машиностроения&quot;" width="800" height="120" /></a></p></div>
+
+                </div>
+                            
+                    
+                
+<div id="system-message-container">
+</div>
+                <div class="blog-featured">
+
+<div class="items-leading">
+			<div class="leading leading-0">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/27_04/Abdin_main.jpg" width="283" height="190" /></strong><span style="color: #000000;">Накануне очередной годовщины Великой Победы начинаем серию публикаций, посвященных ветеранам Великой Отечественной войны, которые в разные годы работали в стенах Сызранского филиала СамГТУ.</span></span></p>
+<p><a href="/component/content/article/2-uncategorised/5054-abdin-nikolaj-ivanovich"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+					<div class="leading leading-1">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/26_04/studvesna_main.jpg" width="283" height="190" /></strong><span style="color: #000000;">Совсем немного времени остается до одного из самых грандиозных событий Самарской Губернии. С 18 по 24 мая в Самаре пройдет XXX Всероссийский фестиваль «Российская Студенческая Весна».</span></span></p>
+<p><a href="/component/content/article/2-uncategorised/5052-rossijskaya-studencheskaya-vesna-v-samare-novost"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+					<div class="leading leading-2">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/26_04/master_klass_neft_main.jpg" width="283" height="190" /></strong><span style="color: #000000;">«Я б в нефтяники пошел, пусть меня научат!» Под таким лозунгом пройдет мастер-класс, посвященный одному из самых престижных направлений подготовки.</span></span></p>
+<p><a href="/component/content/article/2-uncategorised/5050-master-klass-kak-stat-sovremennym-neftyanikom"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+					<div class="leading leading-3">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/25_04/7.jpg" width="283" height="190" /></strong><span style="color: #000000;">17 апреля добровольческое движение культурной молодежи «Новое поколение» отметило свой 5-летний юбилей. </span></span></p>
+<p><a href="/component/content/article/2-uncategorised/5048-dobrovolcheskoe-dvizhenie-kulturnoj-molodezhi-novoe-pokolenie-novost"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+					<div class="leading leading-4">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/22_04/LPS_2022.jpg" width="283" height="190" /></strong><span style="color: #000000;">Уважаемые родители! Открыт прием в «Летнюю профильную смену-2022». </span></span></p>
+<p><a href="/component/content/article/2-uncategorised/5042-letnyaya-profilnaya-smena-2022-anons"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+					<div class="leading leading-5">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/22_04/IMG_4150.jpg" width="283" height="190" /></strong><span style="color: #000000;">Студенты и преподаватели Сызранского филиала СамГТУ активно отозвались на призыв принять участие в «Месячнике по санитарной очистке территорий г.о. Сызрань от мусора и бытовых отходов в 2022 году».</span></span></p>
+<p><a href="/component/content/article/2-uncategorised/5045-mesyachnike-po-sanitarnoj-ochistke-territorij-novost"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+					<div class="leading leading-6">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/22_04/IMG_0678.jpg" width="283" height="190" /></strong><span style="color: #000000;">Объявляем об окончании конкурса «Мистер СамГТУ» в г. Сызрани! Каждый участник продемонстрировал нам свои лучшие качества!</span></span></p>
+<p><a href="/component/content/article/2-uncategorised/5043-okonchanie-konkursa-mister-samgtu-novost"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+					<div class="leading leading-7">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/20_04/photo1650434546 (6).jpeg" width="283" height="190" /></strong><span style="color: #000000;">Студенты Сызранского филиала встретились с заведующей отделением заготовки крови и ее компонентов ГБУЗ "Самарская областная клиническая станция переливания крови", отделение в г. о. Сызрань Балдицыной Ларисой Юрьевной.</span></span><br /> <a href="/component/content/article/2-uncategorised/5040-natsionalnyj-den-donora"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+					<div class="leading leading-8">
+							
+
+		    
+	
+				 <p style="text-align: justify;"><span style="color: #ff0000;"><strong><img style="margin-right: 15px; margin-bottom: 10px; float: left;" alt="картинка" src="/images/Novosty/2022/20_04/s9YMC.jpg" width="283" height="190" /></strong><span style="color: #000000;">Руководитель проекта «Спортивный фестиваль «Здоровье нации» Сафонов Дмитрий Анатольевич, провёл очередной семинар-тренинг для учащихся Самарского государственного технического университета (филиал в г.Сызрани).</span></span></p>
+<p><a href="/component/content/article/2-uncategorised/5038-seminar-trening-zdorove-natsii-novost"><span class="btn button">Подробнее...</span></a></p>					</div>
+		<div class="clearfix"></div>
+			</div>
+<div class="clearfix"></div>
+
+
+	<div class="pagination">
+
+					<p class="counter pull-right">
+				Страница 1 из 194			</p>
+						<ul class="pagination-list"><li class="disabled"><a><i class="icon-first"></i></a></li><li class="disabled"><a><i class="icon-previous"></i></a></li><li class="active"><a>1</a></li><li><a title="2" href="/?start=9" class="pagenav">2</a><li><li><a title="3" href="/?start=18" class="pagenav">3</a><li><li><a title="4" href="/?start=27" class="pagenav">4</a><li><li><a title="5" href="/?start=36" class="pagenav">...</a><li><li><a title="6" href="/?start=45" class="pagenav">6</a><li><li><a title="7" href="/?start=54" class="pagenav">7</a><li><li><a title="8" href="/?start=63" class="pagenav">8</a><li><li><a title="9" href="/?start=72" class="pagenav">9</a><li><li><a title="10" href="/?start=81" class="pagenav">10</a><li><li><a title="▶" href="/?start=9" class="pagenav">▶</a><li><li><a title="▶▶|" href="/?start=1737" class="pagenav">▶▶|</a><li></ul>	</div>
+
+</div>
+
+
+            </div>
+            
+        </div><!-- / Middle Col  -->
+
+    
+          
+        <!-- sidebar -->
+        <aside id="sidebar" class="span4 " >
+            <div class="inside">
+            
+                <div class="sidebar_module sidebar_module_css1 "><div class="sidebar_module_content">
+
+<div class="customcss1"  >
+	<p style="text-align: center;"><a href="/abitur/bachelor" title="Информация о приемной кампании 2021"><img src="/images/PK.jpg" alt="Приемная кампания" width="166" height="84" /></a><a href="/component/content/article/87-universitet/tsentr-dp-i-do/1586-tsentr-dovuzovskoj-podgotovki-i-dopolnitelnogo-obrazovaniya-12" title="Дополнительное образование детей и взрослых"><img src="/images/Dop_obrazov.jpg" alt="Dop obrazov" width="160" height="84" /></a></p>
+<p style="text-align: center;"><a href="/component/content/article/2-uncategorised/2049-otvety-po-napravleniyam" title="Информация по всем направлениям подготовки"><img src="/images/PK/123456789.gif" alt="Направления подготовки" style="vertical-align: middle;" width="425" height="84" /></a></p>
+<p style="text-align: center;"><a href="/component/content/article/2-uncategorised/4862-v-syzranskom-politekhe-rabotaet-tsentr-pesati-i-kopirovaniya" title="Полная информация об услугах"><img src="/images/dop_uslugi.jpg" alt="Копировальные услуги" /></a></p>
+<p style="text-align: center;"><a href="/2015-02-20-05-07-52/uchebnyj-otdel-filiala#Rasp_zanyat" title="Информация о расписании занятий для обучающихся"><img src="/images/Raspis1.jpg" alt="Расписание занятий" style="margin: -5px;" width="425" height="30" /></a></p>
+<p style="text-align: center;"><a href="/2015-02-20-05-05-32/oplata-za-obuchenie" title="Оплата обучения"><img src="/images/oplata_obuch.jpg" alt="Оплата за обучение" width="425" height="25" /></a></p>
+<p style="text-align: center;"><a href="/component/content/article/87-universitet/tsentr-dp-i-do/3423-dom-nauchnoj-kollaboratsii" title="&quot;Дом научной коллаборации&quot;"><img src="/images/DNK.jpg" alt="&quot;Дом научной коллаборации&quot;" width="410" height="70" /></a></p>
+<p style="text-align: center;"><a href="/component/content/article/2-uncategorised/3160-rabota-v-ais" title="Дистанционное обучение"><img src="/images/Distanc.jpg" alt="Дистанционное обучение" width="425" height="75" /></a></p>
+<p style="text-align: center;"><a href="https://samgtu.ru/covid-19" target="_blank" title="Меры по противодействию распространения коронавируса"><img src="/images/Koronavirus.jpg" alt="Противодействие коронавирусной инфекции" width="425" height="60" /></a></p></div>
+</div></div><div class="sidebar_module sidebar_module_style2 "><h3 class="sidebar_module_heading"><span><p>Виртуальная прогулка</p></span></h3><div class="sidebar_module_content">
+
+<div class="customstyle2"  >
+	<p><a href="/2015-02-20-05-05-32/fotogalereya" class="gms">Фотогалерея</a><br /><a href="http://www.youtube.com/user/SfSamGTU" class="gms" target="_blank">Канал Сф СамГТУ (YouTube)</a><br /><a href="/component/content/article/81-universitet/315-nashi-izdaniya"><span class="gms">Наши издания</span></a><br /><a href="/component/content/article/93-virtualnaya-progulka/345-sotsialnye-proekty"><span class="gms">Социальные проекты</span></a><br /><a href="/component/content/article/93-virtualnaya-progulka/323-sport-i-turizm" class="gms">Спорт и туризм</a><br /><a href="/2015-02-20-05-06-56/eto-interesno"><span class="gms">Центр технического творчества</span></a><br /><a href="/component/content/article/93-virtualnaya-progulka/322-sluzhba-psikhologicheskoj-podderzhki" class="gms">Служба психологической поддержки</a><br /><a href="/component/content/article/93-virtualnaya-progulka/319-nashi-vypuskniki" class="gms">Золотой фонд</a> <br /><a href="/component/content/article/125-politekh-v-litsakh/1539-vypuskniki-v-litsakh" class="gms">Знаменитые выпускники</a></p></div>
+</div></div><div class="sidebar_module sidebar_module_style1 "><h3 class="sidebar_module_heading"><span><p>Наука и инновации</p></span></h3><div class="sidebar_module_content">
+
+<div class="customstyle1"  >
+	<p><a class="gms" href="/component/content/article/95-nauka-i-innovatsii/318-nauchnye-dostizheniya">Научные достижения</a><br /><a href="/component/content/article/95-nauka-i-innovatsii/654-laboratoriya-prototipirovaniya"><span class="gms">Лаборатория прототипирования</span></a></p></div>
+</div></div><div class="sidebar_module sidebar_module_style3 "><h3 class="sidebar_module_heading"><span><p>Поиск по сайту</p></span></h3><div class="sidebar_module_content"><div class="searchstyle3">
+    <form action="/" method="post" class="form-inline">
+    		<label for="mod-search-searchword" class="element-invisible">»</label> <input name="searchword" id="mod-search-searchword" maxlength="100"  class="inputboxstyle3 search-query" type="text" size="1050" value="Поиск..."  onblur="if (this.value=='') this.value='Поиск...';" onfocus="if (this.value=='Поиск...') this.value='';" /> <button class="buttonstyle3 btn btn-primary" onclick="this.form.searchword.focus();">Найти</button>    	<input type="hidden" name="task" value="search" />
+    	<input type="hidden" name="option" value="com_search" />
+    	<input type="hidden" name="Itemid" value="101" />
+    </form>
+</div>
+</div></div>
+                
+            </div>
+            
+        </aside>
+        <!-- /sidebar -->
+              
+       
+            
+    </section><!-- /content -->
+    
+  <!-- Message -->
+      
+  <!-- promo --> 
+        <!-- /promo --> 
+  
+    
+  
+    
+  
+    
+    
+        
+    
+    <!-- bottom --> 
+        
+    <!-- footer -->
+    <footer id="footer" class="clearfix">
+           
+        <div class="row">
+        
+               
+            <!-- footer about -->   
+            <div id="about" class="span4">
+                
+                <div class="logo">
+                
+          <p><img src="/images/123321.png"></p>
+                </div>
+                 
+
+                
+                 
+                <div class="ice_contact">
+                    
+
+<div class="customcontacts"  >
+	<ul>
+<li class="addresses">446001<br />г. Сызрань, ул. Советская, дом 45</li>
+<li class="phone">(8464)98-60-68, (8464)37-30-77</li>
+<li class="email"><span style="font-family: arial, helvetica, sans-serif;"><span id="cloak20191"><span id="cloak8325">Этот адрес электронной почты защищен от спам-ботов. У вас должен быть включен JavaScript для просмотра.</span><script type='text/javascript'>
+ //<!--
+ document.getElementById('cloak8325').innerHTML = '';
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy8325 = 'sfs&#97;mgt&#117;' + '&#64;';
+ addy8325 = addy8325 + 'sfs&#97;mgt&#117;' + '&#46;' + 'c&#111;m';
+ var addy_text8325 = 'sfs&#97;mgt&#117;' + '&#64;' + 'sfs&#97;mgt&#117;' + '&#46;' + 'c&#111;m';
+ document.getElementById('cloak8325').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy8325 + '\'>'+addy_text8325+'<\/a>';
+ //-->
+ </script></span></span></li>
+</ul></div>
+          
+                </div>
+                                
+                                <div id="social_icons">
+                    <h3>Мы в соц. сетях</h3>
+                    <ul>
+                                                <li class="social_facebook">
+                        <a target="_blank" rel="tooltip" data-placement="bottom" title="Группа ВКонтакте" data-original-title="Like on Facebook" href="http://www.vk.com/sfsamgtu"><span>ВКонтакте</span></a>      
+                        </li>        
+                          
+                        
+                                                <li class="social_twitter">
+                        <a target="_blank" rel="tooltip" data-placement="bottom" title="Группа в Facebook" data-original-title="Follow on Twitter" href="http://www.facebook.com/groups/sfsamgtu/" ><span>Facebook</span></a>
+                        </li>
+                                                
+                                                <li class="social_youtube">
+                        <a target="_blank" rel="tooltip" data-placement="bottom" title="Канал на YouTube" data-original-title="Subscribe on YouTube" href="http://www.youtube.com/user/SfSamGTU"><span>Youtube</span></a>                                  </li>        
+                                                
+                                                <li class="social_googleplus">
+                        <a target="_blank" rel="tooltip" data-placement="bottom" title="Мы в Одноклассниках" data-original-title="Follow on Google Plus" href="http://ok.ru/group/58248640593953"><span>Google +</span></a>                                 </li>        
+                                                
+                                                <li class="social_rss_feed">
+                        <a target="_blank" rel="tooltip" data-placement="bottom" title="Мы в Instagram" data-original-title="Subscribe to RSS Feeds" href="http://www.instagram.com/sfsamgtu"><span>Instagram</span></a>
+                        </li>        
+                                                
+                    </ul>
+                    
+                </div>
+                                    
+           </div><!-- footer about --> 
+           
+           
+           <!-- footer mods -->      
+           <div id="footer_mods" class="span8">
+            
+                                <div class="footer_mods_top">
+                    
+                                        <div class="footerwdidth3">  
+                        
+                    </div> 
+                     
+                    
+                                        <div class="footerwdidth3">  
+                        
+                    </div> 
+                     
+                    
+                                        <div class="footerwdidth3">  
+                        
+                    </div> 
+                     
+                    
+                </div>
+                 
+        
+                                <div class="footer_mods_bottom">
+                
+                                        <div class="footerwdidth3">  
+                                 
+       <div class="moduletable">
+        
+							<h3 class="mod-title"><p>Кафедры Сф СамГТУ</p></h3>
+			        	
+             <div class="moduletable_content clearfix">
+			 
+<ul class="menu">
+<li class="item-372"><a href="/kafedra-tekhnologiya-mashinostroeniya1" >Технология машиностроения</a></li><li class="item-775"><a href="/tekhnologiya-mashinostroeniya-bazovaya" >Технология машиностроения (инженерно-образовательный центр при АО«ТЯЖМАШ»)</a></li><li class="item-373"><a href="/2013-02-18-13-55-52" >Химическая технология </a></li><li class="item-376"><a href="/2013-02-18-13-57-08" >Общетеоретические дисциплины</a></li><li class="item-377"><a href="/2013-02-18-13-58-04" >Электроснабжение промышленных предприятий</a></li><li class="item-378"><a href="/2013-02-18-14-00-15" >Информатика и системы управления</a></li><li class="item-382"><a href="/2013-02-18-14-01-50" >Экономика</a></li></ul>
+             </div>
+                
+		</div>
+	
+                    </div>
+                                                             <div class="footerwdidth3">  
+                                 
+       <div class="moduletable">
+        
+							<h3 class="mod-title"><p>Федеральные порталы</p></h3>
+			        	
+             <div class="moduletable_content clearfix">
+			 
+<ul class="menu">
+<li class="item-525"><a href="https://minobrnauki.gov.ru/" target="_blank" >Министерство науки и высшего образования РФ</a></li><li class="item-773"><a href="http://obrnadzor.gov.ru/ru/" target="_blank" >Федеральная служба по надзору в сфере образования и науки</a></li><li class="item-526"><a href="http://www.edu.ru/" target="_blank" >Федеральный портал &quot;Российское образование&quot;</a></li><li class="item-528"><a href="http://window.edu.ru/" target="_blank" >Единое окно доступа к образовательным ресурсам</a></li><li class="item-530"><a href="http://fcior.edu.ru/" target="_blank" >Федеральный центр информационно-образовательных ресурсов</a></li><li class="item-527"><a href="http://www.pfo.ru/" target="_blank" >Приволжский федеральный округ</a></li><li class="item-779"><a href="https://educat.samregion.ru/" >Министерство образования и науки Самарской области</a></li><li class="item-529"><a href="http://school-collection.edu.ru/" target="_blank" >Единая коллекция цифровых информационных ресурсов</a></li></ul>
+             </div>
+                
+		</div>
+	
+                    </div>
+                                                             <div class="footerwdidth3">  
+                                 
+       <div class="moduletable">
+        
+							<h3 class="mod-title">Быстрый доступ</h3>
+			        	
+             <div class="moduletable_content clearfix">
+			 
+<ul class="menu">
+<li class="item-537"><a href="/raspisanie-zanjatij" >Расписание занятий</a></li><li class="item-674"><a href="/2016-11-23-05-36-33" >Библиотека</a></li><li class="item-647"><a href="https://lk.samgtu.ru" >Информационная образовательная среда</a></li><li class="item-531"><a href="http://samgtu.ru/" target="_blank" >СамГТУ (Самара)</a></li><li class="item-532"><a href="http://www.eprussia.ru/" target="_blank" >Калейдоскоп энергетика </a></li><li class="item-533"><a href="http://www.gizmag.com/" >Новости машиностроения</a></li><li class="item-583"><a href="http://www.membrana.ru/" >Новые технологии в машиностроении</a></li><li class="item-534"><a href="http://www.konferen.ru/" target="_blank" >Научные конференции </a></li><li class="item-805"><a href="/chasto-zadavaemye-voprosy" >Часто задаваемые вопросы</a></li><li class="item-806"><a href="/forma-obratnoj-svyazi" >Обратная связь</a></li><li class="item-807"><a href="http://nok-mon.ru/" target="_blank" >Опрос о качестве условий осуществления образовательной деятельности</a></li></ul>
+             </div>
+                
+		</div>
+	
+                    </div>
+                                        
+                </div>
+                    
+                
+           </div><!-- /footer mods -->
+       
+        </div>      
+    
+    </footer><!-- footer -->  
+    
+    
+      <!-- copyright -->    
+    <div id="copyright_area">  
+  <!--div style="margin: -30px 0px 10px 0px">  <span id="uhvb" style="display:none;"><a itemprop="Copy" href="javascript://" onclick="uvcl()"><img src="/templates/blind.png" width="180" ></a></span></div-->
+    <!--LiveInternet logo--><a href="//www.liveinternet.ru/click"
+target="_blank"><img src="//counter.yadro.ru/logo?21.1"
+title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+alt="" border="0" width="88" height="31"/></a><!--/LiveInternet-->
+  
+  
+        <p id="copyright">
+        &copy; 2022 СФ СамГТУ – официальный портал 
+        </p>
+
+                <div id="copyrightmenu">
+        <a href="/?format=feed&amp;type=rss" class="syndicate-module">
+	<img src="/media/system/images/livemarks.png" alt="feed-image"  />			<span>
+					RSS-лента				</span>
+	</a>
+
+        </div>
+         
+        
+     
+            
+                <a href="#" class="scrollup" style="display: inline; ">Go Top</a>
+          
+            
+        
+    </div><!-- copyright --> 
+    
+</div><!-- Container --> 
+
+
+
+
+<!-- Pop UP -->  
+<!-- Само окно -->
+<div id="boxes1">
+<div id="boxes">  
+<div id="dialog" class="window"> Текст модального окна
+<div class="top"><a href="#" class="link123 close123"/>Закрыть</a></div>
+<div class="content">Ссылки для <a href="http://192.168.0.200/" target="_blank">локальных</a> и <a href="http://sstu.syzran.ru:1212">внешних</a> пользователей</div>
+</div>
+</div>
+</div>
+<!-- Маска, затемняющая фон -->
+<div id="mask"></div>
+
+<!-- Само окно 2-->
+<div id="boxes1">
+<div id="boxes">  
+<div id="dialog1" class="window"> Текст модального окна
+<div class="top1"><a href="#" class="link123 close1231"/>Закрыть</a></div>
+<div class="content"><a href="/component/content/article/81-universitet/321-ebs">Библиотечные системы</a><br /><a href="http://sstu.syzran.ru/elektronnoe-portfolio-studentov1">Методические пособия</a></div>
+</div>
+</div>
+</div>
+<!-- Маска, затемняющая фон -->
+<div id="mask"></div>
+
+
+
+<!--Код скрипта popUP-->
+<script>
+$(document).ready(function() {   
+    $('a[name=modal]').click(function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href');
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    $('#mask').fadeIn(1000); 
+    $('#mask').fadeTo("slow",0.8); 
+    var winH = $(window).height();
+    var winW = $(window).width();
+    $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+    $(id).fadeIn(2000); 
+    });
+    $('.window .close123').click(function (e) { 
+    e.preventDefault();
+    $('#mask, .window').hide();
+    }); 
+    $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+    }); 
+   });  
+   
+</script>
+
+<!--Код скрипта popUP2-->
+
+<script>
+$(document).ready(function() {   
+    $('a[name=modal1]').click(function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href');
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    $('#mask').fadeIn(1000); 
+    $('#mask').fadeTo("slow",0.8); 
+    var winH = $(window).height();
+    var winW = $(window).width();
+    $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+    $(id).fadeIn(2000); 
+    });
+    $('.window .close1231').click(function (e) { 
+    e.preventDefault();
+    $('#mask, .window').hide();
+    }); 
+    $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+    }); 
+   });  
+   
+</script>
+
+
+
+
+</body>
+</html>

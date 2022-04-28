@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Живое слово. Урок 28</title>
+    <link href="//pl.smotrim.ru/css/main.css?ver=236322" rel="stylesheet" id="main_css">
+    <link href="//pl.smotrim.ru/css/valiant360.css?ver=236322" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <script>
+
+        //vars from server
+        window.pl = window.pl || {};
+        window.pl.data = {};
+        window.pl.data.ref =   '(none)';
+        window.pl.data.sid = 'vh';
+        window.pl.data.id = 1453874;
+        window.pl.data.dataUrl = '//player.vgtrk.com/iframe/datavideo/id/1453874/sid/vh';
+        window.pl.data.isVod = 1;
+                window.pl.data.metric = ''.replace(/^\s+|\s+$/gm,'');
+        window.pl.data.domain = '//player.vgtrk.com';
+        window.pl.data.playerMode = '1';
+        window.pl.data.statRev = '2363';
+        window.pl.data.externalUser =  1;
+
+        window.sm = window.sm || {};
+        window.sm.highload = false;
+
+    </script>
+
+<!--    <script type="text/javascript" src="https://ad-stub-vgtrk.cdnvideo.ru/adctrl/plugin/html5/v1/cdn-ad-plugin-html5.js"></script>-->
+<!--    <script type="text/javascript" src="//playercdn.cdnvideo.ru/aloha/opt/modules/cdn-opt-hlsjs.min.js"></script>-->
+
+<!--    <script type="text/javascript" src="//sb.onlinetv.ru/p2p/vgtrk/latest/p2p.min.js" charset="UTF-8"></script>-->
+
+
+    <script src="https://cdn.teleport.media/stable/teleport.hlsjs.bundle.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+
+
+
+    <script src="//pl.smotrim.ru/js/ads.adfox.weborama.advert.banner.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/utils.js?ver=2363"></script>
+    <script src="https://an.yandex.ru/system/video-ads-sdk/adsdk.js" type="text/javascript"></script>
+
+    <!-- js for flash player -->
+    <script src="//pl.smotrim.ru/js/libs/swfobject.js?ver=2363" type="text/javascript"></script>
+    <script src="//pl.smotrim.ru/js/jsFlashBridge.js?ver=2363"></script>
+
+
+    <!-- get & set params for player -->
+    <script src="//pl.smotrim.ru/js/urlparser.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/setParams.js?ver=2363"></script>
+
+
+
+    <!-- html5 js -->
+    <script src="//pl.smotrim.ru/js/libs/jquery-2.2.4.min.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/libs/hls.min.js?ver=2363"></script>
+
+    <script src="//pl.smotrim.ru/js/tmpl.js?ver=2363"></script>
+    <!-- script src="//pl.smotrim.ru/js/VAST.js?ver=2363"></script -->
+    <script src="//pl.smotrim.ru/js/A.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/checkSharing.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/checkAuth.js?ver=2363"></script>
+    <!-- script src="//pl.smotrim.ru/js/vpaid.js?ver=2363"></script -->
+
+    <script src="//pl.smotrim.ru/js/stat.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/sync.js?ver=2363"></script>
+
+    <!-- html5 ui -->
+    <script src="//pl.smotrim.ru/js/libs/jscrollpane.js??ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/libs/mousewheel.js??ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/controls.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/uiInfo.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/share.js?ver=23631"></script>
+    <script src="//pl.smotrim.ru/js/modal.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/like.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/recommendation.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/restriction.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/outsideControl.js?ver=2363"></script>
+    <script src="//pl.smotrim.ru/js/html5player_main.js?ver=2363453"></script>
+
+    <!-- 360 -->
+    <script src="//pl.smotrim.ru/js/360/three.min.js"></script>
+    <script src="//pl.smotrim.ru/js/360/jquery.valiant360.js"></script>
+
+
+
+</head>
+<body>
+
+<div id="main" class="pl-player-wrap">
+
+    <div id="flash_player">
+<!--        <h3>Для просмотра видео у Вас должен быть:</h3>-->
+<!--        <ul>-->
+<!--            <li><a target="_blank" href="http://www.google.com/support/bin/answer.py?hl=ru&answer=23852">включен javascript</a></li>-->
+<!--            <li><a target="_blank" href="http://get.adobe.com/ru/flashplayer/">установлен Adobe FlashPlayer</a></li>-->
+<!--            <li><a target="_blank" href="">отключен AdBlocker</a></li>-->
+<!--        </ul>-->
+    </div>
+
+</div>
+
+<div class="pl-adv-banner-overlay" >
+    <!-- Adv slot 313 [ -->
+    
+
+    
+        
+        
+                    <div class="vgtrk-a1" data-id="632">
+        
+                <script>window.yaContextCb = window.yaContextCb || []</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+<!--AdFox START-->
+<!--vgtrk.com-->
+<!--Площадка: ВГТРК_видео / _test / ugolok-->
+<!--Категория: <не задана>-->
+<!--Тип баннера: ugolok-->
+<div id="adfox_16220115956981602"></div>
+<script>
+   window.advOverlay = function(tags, tagsTitle) {
+    window.yaContextCb.push(()=>{
+        Ya.adfoxCode.create({
+        ownerId: 166267,
+        containerId: 'adfox_16220115956981602',
+        params: {
+            p1: 'cpenb',
+            p2: 'hfls',
+            puid2: '',
+            puid3: '',
+            puid4: '',
+            puid10: '',
+            puid11: '',
+            puid12: tags,
+            pk: tagsTitle,
+            pke: '1'
+        },
+        onRender: (function(){
+          
+        }()),
+         onLoad: function(data) {
+
+            if (data.bundleName = 'banner.image') {
+                     setTimeout(()=>{
+                             window.pl.modules.ads.setBannerOverlay();
+                     }, 2000)
+          }
+        },
+        onStub: (function(){
+
+        }())
+    })
+});
+   }
+</script>
+                    </div>
+        
+        
+    
+
+
+    <!-- ] Adv slot 313 -->
+</div>
+
+
+
+
+
+
+<!-- Statistics [ -->
+
+
+<script>
+    ((counterHostname) => {
+        window.MSCounter = {
+            counterHostname: counterHostname
+        };
+        window.mscounterCallbacks = window.mscounterCallbacks || [];
+        window.mscounterCallbacks.push(() => {
+            msCounterExampleCom = new MSCounter.counter({
+                'account':'smotrim',
+                'tmsec': 'smotrim',
+                'autohit' : true
+            });
+        });
+
+        const newScript = document.createElement('script');
+        newScript.async = true;
+        newScript.src = `${counterHostname}/ncc/counter.js`;
+
+        const referenceNode = document.querySelector('script');
+        if (referenceNode) {
+            referenceNode.parentNode.insertBefore(newScript, referenceNode);
+        } else {
+            document.firstElementChild.appendChild(newScript);
+        }
+    })('https://tns-counter.ru/');
+</script>
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+
+    var yaParams = {sid: window.pl.videoParams.sid };
+</script>
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter24831155 = new Ya.Metrika({id:24831155,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    ut:"noindex",params:window.yaParams||{ }});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/24831155?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script>
+    /**
+     *  Статистика CDN
+     */
+
+    if (!(document.all && !document.addEventListener)) {
+
+        window.onload = function() {
+            var aloha = document.createElement('script'); aloha.type = 'text/javascript'; aloha.async = true;
+            aloha.src = '//rumstat.cdnvideo.ru/probes/init.js?a=0&c=16';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(aloha, s);
+        };
+
+    }
+
+
+  </script>
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+
+
+
+
+
+    if ( window.pl.data.isVod) {
+        var _paq = _paq || [];
+        _paq.push(['setUserId', window.pl.utils.getCookie('ngx_uid')]);
+        _paq.push(['setDocumentTitle', document.title]);
+        _paq.push(['setCustomVariable', '1', 'sid', window.pl.data.sid, 'page']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+
+
+        (function() {
+
+            _paq.push(['setTrackerUrl', 'https://vstat.rtr-vesti.ru/']);
+            _paq.push(['setSiteId', '1']);
+            _paq.push(['enableHeartBeatTimer', 60]);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = '//player.vgtrk.com/js/libs/piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    }
+
+
+
+</script>
+<!-- End Piwik Code -->
+
+
+  <!-- ] Statistics -->
+
+
+<!-- loader - set type of player -->
+<script src="//pl.smotrim.ru/js/loader.js?ver=2363"></script>
+
+<!--<script src="https://assets.vgtrk.com/uid/latest/uid.js?ver=--><!--" type="text/javascript"></script>-->
+
+<div id="impId"></div>
+</body>
+</html>

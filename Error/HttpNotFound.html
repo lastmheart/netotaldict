@@ -1,0 +1,571 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>MyQuiz</title>
+    <link type="image/x-icon" href="https://uv97gofhf5.a.trbcdn.net/favicon.ico?ver=20220404.5.41829" rel="shortcut icon" />
+    <link type="image/png" href="https://uv97gofhf5.a.trbcdn.net/favicon-16x16.png?ver=20220404.5.41829" sizes="16x16" rel="icon" />
+    <link type="image/png" href="https://uv97gofhf5.a.trbcdn.net/favicon-32x32.png?ver=20220404.5.41829" sizes="32x32" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+    
+
+    
+    
+
+    <link href="https://uv97gofhf5.a.trbcdn.net/Content/css?ver=20220404.5.41829" rel="stylesheet"/>
+<link href="https://uv97gofhf5.a.trbcdn.net/Content/responsive?ver=20220404.5.41829" rel="stylesheet"/>
+<link href="https://uv97gofhf5.a.trbcdn.net/Content/themes/base/css?ver=20220404.5.41829" rel="stylesheet"/>
+<link href="https://uv97gofhf5.a.trbcdn.net/Content/tooltipster?ver=20220404.5.41829" rel="stylesheet"/>
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/modernizr?ver=20220404.5.41829"></script>
+
+
+
+    
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/jquery?ver=20220404.5.41829"></script>
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/jqueryform?ver=20220404.5.41829"></script>
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/jqueryui?ver=20220404.5.41829"></script>
+<script src="https://uv97gofhf5.a.trbcdn.net/bundles/plugins?ver=20220404.5.41829"></script>
+<script src="https://uv97gofhf5.a.trbcdn.net/bundles/countdown?ver=20220404.5.41829"></script>
+<script src="https://uv97gofhf5.a.trbcdn.net/bundles/pages/common?ver=20220404.5.41829"></script>
+
+
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/pages/controls?ver=20220404.5.41829"></script>
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/app/dist/js/menu?ver=20220404.5.41829"></script>
+
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/jqueryMultiselect?ver=20220404.5.41829"></script>
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/jqueryMultiselectFilter?ver=20220404.5.41829"></script>
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/freshereditor?ver=20220404.5.41829"></script>
+
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/bundles/tooltipster?ver=20220404.5.41829"></script>
+
+    <link href="https://uv97gofhf5.a.trbcdn.net/Content/css_new/menu?ver=20220404.5.41829" rel="stylesheet"/>
+
+    <script type="text/javascript">
+        $(function () {
+            var defaultConfig = {
+                distance: 0,
+                trigger: 'custom',
+                triggerOpen: {
+                    mouseenter: true,
+                    tap: true,
+                    scroll: true
+                },
+                triggerClose: {
+                    mouseleave: true,
+                    tap: true,
+                    scroll: true
+                },
+                maxWidth: 350,
+                zIndex: 99999,
+                //functionBefore: function () {
+                //    if (($('body').width() < 767) || ("ontouchstart" in document.documentElement)) {
+                //        return false;
+                //    }
+                //}
+            };
+
+            defaultConfig.theme = ['tooltipster-borderless', 'tooltipster-borderless-dark'];
+            defaultConfig.interactive = true;
+            $('.tooltip-dark-interactive').tooltipster(defaultConfig);
+            defaultConfig.interactive = false;
+            $('.tooltip-dark').tooltipster(defaultConfig);
+
+            defaultConfig.theme = ['tooltipster-borderless', 'tooltipster-borderless-white'];
+            defaultConfig.interactive = true;
+            $('.tooltip-white-interactive').tooltipster(defaultConfig);
+            defaultConfig.interactive = false;
+            $('.tooltip-white').tooltipster(defaultConfig);
+        });
+        customizationManager.loadCustomization('https://kb2r688g77.a.trbcdn.net/customization/');
+    </script>
+
+    <script type="text/javascript">
+        var customizationStorageUrl = 'https://kb2r688g77.a.trbcdn.net/customization/';
+    </script>
+    <script src="https://uv97gofhf5.a.trbcdn.net/app/dist/js/customization?ver=20220404.5.41829"></script>
+
+    <script type="text/javascript">
+        customizationManager.loadCustomization(customizationStorageUrl);
+    </script>
+
+    
+
+    
+    
+    
+
+    <script>
+        $(document)
+            .ajaxStart(function () {
+                $(".ajaxLoader").show();
+                $('#circleG').show();
+            })
+            .ajaxStop(function () {
+                $(".ajaxLoader").hide();
+                $('#circleG').hide();
+            });
+    </script>
+
+
+
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+</head>
+<body class="footerPadding ">
+    <div class="layout">
+        
+
+<div id="topMenu" class="topMenu layout__Menu">
+    
+    <a class="menu-logo-auth" href="/">
+        <div id="menu-logo" class="menu-logo">
+            <img src="" />
+        </div>
+        <div id="menu-logo-mobile" class="menu-logo-mobile">
+            <img src="" />
+        </div>
+    </a>
+    <div id="topMenu__Items" class="topMenu__Items">
+
+
+    <a class="topMenuItem" href="https://play.myquiz.ru">
+        <span class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.04351 3.98511C3.62524 3.98511 0.0435181 7.56683 0.0435181 11.9851V17.4647C0.0435181 19.8019 2.27449 21.4934 4.52491 20.8625C5.05766 20.7131 5.55722 20.464 5.99705 20.1283L8.83573 17.9619C9.68403 17.3145 10.7216 16.9639 11.7887 16.9639C13.0637 16.9639 14.2877 17.4641 15.1977 18.357L16.4967 19.6316C17.1687 20.291 18.0134 20.7473 18.9333 20.9479L19.0964 20.9835C21.5903 21.5273 23.9486 19.6278 23.9486 17.0753V11.9851C23.9486 7.56682 20.3669 3.98511 15.9486 3.98511H8.04351ZM2.04352 11.9851C2.04352 8.6714 4.72981 5.98511 8.04351 5.98511H15.9486C19.2623 5.98511 21.9486 8.6714 21.9486 11.9851V17.0753C21.9486 18.3515 20.7694 19.3013 19.5225 19.0294L19.3594 18.9938C18.8074 18.8735 18.3007 18.5997 17.8974 18.204L16.5985 16.9295C15.3145 15.6696 13.5875 14.9639 11.7887 14.9639C10.2831 14.9639 8.81923 15.4586 7.62237 16.372L4.78369 18.5385C4.54507 18.7206 4.27406 18.8557 3.98503 18.9367C3.01006 19.2101 2.04352 18.4772 2.04352 17.4647V11.9851ZM8.00018 9.53099C8.00018 8.97871 7.55247 8.53099 7.00018 8.53099C6.4479 8.53099 6.00018 8.97871 6.00018 9.53099V10.0144H5.51379C4.9615 10.0144 4.51379 10.4622 4.51379 11.0144C4.51379 11.5667 4.9615 12.0144 5.51379 12.0144H6.00018V12.531C6.00018 13.0833 6.4479 13.531 7.00018 13.531C7.55247 13.531 8.00018 13.0833 8.00018 12.531V12.0144H8.51379C9.06607 12.0144 9.51379 11.5667 9.51379 11.0144C9.51379 10.4622 9.06607 10.0144 8.51379 10.0144H8.00018V9.53099ZM15.5001 10.0308C14.9478 10.0308 14.5001 10.4785 14.5001 11.0308C14.5001 11.583 14.9478 12.0308 15.5001 12.0308H16.7501H18.0001C18.5523 12.0308 19.0001 11.583 19.0001 11.0308C19.0001 10.4785 18.5523 10.0308 18.0001 10.0308H16.7501H15.5001Z" fill="#878D9A"></path>
+            </svg>
+        </span>
+        <span>Играть</span>
+    </a>
+
+
+
+    <a class="topMenuItem   " href="/Lectures">
+        <span class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99508 4.73653C9.99508 3.1647 11.4093 1.95456 12.9995 1.95456C14.5897 1.95456 16.0012 3.1647 16.0012 4.73653V5.02022L20.0936 5.02022C21.2111 5.02022 22.0045 6.02834 22.0045 7.13291V11.0741C22.0045 11.6264 21.581 11.9755 21.0223 11.9755H18.9616C18.4903 11.9755 18.0007 12.5404 18.0007 13.0063C18.0007 13.4721 18.4903 13.9892 18.9616 13.9892H21.0223C21.7523 13.9892 22.034 14.4369 22.034 14.9892L22.1171 20.1095C22.1171 21.2141 21.2111 21.9943 20.0936 21.9943H15.0185C14.4598 21.9943 14.0068 21.6618 14.0068 21.1095V18.8616C14.0068 18.3944 13.4744 18.0055 13.0016 18.0055C12.5289 18.0055 12.0235 18.3944 12.0235 18.8616V21.1095C12.0235 21.6618 11.5705 21.9943 11.0118 21.9943H7.17569C6.05819 21.9943 5.03136 21.2141 5.03136 20.1095V16.0041H4.75969C3.17089 16.0041 2 14.5767 2 13.0063C2 11.4358 3.17089 10.0063 4.75969 10.0063H4.99805V7.14242C4.99805 6.03785 6.05819 5.02022 7.17569 5.02022L9.99508 5.02022V4.73653ZM12.9995 3.98928C12.5268 3.98928 12.0298 4.55295 12.0298 5.02022V6.14242C12.0298 6.69471 11.5769 6.99455 11.0181 6.99455L6.99685 6.99455V11.4054C6.99685 11.9501 6.49581 12.0005 6.16398 12.0005H4.99805C4.52674 12.0005 4 12.5404 4 13.0063C4 13.4721 4.52674 13.9892 4.99805 13.9892H6.16398C6.72273 13.9892 6.99685 14.5401 6.99685 15.0923L6.99685 20.0033H10.0001V18.9117C10.0001 17.3399 11.4114 16.0041 13.0016 16.0041C14.5919 16.0041 16.0039 17.3399 16.0039 18.9117V20.0033H20.0106V15.9892H18.9616C17.3728 15.9892 16.0012 14.5767 16.0012 13.0063C16.0012 11.4358 17.4559 10.0836 19.0447 10.0836H20.0106V6.99455L15.0501 6.99455C14.4914 6.99455 14.0384 6.69471 14.0384 6.14242V5.02022C14.0384 4.55295 13.4722 3.98928 12.9995 3.98928Z" fill="#878D9A" />
+            </svg>
+        </span>
+        <span>Мои Викторины</span>
+    </a>
+
+<a class="topMenuItem " href="/Community/myQuiz">
+    <span class="icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33945 2.00087C9.35339 2.00029 9.36739 2 9.38146 2H14.1266L14.135 2.00003L14.1433 2H16.9083C18.1871 2 19.3028 2.22425 20.1371 2.95033C20.9708 3.67587 21.3302 4.73479 21.5057 5.92952C21.5076 5.94214 21.5092 5.9548 21.5106 5.96748L21.7644 8.31638L21.7647 8.31879C21.9112 9.70672 21.3284 10.9176 20.3459 11.6826V18.0829C20.3459 19.7397 19.0027 21.0829 17.3459 21.0829H14.1667C14.1064 21.0942 14.0442 21.1002 13.9806 21.1002H9.9924C9.9288 21.1002 9.86659 21.0942 9.80629 21.0829H6.1611C4.50424 21.0829 3.1611 19.7397 3.1611 18.0829V11.5414C3.1611 11.4459 3.1745 11.3535 3.19953 11.266C2.49838 10.5111 2.11313 9.47752 2.2353 8.32027L2.23538 8.31952L2.48034 5.972C2.48179 5.95803 2.48355 5.94409 2.48559 5.9302C2.66145 4.7352 3.02142 3.67619 3.85611 2.95076C4.69115 2.22503 5.80771 2.00087 7.08796 2.00087H9.33945ZM5.1611 12.412V18.0829C5.1611 18.6352 5.60881 19.0829 6.1611 19.0829H8.9924V17.9627C8.9924 17.1126 9.18792 16.2881 9.75871 15.6763C10.3418 15.0512 11.1494 14.8251 11.9865 14.8251C12.8235 14.8251 13.6311 15.0512 14.2143 15.6763C14.785 16.2881 14.9806 17.1126 14.9806 17.9627V19.0829H17.3459C17.8982 19.0829 18.3459 18.6352 18.3459 18.0829V12.5052C18.1606 12.5291 17.9712 12.5414 17.7786 12.5414C16.7202 12.5414 15.7346 12.0426 15.0134 11.3857C14.9389 11.3179 14.866 11.2472 14.7949 11.1739C14.0663 12.0293 12.9388 12.5501 11.7759 12.5501C10.6756 12.5501 9.58246 12.0796 8.83793 11.2925L8.82889 11.3029C8.21399 12.011 7.32027 12.5423 6.22556 12.5423C5.85688 12.5423 5.49997 12.4972 5.1611 12.412ZM12.9806 19.0829V17.9627C12.9806 17.3848 12.8451 17.1405 12.7518 17.0406C12.6709 16.9539 12.4815 16.8251 11.9865 16.8251C11.4915 16.8251 11.302 16.9539 11.2211 17.0406C11.1279 17.1405 10.9924 17.3848 10.9924 17.9627V19.0829H12.9806ZM10.1085 6.32728L10.3024 4H13.2062L13.6045 8.79424L13.6062 8.81236C13.6934 9.67143 12.9209 10.5501 11.7759 10.5501C10.6092 10.5501 9.81665 9.65233 9.90186 8.81236L9.90353 8.79424L10.1085 6.32728ZM8.29487 4.00087H7.08796C5.98979 4.00087 5.46324 4.20379 5.16807 4.46032C4.87451 4.71545 4.61864 5.18928 4.46729 6.2011L4.22443 8.52847L4.22429 8.52985C4.11189 9.59269 4.92007 10.5423 6.22556 10.5423C6.62871 10.5423 7.00344 10.3547 7.31882 9.99155C7.64018 9.6215 7.85777 9.10953 7.91203 8.60154L8.11531 6.16215L8.29487 4.00087ZM15.2269 4L15.5966 8.5977C15.6446 8.99922 15.9075 9.49495 16.36 9.90703C16.815 10.3214 17.3411 10.5414 17.7786 10.5414C19.0796 10.5414 19.8875 9.59387 19.7758 8.52999L19.7757 8.52884L19.5243 6.2019C19.3731 5.18854 19.1174 4.7142 18.8241 4.459C18.5298 4.20282 18.0046 4 16.9083 4H15.2269Z" fill="#878D9A" />
+        </svg>
+    </span>
+    <span>
+        Каталог викторин
+    </span>
+</a>
+
+    <a class="topMenuItem " href="/community">
+        <span class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3277 3.74495L11.3272 3.7459L9.74581 6.9348C9.54903 7.33759 9.2282 7.66953 8.9106 7.90697C8.59214 8.14505 8.18435 8.35729 7.7483 8.43195L7.74476 8.43256L4.87458 8.91335C4.13404 9.0378 4.01738 9.30841 4.00862 9.33606C3.99866 9.36753 3.94143 9.66211 4.47398 10.1991L6.70573 12.4493C7.04373 12.79 7.25992 13.2337 7.37728 13.647C7.49483 14.0611 7.5429 14.5491 7.43984 15.0127L7.43838 15.0193L6.79943 17.8048C6.69328 18.2673 6.69304 18.5883 6.72952 18.785C6.75467 18.9207 6.7907 18.9712 6.8021 18.9838C6.81773 18.9907 6.87419 19.0079 7.00324 18.9917C7.19697 18.9673 7.49828 18.8707 7.90299 18.6285L10.6012 17.0181C11.0372 16.7623 11.5464 16.6629 12.0014 16.6629C12.4555 16.6629 12.9663 16.762 13.4019 17.0222L16.0914 18.6275C16.4995 18.8706 16.803 18.9682 16.9984 18.9932C17.1239 19.0092 17.1806 18.9937 17.1976 18.9867C17.2096 18.9726 17.2435 18.9216 17.2675 18.7909C17.3037 18.5932 17.3031 18.2705 17.1967 17.8048L16.5562 15.0127C16.4532 14.5491 16.5013 14.0611 16.6188 13.647C16.7362 13.2337 16.9524 12.79 17.2904 12.4493L19.5221 10.1991L19.5245 10.1966C20.0605 9.65992 20.0007 9.36698 19.9914 9.33786C19.9824 9.30941 19.8631 9.03797 19.1215 8.91335L16.2514 8.43255C15.8118 8.35869 15.4009 8.14748 15.0795 7.90836C14.7595 7.67028 14.4382 7.33789 14.2413 6.9348L12.6581 3.74216C12.3009 3.0181 12.0017 3 11.9969 3C11.9903 3 11.6891 3.02032 11.3277 3.74495ZM14.4517 2.85736L16.0382 6.05662C16.0575 6.09621 16.131 6.19785 16.2733 6.30372C16.4152 6.40926 16.5356 6.45221 16.5821 6.46009L19.4525 6.94092C20.5467 7.1248 21.5618 7.67912 21.8969 8.7304C22.2317 9.7805 21.7271 10.8208 20.9409 11.6087L20.9397 11.6099L18.7104 13.8576C18.6704 13.8979 18.5942 14.0123 18.5428 14.1933C18.4921 14.3717 18.4946 14.5131 18.5082 14.5768L18.5086 14.5787L19.1461 17.3577C19.4168 18.542 19.3661 19.8755 18.3823 20.5986C17.3943 21.3248 16.1091 20.9659 15.068 20.3458L12.3764 18.7393C12.326 18.7092 12.193 18.6629 12.0014 18.6629C11.8129 18.6629 11.6751 18.7077 11.6151 18.7421L11.6131 18.7432L8.92901 20.3453C7.88768 20.9681 6.60406 21.3213 5.61685 20.595C4.63442 19.8722 4.57807 18.5428 4.85005 17.3577L5.48792 14.5768C5.50148 14.5131 5.50397 14.3717 5.45332 14.1933C5.40194 14.0123 5.32566 13.8979 5.28571 13.8576L3.05395 11.6074C2.27265 10.8197 1.76997 9.78047 2.10196 8.7322C2.43517 7.68013 3.44789 7.12506 4.54314 6.94101L7.41078 6.46063C7.4525 6.45318 7.57137 6.41105 7.71307 6.30511C7.85555 6.1986 7.92954 6.09653 7.94892 6.05663L7.95248 6.0493L9.53634 2.85549L9.53726 2.85362C10.0395 1.84616 10.8719 1 11.9969 1C13.1234 1 13.9539 1.8488 14.4517 2.85736Z" fill="#878D9A" />
+            </svg>
+        </span>
+        <span>Комьюнити</span>
+    </a>
+
+<a class="topMenuItem " href="/faq">
+    <span class="icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.0046 9.25436C9.17038 8.22041 10.0177 7 11.8412 7C12.9464 7 13.8858 7.49155 14.3279 8.32211C14.7515 9.11876 14.6779 10.0341 14.1253 10.729C13.7829 11.1601 13.4229 11.3966 13.166 11.5654C13.1603 11.5691 13.1546 11.5728 13.149 11.5765C12.8727 11.746 12.7806 11.8138 12.7438 12.2037C12.7254 12.441 12.4859 12.6274 12.228 12.6274H11.6018C11.4728 12.6274 11.3255 12.5766 11.2334 12.4749C11.1413 12.3732 11.086 12.2545 11.1044 12.1189C11.1965 11.0511 11.657 10.6782 12.2096 10.3222C12.4307 10.1866 12.5964 10.068 12.7991 9.83067C12.9833 9.59336 13.0017 9.28826 12.8543 9.01706C12.7438 8.83061 12.4675 8.52551 11.8228 8.52551C11.1597 8.52551 10.7545 8.83061 10.644 9.40691C10.6071 9.62727 10.3861 9.79677 10.1466 9.79677H9.50194C9.35458 9.79677 9.20722 9.72897 9.11512 9.62727C9.02303 9.52556 8.98619 9.38996 9.0046 9.25436ZM13 14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14C11 13.4477 11.4477 13 12 13C12.5523 13 13 13.4477 13 14Z" fill="#878D9A" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.05605 5.05413C4.41038 5.69786 4 6.74413 4 8.38385V12.8704C4 15.0267 4.44124 15.9973 5.00739 16.4912C5.60752 17.0148 6.61733 17.2542 8.4 17.2542H8.85C9.16799 17.2542 9.46514 17.352 9.69021 17.4632C9.91157 17.5726 10.1763 17.751 10.3724 18.0163L11.7191 19.8066C11.8545 19.9866 11.9655 20 12 20C12.0345 20 12.1455 19.9866 12.2809 19.8066L13.6347 18.0069C13.9924 17.5377 14.555 17.2542 15.15 17.2542H15.6C17.2466 17.2542 18.2977 16.8444 18.944 16.2001C19.5896 15.5564 20 14.5101 20 12.8704V8.38385C20 6.74413 19.5896 5.69786 18.944 5.05413C18.2977 4.40984 17.2466 4 15.6 4H8.4C6.75339 4 5.70226 4.40984 5.05605 5.05413ZM3.64395 3.6378C4.79774 2.48746 6.44661 2 8.4 2H15.6C17.5534 2 19.2023 2.48746 20.356 3.6378C21.5104 4.78868 22 6.43433 22 8.38385V12.8704C22 14.8199 21.5104 16.4656 20.356 17.6164C19.2023 18.7668 17.5534 19.2542 15.6 19.2542H15.1991L13.8791 21.0089C13.4205 21.6186 12.7485 22 12 22C11.2515 22 10.5795 21.6186 10.1209 21.0089L8.80136 19.2549L8.80004 19.2542H8.4C6.58267 19.2542 4.89248 19.0451 3.69261 17.9983C2.45876 16.9219 2 15.2006 2 12.8704V8.38385C2 6.43433 2.48962 4.78868 3.64395 3.6378Z" fill="#878D9A" />
+        </svg>
+    </span>
+    <span>
+        F.A.Q
+    </span>
+</a>
+
+<div class="menuUserOptions">
+    <div class="topMenuItemBorder loginlogout">
+    <a class="topMenuItem topMenuItem--signup " href="/Account/Register">
+        <span>Попробовать сейчас</span>
+    </a>
+    <a class="topMenuItem topMenuItem--login " href="/Account/Login">
+        <span class="icon icon-enter"></span>
+        <span>Войти</span>
+    </a>
+</div>
+
+    <div class="topMenuItem topMenuItem--lang languageMenuItem">
+    <div class="lnagDeviceIcon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.6793 15.8521C12.8218 15.4695 12.7267 15.0389 12.4363 14.752L10.2465 12.588L10.278 12.5565C12.105 10.5195 13.407 8.178 14.1735 5.7H16.2C16.7799 5.7 17.25 5.2299 17.25 4.65C17.25 4.0701 16.7799 3.6 16.2 3.6H9.89995V2.55C9.89995 1.9701 9.42985 1.5 8.84995 1.5C8.27005 1.5 7.79995 1.9701 7.79995 2.55V3.6H1.49995C0.920051 3.6 0.449951 4.0701 0.449951 4.65C0.449951 5.2299 0.920052 5.7 1.49995 5.7H12.1785C11.475 7.716 10.362 9.6375 8.84995 11.3175C8.01123 10.3886 7.29645 9.38224 6.70561 8.32503C6.52723 8.00585 6.19448 7.8 5.82884 7.8C5.12235 7.8 4.65458 8.52717 4.99641 9.14546C5.66854 10.3612 6.49032 11.517 7.45345 12.588L2.86219 17.1161C2.44704 17.5256 2.44472 18.1948 2.85703 18.6071C3.26734 19.0174 3.93257 19.0174 4.34287 18.6071L8.84995 14.1L10.9735 16.2235C11.5077 16.7577 12.4155 16.5601 12.6793 15.8521ZM19.1936 10.8831C18.9719 10.2918 18.4065 9.9 17.775 9.9C17.1434 9.9 16.578 10.2918 16.3563 10.8831L12.4978 21.1723C12.2569 21.8147 12.7318 22.5 13.4179 22.5C13.828 22.5 14.1951 22.2453 14.3385 21.861L15.276 19.35H20.2635L21.21 21.8631C21.3544 22.2463 21.7211 22.5 22.1306 22.5C22.8173 22.5 23.2927 21.814 23.0516 21.171L19.1936 10.8831ZM16.074 17.25L17.775 12.7035L19.476 17.25H16.074Z" fill="white" />
+        </svg>
+    </div>
+    <div class="languageMenuItem__Text">Язык</div>
+    <div class="languageMenuItem__Dropdown dropdown">
+        <a class="languageMenuItem__ButtonDesktop dropdown-toggle" data-toggle="dropdown" wa-id="languageMenuItem__ButtonDesktop">
+            RU
+            <span class="icon-caret-down"></span>
+        </a>
+        <a class="languageMenuItem__ButtonMobile btn btn-default dropdown-toggle" data-toggle="dropdown" wa-id="languageMenuItem__ButtonMobile">
+            RU
+            <span class="icon-caret-down"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+                <a id="menuLang__RU">Русский</a>
+            </li>
+            <li>
+                <a id="menuLang__EN">English</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+</div>
+
+    </div>
+    <div class="topMenuLoginLogout">
+        
+            <a class="topMenuItem--play" href="https://play.myquiz.ru">
+                <span>Играть</span>
+            </a>
+    </div>
+    <div id="burger" class="burger">
+        <div class="burger__Stick burger__Stick--x "></div>
+        <div class="burger__Stick burger__Stick--y "></div>
+        <div class="burger__Stick burger__Stick--z "></div>
+    </div>
+    <div id="burger__Circle" class="burger__Circle"></div>
+</div>
+
+<script type="text/javascript">
+    var global_haveNotViewedBookmarks = false;
+    customizationManager.loadLogo(customizationStorageUrl);
+</script>
+
+
+
+    </div>
+
+
+    
+
+    <header>
+        <div class="mobile-menu-container">
+            <div id="sub-menu-container">
+                <div class="centered">
+                    
+                    
+
+<ul id="sub-menu"></ul>
+
+
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+<section id="body" class="">
+    
+<form action="/Image/Upload" enctype="multipart/form-data" id="imageUploadForm" method="post"></form>    
+
+<style>
+    #error-form {
+        display: table;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+    }
+
+    #error-container {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .error-item {
+        text-align: center;
+    }
+
+    #error-text {
+        position: relative;
+        font-size: 30px;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+        background: rgba(145,152,183,0.52);
+        color: #FFFFFF;
+        padding: 60px;
+        border-radius: 30px;
+        line-height: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    body {
+        height: 100%;
+        background: #f5f7fa;
+    }
+
+    #body {        
+        background: #5d6cd7;
+        position: relative;
+    }
+
+    #body::after {
+        content: '';
+        display: block;
+    }
+
+    
+
+    h1 {
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: bold;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+        color: #fff;
+        padding: 0 10px 15px;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 37px;
+        font-family: Roboto;
+        text-align: center;
+        color: #fff;
+        padding: 0 20px 15px;
+    }   
+
+    .img {
+        background: url(/app/images/home/error/404F.svg) no-repeat bottom/cover;        
+        margin-bottom: -3px;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+        opacity: 0;
+    }
+
+    .text404 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+           
+    }
+
+    .text404_desc {
+        padding-top: 50px;
+    }
+
+    @media (min-width: 1200px) {
+        #body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        #body {
+            display: flex;            
+        }
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+        h1 {
+            font-size: 36px;
+            line-height: 47px;
+        }
+        h2 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+    }
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+        h2 {
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+
+    
+</style>
+
+
+<div class="text404">
+    <div class="text404_desc">
+        <h1>Ошибка!</h1>
+        <h2>Извините, но искомая страница не найдена.</h2>
+    </div>
+    <div class="img">
+        <img src="/app/images/home/error/404F.svg" />
+    </div>
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#footer-container").addClass("footer-bottom");
+    });
+
+    $(document).ready(function () {
+        typeof Controls !== "undefined" && Controls.onShowFooter();
+
+        $(window).resize(function () {
+            typeof Controls !== "undefined" && Controls && Controls.onShowFooter();
+        });
+
+        //$('.accordion').click(function (e) {
+        //    e.stopPropagation();
+        //    if ($(this).parent().find('.panel').is(':visible')) {
+        //        $(this).removeClass('active');
+        //        $(this).parent().find('.panel').removeClass('show');
+        //    } else {
+        //        $(this).addClass('active');
+        //        $(this).parent().find('.panel').addClass('show');
+        //    }
+        //});
+    });
+</script>
+<footer class="footer ">
+    <div id="footer-container">
+        <div class="centered">
+            <div class="copyright">&copy; <a href="http://www.wave-access.com/">WaveAccess</a> - 2022</div>
+            <div class="privacy-policy">
+
+                Ознакомиться с условиями
+
+<a href="/user-agreement" target="_blank">пользовательского соглашения</a> и
+                <a href="/PrivacyPolicy" target="_blank">политикой конфиденциальности</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <div class="infoPopup blueBg" style="display: none;">
+        <div class="infoPopupInner">
+
+        </div>
+    </div>
+
+        <div class="popupWrapFixed1 popupWrapFixedCookies" id="agreeUseCookieModal">
+        <div class="popupContentCookies" style="display:none">
+            <div class="closePopupCookies close-navbar" id="agreeUseCookies"><span></span></div>
+            <div class="cookiesTextPopup">
+                Мы используем файлы cookie, чтобы вам было удобнее пользоваться нашим сайтом. Продолжая работу или нажав &#171;Принять&#187;, вы соглашаетесь с этим. Подробнее смотрите в нашей <a href="/privacypolicy" target="_blank">Политике Конфиденциальности.</a>
+            </div>
+            <button class="btn btn-primary accept-btn basicButton--start" id="agreeUseCookiesAccept">Принять</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-84536537-2', 'auto', {'allowLinker': true});
+ga('require', 'linker');
+ga('linker:autoLink', ['myquiz.ru'] );
+ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-275608-68pxa"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-275608-68pxa" style="position:fixed; left:-999px;" alt=""/></noscript>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MFNEK73JPE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MFNEK73JPE');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(83906830, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/83906830" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W2XWG4V');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2XWG4V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/app/dist/js/momentjs?ver=20220404.5.41829"></script>
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/Scripts/ion.calendar.js?ver=20220404.5.41829"></script>
+    
+    <script src="https://uv97gofhf5.a.trbcdn.net/Scripts/Plugins/ConnectionSpeed/lib/require/require.js?ver=20220404.5.41829"></script>
+
+    <script src="https://uv97gofhf5.a.trbcdn.net/Scripts/Plugins/ConnectionSpeed/lib/require/require-config.js?ver=20220404.5.41829"></script>
+
+</body>
+</html>

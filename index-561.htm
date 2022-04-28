@@ -1,0 +1,983 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="robots" content="index, follow" />
+	<title>Частный интерес</title>
+
+	<link rel="shortcut" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link href="" type="text/css" rel="stylesheet" />
+	<link href="/js/css/lightbox.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>	
+	<script src="/js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="/js/jquery.smooth-scroll.min.js"></script>
+	<script src="/js/lightbox.js"></script>
+
+	<!-- the mousewheel plugin -->
+	<script type="text/javascript" src="/bitrix/templates/chaint/js/jquery.mousewheel.js"></script>
+	<!-- the jScrollPane script -->
+	<script type="text/javascript" src="/bitrix/templates/chaint/js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" id="sourcecode">
+	$(function(){
+		$('.rules-btn').click(function(){
+			$('.submitform').show();
+			$('.text-rules').hide();
+		});
+
+		$('#play').bind(
+			'click',
+			function(){
+				if (fl){
+					$('#play').css('background', 'url("/bitrix/templates/chaint/images/play.png")');
+					fl = false;
+				} else {
+					$('#play').css('background', 'url("/bitrix/templates/chaint/images/stop.png")');
+					fl = true;
+				}
+			}
+		);
+
+	});
+	</script>
+
+<link href="/bitrix/js/main/core/css/core.css?14503330383963" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/socialservices/css/ss.css?14623595435037" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/core/css/core_popup.css?154279796217570" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/news.list/main/style.css?1361724449108" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/main-other/style.css?1361726916105" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/system.auth.form/.default/style.css?1360221605442" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/panel/main/popup.css?146235943623084" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/system.auth.form/aut/style.css?1360221865442" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/menu/top-menu/style.css?1360221592626" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/components/bbutterfly/dinamicnews/templates/.default/style.css?1369714838613" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/allnew/style.css?1361768067105" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/photo-nopla/style.css?1369906082106" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/sec-news/style.css?1360493631105" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.bxslider.css?14346110173608" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/.default/components/web360/composit.slider/slider/style.css?1486714343248" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/menu/bottom-menu/style.css?1360221593626" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/template_styles.css?161475045136904" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1651083011','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'da305d6d9d04f44b2c3e1906112e37d6'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.js?1542798362121730"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_promise.js?15427980645265"></script>
+<script type="text/javascript" src="/bitrix/js/main/polyfill/promise/js/promise.js?15427980578241"></script>
+<script type="text/javascript" src="/bitrix/js/main/loadext/loadext.js?15427983622917"></script>
+<script type="text/javascript" src="/bitrix/js/main/loadext/extension.js?15427983622895"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_db.js?153295294720929"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?154279806441531"></script>
+<script type="text/javascript" src="/bitrix/js/main/json/json2.min.js?13602216283467"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ls.js?145033304110430"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_fx.js?153295280116888"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.js?154279799917797"></script>
+<script type="text/javascript" src="/bitrix/js/socialservices/ss.js?13602216351419"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_window.js?154279836297989"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_popup.js?153295294970773"></script>
+<script type="text/javascript" src="/bitrix/js/main/jquery/jquery-1.8.3.min.js?153295293493637"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="BITRIX_SM_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+
+
+
+<script type="text/javascript" src="/bitrix/components/bbutterfly/dinamicnews/templates/.default/script.js?1365071571554"></script>
+<script type="text/javascript" src="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.bxslider.js?143461101749284"></script>
+<script type="text/javascript" src="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.easing.1.3.js?14346110178097"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "32ae414da52ad5b4b16169138be6103f"]); _ba.push(["host", "chaint.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<link href="/bitrix/js/main/core/css/core.css?14503330383963" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/socialservices/css/ss.css?14623595435037" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/core/css/core_popup.css?154279796217570" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/news.list/main/style.css?1361724449108" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/main-other/style.css?1361726916105" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/system.auth.form/.default/style.css?1360221605442" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/panel/main/popup.css?146235943623084" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/system.auth.form/aut/style.css?1360221865442" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/menu/top-menu/style.css?1360221592626" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/components/bbutterfly/dinamicnews/templates/.default/style.css?1369714838613" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/allnew/style.css?1361768067105" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/photo-nopla/style.css?1369906082106" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/sec-news/style.css?1360493631105" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.bxslider.css?14346110173608" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/.default/components/web360/composit.slider/slider/style.css?1486714343248" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/menu/bottom-menu/style.css?1360221593626" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/template_styles.css?161475045136904" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript" src="/bitrix/components/bbutterfly/dinamicnews/templates/.default/script.js?1365071571554"></script>
+<script type="text/javascript" src="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.bxslider.js?143461101749284"></script>
+<script type="text/javascript" src="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.easing.1.3.js?14346110178097"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "32ae414da52ad5b4b16169138be6103f"]); _ba.push(["host", "chaint.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+
+<!--[if lte IE 6]>
+	<script type="text/javascript" src="/bitrix/templates/chaint/js/pngfix.js"></script>
+	<script type="text/javascript">if (document.all) {DD_belatedPNG.fix('img, div, ul, li, a, div img');}</script>
+<![endif]-->
+<!--[if lte IE 6]><link href="/bitrix/templates/chaint/styleie.css" type="text/css" rel="stylesheet" /><![endif]-->
+<!--[if IE 7]><link href="/bitrix/templates/chaint/styleie7.css" type="text/css" rel="stylesheet" /><![endif]-->
+<!--[if lte IE 7]>
+	<script type="text/javascript" src="/bitrix/templates/chaint/js/roundie.js"></script>
+	<script type="text/javascript">
+		if (document.all) {
+			DD_roundies.addRule('.someelmt', '6.9px');
+		}
+	</script>
+<![endif]-->
+
+<script type="text/javascript" src="/bitrix/templates/chaint/js/user.js"></script>
+<script type="text/javascript" src="/bitrix/templates/chaint/js/main.js"></script>
+<!-- <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=ru"></script> -->
+<script async type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcoTlIaAAAAANiEYFHfG-I8h5_0pvj8j1XKHoXq"></script>
+
+<script type="text/javascript" src="/bitrix/templates/chaint/js/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/bitrix/templates/chaint/js/tango/skin.css" />
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+	function mycarousel_initCallback(carousel) {
+		jQuery('#right-arrow').bind('click', function() {
+			carousel.next();
+			return false;
+		});
+
+		jQuery('#left-arrow').bind('click', function() {
+			carousel.prev();
+			return false;
+		});
+		
+		// Pause autoscrolling if the user moves with the cursor over the clip.
+		carousel.clip.hover(function() {
+			carousel.stopAuto();
+		}, function() {
+			carousel.startAuto();
+		});
+		
+	};
+    jQuery('#mycarousel').jcarousel({
+	 scroll: 1,
+	 wrap: 'circular'
+	});
+	jQuery('#mycarousel2').jcarousel({
+	        scroll: 1,
+			auto: 3,
+			wrap: 'circular',
+        initCallback: mycarousel_initCallback,
+        // This tells jCarousel NOT to autobuild prev/next buttons
+        buttonNextHTML: null,
+        buttonPrevHTML: null
+	});
+});
+</script>
+<meta name="google-site-verification" content="5dq7bzm8OrpBH4HO7PdvP6oDx7a0nvTKBksQ1hAS40M" />
+</head>
+
+<body><style type="text/css" id="page-css">
+	/* Styles specific to this particular page */
+	.scroll-pane
+	{
+		width: 100%;
+		height: 120px;
+		overflow: auto;
+	}
+	.horizontal-only
+	{
+		height: auto;
+		max-height: 200px;
+	}
+</style>
+
+<div id="top-b">
+<p style="text-align: center;"></p></div>
+<div class="wrapper-wide green-bg">
+<div id="header">
+<div id="logo">
+<a href="/"><img src="/bitrix/templates/chaint/images/logo_new.png"></a></div>
+<a id="ad_button" href="/submit-ad/"></a>
+<script>
+var bxAuthWnd = false;
+function BxShowAuthFloat2(id, suffix)
+{
+	var bCreated = false;
+	if(!bxAuthWnd)
+	{
+		bxAuthWnd = new BX.CDialog({
+			'content':'<div id="bx_auth_float_container"></div>', 
+			'width': 250,
+			'height': 210,
+			'resizable': false
+		});
+		bCreated = true;
+	}
+	bxAuthWnd.Show();
+
+	if(bCreated)
+		BX('bx_auth_float_container').appendChild(BX('bx_auth_floata'));
+			
+}
+</script>
+
+
+<div class="bx-auth-serv-icons">
+	<a title="Одноклассники" href="javascript:void(0)" onclick="BxShowAuthFloat('Odnoklassniki', 'form')"><i class="bx-ss-icon odnoklassniki"></i></a>
+	<a title="Google" href="javascript:void(0)" onclick="BxShowAuthFloat('GoogleOAuth', 'form')"><i class="bx-ss-icon google"></i></a>
+	<a title="ВКонтакте" href="javascript:void(0)" onclick="BxShowAuthFloat('VKontakte', 'form')"><i class="bx-ss-icon vkontakte"></i></a>
+	<a title="Twitter" href="javascript:void(0)" onclick="BxShowAuthFloat('Twitter', 'form')"><i class="bx-ss-icon twitter"></i></a>
+	<a title="Facebook" href="javascript:void(0)" onclick="BxShowAuthFloat('Facebook', 'form')"><i class="bx-ss-icon facebook"></i></a>
+	<a title="Mail.Ru" href="javascript:void(0)" onclick="BxShowAuthFloat('MailRuOpenID', 'form')"><i class="bx-ss-icon openid-mail-ru"></i></a>
+</div>
+<div style="display:none">
+<div id="bx_auth_float" class="bx-auth-float">
+
+<div class="bx-auth">
+	<form method="post" name="bx_auth_servicesform" target="_top" action="/?login=yes">
+					<div class="bx-auth-title">Войти как пользователь</div>
+			<div class="bx-auth-note">Вы можете войти на сайт, если вы зарегистрированы на одном из этих сервисов:</div>
+							<div class="bx-auth-services">
+									<div><a href="javascript:void(0)" onclick="BxShowAuthService('Odnoklassniki', 'form')" id="bx_auth_href_formOdnoklassniki"><i class="bx-ss-icon odnoklassniki"></i><b>Одноклассники</b></a></div>
+									<div><a href="javascript:void(0)" onclick="BxShowAuthService('GoogleOAuth', 'form')" id="bx_auth_href_formGoogleOAuth"><i class="bx-ss-icon google"></i><b>Google</b></a></div>
+									<div><a href="javascript:void(0)" onclick="BxShowAuthService('VKontakte', 'form')" id="bx_auth_href_formVKontakte"><i class="bx-ss-icon vkontakte"></i><b>ВКонтакте</b></a></div>
+									<div><a href="javascript:void(0)" onclick="BxShowAuthService('Twitter', 'form')" id="bx_auth_href_formTwitter"><i class="bx-ss-icon twitter"></i><b>Twitter</b></a></div>
+									<div><a href="javascript:void(0)" onclick="BxShowAuthService('Facebook', 'form')" id="bx_auth_href_formFacebook"><i class="bx-ss-icon facebook"></i><b>Facebook</b></a></div>
+									<div><a href="javascript:void(0)" onclick="BxShowAuthService('MailRuOpenID', 'form')" id="bx_auth_href_formMailRuOpenID"><i class="bx-ss-icon openid-mail-ru"></i><b>Mail.Ru</b></a></div>
+							</div>
+							<div class="bx-auth-line"></div>
+				<div class="bx-auth-service-form" id="bx_auth_servform" style="display:none">
+												<div id="bx_auth_serv_formOdnoklassniki" style="display:none"><a href="javascript:void(0)" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=163998464&amp;redirect_uri=https%3A%2F%2Fchaint.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252F%253Fcheck_key%253De098f23f19ad77f51f3a8feebc30d842%26redirect_url%3D%252F%26mode%3Dopener', 580, 400)" class="bx-ss-button odnoklassniki-button"></a><span class="bx-spacer"></span><span>Используйте вашу учетную запись Odnoklassniki.ru для входа на сайт.</span></div>
+																<div id="bx_auth_serv_formGoogleOAuth" style="display:none"><a href="javascript:void(0)" onclick="BX.util.popup('https://accounts.google.com/o/oauth2/auth?client_id=751280380251-guk1dt1ao0fijq93qs6jq7h6hd0loo8m.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fchaint.ru%2Fbitrix%2Ftools%2Foauth%2Fgoogle.php&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;response_type=code&amp;access_type=offline&amp;state=provider%3DGoogleOAuth%26site_id%3Ds1%26backurl%3D%252F%253Fcheck_key%253De098f23f19ad77f51f3a8feebc30d842%26mode%3Dopener%26redirect_url%3D%252F', 580, 400)" class="bx-ss-button google-button"></a><span class="bx-spacer"></span><span>Используйте вашу учетную запись Google для входа на сайт.</span></div>
+																<div id="bx_auth_serv_formVKontakte" style="display:none"><a href="javascript:void(0)" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6419663&amp;redirect_uri=https%3A%2F%2Fchaint.ru%2F%3Fauth_service_id%3DVKontakte&amp;scope=friends,offline,email&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252F%253Fcheck_key%253De098f23f19ad77f51f3a8feebc30d842%26redirect_url%3D%252F', 660, 425)" class="bx-ss-button vkontakte-button"></a><span class="bx-spacer"></span><span>Используйте вашу учетную запись VKontakte для входа на сайт.</span></div>
+																<div id="bx_auth_serv_formTwitter" style="display:none"><a href="javascript:void(0)" onclick="BX.util.popup('/bitrix/tools/oauth/twitter.php?check_key=e098f23f19ad77f51f3a8feebc30d842&amp;backurl=%252F', 800, 450)" class="bx-ss-button twitter-button"></a><span class="bx-spacer"></span><span>Используйте вашу учетную запись на Twitter.com для входа на сайт.</span></div>
+																<div id="bx_auth_serv_formFacebook" style="display:none"><a href="javascript:void(0)" onclick="BX.util.popup('https://www.facebook.com/dialog/oauth?client_id=161774024537599&amp;redirect_uri=https%3A%2F%2Fchaint.ru%2Fbitrix%2Ftools%2Foauth%2Ffacebook.php&amp;scope=email,user_friends&amp;display=popup&amp;state=site_id%3Ds1%26backurl%3D%252F%253Fcheck_key%253De098f23f19ad77f51f3a8feebc30d842%26redirect_url%3D%252F', 580, 400)" class="bx-ss-button facebook-button"></a><span class="bx-spacer"></span><span>Используйте вашу учетную запись на Facebook.com для входа на сайт.</span></div>
+																<div id="bx_auth_serv_formMailRuOpenID" style="display:none">
+<span class="bx-ss-icon openid-mail-ru"></span>
+<input type="text" name="OPENID_IDENTITY_MAILRU" value="" size="20" />
+<span>@mail.ru</span>
+<input type="hidden" name="sessid" id="sessid" value="da305d6d9d04f44b2c3e1906112e37d6" />
+<input type="hidden" name="auth_service_error" value="" />
+<input type="submit" class="button" name="" value="Войти" />
+</div>
+									</div>
+				<input type="hidden" name="auth_service_id" value="" />
+	</form>
+</div>
+
+</div>
+</div>
+
+<div id="login">
+	<a href="javascript:void(0)" onclick="BxShowAuthFloat2('1', '1')">Вход</a> | 
+</div>
+<div style="display:none">
+<div id="bx_auth_floata" class="bx-auth-float">
+	
+<div class="bx-system-auth-form">
+
+
+<form name="system_auth_formPqgS8z" method="post" target="_top" action="/?login=yes">
+	<input type="hidden" name="backurl" value="/" />
+	<input type="hidden" name="AUTH_FORM" value="Y" />
+	<input type="hidden" name="TYPE" value="AUTH" />
+	<table width="95%">
+		<tr>
+			<td colspan="2">
+			Логин:<br />
+			<input type="text" name="USER_LOGIN" maxlength="50" value="" size="17" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			Пароль:<br />
+			<input type="password" name="USER_PASSWORD" maxlength="50" size="17" />
+			</td>
+		</tr>
+		<tr>
+			<td valign="top"><input type="checkbox" id="USER_REMEMBER_frm" name="USER_REMEMBER" value="Y" /></td>
+			<td width="100%"><label for="USER_REMEMBER_frm" title="Запомнить меня на этом компьютере">Запомнить меня</label></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" name="Login" value="Войти" /></td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><noindex><a href="/?forgot_password=yes&amp;backurl=%2F" rel="nofollow">Забыли свой пароль?</a></noindex></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				
+
+			</td>
+		</tr>
+	</table>
+</form>
+
+
+</div></div>
+</div>
+<div id="search">
+<form action="/search/index.php">
+<input type="text" name="q" value="Поиск по теме / имени" onblur="if(this.value=='') {this.value='Поиск по теме / имени';}" onfocus="if(this.value=='Поиск по теме / имени') { this.value=''; } " /></form>
+</div></div>
+</div>
+<div id="wrapper">
+	<div id="left-menu">
+	
+<ul>
+
+			<li><a href="/news/84/">Новости</a></li>
+		
+			<li><a href="/news/107/">В фокусе</a></li>
+		
+			<li><a href="/news/102/">Актуально</a></li>
+		
+			<li><a href="/news/103/">Репортаж</a></li>
+		
+			<li><a href="/news/87/">Правопорядок</a></li>
+		
+			<li><a href="/sos-sms/">SOS/SMS</a></li>
+		
+			<li><a href="/news/105/">Интервью</a></li>
+		
+			<li><a href="/news/89/">Персона</a></li>
+		
+			<li><a href="/news/139/">Вопрос недели</a></li>
+		
+			<li><a href="/news/86/">Спорт</a></li>
+		
+			<li><a href="/news/85/">Культура</a></li>
+		
+			<li><a href="/news/90/">Поколение NEXT</a></li>
+		
+			<li><a href="/news/95/">Мир детства</a></li>
+		
+			<li><a href="/news/93/">Преодоление</a></li>
+		
+			<li><a href="/news/106/">Протяни руку помощи!</a></li>
+		
+			<li><a href="/news/136/">Проза</a></li>
+		
+			<li><a href="/news/78/">Плетение словес</a></li>
+		
+			<li><a href="/news/453/">Вопрос-Ответ</a></li>
+		
+			<li><a href="/news/133/">Фотоконкурс</a></li>
+		
+
+</ul>
+	</div>
+
+<div id="menu">
+
+	 <a href="/" class="selected">Главная</a>&nbsp;|		
+	<a href="/news/">Все новости</a>&nbsp;|		
+	<a href="/gallery/">Галерея</a>&nbsp;|		
+	<a href="/advertising-department/">Рекламный отдел</a>&nbsp;|		
+	<a href="/contacts/">Контакты</a>&nbsp;|		
+	<a href="/download-newspapers/">Скачать газету</a>&nbsp;|		
+	<a href="/submit-ad/">Подать объявление</a>		
+
+</div>
+<div id="content">
+<div id="leftside">
+
+<div id="news">
+<div id="left-news">
+	<p>
+ <br>
+	</p>
+	  	
+	<h4>
+						<a href="/news/79/58971/"><b>Читайте в свежем выпуске еженедельника «Частный Интерес»</b></a><br />
+				</h4>
+	<div class="rub">Рубрика:
+				<a href="/news/79/">Новости сайта</a>
+	</div>
+	<div class="date">
+		Четверг,21 Апреля 2022	</div>
+						<a href="/news/79/58971/">
+			<img class="preview_picture" border="0" src="/upload/iblock/09b/09b723e213d6de72ab7d7cc49588de53.jpg" width="335" height="463.1375" alt="Читайте в свежем выпуске еженедельника «Частный Интерес»" title="Читайте в свежем выпуске еженедельника «Частный Интерес»" style="float:left"/>
+			</a>
+				<div class="left-news-text" style="clear:both;">
+			</div>
+	
+		<div class="comment"><a href="/news/79/58971/#form-reply">Добавить комментарий</a></div>
+
+	
+	<td><div class="news-bottom9"><td></td></div></td><td></td>
+	
+	<h4>
+						<a href="/news/79/58950/"><b>Читайте в свежем выпуске еженедельника «Частный Интерес»</b></a><br />
+				</h4>
+	<div class="rub">Рубрика:
+				<a href="/news/79/">Новости сайта</a>
+	</div>
+	<div class="date">
+		Четверг,14 Апреля 2022	</div>
+						<a href="/news/79/58950/">
+			<img class="preview_picture" border="0" src="/upload/iblock/d3a/d3af2bc0f78674231a1e7e0027e96dd1.jpg" width="335" height="463.1375" alt="Читайте в свежем выпуске еженедельника «Частный Интерес»" title="Читайте в свежем выпуске еженедельника «Частный Интерес»" style="float:left"/>
+			</a>
+				<div class="left-news-text" style="clear:both;">
+			</div>
+	
+		<div class="comment"><a href="/news/79/58950/#form-reply">Добавить комментарий</a></div>
+
+	
+	<td><div class="news-bottom9"><td></td></div></td><td></td>
+</div>
+<div id="right-news">
+	  						
+<div class="news-elem" id="bx_3966226736_59007">
+<div class="news-img">
+
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/3d2/3d2cf90910d75976389044c493f20e84.jpg" width=" 150.21459227468" height="100"/>
+</div>
+</div>
+	<div class="news-elem-text" style="text-align: justify;">
+<a  href="/news/79/59007/"><p>МегаФон анонсировал новый проект с Узбекистаном</p>
+						МегаФон, Digital Holding и Государственный комитет Республики Узбекистан по автомобильным дорогам подписали меморандум о сотрудничестве в области цифровой трансформации дорожно-транспортной отрасли </a>
+						<br/><br/><span>Среда, 27 апреля 2022</span>
+																		
+</div>				
+			
+	</div>					
+						
+<div class="news-elem" id="bx_3966226736_59006">
+<div class="news-img">
+
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/61c/61c56564de0520f5adfa22fb6330bb43.jpg" width=" 185.18518518519" height="100"/>
+</div>
+</div>
+	<div class="news-elem-text" style="text-align: justify;">
+<a  href="/news/79/59006/"><p>Наследники Победы</p>
+						Для жителей Чайковского готовится специальный проект, посвящённый 77-й годовщине Великой Победы</a>
+						<br/><br/><span>Среда, 27 апреля 2022</span>
+																		
+</div>				
+			
+	</div>					
+						
+<div class="news-elem" id="bx_3966226736_59005">
+<div class="news-img">
+
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/5a1/5a100a49f4f19d5efae18af7f275d8d8.jpg" width=" 133.58778625954" height="100"/>
+</div>
+</div>
+	<div class="news-elem-text" style="text-align: justify;">
+<a  href="/news/79/59005/"><p>Поговорить по душам можно в кинозале</p>
+						Жители Сосново стали чаще ходить в кино. В селе успешно работает социальный кинозал. А его руководитель Николай Шутов знает, как сделать вечер в сельском клубе интересным</a>
+						<br/><br/><span>Среда, 27 апреля 2022</span>
+																		
+</div>				
+			
+	</div>					
+						
+<div class="news-elem" id="bx_3966226736_59004">
+<div class="news-img">
+
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/b27/b2754a5832c5d71e04f177cb944b0fe7.jpg" width="100" height=" 102.94117647059"/>
+</div>
+</div>
+	<div class="news-elem-text" style="text-align: justify;">
+<a  href="/news/79/59004/"><p>«Дни Турбиных» покажут в Чайковском</p>
+						Труппа чайковского драмтеатра работает над новой постановкой по пьесе Михаила Булгакова «Дни Турбиных»</a>
+						<br/><br/><span>Среда, 27 апреля 2022</span>
+																		
+</div>				
+			
+	</div>					
+						
+<div class="news-elem" id="bx_3966226736_59003">
+<div class="news-img">
+
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/01f/01f0b5e1c32ed6eab68d12af2b01c845.png" width=" 210.84337349398" height="100"/>
+</div>
+</div>
+	<div class="news-elem-text" style="text-align: justify;">
+<a  href="/news/79/59003/"><p>Мошенники научились клонировать приложения банков, попавших под санкции</p>
+						Мобильные приложения многих российских банков, которые попали под санкции западных стран, исчезли из официальных интернет-магазинов приложений, чем успели воспользоваться мошенники: они разрабатывают </a>
+						<br/><br/><span>Среда, 27 апреля 2022</span>
+																		
+</div>				
+			
+	</div>					
+						
+<div class="news-elem" id="bx_3966226736_59002">
+<div class="news-img">
+
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/5b3/5b38a6e745b8976e0590a37afdb26256.jpg" width=" 150.21459227468" height="100"/>
+</div>
+</div>
+	<div class="news-elem-text" style="text-align: justify;">
+<a  href="/news/79/59002/"><p>Глава округа отчитается перед депутатами и жителями</p>
+						На апрельском заседании гордумы депутаты назначили дату ежегодного отчёта главы округа о результатах его деятельности и деятельности администрации</a>
+						<br/><br/><span>Среда, 27 апреля 2022</span>
+																		
+</div>				
+			
+	</div>					
+						
+<div class="news-elem" id="bx_3966226736_59001">
+<div class="news-img">
+
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/a6d/a6d8db38c2077143ff79b0d8eb424d51.jpg" width=" 150.21459227468" height="100"/>
+</div>
+</div>
+	<div class="news-elem-text" style="text-align: justify;">
+<a  href="/news/79/59001/"><p>За что могут оштрафовать дачников в 2022 году</p>
+						Мусор на участке, непрополотые сорняки, шашлыки и колодцы без сертификата – всё это может стать причиной штрафов до 50 тыс. руб. Многие дачники даже не подозревают, что ежедневно нарушают закон. Расск</a>
+						<br/><br/><span>Среда, 27 апреля 2022</span>
+																		
+</div>				
+			
+	</div>					
+						
+<div class="news-elem" id="bx_3966226736_58999">
+<div class="news-img">
+
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/9de/9defe71862d73c964becb39b300bbd59.jpg" width="100" height=" 100.28653295129"/>
+</div>
+</div>
+	<div class="news-elem-text" style="text-align: justify;">
+<a  href="/news/79/58999/"><p>Вахта памяти</p>
+						Жителей Чайковского округа приглашают принять участие в акции «Вахта памяти»</a>
+						<br/><br/><span>Вторник, 26 апреля 2022</span>
+																		
+</div>				
+			
+	</div>					
+		
+</div></div>
+<table width="706" height="20" cellpadding="0" cellspacing="0" style="display:none;">
+<tbody>
+<tr>
+	<td>
+ <img width="729" alt="sos/cmc" src="/upload/medialibrary/0aa/0aafb84e0b26e74b3a8b8d32b8d7a417.jpg" height="32" title="sos/cmc" border="0" align="bottom" hspace="0">
+	</td>
+</tr>
+<tr>
+	<td>
+		 <ul id="listticker">
+	 		<li>
+			<img style="max-width: 50px; max-height: 50px;" src="" />
+			<a href="/sos-sms/52572/" class="news-title">подарили праздник?</a>
+			<span class="news-text">«Накануне Дня пожилого человека по всему городу было объявлено о том, что 1 октября пенсионеры смогут совершить бесплатные поездки на общественном транспорте. Но многие, сев в автобус, были неприятно удивлены требованием кондуктора оплатить проезд. К...</span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="" />
+			<a href="/sos-sms/52486/" class="news-title">Такой букет нам ненужен... отдай кому хочешь!</a>
+			<span class="news-text">«Говорят, лучший подарок – это цветы. И, сколько себя помню, Первого сентября все школьники идут на торжественную линейку с цветами. Кто – со скромными букетиками с собственного огорода, кто – с огромными букетами роз, купленными в специализированных...</span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="" />
+			<a href="/sos-sms/52485/" class="news-title">безалаберные личности </a>
+			<span class="news-text">«Не в первый раз становлюсь невольным свидетелем того, как в торговых центрах теряются дети, а их родителям нет до этого никакого дела – видимо, обилие товаров сносит «крышу». Например, сегодня &#40;30 августа&#41; в ТК «Акварель» из дверей одного из...</span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="/upload/iblock/5a1/5a1a8e23833573692e12f0fdab6a54e9.JPG" />
+			<a href="/sos-sms/52467/" class="news-title">&quot;И так сойдет!&quot;</a>
+			<span class="news-text">В субботу, проходя мимо приемного покоя, заметила, что там начался ямочный ремонт. На радостях я даже сфотографировала свежее покрытие – наконец-то здесь можно будет спокойно ездить! Но радоваться пришлось совсем недолго: на следующий день – в воскре...</span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="/upload/iblock/281/281c5936bc005291d86f967a504eedcf.jpg" />
+			<a href="/sos-sms/52351/" class="news-title">«Фестивальная»</a>
+			<span class="news-text">«Утром 7 июля я проходила мимо обновленной площадки «Фестивальная», открывшейся 4 июля, и была поражена, увидев на ней буквально кучи мусора. Такой беспорядок я наблюдала здесь впервые. Считаю, что следить за чистотой должны все, кто посещает эту пло...</span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="" />
+			<a href="/sos-sms/52213/" class="news-title">«Газель» завалила сразу два контейнера</a>
+			<span class="news-text">«По какому праву индивидуальные предприниматели выбрасывают свой мусор в контейнеры, установленные во дворах домов?</span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="/upload/iblock/9c8/9c882e5987bad612e67227246dadc2d8.jpg" />
+			<a href="/sos-sms/52149/" class="news-title">Наши дороги </a>
+			<span class="news-text">«Наши дороги находятся в настолько отвратительном состоянии, что вечером 12 апреля мой автомобиль в буквальном смысле слова провалился в яму! </span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="/upload/iblock/059/0597e8579d6c57faee933b010e27b945.jpg" />
+			<a href="/sos-sms/52110/" class="news-title">&quot;Обращаюсь к народным избранникам...&quot;</a>
+			<span class="news-text">«Обращаюсь к народным избранникам, кои считают себя властью. На протяжении многих лет участок территории между ул. Строительной и родником у хлебозавода являет собой печальное зрелище.</span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="" />
+			<a href="/sos-sms/52096/" class="news-title">Тараканы в садике</a>
+			<span class="news-text">«Я вожу своего ребенка в один из детских садов нашего города. И уже в который раз замечаю, что по дошкольному учреждению в открытую «прогуливаются» тараканы. </span>
+		</li>
+			<li>
+			<img style="max-width: 50px; max-height: 50px;" src="/upload/iblock/09c/09ccd5d813700b3ce0d500a94f8e7589.jpg" />
+			<a href="/sos-sms/52040/" class="news-title">Двойные квитанции</a>
+			<span class="news-text">«8 марта, зайдя в подъезд, я увидела у почтовых ящиков слегка разворошенную стопку квитанций по оплате коммунальных услуг. </span>
+		</li>
+			
+</ul>	</td>
+</tr>
+</tbody>
+</table>
+
+
+<div id="other-left">
+<div class="news-head-left"></div><div class="news-head">Авторские статьи</div>
+<div class="news-content">
+
+				
+<div class="news-item" id="bx_1970176138_58969">
+<div class="news-img">
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/b82/b82eb040a72333b5a29ab73cc229da63.jpg" width=" 178.57142857143" height="100"/>
+</div>
+</div>
+<div class="news-text">
+<a  href="/news/80/58969/"><p>Возвращая к жизни </p>
+						Отделению анестезиологии и реанимации Чайковской ЦГБ – 45 лет</a>
+						<br/><br/><span>Среда, 20 апреля 2022</span>
+
+		<br />						
+</div>					
+	</div>					
+				
+<div class="news-item" id="bx_1970176138_58934">
+<div class="news-img">
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/31c/31cd848b62fa3c53917df3265e65f1b2.jpg" width=" 160.5504587156" height="100"/>
+</div>
+</div>
+<div class="news-text">
+<a  href="/news/80/58934/"><p>Про юный город Чайковский и большие надежды</p>
+						Пятого апреля наш город встретил свой 66-й день рождения. А каким был город в младенческом возрасте? С этим вопросом мы обратились к Давиду Фроимовичу Волку – коренному чайковцу, почётному жителю горо</a>
+						<br/><br/><span>Пятница, 08 апреля 2022</span>
+
+		<br />						
+</div>					
+	</div>					
+				
+<div class="news-item" id="bx_1970176138_58923">
+<div class="news-img">
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/be2/be2dda767a41ea38fe479018299e7b6c.jpg" width=" 169.90291262136" height="100"/>
+</div>
+</div>
+<div class="news-text">
+<a  href="/news/80/58923/"><p>В ряды игроков КВН вступили малыши</p>
+						В Чайковском есть команда КВНщиков-дошколят. Она пока единственная в Пермском крае</a>
+						<br/><br/><span>Среда, 06 апреля 2022</span>
+
+		<br />						
+</div>					
+	</div>					
+				
+<div class="news-item" id="bx_1970176138_58920">
+<div class="news-img">
+<div style="width: 100px; height: 100px; overflow: hidden;">
+<img border="0" src="/upload/iblock/d3c/d3c73471f0ca7a115929706e99466b41.jpg" width=" 150.21459227468" height="100"/>
+</div>
+</div>
+<div class="news-text">
+<a  href="/news/80/58920/"><p>Приют для собак организовали лишь на бумаге</p>
+						Строительства приюта для безнадзорных животных чайковцам в ближайшие годы, видимо, не дождаться. Хотя проектно-сметная документация на него уже готова. Вопрос обсудили на прошедшем мартовском заседани</a>
+						<br/><br/><span>Вторник, 05 апреля 2022</span>
+
+		<br />						
+</div>					
+	</div>					
+		</div>
+</div>
+
+<div id="other-right">
+
+<div class="news-head-left-2"></div><div class="news-head-2">Интервью</div>
+
+<div id="photo">
+						<p id="bx_40480796_58932" style="margin-bottom: 10px;">
+			<a href="/news/2543/58932/"><center><h3>Александр Карелин: «Будь сильным!»</h3></center></a>
+					
+						<a href="/news/2543/58932/"><img border="0" src="/upload/iblock/cc4/cc4abbfb20509eaaefe201fe5d3eae0c.jpg" width="215" height="317.51054852321" alt="Александр Карелин: «Будь сильным!»" title="Александр Карелин: «Будь сильным!»" /></a><br />
+
+					
+
+
+						<br />
+
+
+
+
+
+						Девиз известного во всём мире российского спортсмена Александра Карелина очень простой – «Будь сильным!» И он ему полностью соответствует. В этом убедился и «Частный Интерес», пообщавшись с легендарным спортсменом
+
+
+
+
+
+			</p>
+		
+		
+</div>
+
+
+
+<div class="news-bottom"><a href="/news/2543/"> Все новости</a></div>
+
+<div class="news-head-left-2"></div><div class="news-head-3">Другие новости:</div>
+<div class="news-center" style="text-align: justify;">
+						
+
+<a id="bx_2618107327_56833" href="/news/2546/56833/"><p>Для безработных граждан сохраняется право  досрочного выхода на пенсию </p>
+					
+						Пенсия может быть назначена по предложению службы занятости не ранее чем за два года до наступления </a>
+								</div>
+
+<div class="news-bottom2"><a href="/news/2546/"> Все новости</a></div>
+
+</div>
+<div style="clear: both;">
+
+
+</div>
+</div>
+<div id="rightside">
+
+
+<table width="240" cellpadding="0" cellspacing="0" style="text-align: center;">
+<tbody>
+<tr>
+	<td style="text-align: center;">
+		 <link href="/bitrix/js/main/core/css/core.css?14503330383963" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/socialservices/css/ss.css?14623595435037" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/core/css/core_popup.css?154279796217570" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/news.list/main/style.css?1361724449108" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/main-other/style.css?1361726916105" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/system.auth.form/.default/style.css?1360221605442" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/panel/main/popup.css?146235943623084" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/system.auth.form/aut/style.css?1360221865442" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/menu/top-menu/style.css?1360221592626" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/components/bbutterfly/dinamicnews/templates/.default/style.css?1369714838613" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/allnew/style.css?1361768067105" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/photo-nopla/style.css?1369906082106" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/catalog.section/sec-news/style.css?1360493631105" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.bxslider.css?14346110173608" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/.default/components/web360/composit.slider/slider/style.css?1486714343248" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/components/bitrix/menu/bottom-menu/style.css?1360221593626" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/chaint/template_styles.css?161475045136904" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript" src="/bitrix/components/bbutterfly/dinamicnews/templates/.default/script.js?1365071571554"></script>
+<script type="text/javascript" src="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.bxslider.js?143461101749284"></script>
+<script type="text/javascript" src="/bitrix/components/web360/composit.slider/jquery/bxSlider/jquery.easing.1.3.js?14346110178097"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "32ae414da52ad5b4b16169138be6103f"]); _ba.push(["host", "chaint.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+
+<script>
+$(document).ready(function(){
+	$('.bxslider').bxSlider(
+	{
+		slideMargin: 0,		//расстояние между слайдами
+		pager: false,						//выводим нижнюю навиигацию
+		controls: false, 						//выводим стрелочки
+		speed: 2000,		//скорость пролистывания слайда
+		auto: true,								//автоматическое перелистывание
+		mode: 'fade',  					 		//эффект перелистывания
+		pause: 10000, //время показа слайда
+		minSlides: 1,		//максимальное количество слайдов
+		maxSlides: 1,		//минимальное количество слайдов
+		moveSlides: 1,	//количество перелистываемых слайдов
+		slideWidth: 240,	//ширина слайда
+	});
+
+});
+</script>
+
+
+
+<!--'start_frame_cache_JvGMqb'-->
+<ul class="bxslider">
+
+
+            <li><div>
+                                    <a href="https://vk.com/finnmark_chaik">
+                
+                <img src="/upload/iblock/add/add2eec68d3a9aed8c4608b18a2c6adc.jpg"/>
+
+                                    </a>
+                            </div></li>
+			</ul>
+
+<!--'end_frame_cache_JvGMqb'-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</tbody>
+</table>
+<br/>
+
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?86"></script> <!-- VK Widget -->
+<div id="vk_groups">
+</div>
+ <script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 1, wide: 1, width: "auto", height: "50"}, 51531222);
+</script>
+
+
+</div>
+</div>
+<div id="bottom-menu">
+<div id="left">
+<div id="menu2-bottom">
+
+
+	<a href="/download-newspapers/">Скачать газету</a> \		
+	<a href="/download-free-ads/">Скачать бесплатные объявления</a> \		
+	<a href="/submit-ad/">Подать объявление</a> \		
+	<a href="/price-lists/">Прайс листы</a> \		
+	<a href="/advertising-department/">Рекламный отдел</a>		
+
+</div>
+<div id="rubric">
+
+
+<span>Рубрики:</span>
+			 <a href="/news/84/">Новости</a> \					 <a href="/news/107/">В фокусе</a> \					 <a href="/news/102/">Актуально</a> \					 <a href="/news/103/">Репортаж</a> \					 <a href="/news/87/">Правопорядок</a> \					 <a href="/sos-sms/">SOS/SMS</a> \					 <a href="/news/105/">Интервью</a> \					 <a href="/news/89/">Персона</a> \					 <a href="/news/139/">Вопрос недели</a> \					 <a href="/news/86/">Спорт</a> \					 <a href="/news/85/">Культура</a> \					 <a href="/news/90/">Поколение NEXT</a> \					 <a href="/news/95/">Мир детства</a> \					 <a href="/news/93/">Преодоление</a> \					 <a href="/news/106/">Протяни руку помощи!</a> \					 <a href="/news/136/">Проза</a> \					 <a href="/news/78/">Плетение словес</a> \					 <a href="/news/453/">Вопрос-Ответ</a> \					<a href="/news/133/">Фотоконкурс</a>		
+
+	
+</div>
+</div>
+<div id="right">
+<p>Адрес редакции:</p>
+г. Чайковский, ул. Мира, 4
+<div class="telephones"> 
+	<div class="phone-name" style="text-align:left;">Телефон редакции:<br />Тел.&nbsp;для&nbsp;подачи объявлений:</div>
+	<div class="phone-number"> (34241) <span> 9-60-80	</span>
+	<br/>
+<span> 8(922)312-22-26</span>
+	</div>
+</div>
+<br />
+	<div class="counters">
+	</div>
+</div>
+
+</div>
+<div id="footer">
+Все права защищены © 2022. Частный Интерес<br />
+Перепечатка информации возможна только при наличии согласия редакции газеты и активной ссылки на источник
+<div id="age">Возрастная категория сайта</div>
+</div>
+</div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter42790509 = new Ya.Metrika({
+                    id:42790509,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/42790509" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<a href="/contacts/" class="fb-button js-open-popup">
+	<div class="fb-button_title">Напишите нам</div>
+</a>
+<div class="js-popup popup">
+	<div class="popup__block">
+		<div class="popup__close js-popup-close"></div>
+		<div class="popup__content">
+			<div class="title-grey">Отправить нам сообщение</div>
+			<p>Есть вопросы или предложения? Напишите нам, мы обязательно рассмотрим ваше сообщение.</p>
+			<form action="/ajax/fb_send.php" method="post">
+				<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"> 
+				<label class="db mb-15">
+					<div class="fz-16 mb-5">ФИО *</div>
+					<input type="text" placeholder="Иван Иванов" name="fio" class="popup__input w-380 required" value="" />
+				</label>
+				<label class="db mb-15">
+					<div class="fz-16 mb-5">E-mail *</div>
+					<input type="text" placeholder="email@yandex.ru" name="email" class="popup__input w-270 required" value="" />
+				</label>
+				<label class="db mb-15">
+					<div class="fz-16 mb-5">Сообщение(500 символов) *</div>
+					<textarea name="message" class="popup__input w-400 h-100 required" maxlength="500"></textarea>
+				</label>
+				<script>
+						grecaptcha.ready(function() {
+							grecaptcha.execute('6LcoTlIaAAAAANiEYFHfG-I8h5_0pvj8j1XKHoXq', {action: 'fb_send'}).then(function(token) {
+								document.getElementById('g-recaptcha-response').value = token
+							});
+						});
+				</script>
+				<input type="submit" value="Отправить" class="popup__button mt-25" />
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,813 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Открытый университет</title>
+<meta name="description" content="Открытый университет" />
+<meta name="keywords" content="Открытый университет" />
+<meta name="generator" content="SiriusCMS" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://open.tsu.ru/engine/opensearch.php" title="Открытый университет" />
+<link rel="alternate" type="application/rss+xml" title="Открытый университет" href="http://open.tsu.ru/rss.xml" />
+<script type="text/javascript" src="/engine/classes/js/jquery.js"></script>
+<script type="text/javascript" src="/engine/classes/js/jqueryui.js"></script>
+<script type="text/javascript" src="/engine/classes/js/sirius_js.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+<script type="text/javascript" src="/engine/editor/scripts/webfont.js"></script>
+<link media="screen" href="/engine/editor/css/default.css" type="text/css" rel="stylesheet" />
+
+	<link media="screen" href="/templates/Default/style/owl.carousel.min.css" type="text/css" rel="stylesheet" />
+	<link media="screen" href="/templates/Default/style/owl.theme.default.min.css" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" href="/templates/Default/images/favicon.ico" />
+<link media="screen" href="/templates/Default/style/styles.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="/templates/Default/style/engine.css" type="text/css" rel="stylesheet" />
+<link media="screen" href="/templates/Default/style/menu.css" type="text/css" rel="stylesheet" />
+<link href="/templates/Default/iphoto/style/style.css" type="text/css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="/engine/ajax/iphoto/iphoto.js"></script>
+<script language="javascript" type="text/javascript" src="/engine/classes/js/jquery.nivo.slider.pack.js"></script>
+	<script language="javascript" type="text/javascript" src="/engine/classes/js/owlcarousel/owl.carousel.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/engine/classes/js/resizer.js"></script>
+<script language="javascript" type="text/javascript" src="/engine/classes/js/carouFredSel.js"></script>
+<script>
+$(document).ready(function() {
+
+    $("#photolist").carouFredSel({    	
+    	items: {
+    		visible: 5,
+    		minimum: 6,
+    	},
+    	scroll: 5,
+    	auto: 5000,
+    	prev: "#prev_btn",
+    	next: "#next_btn"
+    })
+});
+
+$(window).load(function() {
+    var owl = $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        animateOut: 'fadeOut',
+		autoplay: true,
+		autoplayTimeout: 10000,
+        nav:false,
+		dots: false,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
+    $('.customNextBtn').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+    $('.customPrevBtn').click(function() {
+        owl.trigger('prev.owl.carousel');
+    });
+    $('#slider').nivoSlider({
+        effect: 'sliceDown', // Specify sets like: 'fold,fade,sliceDown'
+        slices: 15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 4, // For box animations
+        animSpeed: 500, // Slide transition speed
+        pauseTime: 7000, // How long each slide will show
+        startSlide: 0, // Set starting Slide (0 index)
+        directionNav: true, // Next & Prev navigation
+        controlNav: false, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        prevText: 'Prev', // Prev directionNav text
+        nextText: 'Next', // Next directionNav text
+        randomStart: false, // Start on a random slide
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+    });
+});
+</script>
+
+	<style>
+		.customNextBtn, .customPrevBtn {
+			padding: 5px;
+			padding-left: 10px;
+			font-size: 15px;
+			background-color: black;
+			color: white;
+			width: 15px;
+			display: inline-block;
+			cursor: pointer;
+			margin: 0px;
+			position: absolute;
+			z-index: 1000;
+			bottom: 0px;
+		}
+		.customNextBtn {
+			left: 30px;
+
+		}
+	</style>
+</head>
+<body>
+<div id="loading-layer" style="display:none">Загрузка. Пожалуйста, подождите...</div>
+<script type="text/javascript">
+<!--
+var sirius_root       = '/';
+var sirius_admin      = '';
+var sirius_login_hash = '';
+var sirius_group      = 5;
+var sirius_skin       = 'Default';
+var sirius_wysiwyg    = '0';
+var quick_wysiwyg  = '1';
+var sirius_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить"];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var sirius_info       = 'Информация';
+var sirius_confirm    = 'Подтверждение';
+var sirius_prompt     = 'Ввод информации';
+var sirius_req_field  = 'Заполните все необходимые поля';
+var sirius_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var sirius_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведет к удалению всех его комментариев';
+var sirius_complaint  = 'Укажите текст вашей жалобы для администрации:';
+var sirius_big_text   = 'Выделен слишком большой участок текста.';
+var sirius_orfo_title = 'Укажите комментарий для администрации к найденной грамматической ошибке';
+var sirius_p_send     = 'Отправить';
+var sirius_p_send_ok  = 'Уведомление успешно отправлено';
+var sirius_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var sirius_del_news   = 'Удалить статью';
+var allow_sirius_delete_news   = false;
+var sirius_search_delay   = false;
+var sirius_search_value   = '';
+$(function(){
+	FastSearch();
+});
+//-->
+</script>
+
+<div class="body-wrapper">
+	<div class="top-navigation container">
+		
+	</div>
+	<div class="container">
+		<div class="header-wrapper">
+			<div style="width: 100%; height: auto; overflow: hidden;">
+				<div style="width: 0px; overflow: visible; margin-left: 46%;">
+				<div class="inner-header-wrapper">
+					<div class="left-banner-wrapper">
+						<img height='60' src="/templates/Default/images/IAUTA.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<img height='60' src="/templates/Default/images/admin.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<img height='60' src="/templates/Default/images/tsu.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+					</div>
+
+					<!-- Get Logo -->
+					<div class="logo-wrapper" style="margin-right: 30px;">
+						<a href="/">Открытый университет<span>Свободное образование для всех</span></a>
+					</div>
+					<!-- Get Search -->
+
+					<div class="right-banner-wrapper">
+						<img style="width:63px;" src="/templates/Default/images/logo.png">&nbsp;&nbsp;
+						<!--<img style="width: 100px;" src="/templates/Default/images/U3Aofficiallogo.png">&nbsp;&nbsp; -->
+						<img src="/templates/Default/images/pfr.png">&nbsp;&nbsp;
+						<img src="/templates/Default/images/dsz.png">
+
+					</div>
+
+					<br class="clear">
+				</div>
+			</div><!-- Inner header wrapper -->
+			</div>
+			<!-- Navigation -->
+			<div class="sixteen columns mb0">
+                <div class="navigation-wrapper">
+					<!-- Get Navigation -->
+					<div id="main-superfish-wrapper" class="menu-wrapper">
+                        
+
+<ul id='navmenu-h'>
+    <li><a href='/home/'>Главная</a></li>
+    <li><a href="/about/" rel="index section" class="subcat">О нас</a><ul><li><a href="/about/project/" rel="index section">История создания Центра &quot;Открытый университет&quot;</a></li><li><a href="/about/teachers/" rel="index section">Сотрудники и преподаватели</a></li></ul></li><li><a href="/bolshoi/" rel="index section" class="subcat">Большой университет</a><ul><li><a href="/bolshoi/plan/" rel="index section">План работы</a></li></ul></li></li><li><a href="/news/" rel="index section">Новости</a></li><li><a href="/massmedia/" rel="index section" class="subcat">Мы в СМИ</a><ul><li><a href="/massmedia/video/" rel="index section">Видеоматериалы</a></li><li><a href="/massmedia/audio/" rel="index section">Аудиоматериалы</a></li><li><a href="/massmedia/text/" rel="index section">Текстовые материалы</a></li></ul></li><li><a href="/schedule/" rel="index section">Расписание</a></li><li><a href="/programms/" rel="index section">Программы</a></li><li><a href="/contacts/" rel="index section">Контакты</a></li><li><a href="/iphoto/" rel="index section">Фотогалерея</a></li></ul></li>            
+</ul>
+<div style='clear:both'></div>
+                    </div>
+															
+				</div>
+			</div>
+			<br class="clear">
+		</div> <!-- header-wrapper -->
+
+        <div class="content-wrapper sidebar-included right-sidebar">			
+			<div class="page-wrapper">
+			<div class="sixteen columns mb0" style="padding-right: 20px; box-sizing: border-box;">
+				<div class="customPrevBtn"><</div>
+				<div class="customNextBtn">></div>
+				<div class="owl-carousel owl-theme">
+                    <div class="item"><a href='http://open.tsu.ru/news/2035-nacionalnyy-den-donora-v-bolshom-universitete.html'><img src='/uploads/top_banner/1.jpg' title='Национальный день донора в Бол...' alt='Национальный день донора в Бол...' ></a></div><div class="item"><img src='/uploads/posts/2022-04/1649234344_siren-baner2_montazhnaya-oblast-1.jpg' title='огород' alt='огород' ></div><div class="item"><img src='/uploads/posts/2022-04/1649133969_bezimeni-1.jpg' title='весна' alt='весна' ></div><div class="item"><a href='http://open.tsu.ru/news/2029-vsemirnyy-den-zdorovya-v-bolshom-universitete.html'><img src='/uploads/top_banner/1.jpg' title='Всемирный день здоровья в Боль...' alt='Всемирный день здоровья в Боль...' ></a></div><div class="item"><a href='http://open.tsu.ru/news/2024-tomskaya-vesna-v-otkrytom-universitete.html'><img src='/uploads/top_banner/2.jpg' title='"Томская весна" в "Открытом ун...' alt='"Томская весна" в "Открытом ун...' ></a></div><div class="item"><img src='/uploads/posts/2022-03/1648458731_3.jpg' title='ПЕТР' alt='ПЕТР' ></div>
+				</div>
+            	<!--<div class="slider-wrapper fullwidth">
+            		<div id="slider" class="nivoSlider">
+                        <div class="item"><a href='http://open.tsu.ru/news/2035-nacionalnyy-den-donora-v-bolshom-universitete.html'><img src='/uploads/top_banner/1.jpg' title='Национальный день донора в Бол...' alt='Национальный день донора в Бол...' ></a></div><div class="item"><img src='/uploads/posts/2022-04/1649234344_siren-baner2_montazhnaya-oblast-1.jpg' title='огород' alt='огород' ></div><div class="item"><img src='/uploads/posts/2022-04/1649133969_bezimeni-1.jpg' title='весна' alt='весна' ></div><div class="item"><a href='http://open.tsu.ru/news/2029-vsemirnyy-den-zdorovya-v-bolshom-universitete.html'><img src='/uploads/top_banner/1.jpg' title='Всемирный день здоровья в Боль...' alt='Всемирный день здоровья в Боль...' ></a></div><div class="item"><a href='http://open.tsu.ru/news/2024-tomskaya-vesna-v-otkrytom-universitete.html'><img src='/uploads/top_banner/2.jpg' title='"Томская весна" в "Открытом ун...' alt='"Томская весна" в "Открытом ун...' ></a></div><div class="item"><img src='/uploads/posts/2022-03/1648458731_3.jpg' title='ПЕТР' alt='ПЕТР' ></div>
+                    </div>
+				</div>-->
+            </div>
+            <div class="clear"></div>
+            <div class="sixteen columns wrapper overflow-hidden">
+                <div class="under-slider-left" id="under-slider-left">
+                    <div style="padding: 5px 0 0 20px;">
+						 <span>
+                        <span style="font-size: 19px; margin-top:5px; display:block; float: left;">8-953-928-1156</span>
+                    </span>
+                    <span style="float: left; margin-left: 50px;">
+                        Адрес:<br /> 
+                        <span style="margin-top:2px; display:block">634050, г. Томск. ул. Ленина 36 <a style="font-size:11px;" href="/contacts/">Схема проезда</a>
+                        </span>
+                        
+                        <span style="margin-top:2px; display:block">E-mail: <a href="mailto:opentsu@mail.tsu.ru">opentsu@mail.tsu.ru</a>
+						<a style="padding-left:20px;" href="https://vk.com/opentsu">vk.com</a>
+                        <a style="padding-left:20px;" href="https://www.youtube.com/c/tomskopenuniversity">youtube.com</a>
+                        </span>
+                        
+                        </span>
+                                            
+
+                    </div>
+                </div>
+			<!--	<div class="under-slider-right" id="under-slider-right">
+    <div style="padding: 10px 25px 20px; ">
+        <a href="/schedule/">
+            <img src="/templates/Default/images/new-course.png" style="visibility: visible; opacity: 1;"/>
+        </a>
+    </div>
+</div>-->
+				<div class="clear"></div>
+			</div>
+			<div class="gdl-page-float-left">
+				<div class="gdl-page-item">
+                   
+                    
+                    
+                    <div class="sixteen columns ">
+                    	<div class="gdl-header-dropcap">
+                    	   <div class="gdl-header-dropcap-center"><img src="/templates/Default/images/Search.png" class="no-preload" alt=""></div>
+                        </div>                    	
+                        <h3 class="search-course-header-title title-color gdl-title">О Центре</h3>
+                    	<div class="clear"></div>
+						<p>Центр «Открытый университет» <i><a href="http://tsu.ru" target="_blank">Томского государственного университета</a></i> реализует социальную роль университета;</p>
+						<p>миссия Центра - социально значимая просветительская деятельность, ориентированная на все социальные слои и возрастные группы населения города Томска, Томской области, региона.</p>
+						<p>Суть деятельности Центра - бесплатные лекции, занятия и другие образовательные события и мероприятия для жителей Томска, области и региона. «Открытый университет» предлагает широкий спектр знаний как фундаментального, так и прикладного характера, от литературы, философии, актуальных вопросов современной политики, законодательства до практических рекомендаций по садоводству, по организации здорового образа жизни. Особое внимание уделяется работе с людьми «третьего возраста» и с социально незащищенными слоями населения города и области.</p>
+						<p>В 2013 г. «Открытый университет» вошел в число лучших гражданских инициатив РФ и получил средства государственной поддержки, выделенные в качестве гранта в соответствии c распоряжением Президента Российской Федерации от 29.03.2013 № 115-рп и на основании конкурса, проведенного Обществом «Знание» России. </p>
+						<p>Приходите! Мы ждем Вас и будем Вам очень рады!</p>
+            		</div>
+                    
+                    <!--
+                    <div class="eight columns ">
+            			<div class="gdl-header-dropcap">
+            				<div class="gdl-header-dropcap-center">
+                            	<img src="/templates/Default/images/Film.png" class="no-preload" alt="">
+            				</div>
+            			</div>
+                        
+                        <h3 class="content-slider-header-title title-color gdl-title">Расписание занятий</h3>
+                        <div class="clear"></div>            
+                        <div class="gdl-content-slider">
+                        	<div class="anythingSlider anythingSlider-default activeSlider" style="width: 310px; height: 350px;">
+                        		<div class="anythingWindow">
+                        			<div>
+                                    	<div style="width:310px; height:220px; background:#EEE; text-align:center;">                                                                                
+            							</div>
+            							<div class='clear'></div>            							
+            						</div>
+            					</div>                    
+            				</div>
+            			</div>
+                       
+                    </div>		
+                     -->
+                    
+                    <div class="eight columns wrapper mb0" style="width: 100%;">
+                        <div class="gdl-header-dropcap ml10">
+                            <div class="gdl-header-dropcap-center">
+                            <img src="/templates/Default/images/Volume-On.png" class="no-preload" alt="">
+                        </div>
+                        </div>
+                    
+                        <h3 class="blog-header-title title-color gdl-title">Программы</h3>
+                        <div class="clear"></div>
+                        <div id="blog-item-holder" class="blog-item-holder" style="width: 100%;">
+                            <div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/1811-gorod-universitetprosveschenie.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2021-01/thumbs/1611636420_sayt.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/1811-gorod-universitetprosveschenie.html">Город-университет: просвещение</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">19-04-2022, 11:46</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/151-iskusstvo-sadovoda.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2018-03/thumbs/1520834052_vesna.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/151-iskusstvo-sadovoda.html">Искусство садовода</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">2-04-2022, 16:14</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/152-rossiyskaya-istoriya-i-sovremennost.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2017-11/thumbs/1510305651_istoriya.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/152-rossiyskaya-istoriya-i-sovremennost.html">История и современность</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">26-03-2022, 16:14</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/368-s-tochki-zreniya-fiziki-i-matematiki.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2016-11/thumbs/1479794807_fizika.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/368-s-tochki-zreniya-fiziki-i-matematiki.html">С точки зрения физики и математики</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">7-03-2022, 15:00</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/2007-2022-god-narodnogo-iskusstva-i-nematerialnogo-kulturnogo-naslediya-narodov-rossii.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2022-02/thumbs/1644984455_bcreccndj.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/2007-2022-god-narodnogo-iskusstva-i-nematerialnogo-kulturnogo-naslediya-narodov-rossii.html">2022 - Год народного искусства и нематериального культурного наследия народов России</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">15-02-2022, 11:10</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/154-krasota-i-tayny-russkogo-slova.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2017-04/thumbs/1492416815_krasota-slova.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/154-krasota-i-tayny-russkogo-slova.html">Красота и тайны русского слова</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">1-02-2022, 13:49</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/329-vozrast-svobody.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2016-11/thumbs/1479794583_1443538832_vs.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/329-vozrast-svobody.html">Возраст свободы</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">31-01-2022, 12:52</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/153-mir-literatury-pravka.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2016-11/thumbs/1479790253_mir-literatury.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/153-mir-literatury-pravka.html">Мир литературы</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">7-12-2021, 16:14</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/231-lekcii-specialistov-ogbuz-centr-medicinskoy-profilaktiki.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2017-11/thumbs/1510649641_zdorovee-budem.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/231-lekcii-specialistov-ogbuz-centr-medicinskoy-profilaktiki.html">Здоровее будем!</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">13-11-2021, 11:01</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/1793-200d.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2021-09/thumbs/1632980867_66.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/1793-200d.html">200D (200-летию Ф.М. Достоевского посвящается)</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">8-11-2021, 15:54</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/1744-kak-prekrasen-etot-mir.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2020-10/thumbs/1603100005_gotov.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/1744-kak-prekrasen-etot-mir.html">Как прекрасен этот мир</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">1-11-2021, 16:35</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/454-takoe-raznoe-iskusstvo.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2018-03/thumbs/1520834845_kratkaya-istoriya-muzyki.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/454-takoe-raznoe-iskusstvo.html">Такое разное искусство</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">15-09-2020, 14:31</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/697-roditelskiy-lektoriy.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2017-03/thumbs/1489569523_bezimeni-1.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/697-roditelskiy-lektoriy.html">Родительский лекторий</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">21-04-2020, 15:20</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/1000-140-let-tgu.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2018-05/thumbs/1527500622_140.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/1000-140-let-tgu.html">"140 лет ТГУ!"</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">28-09-2018, 10:46</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/156-lekcii-otdeleniya-pensionnogo-fonda-rf-po-tomskoy-oblasti.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2014-04/1398158733_1397633632_emblema.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/156-lekcii-otdeleniya-pensionnogo-fonda-rf-po-tomskoy-oblasti.html">Лекции отделения Пенсионного фонда РФ по Томской области</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">13-06-2015, 16:14</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+                            
+                            
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    
+               <!--     <div class="eight columns wrapper mb0">
+                        
+                    
+                        <h3 class="blog-header-title title-color gdl-title">&nbsp;</h3>
+                        <div class="clear"></div>
+                        <div id="blog-item-holder" class="blog-item-holder">
+                            <div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/2007-2022-god-narodnogo-iskusstva-i-nematerialnogo-kulturnogo-naslediya-narodov-rossii.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2022-02/thumbs/1644984455_bcreccndj.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/2007-2022-god-narodnogo-iskusstva-i-nematerialnogo-kulturnogo-naslediya-narodov-rossii.html">2022 - Год народного искусства и нематериального культурного наследия народов России</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">15-02-2022, 11:10</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/154-krasota-i-tayny-russkogo-slova.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2017-04/thumbs/1492416815_krasota-slova.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/154-krasota-i-tayny-russkogo-slova.html">Красота и тайны русского слова</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">1-02-2022, 13:49</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/329-vozrast-svobody.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2016-11/thumbs/1479794583_1443538832_vs.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/329-vozrast-svobody.html">Возраст свободы</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">31-01-2022, 12:52</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/153-mir-literatury-pravka.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2016-11/thumbs/1479790253_mir-literatury.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/153-mir-literatury-pravka.html">Мир литературы</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">7-12-2021, 16:14</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/231-lekcii-specialistov-ogbuz-centr-medicinskoy-profilaktiki.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2017-11/thumbs/1510649641_zdorovee-budem.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/231-lekcii-specialistov-ogbuz-centr-medicinskoy-profilaktiki.html">Здоровее будем!</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">13-11-2021, 11:01</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/1793-200d.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2021-09/thumbs/1632980867_66.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/1793-200d.html">200D (200-летию Ф.М. Достоевского посвящается)</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">8-11-2021, 15:54</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/1744-kak-prekrasen-etot-mir.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2020-10/thumbs/1603100005_gotov.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/1744-kak-prekrasen-etot-mir.html">Как прекрасен этот мир</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">1-11-2021, 16:35</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div><div class="blog-item0 gdl-divider  mb15">
+    <div class="blog-thumbnail-image">
+        <a href="http://open.tsu.ru/programms/454-takoe-raznoe-iskusstvo.html"><img style='height:60px;' src="http://open.tsu.ru/uploads/posts/2018-03/thumbs/1520834845_kratkaya-istoriya-muzyki.jpg" alt="" style="visibility: visible; opacity: 1;"/></a>
+    </div>
+    <div class="blog-thumbnail-inside">
+        <h2 class="blog-thumbnail-title post-widget-title-color gdl-title">
+    <a href="http://open.tsu.ru/programms/454-takoe-raznoe-iskusstvo.html">Такое разное искусство</a>
+</h2>
+        <div class="blog-thumbnail-info post-widget-info-color gdl-divider">
+    <div class="blog-thumbnail-date">15-09-2020, 14:31</div>
+    <div class="clear"></div>
+</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>                        
+                            
+                            
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+       				<br class="clear"/>-->
+       				
+                    <!--
+                    <div class="sixteen columns ">
+                    	<div class="gdl-header-dropcap">
+                    	   <div class="gdl-header-dropcap-center"><img src="/templates/Default/images/Search.png" class="no-preload" alt=""></div>
+                        </div>                    	
+                        <h3 class="search-course-header-title title-color gdl-title">Список курсов</h3>
+                    	<div class="clear"></div>
+                    	
+            		</div>
+                    -->
+				    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+			</div>
+    		
+            
+            <div class="five columns mt0 gdl-right-sidebar">
+            	<div class="right-sidebar-wrapper">
+                	
+                    
+                    
+                   	<div class="custom-sidebar gdl-divider">
+                    	<h3 class="custom-sidebar-title sidebar-title-color gdl-title">Расписание занятий и мероприятий</h3>
+                        <div style="width:280px; height:220px; background:#FAFAFA; text-align:center;">                                                                                <div id="calendar-layer"><table id="calendar" cellpadding="3" class="calendar"><tr><th colspan="7" class="monthselect"><a class="monthlink" onclick="doCalendar('03','2022','right'); return false;" href="http://open.tsu.ru/2022/03/" title="Предыдущий месяц">&laquo;</a>&nbsp;&nbsp;&nbsp;&nbsp;Апрель 2022&nbsp;&nbsp;&nbsp;&nbsp;<a class="monthlink" onclick="doCalendar('05','2022','left'); return false;" href="http://open.tsu.ru/2022/05/" title="Следующий месяц">&raquo;</a></th></tr><tr><th class="workday">Пн</th><th class="workday">Вт</th><th class="workday">Ср</th><th class="workday">Чт</th><th class="workday">Пт</th><th class="weekday">Сб</th><th class="weekday">Вс</th></tr><tr><td colspan="4">&nbsp;</td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/01/" title="Все посты за 01 апреля 2022">1</a></td><td  class="weekday" >2</td><td  class="weekday" >3</td></tr><tr><td  class="day" >4</td><td  class="day" >5</td><td  class="day" >6</td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/07/" title="Все посты за 07 апреля 2022">7</a></td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/08/" title="Все посты за 08 апреля 2022">8</a></td><td  class="weekday" >9</td><td  class="weekday" >10</td></tr><tr><td  class="day" >11</td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/12/" title="Все посты за 12 апреля 2022">12</a></td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/13/" title="Все посты за 13 апреля 2022">13</a></td><td  class="day" >14</td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/15/" title="Все посты за 15 апреля 2022">15</a></td><td  class="weekday" >16</td><td  class="weekday" >17</td></tr><tr><td  class="day" >18</td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/19/" title="Все посты за 19 апреля 2022">19</a></td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/20/" title="Все посты за 20 апреля 2022">20</a></td><td  class="day" >21</td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/22/" title="Все посты за 22 апреля 2022">22</a></td><td  class="weekday" >23</td><td  class="weekday" >24</td></tr><tr><td  class="day" >25</td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/26/" title="Все посты за 26 апреля 2022">26</a></td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/27/" title="Все посты за 27 апреля 2022">27</a></td><td  class="day day-current" >28</td><td  class="day-active-v" ><a class="day-active-v" href="http://open.tsu.ru/2022/04/29/" title="Все посты за 29 апреля 2022">29</a></td><td  class="weekday" >30</td><td colspan="1">&nbsp;</td></tr></table></div>
+    					</div>
+					</div>
+                    
+                    
+                    
+                    <!--
+                    <div class="custom-sidebar gdl-divider">
+                    	<h3 class="custom-sidebar-title sidebar-title-color gdl-title">О проекте "Открытый университет"</h3>			
+                        <div class="textwidget">
+	<p><img style="float:left; width: 120px; padding:0 10px 10px 0;" src="http://open.tsu.ru/uploads/posts/2013-10/thumbs/1380881656_img_3468.jpg"/> 18 апреля 2013 г. в ТГУ состоялась презентация проекта «Открытый университет».  В 2014 г. на основании решения Ученого совета Томского государственного университета от 26 ноября 2014 г. и Приказа <a href="http://open.tsu.ru/about/project/21-o-nas.html">подробнее...</a></p>
+</div>
+					</div>
+                    -->
+                    
+					<div class="custom-sidebar gdl-divider">
+                    	<h3 class="custom-sidebar-title sidebar-title-color gdl-title">Сотрудники и преподаватели</h3>
+                        <div class="personnal-widget-wrapper">
+	<div class="personnal-widget-avartar"><img style='width:120px;' src="http://open.tsu.ru/uploads/posts/2021-02/thumbs/1613366343_novikova_-obrez.jpg" alt="" style="visibility: visible; opacity: 1;"/></div>
+    <div class="personnal-widget-title gdl-title title-color"><a href="http://open.tsu.ru/about/teachers/20-prepodavateli-i-sotrudniki.html">Сотрудники и преподаватели</a></div>
+    <div class="personnal-widget-excerpt">
+    	&nbsp;Директор Центра:  						<span class="attachment"><a href="http://open.tsu.ru/engine/download.php?id=206" >Новикова Елена Георгиевна</a> [313.62 Kb] (cкачиваний: 457)</span>  						 				 				 					&nbsp;  						 					&nbsp;Методист Центра:  						Кожевникова Анна Геннадьевна  						  						 				 <a href="http://open.tsu.ru/about/teachers/20-prepodavateli-i-sotrudniki.html">подробнее</a> 
+	</div>
+</div>
+					</div>
+                    <!--
+                    <div class="custom-sidebar gdl-divider">
+                    	<h3 class="custom-sidebar-title sidebar-title-color gdl-title">Новости и события ЛОГОС</h3>			
+                        <div class="textwidget">
+	<p><img style="float:left; width: 120px; padding:0 10px 10px 0;" src="http://open.tsu.ru/uploads/posts/2015-10/thumbs/1444196705_study_vysshee_obrazovanie_v_polshe.jpg"/> На филологическом факультете начинаются занятия по польскому языку. Курс рассчитан на 72 часа. Проводить занятия&nbsp; будет доцент кафедры общего, славяно-русского языкознания и классической <a href="http://open.tsu.ru//345-nachalo-zanyatiy-po-polskomu-yazyku.html">подробнее...</a></p>
+</div><div class="textwidget">
+	<p>[image-1]<img style="float:left; width: 120px; padding:0 10px 10px 0;" src="/templates/Default/siriusimages/no_image.jpg"/>[image-1] Начинается набор на курсы:  http://philology.tsu.ru/node/684 <a href="http://open.tsu.ru//209-nabor-na-kursy-2014-2015-uch-g.html">подробнее...</a></p>
+</div><div class="textwidget">
+	<p>[image-1]<img style="float:left; width: 120px; padding:0 10px 10px 0;" src="/templates/Default/siriusimages/no_image.jpg"/>[image-1] Внимание!    Желающие посещать дополнительные платные занятия в центре «Логос» !    Оргсобрание для слушателей  &nbsp;&nbsp;&nbsp;&nbsp; итальянского языка состоится 27 февраля в 18.30 в 24 (3);  <a href="http://open.tsu.ru//102-sostoitsya-orgsobranie.html">подробнее...</a></p>
+</div><div class="textwidget">
+	<p>[image-1]<img style="float:left; width: 120px; padding:0 10px 10px 0;" src="/templates/Default/siriusimages/no_image.jpg"/>[image-1] http://philology.tsu.ru/logos/ <a href="http://open.tsu.ru//19-nabor-na-kursy-2013-2014-gg.html">подробнее...</a></p>
+</div>
+					</div>
+                    -->
+				<!--	<a href="#">
+						<div class="smi-button">
+							«Открытый университет» в СМИ
+						</div>
+					</a> -->
+                    
+                    <div class="pt30"></div>
+				</div>
+			</div>            	
+			<br class="clear">
+            
+            
+            <div class="sixteen columns wrapper mb0">
+            	<div class="gdl-header-dropcap ml10">
+                	<div class="gdl-header-dropcap-center">
+                    	<img src="/templates/Default/images/Star.png" class="no-preload" alt="">
+					</div>
+				</div>
+                
+                
+                <h3 class="gallery-header-title title-color gdl-title">Фотогалерея</h3>
+                <div class="clear"></div>
+                <div class="sixteen columns">
+                	<div class="gallery-es-carousel gdl-divider">
+                    	<div class="es-carousel">                        
+                        	
+                            
+                            <div id="photolist">
+                            	<div><a href="/iphoto/lekcii-e.o.-tretyakova/1109-img_3109.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/lekcii-e.o.-tretyakova/thumbs/150_1510561107_img_3109.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/landshaftnyy-dizayn/2752-img_3586.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/landshaftnyy-dizayn/thumbs/150_1554442045_img_3586.JPG') center center no-repeat"></a></span></div><div><a href="/iphoto/chtenie-romana-m.a.-bulgakova-master-i-margarita-v-rezhime-non-stop/604-dsc_0842.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/chtenie-romana-m.a.-bulgakova-master-i-margarita-v-rezhime-non-stop/thumbs/150_1480757665_dsc_0842.JPG') center center no-repeat"></a></span></div><div><a href="/iphoto/prazdnovanie-139-letiya-tgu-26-maya-2017-g./776-_mg_0061.html#iPhotoMainPhoto" title = 'Площадка Открытого университета на праздновании 139-летия ТГУ'><span style = "background:#EEE url('/uploads/iphoto/prazdnovanie-139-letiya-tgu-26-maya-2017-g./thumbs/150_1497496998__mg_0061.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/pokolenie-140/1644-img_2863.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/pokolenie-140/thumbs/150_1528099665_img_2863.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/prazdnovanie-139-letiya-tgu-26-maya-2017-g./932-_mg_9866.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/prazdnovanie-139-letiya-tgu-26-maya-2017-g./thumbs/150_1497497241__mg_9866.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/kurs-vtoroe-dyhanie/2955-img_4469_3.html#iPhotoMainPhoto" title = 'март 2020'><span style = "background:#EEE url('/uploads/iphoto/kurs-vtoroe-dyhanie/thumbs/150_1587102372_img_4469_3.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/lekcii-d.s.-konkova/1157-img_0095.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/lekcii-d.s.-konkova/thumbs/150_1510561660_img_0095.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/pokolenie-140/1701-img_3162.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/pokolenie-140/thumbs/150_1528099950_img_3162.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/firmennyy-poezd-fomich-non-stop/2249-img_0037.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/firmennyy-poezd-fomich-non-stop/thumbs/150_1538638677_img_0037.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/lekciya-e.g.-novikovoy/1197-img_7440.html#iPhotoMainPhoto" title = 'На лекции по литературе у Е.Г. Новиковой'><span style = "background:#EEE url('/uploads/iphoto/lekciya-e.g.-novikovoy/thumbs/150_1513149813_img_7440.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/prazdnovanie-139-letiya-tgu-26-maya-2017-g./798-_mg_0215.html#iPhotoMainPhoto" title = 'Площадка Открытого университета на праздновании 139-летия ТГУ'><span style = "background:#EEE url('/uploads/iphoto/prazdnovanie-139-letiya-tgu-26-maya-2017-g./thumbs/150_1497497170__mg_0215.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/den-rozhdeniya-a.s.-pushkina-2017/981-_mg_0278.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/den-rozhdeniya-a.s.-pushkina-2017/thumbs/150_1497499444__mg_0278.JPG') center center no-repeat"></a></span></div><div><a href="/iphoto/firmennyy-poezd-fomich-non-stop/2135-img_8006.html#iPhotoMainPhoto" title = ''><span style = "background:#EEE url('/uploads/iphoto/firmennyy-poezd-fomich-non-stop/thumbs/150_1538636120_img_8006.jpg') center center no-repeat"></a></span></div><div><a href="/iphoto/200d-200-letiyu-f.m.-dostoevskogo-posvyaschaetsya/3048-1.html#iPhotoMainPhoto" title = 'Презентация коллективной монографии Геополитическая карта и картина мира Ф.М. Достоевского'><span style = "background:#EEE url('/uploads/iphoto/200d-200-letiyu-f.m.-dostoevskogo-posvyaschaetsya/thumbs/150_1635913989_1.jpg') center center no-repeat"></a></span></div>                                
+                            </div>
+                                
+							</ul>
+                            
+						</div>
+                        <div id='prev_btn' class="blog-item-slideshow-nav-left gdl-hover"></div>
+                        <div id='next_btn' class="blog-item-slideshow-nav-right gdl-hover show"></div>
+					</div>
+					<div class="clear"></div>
+				</div>				
+                <div class="clear"></div>                
+			</div>
+            			
+			<br class="clear">
+		</div>
+		</div> <!-- content-wrapper -->	
+		<div class="clear"></div>
+		<div class="content-bottom-gimmick"></div>
+	</div> <!-- container -->
+	<div class="footer-wrapper">
+		<div class="footer-blank-space"></div>
+		<div class="container mt0">
+			
+			
+			<!-- Get Copyright Text -->
+			<div class="copyright-wrapper gdl-divider">
+					<div class="copyright-left">©2013, Открытый университет</div> 
+					<div class="copyright-right">
+                    <a target='_blank' style='display:block; text-decoration:none;' href="http://primosoft.ru" title="Сайт разработан в Primosoft">Создание сайта &mdash; Primosoft</a>
+                    </div> 
+					<div class="clear"></div>
+			</div>
+		</div> <!-- container-wrapper -->
+	</div><!-- footer-wrapper -->
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-51055781-29', 'auto');
+ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+ 
+</script>	
+</html>

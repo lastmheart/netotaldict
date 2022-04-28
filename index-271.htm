@@ -1,0 +1,560 @@
+
+<html lang="ru-ru" dir="ltr" xml:lang="ru-ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<title>Муниципальное бюджетное общеобразовательное учреждение «Лицей №20» - Главная</title>
+	<meta name="yandex-verification" content="" />
+	<base href="https://licey20.kuz-edu.ru/" />
+	<script src="/assets/templates/school/js/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="/assets/templates/school/js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="/assets/templates/school/js/main.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/assets/templates/school/js/jquery.waterwheelCarousel.min.js"></script>
+	<link type="text/css" href="/assets/templates/school/css/main.css" rel="stylesheet">
+	<link type="text/css" href="/assets/templates/school/css/jquery-ui.theme.min.css" rel="stylesheet">
+
+	<script src="/assets/templates/school/lib/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/templates/school/lib/jquery.fancybox.min.css">
+	<script type="text/javascript" src="/assets/templates/school/lib/slick/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/templates/school/lib/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="/assets/templates/school/lib/slick/slick-theme.css">
+
+</head>
+<style>
+	.slidebtn {
+	width:40px;
+	height:25px;
+	text-align:center;
+	padding-top: 5px;
+	background-color:#666;
+	opacity:0.6;
+	color:#FFF;
+	border-radius: 13px;
+	position:absolute;
+	cursor: pointer;
+	top: 50%;
+	z-index:200;
+}
+
+body {
+    background: #a0bdfe;
+    background: linear-gradient(to bottom, #a0bdfe, #fff);
+	background-image: url(files/demo/images/spring2.jpg);
+	background-attachment: fixed;
+}
+
+.slide_spinner {
+	width:600px;
+	margin: 0 auto;
+}
+
+.slide-right {
+	right: 15px;
+}
+
+.slide-left {
+	left: 15px;
+}
+
+.slick-slide {
+	height:auto;
+	margin: 0 auto;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70484842-1', 'auto');
+  ga('send', 'pageview');
+
+$(document).ready(function(){
+  $('.slide_spinner').slick({
+	autoplay:true,
+	fade:true,
+	prevArrow: '<span class="slidebtn slide-left"><</span>',
+	nextArrow: '<span class="slidebtn slide-right">></span>'
+	});
+});
+
+</script>
+<script>
+$(document).ready(function(){
+
+
+		$( "#tabs" ).tabs();
+		$("#carousel").waterwheelCarousel();
+
+		getAjax('news_dep',6662);
+});
+</script>
+<style>
+ .slick-slide img{
+	margin: 0 auto;
+ }
+</style>
+<body>
+	
+	<div id="conteiner">
+
+				<div id="header">
+			<div id="logo">
+			<p><img src="files/licey20/images/Sov.png" alt="Логотип учреждения" width="172" height="96" /></p>
+			</div>
+			<div id="schoolname">
+				<h1 class="subname">Образовательная организация Кемеровской области</h1>
+				<h1 class="mainname">Муниципальное бюджетное общеобразовательное учреждение «Лицей №20»</h1>
+			</div>
+			<div id="view_mode"> 
+				<button onclick='change_view("alt");'></button>
+			</div>
+			<div id="top-bar">
+<div id="decor">
+</div>
+<div id="top-info">Образование: Начальное, Основное, Среднее</div>
+</div>
+
+		</div>
+		<div style="clear: both;"></div>
+		<div id="banner">
+			<div class="slick_banner">
+<div><img src="files/licey20/images/banners/1.jpg" ></div><div><img src="files/licey20/images/banners/2.jpg" ></div><div><img src="files/licey20/images/banners/3.jpg" ></div><div><img src="files/licey20/images/banners/4.jpg" ></div><div><img src="files/licey20/images/banners/5.jpg" ></div><div><img src="files/licey20/images/banners/10.jpg" ></div><div><img src="files/licey20/images/banners/11.jpg" ></div><div><img src="files/licey20/images/banners/6.jpg" ></div><div><img src="files/licey20/images/banners/7.jpg" ></div><div><img src="files/licey20/images/banners/8.jpg" ></div><div><img src="files/licey20/images/banners/9.jpg" ></div><div><img src="files/licey20/images/banners/12.jpg" ></div><div><img src="files/licey20/images/banners/13.jpg" ></div><div><img src="files/licey20/images/banners/14.jpg" ></div>
+</div>
+<style>
+.slick_banner {
+ height: 140px;
+}
+.slick-prev {
+	left:10;
+	z-index:200;
+}
+.slick-next {
+	right:10;
+	z-index:200;
+}
+</style>
+<script>
+$('.slick_banner').slick({
+	autoplay:true
+	});
+</script>
+		</div>
+		<div id="breadcrumbs">
+			<ul class="B_crumbBox"></ul>
+		</div>
+		<div id="body">
+
+			<div id="sidebar">
+				<style>
+#header  {
+  background-image: url(/files/licey20/images/top.png);
+  height: 200px;
+}
+
+#logo {
+ height: 140px;
+}
+
+#top-info {
+    background-color: #660033;;
+	}
+
+#conteiner a, .article_big h4 {color: #6C3D02;}	
+
+.mainname,.subname,#logo {
+visibility:hidden;
+}
+
+#qa_lc20 {
+	min-height: 40px;
+	padding-left: 5px;
+	float: left;
+	width: 300px;
+
+	border-bottom: 1px solid #CCCCCC;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+
+#qa_lc20 h3 {
+	margin:0px;
+}
+
+#qa_lc20 h3 a {
+	margin-top:3px;
+	float:right;
+	font-size:12px;
+}
+
+#qa_content {
+	padding-top: 10px;
+	min-height: 40px;
+}
+
+</style>
+<script>
+$(function () {
+	var el = $('.menu_row');
+
+	$('#nav_list_first li.active ul').attr('style', 'display:block;');
+	el.click(function () {
+
+		var checkedElement = $(this).next(),
+		visibleElement = $('#nav_list_first ul:visible');
+
+		visibleElement.stop().animate({
+			'height' : 'toggle'
+		}, 500).parent().removeClass('active');
+		if ((checkedElement.is('ul')) && (!checkedElement.is(':visible'))) {
+			checkedElement.stop().animate({
+				'height' : 'toggle'
+			}, 500).parent().addClass('active');
+			return false;
+		}
+		if ((checkedElement.is('ul')) && (checkedElement.is(':visible'))) {
+			return false;
+		}
+	});
+});
+</script>
+				<ul id="nav_list_first" class="nav_list"><li  class="first active"><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="https://licey20.kuz-edu.ru/" title="Главная" >Главная</a></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=6655" title="Новости" >Новости</a><ul><li  class="first"><a href="index.php?id=61013" title="Галина Михайловна Макашина (центр развития социальных технологий) о текущей ситуации" >Галина Михайловна Макашина (центр развития социальных технологий) о текущей ситуации</a></li>
+<li  class="last"><a href="index.php?id=61818" title="Информация для выпускников 2021-2022 учебного года и их родителей (законных представителей)" >Информация для выпускников 2021-2022 учебного года и их родителей (законных представителей)</a></li>
+</ul></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=6624" title="Сведения об образовательной организации" >Сведения об образовательной организации</a><ul><li  class="first"><a href="index.php?id=6625" title="Основные сведения" >Основные сведения</a></li>
+<li ><a href="index.php?id=6626" title="Структура и органы управления образовательной организацие" >Структура и органы управления образовательной организацие</a></li>
+<li ><a href="index.php?id=6631" title="Документы" >Документы</a></li>
+<li ><a href="index.php?id=6627" title="Образование" >Образование</a></li>
+<li ><a href="index.php?id=6634" title="Образовательные стандарты и требования" >Образовательные стандарты и требования</a></li>
+<li ><a href="index.php?id=6628" title="Руководство. Педагогический (научно-педагогический) состав" >Руководство. Педагогический (научно-педагогический) состав</a></li>
+<li ><a href="index.php?id=6629" title="Материально-техническое обеспечение и оснащенность образовательного процесса" >Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+<li ><a href="index.php?id=6633" title="Стипендии и иные виды материальной поддержки" >Стипендии и иные виды материальной поддержки</a></li>
+<li ><a href="index.php?id=6767" title="Платные дополнительные образовательные услуги" >Платные дополнительные образовательные услуги</a></li>
+<li ><a href="index.php?id=6630" title="Финансово-хозяйственная деятельность" >Финансово-хозяйственная деятельность</a></li>
+<li ><a href="index.php?id=48481" title="Доступная среда" >Доступная среда</a></li>
+<li ><a href="http://licey20.kuz-edu.ru/files/licey20/doc/вакансии.pdf" title="Вакантные места для приема (перевода" >Вакантные места для приема (перевода</a></li>
+<li  class="last"><a href="index.php?id=49258" title="Международное сотрудничество" >Международное сотрудничество</a></li>
+</ul></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=6680" title="Государственная итоговая аттестация" >Государственная итоговая аттестация</a><ul><li  class="first"><a href="index.php?id=6621" title="ЕГЭ" >ЕГЭ</a></li>
+<li ><a href="index.php?id=6620" title="ОГЭ" >ОГЭ</a></li>
+<li ><a href="index.php?id=6681" title="ГВЭ" >ГВЭ</a></li>
+<li ><a href="index.php?id=6623" title="Полезные ссылки" >Полезные ссылки</a></li>
+<li  class="last"><a href="index.php?id=6683" title="Демонстрационные варианты" >Демонстрационные варианты</a></li>
+</ul></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=6773" title="Правила приема в  Лицей" >Правила приема в  Лицей</a><ul><li  class="first"><a href="index.php?id=29986" title="Правила приема в 1 класс" >Правила приема в 1 класс</a></li>
+<li  class="last"><a href="index.php?id=29987" title="Правила приема в 10 класс" >Правила приема в 10 класс</a></li>
+</ul></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=6635" title="Результаты деятельности" >Результаты деятельности</a><ul><li  class="first"><a href="index.php?id=6637" title="Достижения учреждения" >Достижения учреждения</a></li>
+<li ><a href="index.php?id=6677" title="Достижения обучающихся" >Достижения обучающихся</a></li>
+<li  class="last"><a href="index.php?id=6678" title="Выпускники" >Выпускники</a></li>
+</ul></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=6608" title="Ученикам и родителям" >Ученикам и родителям</a><ul><li  class="first"><a href="index.php?id=6765" title="Общая информация" >Общая информация</a></li>
+<li ><a href="index.php?id=6766" title="Итоговый зачет" >Итоговый зачет</a></li>
+<li ><a href="index.php?id=11578" title="Социальная и профилактическая деятельность" >Социальная и профилактическая деятельность</a></li>
+<li ><a href="index.php?id=6768" title="Исследовательская и проектная деятельность" >Исследовательская и проектная деятельность</a></li>
+<li ><a href="index.php?id=14041" title="Профориентация" >Профориентация</a></li>
+<li ><a href="index.php?id=6610" title="Требования к школьной одежде" >Требования к школьной одежде</a></li>
+<li ><a href="index.php?id=15476" title="Летняя занятость" >Летняя занятость</a></li>
+<li ><a href="index.php?id=6770" title="Добровольные пожертвования" >Добровольные пожертвования</a></li>
+<li ><a href="index.php?id=6771" title="Полезные ссылки" >Полезные ссылки</a></li>
+<li ><a href="index.php?id=10207" title="Инклюзивное образование" >Инклюзивное образование</a></li>
+<li ><a href="http://ko.m-sk.ru/%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8/" title="Муниципальные услуги" >Муниципальные услуги</a></li>
+<li  class="last"><a href="index.php?id=6772" title="ВУЗы Кемеровской области" >ВУЗы Кемеровской области</a></li>
+</ul></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=49462" title="Школьное питание" >Школьное питание</a></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=44615" title="Дистанционное обучение" >Дистанционное обучение</a></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=26525" title="Школа- территория успеха" >Школа- территория успеха</a></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=6769" title="Безопасность" >Безопасность</a></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=15272" title="Информационная безопасность" >Информационная безопасность</a><ul><li  class="first"><a href="index.php?id=15287" title="Локальные нормативные акты в сфере обеспечения информационной безопасности обучающихся" >Локальные нормативные акты в сфере обеспечения информационной безопасности обучающихся</a></li>
+<li ><a href="index.php?id=15284" title="Нормативное регулирование" >Нормативное регулирование</a></li>
+<li ><a href="index.php?id=15282" title="Педагогическим работникам" >Педагогическим работникам</a></li>
+<li ><a href="index.php?id=15273" title="Обучающимся" >Обучающимся</a></li>
+<li ><a href="index.php?id=15275" title="Родителям (законным представителям) обучающихся" >Родителям (законным представителям) обучающихся</a></li>
+<li ><a href="index.php?id=15277" title="Детские безопасные сайты" >Детские безопасные сайты</a></li>
+<li  class="last"><a href="index.php?id=24905" title="Ссылки на сайты по информационной безопасности" >Ссылки на сайты по информационной безопасности</a></li>
+</ul></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=6679" title="Историческая справка" >Историческая справка</a></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=24133" title="ВФСК ГТО" >ВФСК ГТО</a></li>
+<li ><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=40657" title="ШСК "ЦСКЛ"" >ШСК "ЦСКЛ"</a></li>
+<li  class="last"><a class="menu_row" style="color:#660033; font-size:18px; background: #e8e8e8" href="index.php?id=56850" title="Противодействие коррупции" >Противодействие коррупции</a></li>
+</ul>
+
+				<div id="obr_dir" style="text-align:center">
+				<br><hr><br>
+					<img src="/files/licey20/images/Ирина Геннадьевна Бозина 2.jpg" width="150px"><br><br>
+					<a href="index.php?id=6661">Обращение руководителя</a>
+
+				</div>
+				 	<hr />
+<p style="text-align: center;"><strong><a href="https://cabinet.ruobr.ru/login/"><span style="color: #660033;">"Электронная школа 2.0"</span> </a></strong><br />Вход для родителей и детей</p>
+<hr />
+<p style="text-align: center;"><strong><a style="color: #660033;" href="https://ruobr.ru/accounts/login/" target="blank">"Электронная школа 2.0"</a> </strong><br />Вход для учителей</p>
+<hr />
+<p style="color: #660033; text-align: center;"><strong><a style="color: #660033;" href="http://ko.m-sk.ru/" target="blank"> МКУ "Управление образованием Междуреченского городского округа" </a></strong></p>
+<hr />
+<p style="text-align: center;"><a href="https://edu.gov.ru/"><img title="Минпросвещения России" src="files/licey20/images/logo.png" alt="" width="99" height="115" /></a> <a href="https://www.minobrnauki.gov.ru/"><img title="Министерство науки и высшего образования РФ" src="files/licey20/images/МинНауки.PNG" alt="" width="99" height="105" /></a></p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"><span>Лицей в соцсетях:</span></p>
+<p style="text-align: center;"><a href="https://vk.com/liceyclub20" target="blank"><img src="files/licey20/doc/структура/контакт.png" alt="" width="50" height="50" /> </a></p>
+
+			</div>
+
+			<div id="content">
+
+<div id="news">
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Новости</a></li>
+    <li><a href="#tabs-2">От школьной редакции</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>
+		<div class="article_big">
+	<h4>Информация для выпускников 2021-2022 учебного года и их родителей (законных представителей)</h4>
+	<p style="text-align:justify">Пособие выплачивается на основании Порядка выплаты выпускникам 11-х классов из малообеспеченных семей общеобразовательных организаций, находящихся на территории Кемеровской области, допущенным к государственной итоговой аттестации, за исключением выпускников, находящихся на полном государственном обеспечении, единовременного социального пособия, утвержденного постановлением Правительства Кемеровской области - Кузбасса от 07.04.2022 № 190.</p>
+	<p class="postinfo"><b>Дата публикации:</b> 20.04.2022 г. 
+	<a href="https://licey20.kuz-edu.ru/index.php?id=61818">Подробнее..</a>
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Осторожно мошенники</h4>
+	<p style="text-align:justify">Как не попасть на удочку мошенника</p>
+	<p class="postinfo"><b>Дата публикации:</b> 31.03.2022 г. 
+	<a href="https://licey20.kuz-edu.ru/index.php?id=61146">Подробнее..</a>
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Командная олимпиада «Высшая проба» по программированию!</h4>
+	<p style="text-align:justify">Национальный исследовательский университет «Высшая школа экономики» приглашает школьников 7-10-х классов принять участие в
+Командной олимпиаде «Высшая проба» по программированию!<br>
+Состязание для вас, если вы имеете навыки программирования и решения алгоритмических
+задач. В составе команды должно быть 3 человека, они могут быть из разных классов и школ.<br>
+Участие бесплатное.<br>
+Регистрация на Командную олимпиаду продлится до 4 апреля 2022 года<br>
+Успей пройти регистрацию <a href="https://olymp.hse.ru/coding/registration"> https://olymp.hse.ru/coding/registration</a></p>
+	<p class="postinfo"><b>Дата публикации:</b> 24.03.2022 г. 
+	<a href="https://licey20.kuz-edu.ru/index.php?id=61009">Подробнее..</a>
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Профилактика преступлений в сфере информационно-телекоммуникационных технологий</h4>
+	<p style="text-align:justify"><a href="https://youtu.be/3Y7fE8LixCE"> Видеоролик Банка России </a> <br>
+ <a href="https://youtu.be/3ViJCH8tCpM"> Социальный ролик прокуратуры Кемеровской области</a></p>
+	<p class="postinfo"><b>Дата публикации:</b> 24.03.2022 г. 
+	
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Галина Михайловна Макашина (центр развития социальных технологий) о текущей ситуации</h4>
+	<p style="text-align:justify"></p>
+	<p class="postinfo"><b>Дата публикации:</b> 24.03.2022 г. 
+	<a href="https://licey20.kuz-edu.ru/index.php?id=61013">Подробнее..</a>
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Обращение директора лицея</h4>
+	<p style="text-align:justify"></p>
+	<p class="postinfo"><b>Дата публикации:</b> 12.03.2022 г. 
+	<a href="https://licey20.kuz-edu.ru/index.php?id=60720">Подробнее..</a>
+	<br><br></p>
+</div><hr> 
+    </p>
+  </div>
+  <div id="tabs-2">
+    <p>
+		<div class="article_big">
+	<h4>Первый номер «Перемены»</h4>
+	<p style="text-align:justify">Точно в день знаний вышел первый номер «Перемены». Если вы не успели его прочитать, то экземпляр газеты можно взять в школьной библиотеке.</p>
+	<p class="postinfo"><b>Дата публикации:</b> 01.09.2021 г. 
+	<a href="https://licey20.kuz-edu.ru/index.php?id=55788">Подробнее..</a>
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Время «Перемены»</h4>
+	<p style="text-align:justify"><p>Вышел третий номер школьной газеты «Перемены». Этот выпуск посвящен итогам третей четверти.</p>
+<p>В третьем номере:</p>
+<p>- репортаж с первой игры «Зарница»</p>
+<p>- «Решить нерешаемое». Что такое ТЮФ?</p>
+<p>- рецензии на киноновинки,</p>
+<p>- а также творчество лицеистов!</p>
+<p>Читайте <a href="files/licey20/doc/Новости/школьная газета/Перемена №3.pdf">«Перемену»</a> онлайн</p></p>
+	<p class="postinfo"><b>Дата публикации:</b> 10.05.2021 г. 
+	
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Читайте «Перемену»</h4>
+	<p style="text-align:justify">Школьная редакция выпустила ВТОРОЙ номер школьной газеты. В этом выпуске читайте:<br>
+•	Интервью с директором Ириной Геннадьевной Бозиной об итогах 2020 года<br>
+•	Каково писать олимпиаду по 8 предметам? Дневник участницы<br>
+•	Новогоднюю сказку
+
+<p>Читайте <a href="files/licey20/doc/Новости/школьная газета/№2.pdf">электронную версию нашей газеты.</a>.</p>
+Также доступна <a href="files/licey20/doc/Новости/школьная газета/Перемена №1.pdf">электронная версия ПЕРВОГО номера</a> газеты.
+</p>
+	<p class="postinfo"><b>Дата публикации:</b> 18.01.2021 г. 
+	
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Второй выпуск подкаста «РадиоАктивны»</h4>
+	<p style="text-align:justify"><p>В этот раз ученицы 8 класса Алиса Владимирова и Валерия Фомина обсуждают плюсы и минусы дистанционного обучения. Подкаст можно послушать в нашей группе «ВКонтакте», на сервисах SoundCloud и Яндекс.Музыка. Выбирайте удобную площадку и слушайте.<br /> <iframe style="border: none; height: 180px;" src="https://music.yandex.ru/iframe/#track/74303410/12442853" frameborder="0" width="60%" height="180"></iframe></p></p>
+	<p class="postinfo"><b>Дата публикации:</b> 05.12.2020 г. 
+	
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Наш подкаст на Яндекс.Музыке</h4>
+	<p style="text-align:justify"><p>Музыку «РадиоАктивны» - подкаст лицеистов о школе и школьниках. Слушайте на Яндекс.Музыке</p>
+<p><a href="https://music.yandex.ru/album/12442853" target="blank"> <img src="https://cache-novosibmts03.cdn.yandex.net/download.cdn.yandex.net/from/yandex.ru/support/ru/music/files/button_black.png" alt="" width="250" align="center" /></a></p></p>
+	<p class="postinfo"><b>Дата публикации:</b> 27.10.2020 г. 
+	
+	<br><br></p>
+</div><hr>
+<div class="article_big">
+	<h4>Первый подкаст школьной редакции</h4>
+	<p style="text-align:justify">Ребята из школьной редакции запустили собственный подкаст "РадиоАктивны" - подкаст о школе и школьниках. В первом выпуске обсуждали школьную форму. 
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/910220293&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/udvn1tt2khp8" title="РадиоАктивны" target="_blank" style="color: #cccccc; text-decoration: none;">РадиоАктивны</a> · <a href="https://soundcloud.com/udvn1tt2khp8/vypusk-1-shkolnaya-forma" title="Выпуск 1. Школьная Форма" target="_blank" style="color: #cccccc; text-decoration: none;">Выпуск 1. Школьная Форма</a></div></p>
+	<p class="postinfo"><b>Дата публикации:</b> 15.10.2020 г. 
+	
+	<br><br></p>
+</div><hr> 
+    </p>
+  </div>
+</div>
+</div>
+<div style="width: 260px; float: left">
+<script src='https://pos.gosuslugi.ru/bin/script.min.js'></script> 
+<style>
+#js-show-iframe-wrapper{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-width:293px;max-width:100%;background:linear-gradient(138.4deg,#38bafe 26.49%,#2d73bc 79.45%);color:#fff;cursor:pointer}#js-show-iframe-wrapper .pos-banner-fluid *{box-sizing:border-box}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{display:block;width:240px;min-height:56px;font-size:18px;line-height:24px;cursor:pointer;background:#0d4cd3;color:#fff;border:none;border-radius:8px;outline:0}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#1d5deb}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus{background:#2a63ad}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active{background:#2a63ad}@-webkit-keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@font-face{font-family:LatoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWeb;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:RobotoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Light.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:RobotoWebRegular;src:url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:RobotoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Roboto/Roboto-Bold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:ScadaWebRegular;src:url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:ScadaWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Scada/Scada-Bold.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:Geometria;src:url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria.eot);src:url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria.eot?#iefix) format("embedded-opentype"),url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Geometria-ExtraBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria-ExtraBold.eot);src:url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria-ExtraBold.eot?#iefix) format("embedded-opentype"),url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria-ExtraBold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Geometria/Geometria-ExtraBold.ttf) format("truetype");font-weight:800;font-style:normal}
+</style>
+
+<style>
+#js-show-iframe-wrapper{background:var(--pos-banner-fluid-23__background)}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{width:100%;min-height:52px;background:#fff;color:#0d4cd3;font-size:16px;font-family:LatoWeb,sans-serif;font-weight:400;padding:0;line-height:1.2;border:2px solid #0d4cd3}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active,#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus,#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#e4ecfd}#js-show-iframe-wrapper .bf-23{position:relative;display:grid;grid-template-columns:var(--pos-banner-fluid-23__grid-template-columns);grid-template-rows:var(--pos-banner-fluid-23__grid-template-rows);width:100%;max-width:var(--pos-banner-fluid-23__max-width);box-sizing:border-box;grid-auto-flow:row dense}#js-show-iframe-wrapper .bf-23__decor{background:var(--pos-banner-fluid-23__bg-url) var(--pos-banner-fluid-23__bg-url-position) no-repeat;background-size:cover;background-color:#f8efec;position:relative}#js-show-iframe-wrapper .bf-23__content{display:flex;flex-direction:column;padding:var(--pos-banner-fluid-23__content-padding);grid-row:var(--pos-banner-fluid-23__content-grid-row);justify-content:center}#js-show-iframe-wrapper .bf-23__text{margin:var(--pos-banner-fluid-23__text-margin);font-size:var(--pos-banner-fluid-23__text-font-size);line-height:1.4;font-family:LatoWeb,sans-serif;font-weight:700;color:#0b1f33}#js-show-iframe-wrapper .bf-23__bottom-wrap{display:flex;flex-direction:row;align-items:center}#js-show-iframe-wrapper .bf-23__logo-wrap{position:absolute;top:var(--pos-banner-fluid-23__logo-wrap-top);left:var(--pos-banner-fluid-23__logo-wrap-right);padding:var(--pos-banner-fluid-23__logo-wrap-padding);background:#fff;border-radius:0 0 8px 0}#js-show-iframe-wrapper .bf-23__logo{width:var(--pos-banner-fluid-23__logo-width);margin-left:1px}#js-show-iframe-wrapper .bf-23__slogan{font-family:LatoWeb,sans-serif;font-weight:700;font-size:var(--pos-banner-fluid-23__slogan-font-size);line-height:1.2;color:#005ca9}#js-show-iframe-wrapper .bf-23__btn-wrap{width:100%;max-width:var(--pos-banner-fluid-23__button-wrap-max-width)}
+</style >
+<div id='js-show-iframe-wrapper'>
+  <div class='pos-banner-fluid bf-23'>
+
+    <div class='bf-23__decor'>
+      <div class='bf-23__logo-wrap'>
+        <img
+          class='bf-23__logo'
+          src='https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg'
+          alt='Госуслуги'
+        />
+        <div class='bf-23__slogan'>Решаем вместе</div >
+      </div >
+    </div >
+    <div class='bf-23__content'>
+      <div class='bf-23__text'>
+        Есть предложения по организации учебного процесса или знаете, как сделать школу лучше?
+      </div >
+
+      <div class='bf-23__bottom-wrap'>
+        <div class='bf-23__btn-wrap'>
+          <!-- pos-banner-btn_2 не удалять; другие классы не добавлять -->
+          <button
+            class='pos-banner-btn_2'
+            type='button'
+          >Написать о проблеме
+          </button >
+        </div >
+      </div>
+    </div >
+
+  </div >
+</div >
+<script>
+
+(function(){
+  "use strict";function ownKeys(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var o=Object.getOwnPropertySymbols(e);if(t)o=o.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable});n.push.apply(n,o)}return n}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};if(t%2)ownKeys(Object(n),true).forEach(function(t){_defineProperty(e,t,n[t])});else if(Object.getOwnPropertyDescriptors)Object.defineProperties(e,Object.getOwnPropertyDescriptors(n));else ownKeys(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function _defineProperty(e,t,n){if(t in e)Object.defineProperty(e,t,{value:n,enumerable:true,configurable:true,writable:true});else e[t]=n;return e}var POS_PREFIX_23="--pos-banner-fluid-23__",posOptionsInitialBanner23={background:"#ffffff","grid-template-columns":"100%","grid-template-rows":"262px auto","max-width":"100%","text-font-size":"20px","text-margin":"0 0 24px 0","button-wrap-max-width":"100%","bg-url":"url('https://pos.gosuslugi.ru/bin/banner-fluid/18/banner-fluid-bg-18-2.svg')","bg-url-position":"right bottom","content-padding":"26px 24px 24px","content-grid-row":"0","logo-wrap-padding":"16px 12px 12px","logo-width":"65px","logo-wrap-top":"0","logo-wrap-left":"0","slogan-font-size":"12px"},setStyles=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:POS_PREFIX_23;Object.keys(e).forEach(function(o){t.style.setProperty(n+o,e[o])})},removeStyles=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:POS_PREFIX_23;Object.keys(e).forEach(function(e){t.style.removeProperty(n+e)})};function changePosBannerOnResize(){var e=document.documentElement,t=_objectSpread({},posOptionsInitialBanner23),n=document.getElementById("js-show-iframe-wrapper"),o=n?n.offsetWidth:document.body.offsetWidth;if(o>340)t["button-wrap-max-width"]="209px";if(o>482)t["content-padding"]="24px",t["text-font-size"]="24px";if(o>568)t["grid-template-columns"]="1fr 292px",t["grid-template-rows"]="100%",t["content-grid-row"]="1",t["content-padding"]="32px 24px",t["bg-url-position"]="calc(100% + 35px) bottom";if(o>610)t["bg-url-position"]="calc(100% + 12px) bottom";if(o>726)t["bg-url-position"]="right bottom";if(o>783)t["grid-template-columns"]="1fr 390px";if(o>820)t["grid-template-columns"]="1fr 420px",t["bg-url-position"]="right bottom";if(o>1098)t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/18/banner-fluid-bg-18-3.svg')",t["bg-url-position"]="calc(100% + 55px) bottom",t["grid-template-columns"]="1fr 557px",t["text-font-size"]="32px",t["content-padding"]="32px 32px 32px 50px",t["logo-width"]="78px",t["slogan-font-size"]="15px",t["logo-wrap-padding"]="20px 16px 16px";if(o>1422)t["max-width"]="1422px",t["grid-template-columns"]="1fr 720px",t["content-padding"]="32px 48px 32px 160px",t.background="linear-gradient(90deg, #ffffff 50%, #f8efec 50%)";setStyles(t,e)}changePosBannerOnResize(),window.addEventListener("resize",changePosBannerOnResize),window.onunload=function(){var e=document.documentElement,t=_objectSpread({},posOptionsInitialBanner23);window.removeEventListener("resize",changePosBannerOnResize),removeStyles(t,e)};
+})()
+</script>
+ <script>Widget("https://pos.gosuslugi.ru/form", 304247)</script>
+</div>
+<div style="width: 240px; float: right; margin:3px;">
+ 	<table>
+<tbody>
+<tr>
+<td bgcolor="#e8e8e8">
+<p style="text-align: center;"><span style="color: #660033;"><strong>Лицей № 20 - одна из самых крупных школ города:</strong></span></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>1238</strong> учащихся, <strong>82</strong> педагогов.<br /> <strong>C 8 класса</strong> начинается предпрофильная подготовка,<strong> <br />с 10-го класса</strong> профильное обучение по пяти профилям. Ежегодно выпускники 9-ых и 11-ых классов на высоком уровне сдают <a href="files/licey20/images/Достижения учреждения/Результаты ЕГЭ 2020.pdf" target="_blank" data-href="http://gimnasia20.m-sk.ru/arxiv/ega.pdf">ГИА и ЕГЭ</a>.</td>
+</tr>
+<tr>
+<td bgcolor="#e8e8e8">
+<p style="text-align: center;"><strong><span style="color: #660033;">Лицей занимает <br />первое место в городе</span></strong></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">по числу <a href="files/licey20/images/Достижения учреждения/ВсОШ 20-21.pdf" target="_blank" data-href="http://gimnasia20.m-sk.ru/arxiv/olimp.pdf"> победителей и призеров</a> Всероссийской олимпиады школьников, городской и региональных научно-практических <a href="files/licey20/images/Достижения учреждения/ВсОШ 20-21.pdf" target="_blank" data-href="http://gimnasia20.m-sk.ru/arxiv/npk.pdf"> конференций.</a></td>
+</tr>
+<tr>
+<td bgcolor="#e8e8e8">
+<p style="text-align: center;"><span style="color: #660033;"><strong>В 2013, 2014, 2015, <a title="Сертификат" href="files/licey20/doc/Новости/Рейтинг школ.pdf" target="_blank">2017</a> гг.<br /> Лицей № 20 вошел в число 500 лучших школ Российской Федерации,<br /><strong><span>2019-2020</span></strong><span> <strong>учебный год</strong> –  вошел во всероссийский проект «Базовые школы Российской Академии Наук»</span></strong></span></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">Лицей ежегодно занимает лидирующие позиции в рейтинге школ Кемеровской области, неоднократно входил в Национальный реестр "Ведущие образовательные учреждения России".</td>
+</tr>
+</tbody>
+</table>
+<hr><br>
+</div>
+<div style="width: 240px; float: right; margin:3px;">
+ 	<p style="text-align: center;"><a href="https://5facecd8d1797.site123.me/"><img src="files/licey20/images/библиотека.JPG" alt="" width="250" height="183" /></a></p>
+<p style="text-align: center;"><a href="https://bolshayaperemena.online/?utm_source=region&amp;utm_medium=kemerovo"><img src="files/licey20/images/твори_1248х672_new.jpg" alt="" width="250" height="112" /></a></p>
+<p style="text-align: center;"><a href="https://bilet.worldskills.ru/"><img src="files/licey20/doc/банер_билет_в_будущее_миниатюра.jpg" alt="" width="250" height="112" /></a></p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"><a href="http://gimnasia20.m-sk.ru/polk.htm" target="_blank"><img src="files/licey20/doc/polk/stm.jpg" alt="Бессмертный полк" width="236" height="102" /></a></p>
+<p style="text-align: center;"> </p>
+</div>
+
+
+<div id="gal" style="clear: both;"><a href="index.php?id=6636"><h3>Фотогалерея</h3></a>
+<div id="carousel">
+<div class="carousel">
+<img src="/assets/components/phpthumbof/cache/1.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/2.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/3.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/41.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/51.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/52.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/53.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/54.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/55.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/56.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/57.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/61.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/73.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/91.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/92.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/94.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/95.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/96.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/141.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" ><img src="/assets/components/phpthumbof/cache/97.f93d8153e4bae606f1ec449a4d218fdc6605.jpg" >
+</div>
+</div>
+	<a id="prev" href="#"></a>
+		<a id="next" href="#"></a></div>
+
+</div>
+		</div>
+				<div id="footer">
+			<table style="width: 1100px;" border="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 400px;">
+<h4> Контактные данные:</h4>
+<ul style="list-style-type: none; padding-left: 20px;">
+<li><strong>Директор:</strong><br /><span>Бозина </span><span>Ирина Геннадьевна <span>(38475) 2-53-02</span></span></li>
+<li><strong>Адрес электронной почты:</strong><br /><a href="mailto:school20@rikt.ru">school20@rikt.ru</a></li>
+</ul>
+</td>
+<td style="vertical-align: top;">
+<h4>Наш адрес:</h4>
+<ul style="list-style-type: none; padding-left: 20px;">
+<li><span>г. Междуреченск, </span><span>Кемеровская область, </span><span>пр-кт. Строителей, 59</span></li>
+</ul>
+</td>
+<td style="vertical-align: top;" align="right">
+<p><a href="manager">Личный кабинет</a></p>
+<p><a href="index.php?id=6664">Карта сайта</a></p>
+<p> </p>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"> © 2017, КРИПКиПРО.</p>
+		</div>
+		
+		<div style="clear: both;"></div>
+	</div>
+</body>
+</html>

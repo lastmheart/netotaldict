@@ -1,0 +1,153 @@
+.row-dict-statistic.row{
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+}
+.row-dict-statistic.row:after,
+.row-dict-statistic.row:before{
+    clear: both;
+    display: table;
+    width: 100%;
+    content: '';
+}
+.row-dict-statistic.row .col-sm-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    box-sizing: border-box;
+}
+.row-dict-statistic {
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+.row-dict-statistic > div {
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+.row-dict-statistic > div > div {
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.row-dict-statistic > div > div .small {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #95928c;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.row-dict-statistic > div > div p.lead,
+.row-dict-statistic > div > div .lead {
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #141212;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+.row-dict-statistic > div:first-child {
+    padding-left: 15px;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+.row-dict-statistic > div:first-child > div {
+    padding-left: 0px;
+    border-left: none;
+    box-sizing: border-box;
+}
+.popup-window-titlebar-text {
+    font-size: 20px;
+    font-family: MullerRegular, sans-serif;
+    color: black;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.popup-window-content p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: MullerRegular, sans-serif;
+}
+.main-container-class h1.sale-order-detail-title-element,
+.main-container-class h1.sale-order-title {
+    font-size: 20px;
+    font-family:MullerRegular, sans-serif;
+    margin-bottom:10px;
+}
+.sale-order-detail-general {
+    border: 1px solid #cccccc;
+}
+.sale-order-detail-general-item {
+	color: #000;
+	font-weight:bold; font-size:14px;
+}
+
+.sale-order-detail-general-head ,
+.sale-order-list-title-container {
+     background-color: #f4f2f1;
+}
+.sale-order-detail-about-order-inner-container-repeat-button,
+.sale-order-detail-payment-options-methods-button-element,
+.sale-order-detail-payment-options-methods-button-element-new-window,
+.sale-order-detail-about-order-inner-container-repeat-button:hover,
+.sale-order-detail-payment-options-methods-button-element.active-button:hover,
+.sale-order-detail-payment-options-methods-button-element-new-window:hover,
+.sale-order-list-button ,
+.sale-order-list-button:hover{
+    background-color:#d81f26;
+}
+
+.sale-order-detail-about-order-inner-container-list-item,
+.sale-order-detail-about-order-inner-container-name-titile,
+.sale-order-detail-about-order-inner-container-status-title,
+.sale-order-detail-about-order-inner-container-price-title,
+.sale-order-detail-payment-options-shipment-composition-item-title,
+.sale-order-detail-payment-options-order-content-item-title,
+.sale-order-detail-about-order-inner-container-repeat-cancel,
+.sale-order-link,
+.sale-order-list-change-payment ,
+.sale-order-history-link ,
+.sale-order-list-shipment,
+.sale-order-detail-general-item,
+.sale-order-list-shipment-button,
+.sale-order-list-repeat-link,
+.sale-order-list-cancel-link,
+.sale-order-list-about-link,
+.sale-order-list-change-payment,
+.sale-order-list-status-alert,
+.sale-order-list-inner-title-line-item ,
+.sale-order-list-payment-check, .sale-order-list-payment-price
+{
+    font: 15px MullerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sale-order-list-payment-title,
+.sale-order-list-title, .sale-order-list-accomplished-title ,
+.sale-order-list-shipment-title {
+    font: bold 17px MullerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sale-order-detail-total-payment-list-left-item {
+    font-family: MullerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 22px;
+}
+.bx-sls .bx-ui-sls-container {
+    min-height: 35px;
+}
+.bx-soa-section-title-container .bx-soa-section-title {
+   font-family: MullerRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-left: 20px;
+}
+.bx-soa-section-title-container {
+    background: #f4f2f1;
+}
+.bx-soa-section.bx-step-completed {
+    border: 1px solid #aaaaaa;
+}
+.sale-order-list-status-alert,
+.sale-order-list-change-payment {
+	display:none;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="csrf-token" content="eytEiDsmikV5JNeMFtnxczXFNxt4yBegiuRnSGbS">
+        <title>Тотальный Диктант</title>
+        <link href="/css/site.css?id=86477555f0f48102fcda" rel="stylesheet">
+        <script src="/js/site.js?id=04b32c84d1dce1686c60" defer></script>
+        <link href="/css/public_offer.css?id=83f35c0273e479c2a724" rel="stylesheet">
+        <script src="/js/public_offer.js?id=eead4818f65ecde9ce11" defer></script>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__inner">
+                    <span class="header__logo">
+                        <picture>
+                            <source srcset="/images/logo.png" media="(min-width: 993px)">
+                            <img src="/images/logo-mobile.svg" alt="logo">
+                        </picture>
+                    </span>
+                    <div class="header__info">
+                                                    <button class="header__log-in-btn" data-toggle="modal" data-target="#authorizationModal">ВХОД</button>
+                            <div class="modal__wrap" tabindex="-1" id="authorizationModal" style="display: none;">
+    <div class="modal">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">ВОЙТИ</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">создать учетную запись</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <form id="loginForm" method="POST" action="https://online-dictation.totaldict.ru/auth/login">
+                    <input type="hidden" name="_token" value="eytEiDsmikV5JNeMFtnxczXFNxt4yBegiuRnSGbS">                    <input type="hidden" name="timezone" class="input-timezone" value="">
+                    <div class="form-section form-social">
+                        
+                        
+                        <a href="https://online-dictation.totaldict.ru/auth/vk" class="form-btn form-hr--vk">Войти через Вконтакте</a>
+                        <a href="https://online-dictation.totaldict.ru/auth/ok" class="form-btn form-hr--ok">Войти через Одноклассники</a>
+                        <a href="https://leader-id.ru/api/oauth/authorize?client_id=OsioluU8ZXPC3vnyR2qD61tfCeEOjwgL&redirect_uri=https://online-dictation.totaldict.ru/auth/leader/callback&response_type=code&state=LI" class="form-btn form-hr--leader" >Войти через Лидер ID </a>
+                    </div>
+                    <div class="form-section">
+                        <input type="text" name="email" placeholder="Эл. почта" class="form-input" required >
+                    </div>
+
+                    <div class="form-section">
+                        <input type="password" name="password" placeholder="Пароль" class="form-input" required >
+                        
+                    </div>
+                    
+                    <div class="login-form-error"></div>
+                    <div class="form-section form-section--sm">
+                        <button type="submit" class="form-submit" >Вход</button>
+                    </div>
+                    <div class="form-footer">
+                        <label class="checkbox-wrap">
+                            <span class="checkbox-label">Запомнить меня</span>
+                            <input type="checkbox" name="remember" class="visually-hidden">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+                                            <div class="block-auth-message-payment">Авторизация на сайте при оплате – это требование платежной системы. Мы не собираем и не передаем никому ваши данные.</div>
+                                    </form>
+            </div>
+            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                <form id="registerForm" method="POST" action="https://online-dictation.totaldict.ru/auth/register">
+                    <input type="hidden" name="_token" value="eytEiDsmikV5JNeMFtnxczXFNxt4yBegiuRnSGbS">                    <input type="hidden" name="timezone" value="" class="input-timezone">
+                    <div class="form-section">
+                        <input type="email" name="email" placeholder="Эл. почта" class="form-input" required >
+                    </div>
+                    <div class="form-section">
+                        <input type="password" name="password" placeholder="Пароль" class="form-input" required >
+                    </div>
+                    <div class="register-form-error"></div>
+                    <div class="form-section form-section--sm">
+                        <button type="submit" class="form-submit">Продолжить</button>
+                    </div>
+                    <div class="form-footer">
+                        <label class="checkbox-wrap">
+                            <span class="checkbox-label">Нажимая «продолжить», вы соглашаетесь на обработку указанных вами персональных данных</span>
+                            <input type="checkbox" class="visually-hidden" required>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                                            <div class="block-auth-message-payment">Авторизация на сайте при оплате – это требование платежной системы. Мы не собираем и не передаем никому ваши данные.</div>
+                                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="route-timezone" data-url-timezone="https://online-dictation.totaldict.ru/auth/timezone"></div>
+                                            </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div
+                class="container container-page-public-offer"
+                data-url-payment="https://online-dictation.totaldict.ru/public_offer/payment"
+            >
+                                <time class="main__date">27 апреля 2022</time>
+                <h1 class="title">Тотальный диктант — 2021</h1>
+                <div class="main__inner">
+                    <div class="main-col-2">
+                        <p class="main__info">
+                            Тотальный диктант — это общественный некоммерческий проект, который реализуется силами неравнодушных любителей русского языка по всему миру. Он давно перестал быть «акцией одного дня» и ежегодно запускает десятки бесплатных просветительских проектов (лекторий, онлайн-марафоны, онлайн-курсы и т. п.), которые требуют дополнительных вложений и привлечения дополнительных ресурсов.
+                        </p>
+                        <p class="main__info">
+                            Если вы хотите поддержать Тотальный диктант, приглашаем вас это сделать! Все полученные средства пойдут на реализацию дополнительных проектов.
+                        </p>
+                        <p class="main__info">
+                            Каждый месяц мы будем публиковать отчеты о поступивших средствах.
+                        </p>
+
+                        <form id="form-offer" class="main__give-form" method="POST">
+                            <input type="hidden" name="_token" value="eytEiDsmikV5JNeMFtnxczXFNxt4yBegiuRnSGbS">                            <div class="cont-summa-offer">
+                                <input name="summa-offer" id="summa-offer" type="number" value="" min="1" placeholder="Введите сумму в RUB">
+                            </div>
+                            <div class="alert alert-danger alert-confirm-summa d_none" >
+                                <small>Введите сумму больше 0.</small>
+                            </div>
+                            <label class="checkbox-wrap" style="margin-bottom: 15px">
+                                <span class="checkbox-label">
+                                    Подписаться на ежемесячный платёж
+                                </span>
+                                <input type="checkbox" value="1" class="visually-hidden checkbox-confirm-bank-card" name="confirm-bank-card">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <button type="button" class="btn btn-donate">Помочь Тотальному диктанту</button>
+                            <div class="alert alert-danger alert-confirm-donate d_none" >
+                                <small>Необходимо принять условия публичной оферты.</small>
+                            </div>
+                            <label class="checkbox-wrap">
+                                <span class="checkbox-label">
+                                    Я принимаю условия <a target="_blank" href="/documents/public _offer_to_conclude_a_donation_agreement.pdf">публичной оферты</a>
+                                </span>
+                                <input type="checkbox" value="1" class="visually-hidden checkbox-confirm-donate">
+                                <span class="checkmark"></span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="main-col-1">
+                        <div class="donation__wrap">
+                            <h2 class="donation__title">За прошлый месяц было пожертвовано</h2>
+                            <div class="donation__amount">299 716 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__col">
+                        <h2 class="footer__copyright">&#169; Фонд «Тотальный диктант», 2015–2021</h2>
+                        <small class="footer__info">политика конфиденциальности</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

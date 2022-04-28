@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--metatextblock-->
+	<title>Создать задачу</title>
+	<meta property="og:url" content="/create-task" />
+	<meta property="og:title" content="Создать задачу" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="/img/tild3631-6461-4230-b431-626433383062__artboard.svg" />
+	<link rel="canonical" href="/create-task"><!--/metatextblock-->
+	<meta property="fb:app_id" content="257953674358265" />
+	<meta name="format-detection" content="telephone=no" />
+	                                                                        <!-- Assets -->
+	<link rel="stylesheet" href="/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/css/tilda-blocks-2.14.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/css/tilda-forms-1.0.min.css" type="text/css" media="all" />
+	<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/tilda-scripts-3.0.min.js"></script>
+	<script src="/js/tilda-blocks-2.7.js"></script>
+	<script src="/js/lazyload-1.3.min.js" charset="utf-8" async></script>
+	<script src="/js/tilda-animation-1.0.min.js" charset="utf-8" async></script>
+	<script src="/js/tilda-cover-1.0.min.js" charset="utf-8" async></script>
+	<script src="/js/tilda-events-1.0.min.js" charset="utf-8" async></script>
+	<script src="/js/tilda-forms-1.0.min.js" charset="utf-8" async></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+	        src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.3"></script>
+	<script src="https://vk.com/js/api/openapi.js?168" type="text/javascript"></script>
+
+	                                                                        <!--UI библиотека компонентов для сайта datamasters.ru-->
+	<link href="/js/index.js" rel="preload" as="script" crossorigin="anonymous" />
+	<script id="insertScript" src="/js/index.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>
+	<script
+		type="text/javascript">if ((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent)) === false && typeof (sessionStorage) != "undefined" && sessionStorage.getItem("visited") !== "y") {
+		var style       = document.createElement("style");
+		style.type      = "text/css";
+		style.innerHTML = "@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}";
+		document.getElementsByTagName("head")[0].appendChild(style);
+		$(document).ready(function() {
+			$(".t-records").addClass("t-records_animated");
+			setTimeout(function() {
+				$(".t-records").addClass("t-records_visible");
+				sessionStorage.setItem("visited", "y");
+			}, 400);
+		});
+	}</script>
+</head>
+<body class="t-body" style="margin:0;"><!--allrecords-->
+<div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node"
+     data-tilda-project-id="1282841" data-tilda-page-id="8598420" data-tilda-page-alias="create-task"
+     data-tilda-formskey="d481de49aab33752d97e54aa2f4c64d4" data-tilda-lazy="yes"
+     data-tilda-project-headcode="yes"><!--header-->
+	<div id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="1282841"
+	     data-tilda-page-id="8974460" data-tilda-formskey="d481de49aab33752d97e54aa2f4c64d4" data-tilda-lazy="yes"
+	     data-tilda-project-headcode="yes">
+		<div id="rec373805091" class="r t-rec t-rec_pt_30 t-rec_pb_30 t-screenmax-980px"
+		     style="padding-top:30px;padding-bottom:30px;background-color:#34e7b5; " data-record-type="61"
+		     data-screen-max="980px" data-bg-color="#34e7b5"><!-- T051 -->
+			<div class="t051">
+				<div class="t-container">
+					<div class="t-col t-col_12 ">
+						<div class="t051__text t-text t-text_md" style="" field="text"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="rec373805093" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"><!-- T123 -->
+			<div class="t123">
+				<div class="t-container_100 ">
+					<div class="t-width t-width_100 ">
+						<header id="dm-header" class="header"></header>
+						<script>
+							onDMLoad(function(datamasterUI) {
+								datamasterUI.methods.initHeader();
+							});
+						</script>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/header-->
+	<div id="rec154639556" class="r t-rec t-rec_pt_60" style="padding-top:60px; " data-animationappear="off"
+	     data-record-type="131"><!-- T123 -->
+		<div class="t123">
+			<div class="t-container_100 ">
+				<div class="t-width t-width_100 ">
+					<script>
+						// Check auth
+						var user;
+						$(() => {
+							async function getUser() {
+								let res             = await fetch("https://api.datamasters.ru/auth/me", { credentials: "include" });
+								let data            = await res.json();
+								let statusNamespace = data.status / 100 | 0;
+								if (statusNamespace === 4 || statusNamespace === 5) throw new Error(`HttpError: ${data.status} ${data.message}`);
+								return data;
+							}
+
+							async function init() {
+								try {
+									user = await getUser();
+									$(document).trigger("user:load", user);
+								} catch (e) {
+									localStorage.redirect = location.href;
+									//location.href = `${location.origin}/oauth?from=${location.href}`;
+									location.href         = `/oauth?from=${location.href}`;
+								}
+							}
+
+							init();
+						});
+					</script>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="rec175854540" class="r t-rec t-rec_pt_45 t-rec_pb_30" style="padding-top:45px;padding-bottom:30px; "
+	     data-animationappear="off" data-record-type="758"><!-- t758 -->
+		<div class="t758">
+			<div class="t-container">
+				<div class="t758__col t-col t-col_12 ">
+					<div class="t758__wrapper t-align_left">
+						<ul class="t758__list">
+							<li class="t758__list_item">
+								<div class="t758__link-item__wrapper"><a class="t-menu__link-item " href="/tasks?toBackUrl"
+								                                         style="font-weight:300;">Личный кабинет</a></div>
+								<span class="t758__breadcrumb-divider" style="font-weight:300;color:#858585;">→</span></li>
+							<li class="t758__list_item">
+								<div class="t758__link-item__wrapper">
+									<div class="t-menu__link-item t758__link-item_active" style="font-weight:300;">Новая задача</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style>#rec175854540 .t758 .t-menu__link-item { -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+		}
+
+		#rec175854540 .t758 .t-menu__link-item:hover { color: #9e9e9e !important; }</style>
+	</div>
+	<div id="rec293667690" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; "
+	     data-record-type="296"><!-- t265 -->
+		<div class="t265">
+			<div class="t-container">
+				<div class="t-col t-col_8 t-prefix_2">
+					<div class="t265__wrapper" style="background:#505aea;">
+						<div class="t265__icon">
+							<svg x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"
+							     style="enable-background:new 0 0 24 24;">
+								<circle style="fill:#34e7b5;" cx="12" cy="12" r="12" />
+								<g>
+									<g>
+										<path style="fill: #ffffff;"
+										      d="M15.5,11.122c-1.026-1.036-2.007-2.026-2.986-3.017c-0.385-0.39-0.413-0.895-0.075-1.251 c0.361-0.381,0.886-0.371,1.296,0.037c1.136,1.131,2.267,2.266,3.401,3.399c0.346,0.346,0.694,0.69,1.037,1.038 c0.425,0.43,0.431,0.921,0.01,1.343c-1.462,1.466-2.926,2.931-4.392,4.393c-0.384,0.383-0.898,0.398-1.253,0.053 c-0.366-0.357-0.356-0.877,0.038-1.273c0.925-0.929,1.855-1.854,2.786-2.778c0.051-0.051,0.122-0.081,0.183-0.121 c-0.014-0.035-0.027-0.069-0.041-0.104c-0.115,0-0.229,0-0.344,0c-2.841,0-5.683,0-8.524-0.001c-0.135,0-0.271-0.001-0.405-0.018 c-0.438-0.056-0.738-0.419-0.726-0.868c0.012-0.442,0.34-0.795,0.776-0.829c0.114-0.009,0.229-0.004,0.343-0.004 c2.821,0,5.641,0,8.462,0C15.208,11.122,15.33,11.122,15.5,11.122z" />
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div class="t265__text t-descr t-descr_xs" style="color:#ffffff;"
+						     field="text">У тебя есть важная для региона или людей задача и ты хотел бы ее решить?<br />Мы готовы вместе с тобой ее дорабатывать и вовлекать IT- и Data-сообщество в разработку ее решения!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="rec155247631" class="r t-rec t-rec_pt_60 t-rec_pb_30" style="padding-top:60px;padding-bottom:30px; "
+	     data-record-type="33"><!-- T017 -->
+		<div class="t017">
+			<div class="t-container t-align_center">
+				<div class="t-col t-col_10 t-prefix_1">
+					<div class="t017__title t-title t-title_xxs" field="title" style="">Новая задача</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="rec148927627" class="r t-rec t-rec_pt_30 t-rec_pb_60" style="padding-top:30px;padding-bottom:60px; "
+	     data-animationappear="off" data-record-type="678"><!-- t678 -->
+		<div class="t678 ">
+			<div class="t-container">
+				<div class="t-col t-col_8 t-prefix_2">
+					<div>
+						<form id="form148927627" name="form148927627" role="form" action="" method="POST" data-formactiontype="2"
+						      data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_26 "
+						      data-success-callback="t678_onSuccess"><input type="hidden" name="formservices[]"
+						                                                    value="e8c49961fd58cf54c4bafe37e6919945"
+						                                                    class="js-formaction-services"> <input type="hidden"
+						                                                                                           name="formservices[]"
+						                                                                                           value="fda448be552412962a9de55e4aebeb87"
+						                                                                                           class="js-formaction-services">
+							<input type="hidden" name="tildaspec-formname" tabindex="-1" value="taskForm">
+							<div class="js-successbox t-form__successbox t-text t-text_md" style="display:none;">Спасибо! Данные успешно отправлены.</div>
+							<div class="t-form__inputsbox"><input type="hidden" name="task_id" tabindex="-1" value="0"> <input
+								type="hidden" name="leader_id" tabindex="-1" value="0"> <input type="hidden" name="orig_id"
+							                                                                 tabindex="-1" value="0">
+								<div class="t-input-group t-input-group_nm" data-input-lid="1579858712200">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579858712200" style="">ФИО
+									</div>
+									<div class="t-input-block"><input type="text" autocomplete="name" name="person_name"
+									                                  class="t-input js-tilda-rule " value="" data-tilda-rule="name"
+									                                  style="color:#000000; border:1px solid #000000; ">
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ph" data-input-lid="1579858669943">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579858669943" style="">Контактный телефон
+									</div>
+									<div class="t-input-block"><input type="tel" autocomplete="tel" name="phone" data-phonemask-init="no"
+									                                  data-phonemask-id="148927627" data-phonemask-lid="1579858669943"
+									                                  data-phonemask-maskcountry="RU"
+									                                  class="t-input js-phonemask-input js-tilda-rule " value=""
+									                                  placeholder="+1(999)999-9999"
+									                                  style="color:#000000; border:1px solid #000000; ">
+										<script type="text/javascript"> if (!document.getElementById("t-phonemask-script")) {
+											(function(d, w, o) {
+												var n   = d.getElementsByTagName(o)[0], s = d.createElement(o), f = function() {
+													n.parentNode.insertBefore(s, n);
+												};
+												s.type  = "text/javascript";
+												s.async = true;
+												s.id    = "t-phonemask-script";
+												s.src   = "/js/tilda-phone-mask-1.1.min.js";
+												if (w.opera == "[object Opera]") {
+													d.addEventListener("DOMContentLoaded", f, false);
+												} else {
+													f();
+												}
+											})(document, window, "script");
+										} else {
+											$(document).ready(function() {
+												if (typeof t_form_phonemask_load == "function") {
+													t_form_phonemask_load($("#rec148927627 [data-phonemask-lid=1579858669943]"));
+												}
+											});
+										} </script>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_em" data-input-lid="1579858776655">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579858776655" style="">Эл. адрес
+									</div>
+									<div class="t-input-block"><input type="text" autocomplete="email" name="email"
+									                                  class="t-input js-tilda-rule " value="" data-tilda-rule="email"
+									                                  style="color:#000000; border:1px solid #000000; ">
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_in" data-input-lid="1576162457929">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1576162457929" style="">Организация
+									</div>
+									<div class="t-input-block"><input type="text" name="oiv" class="t-input js-tilda-rule " value=""
+									                                  placeholder="ОИВ" style="color:#000000; border:1px solid #000000; ">
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_in" data-input-lid="1579858236252">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579858236252" style="">Должность
+									</div>
+									<div class="t-input-block"><input type="text" name="position" class="t-input js-tilda-rule " value=""
+									                                  style="color:#000000; border:1px solid #000000; ">
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_tx" data-input-lid="1622111872419">
+									<div class="t-input-block">
+										<div class="t-text" field="li_text__1622111872419"><a
+											href="https://drive.google.com/file/d/1nW0S0rQ4v19hbr6LFDxwko1h_nzTl50W/view"
+											rel="noreferrer noopener" target="_blank"
+											style="font-size: 20px;">Образец подтверждения организации</a><span
+											style="font-size: 20px;">, которое необходимо подгрузить.</span><br />
+											<ul>
+												<li><span
+													style="font-size: 20px;">Уровень должности подписанта не ниже заместителя руководителя регионального органа исполнительной власти (глава региона, зам. главы региона, председатель правительства региона, зам. председателя правительства региона, министр, зам. министра, и др.)</span>
+												</li>
+												<li><span
+													style="font-size: 20px;">От организации: Уровень должности подписанта не ниже заместителя руководителя организации.</span>
+												</li>
+											</ul>
+										</div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_uw" data-input-lid="1579858743905">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579858743905" style="">Подтверждение организации
+									</div>
+									<div class="t-input-block">
+										<div class="t-upwidget" style="margin-bottom:10px;"><input type="text" type="hidden"
+										                                                           role="upwidget-uploader"
+										                                                           class="js-tilda-rule"
+										                                                           name="oiv_confirmation"
+										                                                           data-tilda-upwidget-key="yandex-284b15f5667c5dfe2cde89e"
+										                                                           style="display:none;">
+											<script src="/js/tilda-upwidget-1.1.min.js" async></script>
+										</div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ws" data-input-lid="1495040492013">
+									<div class="t-input-block">
+										<div class="" style="height:68px">&nbsp;</div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_in" data-input-lid="1579860640305">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579860640305" style="">Страна
+									</div>
+									<div class="t-input-block"><input type="text" name="country" class="t-input js-tilda-rule " value=""
+									                                  style="color:#000000; border:1px solid #000000; ">
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_in" data-input-lid="1579200097796">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579200097796" style="">Регион
+									</div>
+									<div class="t-input-block"><input type="text" name="region" class="t-input js-tilda-rule " value=""
+									                                  style="color:#000000; border:1px solid #000000; ">
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ws" data-input-lid="1495027254430">
+									<div class="t-input-block">
+										<div class="" style="height:34px">&nbsp;</div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_sb" data-input-lid="1579860972709">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579860972709" style="">Категория задачи
+									</div>
+									<div class="t-input-block">
+										<div class="t-select__wrapper "><select name="category" class="t-select js-tilda-rule "
+										                                        style="color:#000000; border:1px solid #000000; ">
+											<option value="">-- Не выбрано --</option>
+											<option value="Противодействие COVID-19">Противодействие COVID-19</option>
+											<option value="Городская среда">Городская среда</option>
+											<option value="Государственные услуги">Государственные услуги</option>
+											<option value="Здравоохранение">Здравоохранение</option>
+											<option value="Кадастровый учёт">Кадастровый учёт</option>
+											<option value="Культура и туризм">Культура и туризм</option>
+											<option value="Образование">Образование</option>
+											<option value="Сельское хозяйство">Сельское хозяйство</option>
+											<option value="Социальная сфера">Социальная сфера</option>
+											<option value="Рынок труда">Рынок труда</option>
+											<option value="Другое">Другое</option>
+										</select></div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_sb" data-input-lid="1576761233726">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1576761233726" style="">Класс решения
+									</div>
+									<div class="t-input-block">
+										<div class="t-select__wrapper "><select name="task_category" class="t-select js-tilda-rule "
+										                                        style="color:#000000; border:1px solid #000000; ">
+											<option value="">-- Не выбрано --</option>
+											<option value="Создание сервиса">Создание сервиса</option>
+											<option value="Исследование и аналитика">Исследование и аналитика</option>
+											<option
+												value="Сбор и обработка (очистка, агрегация и разметка) данных">Сбор и обработка (очистка, агрегация и разметка) данных
+											</option>
+											<option value="Классификация и распознавание образов">Классификация и распознавание образов
+											</option>
+											<option value="Обработка естественных языков">Обработка естественных языков</option>
+											<option value="Прочие алгоритмы машинного обучения">Прочие алгоритмы машинного обучения</option>
+											<option value="Другое">Другое</option>
+										</select></div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ws" data-input-lid="1615816260219">
+									<div class="t-input-block">
+										<div class="" style="height:34px">&nbsp;</div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_tx" data-input-lid="1615816092362">
+									<div class="t-input-block">
+										<div class="t-text" field="li_text__1615816092362"><span
+											style="font-size: 20px;">Перед дальнейшим заполнением формы предлагаем ознакомиться с требованиями, предъявляемыми к постановкам задач: </span><a
+											href="https://docs.google.com/document/d/16qpvSLSuVfQQYH3bAdm7TqTabYCPYe6CHSnGhcZL5mM/view"
+											target="_blank" style="font-size: 20px;" rel="noreferrer noopener">Требования к задачам</a></div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_in" data-input-lid="1579006963818">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579006963818" style="">Заголовок задачи
+									</div>
+									<div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" data-redactor-toolbar="no"
+									     field="li_subtitle__1579006963818"
+									     style="">Краткое наименование задачи, удобное для её идентификации в списках.
+									</div>
+									<div class="t-input-block"><input type="text" name="title" class="t-input js-tilda-rule " value=""
+									                                  data-tilda-req="1"
+									                                  style="color:#000000; border:1px solid #000000; ">
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ta" data-input-lid="1494858943227">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1494858943227" style="">Краткое описание
+									</div>
+									<div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" data-redactor-toolbar="no"
+									     field="li_subtitle__1494858943227"
+									     style="">Коротко опишите суть задачи, требующей решения и её цели.
+									</div>
+									<div class="t-input-block"><textarea name="short_description" class="t-input js-tilda-rule "
+									                                     placeholder="Не более 250 символов"
+									                                     style="color:#000000; border:1px solid #000000; height:102px"
+									                                     rows="3"></textarea>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ta" data-input-lid="1576162477550">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1576162477550" style="">Подробное описание
+									</div>
+									<div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" data-redactor-toolbar="no"
+									     field="li_subtitle__1576162477550"
+									     style="">Подробное и структурированное описание постановки задачи, согласно приведённым выше требованиям к задачам.
+									</div>
+									<div class="t-input-block"><textarea name="full_description" class="t-input js-tilda-rule "
+									                                     style="color:#000000; border:1px solid #000000; height:238px"
+									                                     rows="7"></textarea>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ta" data-input-lid="1579858107328">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579858107328" style="">Целевая аудитория
+									</div>
+									<div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" data-redactor-toolbar="no"
+									     field="li_subtitle__1579858107328"
+									     style="">Привести краткий список значимых заинтересованных в решении организаций, сообществ, органов власти и других.
+									</div>
+									<div class="t-input-block"><textarea name="audience" class="t-input js-tilda-rule "
+									                                     style="color:#000000; border:1px solid #000000; height:204px"
+									                                     rows="6"></textarea>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ta" data-input-lid="1579858201475">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1579858201475" style="">Критерии решения
+									</div>
+									<div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" data-redactor-toolbar="no"
+									     field="li_subtitle__1579858201475"
+									     style="">Описать основные критерии, по которым можно определить, что задача решена, а также указать способы проверки их выполнимости, свидетельствующие о достижении целей разработки.
+									</div>
+									<div class="t-input-block"><textarea name="concept_proof" class="t-input js-tilda-rule "
+									                                     style="color:#000000; border:1px solid #000000; height:204px"
+									                                     rows="6"></textarea>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ta" data-input-lid="1580498620484">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1580498620484" style="">Гипотезы задачи
+									</div>
+									<div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" data-redactor-toolbar="no"
+									     field="li_subtitle__1580498620484"
+									     style="">Указать основные гипотезы решения задачи или требующие проверки в рамках решения.
+									</div>
+									<div class="t-input-block"><textarea name="hypotheses" class="t-input js-tilda-rule "
+									                                     style="color:#000000; border:1px solid #000000; height:238px"
+									                                     rows="7"></textarea>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ta" data-input-lid="1580499016616">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1580499016616" style="">Описание существующих решений
+									</div>
+									<div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" data-redactor-toolbar="no"
+									     field="li_subtitle__1580499016616"
+									     style="">Указать список существующих на рынке решений, близких к постановке задачи со ссылками на них, с определением причин, почему эти решения не подходят к поставленной задаче.
+									</div>
+									<div class="t-input-block"><textarea name="baseline_solution" class="t-input js-tilda-rule "
+									                                     style="color:#000000; border:1px solid #000000; height:238px"
+									                                     rows="7"></textarea>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_ws" data-input-lid="1615816428602">
+									<div class="t-input-block">
+										<div class="" style="height:34px">&nbsp;</div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_tx" data-input-lid="1615816332629">
+									<div class="t-input-block">
+										<div class="t-text" field="li_text__1615816332629"><span
+											style="font-size: 20px;">Пожалуйста, ознакомьтесь с требованиями, предъявляемыми к наборам данных для задач: </span><a
+											href="https://docs.google.com/document/d/1Dnhw_L7lUQxqiiNhSD1xnVu7iaZG5K6guMBAGuguylw/view"
+											target="_blank" style="font-size: 20px;" rel="noreferrer noopener">Требования к данным</a></div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_uw" data-input-lid="1576162528172">
+									<div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no"
+									     field="li_title__1576162528172" style="">Добавить набор данных
+									</div>
+									<div class="t-input-block">
+										<div class="t-upwidget" style="margin-bottom:10px;"><input type="text" type="hidden"
+										                                                           role="upwidget-uploader"
+										                                                           class="js-tilda-rule" name="file"
+										                                                           data-tilda-upwidget-key="yandex-284b15f5667c5dfe2cde89e"
+										                                                           style="display:none;">
+											<script src="/js/tilda-upwidget-1.1.min.js" async></script>
+										</div>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<div class="t-input-group t-input-group_cb" data-input-lid="1581407735588">
+									<div class="t-input-block"><label class="t-checkbox__control t-text t-text_xs" style=""><input
+										type="checkbox" name="agrement_accepted" value="yes" class="t-checkbox js-tilda-rule"
+										data-tilda-req="1">
+										<div class="t-checkbox__indicator"></div>
+										Предлагая задачу и данные, вы соглашаетесь c <a href="/policy"
+										                                                target="_blank">политикой использования данных</a>.
+									</label>
+										<div class="t-input-error"></div>
+									</div>
+								</div>
+								<!--[if IE 8]>
+								<style>.t-checkbox__control .t-checkbox, .t-radio__control .t-radio { left: 0px; z-index: 1; opacity: 1;
+								}
+
+								.t-checkbox__indicator, .t-radio__indicator { display: none;
+								}
+
+								.t-img-select__control .t-img-select { position: static;
+								}</style><![endif]-->
+								<div class="t-form__errorbox-middle">
+									<div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
+										<div class="t-form__errorbox-text t-text t-text_md"><p
+											class="t-form__errorbox-item js-rule-error js-rule-error-all"></p>
+											<p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p>
+											<p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
+											<p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
+											<p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
+											<p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
+											<p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p></div>
+									</div>
+								</div>
+								<div class="t-form__submit">
+									<button type="submit" class="t-submit"
+									        style="color:#ffffff;background-color:#505aea;">Отправить / Submit
+									</button>
+								</div>
+							</div>
+							<div class="t-form__errorbox-bottom">
+								<div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
+									<div class="t-form__errorbox-text t-text t-text_md"><p
+										class="t-form__errorbox-item js-rule-error js-rule-error-all"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p></div>
+								</div>
+							</div>
+						</form>
+						<style>#rec148927627 input::-webkit-input-placeholder {color: #000000; opacity: 0.5;}
+
+						#rec148927627 input::-moz-placeholder {color: #000000; opacity: 0.5;}
+
+						#rec148927627 input:-moz-placeholder {color: #000000; opacity: 0.5;}
+
+						#rec148927627 input:-ms-input-placeholder {color: #000000; opacity: 0.5;}
+
+						#rec148927627 textarea::-webkit-input-placeholder {color: #000000; opacity: 0.5;}
+
+						#rec148927627 textarea::-moz-placeholder {color: #000000; opacity: 0.5;}
+
+						#rec148927627 textarea:-moz-placeholder {color: #000000; opacity: 0.5;}
+
+						#rec148927627 textarea:-ms-input-placeholder {color: #000000; opacity: 0.5;}</style>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style>#rec148927627 .t-btn[data-btneffects-first],
+		#rec148927627 .t-btn[data-btneffects-second],
+		#rec148927627 .t-submit[data-btneffects-first],
+		#rec148927627 .t-submit[data-btneffects-second] { position: relative; overflow: hidden; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);
+		}</style>
+		<script type="text/javascript">$(document).ready(function() {
+		});</script>
+	</div>
+	<div id="rec160281873" class="r t-rec t-rec_pt_45 t-rec_pb_90" style="padding-top:45px;padding-bottom:90px; "
+	     data-record-type="191"><!-- T142 -->
+		<div class="t142">
+			<div class="t-container_100">
+				<div class="t142__wrapone">
+					<div class="t142__wraptwo"><a href="/tasks?toBackUrl" target="" class="">
+						<div class="t-btn t142__submit " style="color:#34e7b5;border:0px solid #000000;background-color:#ffffff;">
+							<span class="t142__text">&lt;&lt;&lt; Назад к списку задач</span></div>
+					</a></div>
+				</div>
+			</div>
+		</div>
+		<script>$(document).ready(function() {
+			t142_checkSize("160281873");
+		});
+		$(window).on("load", function() {
+			t142_checkSize("160281873");
+		});</script>
+		<style>#rec160281873 .t-btn[data-btneffects-first],
+		#rec160281873 .t-btn[data-btneffects-second],
+		#rec160281873 .t-submit[data-btneffects-first],
+		#rec160281873 .t-submit[data-btneffects-second] { position: relative; overflow: hidden; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);
+		}</style>
+		<script type="text/javascript">$(document).ready(function() {
+		});</script>
+	</div>
+	<div id="rec148927639" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"><!-- T123 -->
+		<div class="t123">
+			<div class="t-container_100 ">
+				<div class="t-width t-width_100 ">
+					<script>
+						// Create Task
+						$(() => {
+							let form      = document.form148927627;
+							let submitBtn = form.querySelector("button[type=submit]");
+							$(document).on("user:load", (e) => {
+								init();
+							});
+							let search       = new URLSearchParams(location.search);
+							let itemId       = search.get("id");
+							let backUrl      = search.get("backUrl");
+							let originalId   = search.get("original_id");
+							const isLockForm = !!originalId && originalId !== itemId;
+							if (backUrl) {
+								$("a[href]")
+									.filter((i, e) => e.href.indexOf("toBackUrl") >= 0)
+									.attr("href", backUrl);
+							}
+							let commentTitleBlock = document.querySelector("#rec310053838");
+							let commentTitle      = document.querySelector("#rec310053838 [field=title]");
+							let commentTableBlock = document.querySelector("#rec310053958");
+							let commentTable      = document.querySelector("#rec310053958 table");
+
+							async function loadTask(id) {
+								let res  = await fetch(`https://api.datamasters.ru/task/${id}`, { credentials: "include" });
+								let data = await res.json();
+								return data;
+							}
+
+							async function loadComments(id) {
+								let res  = await fetch(`https://api.datamasters.ru/task-comment?task_id=${id}&per_page=10000`, { credentials: "include" });
+								let data = await res.json();
+								return data.data;
+							}
+
+							function replacePhone(form, phone) {
+								setTimeout(() => {
+									const phoneEx = /^(\+\d*) \((\d*)\) (.+)/.exec(phone);
+									if (phoneEx) {
+										$(form.elements.phone).val(phone).trigger("input");
+										$(form.elements.phone)
+											.prev()
+											.val("(" + phoneEx[2] + ") " + phoneEx[3])
+											.trigger("input");
+										$(form.elements.phone)
+											.parent()
+											.find(".t-input-phonemask__options-item[data-phonemask-code]").filter((i, e) => {
+											return $(e).find(".t-input-phonemask__options-code").html() === phoneEx[1];
+										}).click()
+											.click();
+									}
+								}, 1500);
+							}
+
+							async function init() {
+								if (itemId) {
+									initTask();
+								} else {
+									if (search.get("orig_id")) form.elements.orig_id.value = search.get("orig_id");
+									form.elements.leader_id.value   = user.leader_id;
+									form.elements.person_name.value = [user.last_name, user.first_name, user.middle_name].join(" ");
+									// form.elements.phone.value = user.phone || "";
+									form.elements.email.value       = user.email || "";
+									form.elements.oiv.value         = user.company || "";
+									form.elements.position.value    = user.position || "";
+									form.elements.country.value     = user.phone || "";
+									form.elements.country.value     = user.country || "";
+									form.elements.region.value      = user.region || "";
+									// $(form.elements.phone).prev().val('+7').trigger("input");
+									replacePhone(form, user.phone);
+									// setTimeout(() => {
+									//   // инпут телефона сбрасывает значение
+									//   $(form.elements.phone).prev().val(user.phone).trigger("input");
+									//   //   $(form.elements.phone).val(user.phone).trigger("input");
+									//   // Если региона нет в списке, устанавливается null, который ломает систему
+									//   // $(form.elements.region).val("").trigger("input");
+									// }, 1111);
+								}
+								$(form.elements.short_description).on("input", () => {
+									let el = form.elements.short_description;
+									if (el.value.length > 250) {
+										el.value = el.value.substr(0, 250);
+										$(el).next().html("Не более 250 символов").show();
+									} else {
+										$(el).next().html("").hide();
+									}
+								});
+								$(".t-input-subtitle").html((i, str) => {
+									return str.replace(/\\n/gi, "<br>");
+								});
+							}
+
+							async function initTask() {
+								// if (!itemId) return;
+								$("#rec155247631 .t-title").html("Редактирование задачи");
+								form.elements.task_id.value = itemId;
+								let item                    = await loadTask(itemId);
+								if (!item) return;
+								let comments = await loadComments(itemId);
+								comments     = comments || [];
+								if (!(comments && comments.length) && commentTitleBlock && commentTableBlock) {
+									commentTitleBlock.remove();
+									commentTableBlock.remove();
+								} else {
+									if (comments && comments.length && commentTitle && commentTableBlock) {
+										commentTitle.innerText = "";
+										let tBody              = commentTable.tBodies[0];
+										let evenRow            = tBody.children[0].cloneNode(true);
+										let oddRow             = tBody.children[1].cloneNode(true);
+										tBody.innerHTML        = "";
+										comments.forEach((task, i) => {
+											let even                 = (i + 1) % 2 === 0;
+											let tr                   = even ? evenRow : oddRow;
+											tr                       = tr.cloneNode(true);
+											tr.children[0].innerHTML = i + 1;
+											[...tr.children].forEach((td) => {
+												let html     = td.innerHTML;
+												html         = html.replace(/comment\.(\w+)/gi, ($0, $1) => {
+													if ($1 === "date_updated") return task[$1] != null ? task[$1] : "-";
+													else if ($1 === "processed") return task["is_processed"] !== 0 ? "Да" : "";
+													else {
+														let val = task[$1];
+														return val != null ? val : "-";
+													}
+												});
+												td.innerHTML = html;
+											});
+											tBody.appendChild(tr);
+										});
+									}
+								}
+								[...form.elements].forEach((element) => {
+									if (item[element.name]) {
+										if (element.name === "phone") {
+											element.value = item[element.name];
+											replacePhone(form, item[element.name]);
+										} else {
+											element.value = item[element.name];
+										}
+									}
+								});
+								if (item.oiv_confirmation) {
+									// File link
+									// new URL(item.oiv_confirmation).pathname.match(/\/([\w\.]+)$/gi)[0].substr(1)
+									let el = $(`<div class="file-urls t-descr">
+                    <a href="${item.oiv_confirmation}" target="_blank" download>Загруженный файл</a>
+                </div>`).appendTo("[data-input-lid=1579858743905]");
+								}
+								if (item.file) {
+									// Data set
+									let el = $(`<div class="file-urls t-descr">
+                    <a href="${item.file}" target="_blank" download>Загруженный файл</a>
+                </div>`).appendTo("[data-input-lid=1576162528172]");
+								}
+								if (isLockForm || item.task_status === "published") {
+									setTimeout(() => {
+										form.elements.forEach((e) => {
+											if (e.name !== "person_name" && e.name !== "tildaspec-phone-part[]" && e.name !== "oiv" && e.name !== "position" && e.type !== "tel") {
+												if (e.type === "text" || e.type === "textarea" || e.type === "select-one" || e.type === "tel") {
+													const parents$ = $(e).parents(".t-input-group");
+													parents$.css({ opacity: 0, height: "0", overflow: "hidden", margin: "0" });
+												}
+											}
+										});
+									}, 300);
+								}
+							}
+						});
+						// $(window).load(function() {
+						// 	window.tildaForm.send = function() {
+						// 		var data = $(".t-form").serializeArray();
+						//
+						// 		$.ajax({
+						// 			type:     "POST",
+						// 			url:      "https://api.datamasters.ru/task/add",
+						// 			dataType: "json",
+						// 			data:     data,
+						// 			success:  function() {
+						// 				$(".t-submit").removeClass("t-btn_sending");
+						// 				$(".t-form__successbox").removeAttr("style");
+						// 				$(".t-form__inputsbox").hide();
+						// 			},
+						// 			error:    function(response) {
+						// 				$(".t-submit").removeClass("t-btn_sending");
+						//
+						// 				if (response.status === 200) {
+						// 					$(".t-form__successbox").removeAttr("style");
+						// 					$(".t-form__inputsbox").hide();
+						// 				} else {
+						// 					alert("Ошибка отправки формы");
+						// 				}
+						// 			}
+						// 		});
+						// 	};
+						// });
+					</script>
+
+				</div>
+			</div>
+		</div>
+	</div><!--footer-->
+	<div id="t-footer" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="1282841"
+	     data-tilda-page-id="8974662" data-tilda-formskey="d481de49aab33752d97e54aa2f4c64d4" data-tilda-lazy="yes"
+	     data-tilda-project-headcode="yes">
+		<div id="rec383884523" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"><!-- T123 -->
+			<div class="t123">
+				<div class="t-container_100 ">
+					<div class="t-width t-width_100 ">
+						<header id="dm-footer" class="footer"></header>
+						<script>
+							onDMLoad(function(datamasterUI) {
+								datamasterUI.methods.initFooter();
+							});
+						</script>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/footer--></div><!--/allrecords--><!-- Stat --><!-- Yandex.Metrika counter 53862781 -->
+<script type="text/javascript" data-tilda-cookie-type="analytics"> setTimeout(function() {
+	(function(m, e, t, r, i, k, a) {
+		m[i]   = m[i] || function() {
+			(m[i].a = m[i].a || []).push(arguments);
+		};
+		m[i].l = 1 * new Date();
+		k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+	})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	window.mainMetrikaId = 53862781;
+	ym(window.mainMetrikaId, "init", {
+		clickmap:            true,
+		trackLinks:          true,
+		accurateTrackBounce: true,
+		webvisor:            true,
+		ecommerce:           "dataLayer"
+	});
+}, 2000);</script>
+<noscript>
+	<div><img src="https://mc.yandex.ru/watch/53862781" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript> <!-- /Yandex.Metrika counter -->
+</body>
+</html>

@@ -1,0 +1,90 @@
+.banner-wrap{
+    width: 100%;    
+}
+.banner-wrap .img-wrap{        
+    padding-top: 30px;        
+    text-align: center;
+    margin-bottom: 30px;
+}
+.banner-wrap:after{
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+.banner-wrap .img-wrap img{
+    width: 227px;
+    height: 39px;
+}
+.banner-wrap .button-wrap{
+    
+   
+}
+.banner-wrap .text-wrap{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+.banner-wrap .button-wrap,
+.banner-wrap .text-wrap,
+.banner-wrap .img-wrap{       
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    
+}
+.banner-wrap .text-wrap p{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    line-height: 24px;
+    font-size: 20px;
+}
+.button_d_1.button-drweb{
+    color: #4b7707;
+}
+.button_d_1.button-drweb:before{
+    border-color: #80ba26;    
+}
+.button_d_1.button-drweb:hover{
+    color: #ffffff;
+}
+.button_d_1.button-drweb:hover:before{    
+    background-color: #80ba26;
+}
+.banner-wrap .button-wrap a{
+    text-align: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@media (min-width: 993px){
+    .banner-wrap{
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }    
+    .banner-wrap .img-wrap{
+        width: 257px;
+        padding-top: 6px;
+        float: left;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .banner-wrap .text-wrap{        
+        margin-left: 257px;
+        margin-right: 224px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .banner-wrap .button-wrap{
+        float: right;
+        text-align: left;
+        width: 224px;
+        
+    }
+    .banner-wrap .button-wrap a{ 
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-ru">
+<head>
+      <base href="https://www.iskra35.ru/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Главная</title>
+  <link href="/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link href="/templates/iskra_20190805/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="https://www.iskra35.ru/index.php/component/search/?format=opensearch" rel="search" title="Искать Чагодощенская АНО «Редакция газеты «Искра»" type="application/opensearchdescription+xml" />
+  <link rel="stylesheet" href="/plugins/system/jcemediabox/css/jcemediabox.css?3ab6d4490e67378d035cce4c84ffa080" type="text/css" />
+  <link rel="stylesheet" href="/plugins/system/jcemediabox/themes/standard/css/style.css?7361405241320e69bc1bfb093eb0a2f7" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_sp_smart_slider/tmpl/nivo_slider/themes/light/light.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_sp_smart_slider/tmpl/nivo_slider/nivo-slider.css" type="text/css" />
+  <style type="text/css">
+#smoothtop{
+	height:45px;
+	width:45px;
+	background:url(/plugins/system/smoothtop/images/up-arrow.gif) center top no-repeat;
+	
+}
+
+#smoothtop:hover{background-position: center bottom;}
+  </style>
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/plugins/system/jcemediabox/js/jcemediabox.js?2ee2100a9127451a41de5a4c2c62e127" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/modules/mod_sp_smart_slider/assets/jquery.min.js" type="text/javascript"></script>
+  <script src="/modules/mod_sp_smart_slider/tmpl/nivo_slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:0,scrolling:"fixed",close:2,labels:{'close':'Close','next':'Next','previous':'Previous','cancel':'Cancel','numbers':'{$current} of {$total}'},cookie_expiry:"",google_viewer:0},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"standard",themecustom:"",themepath:"plugins/system/jcemediabox/themes",mediafallback:0,mediaselector:"audio,video"});// Fade our <div> tag to 0 or 'num'
+function fade_me(num){
+	var smoothtop=document.id('smoothtop');
+	if(smoothtop){smoothtop.fade(window.getScrollTop()<250?0:num);}
+}
+window.addEvent('domready',function(){
+	// Create Fx.Scroll object
+	var scroll=new Fx.Scroll(window,{
+		'duration':	500,
+		'transition':	Fx.Transitions.Expo.easeInOut,
+		'wait':		false
+	});
+	// Create an <div> tag for SmoothTop
+	var smoothtop=new Element('div',{
+		'id':		'smoothtop',
+		'class':	'smoothtop',
+		'style':	'position:fixed; display:block; visibility:visible; zoom:1; opacity:0; cursor:pointer; right:5px; bottom:5px;',
+		'title':	'',
+		'html':		'',
+		'events':{
+			// No transparent when hover
+			mouseover: function(){fade_me(1);},
+			// Transparent when no hover
+			mouseout: function(){fade_me(0.7);},
+			// Scroll Up on click
+			click: function(){scroll.toTop();}
+		}
+	// Inject our <div> tag into the document body
+	}).inject(document.body);
+	// Gottta do this for stupid IE
+	document.id('smoothtop').setStyle('opacity','0');
+});
+// Show/Hide our <div> tag
+window.addEvent('scroll',function(){fade_me(0.7);});
+        
+        jQuery(document).ready(function($) {
+        $('#sp-slider-114').nivoSlider({
+        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+        slices: 15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 4, // For box animations
+        animSpeed: 500, // Slide transition speed
+        pauseTime: 5000, // How long each slide will show
+        startSlide: 0, // Set starting Slide (0 index)
+        directionNav: true, // Next & Prev navigation
+        controlNav: true, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        prevText: 'Prev', // Prev directionNav text
+        nextText: 'Next', // Next directionNav text
+        randomStart: false, // Start on a random slide
+        });
+        });
+
+        
+  </script>
+
+    <link rel="stylesheet" href="/templates/system/css/system.css" />
+    <link rel="stylesheet" href="/templates/system/css/general.css" />
+
+    <!-- Created by Artisteer v4.0.0.58475 -->
+    
+    
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="/templates/iskra_20190805/css/template.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="/templates/iskra_20190805/css/template.ie7.css" media="screen" /><![endif]-->
+
+
+    <script>if ('undefined' != typeof jQuery) document._artxJQueryBackup = jQuery;</script>
+    <script src="/templates/iskra_20190805/jquery.js"></script>
+    <script>jQuery.noConflict();</script>
+
+    <script src="/templates/iskra_20190805/script.js"></script>
+    <script>if (document._artxJQueryBackup) jQuery = document._artxJQueryBackup;</script>
+</head>
+<body>
+
+<div id="art-main">
+<header class="art-header clearfix">
+
+    <div class="art-shapes">
+
+<div class="art-object663192556" data-left="96.48%"></div>
+<div class="art-object82882260" data-left="1.64%"></div>
+<div class="art-object1694970075" data-left="0.46%"></div>
+<div class="art-object1610236077" data-left="99.4%"></div>
+<div class="art-object1991247656" data-left="50%"></div>
+
+            </div>
+
+                
+                    
+</header>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper clearfix">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-sidebar1 clearfix">
+<div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/component/content/category/15-reklama"><img src="/images/banners/rekl.gif" alt="rekl" width="90%" height="NaN" /></a></p></div></div></div><div class="art-vmenublock clearfix"><div class="art-vmenublockcontent"><ul class="art-vmenu"><li class="item-101 current active deeper parent"><a class=" active" href="/">Главная</a><ul class="active"><li class="item-115"><a href="/index.php/home/novosti">Новости</a></li></ul></li><li class="item-108"><a href="/index.php/kontakty-i-rekvizity">Контакты и реквизиты</a></li><li class="item-109"><a href="/index.php/dlya-reklamodatelej">Для рекламодателей</a></li><li class="item-111"><a href="/index.php/galereya">Галерея</a></li><li class="item-112"><a href="http://iskra35.ru/index.php/novosti/2019?view=archive&amp;month=7">Архив</a></li><li class="item-113"><a href="/index.php/podpiska">Подписка</a></li></ul></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="http://old.iskra35.ru/"><img src="/images/banners/old_site.png" alt="old site" style="border: 1px none #000000;" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/home/novosti/2482-grafik-vyezdnoj-torgovli-na-2022-god"><img src="/images/banners/vuezd_torg22.jpg" alt="vuezd torg22" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/home/novosti/278-natsionalnye-proekty-rossii"><img src="/images/banners/nats-proek.jpg" alt="nats-proek" style="border: 1px solid #d86464;" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/component/content/category/14-informatsiya-prokuratury"><img style="border: 1px solid #d86464;" src="/images/banners/prok_VO.JPG" alt="prok VO" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/home/novosti/22-press-reliz-edinoj-rossii"><img src="/images/banners/ER_banner.jpg" alt="ER banner" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="https://vologda-oblast.ru/" target="_blank" rel="noopener"><img style="border: 1px solid #d86464;" src="/images/banners/portalVO.JPG" alt="portalVO" width="90%" height="NaN" /></a><a href="http://www.okuvshinnikov.ru/" target="_blank" rel="noopener"></a></p>
+<p style="text-align: center;"><a href="http://www.okuvshinnikov.ru/" target="_blank" rel="noopener"><img style="border: 1px solid #d86464;" src="/images/banners/Banner-OAK.jpg" alt="Banner OAK" width="90%" height="NaN" /></a></p>
+<p style="text-align: center;"><a href="http://www.vologdazso.ru/" target="_blank" rel="noopener"><img style="border: 1px solid #d86464;" src="/images/banners/ZSVO.JPG" alt="ZSVO" width="90%" height="NaN" /></a></p>
+<p style="text-align: center;"><a href="http://www.chagoda.ru/" target="_blank" rel="noopener"><img style="border: 1px solid #d86464;" src="/images/banners/chagod_raion.jpg" alt="chagod raion" width="90%" height="NaN" /></a></p>
+<p style="text-align: center;"><a href="/index.php/component/content/category/50-stekolnaya-promyshlennost"><img style="border: 1px solid #d86464;" src="/images/banners/steklo.jpg" alt="steklo" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/component/content/article/22-press-reliz-edinoj-rossii/781-k-proektu-dobrososedstvo-podklyuchayutsya-razlichnye-rajony-vologodskoj-oblasti"><img src="/images/banners/banner-er-dobr.jpg" alt="banner-er-dobr" style="border: 1px solid #ba1212;" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/images/banners/moshenn.jpg" class="jcepopup" target="_blank"><img src="/images/banners/moshenn.jpg" alt="moshenn" title="Нажмите, чтобы развернуть" width="98%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<center><table cellpadding=0 cellspacing=0 width=181 style="border:solid 1px #b21515;font-family:Tahoma;font-size:12px;background-color:#faedeb"><tr><td><table width=100% cellpadding=0 cellspacing=0><tr><td width=8 height=30 background="https://rp5.ru/informer/htmlinfa/topshl.png"  bgcolor=#b21515> </td><td width=* align=center background="https://rp5.ru/informer/htmlinfa/topsh.png" bgcolor=#b21515><a style="color:#ffffff; font-family:Tahoma;font-size: 12px;" href="https://rp5.ru/8897/ru"><b>Чагода</b></a></td><td width=8 height=30 background="https://rp5.ru/informer/htmlinfa/topshr.png" bgcolor=#b21515> </td></tr></table></td></tr><tr><td valign=top style="padding:0;"><iframe src="https://rp5.ru/htmla.php?id=8897&lang=ru&um=00000&bg=%23faedeb&ft=%23ffffff&fc=%23b21515&c=%23000000&f=Tahoma&s=12&sc=2" width=100% height=154 frameborder=0 scrolling=no style="margin:0;"></iframe></td></tr></table></center>
+
+</div></div></div>
+
+
+
+                        </div>
+                        <div class="art-layout-cell art-content clearfix">
+<div class="art-content-layout"><div class="art-content-layout-row"><div class="art-layout-cell" style="width: 100%;"><article class="art-post"><div class="art-postcontent clearfix"><div class="  slider-wrapper theme-light">
+    <div id="sp-slider-114" class="nivoSlider">
+                        <a href="/index.php/home/novosti/120-semya/2797-druzhba-pererosla-v-semyu">
+                                    <img src="https://www.iskra35.ru/images/news/2022/2022_04/26/1s.jpg" data-thumb="https://www.iskra35.ru/" alt="ДРУЖБА ПЕРЕРОСЛА В СЕМЬЮ" title="#sp-smart-caption-0" />
+                                </a>
+                                            <a href="/index.php/home/novosti/181-intervyu/2799-itogi-vizita-v-chagodu">
+                                    <img src="https://www.iskra35.ru/images/news/2022/2022_04/26/2.JPG" data-thumb="https://www.iskra35.ru/" alt="ИТОГИ ВИЗИТА В ЧАГОДУ" title="#sp-smart-caption-1" />
+                                </a>
+                                            <a href="/index.php/home/novosti/371-29-aprelya-rajonnyj-prazdnik-truda/2801-truzheniki-pravdy">
+                                    <img src="https://www.iskra35.ru/images/news/2022/2022_04/26/3-3.JPG" data-thumb="https://www.iskra35.ru/" alt="ТРУЖЕНИКИ «ПРАВДЫ»" title="#sp-smart-caption-2" />
+                                </a>
+                                            <a href="/index.php/home/novosti/90-meropriyatie/2802-chagodoshchentsy-nasladilis-solntsevorotom-i-vstretilis-s-zhurnalistami-oblastnoj-gazety-krasnyj-sever">
+                                    <img src="https://www.iskra35.ru/images/news/2022/2022_04/26/4-5.JPG" data-thumb="https://www.iskra35.ru/" alt="ЧАГОДОЩЕНЦЫ НАСЛАДИЛИСЬ «СОЛНЦЕВОРОТОМ» И ВСТРЕТИЛИСЬ С ЖУРНАЛИСТАМИ ОБЛАСТНОЙ ГАЗЕТЫ «КРАСНЫЙ СЕВЕР»" title="#sp-smart-caption-3" />
+                                </a>
+                                            <a href="/index.php/home/novosti/129-pamyat/2804-v-pamyat-ob-aleksee-petroviche-ivanove-ogaryshe">
+                                    <img src="https://www.iskra35.ru/images/news/2022/2022_04/26/5-1.jpg" data-thumb="https://www.iskra35.ru/" alt="В ПАМЯТЬ ОБ АЛЕКСЕЕ ПЕТРОВИЧЕ ИВАНОВЕ-ОГАРЫШЕ" title="#sp-smart-caption-4" />
+                                </a>
+                                            <a href="/index.php/home/novosti/354-k-95-letiyu-rajona/2806-belokrestskaya-rodnaya">
+                                    <img src="https://www.iskra35.ru/images/news/2022/2022_04/26/6-2.jpg" data-thumb="https://www.iskra35.ru/" alt="БЕЛОКРЕСТСКАЯ, РОДНАЯ" title="#sp-smart-caption-5" />
+                                </a>
+                                </div>
+</div>
+    <div id="sp-smart-caption-0" class="nivo-html-caption">
+        <a href="/index.php/home/novosti/120-semya/2797-druzhba-pererosla-v-semyu"><h1 class="nivo-title">ДРУЖБА ПЕРЕРОСЛА В СЕМЬЮ</h1></a><div class="nivo-introtext"><p style="text-align: justify;"><strong>Супруги Садовы из Чагоды вместе 16 лет</strong></p>
+<p style="text-align: justify;">Алексей и Ирина знали друг друга с детства. Сегодня они – счастливые родители троих детей.</p>
+</div>    </div>
+        <div id="sp-smart-caption-1" class="nivo-html-caption">
+        <a href="/index.php/home/novosti/181-intervyu/2799-itogi-vizita-v-chagodu"><h1 class="nivo-title">ИТОГИ ВИЗИТА В ЧАГОДУ</h1></a><div class="nivo-introtext"><p style="text-align: justify;"><strong>Антон Кольцов: «Функционирование всех трёх стекольных заводов остаётся стабильным»</strong></p>
+<p style="text-align: justify;">Во время своего визита в наш район 14 апреля первый заместитель губернатора, председатель Правительства области Антон Кольцов посетил ряд важных объектов жизнедеятельности чагодощенцев.</p>
+</div>    </div>
+        <div id="sp-smart-caption-2" class="nivo-html-caption">
+        <a href="/index.php/home/novosti/371-29-aprelya-rajonnyj-prazdnik-truda/2801-truzheniki-pravdy"><h1 class="nivo-title">ТРУЖЕНИКИ «ПРАВДЫ»</h1></a><div class="nivo-introtext"><p style="text-align: justify;"><strong>Общими усилиями сотрудников колхоз в Первомайском сельском поселении работает стабильно</strong></p>
+<p style="text-align: justify;">Из года в год в колхозе «Правда» удерживают численность стада КРС около 600 голов, которое представлено айрширской породой.</p>
+</div>    </div>
+        <div id="sp-smart-caption-3" class="nivo-html-caption">
+        <a href="/index.php/home/novosti/90-meropriyatie/2802-chagodoshchentsy-nasladilis-solntsevorotom-i-vstretilis-s-zhurnalistami-oblastnoj-gazety-krasnyj-sever"><h1 class="nivo-title">ЧАГОДОЩЕНЦЫ НАСЛАДИЛИСЬ «СОЛНЦЕВОРОТОМ» И ВСТРЕТИЛИСЬ С ЖУРНАЛИСТАМИ ОБЛАСТНОЙ ГАЗЕТЫ «КРАСНЫЙ СЕВЕР»</h1></a><div class="nivo-introtext"><p style="text-align: justify;"><strong>«За Россию»</strong> - под таким названием 21 апреля на базе районного Дома культуры состоялся музыкальный патриотический марафон.</p>
+</div>    </div>
+        <div id="sp-smart-caption-4" class="nivo-html-caption">
+        <a href="/index.php/home/novosti/129-pamyat/2804-v-pamyat-ob-aleksee-petroviche-ivanove-ogaryshe"><h1 class="nivo-title">В ПАМЯТЬ ОБ АЛЕКСЕЕ ПЕТРОВИЧЕ ИВАНОВЕ-ОГАРЫШЕ</h1></a><div class="nivo-introtext"><p style="text-align: justify;"><strong>23 апреля</strong> в Чагодощенском музее истории и народной культуры состоялась встреча друзей в память о писателе, поэте и церковностроителе <strong>Алексее Петровиче Иванове-Огарыше</strong> (9/10.04.1947-28.04.2018).</p>
+</div>    </div>
+        <div id="sp-smart-caption-5" class="nivo-html-caption">
+        <a href="/index.php/home/novosti/354-k-95-letiyu-rajona/2806-belokrestskaya-rodnaya"><h1 class="nivo-title">БЕЛОКРЕСТСКАЯ, РОДНАЯ</h1></a><div class="nivo-introtext"><p style="text-align: justify;">(В предвоенные и в годы Великой Отечественной войны)</p>
+<p style="text-align: justify;"><strong>О славной истории Белокрестской средней школы, построенной на средства контр-адмирала Ф.О. Юшкова во второй половине 19 века (тогда ещё начальной), можно говорить долго.</strong></p>
+</div>    </div></div></article><article class="art-post"><div class="art-postcontent clearfix"><div class="custom"  >
+	<p style="text-align: center;"><img src="/images/banners/banner-mask.jpg" alt="banner-mask" style="margin: 0px;" width="99%" height="NaN" /></p></div></div></article></div></div></div><article class="art-post art-messages"><div class="art-postcontent clearfix">
+<div id="system-message-container">
+</div></div></article><div class="blog-featured"><div class="items-row cols-1 row-0"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/354-k-95-letiyu-rajona/2806-belokrestskaya-rodnaya">БЕЛОКРЕСТСКАЯ, РОДНАЯ</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 54</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_01/25/6-1m.JPG"></img></div><div class="art-article"><p style="text-align: justify;">(В предвоенные и в годы Великой Отечественной войны)</p>
+<p style="text-align: justify;"><strong>О славной истории Белокрестской средней школы, построенной на средства контр-адмирала Ф.О. Юшкова во второй половине 19 века (тогда ещё начальной), можно говорить долго.</strong></p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/354-k-95-letiyu-rajona/2806-belokrestskaya-rodnaya">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/354-k-95-letiyu-rajona">К 95-летию района</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-1"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/11-yubilej/2805-nashemu-pokoleniyu-dostalos">«НАШЕМУ ПОКОЛЕНИЮ ДОСТАЛОСЬ!»</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 95</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_04/26/7m.JPG"></img></div><div class="art-article"><p style="text-align: justify;"><strong>Сегодня 95-летие празднует Антонина Ивановна Стулова из Чагоды</strong></p>
+<p style="text-align: justify;">Родилась она 26 апреля в 1927 году в деревне Барановская Кадуйского района.</p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/11-yubilej/2805-nashemu-pokoleniyu-dostalos">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/11-yubilej">Юбилей</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-2"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/129-pamyat/2804-v-pamyat-ob-aleksee-petroviche-ivanove-ogaryshe">В ПАМЯТЬ ОБ АЛЕКСЕЕ ПЕТРОВИЧЕ ИВАНОВЕ-ОГАРЫШЕ</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 37</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_04/26/5-1m.jpg"></img></div><div class="art-article"><p style="text-align: justify;"><strong>23 апреля</strong> в Чагодощенском музее истории и народной культуры состоялась встреча друзей в память о писателе, поэте и церковностроителе <strong>Алексее Петровиче Иванове-Огарыше</strong> (9/10.04.1947-28.04.2018).</p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/129-pamyat/2804-v-pamyat-ob-aleksee-petroviche-ivanove-ogaryshe">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/129-pamyat">Память</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-3"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/51-kultura/2803-dobrye-serdtsa">«ДОБРЫЕ СЕРДЦА»</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 30</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_04/26/5-3m.jpg"></img></div><div class="art-article"><p style="text-align: justify;"><strong>22 апреля</strong> в Сазоновском ДК состоялся <strong>благотворительный концерт «Добрые сердца»</strong>, в котором приняли участие солисты и коллективы района.</p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/51-kultura/2803-dobrye-serdtsa">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/51-kultura">Культура</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-4"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/90-meropriyatie/2802-chagodoshchentsy-nasladilis-solntsevorotom-i-vstretilis-s-zhurnalistami-oblastnoj-gazety-krasnyj-sever">ЧАГОДОЩЕНЦЫ НАСЛАДИЛИСЬ «СОЛНЦЕВОРОТОМ» И ВСТРЕТИЛИСЬ С ЖУРНАЛИСТАМИ ОБЛАСТНОЙ ГАЗЕТЫ «КРАСНЫЙ СЕВЕР»</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 57</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_04/26/4-5m.JPG"></img></div><div class="art-article"><p style="text-align: justify;"><strong>«За Россию»</strong> - под таким названием 21 апреля на базе районного Дома культуры состоялся музыкальный патриотический марафон.</p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/90-meropriyatie/2802-chagodoshchentsy-nasladilis-solntsevorotom-i-vstretilis-s-zhurnalistami-oblastnoj-gazety-krasnyj-sever">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/90-meropriyatie">Мероприятие</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-5"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/371-29-aprelya-rajonnyj-prazdnik-truda/2801-truzheniki-pravdy">ТРУЖЕНИКИ «ПРАВДЫ»</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 46</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_04/26/3-3m.JPG"></img></div><div class="art-article"><p style="text-align: justify;"><strong>Общими усилиями сотрудников колхоз в Первомайском сельском поселении работает стабильно</strong></p>
+<p style="text-align: justify;">Из года в год в колхозе «Правда» удерживают численность стада КРС около 600 голов, которое представлено айрширской породой.</p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/371-29-aprelya-rajonnyj-prazdnik-truda/2801-truzheniki-pravdy">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/371-29-aprelya-rajonnyj-prazdnik-truda">29 апреля - Районный праздник труда</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-6"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/181-intervyu/2799-itogi-vizita-v-chagodu">ИТОГИ ВИЗИТА В ЧАГОДУ</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 35</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_04/26/2m.JPG"></img></div><div class="art-article"><p style="text-align: justify;"><strong>Антон Кольцов: «Функционирование всех трёх стекольных заводов остаётся стабильным»</strong></p>
+<p style="text-align: justify;">Во время своего визита в наш район 14 апреля первый заместитель губернатора, председатель Правительства области Антон Кольцов посетил ряд важных объектов жизнедеятельности чагодощенцев.</p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/181-intervyu/2799-itogi-vizita-v-chagodu">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/181-intervyu">Интервью</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-7"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/103-blagoustrojstvo/2800-navedjom-poryadok-v-dome-chagodoshchenskom-rajone">НАВЕДЁМ ПОРЯДОК В ДОМЕ - ЧАГОДОЩЕНСКОМ РАЙОНЕ!</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 37</div><div class="art-postcontent clearfix"><div class="art-article"><p style="text-align: justify;"><strong>В районе с 22 апреля по 22 июня объявлен двухмесячник по благоустройству, озеленению и санитарной очистке территорий населённых пунктов.</strong></p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/103-blagoustrojstvo/2800-navedjom-poryadok-v-dome-chagodoshchenskom-rajone">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/103-blagoustrojstvo">Благоустройство</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-8"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/108-obratite-vnimanie/2798-o-nachale-protivopozharnogo-sezona">О НАЧАЛЕ ПРОТИВОПОЖАРНОГО СЕЗОНА</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 35</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_04/26/prpozhrezh2022m.JPG"></img></div><div class="art-article"><p style="text-align: justify;"><strong>С 25 апреля в Вологодской области, в том числе и нашем районе, объявлен противопожарный сезон.</strong></p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/108-obratite-vnimanie/2798-o-nachale-protivopozharnogo-sezona">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/108-obratite-vnimanie">Обратите внимание!</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-9"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/120-semya/2797-druzhba-pererosla-v-semyu">ДРУЖБА ПЕРЕРОСЛА В СЕМЬЮ</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 26.04.2022 00:00</span> | Просмотров: 94</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/news/2022/2022_04/26/1m.jpg"></img></div><div class="art-article"><p style="text-align: justify;"><strong>Супруги Садовы из Чагоды вместе 16 лет</strong></p>
+<p style="text-align: justify;">Алексей и Ирина знали друг друга с детства. Сегодня они – счастливые родители троих детей.</p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/120-semya/2797-druzhba-pererosla-v-semyu">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/120-semya">Семья</a></span></span></div></article></div><span class="row-separator"></span></div><div class="items-row cols-1 row-10"><div class="item column-1"><article class="art-post"><h2 class="art-postheader"><a href="/index.php/home/novosti/49-press-reliz-pensionnogo-fonda-rossijskoj-federatsii/2796-osobennosti-pensionnogo-obespecheniya-dlya-samozanyatykh">Особенности пенсионного обеспечения для самозанятых</a></h2><div class="art-postheadericons art-metadata-icons"><span class="art-postdateicon">Опубликовано 25.04.2022 14:16</span> | Просмотров: 29</div><div class="art-postcontent clearfix"><div class="img-intro-left"><img src="/images/PFR_logo.png"></img></div><div class="art-article"><p style="text-align: justify;">Самозанятые граждане при использовании специального налогового режима не являются застрахованными лицами и не обязаны уплачивать страховые взносы в ПФР как, например, индивидуальные предприниматели или нотариусы.</p>
+</div><p class="readmore"><a class="readon art-button" href="/index.php/home/novosti/49-press-reliz-pensionnogo-fonda-rossijskoj-federatsii/2796-osobennosti-pensionnogo-obespecheniya-dlya-samozanyatykh">Подробнее...</a></p></div><div class="art-postfootericons art-metadata-icons"><span class="art-postcategoryicon">Категория: <span class="art-post-metadata-category-name"><a href="/index.php/home/novosti/49-press-reliz-pensionnogo-fonda-rossijskoj-federatsii">Пресс-релиз Пенсионного Фонда Российской Федерации</a></span></span></div></article></div><span class="row-separator"></span></div></div>
+
+
+                        </div>
+                        <div class="art-layout-cell art-sidebar2 clearfix">
+<div class="art-block clearfix"><div class="art-blockcontent"><form action="/index.php" class="art-search" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Искать...</label><div style="position: relative;"><input name="searchword" id="mod-search-searchword" maxlength="20"  class="inputbox" type="text" size="20" value="Поиск..."  onblur="if (this.value=='') this.value='Поиск...';" onfocus="if (this.value=='Поиск...') this.value='';" /><input type="submit" value class="art-search-button"></div>	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="101" />
+	</div>
+</form></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><img src="/images/banners/nosmask.jpg" alt="nosmask" style="border: 1px solid #8b0000;" width="90%" height="NaN" /></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><span style="color: #800000;">КАК БЫТЬ,<br />ЕСЛИ УКУСИЛА ЗМЕЯ?</span></p>
+<p style="text-align: center;"><a href="/images/banners/ukus-zme.jpg" class="jcepopup noicon" target="_blank"><img src="/images/banners/ukus-zme.jpg" alt="ukus-zme" style="border: 1px solid #8b1818;" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/images/banners/vakts.jpg" class="jcepopup noicon" target="_blank"><img src="/images/banners/vakts.jpg" alt="vakts" style="border: 1px solid #870d0d;" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/home/novosti/88-goryachaya-liniya/1286-o-rabote-goryachej-linii-volontjorskogo-shtaba"><span class="jcepopup noicon"><img src="/images/banners/volont1020.jpg" alt="volont1020" style="margin: 0px;" width="90%" height="NaN" /></span></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="https://vk.com/id301125961" target="_blank" rel="noopener"><img style="border: 1px none #000000;" src="/images/banners/ISKRA_vk.png" alt="ISKRA vk" width="90%" height="NaN" /></a></p>
+</div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/component/content/category/75-literaturnaya-stranitsa"><img src="/images/tematich%20str/literaturnaya.jpg" alt="literaturnaya" width="90%" height="NaN" /></a></p>
+<p style="text-align: center;"><a href="/index.php/component/content/category/52-tikhaya-moya-rodina"><img src="/images/tematich%20str/tix.jpg" alt="tix" width="90%" height="NaN" /></a></p>
+<p style="text-align: center;"><a href="/index.php/component/content/category/19-zdravushka"><img src="/images/tematich%20str/zdrav.jpg" alt="zdrav" width="90%" height="NaN" /></a></p>
+<p style="text-align: center;"><a href="/index.php/component/content/category/25-u-dachi"><img src="/images/tematich%20str/udachi2.jpg" alt="udachi2" width="90%" height="NaN" /></a></p>
+<p style="text-align: center;"><a href="/index.php/component/content/category/39-do-16-ti-i-starshe"><img src="/images/tematich%20str/do16-ti.jpg" alt="do16-ti" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="https://vk.com/club96770339" target="_blank"><img src="/images/banners/serye_schy.jpg" alt="serye schy" style="border-image: none 100% / 1 / 0 stretch;" width="90%" height="NaN" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/component/content/category/16-khram-prepodobnomuchenika-evfrosina-sinozjorskogo-v-chagode"><img style="border: 1px none #000000;" src="/images/banners/hram.png" alt="hram" width="90%" height="90%" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/component/content/article/2-uncategorised/1221-nalog-na-samozanyatykh-grazhdan-2020"><img src="/images/banners/samoz1m.jpg" alt="samoz1m" width="80%" /></a></p></div></div></div><div class="art-block clearfix"><div class="art-blockcontent"><div class="custom"  >
+	<p style="text-align: center;"><a href="/index.php/component/content/article/2-uncategorised/1222-patentnaya-sistema-nalogooblozheniya-v-vologodskoj-oblasti"><img src="/images/banners/pat_sist_VO.JPG" alt="pat sist VO" style="border: 1px solid #8e0606;" width="90%" height="NaN" /></a></p></div></div></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<footer class="art-footer clearfix"><!-- begin nostyle -->
+<div class="art-nostyle">
+<!-- begin nostyle content -->
+
+
+<div class="custom"  >
+	<p><span style="font-size: 8pt;"><strong>© 2022. Автономная некоммерческая организация «Редакция газеты «Искра»</strong></span></p>
+<p><span style="font-size: 8pt;">162400 Вологодская область, п. Чагода, ул. Стекольщиков, 1&nbsp;| Тел./факс 8 (81741) 2-11-92</span></p>
+<p><span style="font-size: 8pt;">Свидетельство о регистрации СМИ ПИ № ФС З - 0258 от 07.03.2006 г., реклама до 40 %. <br />Выходит два раз в неделю по вторникам и пятницам по 8 полос форматом А3. </span></p></div>
+<!-- end nostyle content -->
+</div>
+<!-- end nostyle -->
+  
+  <!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=51675698&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/51675698/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="51675698" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(51675698, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/51675698" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  
+  </footer>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

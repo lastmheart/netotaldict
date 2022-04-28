@@ -1,0 +1,231 @@
+
+
+.icon.arrow-left {
+  background: url('../images/icons-s664a2f68c3.png') 0 0 no-repeat;
+  width: 20px;
+  height: 16px;
+}
+
+.icon.arrow-right {
+  background: url('../images/icons-s664a2f68c3.png') 0 -16px no-repeat;
+  width: 20px;
+  height: 16px;
+}
+
+.icon.ball {
+  background: url('../images/icons-s664a2f68c3.png') 0 -32px no-repeat;
+  width: 36px;
+  height: 36px;
+}
+
+.icon.check {
+  background: url('../images/icons-s664a2f68c3.png') 0 -68px no-repeat;
+  width: 12px;
+  height: 9px;
+}
+
+.icon.close-14-grey {
+  background: url('../images/icons-s664a2f68c3.png') 0 -77px no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.icon.close-14 {
+  background: url('../images/icons-s664a2f68c3.png') 0 -91px no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.icon.close-icon {
+  background: url('../images/icons-s664a2f68c3.png') 0 -105px no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.icon.cup {
+  background: url('../images/icons-s664a2f68c3.png') 0 -135px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.icon.facebook {
+  background: url('../images/icons-s664a2f68c3.png') 0 -151px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.icon.facebook_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -177px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.icon.icon-down-o {
+  background: url('../images/icons-s664a2f68c3.png') 0 -209px no-repeat;
+  width: 12px;
+  height: 7px;
+}
+
+.icon.icon-down {
+  background: url('../images/icons-s664a2f68c3.png') 0 -216px no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.icon.icon-up {
+  background: url('../images/icons-s664a2f68c3.png') 0 -241px no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.icon.instagram {
+  background: url('../images/icons-s664a2f68c3.png') 0 -266px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.icon.instagram_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -292px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.icon.logout {
+  background: url('../images/icons-s664a2f68c3.png') 0 -324px no-repeat;
+  width: 16px;
+  height: 15px;
+}
+
+.icon.ok {
+  background: url('../images/icons-s664a2f68c3.png') 0 -339px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.icon.ok_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -365px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.icon.p-p-play {
+  background: url('../images/icons-s664a2f68c3.png') 0 -397px no-repeat;
+  width: 49px;
+  height: 18px;
+}
+
+.icon.question-hover {
+  background: url('../images/icons-s664a2f68c3.png') 0 -415px no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.icon.question-s-hover {
+  background: url('../images/icons-s664a2f68c3.png') 0 -439px no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.icon.question-s {
+  background: url('../images/icons-s664a2f68c3.png') 0 -459px no-repeat;
+  width: 22px;
+  height: 22px;
+}
+
+.icon.question {
+  background: url('../images/icons-s664a2f68c3.png') 0 -481px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.icon.refresh {
+  background: url('../images/icons-s664a2f68c3.png') 0 -507px no-repeat;
+  width: 16px;
+  height: 13px;
+}
+
+.icon.reg-icon {
+  background: url('../images/icons-s664a2f68c3.png') 0 -520px no-repeat;
+  width: 11px;
+  height: 11px;
+}
+
+.icon.search-icon {
+  background: url('../images/icons-s664a2f68c3.png') 0 -531px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.icon.shape {
+  background: url('../images/icons-s664a2f68c3.png') 0 -547px no-repeat;
+  width: 16px;
+  height: 15px;
+}
+
+.icon.slide-next {
+  background: url('../images/icons-s664a2f68c3.png') 0 -562px no-repeat;
+  width: 21px;
+  height: 14px;
+}
+
+.icon.slide-prev {
+  background: url('../images/icons-s664a2f68c3.png') 0 -576px no-repeat;
+  width: 21px;
+  height: 14px;
+}
+
+.icon.triangle-down {
+  background: url('../images/icons-s664a2f68c3.png') 0 -590px no-repeat;
+  width: 12px;
+  height: 9px;
+}
+
+.icon.triangle {
+  background: url('../images/icons-s664a2f68c3.png') 0 -599px no-repeat;
+  width: 14px;
+  height: 10px;
+}
+
+.icon.trud-logo {
+  background: url('../images/icons-s664a2f68c3.png') 0 -609px no-repeat;
+  width: 48px;
+  height: 19px;
+}
+
+.icon.twitter {
+  background: url('../images/icons-s664a2f68c3.png') 0 -628px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.icon.twitter_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -654px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.icon.vk {
+  background: url('../images/icons-s664a2f68c3.png') 0 -686px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.icon.vk_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -712px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.icon.youtube_2 {
+  background: url('../images/icons-s664a2f68c3.png') 0 -744px no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.icon.youtube_2_big {
+  background: url('../images/icons-s664a2f68c3.png') 0 -770px no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=icons.css.map */

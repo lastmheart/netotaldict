@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 ie" xmlns="http://www.w3.org/1999/xhtml" lang="ru" dir="ltr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 ie" xmlns="http://www.w3.org/1999/xhtml" lang="ru" dir="ltr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 ie" xmlns="http://www.w3.org/1999/xhtml" lang="ru" dir="ltr"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 ie" xmlns="http://www.w3.org/1999/xhtml" lang="ru" dir="ltr"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" lang="ru" dir="ltr" > <!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/uo/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/glavnaya" />
+<link rel="shortlink" href="/node/1" />
+  <title>Управление образования АМО ГО «Усинск»</title>
+  <style type="text/css" media="all">
+@import url("https://xn----btbtioipbcq.xn--p1ai/modules/system/system.base.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/modules/system/system.menus.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/modules/system/system.messages.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/modules/system/system.theme.css?qtz68q");
+</style>
+<style type="text/css" media="all">
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/scroll_to_top/scroll_to_top.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/date/date_api/date.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/modules/field/theme/field.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/modules/OLD_node/node.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/modules/search/search.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/modules/user/user.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/views/css/views.css?qtz68q");
+</style>
+<style type="text/css" media="all">
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/colorbox/styles/default/colorbox_style.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/ctools/css/ctools.css?qtz68q");
+</style>
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+#back-top{right:40px;}#back-top span#button{background-color:#CCCCCC;}#back-top span#button:hover{opacity:1;filter:alpha(opacity = 1);background-color:#006C84;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/libraries/nivo-slider/nivo-slider.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/libraries/nivo-slider/themes/default/default.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/views_nivo_slider/views_nivo_slider.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/pretty_calendar/themes/uo/calendar.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/libraries/superfish/css/superfish.css?qtz68q");
+</style>
+<style type="text/css" media="all">
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/fusion_core/css/fusion-style.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/fusion_core/css/fusion-typography.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/fusion_core/skins/core/fusion-core-skins.css?qtz68q");
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/uo/css/uo.css?qtz68q");
+</style>
+<style type="text/css" media="all">
+@import url("https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/fusion_core/css/grid16-960.css?qtz68q");
+</style>
+    <script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/misc/drupal.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/languages/ru_zhfZhMIJ5jr4tJYzC2xJthD4wHLfz6TFJ_eylTq7QBo.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/libraries/colorbox/jquery.colorbox-min.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/colorbox/js/colorbox.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/colorbox/styles/default/colorbox_style.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/scroll_to_top/scroll_to_top.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/views_nivo_slider/views_nivo_slider.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/libraries/nivo-slider/jquery.nivo.slider.pack.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/form_placeholder/form_placeholder.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/pretty_calendar/pretty_calendar.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/libraries/superfish/superfish.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/libraries/superfish/supersubs.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/modules/superfish/superfish.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/fusion_core/js/script.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/fusion_core/skins/core/js/script.js?qtz68q"></script>
+<script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/sites/all/themes/uo/js/js.js?qtz68q"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"uo","theme_token":"bJhdBoWD_zZZWNew-sHbb51BvuX9_rtMFg-tfViefNA","js":{"modules\/statistics\/statistics.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"public:\/\/languages\/ru_zhfZhMIJ5jr4tJYzC2xJthD4wHLfz6TFJ_eylTq7QBo.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/scroll_to_top\/scroll_to_top.js":1,"sites\/all\/modules\/views_nivo_slider\/views_nivo_slider.js":1,"sites\/all\/libraries\/nivo-slider\/jquery.nivo.slider.pack.js":1,"sites\/all\/modules\/form_placeholder\/form_placeholder.js":1,"sites\/all\/modules\/pretty_calendar\/pretty_calendar.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/fusion_core\/js\/script.js":1,"sites\/all\/themes\/fusion_core\/skins\/core\/js\/script.js":1,"sites\/all\/themes\/uo\/js\/js.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/scroll_to_top\/scroll_to_top.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/OLD_node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"0":1,"sites\/all\/libraries\/nivo-slider\/nivo-slider.css":1,"sites\/all\/libraries\/nivo-slider\/themes\/default\/default.css":1,"sites\/all\/modules\/views_nivo_slider\/views_nivo_slider.css":1,"sites\/all\/modules\/pretty_calendar\/themes\/uo\/calendar.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/themes\/fusion_core\/css\/fusion-style.css":1,"sites\/all\/themes\/fusion_core\/css\/fusion-typography.css":1,"sites\/all\/themes\/fusion_core\/skins\/core\/fusion-core-skins.css":1,"sites\/all\/themes\/uo\/css\/uo.css":1,"sites\/all\/themes\/fusion_core\/css\/grid16-960.css":1}},"colorbox":{"opacity":"0.85","current":"{current} \u0438\u0437 {total}","previous":"\u00ab \u041f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0438\u0439","next":"\u0421\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u00bb","close":"\u0417\u0430\u043a\u0440\u044b\u0442\u044c","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"scroll_to_top":{"label":"\u041d\u0430\u0432\u0435\u0440\u0445"},"views_nivo_slider":{"views-nivo-slider-slider-block-1":{"startSlide":0,"effect":"random","slices":20,"animSpeed":400,"pauseTime":5000,"directionNav":true,"directionNavHide":true,"controlNav":true,"controlNavThumbs":false,"pauseOnHover":true,"manualAdvance":false,"captionOpacity":0.8,"beforeChange":"function(){}","afterChange":"function(){}","slideshowEnd":"function(){}","lastSlide":"function(){}","afterLoad":"function(){}","version":"2.7.x","controlNavThumbsFromRel":false,"keyboardNav":true},"views-nivo-slider-slider-block-1--2":{"startSlide":0,"effect":"random","slices":20,"animSpeed":400,"pauseTime":5000,"directionNav":true,"directionNavHide":true,"controlNav":true,"controlNavThumbs":false,"pauseOnHover":true,"manualAdvance":false,"captionOpacity":0.8,"beforeChange":"function(){}","afterChange":"function(){}","slideshowEnd":"function(){}","lastSlide":"function(){}","afterLoad":"function(){}","version":"2.7.x","controlNavThumbsFromRel":false,"keyboardNav":true}},"form_placeholder":{"fallback_support":false,"include":".top-poisk input","exclude":"","required_indicator":"leave"},"urlIsAjaxTrusted":{"\/":true},"superfish":{"1":{"id":"1","sf":{"delay":"400","animation":{"opacity":"show","height":"show"},"speed":"fast","autoArrows":false,"dropShadows":false},"plugins":{"supersubs":true}}},"statistics":{"data":{"nid":"1"},"url":"\/modules\/statistics\/statistics.php"}});
+//--><!]]>
+</script>
+</head>
+<body id="pid-glavnaya" class="html front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page font-size-14 grid-type-960 grid-width-16 sidebars-split" >
+  <div id="skip-link">
+    <a href="#main-content-area">Skip to main content area</a>
+  </div>
+    
+  <div id="page" class="page">
+    <div id="page-inner" class="page-inner">
+      
+<!-- header-top region -->
+<div id="header-top-wrapper" class="header-top-wrapper full-width clearfix">
+  <div id="header-top" class="region region-header-top header-top  grid16-16">
+    <div id="header-top-inner" class="header-top-inner inner">
+      <div id="block-block-5" class="block block-block top-vds grid16-8 first  odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <a class="sv-panel-perekl">
+<img alt="" src="/sites/default/files/design/vds.png" style="width: 61px; height: 46px;">
+<i>Версия для<br>слабовидящих</i></a>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-search-form" class="block block-search top-poisk grid16-8  last even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Форма поиска</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Поиск по сайту </label>
+ <input title="Введите ключевые слова для поиска." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Поиск по сайту" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-xr57z83-AsswgKMOb2keJMTSM8ok2JC5VLRopWzoy3I" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /header-top-inner -->
+  </div><!-- /header-top -->
+</div><!-- /header-top-wrapper -->
+
+      <!-- header-group region: width = grid_width -->
+      <div id="header-group-wrapper" class="header-group-wrapper full-width clearfix">
+        <div id="header-group" class="header-group region grid16-16">
+          <div id="header-group-inner" class="header-group-inner inner clearfix">
+
+            
+            <div id="block-block-12" class="block block-block sv-panel-block first  odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="sv-panel">
+
+	<div class="razmer-shr">
+		<span>Размер шрифта</span>
+    <span><input id="razshr1" name="razshr" type="radio" value="mal"><label for="razshr1">А</label></span>
+    <span><input id="razshr2" name="razshr" type="radio" value="nrm"><label for="razshr2">А</label></span>
+    <span><input id="razshr3" name="razshr" type="radio" value="bol"><label for="razshr3">А</label></span>
+	</div>
+
+	<div class="cvet-st">
+		<span>Цвета сайта</span>
+    <span><input id="cvetst1" name="cvetst" type="radio" value="nrm"><label for="cvetst1">А</label></span>
+    <span><input id="cvetst2" name="cvetst" type="radio" value="inv"><label for="cvetst2">А</label></span>
+	</div>
+
+	<div class="izobr">
+    <input id="izobr1" name="izobr" type="checkbox"><label for="izobr1">Изображения</label>
+	</div>
+
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-10" class="block block-block top-login   even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <a href="/user">Регистрация</a> / <a href="/user">Войти</a>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-6" class="block block-block sh100   odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <a class="logo" href="/"><span>Управление образования АМО ГО «Усинск»</span></a>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-views-slider-block-1" class="block block-views slider-block   even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="view view-slider view-id-slider view-display-id-block_1 slider view-dom-id-d9bfebf47f8a4dbaff6c3048f244ab7b">
+        
+  
+  
+      <div class="view-content">
+      <div class="views-nivo-slider-view slider-wrapper theme-default">
+      
+  
+    <div id="views-nivo-slider-slider-block-1" class="views-nivo-slider clearfix">
+                
+          <img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/slide/public/slides/img_3483.jpg?itok=3nlp3Zzq" width="940" height="340" alt="" />                  
+          <img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/slide/public/slides/_kav1732.jpg?itok=Vbur4bep" width="940" height="340" alt="" />                  
+          <img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/slide/public/slides/ciif_pydvze.jpg?itok=7kBFaKZr" width="940" height="340" alt="" />                  
+          <img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/slide/public/slides/dsc_0488t.jpg?itok=WZqK6KEN" width="940" height="340" alt="" />                  
+          <img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/slide/public/slides/kav_4965t.jpg?itok=RGhdTm7L" width="940" height="340" alt="" />                  
+          <img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/slide/public/slides/kab_1557t.jpg?itok=c-Gm3sFM" width="940" height="340" alt="" />                  
+          <img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/slide/public/slides/img_4475t.jpg?itok=vWTu17jr" width="940" height="340" alt="" />            </div>
+    
+  
+</div>     </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-superfish-1" class="block block-superfish omenu  last odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <ul  id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-4 sf-parent-items-4 sf-single-items-0"><li id="menu-440-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-6 sf-parent-children-6 sf-single-children-0 menuparent"><a href="/ob-upravlenii" class="sf-depth-1 menuparent">Об Управлении</a><ul><li id="menu-441-1" class="first odd sf-item-1 sf-depth-2 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/ob-upravlenii/obshchaya-informaciya" class="sf-depth-2 menuparent">Общая информация</a><ul><li id="menu-492-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/obshchaya-informaciya/polozhenie-ob-upravlenii" class="sf-depth-3">Положение об Управлении</a></li><li id="menu-493-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/obshchaya-informaciya/struktura-upravleniya" class="sf-depth-3">Структура Управления</a></li><li id="menu-494-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/obshchaya-informaciya/rukovodstvo-upravleniya" class="sf-depth-3">Руководство Управления</a></li><li id="menu-495-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/obshchaya-informaciya/podvedomstvennye-organizacii" class="sf-depth-3">Подведомственные организации</a></li><li id="menu-496-1" class="last odd sf-item-5 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/obshchaya-informaciya/kontakty-i-rekvizity-rezhim-raboty" class="sf-depth-3">Контакты и реквизиты</a></li></ul></li><li id="menu-442-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-8 sf-parent-children-1 sf-single-children-7 menuparent"><a href="/ob-upravlenii/dokumenty" class="sf-depth-2 menuparent">Документы</a><ul><li id="menu-497-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/ob-upravlenii/dokumenty/municipalnye-normativnye-pravovye-akty" class="sf-depth-3 menuparent">Муниципальные нормативные правовые акты</a><ul><li id="menu-651-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children"><a href="/ob-upravlenii/dokumenty/municipalnye-normativnye-pravovye-akty/municipalnye-zadaniya" class="sf-depth-4">Муниципальные задания</a></li></ul></li><li id="menu-498-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/dokumenty/dokumenty-reglamentiruyushchie-poryadok-okazaniya-municipalnyh-uslug" class="sf-depth-3">Документы, регламентирующие порядок оказания муниципальных услуг</a></li><li id="menu-499-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/dokumenty/prikazy-upravleniya-obrazovaniya" class="sf-depth-3">Приказы Управления образования</a></li><li id="menu-500-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/dokumenty/proekty-dokumentov-vynesennye-na-obshchestvennoe-obsuzhdenie" class="sf-depth-3">Проекты документов, вынесенные на общественное обсуждение</a></li><li id="menu-501-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/dokumenty/svedeniya-o-poryadke-obzhalovaniya-municipalnyh-pravovyh-aktov" class="sf-depth-3">Сведения о порядке обжалования муниципальных правовых актов</a></li><li id="menu-502-1" class="middle even sf-item-6 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/dokumenty/programmy-proekty-i-otchyoty-ob-ih-ispolnenii" class="sf-depth-3">Программы, проекты и отчёты об их исполнении</a></li><li id="menu-504-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/dokumenty/informaciya-o-zakupkah-dlya-municipalnyh-nuzhd" class="sf-depth-3">Информация о закупках для муниципальных нужд</a></li><li id="menu-505-1" class="last even sf-item-8 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/dokumenty/politika-obrabotki-personalnyh-dannyh" class="sf-depth-3">Политика обработки персональных данных</a></li></ul></li><li id="menu-443-1" class="middle odd sf-item-3 sf-depth-2 sf-total-children-3 sf-parent-children-1 sf-single-children-2 menuparent"><a href="/ob-upravlenii/kadrovoe-obespechenie" class="sf-depth-2 menuparent">Кадровое обеспечение</a><ul><li id="menu-506-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/kadrovoe-obespechenie/obshchaya-informaciya" class="sf-depth-3">Общая информация</a></li><li id="menu-507-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/kadrovoe-obespechenie/vakansii" class="sf-depth-3">Вакансии</a></li><li id="menu-508-1" class="last odd sf-item-3 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/ob-upravlenii/kadrovoe-obespechenie/kadrovyy-rezerv" class="sf-depth-3 menuparent">Кадровый резерв</a><ul><li id="menu-666-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children"><a href="/ob-upravlenii/kadrovoe-obespechenie/kadrovyy-rezerv/obyavlen-dopolnitelnyy-otbor-kandidatov-dlya" title="Отбор кандидатов для включения в кадровый резерв" class="sf-depth-4">Отбор кандидатов для включения в кадровый резерв</a></li></ul></li></ul></li><li id="menu-444-1" class="middle even sf-item-4 sf-depth-2 sf-total-children-12 sf-parent-children-1 sf-single-children-11 menuparent"><a href="/ob-upravlenii/deyatelnost" class="sf-depth-2 menuparent">Деятельность</a><ul><li id="menu-509-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/plan-raboty" class="sf-depth-3">План работы</a></li><li id="menu-510-1" class="middle even sf-item-2 sf-depth-3 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/ob-upravlenii/deyatelnost/kollegialnye-organy" class="sf-depth-3 menuparent">Коллегиальные органы</a><ul><li id="menu-511-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/ob-upravlenii/deyatelnost/kollegialnye-organy/sovet-rukovoditeley" class="sf-depth-4">Совет руководителей</a></li><li id="menu-512-1" class="last even sf-item-2 sf-depth-4 sf-no-children"><a href="/ob-upravlenii/deyatelnost/kollegialnye-organy/municipalnyy-metodicheskiy-sovet" class="sf-depth-4">Муниципальный методический совет</a></li></ul></li><li id="menu-514-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/plany-i-rezultaty-proverok" class="sf-depth-3">Планы и результаты проверок</a></li><li id="menu-515-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/monitoring-sistemy-obrazovaniya" class="sf-depth-3">Мониторинг системы образования</a></li><li id="menu-516-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/doklad-ob-itogah-raboty-upravleniya-obrazovaniya" title="Доклад об итогах работы Управления образования за 2019 год" class="sf-depth-3">Публичный доклад</a></li><li id="menu-517-1" class="middle even sf-item-6 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/realizaciya-ukazov-prezidenta-rf" class="sf-depth-3">Реализация Указов Президента РФ</a></li><li id="menu-685-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/realizaciya-nacionalnyh-proektov" class="sf-depth-3">Реализация национальных проектов</a></li><li id="menu-518-1" class="middle even sf-item-8 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/metodicheskoe-soprovozhdenie" class="sf-depth-3">Методическое сопровождение</a></li><li id="menu-519-1" class="middle odd sf-item-9 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/meropriyatiya-dlya-pedagogov" class="sf-depth-3">Мероприятия для педагогов</a></li><li id="menu-520-1" class="middle even sf-item-10 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/attestaciya-rukovoditeley-obrazovatelnyh-organizaciy" class="sf-depth-3">Аттестация руководителей образовательных организаций</a></li><li id="menu-693-1" class="middle odd sf-item-11 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/ocenka-effektivnosti-deyatelnosti-rukovoditeley-obrazovatelnyh-organizaciy" class="sf-depth-3">Оценка эффективности деятельности руководителей образовательных организаций</a></li><li id="menu-692-1" class="last even sf-item-12 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/deyatelnost/municipalnaya-sistema-ocenki-kachestva-obrazovaniya" class="sf-depth-3">Муниципальная система оценки качества образования</a></li></ul></li><li id="menu-445-1" class="middle odd sf-item-5 sf-depth-2 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/ob-upravlenii/nezavisimaya-ocenka-kachestva-raboty" class="sf-depth-2 menuparent">Независимая оценка качества условий осуществления образовательной деятельности организациями, осуществляющими образовательную деятельность</a><ul><li id="menu-523-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/nezavisimaya-ocenka-kachestva-raboty/normatovnoe-pravovoe-regulirovanie" class="sf-depth-3">Нормативное правовое регулирование</a></li><li id="menu-525-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/nezavisimaya-ocenka-kachestva-raboty/provedenie-nezov-ocenki" class="sf-depth-3">Проведение независимой оценки качества работы организаций, оказывающих социальные услуги</a></li><li id="menu-526-1" class="last odd sf-item-3 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/nezavisimaya-ocenka-kachestva-raboty/realizaciya-meropr" class="sf-depth-3">Реализация мероприятий по улучшению качества работы организаций, оказывающих социальные услуги</a></li></ul></li><li id="menu-527-1" class="last even sf-item-6 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/ob-upravlenii/protivodeystvie-korrupcii" class="sf-depth-2 menuparent">Противодействие коррупции</a><ul><li id="menu-528-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/protivodeystvie-korrupcii/dokumenty" class="sf-depth-3">Документы</a></li><li id="menu-529-1" class="last even sf-item-2 sf-depth-3 sf-no-children"><a href="/ob-upravlenii/protivodeystvie-korrupcii/svedeniya-o-dohodah-rashodah-ob-imushchestve-i" class="sf-depth-3">Сведения о доходах, расходах, об имуществе и обязательствах имущественного характера</a></li></ul></li></ul></li><li id="menu-446-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-6 sf-parent-children-5 sf-single-children-1 menuparent"><a href="/obshchee-obrazovanie" class="sf-depth-1 menuparent">Общее образование</a><ul><li id="menu-447-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/obshchee-obrazovanie/doshkolnoe-obrazovanie" class="sf-depth-2">Дошкольное образование</a></li><li id="menu-448-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-9 sf-parent-children-1 sf-single-children-8 menuparent"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie" class="sf-depth-2 menuparent">Начальное, основное, среднее общее образование</a><ul><li id="menu-537-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/priyom-v-shkolu" class="sf-depth-3">Приём в школу</a></li><li id="menu-538-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/profilnoe-obuchenie" class="sf-depth-3">Профильное обучение</a></li><li id="menu-539-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/psihologo-mediko" class="sf-depth-3">Психолого-медико-педагогическое сопровождение</a></li><li id="menu-540-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/odaryonnye-deti" class="sf-depth-3">Одарённые дети</a></li><li id="menu-541-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/obespechenie-uchebnikami" class="sf-depth-3">Обеспечение учебниками</a></li><li id="menu-542-1" class="middle even sf-item-6 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/pitanie-uchashchihsya" class="sf-depth-3">Питание учащихся</a></li><li id="menu-543-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/vfsk-gto" class="sf-depth-3">ВФСКГТО</a></li><li id="menu-544-1" class="middle even sf-item-8 sf-depth-3 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/informaciya-dlya-roditeley" class="sf-depth-3 menuparent">Информация для родителей</a><ul><li id="menu-687-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/informaciya-dlya-roditeley-1" class="sf-depth-4">Помощь в дистанционном режиме</a></li><li id="menu-686-1" class="last even sf-item-2 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/informaciya-dlya-roditeley-0" class="sf-depth-4">Школьная форма</a></li></ul></li><li id="menu-706-1" class="last odd sf-item-9 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/federalnye-gosudarstvennye" class="sf-depth-3">Федеральные государственные образовательные стандарты</a></li></ul></li><li id="menu-449-1" class="middle odd sf-item-3 sf-depth-2 sf-total-children-2 sf-parent-children-2 sf-single-children-0 menuparent"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya" class="sf-depth-2 menuparent">Государственная итоговая аттестация</a><ul><li id="menu-545-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-9" class="sf-depth-3 menuparent">ГИА-9:Итоговое собеседование, ОГЭ, ГВЭ</a><ul><li id="menu-546-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-9/informaciya" class="sf-depth-4">Информация</a></li><li id="menu-547-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-9/dokumenty" class="sf-depth-4">Документы</a></li><li id="menu-548-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-9/raspisanie" class="sf-depth-4">Расписание</a></li><li id="menu-696-1" class="last even sf-item-4 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-9itogovoe-sobesedovanie-oge-gve" class="sf-depth-4">Аналитические материалы</a></li></ul></li><li id="menu-549-1" class="last even sf-item-2 sf-depth-3 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-11" class="sf-depth-3 menuparent">ГИА-11: Итоговое сочинение (изложение), ЕГЭ, ГВЭ</a><ul><li id="menu-550-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-11/informaciya" class="sf-depth-4">Информация</a></li><li id="menu-551-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-11/dokumenty" class="sf-depth-4">Документы</a></li><li id="menu-552-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-11/raspisanie" class="sf-depth-4">Расписание</a></li><li id="menu-697-1" class="last even sf-item-4 sf-depth-4 sf-no-children"><a href="/obshchee-obrazovanie/gosudarstvennaya-itogovaya-attestaciya/gia-11-itogovoe-sochinenie-izlozhenie" class="sf-depth-4">Аналитические материалы</a></li></ul></li></ul></li><li id="menu-450-1" class="middle even sf-item-4 sf-depth-2 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/obshchee-obrazovanie/vserossiyskaya-olimpiada-shkolnikov" class="sf-depth-2 menuparent">Всероссийская олимпиада школьников</a><ul><li id="menu-688-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/vserossiyskaya-olimpiada-shkolnikov/normativno-pravovye-akty" class="sf-depth-3">Нормативно-правовые акты</a></li><li id="menu-691-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/vserossiyskaya-olimpiada-shkolnikov/obratnaya-svyaz" class="sf-depth-3">Обратная связь</a></li><li id="menu-690-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/vserossiyskaya-olimpiada-shkolnikov/resursy-dlya-podgotovki-k-vsosh" class="sf-depth-3">Ресурсы для подготовки к ВсОШ</a></li><li id="menu-689-1" class="last even sf-item-4 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/vserossiyskaya-olimpiada-shkolnikov/etapy-vsosh" class="sf-depth-3">Этапы ВсОШ</a></li></ul></li><li id="menu-451-1" class="middle odd sf-item-5 sf-depth-2 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/obshchee-obrazovanie/kompleksnaya-bezopasnost" class="sf-depth-2 menuparent">Комплексная безопасность образовательных организаций и информатизация</a><ul><li id="menu-557-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/kompleksnaya-bezopasnost/gis-elektronnoe-obrazovanie" class="sf-depth-3">ГИС «Электронное образование»</a></li><li id="menu-556-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/kompleksnaya-bezopasnost/obshchee" class="sf-depth-3">Обеспечение комплексной безопасности</a></li><li id="menu-652-1" class="last odd sf-item-3 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/kompleksnaya-bezopasnost-obrazovatelnyh-organizaciy-i-informatizaciya" class="sf-depth-3">Информационная безопасность</a></li></ul></li><li id="menu-704-1" class="last even sf-item-6 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/obshchee-obrazovanie/funkcionalnaya-gramotnost" class="sf-depth-2 menuparent">Функциональная грамотность</a><ul><li id="menu-705-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children"><a href="/obshchee-obrazovanie/funkcionalnaya-gramotnost/normativnaya-baza" class="sf-depth-3">Нормативная база</a></li></ul></li></ul></li><li id="menu-452-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-3 sf-parent-children-3 sf-single-children-0 menuparent"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie" class="sf-depth-1 menuparent">Дополнительное образование и воспитание</a><ul><li id="menu-453-1" class="first odd sf-item-1 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/dopolnitelnoe-obrazovanie" class="sf-depth-2 menuparent">Дополнительное образование детей</a><ul><li id="menu-558-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/dopolnitelnoe-obrazovanie/systema" class="sf-depth-3">Система дополнительного образования детей</a></li><li id="menu-559-1" class="last even sf-item-2 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/dopolnitelnoe-obrazovanie/meropriyatiya" class="sf-depth-3">Информация о мероприятиях и конкурсах</a></li></ul></li><li id="menu-454-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-6 sf-parent-children-1 sf-single-children-5 menuparent"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie" class="sf-depth-2 menuparent">Воспитание</a><ul><li id="menu-560-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie/proforientacionnaya-rabota" class="sf-depth-3 menuparent">Профориентационная работа</a><ul><li id="menu-700-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie/proforientacionnaya-rabota/metodicheskie" class="sf-depth-4">Методические рекомендации</a></li><li id="menu-701-1" class="last even sf-item-2 sf-depth-4 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie/proforientacionnaya-rabota/luchshie-praktiki" class="sf-depth-4">Лучшие практики профориентационной работы</a></li></ul></li><li id="menu-561-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie/patrioticheskoe-vospitanie" class="sf-depth-3">Патриотическое воспитание</a></li><li id="menu-562-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie/rossiyskoe-dvizhenie-shkolnikov" class="sf-depth-3">Российское движение школьников</a></li><li id="menu-563-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie/pravovoe-vospitanie-i-profilakticheskaya-rabota" class="sf-depth-3">Правовое воспитание и профилактическая работа</a></li><li id="menu-564-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie/informaciya-o-meropriyatiyah-i-konkursah" class="sf-depth-3">Информация о мероприятиях и конкурсах</a></li><li id="menu-702-1" class="last even sf-item-6 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/vospitanie/luchshie-praktiki" class="sf-depth-3">Лучшие практики</a></li></ul></li><li id="menu-455-1" class="last odd sf-item-3 sf-depth-2 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/ozdorovlenie-i-otdyh-detey" class="sf-depth-2 menuparent">Оздоровление и отдых детей</a><ul><li id="menu-565-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/ozdorovlenie-i-otdyh-detey/organizaciya-ozdorovleniya" class="sf-depth-3">Организация оздоровления и отдыха детей</a></li><li id="menu-566-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/ozdorovlenie-i-otdyh-detey/trudoustroystvo-podrostkov" class="sf-depth-3">Трудоустройство подростков</a></li><li id="menu-567-1" class="last odd sf-item-3 sf-depth-3 sf-no-children"><a href="/dopolnitelnoe-obrazovanie-i-vospitanie/ozdorovlenie-i-otdyh-detey/informaciya-dlya-roditeley" class="sf-depth-3">Информация для родителей</a></li></ul></li></ul></li><li id="menu-456-1" class="last even sf-item-4 sf-depth-1 sf-total-children-3 sf-parent-children-1 sf-single-children-2 menuparent"><a href="/molodezhnaya-politika" class="sf-depth-1 menuparent">Молодёжная политика</a><ul><li id="menu-676-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/molodyozhnaya-politika/normativno-pravovaya-baza-gosudarstvennoy-molodezhnoy-politiki" class="sf-depth-2">Нормативно-правовая база государственной молодежной политики </a></li><li id="menu-677-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent"><a href="/molodyozhnaya-politika/deyatelnost" class="sf-depth-2 menuparent">Деятельность</a><ul><li id="menu-679-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/molodyozhnaya-politika/deyatelnost/municipalnyy-resursnyy-centr" class="sf-depth-3">Муниципальный ресурсный центр</a></li><li id="menu-680-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/molodyozhnaya-politika/deyatelnost/molodezhnyy-parlament" class="sf-depth-3">Молодежный парламент</a></li><li id="menu-681-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/molodyozhnaya-politika/deyatelnost/klub-pomoshchnikov-selskih-glav" class="sf-depth-3">Клуб помощников сельских глав</a></li><li id="menu-682-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/molodyozhnaya-politika/deyatelnost/mbumolodezhnyy-centr" class="sf-depth-3">МБУ&quot;Молодежный центр&quot;</a></li><li id="menu-683-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/molodyozhnaya-politika/deyatelnost/molodezhnye-proekty" class="sf-depth-3">Молодежные проекты</a></li><li id="menu-684-1" class="last even sf-item-6 sf-depth-3 sf-no-children"><a href="/molodyozhnaya-politika/deyatelnost/premiya-rukovoditelya-amo-go-usinsk-v-oblasti-molodezhnoy" class="sf-depth-3">Премия руководителя АМО ГО &quot;Усинск&quot; в области молодежной политики &quot;Успех&quot;</a></li></ul></li><li id="menu-678-1" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/molodyozhnaya-politika/kontakty" class="sf-depth-2">Контакты</a></li></ul></li></ul>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+                      </div><!-- /header-group-inner -->
+        </div><!-- /header-group -->
+      </div><!-- /header-group-wrapper -->
+
+      
+<!-- preface-top region -->
+<div id="preface-top-wrapper" class="preface-top-wrapper full-width clearfix">
+  <div id="preface-top" class="region region-preface-top preface-top  grid16-16">
+    <div id="preface-top-inner" class="preface-top-inner inner">
+      <div id="block-block-23" class="block block-block gosuslugi-block grid16-16 fusion-center first  odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <script src='https://pos.gosuslugi.ru/bin/script.min.js'></script> 
+<style>
+#js-show-iframe-wrapper{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-width:293px;max-width:100%;background:linear-gradient(138.4deg,#38bafe 26.49%,#2d73bc 79.45%);color:#fff;cursor:pointer}#js-show-iframe-wrapper .pos-banner-fluid *{box-sizing:border-box}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{display:block;width:240px;min-height:56px;font-size:18px;line-height:24px;cursor:pointer;background:#0d4cd3;color:#fff;border:none;border-radius:8px;outline:0}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#1d5deb}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus{background:#2a63ad}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active{background:#2a63ad}@-webkit-keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@font-face{font-family:LatoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWeb;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.ttf) format("truetype");font-style:normal;font-weight:400}
+</style>
+
+<style>
+#js-show-iframe-wrapper .bf-1{position:relative;display:grid;grid-template-columns:var(--pos-banner-fluid-1__grid-template-columns);grid-template-rows:var(--pos-banner-fluid-1__grid-template-rows);width:100%;max-width:1060px;font-family:LatoWeb,sans-serif;box-sizing:border-box}#js-show-iframe-wrapper .bf-1__decor{grid-column:var(--pos-banner-fluid-1__decor-grid-column);grid-row:var(--pos-banner-fluid-1__decor-grid-row);padding:var(--pos-banner-fluid-1__decor-padding);background:url(https://pos.gosuslugi.ru/bin/banner-fluid/1/banner-fluid-bg-1.svg) var(--pos-banner-fluid-1__decor-bg-position) no-repeat;background-size:var(--pos-banner-fluid-1__decor-bg-size)}#js-show-iframe-wrapper .bf-1__logo-wrap{display:flex;flex-direction:column;align-items:flex-end}#js-show-iframe-wrapper .bf-1__logo{width:128px}#js-show-iframe-wrapper .bf-1__slogan{font-family:LatoWebBold,sans-serif;font-size:var(--pos-banner-fluid-1__slogan-font-size);line-height:var(--pos-banner-fluid-1__slogan-line-height);color:#fff}#js-show-iframe-wrapper .bf-1__content{padding:var(--pos-banner-fluid-1__content-padding)}#js-show-iframe-wrapper .bf-1__description{display:flex;flex-direction:column;margin-bottom:24px}#js-show-iframe-wrapper .bf-1__text{margin-bottom:12px;font-size:24px;line-height:32px;font-family:LatoWebBold,sans-serif;color:#fff}#js-show-iframe-wrapper .bf-1__text_small{margin-bottom:0;font-size:16px;line-height:24px;font-family:LatoWeb,sans-serif}#js-show-iframe-wrapper .bf-1__btn-wrap{display:flex;align-items:center;justify-content:center}
+</style >
+<div id='js-show-iframe-wrapper'>
+  <div class='pos-banner-fluid bf-1'>
+
+    <div class='bf-1__decor'>
+      <div class='bf-1__logo-wrap'>
+        <img
+          class='bf-1__logo'
+          src='https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo.svg'
+          alt='Госуслуги'
+        />
+        <div class='bf-1__slogan'>Решаем вместе</div >
+      </div >
+    </div >
+    <div class='bf-1__content'>
+
+      <div class='bf-1__description'>
+          <span class='bf-1__text'>
+            Не убран снег, яма на дороге, не горит фонарь?
+          </span >
+        <span class='bf-1__text bf-1__text_small'>
+            Столкнулись с проблемой&nbsp;— сообщите о ней!
+          </span >
+      </div >
+
+      <div class='bf-1__btn-wrap'>
+        <!-- pos-banner-btn_2 не удалять; другие классы не добавлять -->
+        <button
+          class='pos-banner-btn_2'
+          type='button'
+        >Сообщить о проблеме
+        </button >
+      </div >
+
+    </div >
+
+  </div >
+</div >
+<script>
+(function(){
+  "use strict";
+function ownKeys(e,t){var o=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);if(t)n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable});o.push.apply(o,n)}return o}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var o=null!=arguments[t]?arguments[t]:{};if(t%2)ownKeys(Object(o),true).forEach(function(t){_defineProperty(e,t,o[t])});else if(Object.getOwnPropertyDescriptors)Object.defineProperties(e,Object.getOwnPropertyDescriptors(o));else ownKeys(Object(o)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(o,t))})}return e}function _defineProperty(e,t,o){if(t in e)Object.defineProperty(e,t,{value:o,enumerable:true,configurable:true,writable:true});else e[t]=o;return e}var POS_PREFIX_1="--pos-banner-fluid-1__",posOptionsInitial={"grid-template-columns":"100%","grid-template-rows":"310px auto","decor-grid-column":"initial","decor-grid-row":"initial","decor-padding":"30px 30px 0 30px","decor-bg-position":"center calc(100% - 10px)","decor-bg-size":"75% 75%","content-padding":"0 30px 30px 30px","slogan-font-size":"24px","slogan-line-height":"32px"},setStyles=function(e,t){Object.keys(e).forEach(function(o){t.style.setProperty(POS_PREFIX_1+o,e[o])})},removeStyles=function(e,t){Object.keys(e).forEach(function(e){t.style.removeProperty(POS_PREFIX_1+e)})};function changePosBannerOnResize(){var e=document.documentElement,t=_objectSpread({},posOptionsInitial),o=document.getElementById("js-show-iframe-wrapper"),n=o?o.offsetWidth:document.body.offsetWidth;if(n>500)t["grid-template-columns"]="min-content 1fr",t["grid-template-rows"]="100%",t["decor-grid-column"]="2",t["decor-grid-row"]="1",t["decor-padding"]="30px 30px 30px 0",t["decor-bg-position"]="calc(30% - 10px) calc(72% - 2px)",t["decor-bg-size"]="calc(23% + 150px)",t["content-padding"]="30px";if(n>800)t["decor-bg-position"]="calc(38% - 50px) calc(6% - 0px)",t["decor-bg-size"]="420px",t["slogan-font-size"]="32px",t["slogan-line-height"]="40px";if(n>1020)t["decor-bg-position"]="calc(30% - 28px) calc(0% - 40px)",t["decor-bg-size"]="620px";setStyles(t,e)}changePosBannerOnResize(),window.addEventListener("resize",changePosBannerOnResize),window.onunload=function(){var e=document.documentElement;window.removeEventListener("resize",changePosBannerOnResize),removeStyles(posOptionsInitial,e)};
+})()
+
+</script>
+ <script>Widget("https://pos.gosuslugi.ru/form", 218760)</script>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-22" class="block block-block ObrDeyat-block grid16-8 fusion-right   even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <a class="ObrDeyat-btn" href="https://усинск-обр.рф/ob-organizacii-obrazovatelnoy-deyatelnosti-v-2021-2022-uchebnom-godu">Об организации образовательной деятельности в 2021 – 2022 учебном году</a>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-views-novosty-block-1" class="block block-views novosty-block grid16-8   odd">
+  <div class="gutter inner clearfix">
+            <h2 class="title block-title">Новости управления образования</h2>
+        
+    <div class="content clearfix">
+      <div class="view view-novosty view-id-novosty view-display-id-block_1 novosty view-dom-id-33863f1eab30b9d6636d83fa4fa18319">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/novosty/2022-08-19/goryachaya-liniya">«Горячая линия»</a></span>  </div>  
+  <div class="views-field views-field-created">        <div class="dat">19 августа, 2022 - 00:00</div><div class="vis">541</div>  </div>  
+  <div class="views-field views-field-field-novost-foto">        <a href="/novosty/2022-08-19/goryachaya-liniya"><img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/medium/public/novosty/01_27.jpg?itok=MyRlrSQW" width="220" height="59" alt="" /></a>  </div>  
+  <div class="views-field views-field-body">        <h3>В Управлении образования АМО ГО "Усинск" организована работа «горячей линии».</h3>
+  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/novosty/2022-04-27/aprobaciya-ege-2022">Апробация ЕГЭ-2022</a></span>  </div>  
+  <div class="views-field views-field-created">        <div class="dat">27 апреля, 2022 - 16:04</div><div class="vis">1</div>  </div>  
+  <div class="views-field views-field-field-novost-foto">        <a href="/novosty/2022-04-27/aprobaciya-ege-2022"><img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/medium/public/novosty/01_80.jpg?itok=wDHk5Z0P" width="220" height="165" alt="" /></a>  </div>  
+  <div class="views-field views-field-body">        <p>27 апреля 2022 года на базе МБОУ "СОШ № 1" г. Усинска, МБОУ "СОШ № 4 с углубленным изучением отдельных предметов" г. Усинска и МБОУ "СОШ" с....  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/novosty/2022-04-26/usinskie-pedagogi-prizery-respublikanskogo-konkursa">Усинские педагоги - призеры республиканского конкурса!</a></span>  </div>  
+  <div class="views-field views-field-created">        <div class="dat">26 апреля, 2022 - 17:21</div><div class="vis">4</div>  </div>  
+  <div class="views-field views-field-field-novost-foto">        <a href="/novosty/2022-04-26/usinskie-pedagogi-prizery-respublikanskogo-konkursa"><img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/medium/public/novosty/01_79.jpg?itok=C8t8L3On" width="220" height="165" alt="" /></a>  </div>  
+  <div class="views-field views-field-body">        <p>C 01 марта по 30 апреля 2022 года на базе ГОУДПО "КРИРО" проходил заочный этап республиканского конкурса педагогического мастерства наставников и...  </div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/novosty/2022-04-26/zasedanie-municipalnoy-oporno-metodicheskoy-ploshchadki">Заседание муниципальной опорно-методической площадки</a></span>  </div>  
+  <div class="views-field views-field-created">        <div class="dat">26 апреля, 2022 - 17:19</div><div class="vis">1</div>  </div>  
+  <div class="views-field views-field-field-novost-foto">        <a href="/novosty/2022-04-26/zasedanie-municipalnoy-oporno-metodicheskoy-ploshchadki"><img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/medium/public/novosty/01.jpeg?itok=8fuW8c0Q" width="220" height="165" alt="" /></a>  </div>  
+  <div class="views-field views-field-body">        <p>26 апреля 2022 года на базе МБДОУ «ДС ОВ № 8» г. Усинска в онлайн режиме прошло заседание муниципальной опорно-методической площадки «Повышение...  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/novosty/2022-04-25/vospitatel-goda-rossii-2022-bescennyy-opyt-i-massa-yarkih-emociy">&quot;Воспитатель года России 2022&quot;: бесценный опыт и масса ярких эмоций!</a></span>  </div>  
+  <div class="views-field views-field-created">        <div class="dat">25 апреля, 2022 - 18:15</div><div class="vis">4</div>  </div>  
+  <div class="views-field views-field-field-novost-foto">        <a href="/novosty/2022-04-25/vospitatel-goda-rossii-2022-bescennyy-opyt-i-massa-yarkih-emociy"><img src="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/styles/medium/public/novosty/vpi1xqgbaja_19.jpg?itok=PA6UNmOo" width="220" height="127" alt="" /></a>  </div>  
+  <div class="views-field views-field-body">        <p>В столице Коми подвели итоги республиканского этапа Всероссийского конкурса "Воспитатель года России 2022".</p>
+  </div>  </div>
+    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/novosty">
+    Все новости...  </a>
+</div>
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-21" class="block block-block distance-block grid16-8 fusion-right   even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <a class="distance-btn" style="font-size:22px" href="https://усинск-обр.рф/node/1915">Электронное обучение, применение<br>дистанционных образовательных технологий</a>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-18" class="block block-block kor-block grid16-8 fusion-right   odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <a class="kor-btn" href="/ob-upravlenii/protivodeystvie-korrupcii">Противодействие <br>коррупции</a>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-7" class="block block-block obr-block grid16-8 fusion-right   even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <a class="obr-btn" href="/obrashchenie-grazhdan">Обращение <br>граждан</a>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-8" class="block block-block aktual-block grid16-8 fusion-right   odd">
+  <div class="gutter inner clearfix">
+            <h2 class="title block-title">Актуальная информация</h2>
+        
+    <div class="content clearfix">
+      <ol>
+	<li>
+		<h3><a href="https://xn----btbtioipbcq.xn--p1ai/obshchee-obrazovanie/nachalnoe-osnovnoe-srednee-obshchee-obrazovanie/priyom-v-shkolu">Прием в 1 класс!</a></h3>
+	</li>
+	<li>
+		<h3><a href="https://xn----btbtioipbcq.xn--p1ai/dopolnitelnoe-obrazovanie-i-vospitanie/dopolnitelnoe-obrazovanie/systema" target="_blank">Сертификат дополнительного образования детей</a></h3>
+	</li>
+	<li>
+		<h3><a href="https://xn----btbtioipbcq.xn--p1ai/sites/default/files/page/files/buklet_dlya_grazhdan_sockontrakt_s_2020.pdf">Государственная социальная помощь в виде пособия на основании социального контракта</a></h3>
+	</li>
+</ol>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-pretty-calendar-calendar" class="block block-pretty-calendar kalendar-block grid16-8 fusion-right  last even">
+  <div class="gutter inner clearfix">
+            <h2 class="title block-title">Календарь мероприятий</h2>
+        
+    <div class="content clearfix">
+      <div id="calendar-body">
+<div class="block-calendar">
+  <div class="calendar-container">
+    <div class="calendar-daynames">
+    <div class="pretty-calendar-month">
+      <a href="javascript:calendar_go('prev');" rel="1646082000">
+        <div class="calendar-prev"> <div>&nbsp;</div>Март </div>
+      </a>
+      <div class="month-title">
+      <a href="/meropriatie/mesyac/2022-04">Апрель 2022</a></div>
+      <a href="javascript:calendar_go('next');" rel="1651352400">
+        <div class="calendar-next"> Май<div>&nbsp;</div> </div>
+      </a>
+    </div>
+      <div class="pretty-calendar-day"><div class="calendar-value">пн</div></div>
+      <div class="pretty-calendar-day"><div class="calendar-value">вт</div></div>
+      <div class="pretty-calendar-day"><div class="calendar-value">ср</div></div>
+      <div class="pretty-calendar-day"><div class="calendar-value">чт</div></div>
+      <div class="pretty-calendar-day"><div class="calendar-value">пт</div></div>
+      <div class="pretty-calendar-weekend"><div class="calendar-value">сб</div></div>
+      <div class="pretty-calendar-weekend pretty-calendar-last"><div class="calendar-value">вс</div></div>
+    </div>
+    
+<div class="pretty-calendar-week">
+
+  <div class="pretty-calendar-day blank">
+    <div class="calendar-value"></div>
+  </div>
+
+  <div class="pretty-calendar-day blank">
+    <div class="calendar-value"></div>
+  </div>
+
+  <div class="pretty-calendar-day blank">
+    <div class="calendar-value"></div>
+  </div>
+
+  <div class="pretty-calendar-day blank">
+    <div class="calendar-value"></div>
+  </div>
+
+  <div class="pretty-calendar-day">
+    <div class="calendar-value">1</div>
+  </div>
+
+  <div class="pretty-calendar-weekend">
+    <div class="calendar-value">2</div>
+  </div>
+
+  <div class="pretty-calendar-weekend pretty-calendar-last">
+    <div class="calendar-value">3</div>
+  </div>
+</div>
+
+<div class="pretty-calendar-week">
+
+<a class="tooltip" title="4 события" href="/meropriatie/den/2022-04-04">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">4</div>
+  </div>
+</a>
+
+<a class="tooltip" title="4 события" href="/meropriatie/den/2022-04-05">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">5</div>
+  </div>
+</a>
+
+<a class="tooltip" title="4 события" href="/meropriatie/den/2022-04-06">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">6</div>
+  </div>
+</a>
+
+<a class="tooltip" title="5 события" href="/meropriatie/den/2022-04-07">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">7</div>
+  </div>
+</a>
+
+<a class="tooltip" title="5 события" href="/meropriatie/den/2022-04-08">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">8</div>
+  </div>
+</a>
+
+<a class="tooltip" title="2 события" href="/meropriatie/den/2022-04-09">
+  <div class="pretty-calendar-weekend alone">
+    <div class="calendar-value">9</div>
+  </div>
+</a>
+
+  <div class="pretty-calendar-weekend pretty-calendar-last">
+    <div class="calendar-value">10</div>
+  </div>
+</div>
+
+<div class="pretty-calendar-week">
+
+  <div class="pretty-calendar-day">
+    <div class="calendar-value">11</div>
+  </div>
+
+<a class="tooltip" title="1 событие" href="/meropriatie/den/2022-04-12">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">12</div>
+  </div>
+</a>
+
+  <div class="pretty-calendar-day">
+    <div class="calendar-value">13</div>
+  </div>
+
+  <div class="pretty-calendar-day">
+    <div class="calendar-value">14</div>
+  </div>
+
+<a class="tooltip" title="1 событие" href="/meropriatie/den/2022-04-15">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">15</div>
+  </div>
+</a>
+
+<a class="tooltip" title="2 события" href="/meropriatie/den/2022-04-16">
+  <div class="pretty-calendar-weekend alone">
+    <div class="calendar-value">16</div>
+  </div>
+</a>
+
+  <div class="pretty-calendar-weekend pretty-calendar-last">
+    <div class="calendar-value">17</div>
+  </div>
+</div>
+
+<div class="pretty-calendar-week">
+
+<a class="tooltip" title="3 события" href="/meropriatie/den/2022-04-18">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">18</div>
+  </div>
+</a>
+
+<a class="tooltip" title="3 события" href="/meropriatie/den/2022-04-19">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">19</div>
+  </div>
+</a>
+
+<a class="tooltip" title="3 события" href="/meropriatie/den/2022-04-20">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">20</div>
+  </div>
+</a>
+
+<a class="tooltip" title="3 события" href="/meropriatie/den/2022-04-21">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">21</div>
+  </div>
+</a>
+
+<a class="tooltip" title="2 события" href="/meropriatie/den/2022-04-22">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">22</div>
+  </div>
+</a>
+
+<a class="tooltip" title="2 события" href="/meropriatie/den/2022-04-23">
+  <div class="pretty-calendar-weekend alone">
+    <div class="calendar-value">23</div>
+  </div>
+</a>
+
+<a class="tooltip" title="1 событие" href="/meropriatie/den/2022-04-24">
+  <div class="pretty-calendar-weekend pretty-calendar-last alone">
+    <div class="calendar-value">24</div>
+  </div>
+</a>
+</div>
+
+<div class="pretty-calendar-week">
+
+<a class="tooltip" title="3 события" href="/meropriatie/den/2022-04-25">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">25</div>
+  </div>
+</a>
+
+<a class="tooltip" title="3 события" href="/meropriatie/den/2022-04-26">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">26</div>
+  </div>
+</a>
+
+<a class="tooltip" title="3 события" href="/meropriatie/den/2022-04-27">
+  <div class="pretty-calendar-day pretty-calendar-today alone">
+    <div class="calendar-value">27</div>
+  </div>
+</a>
+
+<a class="tooltip" title="4 события" href="/meropriatie/den/2022-04-28">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">28</div>
+  </div>
+</a>
+
+<a class="tooltip" title="3 события" href="/meropriatie/den/2022-04-29">
+  <div class="pretty-calendar-day alone">
+    <div class="calendar-value">29</div>
+  </div>
+</a>
+
+<a class="tooltip" title="6 события" href="/meropriatie/den/2022-04-30">
+  <div class="pretty-calendar-weekend alone">
+    <div class="calendar-value">30</div>
+  </div>
+</a>
+
+  <div class="pretty-calendar-weekend pretty-calendar-last blank">
+    <div class="calendar-value"></div>
+  </div>
+</div>
+  </div>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /preface-top-inner -->
+  </div><!-- /preface-top -->
+</div><!-- /preface-top-wrapper -->
+
+      <!-- main region: width = grid_width -->
+      <div id="main-wrapper" class="main-wrapper full-width clearfix">
+        <div id="main" class="main region grid16-16">
+          <div id="main-inner" class="main-inner inner clearfix">
+            
+            <!-- main group: width = grid_width - sidebar_first_width -->
+            <div id="main-group" class="main-group region nested grid16-16">
+              <div id="main-group-inner" class="main-group-inner inner">
+                
+                <div id="main-content" class="main-content region nested">
+                  <div id="main-content-inner" class="main-content-inner inner">
+                    <!-- content group: width = grid_width - sidebar_first_width - sidebar_second_width -->
+                    <div id="content-group" class="content-group region nested grid16-16">
+                      <div id="content-group-inner" class="content-group-inner inner">
+                                                
+                            
+                        <div id="content-region" class="content-region region nested">
+                          <div id="content-region-inner" class="content-region-inner inner">
+                            <a id="main-content-area"></a>
+                                                                                                                <h1 class="title gutter">Главная</h1>
+                                                                                                                                              
+<!-- content region -->
+  <div id="content" class="region region-content content nested grid16-16">
+    <div id="content-inner" class="content-inner inner">
+      <div id="block-system-main" class="block block-system first last odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="node-1" class="node node-page odd full-node clearfix">
+  
+      
+  
+      <div id="node-top" class="node-top region nested">
+          </div>
+    
+  <div class="content">
+      </div>
+
+  <ul class="links inline"><li class="statistics_counter first last"><span>131010 просмотров</span></li>
+</ul>
+  
+      <div id="node-bottom" class="node-bottom region nested">
+      <div id="block-block-4" class="block block-block grid16-16 fusion-center-content first last odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=44269874&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/44269874/3_0_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="44269874" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44269874 = new Ya.Metrika({ id:44269874, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44269874" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div>
+    
+</div>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /content-inner -->
+  </div><!-- /content -->
+                                                      </div><!-- /content-region-inner -->
+                        </div><!-- /content-region -->
+
+                      </div><!-- /content-group-inner -->
+                    </div><!-- /content-group -->
+                                      </div><!-- /main-content-inner -->
+                </div><!-- /main-content -->
+
+                              </div><!-- /main-group-inner -->
+            </div><!-- /main-group -->
+          </div><!-- /main-inner -->
+        </div><!-- /main -->
+      </div><!-- /main-wrapper -->
+
+      
+<!-- postscript-bottom region -->
+<div id="postscript-bottom-wrapper" class="postscript-bottom-wrapper full-width clearfix">
+  <div id="postscript-bottom" class="region region-postscript-bottom postscript-bottom  grid16-16">
+    <div id="postscript-bottom-inner" class="postscript-bottom-inner inner">
+      <div id="block-block-13" class="block block-block grid16-16 fusion-center-content fusion-center first  odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <!--<script type="text/javascript" language="javascript" src="https://баннер.сетевичок.рф/index.php?option=com_adagency&controller=adagencyAds&task=remote_ad&tmpl=component&format=raw&zid=119"></script>-->
+
+
+ <a href="https://konfor.kriro.ru" target="_blank">
+      <img src="https://усинск-обр.рф/sites/default/files/page/fg.png" align="middle" heidth="50">
+      </img>
+    </a>
+   <a href="https://усинск-обр.рф/centr-obrazovaniya-cifrovogo-i-gumanitarnogo-profiley-tochka-rosta">
+      <img src="https://усинск-обр.рф/sites/default/files/page/tochka_rosta_logotip_2.png" align="middle" heidth="50">
+      </img>
+    </a>
+    <a href="https://bus.gov.ru/pub/" target="_blank">
+      <img src="https://усинск-обр.рф/sites/default/files/page/bus_gov_ru.png" align="middle" heidth="50">
+      </img>
+    </a>
+<a href="https://год2020.рф" target="_blank">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://усинск-обр.рф/sites/default/files/page/2020.JPG" align="middle" heidth="50">
+      </img>
+    </a></br></br>
+<a href="https://объясняем.рф/" target="_blank">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://усинск-обр.рф/sites/default/files/page/orf.png" align="middle" heidth="50">
+      </img>
+    </a>
+
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-views-plinks-nk-block-1" class="block block-views plinks-block  last even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="view view-plinks-nk view-id-plinks_nk view-display-id-block_1 plinks-ks view-dom-id-7e039394c25ab5c638e1762d4418390d">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+          <a href="http://minobr.rkomi.ru" target="_blank"><img alt="" class="image-plink" src="/sites/default/files/styles/plink/public/plinks/image110383628.jpg?itok=zc3a8tYJ" style="width: 144px; height: 50px;" /></a>
+    </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+          <a href="http://www.kriro.ru" target="_blank"><img alt="" class="image-plink" src="/sites/default/files/styles/plink/public/plinks/komi-respublikanskiy-institut-razvitiya-obrazovaniya.jpg?itok=ofukPzkw" style="width: 255px; height: 50px;" /></a>
+    </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+          <a href="http://www.ege.edu.ru" target="_blank"><img alt="" class="image-plink" src="/sites/default/files/styles/plink/public/plinks/ege.jpg?itok=5jGu6HEv" style="width: 157px; height: 50px;" /></a>
+    </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+          <a href="http://gia.edu.ru" target="_blank"><img alt="" class="image-plink" src="/sites/default/files/styles/plink/public/plinks/gia.jpg?itok=Sa1wx6jX" style="width: 157px; height: 50px;" /></a>
+    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /postscript-bottom-inner -->
+  </div><!-- /postscript-bottom -->
+</div><!-- /postscript-bottom-wrapper -->
+      
+<!-- footer region -->
+<div id="footer-wrapper" class="footer-wrapper full-width clearfix">
+  <div id="footer" class="region region-footer footer  grid16-16">
+    <div id="footer-inner" class="footer-inner inner">
+      <div id="block-block-1" class="block block-block grid16-4 first  odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <p>© 2022 г.<br />
+	Управление образования<br />
+	АМО ГО «Усинск»</p>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-2" class="block block-block bot-adr grid16-5   even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <p>Адрес:</p>
+
+<hr />
+<p>169710, Республика Коми, г. Усинск, <br />
+	ул. Возейская, д. 3А </p>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-3" class="block block-block grid16-3   odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <p>Телефоны:</p>
+
+<hr />
+<p>(82144) 20-5-36, 28-5-66</p>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-19" class="block block-block bot-adr grid16-4 fusion-right   even">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
+<!-- VK Widget -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 1, color3: '3A6EA9'}, 52065920);
+</script>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-block-20" class="block block-block  last odd">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <script type="text/javascript">
+(function(d, t, p) {
+var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+j.src = ("https:" == p ? "https:" : "http:") + "//stat.sputnik.ru/cnt.js";
+var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+})(document, "script", document.location.protocol);
+</script>
+<span id="sputnik-informer"></span>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /footer-inner -->
+  </div><!-- /footer -->
+</div><!-- /footer-wrapper -->
+    </div><!-- /page-inner -->
+  </div><!-- /page -->
+  <script type="text/javascript" src="https://xn----btbtioipbcq.xn--p1ai/modules/statistics/statistics.js?qtz68q"></script>
+</body>
+</html>

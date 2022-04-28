@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+
+<head>
+<!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"17d998b9ce",applicationID:"1279630495"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/activity/learning-tools-interoperability" />
+<link rel="shortlink" href="/node/626" />
+<link rel="shortcut icon" href="https://www.imsglobal.org/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+<title>Learning Tools Interoperability | IMS Global Learning Consortium</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__BJ6Ou6QsBRtnFTmxaakamOIS8n4QswDP2XnnZ1sxtaM__NBuvkP6eInGIkb1aJvUHx5PX79XApuxBDkk_77W5tYk__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__YziSh45bPYLrRNrWKiJ4RSWdJCd78FjDEe0SbcQClbI__3PWeSxBEp25JZfdB0q4a1THV5KGElJ3sZQngWGz2xDM__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__AAabiXtVFxoY7oPQwRXA_g_ooUqUDTzDvuCGubNindw__Q7BztgJPtTWudkxlNRj2jDFPH8gyob0toDrId0el56s__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__VAIIOJETIMaOMRdFZgIDH3yGiYPb5mFfhNIU_sKUG5w__5oYH3nM6II3Pc6fmVO2zt8VgxzQBvmVxOQnkkU4Y_q8__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.css" media="all" />
+<style type="text/css" media="all">
+/* <![CDATA[ */
+.header_icon,.block.orange-header h3.block-headline,.block.styled-header h3.block-headline{background-color:#1c6b7c !important;}
+
+/* ]]> */
+</style>
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__aQ3pv3oUiEwUQbhCtBi6bqBfgL4alNKwgdvYd_3UGEo__KT3O21ECFhrtvT4mwTOrHwFIf0Bt02UzXMQEFgL7sb4__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__gWz_SrdVsO648qLL_LJBhi5ppv21NBKcuTvESFcMQnw__TxOUAh6NLaFgBhau-sXO_yG3AU8_r9-dJyGblkrqKyg__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__V_A5XePu4KYLTkC6amCJMPMNYIZOIcxcbbwUUDpO6Sg__hlTTJyeNWsey7CUh-laNo4yGVPuGizIMJDQI55oVEAU__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__EPOQT-_j_LlZ2HUIdF4Gsw7WZ16oVFk-rnsW9c4R76o__HCDP6De7oSfUjjK7HQkDhaa8NF5al4ekPpFw_S8ZmdU__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.css" media="print" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/cpn/views-tech_activity_feeds-block_1.css?rayl2s" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/cpn/views-tech_activity_feeds-block.css?rayl2s" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/cpn/views-tech_activity_feeds-block_3.css?rayl2s" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/cpn/views-events-block_2.css?rayl2s" media="all" />
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__ZyeOaiFuDejQQbhUV7yg7atYZnj4WLfH77o0scv4068__jeShjS1-sEwOx4dbB-NSBsCnxWfNslS1Nkgx4CZngGA__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery.ui || document.write("<script src='/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__UW4URQsON5h-xjwepC-HoW32RCC10thhh4f0DQ1P8z4__V2RYL4VZntPWB_PMJnR7_8tZaKLRfCHmVvwTgS8C0iM__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.js"></script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__P3ER6aBJWRT0gwCuCwxJJBGcRpyoPxvBTwmExELajfg__6lirxbTdH7loCG7BGjvM9lYACQY3pzS-55Nwvn6e3jo__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.js"></script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__yCILyqpsnwiNeQ7OtO0Lsg6n-PbABqY_-RV2fQb-PeQ__U_G1E04yLiuJEp5CfyOCNoPKUAWFa7GdG-py0eYkemk__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.imsglobal.org/sites/default/files/googleanalytics/analytics.js?rayl2s","ga");ga("create", "UA-25297781-1", {"cookieDomain":".www.imsglobal.org"});ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__1ff96vilpzVWT7frCY67NLaABpospaRpvDbwqZcsud4__GK-dbBYyV2SfBvLqk0vSzWnBDOis-qZPGquGB8fXuBY__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.js"></script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__SrC_tV7lU_YCKXmoewCAG0Tp-FftQ2IlUe9eDvYNZYk__c72QV1CIjHuz_9z7nujueg2uXqIt2OMcPpvXxQjtUSE__2CA3FaYrz-c7Epsy4Gp2KWDLwG8xMXFuqP_wPP_5Fb8.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"ims","theme_token":"ioXjQ619w8MbO8F8Buz2MoRu_VGViS0kDkV8U2JV-M8","jquery_version":"1.8","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/pd_reports_module\/css\/global.css":1,"sites\/all\/modules\/pd_reports_module\/css\/plugins\/datepicker\/daterangepicker.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/toc_node\/css\/toc_node.css":1,"sites\/all\/modules\/ubercart\/uc_order\/uc_order.css":1,"sites\/all\/modules\/ubercart\/uc_product\/uc_product.css":1,"sites\/all\/modules\/ubercart\/uc_store\/uc_store.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/modal.css":1,"sites\/all\/modules\/tagclouds\/tagclouds.css":1,"sites\/all\/modules\/user_dashboard\/user_dashboard.css":1,"sites\/all\/modules\/taxonomy_access\/taxonomy_access.css":1,"sites\/all\/modules\/productdirectory\/css\/tooltip.css":1,"\/\/use.fontawesome.com\/releases\/v5.5.0\/css\/all.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/themes\/ims\/assets\/css\/megamenu-demo.css":1,"sites\/all\/themes\/ims\/assets\/css\/bootstrap-theme.css":1,"sites\/all\/themes\/ims\/assets\/css\/bootstrap.css":1,"sites\/all\/themes\/ims\/assets\/css\/imsglobal.css":1,"sites\/all\/themes\/ims\/assets\/css\/style.css":1,"sites\/all\/themes\/ims\/assets\/css\/imsglobal.print.css":1,"public:\/\/cpn\/views-tech_activity_feeds-block_1.css":1,"public:\/\/cpn\/views-tech_activity_feeds-block.css":1,"public:\/\/cpn\/views-tech_activity_feeds-block_3.css":1,"public:\/\/cpn\/views-events-block_2.css":1},"js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/modal.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/ims\/assets\/js\/script.js":1,"sites\/all\/themes\/ims\/assets\/js\/bootstrap.min.js":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.imsglobal.org\/sites\/all\/modules\/contrib\/ctools\/images\/icon-close-window.png\u0022 alt=\u0022Close window\u0022 title=\u0022Close window\u0022 \/\u003E","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.imsglobal.org\/sites\/all\/modules\/contrib\/ctools\/images\/throbber.gif\u0022 alt=\u0022Loading\u0022 title=\u0022Loading...\u0022 \/\u003E"},"variable_compare_against_baseline":"IMS has defined an ideal minimum conformance certification that different types of tools should meet. This filter will allow you to view whether a specific tool meets that baseline.","Affiliate":"Affiliate Member","CCLTI":"Learning Tools and Content Alliance Member","CM":"Contributing Member","IWB":"IWB Member","LIS":"EduERP Alliance Member","Assessment":"eAssessment Alliance Member","Prospect":"Prospect Member","better_exposed_filters":{"views":{"news":{"displays":{"block_4":{"filters":[]}}},"tech_activity_feeds":{"displays":{"block_1":{"filters":[]},"block_4":{"filters":[]},"block_11":{"filters":[]},"block":{"filters":[]},"block_2":{"filters":[]},"block_3":{"filters":[]},"block_6":{"filters":[]},"block_10":{"filters":[]}}},"alerts":{"displays":{"block_3":{"filters":[]}}},"sidebar_content":{"displays":{"block_1":{"filters":[]},"block":{"filters":[]}}},"poll":{"displays":{"block_1":{"filters":[]}}},"events":{"displays":{"block_2":{"filters":[]}}},"forum_list":{"displays":{"block_1":{"filters":[]}}},"initiative_feeds":{"displays":{"block_4":{"filters":[]}}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackDomainMode":1,"trackUrlFragments":1},"superfish":[{"id":"2","sf":{"animation":{"opacity":"show","height":"show"},"speed":"\u0027fast\u0027","autoArrows":true,"dropShadows":true,"disableHI":false},"plugins":{"touchscreen":{"mode":"window_width"},"supposition":true,"bgiframe":false}},{"id":"1","sf":{"animation":{"opacity":"show","height":"show"},"speed":"\u0027fast\u0027","autoArrows":true,"dropShadows":true,"disableHI":false},"plugins":{"touchscreen":{"mode":"window_width"},"supposition":true,"bgiframe":false}}]});
+//--><!]]>
+</script>
+<link href='//fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<meta name="google-site-verification" content="h393ALXEzZ95pCyEoEpklerEQiORSJjS1v7qMyCVTBo" />
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-626 node-type-technical-activity" >
+<head>
+<!--/ You can use the head in here if you want to, but we will use the html.tpl.php for it when we get there -->
+</head>
+<style type="text/css">
+	input[type="text"], input[type="password"], input[type="email"], textarea, select,
+	.accent {
+		border: 1px solid #1c6b7c;
+	}
+</style>
+<!--/Begin - Contact Info / Social Icons -->
+<div class="sharebar-holder">
+          <div class="region region-sharebar">
+    <div id="block-block-81" class="block block-block ">
+        <div class="block-content-container"><div class="block-content"> <div style="display: none;">Sharebar?</div> </div></div>
+</div>
+
+  </div>
+    </div>
+<div class="header-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="welcome-msg"></div>
+      </div>
+      <div class="col-md-8">
+        <div class="top-right-menu">
+                              <div class="region region-top-nav">
+    <div id="block-superfish-2" class="block block-superfish ">
+        <div class="block-content-container"><div class="block-content"> <ul id="superfish-2" class="menu sf-menu sf-user-menu sf-horizontal sf-style-none sf-total-items-6 sf-parent-items-0 sf-single-items-6"><li id="menu-4386-2" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/imsmembership.html" class="sf-depth-1">Membership</a></li><li id="menu-4871-2" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="/events" class="sf-depth-1">Events</a></li><li id="menu-35991-2" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="https://www.imsglobal.org/news.html" title="" class="sf-depth-1">News</a></li><li id="menu-4956-2" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/ims-global" class="sf-depth-1">Global</a></li><li id="menu-21226-2" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="https://www.imsglobal.org/specifications.html" title="" class="sf-depth-1">Specifications</a></li><li id="menu-8461-2" class="last even sf-item-6 sf-depth-1 sf-no-children"><a href="/user/login?destination=node/626" title="" class="sf-depth-1">Login</a></li></ul> </div></div>
+</div>
+
+  </div>
+                      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/End - Contact Info / Social Icons -->
+
+<!--/Begin LOGO AND SUCH -->
+<div class="logo-menu-bar">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+                      <a href="/" title="Home" rel="home" id="logo"> <img src="https://www.imsglobal.org/sites/default/files/logo-revised.png" alt="Home" /> </a>
+                                    </div>
+    <div class="col-md-8">
+              <div class="region region-menu-nav">
+    <div id="block-superfish-1" class="block block-superfish ">
+        <div class="block-content-container"><div class="block-content"> <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-6 sf-parent-items-5 sf-single-items-1"><li id="menu-4321-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-10 sf-parent-children-0 sf-single-children-10 menuparent"><a href="/institutions.html" class="sf-depth-1 menuparent">Initiatives</a><ul><li id="menu-6836-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/initiative/digitalcredentials" title="" class="sf-depth-2">Digital Credentials</a></li><li id="menu-6781-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/initiative/learning-data-and-analytics" title="" class="sf-depth-2">Learning Data &amp; Analytics</a></li><li id="menu-6831-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/initiative/actionable-e-assessment" title="" class="sf-depth-2">Integrated Assessment</a></li><li id="menu-6841-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/initiative/ecosystem-learning-platforms-apps-and-tools" title="" class="sf-depth-2">Learning Platforms, Apps &amp; Tools</a></li><li id="menu-6846-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/initiative/digital-curriculum" title="" class="sf-depth-2">Curriculum Innovation and Teaching Strategies</a></li><li id="menu-15316-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/COEK12Playbook.html" title="" class="sf-depth-2">K-12 Digital Transformation</a></li><li id="menu-15321-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="/about/hed" class="sf-depth-2">HED Digital Transformation</a></li><li id="menu-38811-1" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="/casenetwork" class="sf-depth-2">CASE Network</a></li><li id="menu-39246-1" class="middle odd sf-item-9 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/coe" title="" class="sf-depth-2">Centers of Excellence</a></li><li id="menu-39536-1" class="last even sf-item-10 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/standardsfirst" title="" class="sf-depth-2">Standards First</a></li></ul></li><li id="menu-4311-1" class="active-trail middle even sf-item-2 sf-depth-1 sf-total-children-15 sf-parent-children-0 sf-single-children-15 menuparent"><a href="/developers" title="" class="sf-depth-1 menuparent">Developers</a><ul><li id="menu-39201-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/development-resources" title="" class="sf-depth-2">Development Resources and Tools</a></li><li id="menu-14141-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/activity/accessibility" title="" class="sf-depth-2">Accessibility</a></li><li id="menu-14191-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/activity/qtiapip" title="" class="sf-depth-2">Assessment</a></li><li id="menu-14146-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/activity/caliper" title="" class="sf-depth-2">Caliper Analytics</a></li><li id="menu-14151-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/activity/common-cartridge" title="" class="sf-depth-2">Common Cartridge</a></li><li id="menu-39546-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/compatibilitycheck" title="" class="sf-depth-2">Compatibility Check</a></li><li id="menu-24441-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="/activity/case" title="" class="sf-depth-2">Competencies &amp; Academic Standards Exchange</a></li><li id="menu-34736-1" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/activity/comprehensive-learner-record" title="" class="sf-depth-2">Comprehensive Learner Record</a></li><li id="menu-14161-1" class="middle odd sf-item-9 sf-depth-2 sf-no-children"><a href="/activity/digital-badges" title="" class="sf-depth-2">Digital Badges</a></li><li id="menu-14171-1" class="active-trail middle even sf-item-10 sf-depth-2 sf-no-children"><a href="/activity/learning-tools-interoperability" title="" class="sf-depth-2 active">Learning Tools Interoperability &amp; LTI Advantage</a></li><li id="menu-37881-1" class="middle odd sf-item-11 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/activity/lti-resource-search" title="" class="sf-depth-2">LTI Resource Search</a></li><li id="menu-14176-1" class="middle even sf-item-12 sf-depth-2 sf-no-children"><a href="/activity/onerosterlis" title="" class="sf-depth-2">OneRoster / Learning Information Services / Edu-API</a></li><li id="menu-14181-1" class="middle odd sf-item-13 sf-depth-2 sf-no-children"><a href="/activity/openvideo" title="" class="sf-depth-2">OpenVideo</a></li><li id="menu-35726-1" class="middle even sf-item-14 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/ims-security-framework" title="" class="sf-depth-2">Security Framework</a></li><li id="menu-34891-1" class="last odd sf-item-15 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/activity/app-vetting" title="" class="sf-depth-2">TrustEd Apps &amp; Data Privacy</a></li></ul></li><li id="menu-4306-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="https://site.imsglobal.org/certifications" title="" class="sf-depth-1 menuparent">Certified Products</a><ul><li id="menu-24371-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="https://site.imsglobal.org/certifications" title="" class="sf-depth-2">Product Directory</a></li><li id="menu-24376-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/buy-ims-certified" class="sf-depth-2">Buy IMS Certified</a></li><li id="menu-24381-1" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/certifications/get-certified" class="sf-depth-2">Get IMS Certified</a></li></ul></li><li id="menu-7411-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent"><a href="/learningimpact/li.html" class="sf-depth-1 menuparent">Learning Impact</a><ul><li id="menu-39241-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/li/2020/ondemand" title="" class="sf-depth-2">Learning Impact On-Demand Webinars</a></li><li id="menu-39581-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/event/li/2022" title="" class="sf-depth-2">Learning Impact 2022 Conference</a></li><li id="menu-18796-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/event/li/2022/sponsorship" class="sf-depth-2">Learning Impact Sponsorship</a></li><li id="menu-4946-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/awards.html" title="" class="sf-depth-2">Learning Impact Awards</a></li><li id="menu-39586-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/about/li_report/2021" title="" class="sf-depth-2">Learning Impact Report</a></li><li id="menu-3921-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/blog" title="" class="sf-depth-2">Learning Impact Blog</a></li><li id="menu-14196-1" class="last odd sf-item-7 sf-depth-2 sf-no-children"><a href="https://www.imsglobal.org/about/annual_report/2020" title="" class="sf-depth-2">IMS Global Annual Report</a></li></ul></li><li id="menu-14211-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-8 sf-parent-children-0 sf-single-children-8 menuparent"><a href="/leadershipactivities" title="" class="sf-depth-1 menuparent">Leadership</a><ul><li id="menu-14216-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/leadership/board-directors" title="" class="sf-depth-2">Board of Directors</a></li><li id="menu-14241-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/leadership/hed-institutional-executive-board" title="" class="sf-depth-2">HED Institutional Leadership Board</a></li><li id="menu-14226-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/leadership/k12institutional-executive-board" title="" class="sf-depth-2">K-12 Institutional Leadership Board</a></li><li id="menu-14236-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/leadership/technical-advisory-board-tab" title="" class="sf-depth-2">Technical Advisory Board</a></li><li id="menu-14221-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/leadership/europeboard" title="" class="sf-depth-2">IMS Europe Board Members</a></li><li id="menu-19031-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/membersandaffiliates.html" class="sf-depth-2">IMS Members</a></li><li id="menu-37886-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="/collaborations.html" class="sf-depth-2">Collaborations and Affiliations</a></li><li id="menu-14246-1" class="last even sf-item-8 sf-depth-2 sf-no-children"><a href="/imsstaff.html" class="sf-depth-2">IMS Staff</a></li></ul></li><li id="menu-4471-1" class="last even sf-item-6 sf-depth-1 sf-no-children"><a href="/search/site/" title="" class="sf-depth-1">Search</a></li></ul> </div></div>
+</div>
+
+  </div>
+          </div>
+  </div>
+</div>
+</div>
+<!-- /Close Logo and regions -->
+
+<!--/Begin Banner Region -->
+<div class="banner-hero">
+<div class="row">
+  <div class="col-md-12">
+    <div class="slider-adjust">
+          </div>
+  </div>
+</div>
+</div>
+<!--/End Banner Region -->
+
+<!--/Begin Call To Action -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--/End Call To Action -->
+
+<!--/Begin Top Columns  -->
+
+    </div>
+  </div>
+</div>
+<!--/End Top Columns-->
+
+<!--/Begin Header Title Section -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--/End Header Title Section -->
+
+
+
+<!--/Begin Content and Side Bar -->
+<div class="main-section">
+<div class="container">
+  <div class="row">
+          <a id="main-content"></a>             <h1 class="title " id="page-title">
+		<img src="https://www.imsglobal.org/sites/default/files/icon-lti-stencil_0.png" class="header_icon" alt="Learning Tools Interoperability" />		Learning Tools Interoperability	</h1>
+                        <div class="clearfix"></div>
+            <div class="tabs">  </div>
+          
+    <!--/Content -->
+          <div class="col-md-7">
+    
+    
+                    <div class="region region-content">
+    <div id="block-system-main" class="block block-system ">
+        <div class="block-content-container"><div class="block-content"> <div id="node-626" class="node node-technical-activity node-promoted node-full clearfix" about="/activity/learning-tools-interoperability" typeof="sioc:Item foaf:Document">
+
+  
+      <span property="dc:title" content="Learning Tools Interoperability" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><h1><strong>IMS LTI<sup><small>&reg;</small></sup>&nbsp;1.3 and LTI Advantage</strong></h1>
+
+<table class="fancy">
+	<tbody>
+		<tr>
+			<td style="width: 150px; text-align: center;"><a href="#ltiresources">LTI Advantage Resources</a></td>
+			<td style="text-align: center; width: 150px;"><a href="#LTIpublic">Public Documents</a></td>
+			<td style="text-align: center; width: 150px;"><a href="#LTImember">IMS Member Resources</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<h2><strong>Summary</strong></h2>
+
+<p style="text-align: center;"><strong><a href="#ltiresources">LEARNING TOOLS INTEROPERABILITY<sup><small>&reg;</small></sup> 1.3 AND LTI ADVANTAGE</a> ARE TRANSFORMING DIGITAL LEARNING</strong></p>
+
+<div>The new core LTI version 1.3 and a package of high-value services align LTI with industry-best security and provides a clear path forward for existing services and new services to pursue the rich integration available between learning platforms and tools. Here is a quick look at what&#39;s new in LTI 1.3:</div>
+
+<div>
+	<ul>
+		<li>Introduction of the IMS Security Framework specification prescribing improved security based on OAuth2 and JSON Web Tokens</li>
+		<li>Improved documentation and migration guidance to help move the market from the benefits of basic launch to the full suite of LTI possibilities</li>
+		<li>Alignment with the LTI Advantage set of services that enable a fully integrated and innovative digital ecosystem</li>
+	</ul>
+</div>
+
+<p><a name="ltiresources"></a></p>
+
+<p><a href="/lti-advantage-overview">LTI ADVANTAGE</a> is a package of three essential end-user services that build on LTI 1.3. Together, these standards implement features that support key teaching and learning activities, such as the provisioning of usernames and roles so a tool can intelligently address the learner on launch, and the exchange of assignments from a platform to an assessment tool and the subsequent scores back to a central gradebook. Watch the <a href="https://youtu.be/BjtoMk-1KcY" target="_blank">Get to Know LTI Advantage</a> video.</p>
+
+<h1><span style="color:#2a4b7e;">LTI Advantage</span></h1>
+
+<h2 style="text-align: center;"><span style="color:#2a4b7e;">LTI Services Build on Core LTI</span></h2>
+
+<p style="text-align: center;"><img alt="LTI Advantage graphic" src="/sites/default/files/LTI%20Advantage%20UPDATED%20Graphic%20Sept%208%202020_0.svg" style="width: 697px; height: 531px;" /></p>
+
+<h3 style="text-align: center;">&nbsp;Click for the <a href="/lti-adoption-roadmap">Recommended LTI Adoption Roadmap</a></h3>
+
+<p>&nbsp;</p>
+
+<div>
+	<p><a name="LTImember"></a></p>
+
+	<hr />
+	<p><a name="LTIpublic"></a></p>
+
+	<p>&nbsp;</p>
+
+	<h2><span style="color:#2a4b7e;">Public Documents and Resources</span></h2>
+
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Guides (Implementers start here)</h3>
+
+			<ul>
+				<li><a href="/spec/lti/v1p3/impl/">LTI Advantage Implementation Guide</a></li>
+				<li><a href="/spec/lti/v1p3/migr">LTI Migration Guide</a></li>
+				<li><a href="/spec/lti/v1p3/cert/">LTI Advantage Conformance Certification Guide</a>
+					<ul>
+						<li><a href="/lti-advantage-adoption">LTI Advantage Certification FAQ</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>LTI Advantage Specification Documents</h3>
+
+			<ul>
+				<li><a href="/spec/lti/v1p3/">LTI v1.3</a>
+
+					<ul>
+						<li>Core LTI implementation of SSO, or &quot;launching&quot;, and the infrastructure for the LTI API Services.</li>
+					</ul>
+				</li>
+				<li><a href="/spec/lti-ags/v2p0/">Assignment and Grade Services v2.0 </a>(AGS)
+					<ul>
+						<li><a href="/spec/lti-ags/v2p0/openapi/">AGS OpenAPI view</a></li>
+					</ul>
+				</li>
+				<li><a href="/spec/lti-nrps/v2p0">Names and Role Provisioning Services v2.0</a> (NRPS)</li>
+				<li><a href="/spec/lti-dl/v2p0">Deep Linking v2.0</a> (DL)</li>
+			</ul>
+
+			<h3>Reference Implementations and Learning Resources</h3>
+
+			<ul>
+				<li><a href="https://lti-ri.imsglobal.org">Reference Implementation (RI)</a>: IMS members can now test your product(s) when implementing LTI 1.3 and LTI Advantage using the hosted Platform and Tool with the full set of services and messages. The Reference Implementation source code (written in Ruby) is also available to IMS Contributing Members, Affiliates, and Learning and Tools Content Alliance members to use as a starting point to implement LTI 1.3 and the LTI Advantage services. <a href="/contactus.cfm">Contact Us</a>&nbsp;if you would like access to the code repository.</li>
+				<li><a href="/forum/learning-tools-interoperability/181286">LTI Member Roundtable</a>: meeting recordings and resources.</li>
+				<li><a href="https://github.com/IMSGlobal/ltibootcamp">IMS Member contributed documents and implementations</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<h2>&nbsp;</h2>
+
+	<h2><span style="color:#2a4b7e;">LTI Advantage Resources for IMS Members</span>&nbsp;<span style="color:#696969;">(<em>login&nbsp;required</em>)</span></h2>
+
+	<p><strong>LTI 1.3 optional services</strong>:<br />
+		These optional services work within the LTI 1.3 and LTI Advantage framework to solve specific use cases or business needs. Currently, these new services are not included in LTI Advantage. You must be an IMS Contributing, Affiliate, or Learning Tools and Content Alliance member to access these Member Candidate Final draft documents.</p>
+
+	<ul>
+		<li><a href="/spec/lti-dr/v1p0">Dynamic Registration</a> 1.0 Public Candidate Final --<em> Defines a way to automate the exchange of registration information between platforms and tools that use the OpenId Connect and oAuth 2 registration flows, allowing platform administrators to automate tool registrations and avoid tedious and possibly error prone manual configuration while remaining in control of granting or denying tools access to the platform. </em></li>
+		<li><a href="/spec/lti-sr/v1p0">Submission Review</a> 1.0 Member Candidate Final -- <em>Provides a standard way for an instructor or student to launch back from a platform&#39;s gradebook to the tool where the interaction took place to display the learner&#39;s submission for a particular line item.</em></li>
+		<li><a href="/spec/lti-cac/v1p0">Caliper Analytics Connector</a> 1.0 Member Candidate Final -- <em>Provides a standard way for enabling a tool to report back a user&#39;s activities and have those associated with a single user session without regard to whether they occurred within the platform or the tool.</em></li>
+		<li><a href="/spec/lti-gs/v1p0">Course Group Service</a> 1.0 Member Candidate Final -- <em>Communicates to the tool the groups available in the course and their respective enrollment.</em></li>
+		<li><a href="/spec/proctoring/v1p0">Proctoring Service</a> 1.0 Public Candidate Final -- <em>For proctored testing, a test delivery or assessment management system can launch from a platform to a proctoring service that allows a test to be proctored. (Learn more here: <a href="/proctoring-services">LTI Proctoring Service</a>)</em><em> </em></li>
+		<li><a href="/spec/lti-priv/v1p0/">Data Privacy Launch</a> 1.0 Member Base Document -- <em>Allows LTI-enabled tools to assist administrative users in managing and executing requests related to data privacy.</em></li>
+	</ul>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>Additional Best Practice Guides</strong></p>
+
+<ul>
+	<li><a href="/spec/lti/v1p3/impl-assess">Best Practices for LTI Assessment Tools</a>&nbsp;</li>
+</ul>
+
+<p><strong>Student Learning Data Model</strong></p>
+
+<ul>
+	<li>The IMS <a href="https://site.imsglobal.org/standards/sldm">Student Learning Data Model</a> visualizes a digital ecosystem interconnected with real-time data. Log in&nbsp;with your IMS member credentials to access specification-level Mapping and Discovery in the tool.</li>
+</ul>
+
+<div class="row">
+	<div class="col-md-12">
+		<ul></ul>
+	</div>
+</div>
+
+<h3><span style="color:#2a4b7e;">Related IMS Documents and Previous LTI Versions</span></h3>
+
+<h3>IMS-wide Security Framework</h3>
+
+<ul>
+	<li><a href="/spec/security/v1p0/">IMS Security Framework v1.0</a></li>
+</ul>
+
+<h3>IMS LTI Security Update</h3>
+
+<ul>
+	<li><a href="/spec/lti/security-update/v1p0">IMS LTI Security Update v1.0</a> <em>- Final Release (22 July 2019) addresses a potential Cross-Site Request Forgery threat in earlier versions of LTI (v1.0 and v1.1.1).</em></li>
+</ul>
+
+<h3>IMS LTI Resource Search</h3>
+
+<ul>
+	<li><a href="/resource-search">LTI Resource Search</a></li>
+</ul>
+
+<h3>Previous Version Specification Documents</h3>
+
+<ul>
+	<li><a href="/specs/ltiv1p1p1">LTI v1.1.1</a> (with Mentor Role)</li>
+	<li><a href="/specs/lticiv1p0">Deep Linking v1.0</a></li>
+	<li><a href="/specs/ltimemv1p0">Names and Role Provisioning Service v1.0</a></li>
+	<li><a href="/spec/lti-bo/v1p1/">LTI Basic Outcomes v1.1</a></li>
+</ul>
+
+<h3>Previous Version Specification Documents</h3>
+
+<div>
+	<ul>
+		<li><a href="https://site.imsglobal.org/standards/sldm">Student Learning Data Model</a></li>
+		<li><a href="/specifications.html">VIEW ALL </a>&nbsp;LTI and IMS specifications<a name="LTIbackground"></a></li>
+	</ul>
+
+	<p>Please note that support for the earliest versions of LTI (v1.0, v1.0.1) is no longer offered by platforms, nor does IMS offer certification testing. IMS encourages all tools and platforms to implement the latest version of LTI (v1.3 and Advantage). Certification testing for other versions of LTI (v1.1.x, 1.2, and 2.0) is ending June 2021, more details <a href="/lti-security-announcement-and-deprecation-schedule">here</a>.</p>
+</div>
+
+<p>&nbsp;</p>
+
+<h2>LTI in Brief</h2>
+
+<p>The IMS Learning Tools Interoperability (LTI) standard prescribes a way to easily and securely connect learning applications and tools with platforms like learning management systems (LMS), portals and learning object repositories on your premise or in the cloud, in a secure and standard manner and without the need for expensive custom programming. Using LTI, if you have an interactive assessment application or virtual chemistry lab, it can be securely connected to your LMS with a few clicks. LTI is comprised of a central core and optional services to add optional features and functions. The LTI core establishes a secure connection and confirms the tool&rsquo;s authenticity while the extensions add features like the exchange of assignment and grade data between an assessment tools and your LMS gradebook.&nbsp;</p>
+
+<div>
+	<div><strong>Are Your Products IMS Global Certified?</strong></div>
+
+	<p><span id="docs-internal-guid-43518621-436e-9ee7-7df8-927cbd267d6a">IMS Global has testing programs that enable products to be certified compliant with specific standards and features of the standards. For&nbsp;</span>technology suppliers, participation in the IMS Global certification process is the fastest and most cost-effective way to achieve product integrations. For institutions, ensuring that your educational technology tools are IMS Global certified is the best way to establish a plug-and-play ecosystem, allowing your tools and content to work together seamlessly, giving you more choice, and reducing your total cost of ownership. IMS Global&nbsp;<a href="/membersandaffiliates.html">members</a>&nbsp;have access to expert support to implement the standards prior to completing conformance certification. Learn more to begin taking advantage of the benefits of&nbsp;<a href="/cc/statuschart.cfm">certification</a>.</p>
+</div>
+
+<p><strong>Remember to log into the site first to see a complete list of the resources available to you.</strong>&nbsp;Some resources are only available to IMS Global members. If you are an IMS Global member but do not have a login, you can&nbsp;<a href="/user/register">create one here</a>. If you cannot find what you need, try posting a message to the forum.</p>
+
+<h2>See Also</h2>
+
+<p>The following specifications may also be of interest:</p>
+
+<ul>
+	<li><a href="/cc/index.html">Common Cartridge</a></li>
+	<li><a href="/activity/caliperram">Caliper Analytics</a></li>
+</ul>
+</div></div></div>  </div>
+
+  
+</div>
+ </div></div>
+</div>
+
+  </div>
+      
+    </div>
+    <!--/End Content -->
+
+    <!--/Right Sidebar if populated -->
+          <div class="col-md-5 ">   <div class="region region-right-sidebar">
+    <div id="block-views-news-block-4" class="block block-views orange-header orange-header">
+      <h3 class="block-headline">News</h3>
+  <div class="clearfix"></div>
+      <div class="block-content-container"><div class="block-content"> <div class="view view-news view-id-news view-display-id-block_4 view-dom-id-fcb26381f20b2bffc2e5cd198c7abfda">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-created">        <strong class="field-content nowrap">18 Feb 2022</strong>  </div>  
+  <div class="views-field views-field-title">        <a href="/article/lti-advantage-transforms-education">LTI Advantage transforms education</a>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-created">        <strong class="field-content nowrap">19 Oct 2021</strong>  </div>  
+  <div class="views-field views-field-title">        <a href="/article/upgrade-lti-better-learning-experiences-podcast">Upgrade LTI For Better Learning Experiences (Podcast)</a>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-created">        <strong class="field-content nowrap">19 Oct 2021</strong>  </div>  
+  <div class="views-field views-field-title">        <a href="/article/security-all-ims-service-based-specifications">Security for All IMS Service-based Specifications</a>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div></div>
+</div>
+
+<div id="block-views-tech-activity-feeds-block-1" class="block block-views styled-header styled-header">
+        <div class="block-content-container"><div class="block-content"> <div class="view view-tech-activity-feeds view-id-tech_activity_feeds view-display-id-block_1 view-dom-id-8a84584690505116b65b8eb3cc2fa22d">
+            <div class="view-header">
+      <h3 class="block-headline">Specifications <span style="float: right;">[ <a href="/technical-resources?field_technical_resource_tid=3796&amp;field_technical_activity_nid=626">view all...</a> ]</span></h3>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">22 Jul 2019</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/spec/lti/security-update/v1p0">LTI Security Update</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">10 May 2019</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/spec/lti/v1p3/migr">Learning Tools Interoperability 1.3 Migration Guide</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">03 May 2019</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/spec/lti/v1p3/impl">Learning Tools Interoperability Advantage Implementation Guide 1.3 IMS Final Release</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div></div>
+</div>
+
+<div id="block-views-tech-activity-feeds-block-11" class="block block-views styled-header styled-header">
+        <div class="block-content-container"><div class="block-content"> <div class="view view-tech-activity-feeds view-id-tech_activity_feeds view-display-id-block_11 view-dom-id-f9a856c04216fae1eecdc3a6d59bee98">
+            <div class="view-header">
+      <h3 class="block-headline">Product Roadmap<span style="float: right;">[ <a href="/technical-resources?field_technical_resource_tid=5336&amp;field_initiative_nid=All&amp;field_technical_activity_nid=626">view all...</a> ]</span></h3>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">03 Aug 2021</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/standards/roadmap">IMS Major Initiatives Roadmap</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">Updated August 2021</div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">29 Jun 2020</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/deprecation-notice-oauth-10a">Deprecation Notice for OAuth 1.0a  </a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">SECURITY BULLETIN
+
+Deprecation Notice for OAuth 1.0a
+
+JUNE 2020
+
+ </div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">31 Mar 2020</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/lti-security-announcement-and-deprecation-schedule">LTI Security Announcement and Deprecation Schedule</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">SECURITY BULLETIN
+
+Security Update and Deprecation Schedule for Early Versions of LTI
+
+UPDATED JUNE 2021
+
+ </div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div></div>
+</div>
+
+<div id="block-views-tech-activity-feeds-block" class="block block-views styled-header styled-header">
+        <div class="block-content-container"><div class="block-content"> <div class="view view-tech-activity-feeds view-id-tech_activity_feeds view-display-id-block view-dom-id-c205976b4c945ded6e675b8454b67afe">
+            <div class="view-header">
+      <h3 class="block-headline">Tutorials and Guides <span style="float: right;">[ <a href="/technical-resources?field_technical_resource_tid=3791&amp;field_technical_activity_nid=626">view all...</a> ]</span></h3>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">03 Mar 2021</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/lti-platform-migration-specifics">LTI Platform Migration Specifics from 1.1 to 1.3</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"> </div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">01 May 2020</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/glossary">Glossary of Terms</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">
+
+IMS Glossary of Terms
+</div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">03 Aug 2018</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/ims-app-note-cengage-and-unicon">IMS App Note: Cengage and Unicon</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">
+On the Road to LTI Advantage:
+	Bringing Assignment and Grade Services to Moodle</div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div></div>
+</div>
+
+<div id="block-views-tech-activity-feeds-block-3" class="block block-views styled-header styled-header">
+        <div class="block-content-container"><div class="block-content"> <div class="view view-tech-activity-feeds view-id-tech_activity_feeds view-display-id-block_3 view-dom-id-301cc0a7f548abe3206b899018e8a714">
+            <div class="view-header">
+      <h3 class="block-headline">Best Practices <span style="float: right;">[ <a href="/technical-resources?field_technical_resource_tid=3806&amp;field_technical_activity_nid=626">view all...</a> ]</span></h3>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">20 May 2020</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/lti-roundtables-recorded-meetings">LTI Roundtables (Recorded Meetings)</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">05 Feb 2020</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/samesite-cookie-issues-lti-tool-providers">SameSite Cookie Issues for LTI Tool Providers</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">IMS members can also view this information with updated LTI Developer FAQs in the IMS Member Support Portal (login required).
+
+		Overview</div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">20 Oct 2018</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/lti-resource-search-technical-congress-update-august-2018">LTI Resource Search - Technical Congress Update August 2018</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div></div>
+</div>
+
+<div id="block-views-events-block-2" class="block block-views styled-header styled-header">
+        <div class="block-content-container"><div class="block-content"> <div class="view view-events view-id-events view-display-id-block_2 view-dom-id-e24882ef29da9a7c53b92a199886f2dc">
+            <div class="view-header">
+      <h3 class="block-headline">IMS Upcoming Events <span style="float: right;">[ <a href="/events">view all...</a> ]</span></h3>    </div>
+  
+  
+  
+      <div class="view-content">
+      <div class="event-flex-container">
+              <div class="views-row views-row-1 views-row-odd views-row-first contextual-links-region">
+          
+  <div class="views-field views-field-field-event-date">        <strong class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2022-04-27T10:00:00-04:00">27 Apr 2022 - 10:00am</span></strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/event/european-lti-group-0">European LTI Group</a></span>  </div>  
+  <div class="views-field views-field-field-event-link">        <div class="field-content"><a href="https://imsglobal.zoom.us/j/93624155832?pwd=cUR3TnB0T0dPeGdJRktoM3p4ZExTdz09" target="_blank">European LTI Group</a></div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>      </div>
+          <div class="views-row views-row-2 views-row-even views-row-last contextual-links-region">
+          
+  <div class="views-field views-field-field-event-date">        <strong class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2022-06-29T10:00:00-04:00">29 Jun 2022 - 10:00am</span></strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/event/european-lti-group-0">European LTI Group</a></span>  </div>  
+  <div class="views-field views-field-field-event-link">        <div class="field-content"><a href="https://imsglobal.zoom.us/j/93624155832?pwd=cUR3TnB0T0dPeGdJRktoM3p4ZExTdz09" target="_blank">European LTI Group</a></div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>      </div>
+    </div>    </div>
+  
+  
+  
+  
+  
+  
+</div> </div></div>
+</div>
+
+  </div>
+ </div>
+        <!--/End Right Side Bar -->
+  </div>
+</div>
+</div>
+<!--/End Content and Side Bar -->
+
+<!--/Begin Feature 1  -->
+<!--/End Feature 1-->
+<!--/Begin Feature 2  -->
+<!--/End Feature 2-->
+<!--/Begin Feature 3  -->
+<!--/End Feature 3-->
+<!--/Begin Feature 3.1 -->
+<!--/End Feature 3-->
+<!--/Begin Feature 4  -->
+<!--/End Feature 4-->
+
+<!--/Begin Content Bottom Regions  -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-bottom-section">
+  <div class="container">
+    <div class="row">
+				      <div class="col-md-4">   <div class="region region-content-bottom-third">
+    <div id="block-views-tech-activity-feeds-block-10" class="block block-views styled-header styled-header">
+        <div class="block-content-container"><div class="block-content"> <div class="view view-tech-activity-feeds view-id-tech_activity_feeds view-display-id-block_10 view-dom-id-c2901026da2a77a639eaa16f4a03c3c3">
+            <div class="view-header">
+      <h3 class="block-headline">RFP Guidance and Checklists <span style="float: right;">[ <a href="/technical-resources?field_technical_resource_tid=4351&amp;field_technical_activity_nid=626">view all...</a> ]</span></h3>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">27 Jun 2018</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/suggested-lti-advantage-requirements-rfps">Suggested LTI Advantage Requirements for RFPs</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"></div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">31 May 2018</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/why-platforms-and-tools-should-adopt-lti-13">Why Platforms and Tools Should Adopt LTI 1.3</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">Download as pdf</div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last contextual-links-region">
+      
+  <div class="views-field views-field-created">        <strong class="field-content">19 May 2016</strong>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/specs/lticiv1p0-intro">Introduction to LTI Deep Linking</a></span>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">An introduction to the LTI Deep Linking specification
+</div>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div></div>
+</div>
+
+  </div>
+ </div>
+          </div>
+  </div>
+</div>
+<!--/End Content Bottom Regions-->
+
+<!--/Begin Footer Columns  -->
+
+<div class="footer-4-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">   <div class="region region-footer-first">
+    <div id="block-menu-menu-footer-1" class="block block-menu ">
+        <div class="block-content-container"><div class="block-content"> <ul class="menu clearfix"><li class="first leaf"><a href="/aboutims.html">About IMS</a></li>
+<li class="leaf"><a href="/institutions.html" title="">Initiatives</a></li>
+<li class="leaf"><a href="/leadershipactivities" title="">Leadership Activities</a></li>
+<li class="leaf"><a href="/sponsorship">Sponsorship Opportunities</a></li>
+<li class="leaf"><a href="/collaborations.html">Collaborations and Affiliations</a></li>
+<li class="last leaf"><a href="/news1.html">News</a></li>
+</ul> </div></div>
+</div>
+
+  </div>
+ </div>
+            <div class="col-sm-3">   <div class="region region-footer-second">
+    <div id="block-menu-menu-footer-2" class="block block-menu ">
+        <div class="block-content-container"><div class="block-content"> <ul class="menu clearfix"><li class="first leaf"><a href="/lili2019">Leadership Institute</a></li>
+<li class="leaf"><a href="/lili/awards.html">Learning Impact Awards</a></li>
+<li class="leaf"><a href="/blog" title="">Learning Impact Blog</a></li>
+<li class="leaf"><a href="/IMSLeadershipAwards.html">Leadership Awards</a></li>
+<li class="last leaf"><a href="/william-h-bill-graves-leadership-award">William H. (Bill) Graves Leadership Award</a></li>
+</ul> </div></div>
+</div>
+
+  </div>
+ </div>
+            <div class="col-sm-3">   <div class="region region-footer-third">
+    <div id="block-menu-menu-footer-3" class="block block-menu ">
+        <div class="block-content-container"><div class="block-content"> <ul class="menu clearfix"><li class="first leaf"><a href="/developers" title="">Technical Activities </a></li>
+<li class="leaf"><a href="/cc/statuschart.cfm" title="">Product Directory</a></li>
+<li class="leaf"><a href="/specifications.html">Download Standards</a></li>
+<li class="leaf"><a href="/technical-resources" title="">Technical Resources Search</a></li>
+<li class="last leaf"><a href="/forum" title="">Forums</a></li>
+</ul> </div></div>
+</div>
+
+  </div>
+ </div>
+            <div class="col-sm-3">   <div class="region region-footer-fourth">
+    <div id="block-menu-menu-footer-4" class="block block-menu ">
+        <div class="block-content-container"><div class="block-content"> <ul class="menu clearfix"><li class="first leaf"><a href="/membersandaffiliates.html">Members</a></li>
+<li class="leaf"><a href="/careers">Career Opportunities</a></li>
+<li class="last leaf"><a href="/contactus.cfm">Contact Us</a></li>
+</ul> </div></div>
+</div>
+
+  </div>
+ </div>
+          </div>
+  </div>
+</div>
+<!--/End Footer Columns-->
+
+<!--/Begin Footer Columns  -->
+<div class="footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">   <div class="region region-footer-bottom">
+    <div id="block-block-1" class="block block-block ">
+        <div class="block-content-container"><div class="block-content"> <p>This page contains trademarks of the IMS Global Learning Consortium including the IMS logos, Better Learning Through Better Learning Technology<sup>&reg;</sup>, Learning Tools Interoperability<sup>&reg;</sup> (LTI<sup>&reg;</sup>), Accessible Portable Item Protocol<sup>&reg;</sup> (APIP<sup>&reg;</sup>), Question and Test Interoperability<sup>&reg;</sup> (QTI<sup>&reg;</sup>), Common Cartridge<sup>&reg;</sup>, AccessForAll<sup>&reg;</sup>, OneRoster<sup>&reg;</sup>, Caliper Analytics<sup>&reg;</sup>, SensorAPI&trade;, Badge Connect<sup>&reg;</sup> and Competencies and Academic Standards Exchange<sup>&reg;</sup> (CASE<sup>&reg;</sup>). For information on the IMS trademark usage policy see our&nbsp;<a href="/trademarks">trademark policy page</a>.</p>
+
+<p style="text-align: center;"><a href="https://www.linkedin.com/company/ims-global-learning-consortium"><img alt="Follow Us on Twitter" src="/sites/default/files/LI-In-Bug.png" style="width: 41px; height: 35px; margin: 5px 10px;" /></a><a href="https://www.twitter.com/LearningImpact"><img alt="Follow Us on Twitter" src="/sites/default/files/Twitter%20social%20icons%20-%20rounded%20square%20-%20blue.png" style="width: 35px; height: 35px; margin: 5px 10px;" /></a><a href="https://www.youtube.com/user/IMSGLC"><img alt="Follow Us on Twitter" src="/sites/default/files/yt_icon_rgb.png" style="width: 50px; height: 35px; margin: 5px 10px;" /></a></p>
+ </div></div>
+</div>
+
+  </div>
+ </div>
+          </div>
+  </div>
+</div>
+<!--/End Footer Columns-->
+
+<!--/Begin Footer Columns  -->
+<div class="final-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">   <div class="region region-footer-final">
+    <div id="block-block-6" class="block block-block ">
+        <div class="block-content-container"><div class="block-content"> <p><a href="/copyright.html">&copy; 2001-2022 IMS Global Learning Consortium Inc.</a> All Rights Reserved. <a href="/privacystatement.html">Privacy Policy</a></p>
+ </div></div>
+</div>
+
+  </div>
+ </div>
+          </div>
+  </div>
+</div>
+<!--/End Footer Columns--><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"17d998b9ce","applicationID":"1279630495","transactionName":"blZRZEUFV0RTWkNaC1ccclNDDVZZHWZFVhJQQFpfWQ1XUG1PXlYT","queueTime":0,"applicationTime":584,"atts":"QhFSEg0fREo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="/local/templates/modern_green_s1/favicon.png?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Serif+Caption:400,400italic&amp;subset=latin,cyrillic" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="факультеты, специальность, преподаватели" />
+<meta name="description" content="Сегодня филиал УдГУ в г.Воткинске - это один из самых крупных многопрофильных филиалов Удмуртского государственного университета, обеспечивающий формирование интеллектуального потенциала и способствующий социально-экономическому развитию региона." />
+<link href="/bitrix/cache/css/s1/modern_green_s1/template_45746acf6bfa74aba0ec15e6e2d254c4/template_45746acf6bfa74aba0ec15e6e2d254c4_v1.css?1651032944221675" type="text/css"  data-template-style="true" rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.min.js?1647462512262964"></script>
+
+<script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script type="text/javascript">(window.BX||top.BX).message({'pull_server_enabled':'Y','pull_config_timestamp':'1599540888','pull_guest_mode':'N','pull_guest_user_id':'0'});(window.BX||top.BX).message({'PULL_OLD_REVISION':'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1651077627','USER_TZ_OFFSET':'3600','USER_TZ_AUTO':'Y','bitrix_sessid':'f70e033426e696b2ee8171f02cad9ef4'});</script>
+
+
+<script type="text/javascript"  src="/bitrix/cache/js/s1/modern_green_s1/kernel_main/kernel_main_v1.js?1651037055164878"></script>
+<script type="text/javascript"  src="/bitrix/cache/js/s1/modern_green_s1/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16510329441051"></script>
+<script type="text/javascript" src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?164746253460992"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ls.min.js?15868478917365"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.min.js?161771201611082"></script>
+<script type="text/javascript" src="/bitrix/js/pull/protobuf/protobuf.min.js?159533051676433"></script>
+<script type="text/javascript" src="/bitrix/js/pull/protobuf/model.min.js?159533051614190"></script>
+<script type="text/javascript" src="/bitrix/js/rest/client/rest.client.min.js?16016123699240"></script>
+<script type="text/javascript" src="/bitrix/js/pull/client/pull.client.min.js?163297725244687"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core_fx.js','/bitrix/js/main/session.js','/bitrix/js/main/pageobject/pageobject.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/date/main.date.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/utils.js','/bitrix/js/main/core/core_tooltip.js','/bitrix/js/main/polyfill/customevent/main.polyfill.customevent.js','/local/templates/modern_green_s1/js/jquery.formstyler.min.js','/local/templates/modern_green_s1/js/jquery.magnificpopup.min.js','/local/templates/modern_green_s1/js/jquery.cookie.min.js','/local/templates/modern_green_s1/js/jquery.matchHeight-min.js','/local/templates/modern_green_s1/js/jquery.mobileNav.js','/local/templates/modern_green_s1/js/owl.carousel.min.js','/local/templates/modern_green_s1/js/perfect-scrollbar.jquery.min.js','/local/templates/modern_green_s1/js/jquery.shorten.js','/local/templates/modern_green_s1/js/main.js','/local/templates/modern_green_s1/js/special_version.js','/bitrix/components/bitrix/search.title/script.js','/bitrix/components/itrkomi/to.top/templates/.default/script.js']);</script>
+<script type="text/javascript">BX.setCSSList(['/local/templates/modern_green_s1/components/bitrix/search.title/modern_search/style.css','/bitrix/components/itrkomi/to.top/templates/.default/style.css','/local/templates/modern_green_s1/styles.css','/local/templates/modern_green_s1/template_styles.css','/local/templates/modern_green_s1/special_version.css']);</script>
+<script type="text/javascript">
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+
+<script>
+	(function(w,d,u){
+		var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+		var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+	})(window,document,'https://cdn.bitrix24.ru/b12558522/crm/site_button/loader_1_q7l2eh.js');
+</script>
+
+<!--'start_frame_cache_TVwM3R'--><!-- Bitrix24.LiveChat external config -->
+<script type="text/javascript">
+	window.addEventListener('onBitrixLiveChat', function(event)
+	{
+		var config = {'user':{'hash':'d0735637daf37ea5ae80a1afb4f9db8f','name':'','lastName':'','email':''},'firstMessage':'[b]Страна пользователя[/b]: [RU] RUSSIAN FEDERATION[br][br][b]Сайт[/b]: #VAR_HOST#[br][b]Страница сайта[/b]: #VAR_PAGE#'};
+		var widget = event.detail.widget;
+
+		widget.setUserRegisterData(
+			config.user
+		);
+		widget.setCustomData(
+			config.firstMessage.replace('#VAR_HOST#', location.hostname).replace('#VAR_PAGE#', '[url='+location.href+']'+(document.title || location.href)+'[/url]')
+		);
+
+	
+	});
+</script>
+<!-- /Bitrix24.LiveChat external config -->
+<!--'end_frame_cache_TVwM3R'-->
+
+
+
+<script type="text/javascript"  src="/bitrix/cache/js/s1/modern_green_s1/template_d2c072eca9f2477ee2782a6df8fccdae/template_d2c072eca9f2477ee2782a6df8fccdae_v1.js?1651032944141201"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "c90c8d3ea9cbceee8bdc5a3568554c23"]); _ba.push(["host", "vudgu.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+                                            <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+   ym(80364790, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/80364790" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+<div class="mb-hide"></div>
+<div class="body-wrapper clearfix">
+	<div class="special-settings">
+		<div class="container special-panel-container">
+			<div class="content">
+				<div class="aa-block aaFontsize">
+					<div class="fl-l">Размер:</div>
+					<a class="aaFontsize-small" data-aa-fontsize="small" href="#" title="Уменьшенный размер шрифта">A</a>
+				    <a class="aaFontsize-normal a-current" href="#" data-aa-fontsize="normal" title="Нормальный размер шрифта">A</a>
+				    <a class="aaFontsize-big" data-aa-fontsize="big" href="#" title="Увеличенный размер шрифта">A</a>
+				</div>
+				<div class="aa-block aaColor">
+					Цвет:
+					<a class="aaColor-black a-current" data-aa-color="black" href="#" title="Черным по белому"><span>C</span></a>
+				    <a class="aaColor-yellow" data-aa-color="yellow" href="#" title="Желтым по черному"><span>C</span></a>
+				    <a class="aaColor-blue" data-aa-color="blue" href="#" title="Синим по голубому"><span>C</span></a>
+				</div>
+
+				<div class="aa-block aaImage">
+					Изображения
+				<span class="aaImage-wrapper">
+					<a class="aaImage-on a-current" data-aa-image="on" href="#">Вкл.</a>
+					<a class="aaImage-off" data-aa-image="off" href="#">Выкл.</a>
+				</span>
+				</div>
+				<span class="aa-block"><a href="/?set-aa=normal" data-aa-off><i class="icon icon-special-version"></i> Обычная версия сайта</a></span>
+			</div>
+		</div>
+	</div>
+
+    <header>
+	    <div class="container container-top-header">
+		    <div class="content">
+			    <div class="col col-mb-12">
+					<span class="mb-hide">
+						<a href="/sveden/common/"><i class="ui-ctl ui-ctl-after-icon"></i> Сведения об ОО</a>
+						<a href="/about_the_university/offices/"><i class="icon icon-map-marker"></i> Найти филиал на карте</a>
+						<span class="aa-hide" itemprop="Copy"><a class="fl-r" href="/?set-aa=special" data-aa-on title="Аа"><i class="icon icon-special-version"></i><span class="hide">Версия для слабовидящих</span></a></span>
+					</span>
+					<span class="tablet-hide dt-hide ld-hide">
+						<span class="aa-hide" itemprop="Copy"><a class="fl-r mr50" href="/?set-aa=special" data-aa-on><i class="icon icon-special-version"></i><span class="hide">Версия для слабовидящих</span></a></span>
+					</span>
+			    </div>
+		    </div>
+	    </div>
+
+        <div class="container container-white pt10 pb10">
+            <div class="content">
+                <div class="col col-mb-12 col-12 col-dt-7">
+                    <div class="logo-block">
+                        <a href="/" class="logo"><img src="/include/logo.png">                        </a>
+                        <a href="/">
+									<span class="h1"><div>
+ <span style="color: #008c9b;">Филиал УдГУ в г. Воткинске</span>
+</div><br><small><span style="color: #008c9b; font-family: Arial, Helvetica;">Поступить легко - учиться интересно!!! <a href="https://vk.com/vfudgu18" target="_blank"><img alt="vk.png" src="/upload/medialibrary/584/a3oeq8m502wrwk00i50m36is3ekfziu0.png" title="Мы вконтакте" width="40" height="40"></a><br>
+ </span></small>
+									</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-mb-12 col-12 col-dt-5">
+                                            <div class="header-info-block mb-hide">
+        <i class="icon icon-big-clock"></i>
+        <div class="ov-h">
+            <a href="/about_the_university/offices/55/">Филиал УдГУ в г. Воткинске</a>
+            <br>8:00 до 17:00, Пн-Пт        </div>
+    </div>
+    <div class="header-info-block">
+        <i class="icon icon-big-phone"></i>
+        <div class="ov-h">
+            +7 (34145) 5-21-70            <p class="tablet-hide dt-hide ld-hide"><a href="/about_the_university/offices/55/">Филиал УдГУ в г. Воткинске</a></p>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-top-navigation">
+            <div class="content">
+                <div class="col col-mb-hide col-12">
+                    <div class="top-nav-block">
+                        
+    <ul>
+                                                <li class="parent">
+                    <a tabindex="1" href="/about_the_university/">О ВУЗе</a>
+                    <div class="second-level container">
+                        <div class="content">
+                            <div class="col col-mb-12">
+                                <div class="content">
+                                    <ul class="clearfix">
+                                                            <li><a href="/sveden/">Сведения об образовательной организации</a></li>
+                                                <li><a href="/about_the_university/departments/">Кафедры</a></li>
+                                                <li><a href="/about_the_university/academic_council/">Совет филиала</a></li>
+                                                <li><a href="/about_the_university/management/">Руководство</a></li>
+                                                <li><a href="/about_the_university/history/">История</a></li>
+                                                <li><a href="/about_the_university/library/">Библиотека</a></li>
+                                                <li><a href="/about_the_university/news/">Новости</a></li>
+                                                <li><a href="/about_the_university/notifies/">Объявления</a></li>
+                                                <li><a href="/contacts/">Контакты</a></li>
+                                                <li><a href="/about_the_university/videogallery/">Видеогалерея</a></li>
+                                                <li><a href="/about_the_university/dopolnitelnoe-obrazovanie/">Дополнительное образование</a></li>
+                                                <li><a href="/about_the_university/distantsionnoe-obuchenie/">Дистанционное обучение</a></li>
+                                                <li><a href="/about_the_university/protivodeystvie-korruptsii/">Противодействие коррупции</a></li>
+                                                <li><a href="/about_the_university/eios/">Электронная информационно-образовательная среда (ЭИОС)</a></li>
+                                        </ul></div></div></div></div></li>
+                                            <li class="parent">
+                    <a tabindex="1" href="/applicants/">Абитуриентам</a>
+                    <div class="second-level container">
+                        <div class="content">
+                            <div class="col col-mb-12">
+                                <div class="content">
+                                    <ul class="clearfix">
+                                                            <li><a href="/applicants/the_admissions_committee/">Приемная комиссия</a></li>
+                                                <li><a href="/applicants/documents/">Документы и справки</a></li>
+                                                <li><a href="/applicants/directions_specialty_exams/">Специальности и направления</a></li>
+                                                <li><a href="/applicants/cost_of_training/">Стоимость</a></li>
+                                                <li><a href="/applicants/admission/">Правила и условия приема</a></li>
+                                                <li><a href="/applicants/dormitory/">Общежитие</a></li>
+                                                <li><a href="/students/life/">Студенческая жизнь</a></li>
+                                                <li><a href="/applicants/photo_tour/">Фото-экскурсия</a></li>
+                                                <li><a href="/applicants/inostrannym-abiturientam/">Иностранным абитуриентам</a></li>
+                                                <li><a href="/applicants/prikazy-o-zachislenii/">Приказы о зачислении</a></li>
+                                                <li><a href="/applicants/kolichestvo-mest2021/">Поступление 2021</a></li>
+                                                <li><a href="/applicants/kolichestvo-mest2022/">Поступление 2022</a></li>
+                                                <li><a href="/applicants/tselevoe-obuchenie/">Целевое обучение</a></li>
+                                        </ul></div></div></div></div></li>
+                                            <li class="parent">
+                    <a tabindex="1" href="/students/">Студентам</a>
+                    <div class="second-level container">
+                        <div class="content">
+                            <div class="col col-mb-12">
+                                <div class="content">
+                                    <ul class="clearfix">
+                                                            <li><a href="/students/training_materials/">Учебные материалы</a></li>
+                                                <li><a href="/students/payment/">Оплата обучения</a></li>
+                                                <li><a href="/students/documents/">Документы и справки</a></li>
+                                                <li><a href="/students/life/">Студенческая жизнь</a></li>
+                                                <li><a href="/students/science/">Научная жизнь</a></li>
+                                                <li><a href="/students/sporting_life/">Спортивная жизнь</a></li>
+                                                <li><a href="/students/social/">Социальная сфера</a></li>
+                                                <li><a href="/students/inostrannym-studentam/">Иностранным студентам</a></li>
+                                                <li><a href="/students/nezavisimaya-otsenka-kachestva/">Независимая оценка качества условий осуществления образовательной деятельности</a></li>
+                                        </ul></div></div></div></div></li>
+                                            <li class="parent">
+                    <a tabindex="1" href="/graduates/">Выпускникам</a>
+                    <div class="second-level container">
+                        <div class="content">
+                            <div class="col col-mb-12">
+                                <div class="content">
+                                    <ul class="clearfix">
+                                                            <li><a href="/graduates/center/">Центр содействия занятости</a></li>
+                                                <li><a href="/graduates/scientists/">Совет молодых ученых</a></li>
+                                                <li><a href="/graduates/alumni_association/">Ассоциация выпускников</a></li>
+                                                <li><a href="/graduates/vydayushchiesya-vypuskniki/">Выдающиеся выпускники</a></li>
+                                                <li><a href="/graduates/forums/">Форумы</a></li>
+                                                <li><a href="/graduates/reviews_of_graduates/">Отзывы выпускников</a></li>
+                                                <li><a href="/graduates/seminars_and_trainings/">Семинары и тренинги</a></li>
+                                        </ul></div></div></div></div></li>
+                                            <li class="parent">
+                    <a tabindex="1" href="/feedback/">Обращения</a>
+                    <div class="second-level container">
+                        <div class="content">
+                            <div class="col col-mb-12">
+                                <div class="content">
+                                    <ul class="clearfix">
+                                                            <li><a href="/feedback/index.php">Отправить письмо</a></li>
+                                                <li><a href="/feedback/responses/">Ответы на обращения</a></li>
+                                                <li><a href="/feedback/list/">Мои обращения</a></li>
+                                                <li><a href="/feedback/written/">Письменные обращения</a></li>
+                                                <li><a href="/feedback/personal/">Личный прием</a></li>
+                                                <li><a href="/feedback/stat/">Информация о рассмотрении обращений</a></li>
+                                                <li><a href="/feedback/distant/">Дистанционные способы обратной связи и взаимодействия с получателями услуг</a></li>
+                                                <li><a href="/feedback/otzyvy/">Отзывы об образовательной организации</a></li>
+                                        </ul></div></div></div></div></li>
+                            <li><a href="/contacts/">Как нас найти</a></li>
+                                                <li><a href="/contacts/telefonnyy-spravochnik.php">Телефоны</a></li>
+                                                <li><a href="/vaktsinatsiya-ot-covid-19-/">Вакцинация от COVID-19 </a></li>
+                                                <li><a href="/profilaktika-covid-19/">Профилактика COVID-19 </a></li>
+                                                <li><a href="/protivodeystvie-korruptsii/">Противодействие коррупции</a></li>
+                            </ul>
+                    </div>
+                    	<div class="search-block fl-r">
+		<div class="search-button" tabindex="1"><i class="icon icon-search"></i></div>
+		<div class="container container-search">
+			<div class="content">
+				<div class="col col-mb-12" id="searchTitle">
+					<form action="/search/index.php">
+						<div class="search-form-block">
+							<i class="icon icon-search-white"></i>
+							<div class="search-close-button" tabindex="1"><i class="icon icon-close"></i></div>
+							<div class="ov-h">
+								<input id="title-search-input" class="search-input" type="text" name="q" autocomplete="off">
+							</div>
+						</div>
+					</form>
+					<div class="search-suggestions">
+					</div>
+				</div> <!-- .col col-mb-12 -->
+			</div> <!-- .content -->
+		</div> <!-- .container container-search -->
+	</div>
+<script>
+
+function JCTitleSearchModern(arParams)
+{
+	var _this = this;
+
+	this.arParams = {
+		'AJAX_PAGE': arParams.AJAX_PAGE,
+		'CONTAINER_ID': arParams.CONTAINER_ID,
+		'INPUT_ID': arParams.INPUT_ID,
+		'MIN_QUERY_LEN': parseInt(arParams.MIN_QUERY_LEN)
+	};
+	if(arParams.WAIT_IMAGE)
+		this.arParams.WAIT_IMAGE = arParams.WAIT_IMAGE;
+	if(arParams.MIN_QUERY_LEN <= 0)
+		arParams.MIN_QUERY_LEN = 1;
+
+	this.cache = [];
+	this.cache_key = null;
+
+	this.startText = '';
+	this.currentRow = -1;
+	this.RESULT = null;
+	this.CONTAINER = null;
+	this.INPUT = null;
+	this.WAIT = null;
+
+	this.ShowResult = function(result)
+	{
+		var suggestions = document.getElementsByClassName('search-suggestions');
+		suggestions[0].innerHTML = result;
+	}
+
+	this.onKeyPress = function(keyCode)
+	{
+		var tbl = BX.findChild(_this.RESULT, {'tag':'div','class':'search-result'}, true);
+		if(!tbl)
+			return false;
+
+		var cnt = tbl.rows.length;
+
+		switch (keyCode)
+		{
+			case 27: // escape key - close search div
+				_this.RESULT.style.display = 'none';
+				_this.currentRow = -1;
+				_this.UnSelectAll();
+				return true;
+
+			case 40: // down key - navigate down on search results
+				if(_this.RESULT.style.display == 'none')
+					_this.RESULT.style.display = 'block';
+
+				var first = -1;
+				for(var i = 0; i < cnt; i++)
+				{
+					if(!BX.findChild(tbl.rows[i], {'class':'title-search-separator'}, true))
+					{
+						if(first == -1)
+							first = i;
+
+						if(_this.currentRow < i)
+						{
+							_this.currentRow = i;
+							break;
+						}
+						else if(tbl.rows[i].className == 'title-search-selected')
+						{
+							tbl.rows[i].className = '';
+						}
+					}
+				}
+
+				if(i == cnt && _this.currentRow != i)
+					_this.currentRow = first;
+
+				tbl.rows[_this.currentRow].className = 'title-search-selected';
+				return true;
+
+			case 38: // up key - navigate up on search results
+				if(_this.RESULT.style.display == 'none')
+					_this.RESULT.style.display = 'block';
+
+				var last = -1;
+				for(var i = cnt-1; i >= 0; i--)
+				{
+					if(!BX.findChild(tbl.rows[i], {'class':'title-search-separator'}, true))
+					{
+						if(last == -1)
+							last = i;
+
+						if(_this.currentRow > i)
+						{
+							_this.currentRow = i;
+							break;
+						}
+						else if(tbl.rows[i].className == 'title-search-selected')
+						{
+							tbl.rows[i].className = '';
+						}
+					}
+				}
+
+				if(i < 0 && _this.currentRow != i)
+					_this.currentRow = last;
+
+				tbl.rows[_this.currentRow].className = 'title-search-selected';
+				return true;
+
+			case 13: // enter key - choose current search result
+				if(_this.RESULT.style.display == 'block')
+				{
+					for(var i = 0; i < cnt; i++)
+					{
+						if(_this.currentRow == i)
+						{
+							if(!BX.findChild(tbl.rows[i], {'class':'title-search-separator'}, true))
+							{
+								var a = BX.findChild(tbl.rows[i], {'tag':'a'}, true);
+								if(a)
+								{
+									window.location = a.href;
+									return true;
+								}
+							}
+						}
+					}
+				}
+				return false;
+		}
+
+		return false;
+	}
+
+	this.onTimeout = function()
+	{
+		_this.onChange(function(){
+			setTimeout(_this.onTimeout, 500);
+		});
+	}
+
+	this.onChange = function(callback)
+	{
+		if(_this.INPUT.value != _this.oldValue && _this.INPUT.value != _this.startText)
+		{
+			_this.oldValue = _this.INPUT.value;
+			if(_this.INPUT.value.length >= _this.arParams.MIN_QUERY_LEN)
+			{
+				_this.cache_key = _this.arParams.INPUT_ID + '|' + _this.INPUT.value;
+				if(_this.cache[_this.cache_key] == null)
+				{
+					if(_this.WAIT)
+					{
+						var pos = BX.pos(_this.INPUT);
+						var height = (pos.bottom - pos.top)-2;
+						_this.WAIT.style.top = (pos.top+1) + 'px';
+						_this.WAIT.style.height = height + 'px';
+						_this.WAIT.style.width = height + 'px';
+						_this.WAIT.style.left = (pos.right - height + 2) + 'px';
+						_this.WAIT.style.display = 'block';
+					}
+
+					BX.ajax.post(
+						_this.arParams.AJAX_PAGE,
+						{
+							'ajax_call':'y',
+							'INPUT_ID':_this.arParams.INPUT_ID,
+							'q':_this.INPUT.value,
+							'l':_this.arParams.MIN_QUERY_LEN
+						},
+						function(result)
+						{
+							_this.cache[_this.cache_key] = result;
+							_this.ShowResult(result);
+							_this.currentRow = -1;
+							_this.EnableMouseEvents();
+							if(_this.WAIT)
+								_this.WAIT.style.display = 'none';
+							if (!!callback)
+								callback();
+						}
+					);
+					return;
+				}
+				else
+				{
+					_this.ShowResult(_this.cache[_this.cache_key]);
+					_this.currentRow = -1;
+					_this.EnableMouseEvents();
+				}
+			}
+			else
+			{
+				_this.RESULT.style.display = 'none';
+				_this.currentRow = -1;
+				_this.UnSelectAll();
+			}
+		}
+		if (!!callback)
+			callback();
+	}
+
+	this.UnSelectAll = function()
+	{
+		var tbl = BX.findChild(_this.RESULT, {'tag':'div','class':'search-result'}, true);
+		if(tbl)
+		{
+			var cnt = tbl.rows.length;
+			for(var i = 0; i < cnt; i++)
+				tbl.rows[i].className = '';
+		}
+	}
+
+	this.EnableMouseEvents = function()
+	{
+		var tbl = BX.findChild(_this.RESULT, {'tag':'div','class':'search-result'}, true);
+		if(tbl)
+		{
+			var cnt = tbl.rows.length;
+			for(var i = 0; i < cnt; i++)
+				if(!BX.findChild(tbl.rows[i], {'class':'title-search-separator'}, true))
+				{
+					tbl.rows[i].id = 'row_' + i;
+					tbl.rows[i].onmouseover = function (e) {
+						if(_this.currentRow != this.id.substr(4))
+						{
+							_this.UnSelectAll();
+							this.className = 'title-search-selected';
+							_this.currentRow = this.id.substr(4);
+						}
+					};
+					tbl.rows[i].onmouseout = function (e) {
+						this.className = '';
+						_this.currentRow = -1;
+					};
+				}
+		}
+	}
+
+	this.onFocusLost = function(hide)
+	{
+		setTimeout(function(){_this.RESULT.style.display = 'none';}, 250);
+	}
+
+	this.onFocusGain = function()
+	{
+		if(_this.RESULT.innerHTML.length)
+			_this.ShowResult();
+	}
+
+	this.onKeyDown = function(e)
+	{
+		if(!e)
+			e = window.event;
+
+		if (_this.RESULT.style.display == 'block')
+		{
+			if(_this.onKeyPress(e.keyCode))
+				return BX.PreventDefault(e);
+		}
+	}
+
+	this.Init = function()
+	{
+		this.CONTAINER = document.getElementById(this.arParams.CONTAINER_ID);
+		this.RESULT = document.body.appendChild(document.createElement("DIV"));
+		this.RESULT.className = 'search-suggestions';
+		this.INPUT = document.getElementById(this.arParams.INPUT_ID);
+		this.startText = this.oldValue = this.INPUT.value;
+		BX.bind(this.INPUT, 'focus', function() {_this.onFocusGain()});
+		BX.bind(this.INPUT, 'blur', function() {_this.onFocusLost()});
+
+		if(BX.browser.IsSafari() || BX.browser.IsIE())
+			this.INPUT.onkeydown = this.onKeyDown;
+		else
+			this.INPUT.onkeypress = this.onKeyDown;
+
+		if(this.arParams.WAIT_IMAGE)
+		{
+			this.WAIT = document.body.appendChild(document.createElement("DIV"));
+			this.WAIT.style.backgroundImage = "url('" + this.arParams.WAIT_IMAGE + "')";
+			if(!BX.browser.IsIE())
+				this.WAIT.style.backgroundRepeat = 'none';
+			this.WAIT.style.display = 'none';
+			this.WAIT.style.position = 'absolute';
+			this.WAIT.style.zIndex = '1100';
+		}
+
+		BX.bind(this.INPUT, 'bxchange', function() {_this.onChange()});
+	}
+
+	BX.ready(function (){_this.Init(arParams)});
+}
+
+	BX.ready(function(){
+		new JCTitleSearchModern({
+			'AJAX_PAGE' : '/',
+			'CONTAINER_ID': 'searchTitle',
+			'INPUT_ID': 'title-search-input',
+			'MIN_QUERY_LEN': 2
+		});
+	});
+</script>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div
+            class="big-slider"
+            data-owl-loop="n"                         data-owl-autoplay="y"                     data-owl-autoplay-timeout="8"         >
+                                <div class="slider-item" style="background-image: url(/upload/iblock/695/ae6sc342usn1rn4vmtlcc45l5oh3w104.jpg);" id="bx_651765591_870">
+                <div class="content">
+                    <div class="col col-mb-12 col-7 col-dt-5">
+                        <div class="slider-item-text">
+                            <div class="h1 slider-item-title">Вакцинация от COVID-19</div>
+                            <div class="mb-hide slider-item-description">
+                                <div class="slider-item-description-inner">
+                                    <a href="/vaktsinatsiya-ot-covid-19-/" class="btn btn-long col-margin-top">Подробнее</a>                                </div>
+                            </div>
+                            <div class="big-slider-nav mb-hide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                <div class="slider-item" style="background-image: url(/upload/iblock/933/933fcb4895574c21d56495c6426eafc3.jpg);" id="bx_651765591_180">
+                <div class="content">
+                    <div class="col col-mb-12 col-7 col-dt-5">
+                        <div class="slider-item-text">
+                            <div class="h1 slider-item-title">Дополнительное образование</div>
+                            <div class="mb-hide slider-item-description">
+                                <div class="slider-item-description-inner">
+                                    Филиал УдГУ в г. Воткинске проводит курсы переподготовки и повышения квалификации, узнать <a href="/about_the_university/dopolnitelnoe-obrazovanie/">подробнее</a><br>                                </div>
+                            </div>
+                            <div class="big-slider-nav mb-hide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                <div class="slider-item" style="background-image: url(/upload/iblock/730/73079427bb80b53b7485f12f92352685.JPG);" id="bx_651765591_179">
+                <div class="content">
+                    <div class="col col-mb-12 col-7 col-dt-5">
+                        <div class="slider-item-text">
+                            <div class="h1 slider-item-title">Добро пожаловать в филиал УдГУ!</div>
+                            <div class="mb-hide slider-item-description">
+                                <div class="slider-item-description-inner">
+                                    <div>
+	 Филиал УдГУ в г.Воткинске – это вуз, который совмещает в себе лучшие образовательные технологии, высококвалифицированных преподавателей и творческую атмосферу.
+</div>                                </div>
+                            </div>
+                            <div class="big-slider-nav mb-hide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="container container-m50">
+        <div class="content">
+            <div class="col col-mb-12 col-4 col-margin">
+                <div class="white-box primary-border-box big-padding-box">
+                    <h2 class="mt0"><img src="/local/templates/modern_green_s1/images/abiturients.png" alt="Абитуриентам"> Абитуриентам</h2>
+	                
+    <ul class="unstyled">
+                    <li><a href="/applicants/the_admissions_committee/">Приемная комиссия</a></li>
+                    <li><a href="/applicants/documents/">Документы и справки</a></li>
+                    <li><a href="/applicants/dormitory/">Общежитие</a></li>
+                    <li><a href="/about_the_university/offices/">Найти филиал на карте</a></li>
+            </ul>
+                    <a href="/applicants/" class="btn col-margin-top btn-long">Подробнее</a>
+                </div> <!-- .white-box primary-border-box big-padding-box -->
+            </div> <!-- .col col-mb-12 col-4 col-margin -->
+
+            <div class="col col-mb-12 col-4 col-margin">
+                <div class="white-box primary-border-box big-padding-box">
+                    <h2 class="mt0"><img src="/local/templates/modern_green_s1/images/students.png" alt="Студентам"> Студентам</h2>
+	                
+    <ul class="unstyled">
+                    <li><a href="/students/payment/">Оплата обучения</a></li>
+                    <li><a href="/students/payment/otsrochka-po-oplate-za-obuchenie/">Отсрочка по оплате за обучение</a></li>
+                    <li><a href="/students/training_materials/">Учебные материалы</a></li>
+                    <li><a href="/students/life/">Студенческая жизнь</a></li>
+            </ul>
+                    <a href="/students/" class="btn col-margin-top btn-long">Подробнее</a>
+                </div> <!-- .white-box primary-border-box big-padding-box -->
+            </div> <!-- .col col-mb-12 col-4 col-margin -->
+
+            <div class="col col-mb-12 col-4 col-margin">
+                <div class="white-box primary-border-box big-padding-box">
+                    <h2 class="mt0"><img src="/local/templates/modern_green_s1/images/graduates.png" alt="Выпускникам"> Выпускникам</h2>
+	                
+    <ul class="unstyled">
+                    <li><a href="/graduates/center/">Центр содействия занятости</a></li>
+                    <li><a href="/graduates/scientists/">Совет молодых ученых</a></li>
+                    <li><a href="/graduates/alumni_association/">Ассоциация выпускников</a></li>
+                    <li><a href="/graduates/vydayushchiesya-vypuskniki/">Выдающиеся выпускники</a></li>
+            </ul>
+                    <a href="/graduates/" class="btn col-margin-top btn-long">Подробнее</a>
+                </div> <!-- .white-box primary-border-box big-padding-box -->
+            </div> <!-- .col col-mb-12 col-4 col-margin -->
+        </div> <!-- .content -->
+    </div>
+
+
+    <div class="container container-white container-mb70">
+        <div class="content">
+            <div class="col col-mb-12">
+                <div class="white-hero clearfix"><h1>Филиал ФГБОУ ВО "Удмуртский государственный университет" в г. Воткинске</h1>
+<div class="hero-image">
+ <img alt="P1350604__.JPG" src="/upload/medialibrary/1b0/ppf2az79n31us12von7xjxebl5gi5gnj.JPG" title="P1350604__.JPG">
+</div>
+ <br>
+<p>
+	 Филиал УдГУ в г.Воткинске давно и прочно занял одно из лидирующих мест в образовательной среде учебных заведений города.
+</p>
+<p>
+	 Его история началась в 1998 году, когда открылось представительство Удмуртского государственного университета. В 2000 г. в соответствии с приказом Министерства Российской Федерации №1043 от 10 апреля 2000 г. представительство преобразовано в Филиал Удмуртского государственного университета в городе Воткинске.&nbsp; <br>
+</p>
+ <a href="/about_the_university/history/" class="btn btn-long col-margin-top">Узнать больше</a>                </div> <!-- .hero-block clearfix -->
+            </div> <!-- .col col-mb-12 -->
+        </div> <!-- .content -->
+    </div> <!-- .container container-white container-mb70 -->
+
+<div class="content rectore-items">
+               <div class="col col-mb-12 col-6 col-dt-3 equal">
+            <div class="rectorate-item" id="bx_1373509569_5351">
+				<div style="height: 40pt; text-align: center;"><h4><a href="https://distedu.ru/">Электронная информационно-образовательная среда</a></h4></div>
+				<div style="padding-bottom: 10pt; text-align: center;"> <a href="https://distedu.ru/"><img src="/images/headerMovil.png" alt="Электронная информационно-образовательная среда"></a></div>
+				<div style="text-align: center;"></div>
+            </div>
+        </div>                <div class="col col-mb-12 col-6 col-dt-3 equal">
+            <div class="rectorate-item" id="bx_1373509569_5352">
+				<div style="height: 40pt; text-align: center;"><h4><a href="http://lib.udsu.ru/">Научно-образовательная библиотека</a></h4></div>
+				<div style="padding-bottom: 10pt; text-align: center;"> <a href="http://lib.udsu.ru/"><img src="/images/computer_and_books_e_book_and_digital_library_vector_4615294.jpg" alt="Научно-образовательная библиотека"></a></div>
+				<div style="text-align: center;"></div>
+            </div>
+        </div>
+<div class="col col-mb-12 col-6 col-dt-3 equal">
+            <div class="rectorate-item" id="bx_1373509569_5351">
+				<div style="height: 40pt; text-align: center;"><h4><a href="https://edu.gov.ru/">Минпросвещения РФ</a></h4></div>
+				<div style="padding-bottom: 10pt; text-align: center;"> <a href="https://edu.gov.ru/"><img src="/images/min_pros_6.png" alt="Минпросвещения РФ"></a></div>
+				<div style="text-align: center;"></div>
+            </div>
+        </div> 
+<div class="col col-mb-12 col-6 col-dt-3 equal">
+            <div class="rectorate-item" id="bx_1373509569_5351">
+				<div style="height: 40pt; text-align: center;"><h4><a href="https://minobrnauki.gov.ru/">Миннауки РФ</a></h4></div>
+				<div style="padding-bottom: 10pt; text-align: center;"> <a href="https://minobrnauki.gov.ru/"><img src="/images/min_nauka_6.png" alt="Миннауки РФ"></a></div>
+				<div style="text-align: center;"></div>
+            </div>
+        </div> 
+    </div>
+
+<div class="container container-mb70">
+    <div class="content col-margin-bottom">
+        <div class="col col-mb-12 col-8">
+            <h2 class="h1 mb0">Новости</h2>
+        </div> <!-- .col col-mb-hide col-8 -->
+        <div class="col col-mb-hide col-4 ta-right">
+            <a href="/about_the_university/news/" class="btn btn-link">Все новости <i class="icon icon-arrow-right"></i></a>
+        </div> <!-- .col col-mb-hide col-4 ta-right -->
+    </div> <!-- .content col-margin-bottom -->
+
+    <div class="content">
+        <div class="col col-mb-12 col-12 col-dt-6">
+            <div class="white-box primary-border-box padding-box col-margin-bottom">
+                <div class="news-item news-item-main">
+                    <div class="news-item-date">27 апреля, 2022</div>
+                                        <div class="news-item-image">
+                        <h3 class="h2 mb-block"><a href="/about_the_university/news/1061/">&quot;Чистый город&quot;</a></h3>
+                        <div class="big-image-col">
+                            <a href=""><img src="/upload/resize_cache/iblock/6c8/500_250_2/0afrsafb79cfknujectcpvi7eeq7k5ki.jpg"
+                                 alt="&quot;Чистый город&quot;"
+                                 title="&quot;Чистый город&quot;"
+                                 ></a>
+                        </div>
+                    </div>
+                                        <div class="news-item-text">
+                        <h3 class="news-item-header mb-hide"><a href="/about_the_university/news/1061/">&quot;Чистый город&quot;</a></h3>
+                        Студенты филиала УдГУ в городе Воткинске вышли на уборку территории                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-mb-12 col-12 col-dt-6">
+            <div class="white-box padding-box col-margin-bottom">
+                            <div class="news-item">
+                    <div class="news-item-date">27 апреля, 2022</div>
+                    <div class="news-item-text">
+                        <h3 class="news-item-header"><a href="/about_the_university/news/1060/">эксперт из Москвы</a></h3>
+                        Филиал УдГУ города Воткинска 26 апреля посетила эксперт из Москвы.                    </div>
+                </div>
+                                            <div class="news-item">
+                    <div class="news-item-date">27 апреля, 2022</div>
+                    <div class="news-item-text">
+                        <h3 class="news-item-header"><a href="/about_the_university/news/1059/">Награждение отличников и ударников Тотального диктанта</a></h3>
+                        22 апреля в библиотеке филиала УдГУ в г. Воткинске прошло награждение отличников и ударников Тотального диктанта.                    </div>
+                </div>
+                                            <div class="news-item">
+                    <div class="news-item-date">20 апреля, 2022</div>
+                    <div class="news-item-text">
+                        <h3 class="news-item-header"><a href="/about_the_university/news/1031/">&quot;Всероссийский день заботы о памятниках истории и культуры&quot;</a></h3>
+                        Студенты специальности "Правоохранительная деятельность" филиала УдГУ в 
+городе Воткинске следят за чистотой и готовы бороться с мусором!!!                    </div>
+                </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="content col-margin-bottom">
+        <div class="col col-mb-12 col-8">
+            <h2 class="h1 mb0">События</h2>
+        </div>
+        <div class="col col-mb-hide col-4 ta-right">
+            <a href="/about_the_university/notifies/" class="btn btn-link">Все события <i class="icon icon-arrow-right"></i></a>
+        </div>
+    </div>
+
+        <div class="content">
+        <div class="col col-mb-12 col-margin-bottom">
+            <div class="white-box primary-border-box padding-box">
+                <div class="content">
+                                        <div class="col col-mb-12 col-6 col-dt-8">
+                        <h2 class="mb-hide"><a href="/about_the_university/notifies/1033/">Конкурс на замещение педагогических должностей на 2021/2022 учебный год</a></h2>
+                        <p>
+	 Филиал федерального бюджетного образовательного учреждения высшего образования «Удмуртский государственный университет» в городе Воткинске объявляет проведение &nbsp;&nbsp;конкурса на замещение педагогических должностей:
+</p>
+ <span id="bx-cursor-node"> </span>                        <a href="/about_the_university/notifies/1033/" class="btn btn-long col-margin-top">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="content">
+                <div class="col col-mb-12 col-4 col-margin-bottom">
+            <div class="white-box padding-box">
+                                <p>
+                    <a href="/about_the_university/notifies/745/">Конкурс на замещение вакантной должности</a>
+                </p>
+                <p class="fz14"><p>
+	 Филиал федерального бюджетного образовательного учреждения высшего образования «Удмуртский государственный университет» в городе Воткинске объявляет конкурс на замещение педагогических должностей<span id="bx-cursor-node"> </span>
+</p></p>
+            </div>
+        </div>
+                <div class="col col-mb-12 col-4 col-margin-bottom">
+            <div class="white-box padding-box">
+                                    <p>
+                        <img src="/upload/iblock/93d/77auq7ngavqegh2djt54i295l60istlf.jpg"
+                             alt="Международная акция ко Дню Победы"
+                             title="Международная акция ко Дню Победы">
+                    </p>
+                                <p>
+                    <a href="/about_the_university/notifies/668/">Международная акция ко Дню Победы</a>
+                </p>
+                <p class="fz14">В марте 2021 года стартовала Международная акция «Сад Памяти2021». <br></p>
+            </div>
+        </div>
+                <div class="col col-mb-12 col-4 col-margin-bottom">
+            <div class="white-box padding-box">
+                                    <p>
+                        <img src="/upload/iblock/35b/eps6isq8bff1eqxwch8a2x734ifx5k8w.jpg"
+                             alt="Тотальный диктант"
+                             title="Тотальный диктант">
+                    </p>
+                                <p>
+                    <a href="/about_the_university/notifies/662/">Тотальный диктант</a>
+                </p>
+                <p class="fz14">Напишем Тотальный диктант вместе!!!</p>
+            </div>
+        </div>
+            </div>
+    </div>
+
+</div>
+<div class="footer-wrapper">
+    <footer class="container container-footer">
+        
+    <div class="content footer-menu-content">
+                                                                    <div class="col col-mb-12 col-4">
+                        <ul>
+                            <li class="col-margin-bottom">
+                                <div class="h4">О ВУЗе</div>
+                                    <ul>
+                                                                                                            <li><a href="/sveden/">Сведения об образовательной организации</a></li>
+                                                                                                            <li><a href="/about_the_university/departments/">Кафедры</a></li>
+                                                                                                            <li><a href="/about_the_university/academic_council/">Совет филиала</a></li>
+                                                                                                            <li><a href="/about_the_university/management/">Руководство</a></li>
+                                                                                                            <li><a href="/about_the_university/history/">История</a></li>
+                                                                                                            <li><a href="/about_the_university/library/">Библиотека</a></li>
+                                                                                                            <li><a href="/about_the_university/news/">Новости</a></li>
+                                                                                                            <li><a href="/about_the_university/notifies/">Объявления</a></li>
+                                                                                                            <li><a href="/contacts/">Контакты</a></li>
+                                                                                                            <li><a href="/about_the_university/videogallery/">Видеогалерея</a></li>
+                                                                                                            <li><a href="/about_the_university/dopolnitelnoe-obrazovanie/">Дополнительное образование</a></li>
+                                                                                                            <li><a href="/about_the_university/distantsionnoe-obuchenie/">Дистанционное обучение</a></li>
+                                                                                                            <li><a href="/about_the_university/protivodeystvie-korruptsii/">Противодействие коррупции</a></li>
+                                                                                                            <li><a href="/about_the_university/eios/">Электронная информационно-образовательная среда (ЭИОС)</a></li>
+                                                                            </ul></li></ul></div>
+                                                            <div class="col col-mb-12 col-4">
+                        <ul>
+                            <li class="col-margin-bottom">
+                                <div class="h4">Абитуриентам</div>
+                                    <ul>
+                                                                                                            <li><a href="/applicants/the_admissions_committee/">Приемная комиссия</a></li>
+                                                                                                            <li><a href="/applicants/documents/">Документы и справки</a></li>
+                                                                                                            <li><a href="/applicants/directions_specialty_exams/">Специальности и направления</a></li>
+                                                                                                            <li><a href="/applicants/cost_of_training/">Стоимость</a></li>
+                                                                                                            <li><a href="/applicants/admission/">Правила и условия приема</a></li>
+                                                                                                            <li><a href="/applicants/dormitory/">Общежитие</a></li>
+                                                                                                            <li><a href="/students/life/">Студенческая жизнь</a></li>
+                                                                                                            <li><a href="/applicants/photo_tour/">Фото-экскурсия</a></li>
+                                                                                                            <li><a href="/applicants/inostrannym-abiturientam/">Иностранным абитуриентам</a></li>
+                                                                                                            <li><a href="/applicants/prikazy-o-zachislenii/">Приказы о зачислении</a></li>
+                                                                                                            <li><a href="/applicants/kolichestvo-mest2021/">Поступление 2021</a></li>
+                                                                                                            <li><a href="/applicants/kolichestvo-mest2022/">Поступление 2022</a></li>
+                                                                                                            <li><a href="/applicants/tselevoe-obuchenie/">Целевое обучение</a></li>
+                                                                            </ul></li></ul></div>
+                                                            <div class="col col-mb-12 col-4">
+                        <ul>
+                            <li class="col-margin-bottom">
+                                <div class="h4">Студентам</div>
+                                    <ul>
+                                                                                                            <li><a href="/students/training_materials/">Учебные материалы</a></li>
+                                                                                                            <li><a href="/students/payment/">Оплата обучения</a></li>
+                                                                                                            <li><a href="/students/documents/">Документы и справки</a></li>
+                                                                                                            <li><a href="/students/life/">Студенческая жизнь</a></li>
+                                                                                                            <li><a href="/students/science/">Научная жизнь</a></li>
+                                                                                                            <li><a href="/students/sporting_life/">Спортивная жизнь</a></li>
+                                                                                                            <li><a href="/students/social/">Социальная сфера</a></li>
+                                                                                                            <li><a href="/students/inostrannym-studentam/">Иностранным студентам</a></li>
+                                                                                                            <li><a href="/students/nezavisimaya-otsenka-kachestva/">Независимая оценка качества условий осуществления образовательной деятельности</a></li>
+                                                                            </ul></li></ul></div>
+                                                            <div class="col col-mb-12 col-4">
+                        <ul>
+                            <li class="col-margin-bottom">
+                                <div class="h4">Выпускникам</div>
+                                    <ul>
+                                                                                                            <li><a href="/graduates/center/">Центр содействия занятости</a></li>
+                                                                                                            <li><a href="/graduates/scientists/">Совет молодых ученых</a></li>
+                                                                                                            <li><a href="/graduates/alumni_association/">Ассоциация выпускников</a></li>
+                                                                                                            <li><a href="/graduates/vydayushchiesya-vypuskniki/">Выдающиеся выпускники</a></li>
+                                                                                                            <li><a href="/graduates/forums/">Форумы</a></li>
+                                                                                                            <li><a href="/graduates/reviews_of_graduates/">Отзывы выпускников</a></li>
+                                                                                                            <li><a href="/graduates/seminars_and_trainings/">Семинары и тренинги</a></li>
+                                                                            </ul></li></ul></div>
+                                                            <div class="col col-mb-12 col-4">
+                        <ul>
+                            <li class="col-margin-bottom">
+                                <div class="h4">Обращения</div>
+                                    <ul>
+                                                                                                            <li><a href="/feedback/index.php">Отправить письмо</a></li>
+                                                                                                            <li><a href="/feedback/responses/">Ответы на обращения</a></li>
+                                                                                                            <li><a href="/feedback/list/">Мои обращения</a></li>
+                                                                                                            <li><a href="/feedback/written/">Письменные обращения</a></li>
+                                                                                                            <li><a href="/feedback/personal/">Личный прием</a></li>
+                                                                                                            <li><a href="/feedback/stat/">Информация о рассмотрении обращений</a></li>
+                                                                                                            <li><a href="/feedback/distant/">Дистанционные способы обратной связи и взаимодействия с получателями услуг</a></li>
+                                                                                                            <li><a href="/feedback/otzyvy/">Отзывы об образовательной организации</a></li>
+                                                                            </ul></li></ul></div>
+                                                                                                                                                                                                                                                                                                                                                                                    </div>
+        <div class="content">
+            <div class="col col-mb-12 col-4">
+                &copy; Филиал ФГБОУ ВО "УдГУ" в г. Воткинске, 2022<br>
+                <a href="/contacts/">Контакты</a>
+                <br><a href="/userconsent/?data=eyJpZCI6IjEiLCJyZXBsYWNlIjpbXX0%3D&sec=MjE4Zjc1NTgwZTJlMDMzODg2ZTc1MDZkYzI5MTMxZTFlNGY1ZmQ2NTQ0MGJmODEyNjMwNGZjOWM0ZDZmMGRhNw%3D%3D">Политика конфиденциальности</a>            </div>
+
+            <div class="col col-mb-12 col-4">                                              </div>
+
+            <div class="col col-mb-12 col-4">
+                
+    <div class="social-networks">
+                    <a href="https://vk.com/vfudgu18" title="ВКонтакте" class="social-network"><i class="icon icon-social-vk"></i></a>
+                    <a href="#tw" title="Twitter" class="social-network"><i class="icon icon-social-tw"></i></a>
+                    <a href="#fb" title="Facebook" class="social-network"><i class="icon icon-social-fb"></i></a>
+                    <a href="#inst" title="Instagram" class="social-network"><i class="icon icon-social-inst"></i></a>
+                    <a href="https://www.youtube.com/channel/UCRj9cxgOmtF3FH6aC0Q22ow" title="YouTube" class="social-network"><i class="icon icon-social-yt"></i></a>
+                    <a href="#gplus" title="GooglePlus" class="social-network"><i class="icon icon-social-gplus"></i></a>
+            </div>
+                <div id="bx-composite-banner"></div>
+            </div>
+<div>
+	 <div id="to-top" class="hidden">
+  <span>Наверх</span>
+  <img src="/bitrix/components/itrkomi/to.top/templates/.default/images/arrow-top.png">
+</div>
+<script>
+  var toTop = new ItRKomiToTop({"WRAPPER_NAME":"to-top","BOTTOM":"50","LEFT":"100","DURATION":"500"});
+</script><br>
+</div>
+        </div>
+    </footer>
+</div> <!-- .footer-wrapper -->
+<div class="mobile-nav-wrapper">
+    <div class="mobile-nav">
+    </div>
+</div>
+</body>
+</html>

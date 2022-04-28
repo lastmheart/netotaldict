@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+  <head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="/bitrix/templates/Bitrix.BankSite.bank.default/common.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/bitrix/templates/Bitrix.BankSite.bank.default/bvi.min.css" />
+    
+
+	<link rel="stylesheet" type="text/css" href="/bitrix/templates/Bitrix.BankSite.bank.default/styles.css?t=637777593683592877" />
+	<link rel="stylesheet" type="text/css" href="/bitrix/templates/Bitrix.BankSite.bank.default/template_styles.css?t=637777590535079159" />
+	<link type="text/css" rel="stylesheet" href="/bitrix/js/main/core/css/core.css?634333560920000000"/>
+	<script type="text/javascript" src="/bitrix/js/main/core/core.js?634384745300000000"></script>
+	<script type="text/javascript">
+BX.message({
+	'LANGUAGE_ID': 'ru',
+	'FORMAT_DATE': 'dd.MM.yyyy',
+	'FORMAT_DATETIME': 'dd.MM.yyyy H:mm',
+	'COOKIE_PREFIX': 'BITRIX_SM',
+	'bitrix_sessid': '4dfccd08a8f71948aa14941caf7c1790'
+});
+</script>
+	<script type="text/javascript">BX.message({'JS_CORE_LOADING':'Загрузка...', 'JS_CORE_WINDOW_CLOSE':'Закрыть', 'JS_CORE_WINDOW_EXPAND':'Развернуть', 'JS_CORE_WINDOW_NARROW':'Свернуть в окно', 'JS_CORE_WINDOW_SAVE':'Сохранить', 'JS_CORE_WINDOW_CANCEL':'Отменить'});</script>
+<title>
+	Информация о филиалах
+</title>
+    <link rel="stylesheet" type="text/css" href="/bitrix/templates/Bitrix.BankSite.bank.default/themes/blue/colors.css" />
+    <!--[if lte IE 6]>
+    <style type="text/css">
+      #support-question { 
+      background-image: none;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/bitrix/templates/Bitrix.BankSite.bank.default/images/question.png', sizingMethod = 'crop'); 
+      }
+      #support-question { left: -9px;}
+      #banner-overlay {
+      background-image: none;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/bitrix/templates/Bitrix.BankSite.bank.default/images/overlay.png', sizingMethod = 'crop');
+      }
+    </style>
+    <![endif]-->
+  </head>
+  <body>
+    <script type="text/javascript">
+      function FireDefaultButton(event, target) {
+          if (event.keyCode == 13) {
+              var src = event.srcElement || event.target;
+              if (!src || (src.tagName.toLowerCase() != "textarea")) {
+                  var defaultButton = document.getElementById(target);
+                  if (defaultButton && typeof (defaultButton.click) != "undefined") {
+                      defaultButton.click();
+                      event.cancelBubble = true;
+      
+                      if (event.stopPropagation)
+                          event.stopPropagation();
+      
+                      return false;
+                  }
+              }
+          }
+          return true;
+      }
+    </script>
+    <form name="aspnetForm" method="post" action="http://cbspodolsk.ru/about/filial/" id="aspnetForm" class="main-form">
+<div>
+<input type="hidden" name="bitrix_include_areas" id="bitrix_include_areas" value="N" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwODg1MTE2Ng9kFgJmD2QWAgIBD2QWAmYPZBYCAgEPFgIeBXN0eWxlBSd3aWR0aDowcHg7IGhlaWdodDowcHg7IG92ZXJmbG93OmhpZGRlbjtkZD8HiAAx/VWm1kHR8BODPfUy9dXq" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var dotNetVars = {'ADMIN_THEME_ID':'.default', 'LANGUAGE_ID':'ru', 'FORMAT_DATE':'DD.MM.YYYY', 'FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS', 'opt_context_ctrl':false, 'cookiePrefix':'BITRIX_SM', 'titlePrefix':'...', 'messPanelFixOn':'Закрепить панель', 'messPanelFixOff':'Открепить панель', 'messHideMenu':'Скрыть меню', 'messShowMenu':'Показать меню', 'messHideButtons':'Уменьшить кнопки', 'messShowButtons':'Увеличить кнопки', 'messFilterInactive':'Поиск не используется - показаны все записи', 'messFilterActive':'Используется поиск - показаны только найденные записи', 'messFilterLess':'Скрыть условие поиска', 'messLoading':'Загрузка...', 'messMenuLoading':'Загрузка...', 'messMenuLoadingTitle':'Загружаются пункты меню...', 'messNoData':'- Нет данных -', 'messExpandTabs':'Развернуть все вкладки на одну страницу', 'messCollapseTabs':'Свернуть вкладки', 'messPanelCollapse':'Скрыть панель', 'messPanelExpand':'Показать панель', 'exFormatDate':'dd.MM.yyyy', 'exFormatDateTime':'dd.MM.yyyy H:mm:ss', 'currentCultureInfoID':'1049', 'currentCultureInfoName':'ru-RU', 'securityTokenPair':'bxValidationToken=4dfccd08a8f71948aa14941caf7c1790'}; var phpVars = dotNetVars;var bitrixWebAppPath=''; var APPPath = '';//]]>
+</script>
+
+				<script type='text/javascript'>
+					var bxReconnectCount = 0;
+					var bxReconnectMaxCount = 5;
+					function BXReconnect()
+					{
+						bxReconnectCount++;
+						if (bxReconnectCount < bxReconnectMaxCount)
+						{
+							var img = new Image(1,1);
+							img.src = '/bitrix/Reconnect.aspx';
+						}
+					}
+
+					window.setInterval('BXReconnect()',1170000);
+
+				</script>
+			
+<script src="/bitrix/js/Main/utils.js?t=634255083360000000" type="text/javascript"></script>
+<script src="/bitrix/js/Main/utils_net.js?t=634384745300000000" type="text/javascript"></script>
+<script src="javascript:void(0);" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function bxPageAddHeadItemCompare(tag, item)
+{
+  if (!tag.tagName || (tag.tagName.toLowerCase() != item.tag.toLowerCase()))
+	  return false;
+  for(var key in item.attributes)
+    if (tag.getAttribute(key) == null ||  (tag.getAttribute(key).toLowerCase() != item.attributes[key].toLowerCase()))
+	    return false;
+	return true;
+}
+function bxPageAddHeadItems(items)
+{
+  var head = document.getElementsByTagName('head')[0];
+  for(var i = head.childNodes.length - 1; i >= 0; i--)
+    if (head.childNodes[i].getAttribute)
+    {
+	    if (head.childNodes[i].getAttribute('bxPageHeadItem') != null)
+        head.childNodes[i].isMarkedForDeletion = true;
+      for(var j = 0; j < items.length; j++)
+	      if (bxPageAddHeadItemCompare(head.childNodes[i], items[j]))
+          items[j].doNotAdd = true;
+    }
+
+  for(var i = 0; i < items.length; i++)
+  {
+    if (items[i].doNotAdd)
+      continue;
+    var item = document.createElement(items[i].tag);
+    item.setAttribute('bxPageHeadItem', 'true');
+    for(var key in items[i].attributes)
+      item.setAttribute(key, items[i].attributes[key]);
+    head.insertBefore(item, head.childNodes[0]);
+  }
+}
+//]]>
+</script>
+
+      <DIV style="width:0px; height:0px; overflow:hidden;"><div id="ctl00_Requisite_UP_AJAX">
+
+</div></DIV><input type="hidden" name="bxValidationToken" value="4dfccd08a8f71948aa14941caf7c1790" />
+      <div id="page-wrapper">
+        <div id="panel"></div>
+        <div id="header">
+
+          <table>
+            <tr>
+              <td id="logo">
+                  <img src="/src/_default_logo.gif" border="0" width="101" height="62"  />
+
+              </td>
+              <td id="slogan">
+                 
+<p><b><font color="#2f3192" size="4"><strong>Муниципальное учреждение культуры</strong></font></b></p>
+
+<p><b><font color="#2f3192" size="4"><strong>&quot;Централизованная Библиотечная Система г. Подольска&quot;</strong></font></b></p>
+ 
+              </td>
+            </tr>
+          </table>
+          
+
+<div id="search" onkeypress="return FireDefaultButton(event, 'ctl00_searchform1_searchform1_searchform1_search');">	
+	<div class="search-box" ><input name="ctl00$searchform1$searchform1$searchform1$query" type="text" id="ctl00_searchform1_searchform1_searchform1_query" style="width:100%;" /></div>
+	<div id="search-button" >
+		<input type="submit" name="ctl00$searchform1$searchform1$searchform1$search" value="Поиск" id="ctl00_searchform1_searchform1_searchform1_search" />
+	</div>
+</div>
+
+<button type="button" class="btnForInvalids bvi-open">
+      <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="bvi-svg-eye"><path fill="#848484" d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"></path></svg>
+      <p>Версия для слабовидящих</p>
+  </button>
+        </div>
+        
+    <ul id="top-menu">
+    
+		            <li >
+		            <b class="r1"></b><b class="r0"></b>
+		            <a href="http://cbspodolsk.ru/Default.aspx">Главная</a>
+		            
+		            <b class="r0"></b><b class="r1"></b>
+		            </li>
+	            
+		            <li class="selected">
+		            <b class="r1"></b><b class="r0"></b>
+		            <a href="http://cbspodolsk.ru/about/filial">О нас</a>
+		            
+		            <b class="r0"></b><b class="r1"></b>
+		            </li>
+	            
+		            <li >
+		            <b class="r1"></b><b class="r0"></b>
+		            <a href="http://cbspodolsk.ru/about/doc">Документы</a>
+		            
+		            <b class="r0"></b><b class="r1"></b>
+		            </li>
+	            
+		            <li >
+		            <b class="r1"></b><b class="r0"></b>
+		            <a href="http://cbspodolsk.ru/about/afisha">Афиша</a>
+		            
+		            <b class="r0"></b><b class="r1"></b>
+		            </li>
+	            
+		            <li >
+		            <b class="r1"></b><b class="r0"></b>
+		            <a href="http://cbspodolsk.ru/about/otchet">Новости</a>
+		            
+		            <b class="r0"></b><b class="r1"></b>
+		            </li>
+	            
+		            <li >
+		            <b class="r1"></b><b class="r0"></b>
+		            <a href="http://cbspodolsk.ru/about/read">О книгах</a>
+		            
+		            <b class="r0"></b><b class="r1"></b>
+		            </li>
+	            
+		            <li >
+		            <b class="r1"></b><b class="r0"></b>
+		            <a href="http://cbspodolsk.ru/kontakti/">Контакты</a>
+		            
+		            <b class="r0"></b><b class="r1"></b>
+		            </li>
+	            
+    </ul>
+
+        <div id="content-wrapper">
+          <div id="content">
+            <div id="breadcrumb"><b class="r0 top"></b><p><a href="http://cbspodolsk.ru/" title="Главная страница"><img src="/bitrix/templates/Bitrix.BankSite.bank.default/images/home.gif" height="8"/></a>&nbsp;&mdash;&nbsp;<span>О нас</span></p><b class="r0 bottom"></b></div>
+            
+            <div id="workarea-wrapper">
+              <div id="left-menu">
+                
+<style>#left-menu{display: none;}
+#workarea{width: 100%;}
+</style>
+						
+              </div>
+              <div id="workarea">
+                <div id="workarea-inner">
+                  
+                  <h1>Информация о филиалах</h1>
+                   
+<div> 
+  <div style="text-align: justify;"><a href="/about/infcbs2.docx" >Информация о ЦБС</a>  
+    <br />
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"></p>
+   <a href="/about/filial/media.aspx" >СМИ о ЦБС</a> 
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"> </p>
+   <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"></span><a href="/about/filial/cb..docx" >Центральная библиотека </a> 
+    <br />
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;, serif;"></span><a href="/about/filial/mio.docx" >Методико-инновационный отдел</a></p>
+   <span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;, serif;"> 
+      <br />
+     </span><a href="/about/filial/okio.docx" >Отдел комплектования и обработки единого фонда ЦБС</a> 
+    <br />
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;, serif;"></span><a href="/about/filial/cdb.docx" >Центральная детская библиотека</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f1.docx" >Филиал №1</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f2.docx" >Филиал №2</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f3.docx" >Филиал №3</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f4.docx" >Филиал №4</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f5.docx" >Филиал №5</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f6.docx" >Филиал №6</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f7.docx" >Филиал №7</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f8.docx" >Филиал №8</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f10.docx" >Филиал №10</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f11.docx" >Филиал №11</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f12.docx" >Филиал №12</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f13.docx" >Филиал №13</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"> <a href="/about/filial/f14.docx" >Филиал №14</a> </p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f15.docx" >Филиал №15</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f16(do).docx" >Филиал №16 (до)</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f16(vo).docx" >Филиал №16 (во)</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f18.doc" >Филиал №18</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f19.doc" >Филиал №19</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f20.docx" >Филиал №20</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f21.docx" >Филиал №21</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f22.docx" >Филиал №22</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f23.doc" >Филиал №23</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f24.docx" >Филиал № 24 </a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f25.docx" >Филиал №25</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f26.doc" >Филиал №26</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f27.doc" >Филиал №27</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f28.doc" >Филиал №28</a></p>
+   
+    <p style="margin-bottom: 0.0001pt; line-height: normal;" class="MsoNormal"><a href="/about/filial/f.30.doc" >Филиал №30</a></p>
+   </div>
+ </div>
+ 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sidebar">
+            <div id="sidebar-inner">
+              <div id="telephone">
+                <b>    
+<a href="tel:84967546710">8 (4967) 54-67-10</a></b> 
+<br />
+<div>
+    <b>
+    <i>
+     <a href="mailto:pdls_mukcbs@mosreg.ru"  style="font-size: 14pt; line-height: 115%; font-family: &quot;Times New Roman&quot;, serif; color: red;" > pdls_mukcbs@mosreg.ru </a>
+</i>
+</b></div>
+
+              </div>
+              <div id="schedule">
+                <div>
+                   
+<div id="rightBanners"> 
+<style>
+    #rightBanners{overflow: auto;}
+    #rightBanners a{display:block;margin: 15px auto;}
+    #rightBanners img{width: 100%}
+  </style>
+ 
+  <div><a href="http://www.mk.mosreg.ru/" target="_blank" ><img src="/upload/banners/MKMO.jpg"  /></a></div>
+ 
+  <div><a href="https://noqu.ru/group/kultura/biblioteki/munitsipalnoe-uchrezhdenie-kultury-tsentralizovannaya-bibliotechnaya-sistema-g-podolska/" target="_blank" ><img src="/upload/banners/NOK.jpg"  /></a></div>
+ 
+  <div><a href="http://www.kultura-podolsk.ru" target="_blank" ><img src="/upload/banners/2016.jpg"  /></a></div>
+ 
+  <div> 
+    <br />
+   </div>
+ 
+  <div> 
+    <br />
+   </div>
+ 
+  <div> 
+    <br />
+   </div>
+ 
+  <div> 
+    <br />
+   </div>
+ 
+  <div> 
+    <br />
+   </div>
+ 
+  <div> 
+    <br />
+   </div>
+ 
+  <div><a href="http://biblio.litres.ru" target="_blank" ><img src="/upload/banners/litres.jpg"  /></a></div>
+ 
+  <div><a href="http://www.bibliorossica.com" target="_blank" ><img src="/upload/banners/bibliorossica_baner.png"  /></a></div>
+ 
+  <div><a href="https://polpred.com/autologin?login=%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%D0%BB%D0%BE%D0%B3%D0%B8%D0%BD&lib_id=12422&time=1638381194&token=e21d6086aeb38edd6c9cddddb6b4dab6&name=%D0%A2%D0%B5%D1%81%D1%82&surname=%D0%91%D0%B5%D1%81%D1%88%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9&email=test@test.test&redirect_url=https://polpred.com/news/" target="_blank" ><img src="/upload/polpred_new.png" title="polpred.com"  /></a></div>
+ 
+  <div><a href="https://dlib.eastview.com/" target="_blank" ><img src="/upload/banners/ivis.jpg" title="dlib.eastview.com"  /></a></div>
+ 
+  <div><a href="http://pravo.gov.ru/" target="_blank" ><img src="/upload/banners/GOS14.jpg"  /></a></div>
+ 
+  <div><a href="https://www.gosuslugi.ru/" target="_blank" ><img src="/upload/banners/GY.JPG"  /></a></div>
+ 
+<!-- <a id="bxid_62450" href="http://www.gosuslugi.ru/" > </a>
+    <a id="bxid_98556" href="https://www.gosuslugi.ru/" target="_blank" > </a>  -->
+ 
+  <div><a href="/about/doc/instr_el_kat.pptx" ><img src="/upload/banners/webirb.gif"  /></a></div>
+ 
+  <div> 
+    <br />
+   </div>
+ 
+  <div><a href="http://web-landia.ru/" target="_blank" ><img src="/upload/banners/WL_240X90_02.jpg" title="web-landia.ru"  /></a></div>
+ 
+<!-- <a id="bxid_384086" href="#852745864952" > 
+    </a><a id="bxid_448240" href="#411697630583" > </a> 
+    <a id="bxid_533587" href="http://www.kultura-podolsk.ru" > </a> -->
+ </div>
+ 
+                </div>
+              </div>
+              <div id="support">
+                <div id="support-question"></div>
+                <b class="r0"></b>
+                <div id="support-text"><a href="/contacts/feedback/">Задать вопрос или оставить отзыв</a></div>
+                <b class="r0"></b>
+              </div>
+              
+
+
+
+</dl>
+              <div class="information-box">
+                <b class="r1"></b><b class="r0"></b>
+                <div class="information-box-content">
+                  
+                </div>
+                <b class="r0"></b><b class="r1"></b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="space-for-footer"></div>
+      </div>
+      <div id="footer">
+        <div id="copyright">
+           
+<p>&copy; 2011 Муниципальное учреждение культуры &laquo;Централизованная библиотечная система г. Подольска&raquo;</p>
+ 
+        </div>
+        
+    <ul id="footer-links">
+    
+		            <li>
+		            <a href="http://cbspodolsk.ru/sitemap/"><span>Карта сайта</span></a>
+		            
+		            </li>
+	            
+		            <li>
+		            <a href="http://cbspodolsk.ru/about/"><span>Контакты</span></a>
+		            
+		            </li>
+	            
+		            <li>
+		            <a href="http://cbspodolsk.ru/login/"><span>Вход на сайт</span></a>
+		            
+		            </li>
+	            
+		            <li>
+		            <a href="http://cbspodolsk.ru/reg.aspx"><span>Регистрация</span></a>
+		            
+		            </li>
+	            
+    </ul>
+
+      </div>
+      
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E343679C" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAOUplRjrW9C1hMYHvsC+bcwfFsezz3GuGexXlwRGdGgExO0z/ZIosEjfL6RLiI9EauWrsk/LD03sfQf4rI/OPubf+aqTQ==" />
+</div>
+</form>
+  </body>
+</html>
+<script src="/bitrix/templates/Bitrix.BankSite.bank.default/bvi.min.js" /></script>
+<script>
+  new isvek.Bvi({
+    target: '.bvi-open',
+    fontSize: 18,
+  })
+</script>

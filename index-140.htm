@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Официальный сайт Союза писателей ДНР &bull; Союз писателей ДНР (СП ДНР)</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	        
+	<meta name="Front-end" content="TrendyBlog Template" />
+	<meta name="Back-end" content="S.Degtyarchuk" />
+	<meta name="Content" content="http://sp-dnr.org/" />
+	<meta name="author" content="Союз писателей Донецкой Народной Республики">
+	<meta name="description" content="Официальный сайт Союза писателей ДНР" />
+	<meta name="keywords" content="ДНР, Союз писателей ДНР, СП ДНР, проза, поэзия" />
+	<meta name="Copyright" content="http://sp-dnr.org/" />
+	<meta name="Url" content="http://sp-dnr.org/" />
+	<meta name="robots" content="all" />
+	<meta name="Document-state" content="Dynamic" />
+	<meta name="revisit" content="1 days" />
+	<meta name="revisit-after" content="1 day" />
+	<meta name="Classification" content="Information society, Culture, Education, Teaching, Books and Literature, Cultural Heritage, News" />
+	<meta name="rating" content="general" />
+	<meta name="resource-type" content="document" />
+	<meta http-equiv="Content-Language" content="ru, en, ua" />
+	        
+	<link rel="icon" href="favicon.png">
+	        
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<link rel="stylesheet" href="css/weather.css">
+	<link rel="stylesheet" href="css/colors.css">
+	<link rel="stylesheet" href="css/typography.css">
+	<link rel="stylesheet" href="css/style.css"> 
+	        
+	<link rel="stylesheet" type="text/css" media="(max-width:768px)" href="css/responsive-0.css">
+	<link rel="stylesheet" type="text/css" media="(min-width:769px) and (max-width:992px)" href="css/responsive-768.css">
+	<link rel="stylesheet" type="text/css" media="(min-width:993px) and (max-width:1200px)" href="css/responsive-992.css">
+	<link rel="stylesheet" type="text/css" media="(min-width:1201px)" href="css/responsive-1200.css">
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper" class="wide">
+        
+	<!-- Header -->
+	<header id="header" role="banner">
+
+    <!-- Header meta -->
+    <div class="header_meta">
+        <div class="container">
+        
+            <!-- Weather forecast -->
+            <div class="weather_forecast">
+                <!--<i class="wi wi-day-lightning"></i>-->
+                <span class="city">Союз писателей</span>
+                <span class="temp">ДОНЕЦКОЙ НАРОДНОЙ РЕСПУБЛИКИ</span>
+            </div>
+            <!-- End Weather forecast -->
+            
+            <!-- Top menu -->
+            <nav class="top_navigation" role="navigation">
+                <span class="top_navigation_toggle"><i class="fa fa-reorder"></i></span>
+                <ul class="menu">
+                    <li class="menu-item-has-children">
+                        <a href="/">Главная</a>
+                        <span class="top_sub_menu_toggle"></span>
+                        <ul class="sub-menu">
+                            <li><a href="poll.php">Опросы и голосования</a></li>
+                            <li><a href="tags.php">Таблица тегов</a></li>
+                            <li><a href="search.php">Поиск по сайту</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Союз</a>
+                        <span class="top_sub_menu_toggle"></span>
+                        <ul class="sub-menu">
+                            <li><a href="statute.php">Устав союза</a></li>
+                            <li><a href="logo.php">Символика</a></li>
+                            <li><a href="union.php">Состав союза</a></li>
+                            <li><a href="biblio.php">Библиография</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.php">Новости</a></li>
+                    <li><a href="media.php">Масс-медиа</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Партнёры</a>
+                        <span class="top_sub_menu_toggle"></span>
+                        <ul class="sub-menu">
+							<li><a href="partners.info.php">Информационные партнёры</a></li>
+							<li><a href="partners.publish.php">Издательства и типографии</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacts.php">Контакты</a></li>
+                    <li><a href="books.php">Витрина</a></li>
+                    <li class="search_icon_form">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                        <div class="sub-search">
+                            <form name="searchTop" method="get" action="search.php" onSubmit="return checkedFormSearchTop(this)">
+                                <input type="search" placeholder="Поиск..." name="logosTop">
+                                <input type="submit" value="Искать">
+                            </form>
+                            <script language="javascript">
+						    
+						    function checkedFormSearchTop(form){
+						        var logos = $('input[name="logosTop"]').val();
+						        if(!logos){ alert('Введите запрос!'); $('input[name="logosTop"]').focus(); return false; };
+						        if(logos.length < 3){ alert('В запросе должно быть не менее трёх символов!'); $('input[name="logosTop"]').focus(); return false; };
+						        return true;
+						    };
+						    
+						    </script>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Top menu -->
+                    
+        </div>
+    </div>
+    <!-- End Header meta -->
+            
+    <!-- Header main -->
+    <div id="header_main" class="sticky header_main">
+        <div class="container">
+        
+            <!-- Logo -->
+            <div class="site_brand">
+                <h1 id="site_title"><a href="/"><img src="img/logo.jpg" width="45" border="0" style="margin-bottom:10px;">СП <span>ДНР</span></a></h1>
+                <h2 id="site_description">Общественная организация</h2>
+            </div>
+            <!-- End Logo -->
+                    
+            <!-- Site navigation -->
+            <nav class="site_navigation" role="navigation">
+                <span class="site_navigation_toggle"><i class="fa fa-reorder"></i></span>
+                <ul class="menu">
+                
+                    <li class="menu-item-has-children"><a href="/">Главная<div class="subtitle">Официальный сайт</div></a>
+                        <span class="site_sub_menu_toggle"></span>
+                        <ul class="sub-menu" jQuery>
+							<li><a href="poll.php">Опросы и голосования</a></li>
+                            <li><a href="tags.php">Таблица тегов</a></li>
+                            <li><a href="search.php">Поиск по сайту</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-has-children"><a href="#">Союз<div class="subtitle">СП ДНР</div></a>
+                        <span class="site_sub_menu_toggle"></span>
+                        <ul class="sub-menu" jQuery>
+							<li><a href="statute.php">Устав союза</a></li>
+							<li><a href="logo.php">Символика</a></li>
+                            <li><a href="union.php">Состав союза</a></li>
+                            <li><a href="biblio.php">Библиография</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-has-children has_dt_mega_menu">
+                        <a href="news.php">Новости<div class="subtitle">События</div></a>
+                        <span class="site_sub_menu_toggle"></span>
+                        <ul class="sub-menu" jQuery>
+                            <li><a href="report.php?data=news">Отчёты. Новости</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-has-children has_dt_mega_menu">
+                        <a href="media.php">Масс-медиа<div class="subtitle">Статьи и очерки</div></a>
+                        <span class="site_sub_menu_toggle"></span>
+                        <ul class="sub-menu" jQuery>
+                            <li><a href="report.php?data=media">Отчёты. Масс-медиа</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-has-children"><a href="#">Партнёры<div class="subtitle">Информсвязи</div></a>
+                        <span class="site_sub_menu_toggle"></span>
+                        <ul class="sub-menu" jQuery>
+							<li><a href="partners.info.php">Информационные партнёры</a></li>
+                            <li><a href="partners.publish.php">Издательства и типографии</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contacts.php">Контакты<div class="subtitle">Карта проезда</div></a></li>
+                    
+                    <li class="menu-item-has-children">
+                        <a href="books.php"><i class="fa fa-shopping-cart"></i><div class="subtitle">Витрина</div></a>
+                        <span class="site_sub_menu_toggle"></span>
+                        <div class="cart_content">
+                            <div class="widget_shopping_cart_content">
+                                <p class="total">
+                                    <strong>Последние три добавленные книги</strong>
+                                </p>
+                                <ul class="cart_list product_list_widget">
+                                    	                                    <li>
+	                                        <a href="books.11.php"><img src="img/books/11.jpg">Увертюра к плачу кукол, рассказ</a>
+	                                        <span class="quantity">Геннадий Дубовой</span>
+	                                    </li>
+                                    	                                    <li>
+	                                        <a href="books.10.php"><img src="img/books/10.jpg">Легенда к карте</a>
+	                                        <span class="quantity">Александр Сигида</span>
+	                                    </li>
+                                    	                                    <li>
+	                                        <a href="books.9.php"><img src="img/books/9.jpg">Двоюродный язык. Рассказ</a>
+	                                        <span class="quantity">Иван Донецкий</span>
+	                                    </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <!-- End Site navigation -->
+            
+        </div>
+    </div>
+    <!-- End Header main -->
+            
+</header>	<!-- End Header -->
+	        
+	<!-- Section -->
+	
+	<!-- Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+            
+                <!-- Main content -->
+                <div class="col col_9_of_12">
+                
+                        
+                    <!-- Page title -->
+                    <!-- End Page title -->
+                            
+                    
+
+    <!-- Content slider -->
+    <div class="content_slider">
+        <ul>
+                        <li>
+                <a href="news.93.php"><img src="img/news_media/93_slider.jpg" alt="Slider"></a>
+                <div class="slider_caption">
+	                <div class="thumb_link">
+	                    <h3><a href="news.93.php">Республиканский фестиваль фантастики "Звёзды над Донбассом"</a></h3>
+	                </div>
+                </div>
+            </li>
+                        <li>
+                <a href="media.86.php"><img src="img/news_media/86_slider.jpg" alt="Slider"></a>
+                <div class="slider_caption">
+	                <div class="thumb_link">
+	                    <h3><a href="media.86.php">Фёдор Березин: "Очень далёкий космос". Презентация книги (видео)</a></h3>
+	                </div>
+                </div>
+            </li>
+                        <li>
+                <a href="media.82.php"><img src="img/news_media/82_slider.jpg" alt="Slider"></a>
+                <div class="slider_caption">
+	                <div class="thumb_link">
+	                    <h3><a href="media.82.php">Анна Ревякина: Донецку нужен антихайп. Когда здравый смысл важнее сенсаций</a></h3>
+	                </div>
+                </div>
+            </li>
+                        <li>
+                <a href="media.78.php"><img src="img/news_media/78_slider.jpg" alt="Slider"></a>
+                <div class="slider_caption">
+	                <div class="thumb_link">
+	                    <h3><a href="media.78.php">Великий донецкий учитель Виктор Шаталов: человек, опередивший эпоху</a></h3>
+	                </div>
+                </div>
+            </li>
+                        <li>
+                <a href="media.87.php"><img src="img/news_media/87_slider.jpg" alt="Slider"></a>
+                <div class="slider_caption">
+	                <div class="thumb_link">
+	                    <h3><a href="media.87.php">Анна Погорелая: презентация сборника стихов Владислава Русанова «Отвори мне уста»</a></h3>
+	                </div>
+                </div>
+            </li>
+                        <li>
+                <a href="news.69.php"><img src="img/news_media/69_slider.jpg" alt="Slider"></a>
+                <div class="slider_caption">
+	                <div class="thumb_link">
+	                    <h3><a href="news.69.php">Заявление Союза писателей Донецкой Народной Республики в связи с трагической гибелью Главы ДНР Александра Захарченко</a></h3>
+	                </div>
+                </div>
+            </li>
+                    </ul>
+    </div>
+    <!-- End Content slider -->
+                        
+    <!-- Panel title -->
+    <div class="panel_title">
+        <div>
+            <h4><a href="news.php">НОВОСТИ</a></h4>
+        </div>
+    </div>
+    <!-- End Panel title -->
+    
+    <div class="row">
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+	                    <div class="thumb_icon">
+	                        <a href="news.93.php" jQuery><i class="fa fa-copy"></i></a>
+	                    </div>
+	                    <div class="thumb_hover">
+	                        <a href="news.93.php"><img src="img/news_media/93.jpg"></a>
+	                    </div>
+	                </div>
+	                
+	                <div class="item_content">
+	                    <h4><a href="news.93.php">Республиканский фестиваль фантастики "Звёзды над Донбассом"</a></h4>
+	                    <p>
+	<span style="color: rgb(0, 0, 0); font-family: Tahoma, sans-serif, Arial, Helvetica; font-size: 13px; white-space: pre-wrap;"><strong>Внимание</strong>! Анонс! Впервые в Донецке! Фантастическое событие фантастического масштаба!</span><br style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Tahoma, sans-serif, Arial, Helvetica; font-size: 13px; white-space: pre-wrap;" />
+	<span style="color: rgb(0, 0, 0); font-family: Tahoma, sans-serif, Arial, Helvetica; font-size: 13px; white-space: pre-wrap;"><strong>Республиканский фестиваль фантастики &quot;Звёзды над Донбассом&quot;</strong></span><br style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Tahoma, sans-serif, Arial, Helvetica; font-size: 13px; white-space: pre-wrap;" />
+	<span style="color: rgb(0, 0, 0); font-family: Tahoma, sans-serif, Arial, Helvetica; font-size: 13px; white-space: pre-wrap;">Мероприятие будет проходить с 26 сентября по 30 сентября 2019 года</span></p>
+
+	                    <div class="item_meta clearfix">
+	                        <span class="meta_date">2019-09-23</span>
+	                    </div>
+	                    <h6>
+		                    <span><i class="fa fa-tags"></i></span>
+		                                                    <a href="tags.14.php">#Владислав Русанов</a>.
+		                                                    <a href="tags.73.php">#Георгий Полеводов</a>.
+		                                                    <a href="tags.113.php">#ДРУНБ им. Н.К. Крупской</a>.
+		                                                    <a href="tags.121.php">#Звёзды над Донбассом</a>.
+		                                                    <a href="tags.120.php">#русский центр</a>.
+		                                                    <a href="tags.117.php">#фантастика</a>.
+		                                                    <a href="tags.45.php">#Фёдор Березин</a>.
+		                                                    <a href="tags.27.php">#фестиваль</a>.
+		                    	                    </h6>
+	                </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+	                    <div class="thumb_icon">
+	                        <a href="news.92.php" jQuery><i class="fa fa-copy"></i></a>
+	                    </div>
+	                    <div class="thumb_hover">
+	                        <a href="news.92.php"><img src="img/news_media/92.jpg"></a>
+	                    </div>
+	                </div>
+	                
+	                <div class="item_content">
+	                    <h4><a href="news.92.php">И память подвига нам книга оживляет… Творческий вечер Лианы Мусатовой</a></h4>
+	                    <div>
+	5 мая, в преддверии Дня Победы, в Русском центре библиотеки состоялся творческий вечер донецкой поэтессы, писателя, члена союза писателей ДНР <strong>Лианы Александровны Мусатовой</strong>.</div>
+<div>
+	&nbsp;</div>
+<div>
+	На вечере присутствовали гости и пользователи библиотеки, творческая интеллигенция города, а также любитель поэзии Елена, проживающая на территории, временно находящейся под контролем Украины (г. Красный Лиман).</div>
+
+	                    <div class="item_meta clearfix">
+	                        <span class="meta_date">2019-05-07</span>
+	                    </div>
+	                    <h6>
+		                    <span><i class="fa fa-tags"></i></span>
+		                                                    <a href="tags.80.php">#библиотека</a>.
+		                                                    <a href="tags.78.php">#Лиана Мусатова</a>.
+		                                                    <a href="tags.71.php">#Русский мир</a>.
+		                                                    <a href="tags.120.php">#русский центр</a>.
+		                                                    <a href="tags.119.php">#творческий вечер</a>.
+		                    	                    </h6>
+	                </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+	                    <div class="thumb_icon">
+	                        <a href="news.77.php" jQuery><i class="fa fa-copy"></i></a>
+	                    </div>
+	                    <div class="thumb_hover">
+	                        <a href="news.77.php"><img src="img/news_media/77.jpg"></a>
+	                    </div>
+	                </div>
+	                
+	                <div class="item_content">
+	                    <h4><a href="news.77.php">Почётному члену СП ДНР исполнилось 92 года</a></h4>
+	                    <p>
+	<span style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 14px;">От всего коллектива СП ДНР поздравили с Днём рождения Почётного члена Союза писателей Донецкой Народной Республики, российского и украинского педагога-новатора, Заслуженного учителя Украинской ССР, Народного учителя СССР, Почётного доктора академии педагогических наук Украины -- <strong>Шаталова Виктора Фёдоровича.&nbsp;</strong></span></p>
+
+	                    <div class="item_meta clearfix">
+	                        <span class="meta_date">2019-05-02</span>
+	                    </div>
+	                    <h6>
+		                    <span><i class="fa fa-tags"></i></span>
+		                                                    <a href="tags.110.php">#Шаталов Виктор Фёдорович</a>.
+		                    	                    </h6>
+	                </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+	                    <div class="thumb_icon">
+	                        <a href="news.88.php" jQuery><i class="fa fa-copy"></i></a>
+	                    </div>
+	                    <div class="thumb_hover">
+	                        <a href="news.88.php"><img src="img/news_media/88.jpg"></a>
+	                    </div>
+	                </div>
+	                
+	                <div class="item_content">
+	                    <h4><a href="news.88.php">«Ша, говорит Одесса!» (Видео)</a></h4>
+	                    <div>
+	Видео формат радиопередачи. Выпуск 34 (25.04.2019).</div>
+<div>
+	Гость программы <strong>Фёдор Дмитриевич Березин </strong>офицер, писатель-фантаст, Председатель Союза писателей Донецкой Народной Республики, депутат Народного Совета ДНР.</div>
+
+	                    <div class="item_meta clearfix">
+	                        <span class="meta_date">2019-04-25</span>
+	                    </div>
+	                    <h6>
+		                    <span><i class="fa fa-tags"></i></span>
+		                                                    <a href="tags.24.php">#мнение</a>.
+		                                                    <a href="tags.85.php">#Радио</a>.
+		                                                    <a href="tags.45.php">#Фёдор Березин</a>.
+		                    	                    </h6>
+	                </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+	                    <div class="thumb_icon">
+	                        <a href="news.79.php" jQuery><i class="fa fa-copy"></i></a>
+	                    </div>
+	                    <div class="thumb_hover">
+	                        <a href="news.79.php"><img src="img/news_media/79.jpg"></a>
+	                    </div>
+	                </div>
+	                
+	                <div class="item_content">
+	                    <h4><a href="news.79.php">Лиана Мусатова: Литературная гостиная в колледже</a></h4>
+	                    <p>
+	<span style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 14px;">10 декабря 2018 года в Донецком профессионально-педагогическом колледже состоялась литературная гостиная. В гостиной собрались учащиеся колледжа, преподаватели, руководители и наставники, а гостьей была я -- <strong>Лиана Мусатова</strong>. Благодарю всех за гостеприимный приём и творческую поддержку. Особое спасибо за удачную книжную экспозицию, большой портрет, биографическую справку и изложение творческого пути <strong>Лианы Мусатовой </strong>заведующей библиотекой <strong>Олехнович Ольге Афанасьевне</strong>. Благодаря её вкладу, учащиеся могли более подробно познакомиться с гостьей.</span></p>
+
+	                    <div class="item_meta clearfix">
+	                        <span class="meta_date">2018-12-11</span>
+	                    </div>
+	                    <h6>
+		                    <span><i class="fa fa-tags"></i></span>
+		                                                    <a href="tags.78.php">#Лиана Мусатова</a>.
+		                    	                    </h6>
+	                </div>
+	                                    
+	            </div>
+	        </div>
+            </div>
+    
+    <!-- Panel title -->
+    <div class="panel_title">
+        <div>
+            <h4><a href="media.php">МАСС-МЕДИА</a></h4>
+        </div>
+    </div>
+    <!-- End Panel title -->
+                        
+    <div class="row">
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+                        <div class="thumb_icon">
+                            <a href="media.86.php" jQuery><i class="fa fa-copy"></i></a>
+                        </div>
+                        <div class="thumb_hover">
+                            <a href="media.86.php"><img src="img/news_media/86.jpg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="item_content">
+                        <h4><a href="media.86.php">Фёдор Березин: "Очень далёкий космос". Презентация книги (видео)</a></h4>
+                        <p>
+	Романтика звёздных полётов, космический юмор и жёсткая научная фантастика -- всё это в новой книге донецкого писателя-фантаста&nbsp;<strong>Фёдора Березина</strong></p>
+
+                        <div class="item_meta clearfix">
+                            <span class="meta_date">2019-03-05</span>
+                        </div>
+                        <h6>
+                            <span><i class="fa fa-tags"></i></span>
+                                                            <a href="tags.108.php">#Маргарита Плоская</a>.
+                                                            <a href="tags.118.php">#Оплот TV</a>.
+                                                            <a href="tags.12.php">#Презентация</a>.
+                                                            <a href="tags.45.php">#Фёдор Березин</a>.
+                                                    </h6>
+                    </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+                        <div class="thumb_icon">
+                            <a href="media.80.php" jQuery><i class="fa fa-copy"></i></a>
+                        </div>
+                        <div class="thumb_hover">
+                            <a href="media.80.php"><img src="img/news_media/80.jpg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="item_content">
+                        <h4><a href="media.80.php">Литературный клуб "Бумажный слон": интервью с Владиславом Русановым</a></h4>
+                        <p>
+	<em style="box-sizing: border-box; color: rgb(102, 102, 102); font-family: &quot;Titillium Web&quot;, sans-serif; font-size: 14px;">&quot;Упорно работая над собой даже человек средних способностей способен достичь успеха. А если он ещё и талантлив, то все двери открыты. Напротив, талантливый, но ленивый писатель останется в памяти людей, как пустопорожний болтун, не способный что-то закончить.&quot;</em></p>
+
+                        <div class="item_meta clearfix">
+                            <span class="meta_date">2019-01-10</span>
+                        </div>
+                        <h6>
+                            <span><i class="fa fa-tags"></i></span>
+                                                            <a href="tags.14.php">#Владислав Русанов</a>.
+                                                            <a href="tags.35.php">#интервью</a>.
+                                                    </h6>
+                    </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+                        <div class="thumb_icon">
+                            <a href="media.85.php" jQuery><i class="fa fa-copy"></i></a>
+                        </div>
+                        <div class="thumb_hover">
+                            <a href="media.85.php"><img src="img/news_media/85.jpg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="item_content">
+                        <h4><a href="media.85.php">Депутат Федор Березин посетил презентацию книг о Донбассе</a></h4>
+                        <p>
+	<span style="color: rgb(17, 17, 17); font-family: &quot;Open Sans&quot;; font-size: 13px;">В воскресенье, 6 января, в Союзе писателей ДНР состоялась презентация двух поэтических сборников. Одним из организаторов мероприятия выступил депутат Народного Совета ДНР <strong>Федор Березин.</strong></span></p>
+
+                        <div class="item_meta clearfix">
+                            <span class="meta_date">2019-01-09</span>
+                        </div>
+                        <h6>
+                            <span><i class="fa fa-tags"></i></span>
+                                                            <a href="tags.116.php">#Андрей Соболев</a>.
+                                                            <a href="tags.15.php">#Владимир Скобцов</a>.
+                                                            <a href="tags.56.php">#Крым</a>.
+                                                            <a href="tags.12.php">#Презентация</a>.
+                                                            <a href="tags.45.php">#Фёдор Березин</a>.
+                                                    </h6>
+                    </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+                        <div class="thumb_icon">
+                            <a href="media.81.php" jQuery><i class="fa fa-copy"></i></a>
+                        </div>
+                        <div class="thumb_hover">
+                            <a href="media.81.php"><img src="img/news_media/81.jpg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="item_content">
+                        <h4><a href="media.81.php">Программа "Точка зрения": Геннадий Горелик. Член Союза писателей ДНР. (видео)</a></h4>
+                        <p>
+	Геннадий Горелик, член Союза писателей ДНР, в программе &quot;Точка зрения. 01.01.19&quot;.</p>
+<p>
+	Интервью. Размышления. Песни</p>
+
+                        <div class="item_meta clearfix">
+                            <span class="meta_date">2019-01-02</span>
+                        </div>
+                        <h6>
+                            <span><i class="fa fa-tags"></i></span>
+                                                            <a href="tags.51.php">#Геннадий Горелик</a>.
+                                                            <a href="tags.35.php">#интервью</a>.
+                                                            <a href="tags.111.php">#Точка зрения</a>.
+                                                    </h6>
+                    </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+                        <div class="thumb_icon">
+                            <a href="media.89.php" jQuery><i class="fa fa-copy"></i></a>
+                        </div>
+                        <div class="thumb_hover">
+                            <a href="media.89.php"><img src="img/news_media/89.jpg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="item_content">
+                        <h4><a href="media.89.php">Владислав Русанов. Депутат Народного Совета ДНР. Точка зрения. 06.12.18 (видео)</a></h4>
+                        <p>
+	<strong>Владислав Русанов&nbsp;</strong>&nbsp;-- Депутат Народного Совета ДНР в авторской программе&nbsp;<strong>Игоря Фарамазяна</strong> &quot;Точка зрения&quot;</p>
+
+                        <div class="item_meta clearfix">
+                            <span class="meta_date">2018-12-06</span>
+                        </div>
+                        <h6>
+                            <span><i class="fa fa-tags"></i></span>
+                                                            <a href="tags.14.php">#Владислав Русанов</a>.
+                                                            <a href="tags.112.php">#Игорь Фарамазян</a>.
+                                                            <a href="tags.35.php">#интервью</a>.
+                                                            <a href="tags.24.php">#мнение</a>.
+                                                            <a href="tags.111.php">#Точка зрения</a>.
+                                                    </h6>
+                    </div>
+	                                    
+	            </div>
+	        </div>
+        	        <div class="col col_12_of_12">
+	            <div class="layout_post_2 clearfix">
+	            
+	                <div class="item_thumb">
+                        <div class="thumb_icon">
+                            <a href="media.84.php" jQuery><i class="fa fa-copy"></i></a>
+                        </div>
+                        <div class="thumb_hover">
+                            <a href="media.84.php"><img src="img/news_media/84.jpg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="item_content">
+                        <h4><a href="media.84.php">Наталья Макеева: Мы не вернемся на Украину: предсказавший войну в Донбассе писатель-фантаст стал депутатом ДНР</a></h4>
+                        <p>
+	<span style="color: rgb(29, 33, 41); font-family: Helvetica, Arial, sans-serif; font-size: 14px;">Несколько дней назад встретилась в Донецке с главой Союза Писателей Донецкой народной республики Фёдором Березиным. Поговорили о многом. В один материал всё не уместилось. Так что - читайте первую часть, а продолжение - следует!</span></p>
+
+                        <div class="item_meta clearfix">
+                            <span class="meta_date">2018-11-17</span>
+                        </div>
+                        <h6>
+                            <span><i class="fa fa-tags"></i></span>
+                                                            <a href="tags.35.php">#интервью</a>.
+                                                            <a href="tags.114.php">#Наталья Макеева</a>.
+                                                            <a href="tags.115.php">#Федеральное агентство новостей (Riafan.ru)</a>.
+                                                            <a href="tags.45.php">#Фёдор Березин</a>.
+                                                    </h6>
+                    </div>
+	                                    
+	            </div>
+	        </div>
+            </div>
+
+
+                            
+                </div>
+                <!-- End Main content -->
+                        
+                <!-- Sidebar -->
+                <div class="col col_3_of_12">
+                        	    <!-- Widget Search widget -->
+	    <div class="widget">
+	        <div class="widget_title"><h3>ПОИСК ПО САЙТУ</h3></div>
+	        <div class="tb_widget_search">
+	            <form name="searchSidebar" method="get" action="search.php" onSubmit="return checkedFormSearchSidebar(this)">
+	                <input type="text" name="logosSidebar">
+	                <input type="submit" value="Искать">
+	            </form>
+	            <script language="javascript">
+	            
+	            function checkedFormSearchSidebar(form){
+	                var logos = $('input[name="logosSidebar"]').val();
+	                if(!logos){ alert('Введите запрос!'); $('input[name="logosSidebar"]').focus(); return false; };
+	                if(logos.length < 3){ alert('В запросе должно быть не менее трёх символов!'); $('input[name="logosSidebar"]').focus(); return false; };
+	                return true;
+	            };
+	            
+	            </script>
+	        </div>
+	    </div>
+	    <!-- End Widget Search widget -->
+    
+
+
+    		<!-- Widget Social widget -->
+		<div class="widget">
+		    <div class="widget_title"><h3>СОЦИАЛЬНЫЕ СЕТИ</h3></div>
+		    <div class="tb_widget_socialize clearfix">
+                <noindex>
+		        <a target="_blank" href="https://www.facebook.com/groups/1146283638715153/" class="icon facebook">
+		            <div class="symbol"><i class="fa fa-facebook"></i></div>
+		            <div class="text"><p>350</p><p>Facebook</p></div>
+		        </a>
+		        <!--
+		        <a href="#" class="icon google">
+		            <div class="symbol"><i class="fa fa-google-plus"></i></div>
+		            <div class="text"><p>17,045</p><p>Google+</p></div>
+		        </a>
+		        -->
+		        </noindex>
+		    </div>
+		</div>
+		<!-- End Widget Social widget -->
+	
+
+
+    	    <!-- Widget Poll -->
+	    <div class="widget">
+	        <div class="widget_title"><h3>ОПРОСЫ</h3></div>
+	        
+	            <form id="pollForm">
+	            
+	                <input name="ip" type="hidden" value="94.251.97.114">
+	                
+	                <div>
+	                
+	                    <h4></h4>
+	                                    
+	                    <div name="dataPoll" style="display:none;"></div>
+	                                    
+	                    <div name="golos" style="display:yes;">
+	                        <input name="id_poll" type="hidden" value="">
+	                        <input name="arrAnswer" type="hidden">
+	                        <table class="table_orange">
+	                        	                        </table>
+	                        <a style="width: 100%;" class="btn btn_green" href="#on" onclick="javascript:sb_checkedPoll('poll', , 0);">Голосовать</a>
+	                        <a style="width: 100%;" class="btn btn_grey" href="#on" onclick="javascript:sb_checkedPoll('abstain', , 0);">Воздержаться ()</a>
+	                    </div>
+	                                    
+	                    <div name="result" style="display:none;">
+	                        <ol>
+	                        	                        </ol>
+	                        Воздержалось: 
+	                    </div>
+	                                    
+	                    <p>Всего голосов: <span name="voices_all">0</span></p>
+	                                    
+	                    <script language="javascript">
+	                    
+	                    function sb_checkedPoll(action, id, voices_all){
+	                                    
+		                    // var
+							var auditory;
+							var ip = $('input[name="ip"]').val();
+							var id_user = $('input[name="id_user"]').val();
+							var rele_auditory = $('input[name="rele_auditory'+id+'"]').val();
+							var answer = $('input[name="answer'+id+'"]');
+							var arrAnswer = 0;
+							var voices_add = 0;
+		                                        
+		                    // checked answer
+		                    if(action=='poll'){
+		                        for (i=0; i<answer.length; i++) { if(answer[i].checked){ voices_add=voices_add+1; arrAnswer=arrAnswer+','+answer[i].value; }; };
+		                        $('input[name="arrAnswer'+id+'"]').value = arrAnswer;
+		                        if(arrAnswer == 0){ alert("Выберите вариант ответа!"); return false; };
+		                    };
+		                                        
+		                    // ajax post
+		                    $.ajax({
+								type: "POST",
+								url: "/action/ajax.poll.php",
+								data: { action:action, id:id, auditory:ip, arrAnswer:arrAnswer },
+								cache: false,
+								success: function(responce){
+									$('div[name="golos'+id+'"]').hide(500);
+									$('div[name="dataPoll'+id+'"]').html(responce).show(500);
+									if(action=='poll'){ $('span[name="voices_all'+id+'"]').text(voices_add+voices_all); };
+	                            }
+		                    });
+		                                        
+		                    // return
+		                    return true;
+	                                        
+	                    };
+	                       
+	                    </script>
+	                                    
+	                </div>
+	                                
+	            </form>
+	        
+	    </div>
+	    <!-- End Widget Poll -->
+    
+
+
+    
+
+
+    
+
+
+    <!-- if $sb_box_rele_adv=="show" -->
+	    <div class="widget">
+	        <div class="widget_title"><h3>ADV</h3></div>
+	        <script type="text/javascript">
+<!--
+var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://www.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+//-->
+</script> <a href="" target="_blank"></a> 
+	    </div>
+    <!-- /if -->
+                </div>
+                <!-- End Sidebar -->
+                        
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+	
+	<!-- Footer -->
+	<footer id="footer">
+
+    <div class="container">
+    
+        <div class="row">
+        
+            <div class="col col_3_of_12">
+            
+                <div class="widget">
+                    <div class="widget_title"><h3>ПРАВА</h3></div>
+                    <p>Copyright © 2014 - 2022 <a href="/"><font color="#ffffff">СП ДНР</font></a>.<br>Все права защищены.</p>
+                    <p>Использование любых материалов разрешается только при условии прямой ссылки на <a href="/"><font color="#ffffff">СП ДНР</font></a>.</p>
+                    <p>Администрация не несет ответственности за достоверность информации, опубликованной в рекламных объявлениях.</p>
+                </div>
+                
+            </div>
+                    
+            <div class="col col_3_of_12">
+            
+                <div class="widget">
+                    <div class="widget_title"><h3>СОЦИАЛЬНЫЕ СЕТИ</h3></div>
+                    <div class="tb_widget_socialize clearfix">
+                        <noindex>
+                        <a target="_blank" href="https://www.facebook.com/groups/1146283638715153/" target="_blank" class="icon facebook">
+                            <div class="symbol"><i class="fa fa-facebook"></i></div>
+                            <div class="text"><p>350</p><p>Facebook</p></div>
+                        </a>
+                        <!--
+                        <a href="#" target="_blank"  class="icon google">
+                            <div class="symbol"><i class="fa fa-google-plus"></i></div>
+                            <div class="text"><p>17,045</p><p>Google+</p></div>
+                        </a>
+                        -->
+                        </noindex>
+                    </div>
+                </div>
+                
+                <div class="widget">
+                    <div class="widget_title"><h3>КОНТАКТЫ</h3></div>
+                    <p>Адрес: бул. Пушкина, 30а, Донецк, ДНР, 283050</p>
+                    <p>Звонки в Союз писателей ДНР:<br>+38 066 716 35 04</p>
+                    <p>Письма в Союз писателей ДНР:<br><span style="background-color : #ffffff;">&nbsp;&nbsp;<script type="text/javascript" language="javascript">
+<!--
+{document.write(String.fromCharCode(60,97,32,104,114,101,102,61,34,109,97,105,108,116,111,58,105,110,102,111,64,115,112,45,100,110,114,46,111,114,103,34,32,62,105,110,102,111,64,115,112,45,100,110,114,46,111,114,103,60,47,97,62))}
+//-->
+</script>
+&nbsp;&nbsp;</span></p>
+                    <p>По вопросам размещения рекламы:<br>+38 071 394 84 10</p>
+                </div>
+                
+            </div>
+                    
+            <div class="col col_3_of_12">
+                <div class="widget">
+                    <div class="widget_title"><h3>ОТЧЁТЫ</h3></div>
+                    <div class="tb_widget_categories">
+                        <ul>
+																																																																						                                                                                </ul>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="col col_3_of_12">
+            
+                <div class="widget">
+                    <div class="widget_title"><h3>СТАТИСТИКА</h3></div>
+                    <div class="tb_widget_categories">
+                        <noindex>
+                            <p><a href="http://www.yandex.ru/cy?base=0&host=sp-dnr.org"><img src="http://www.yandex.ru/cycounter?sp-dnr.org" width=88 height=31 alt="Яндекс цитирования" border=0></a>
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'></a>")
+//--></script><!--/LiveInternet--></p>
+                        </noindex>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</footer>	<!-- End Footer -->
+	        
+	<!-- Copyright -->
+	<div id="copyright" role="contentinfo">
+	<div class="container">
+		<p>
+			&copy; 2015 All rights reserved. Back-end by <a href="http://programilla.com/" target="_blank">Programilla</a> /
+			&copy; 2015 TrendyBlog Template. All rights reserved. <a href="http://themeforest.net/user/different-themes/portfolio?ref=CodeoStudio" target="_blank">CodeoStudio</a>
+		</p>
+	</div>
+</div>	<!-- End Copyright -->
+
+</div>
+<!-- End Wrapper -->
+        
+<!-- Scripts -->
+<script type="text/javascript" src="js/jqueryscript.min.js"></script>
+<script type="text/javascript" src="js/jqueryuiscript.min.js"></script>
+<script type="text/javascript" src="js/easing.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.min.js"></script>
+<script type="text/javascript" src="js/magnific.min.js"></script>
+<script type="text/javascript" src="js/bxslider.min.js"></script>
+<script type="text/javascript" src="js/fitvids.min.js"></script>
+<script type="text/javascript" src="js/viewportchecker.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<!-- End Scripts -->
+        
+</body>
+</html>

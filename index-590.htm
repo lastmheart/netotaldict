@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<link rel="stylesheet" href="/js/bvi.min.css" type="text/css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf-frontend">
+    <meta name="csrf-token" content="aElvZ1M4RDkiMBgiMH4uQwB4NSplbS16WSVeU2ZoCWBcexcuJA0HUw==">
+    <title>Официальный сайт администрации городского округа Электросталь Московской области</title>
+    <link rel="icon" type="image/png" href="/fav_icon.png" />
+    <meta name="description" content="Официальный сайт администрации городского округа Электросталь Московской области">
+<meta name="keywords" content="Официальный сайт администрации городского округа Электросталь Московской области">
+<link href="/production/css/main.min.css" rel="stylesheet">
+<script src="//www.google.com/recaptcha/api.js?hl=ru" async defer></script>  <!--    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>       <!--  глаз -->
+  <!--<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>       <!--  глаз -->
+	<!-- ВИДЖЕТ -->
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+	<script type="text/javascript">
+  		VK.init({apiId: 7484005, onlyWidgets: true});
+	</script>
+<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/js.cookie.js"></script>
+<script src="/js/bvi-init.js"></script>
+<script src="/js/bvi.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">var recaptchaCallback = function(response){jQuery('#recaptcha-reCaptcha').val(response);};
+var recaptchaExpiredCallback = function(){jQuery('#recaptcha-reCaptcha').val('');};</script>
+
+	<!--div class="top-warning">
+		Сайт в разработке. По вопросам работы сайта: pressa@electrostal.ru
+	</div-->
+	
+
+
+
+
+	<!-- ШАПКА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ -->
+		<header class="mobile_header">	
+			<div class="mobile_header-button" id="mobile_header-sidebar_button">
+				<svg class="icon">
+				  <use xlink:href="#icon-gamburger" />
+				</svg>
+			</div>
+			<div class="mobile_header-logo">
+				<img src="/img/logo.svg" alt="Logotype">
+			</div>
+		</header>
+	<!-- ШАПКА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ КОНЕЦ -->
+
+	<!-- САЙДБАР МЕНЮ -->
+		<aside class="sidebar_menu" id="sidebar_menu">
+			<a href="/" class="sidebar_menu-logo_block">
+				<img src="/img/logo.svg" alt="Logotype">
+			</a>
+			<nav class="sidebar_menu-nav">
+				<a href="/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-building" />
+						</svg>								
+					</div>
+					<div class="sidebar_menu-nav_item-name">Главная</div>
+				</a>
+				<a href="/glava-goroda/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-major" />
+						</svg>		
+					</div>
+					<div class="sidebar_menu-nav_item-name">Глава города</div>
+				</a>
+				<a href="/administratsiya/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-administration" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Администрация</div>
+				</a>
+				<a href="/sovet-deputatov/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-sovet" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Совет депутатов</div>
+				</a>
+				<a href="/obshchestvennaya-palata/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-obshestv" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Общественная палата</div>
+				</a>
+				<a href="/promyshlennost/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-factory" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Промышленность</div>
+				</a>
+				<a href="/malyi-biznes/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-buisiness" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Малый бизнес</div>
+				</a>
+				<a href="/uchrezhdeniya/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-u4rejdeniya" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Учреждения</div>
+				</a>
+				<a href="/organizatsii/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-organizations" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Организации</div>
+				</a>
+				<a href="/nash-gorod/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-town" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Наш город</div>
+				</a>
+            
+				<a href="/gosudarstvenno-chastnoye-partnerstvo/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-obshestv" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Государственно-частное партнёрство</div>
+                </a>
+            	<a href="/peremeny/peremeny-v-elektrostali/" class="sidebar_menu-nav_item">
+					<div class="sidebar_menu-nav_item-icon">
+						<svg class="icon">
+						  <use xlink:href="#icon-building" />
+						</svg>					
+					</div>
+					<div class="sidebar_menu-nav_item-name">Перемены в Электростали</div>
+                </a>
+<!-- ВИДЖЕТ                 <button id="js-show-iframe-wrapper">Оставьте свое обращение</button>-->
+			</nav>
+			<div class="search_version_menu">
+				<div class="blind_version search_version_menu_item">
+                
+                <a href="#" class="bvi-open">
+      <!--             <a href="#" onclick="uvcl();">   -->
+					<svg class="icon">
+					  <use xlink:href="#icon-eye" />
+					</svg>
+					</a>    
+				</div>
+
+				<a href="/search/" class="search_site search_version_menu_item">
+					<svg class="icon">
+					  <use xlink:href="#icon-search" />
+					</svg>				
+				</a>
+			</div>
+		</aside>
+	<!-- САЙДБАР МЕНЮ КОНЕЦ -->
+
+	<div class="wrap" id="wrap" style="padding-top: 0px;">
+
+		<!-- ДИНАМИЧЕСКИЙ КОНТЕНТ -->
+		<div class="content">	
+		    <!-- ПЕРВЫЙ ИНФОРМАЦИОННЫЙ БЛОК -->
+	<div class="first_content_block">
+		<div class="first_content_block_holder">
+			<div class="first_content_block_holder_row_big">
+				<div class="first_content_block_holder_row_big_inner">
+					<div class="main_slider_block" id="mainSlider">
+																			<a class="slide" href="/novosti/novosti-goroda/o-perekrytii-dvizheniya-na-den-pobedy/"  style="background-image: url(/image/?item=Material14376&dirtyAlias=df32028550-1_1400x.png);"></a>
+																			<a class="slide" href="/novosti/novosti-goroda/prodolzhayetsya-golosovaniye-za-ob-yekty-blagoustroystva/"  style="background-image: url(/image/?item=Material14312&dirtyAlias=41a8f9c42a-1_1400x.png);"></a>
+																			<a class="slide" href="/novosti/novosti-goroda/s-8-marta5/"  style="background-image: url(/image/?item=Material13935&dirtyAlias=addb569184-1_1400x.png);"></a>
+																			<a class="slide" href="/novosti/novosti-goroda/s-dnem-zashchitnika-otechestva6/"  style="background-image: url(/image/?item=Material13864&dirtyAlias=7f1857c64a-1_1400x.jpg);"></a>
+											</div>
+					<div class="sub_main_slider_block">
+                    
+					<div class="official_information_slider_holder">
+                      <a href="/novosti/novosti-goroda/" >
+					<div style="color: red" class="sub_main_slider_block_title">НОВОСТИ ГОРОДА</div>
+                    </a>
+                    </div>
+                    
+						<div class="subMainSlider" id="subMainSlider">
+															<a href="/novosti/novosti-goroda/o-perekrytii-dvizheniya-na-den-pobedy/" class="slide">
+									<div class="subMainSlideDate">25-04-2022</div>
+									<div class="subMainSlideTitle">О перекрытии движения на День Победы</div>
+								</a>
+															<a href="/novosti/novosti-goroda/prodolzhayetsya-golosovaniye-za-ob-yekty-blagoustroystva/" class="slide">
+									<div class="subMainSlideDate">19-04-2022</div>
+									<div class="subMainSlideTitle">Продолжается голосование за объекты благоустройства</div>
+								</a>
+															<a href="/novosti/novosti-goroda/s-8-marta5/" class="slide">
+									<div class="subMainSlideDate">08-03-2022</div>
+									<div class="subMainSlideTitle">С 8 Марта!</div>
+								</a>
+															<a href="/novosti/novosti-goroda/s-dnem-zashchitnika-otechestva6/" class="slide">
+									<div class="subMainSlideDate">23-02-2022</div>
+									<div class="subMainSlideTitle">С Днём защитника Отечества!</div>
+								</a>
+													</div>
+					</div>
+				</div>
+			</div>
+        
+
+		</div>
+	</div>
+<!-- ПЕРВЫЙ ИНФОРМАЦИОННЫЙ КОНЕЦ -->
+
+<!-- ГОСУСЛУГИ начало -->
+
+<div class="info_block news_events_block">
+ <div class="container-fluid">
+  <div class="grid">
+
+
+<div class="grid__col-md-6">
+
+  <div class="grid">
+   <div class="grid__col-md-12">
+
+<script src='https://pos.gosuslugi.ru/bin/script.min.js'></script> 
+<style>
+#js-show-iframe-wrapper{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-width:293px;max-width:100%;background:linear-gradient(138.4deg,#38bafe 26.49%,#2d73bc 79.45%);color:#fff;cursor:pointer}#js-show-iframe-wrapper .pos-banner-fluid *{box-sizing:border-box}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{display:block;width:240px;min-height:56px;font-size:18px;line-height:24px;cursor:pointer;background:#0d4cd3;color:#fff;border:none;border-radius:8px;outline:0}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#1d5deb}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus{background:#2a63ad}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active{background:#2a63ad}@-webkit-keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@font-face{font-family:LatoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWeb;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.ttf) format("truetype");font-style:normal;font-weight:400}
+</style>
+
+<style>
+#js-show-iframe-wrapper .bf-2{position:relative;display:grid;grid-template-columns:var(--pos-banner-fluid-2__grid-template-columns);grid-template-rows:var(--pos-banner-fluid-2__grid-template-rows);width:100%;max-width:1060px;font-family:LatoWeb,sans-serif;box-sizing:border-box}#js-show-iframe-wrapper .bf-2__decor{grid-column:var(--pos-banner-fluid-2__decor-grid-column);grid-row:var(--pos-banner-fluid-2__decor-grid-row);padding:var(--pos-banner-fluid-2__decor-padding);background:var(--pos-banner-fluid-2__bg-url) var(--pos-banner-fluid-2__bg-position) no-repeat;background-size:var(--pos-banner-fluid-2__bg-size)}#js-show-iframe-wrapper .bf-2__logo-wrap{position:absolute;top:var(--pos-banner-fluid-2__logo-wrap-top);bottom:var(--pos-banner-fluid-2__logo-wrap-bottom);right:0;display:flex;flex-direction:column;align-items:flex-end;padding:var(--pos-banner-fluid-2__logo-wrap-padding);background:#2d73bc;border-radius:var(--pos-banner-fluid-2__logo-wrap-border-radius)}#js-show-iframe-wrapper .bf-2__logo{width:128px}#js-show-iframe-wrapper .bf-2__slogan{font-family:LatoWebBold,sans-serif;font-size:var(--pos-banner-fluid-2__slogan-font-size);line-height:var(--pos-banner-fluid-2__slogan-line-height)}#js-show-iframe-wrapper .bf-2__content{padding:var(--pos-banner-fluid-2__content-padding)}#js-show-iframe-wrapper .bf-2__description{display:flex;flex-direction:column;margin-bottom:24px}#js-show-iframe-wrapper .bf-2__text{margin-bottom:12px;font-size:24px;line-height:32px;font-family:LatoWebBold,sans-serif}#js-show-iframe-wrapper .bf-2__text_small{margin-bottom:0;font-size:16px;line-height:24px;font-family:LatoWeb,sans-serif}#js-show-iframe-wrapper .bf-2__btn-wrap{display:flex;align-items:center;justify-content:center}
+</style>
+<div id='js-show-iframe-wrapper'>
+  <div class='pos-banner-fluid bf-2'>
+
+    <div class='bf-2__decor'>
+      <div class='bf-2__logo-wrap'>
+        <img
+          class='bf-2__logo'
+          src='https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo.svg'
+          alt='Госуслуги'
+        />
+        <div class='bf-2__slogan'>Решаем вместе</div >
+      </div >
+    </div >
+    <div class='bf-2__content'>
+
+      <div class='bf-2__description'>
+          <span class='bf-2__text'>
+            Не убран мусор, яма на дороге, не горит фонарь?
+          </span >
+        <span class='bf-2__text bf-2__text_small'>
+            Столкнулись с проблемой&nbsp;— сообщите о ней!
+          </span >
+      </div >
+
+      <div class='bf-2__btn-wrap'>
+        <!-- pos-banner-btn_2 не удалять; другие классы не добавлять -->
+        <button
+          class='pos-banner-btn_2'
+          type='button'
+        >Сообщить о проблеме
+        </button >
+      </div >
+
+    </div >
+
+</div >
+<script>
+
+(function(){
+"use strict";function ownKeys(e,t){var o=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);if(t)n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable});o.push.apply(o,n)}return o}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var o=null!=arguments[t]?arguments[t]:{};if(t%2)ownKeys(Object(o),true).forEach(function(t){_defineProperty(e,t,o[t])});else if(Object.getOwnPropertyDescriptors)Object.defineProperties(e,Object.getOwnPropertyDescriptors(o));else ownKeys(Object(o)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(o,t))})}return e}function _defineProperty(e,t,o){if(t in e)Object.defineProperty(e,t,{value:o,enumerable:true,configurable:true,writable:true});else e[t]=o;return e}var POS_PREFIX_2="--pos-banner-fluid-2__",posOptionsInitial={"grid-template-columns":"100%","grid-template-rows":"310px auto","decor-grid-column":"initial","decor-grid-row":"initial","decor-padding":"30px 30px 0 30px","bg-url":"url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')","bg-position":"calc(10% + 64px) calc(100% - 20px)","bg-size":"cover","content-padding":"0 30px 30px 30px","slogan-font-size":"20px","slogan-line-height":"32px","logo-wrap-padding":"20px 30px 30px 40px","logo-wrap-top":"0","logo-wrap-bottom":"initial","logo-wrap-border-radius":"0 0 0 80px"},setStyles=function(e,t){Object.keys(e).forEach(function(o){t.style.setProperty(POS_PREFIX_2+o,e[o])})},removeStyles=function(e,t){Object.keys(e).forEach(function(e){t.style.removeProperty(POS_PREFIX_2+e)})};function changePosBannerOnResize(){var e=document.documentElement,t=_objectSpread({},posOptionsInitial),o=document.getElementById("js-show-iframe-wrapper"),n=o?o.offsetWidth:document.body.offsetWidth;if(n>405)t["slogan-font-size"]="24px",t["logo-wrap-padding"]="30px 50px 30px 70px";if(n>500)t["grid-template-columns"]="min-content 1fr",t["grid-template-rows"]="100%",t["decor-grid-column"]="2",t["decor-grid-row"]="1",t["decor-padding"]="30px 30px 30px 0",t["content-padding"]="30px",t["bg-position"]="0% calc(100% - 70px)",t["logo-wrap-padding"]="30px 30px 24px 40px",t["logo-wrap-top"]="initial",t["logo-wrap-bottom"]="0",t["logo-wrap-border-radius"]="80px 0 0 0";if(n>585)t["bg-position"]="0% calc(100% - 6px)";if(n>800)t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2.svg')",t["bg-position"]="0% center";if(n>1020)t["slogan-font-size"]="32px",t["line-height"]="40px",t["logo-wrap-padding"]="30px 30px 24px 50px";setStyles(t,e)}changePosBannerOnResize(),window.addEventListener("resize",changePosBannerOnResize),window.onunload=function(){var e=document.documentElement;window.removeEventListener("resize",changePosBannerOnResize),removeStyles(posOptionsInitial,e)};
+})()
+</script>
+ <script>Widget("https://pos.gosuslugi.ru/form", 482)</script>
+
+  </div >
+ </div >
+</div >
+    
+      <div class="grid__col-md-12">
+  <div class="question_block_title" style="color:black; font-size: 1rem">Сообщение. Пилотный проект</div>
+  <div class="official_information_slider_controls_holder" style="color:black; font-size: 0.85rem; width:98%; text-align:justify">Данная форма не предназначена для приема обращений граждан в порядке Федерального закона от 02.05.2006 № 59-ФЗ «О порядке рассмотрения обращений граждан Российской Федерации» и предоставляет возможность направить электронное сообщение в рамках реализации пилотного проекта по внедрению «Единого окна цифровой обратной связи». Ответ на сообщение будет направлен не позднее 8 рабочих дней после дня его регистрации, а по отдельным тематикам – в укороченные сроки.</div>
+     </div >
+  </div >
+
+  
+  
+  <script>
+    let root = document.documentElement;
+    let banner = document.getElementById('pos-banner');
+    function displayWindowSize(){
+      let width = banner.offsetWidth;
+      if ( width <= 220 ) {
+        root.style.setProperty('--pos-banner-padding', "10px");
+        root.style.setProperty('--pos-banner-title-size', "22px");
+        root.style.setProperty('--pos-banner-title-align', "left");
+        root.style.setProperty('--pos-banner-bg-size', "180%");
+        root.style.setProperty('--pos-banner-bg-pos-x', "center");
+      } if ( 220 < width && width <= 310 ) {
+        root.style.setProperty('--pos-banner-padding', "15px");
+        root.style.setProperty('--pos-banner-title-size', "22px");
+        root.style.setProperty('--pos-banner-title-align', "left");
+        root.style.setProperty('--pos-banner-bg-size', "110%");
+        root.style.setProperty('--pos-banner-bg-pos-x', "left");
+      } if ( width > 310 && width < 360 ) {
+        root.style.setProperty('--pos-banner-padding', "15px");
+        root.style.setProperty('--pos-banner-title-size', "24px");
+        root.style.setProperty('--pos-banner-title-align', "center");
+        root.style.setProperty('--pos-banner-bg-size', "70%");
+        root.style.setProperty('--pos-banner-bg-pos-x', "left");
+      }
+    }
+    window.addEventListener("resize", displayWindowSize);
+    displayWindowSize();
+  </script>
+    
+   <div class="grid__col-md-6">
+   <iframe class="news_events_item_inner" width="100%" height="99%" frameborder="0" id="widgetPosId" src="https://pos.gosuslugi.ru/og/widgets/view?type=[10,20,30,40,50]&fontFamily=Arial&maxPage=5&maxElement=5&updateFrequency=2000&level=30&municipality_id=46790000&logoColor=2c8ecc&backgroundColor=ffffff&mainUrlColor=2c8ecc&selectColor=2c8ecc&hoverSelectColor=116ca6&itemColor=354052&hoverItemColor=2c8ecc&backgroundItemColor=f9f9fa&paginationColor=354052&backgroundPaginationColor=eaf4fa&hoverPaginationColor=2c8ecc&deviderColor=e3e8ee&logoFs=16&mainUrlFs=16&selectFs=16&itemFs=14&paginationFs=10"></iframe>
+   </div>
+
+  </div >  <!--   grid  -->
+ </div >  
+</div >
+
+<!-- Госуслуги КОНЕЦ -->
+        
+        
+			<div class="first_content_block_holder_row">
+				<div class="first_content_block_bottom">
+					<div class="grid">
+						<div class="grid__col-md-6 first_content_block_bottom_item official_information_block">
+							<div class="official_information_block_inner">
+								<div class="official_information_slider_holder">
+                                  <a href="/novosti/ofitsial-naya-informatsiya/" >
+		             		  	  <div style="color: white; font-size:1.5em" class="sub_main_slider_block_title">Официальная информация</div>
+                                  </a>
+									<div class="official_information_slider" id="officialInformationSlider">
+																				<a href="/novosti/ofitsial-naya-informatsiya/informatsiya-o-beskhozyaynykh-ob-yektakh6/" class="slide">
+											Информация о бесхозяйных объектах										</a>
+																				<a href="/novosti/ofitsial-naya-informatsiya/noginskiy-territorial-nyy-otdel-upravleniya-rospotrebnadzora-po-moskovskoy-oblasti-informiruyet4/" class="slide">
+											Ногинский территориальный отдел Управления Роспотребнадзора по Московской области информирует										</a>
+																				<a href="/novosti/ofitsial-naya-informatsiya/v-gibdd-rasskazali-o-pravilakh-organizovannoy-perevozki-grupp-detey-avtobusami/" class="slide">
+											В ГИБДД рассказали о правилах организованной перевозки групп детей автобусами 										</a>
+																				<a href="/novosti/ofitsial-naya-informatsiya/gosavtoinspektsiya-informiruyet11/" class="slide">
+											Госавтоинспекция информирует!										</a>
+																				<a href="/novosti/ofitsial-naya-informatsiya/gosavtoinspektsiya-soobshchayet28/" class="slide">
+											Госавтоинспекция сообщает!										</a>
+																				<a href="/novosti/ofitsial-naya-informatsiya/administratsiya-gorodskogo-okruga-elektrostal-moskovskoy-oblasti-ob-yavlyayet-o-nachale-provedeniya-otbora-pretendentov-na-predostavleniye-subsidii-iz-byudzheta-gorodskogo-okruga-elektrostal-moskovskoy-oblasti/" class="slide">
+											Администрация городского округа Электросталь Московской области объявляет о начале проведения отбора претендентов на предоставление субсидии из бюджета городского округа Электросталь Московской области										</a>
+																				<a href="/novosti/ofitsial-naya-informatsiya/nagrazhdeniye-pochetnym-znakom-imeni-n-a-vtorova/" class="slide">
+											Награждение почётным знаком имени Н.А. Второва										</a>
+																				<a href="/novosti/ofitsial-naya-informatsiya/za-zaslugi-pered-gorodom-i-za-trud-na-blago-goroda2/" class="slide">
+											За заслуги перед городом и за труд на благо города										</a>
+																			</div>
+								</div>
+								<div class="official_information_slider_controls_holder hidden-xs hidden-sm">
+									<div class="official_information_slider_arrow official_information_slider_prev">
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+										<style type="text/css">
+											.st0{fill:#fff;}
+										</style>
+										<g>
+											<g>
+												<path class="st0" d="M13.9,22.5c-0.3,0-0.6-0.1-0.8-0.4c-0.4-0.4-0.3-1.1,0.1-1.4l5.6-4.7l-5.6-4.7c-0.4-0.4-0.5-1-0.1-1.4
+													s1-0.5,1.4-0.1l7.4,6.3l-7.4,6.3C14.4,22.4,14.1,22.5,13.9,22.5z"/>
+											</g>
+											<g>
+												<path class="st0" d="M16,32C7.2,32,0,24.8,0,16S7.2,0,16,0s16,7.2,16,16S24.8,32,16,32z M16,2C8.3,2,2,8.3,2,16s6.3,14,14,14
+													s14-6.3,14-14S23.7,2,16,2z"/>
+											</g>
+										</g>
+										</svg>												
+									</div>
+									<div class="official_information_slider_arrow official_information_slider_next">
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+										<style type="text/css">
+											.st0{fill:#fff;}
+										</style>
+										<g>
+											<g>
+												<path class="st0" d="M13.9,22.5c-0.3,0-0.6-0.1-0.8-0.4c-0.4-0.4-0.3-1.1,0.1-1.4l5.6-4.7l-5.6-4.7c-0.4-0.4-0.5-1-0.1-1.4
+													s1-0.5,1.4-0.1l7.4,6.3l-7.4,6.3C14.4,22.4,14.1,22.5,13.9,22.5z"/>
+											</g>
+											<g>
+												<path class="st0" d="M16,32C7.2,32,0,24.8,0,16S7.2,0,16,0s16,7.2,16,16S24.8,32,16,32z M16,2C8.3,2,2,8.3,2,16s6.3,14,14,14
+													s14-6.3,14-14S23.7,2,16,2z"/>
+											</g>
+										</g>
+										</svg>												
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid__col-md-6 first_content_block_bottom_item feedback_block">
+							<div class="feedback_block_inner">
+								<p>
+									Личная почта Губернатора А. Воробьева <br>
+									<a class="feedback_block_mail" href="mailto:andreyvorobiev@mosreg.ru">andreyvorobiev@mosreg.ru</a> <br>
+									Единый номер колл-центра Губернатора <br>
+									<a class="feedback_block_phone" href="tel:88005505030">8-800-550-50-30</a>
+								</p>
+								<img src="/img/gerbMO.png" alt="Герб Московской области">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- НОВОСТИ, СОБЫТИЯ, ДОКУМЕНТЫ -->
+	<div class="news_events_block full_md_block">
+	<div class="container-fluid">
+
+<div class="grid">
+
+
+
+<div class="question_block grid__col-md-6 news_events_item">
+
+<div class="news_events_item_inner">
+
+<div class="question_block_title">Задать вопрос главе города</div>
+
+<div class="admin_info_socials">
+<!--a href="https://vk.com/vladimir.pekarev"><svg><use xlink:href="#video" /></svg></a>
+<a href="https://www.facebook.com/vladimir.pekarev/"><svg><use xlink:href="#facebook-logo" /></svg></a>
+<a href="https://ok.ru/profile/571254378108"><svg><use xlink:href="#odnoklassniki-logo" /></svg></a>
+<a href="https://www.instagram.com/vladimir.pekarev/"><svg><use xlink:href="#instagram-symbol" /></svg></a-->																								
+</div>
+
+<div class="question_block_info">Для прямой связи c главой города воспользуйтесь формой обратной связи "Задать вопрос" или напишите на электронную почту <a href="javascript:void(0)">elstal@mosreg.ru</a></div>
+<div class="btn btn-lg question_block_btn questionAction">Задать вопрос</div>
+<img src="/img/Glava_nn.png" class="glavaPhoto hidden-xxs hidden-xs">
+
+
+
+</div>
+</div>
+
+
+
+<div class="grid__col-md-6 news_events_item fix videoBlock" id="videoSlider" >
+
+</div>
+</div>
+
+<!-- СЛАЙДЕР 1 -->
+
+
+			<div class="newsSlider" id="newsSlider">
+
+				
+				
+				
+											<div class="slide">
+							<div class="grid">
+					
+						
+						
+							<a href="/novosti/novosti-goroda/vnimaniyu-uchastnikov-dorozhnogo-dvizheniya2/" class="grid__col-xs-6 grid__col-md-6 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14403&dirtyAlias=8a00c83b4b-1_800x600.png)">
+									<div class="news_events_item_title">
+										​Вниманию участников дорожного движения!									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/proyekt-gubernatora-aktivnoye-dolgoletiye-v-podmoskov-ye-prodolzhayetsya/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14401&dirtyAlias=9b3ff6f42d-1_800x600.png)">
+									<div class="news_events_item_title">
+										Проект Губернатора "Активное долголетие в Подмосковье" продолжается									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/v-minuvshuyu-subbotu-v-elektrostali-proshla-ekoaktsiya-zelenaya-subbota/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14400&dirtyAlias=615f8a5437-1_800x600.jpg)">
+									<div class="news_events_item_title">
+										В минувшую субботу в Электростали прошла экоакция «Зеленая суббота»									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/elektrostal-tsy-ubrali-ot-musora-beregovuyu-liniyu-vodoyema-yubileynyy/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14398&dirtyAlias=2df03d1339-1_800x600.jpg)">
+									<div class="news_events_item_title">
+										Электростальцы убрали от мусора береговую линию водоема Юбилейный									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/etim-letom-zhiteley-zapadnogo-mikrorayona-zhdet-priyatnyy-syurpriz/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14399&dirtyAlias=8bcdb61798-1_800x600.png)">
+									<div class="news_events_item_title">
+										​Этим летом жителей Западного микрорайона ждет приятный сюрприз									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/vse-lyubiteli-tvorchestva-vladimira-vysotskogo-priglashayutsya-na-kvartirnik-moy-vysotskiy/" class="grid__col-xs-6 grid__col-md-6 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14397&dirtyAlias=3bb3c3d386-1_800x600.png)">
+									<div class="news_events_item_title">
+										Все любители творчества Владимира Высоцкого приглашаются на квартирник «Мой Высоцкий»									</div>
+								</div>
+							</a>
+
+						
+						
+												</div>
+						</div>
+																
+				
+											<div class="slide">
+							<div class="grid">
+					
+						
+						
+							<a href="/novosti/novosti-goroda/v-gorode-prodolzhayetsya-mesyachnik-blagoustroystva/" class="grid__col-xs-6 grid__col-md-6 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14396&dirtyAlias=1b018f3e7c-1_800x600.png)">
+									<div class="news_events_item_title">
+										​В городе продолжается месячник благоустройства									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/o-vrede-fastfuda/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14395&dirtyAlias=1cdd3c60f1-1_800x600.png)">
+									<div class="news_events_item_title">
+										О вреде фастфуда									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/vnimaniyu-uchastnikov-dorozhnogo-dvizheniya/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14393&dirtyAlias=25743cf2a0-1_800x600.png)">
+									<div class="news_events_item_title">
+										​Вниманию участников дорожного движения!									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/v-gorode-proshel-torzhestvennyy-sbor-v-pamyat-o-likvidatorakh-avarii-na-chernobyl-skoy-aes/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14389&dirtyAlias=cef64d7832-1_800x600.jpeg)">
+									<div class="news_events_item_title">
+										В городе прошел торжественный сбор в память о ликвидаторах аварии на Чернобыльской АЭС									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/zavershilsya-oblastnoy-konkurs-vospitatel-goda-podmoskov-ya-2022/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14388&dirtyAlias=2f317a4ab8-1_800x600.png)">
+									<div class="news_events_item_title">
+										Завершился областной конкурс «Воспитатель года Подмосковья 2022»									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/prodolzhayetsya-golosovaniye-za-ob-yekty-blagoustroystva8/" class="grid__col-xs-6 grid__col-md-6 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14387&dirtyAlias=677b394fe9-1_800x600.jpg)">
+									<div class="news_events_item_title">
+										​Продолжается голосование за объекты благоустройства									</div>
+								</div>
+							</a>
+
+						
+						
+												</div>
+						</div>
+																
+				
+											<div class="slide">
+							<div class="grid">
+					
+						
+						
+							<a href="/novosti/novosti-goroda/muzykal-no-literaturnyy-spektakl-vasiliy-terkin-proydet-v-elektrostali/" class="grid__col-xs-6 grid__col-md-6 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14386&dirtyAlias=9f6a9c55df-1_800x600.png)">
+									<div class="news_events_item_title">
+										Музыкально-литературный спектакль «Василий Теркин» пройдет в Электростали 									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/v-elektrostali-proydet-bessmertnyy-polk/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14385&dirtyAlias=79b166d483-1_800x600.png)">
+									<div class="news_events_item_title">
+										В Электростали пройдет «Бессмертный полк»									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/v-elektrostali-proydet-festival-nasha-paskha/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14384&dirtyAlias=9eed613238-1_800x600.png)">
+									<div class="news_events_item_title">
+										В Электростали пройдет фестиваль «Наша Пасха» 									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/v-elektrostali-prokhodit-aktsiya-zelenyy-obmen/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14379&dirtyAlias=29664d1851-1_800x600.jpg)">
+									<div class="news_events_item_title">
+										В Электростали проходит акция «Зеленый обмен»									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/uvazhayemyye-zhiteli-priglashayem-vas-vstupit-v-meditsinskiy-telegram-chat/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14378&dirtyAlias=e03833f034-1_800x600.png)">
+									<div class="news_events_item_title">
+										Уважаемые жители!  Приглашаем вас вступить в медицинский Telegram-чат									</div>
+								</div>
+							</a>
+
+						
+						
+										
+				
+					
+						
+						
+							<a href="/novosti/novosti-goroda/v-elektrostali-proshlo-pervenstvo-gorodskogo-okruga-po-legkoatleticheskomu-krossu/" class="grid__col-xs-6 grid__col-md-6 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14375&dirtyAlias=1b12986c7e-1_800x600.jpg)">
+									<div class="news_events_item_title">
+										В Электростали прошло первенство городского округа по легкоатлетическому кроссу									</div>
+								</div>
+							</a>
+
+						
+						
+												</div>
+						</div>
+																
+								
+				
+				
+				
+			</div>		
+            
+<!-- СЛАЙДЕР 2 -->    
+            
+            
+            <div class="newsSlider" id="newsSlider2">
+<div class="slide">
+<div class="grid">
+
+					
+
+						
+						
+							<a href="/novosti/novosti-goroda/v-podmoskov-ye-v-testovom-rezhime-zapushchena-platforma-sport-podmoskov-ya/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14402&dirtyAlias=444fe27c76-1_800x600.png)">
+									<div class="news_events_item_title">
+										​В Подмосковье в тестовом режиме запущена платформа «Спорт Подмосковья»									</div>
+								</div>
+							</a>
+
+						
+
+					
+					
+
+					
+
+						
+						
+							<a href="/novosti/novosti-goroda/upravleniye-rossel-khoznadzora-po-gorodu-moskva-moskovskoy-i-tul-skoy-oblastyam-napominayet-o-profilaktike-pozharoopasnykh-situatsiy-na-zemlyakh-sel-skokhozyaystvennogo-naznacheniya/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14392&dirtyAlias=9c90da7994-1_800x600.jpg)">
+									<div class="news_events_item_title">
+										Управление Россельхознадзора по городу Москва, Московской и Тульской областям напоминает о профилактике пожароопасных ситуаций на землях сельскохозяйственного назначения									</div>
+								</div>
+							</a>
+
+						
+
+					
+					
+
+					
+
+						
+						
+							<a href="/novosti/novosti-goroda/priglashayem-prinyat-uchastiye-v-4-m-mezhdunarodnom-festivale-narodno-khudozhestvennykh-promyslov-i-remesel-rukami-zhenshchiny/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14365&dirtyAlias=3f496d9db1-1_800x600.png)">
+									<div class="news_events_item_title">
+										Приглашаем принять участие в 4-м Международном Фестивале народно-художественных промыслов и ремесел «Руками женщины»									</div>
+								</div>
+							</a>
+
+						
+
+					
+					
+
+					
+
+						
+						
+							<a href="/novosti/novosti-goroda/yekaterina-semenova-vazhen-obmen-opytom-v-voprosakh-raboty-s-grazhdanami-dnr-lnr-ukrainy-pribyvshimi-v-rf-v-ekstrennom-poryadke/" class="grid__col-xs-6 grid__col-md-3 news_events_item">
+								<div class="news_events_item_inner" style="background-image: url(/image/?item=Material14348&dirtyAlias=63b7e2fc2d-1_800x600.png)">
+									<div class="news_events_item_title">
+										​Екатерина Семёнова: Важен обмен опытом в вопросах работы с гражданами ДНР, ЛНР, Украины, прибывшими в РФ в экстренном порядке									</div>
+								</div>
+							</a>
+
+						
+
+					
+					
+<div style="height: 0px auto; min-height: 0px; line-height: 0px; font-size: 0px; overflow: hidden; clear: both;"></div>
+</div>
+</div>
+</div>
+
+            
+            	
+            
+            
+
+            
+
+		</div>
+	</div>
+<!-- НОВОСТИ, СОБЫТИЯ, ДОКУМЕНТЫ КОНЕЦ -->
+
+
+<!-- ИНФОРМАЦИОННЫЙ БЛОК, БАННЕРЫ И ВИДЕО -->
+	<div class="info_block news_events_block">
+		
+		<div class="grid">
+			
+			<a href="https://www.gosuslugi.ru/census" class="question_block grid__col-md-6 news_events_item news_events_item_big fix" style="padding: 10px 5px 0px">
+<!--				<img src="/img/перепись.jpg" class="" style="max-width: 100%; height: 100%">   -->
+			</a>
+
+			<a href="/promyshlennost/invest-portal/" class="grid__col-xs-6 grid__col-md-3 news_events_item news_events_item_big fix">
+				<div class="news_events_item_inner" style="background-image: url('/img/inves.png');">
+					
+				</div>
+			</a>
+
+			<div class="grid__col-xs-6 grid__col-md-3 news_events_item news_events_item_big fix">
+				<div class="news_events_item_inner" style="background-image: url('/img/svetLine.png');">
+					
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+<!-- ИНФОРМАЦИОННЫЙ БЛОК, БАННЕРЫ И ВИДЕО КОНЕЦ -->
+
+<!-- НОВОСТИ ПОДМОСКОВЬЯ -->
+	<div class="sub_news_block">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="sub_news_block col-md-12 sub_news_block_title">
+					Новости подмосковья
+				</div>
+				<div class="sub_news_block_slider col-md-12" id="subNewsBlock">
+					<div class="slide">
+						1
+					</div>
+					<div class="slide">
+						2
+					</div>
+					<div class="slide">
+						3
+					</div>
+					<div class="slide">
+						4
+					</div>
+					<div class="slide">
+						5
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- НОВОСТИ ПОДМОСКОВЬЯ КОНЕЦ -->
+
+<!-- БЛОК ПОЛЕЗНОЙ ИНФОРМАЦИИ -->
+	<div class="useful_block">
+
+		<div class="grid">
+			<div class="useful_block_holder">
+				<div class="grid__col-md-3 useful_block_item">
+					<div class="useful_block_item_inner">
+						<div class="def_col_title">
+							Актуально
+						</div>
+							<div class="col_links_holder">
+							<a href="/administratsiya/ofitsial-nye-dokumenty/telefony-ekstrennyh-sluzhb-goroda/">Телефоны экстренных служб города</a>
+								<a href="/administratsiya/ofitsial-nye-dokumenty/byudzhet-dlya-grazhdan/">Бюджет для граждан</a>
+								<a href="/administratsiya/ofitsial-nye-dokumenty/perechen-munitsipal-nogo-imushchestva-dlya-predostavleniya-v-arendu-sub-ektam-malogo-i-srednego-predprinimatel-stva/">Перечень муниципального имущества для предоставления в аренду субъектам МСП</a>
+								<a href="/administratsiya/ofitsial-nye-dokumenty/grafik-raboty-obshchestvennoi-priemnoi/">График работы общественной приёмной</a>
+								<a href="http://electrostal.ru/images/stories/zhkh/moving_2016-2018.xls">Сведения о ветхом и аварийном жилье</a>
+								<a href="/administratsiya/ofitsial-nye-dokumenty/telefony-goryachyei-linii-zhkh/">Телефоны "горячей линии" ЖКХ</a>
+								<a href="/upload/perechen_podezdov.docx">Перечень домов, где отремонтированы подъезды</a>
+<!--                                <a href="/upload/36 человек.docx">Список кандидатов в присяжные заседатели, подлежащих включению в общий список кандидатов в присяжные заседатели для Московского областного суда на 2018-2021 годы взамен утративших право быть присяжными заседателями. </a>
+                                <a href="/upload/Список кандидатов в присяжные заседатели.docx">Список кандидатов в присяжные заседатели, подлежащих включению в основной список кандидатов в присяжные заседатели для 2-го Западного окружного военного суда на 2018-2021 годы взамен утративших право быть присяжными заседателями.</a>     
+                                <a href="/upload/Основной список.xlsx">Основной список кандидатов в присяжные заседатели в Московский обласной суд на 2022-2025 гг.</a>
+                                <a href="/upload/2-го Западного окружного военного суда и Реутовского гарнизонного военного суда на 2022-20225.xlsx">Список кандидатов в присяжные заседатели во 2-й Западный окружной военный суд и Реутовский гарнизонный военный суд на 2022-2025 гг.</a>     
+                                <a href="/upload/Электростальский городской суд.xlsx">Список кандидатов в присяжные заседатели в Электростальский городской суд на 2022-2025 гг.</a> 
+ -->                                <a href="http://electrostal.ru/nash-gorod/budushchyee-goroda/">Генеральный план</a>
+                                <a href="http://www.electrostal.ru/administratsiya/komfortnaya-sreda/">Формирование комфортной городской среды</a>
+                                <a href="/upload/Пресс служба ВНО.doc">Приоритетный проект «Выявление неоформленных объектов капитального строительства в целях вовлечения их в налоговый оборот»</a>
+                                <a href="/upload/До 1 марта 2026 года продлевается дачная амнистия.docx">До 1 марта 2026 года продлевается «дачная амнистия»</a>
+                                <a href="/upload/Листовки.pdf">Информация Государственной ветеринарной службы Московской области</a>
+                                <a href="/upload/Адресный перечень подъездов.xlsx">Адресный перечень подъездов, ремонт которых будет осуществлен в 2021 году</a>
+
+								
+								
+							
+								
+							</div>
+						</div>
+				</div>
+				<div class="grid__col-md-6 useful_block_item">
+					<div class="useful_block_item_inner">
+						<div class="def_col_title">
+							Полезные ресурсы
+						</div>
+						<div class="col_links_holder">
+							<a href="http://elweek.ru/" target="_blank">Газета "Новости Недели"</a>
+							<a href="http://radiostal.ru/" target="_blank">Радио Электростали</a>
+							<a href="http://gatn.mosreg.ru/" target="_blank">Госадмтехнадзор Московской области</a>
+							<a href="http://fkr-mosreg.ru/" target="_blank">Фонд капитального ремонта общего имущества многоквартирных домов</a>
+							<a href="http://gzhi.mosreg.ru/" target="_blank">Государственная жилищная инспекция М.области</a>
+							<a href="http://www.sok-stal.ru/" target="_blank">Спорткомплекс "Электросталь"</a>
+							<a href="http://www.elmc.ru/" target="_blank">"Молодежный Центр"</a>
+							<a href="http://voznesenskiyhram.ru/" target="_blank">Приход храма Вознесения Господня</a>
+					<!--		<a href="http://elsyut.ru/" target="_blank">Станция юных техников</a>  -->
+							<a href="http://www.elcbs.ru" target="_blank">Центральная библиотечная система</a>
+							<a href="http://www.egcpv.ru/" target="_blank">"Городской Центр патриотического воспитания"</a>
+							<a href="http://ank.mosreg.ru/ " target="_blank">Антинаркотическая комиссия Московской области</a>
+							<a href="http://electrostal.ru/uchrezhdeniya/nadzornye-organy/otdel-nadzornoi-dyeyatel-nosti-po-g-elektrostal-upravleniya-nadzornoi-dyeyatel-nosti-i-profilakticheskoi-raboty-glavnogo-upravleniya-mchs-rossii-po-moskovskoi-oblasti/">Пожарная безопасность</a>
+							<a href="http://electrostal.ru/administratsiya/administrativnaya-reforma/uslugi-v-elektronnom-vide/">Услуги в электронном виде</a>
+							<a href="http://arki.mosreg.ru">Государственное казенное учреждение Московской области «Агентство развития коммунальной инфраструктуры»</a>
+							<a href="https://upravdommo.ru">Сайт Ассоциации председателей Советов МКД МО</a>
+							<a href="https://электросталь.50.мвд.рф">Сайт УМВД России по г.о. Электросталь</a>
+							<a href="http://electrostal.ru/novosti/novosti-goroda/sobstvenniki-nedvizhimosti-podmoskov-ya-mogut-prinyat-uchastie-v-obsuzhdenii-promezhutochnyh-rezul-tatov-kadastrovoi-otsenk/">Министерство имущественных отношений МО информирует жителей об утверждении результатов определения кадастровой стоимости в отношении всех видов объектов недвижимости</a>
+						</div>
+					</div>			
+				</div>
+				<div class="grid__col-md-3 useful_block_item banHolder">
+                	<a href="https://covid.mz.mosreg.ru/" class="col-xs-12 col-sm-6 col-md-12 useful_block_item_inner_item_inner">
+						<img src="/img/Коронавирус.jpg" alt="">
+					</a>
+                    <a href="http://112.mosreg.ru/" class="col-xs-12 col-sm-6 col-md-12 useful_block_item_inner_item_inner">
+						<img src="/img/112.png" alt="">
+					</a>
+					<a href=" http://panel.simpleforms.ru/j4CDvj6GUWIqNmEreSI3Q" class="col-xs-12 col-sm-6 col-md-12 useful_block_item_inner_item_inner">
+						<img src="/img/opros.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+<!-- БЛОК ПОЛЕЗНОЙ ИНФОРМАЦИИ КОНЕЦ -->
+		
+<!-- БЛОК ОПРОСОВ -->
+	<!-- <div class="interview_block">
+		<form action="" method="post" onsubmit="return false;">
+				<div class="interview_block_title">
+					Опрос
+				</div>
+				<div class="grid">
+					<div class="grid__col-md-3 interview_block_item">
+						<div class="interview_block_item_inner">
+							<p>Летом 2017 года будет сформирован новый состав Электростальской Общественной палаты. Хотели бы Вы лично войти в ее обновленный состав?</p>
+							<div class="inputGroup">
+								<input type="checkbox" id="q">
+								<label for="q">Да</label>
+
+								<input type="checkbox" id="qq">
+								<label for="qq">Нет</label>
+							</div>
+						</div>
+					</div>
+					<div class="grid__col-md-3 interview_block_item">
+						<div class="interview_block_item_inner">
+							<p>Как Вы считаете, по каким направлениям в первую очередь необходимо усилить работу этой организации?</p>
+							<div class="inputGroup">
+								<input type="checkbox" id="w">
+								<label for="w">Оказание поддержи некоммерческим организациям</label>
+
+								<input type="checkbox" id="ww">
+								<label for="ww">Поддержка гражданских инициатив (предложений, проектов)</label>
+
+								<input type="checkbox" id="www">
+								<label for="www">Участие в экспертизе нормативно-правовых актов</label>
+
+								<input type="checkbox" id="wwww">
+								<label for="wwww">Организация совместных мероприятий представителей власти и общественных организаций</label>
+
+								<input type="checkbox" id="wwwww">
+								<label for="wwwww">Иное (информацию с предложениями можно направить на почту: palata_14@mail.ru)</label>
+							</div>
+						</div>						
+					</div>
+					<div class="grid__col-md-3 interview_block_item">
+						<div class="interview_block_item_inner">
+							<p>Как Вы считаете, по каким направлениям в первую очередь необходимо усилить работу этой организации?</p>
+							<div class="inputGroup">
+								<input type="checkbox" id="g">
+								<label for="g">Медицинские и социальные работники</label>
+
+								<input type="checkbox" id="gg">
+								<label for="gg">Работники образовательных и научных организаций и учреждений</label>
+
+								<input type="checkbox" id="ggg">
+								<label for="ggg">Представители малого и среднего бизнеса</label>
+
+								<input type="checkbox" id="gggg">
+								<label for="gggg">Представители молодежных и спортивных организаций и объединений</label>
+
+								<input type="checkbox" id="ggggg">
+								<label for="ggggg">Иное (информацию с предложениями можно направить на почту: palata_14@mail.ru)</label>							
+							</div>
+						</div>							
+					</div>
+					<div class="grid__col-md-3 interview_block_item">
+						<div class="interview_block_item_inner resultBlock">
+							<div class="showResult">Посмотреть результаты</div>
+							<div class="btn btn-md">
+								Отправить
+							</div>
+						</div>							
+					</div>
+				</div>
+		</form>		
+	</div> -->
+<!-- БЛОК ОПРОСОВ КОНЕЦ -->		</div>
+		<!-- ДИНАМИЧЕСКИЙ КОНТЕНТ КОНЕЦ -->	    
+
+		<!-- ФУТЕР -->
+			<footer>
+				<div class="grid">
+					<div class="footer-photes grid">
+
+                        <a title="Лучший председатель Совета МКД_2021" href="http://predsedatelsd.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3" style="margin-top: 14px;">
+							<img src="/img/Лучший председатель Совета МКД_2021.jpg" class="grid__cell-img" height="130" >
+						</a>                    
+                        <a title="опрос" href="https://easuz.mosreg.ru/Polls/mun" class="grid__col-3 grid__col-sm-3 grid__col-md-3" style="margin-top: 14px;">
+							<img src="/img/опрос.jpg" class="grid__cell-img" height="130" >
+						</a> 
+                         <a title="торги" href="https://easuz.mosreg.ru/torgi" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/помещение для бизнеса.jpg" class="grid__cell-img" >
+						</a>
+                        <a title="объясняем" href="https://объясняем.рф/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/объясняем.jpg" class="grid__cell-img" >
+						</a>                      
+                         <a title="Жалоба на решение контрольных органов" href="https://knd.gosuslugi.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/обжалование-.jpg" class="grid__cell-img" >
+						</a>                     
+                        <a title="опрос" href="https://panel.simpleforms.ru/RExSVy8cUiLKafXC0YnyA" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/опрос.png" class="grid__cell-img" height="130" >
+						</a>                       
+                        <a title="Новости Московской области" href="https://radio1.news/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/радио.png" class="grid__cell-img" height="130" >
+						</a>                     
+                         <a title="QR-коды" href="https://uslugi.mosreg.ru/vaccine_qr" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/коды.png" class="grid__cell-img" height="130" >
+						</a>                   
+                         <a title="Карта ресурсообеспечения МКД" href="http://mvitu.arki.mosreg.ru/mkd_map/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/БанерMKD.jpg" class="grid__cell-img" >
+						</a>                   
+ 						<a title="Добродел" href="https://dobrodel.mosreg.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item style="margin-top: 14px>
+							<img src="/img/добродел.jpg" class="grid__cell-img">
+                        </a>                   
+						<a title="COVID-19" href="http://electrostal.ru/nash-gorod/covid-19/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item style="margin-top: 14px>
+							<img src="/img/footer/covid-19.png" class="grid__cell-img">
+                        </a>
+                    	<a title="Торгово-промышленная палата" href="http://mosobl.tpprf.ru/ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/crisis.png" class="grid__cell-img">
+                        </a>
+                        <a title="ПРЯМЫЕ ВЫПЛАТЫ 2021" href="http://r50.fss.ru/457073/index.shtml" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/ПРЯМЫЕ ВЫПЛАТЫ 2021.png" class="grid__cell-img" height="130" >
+						</a>
+                       <a title="Год памяти" href="https://xn--2020-k4dg3e.xn--p1ai/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/год_памяти.png" class="grid__cell-img">
+                       <a title="Госзаказ" href="https://forum-goszakaz.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/goszakaz.jpeg" class="grid__cell-img">
+                        </a>                    	
+                    	<a title="ИнвестПортал Московской области" href="https://invest.mosreg.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/biz.png" class="grid__cell-img">
+                        </a>
+						<a title="Уполномоченный по правам человека в МО" href="https://upch.mosreg.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/1.png" class="grid__cell-img">
+						</a>
+						<a title="Правительство Московской области" href="http://mosreg.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/mos_obl.jpg" class="grid__cell-img">
+						</a>
+						<a title="Многофункциональный центр государственных и муниципальных услуг" href="http://xn----8sbouddburlidr2a5hf.xn--p1ai/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/мфц.png" class="grid__cell-img">
+						</a>
+						<a title="Государственные услуги" href="https://www.gosuslugi.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/5.png" class="grid__cell-img">
+						</a>
+						<a  title=" налоговая" href="https://www.nalog.ru/rn77/taxation/reference_work/newkkt/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/6.png" class="grid__cell-img">
+						</a>
+						<a title="Единый портал торгов Московской области" href="http://torgi.mosreg.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/7.png" class="grid__cell-img">
+						</a>
+						<a title="дети" href="http://xn--80aalcbc2bocdadlpp9nfk.xn--d1acj3b/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/8.png" class="grid__cell-img">
+						</a>	
+						<a title="ратификация конвенции о правах инвалидов" href="https://msr.mosreg.ru/deyatelnost/knd#tab-menu__link_0" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/ратификация.png" class="grid__cell-img">
+						</a>	
+						<a title="мир равных возможностей " href="http://mirrv.ru" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/мир равных.png" class="grid__cell-img">
+						</a>	
+						<a title="мой бизнес" href="http://airmo.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/footer/мой бизнес.png" class="grid__cell-img">
+						</a>
+                    
+						<a href="http://arki.mosreg.ru" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/1.jpg" class="grid__cell-img">
+						</a>
+						<a title="проверь себя" href="http://mpmo.ru/znaete-li-vy-ob-insulte" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/insult.jpg" class="grid__cell-img">
+						</a>
+						
+						<a title="бизнес-навигатор" href="https://navigator.smbn.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/4.jpg" class="grid__cell-img">
+						</a>
+						<a title="Запись к врачу" href="https://uslugi.mosreg.ru/zdrav/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/5.jpg" class="grid__cell-img">
+						</a>
+					
+						<a title="Оценка деятельности" href="http://panel.simpleforms.ru/8MG7VZ0KEW3J1Zw7QLIg" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/ocenka.png" class="grid__cell-img">
+						</a>
+         				<a  title="ЕДС ЖКХ" href="http://edsgkx.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+						<img src="/img/9.jpg" class="grid__cell-img">
+						</a>
+						<a class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/12.jpg" class="grid__cell-img">
+						</a>
+						<a href="http://el-museum.ru/excursion-and-tourism" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/turism.jpg" class="grid__cell-img">
+						</a>
+						
+						<a title="закупки" href="http://el-zakupki.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/15.jpg" class="grid__cell-img">
+						</a>
+						<a href="https://dom.mosreg.ru/moe_payment" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/16.jpg" class="grid__cell-img">
+						</a>
+						<a href="http://руферма.рф" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/ruferma-rf.jpg" class="grid__cell-img">
+						</a>
+						<a href="http://agro-coop.ru" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/agro-coop.jpg" class="grid__cell-img">
+						</a>
+							<a title="VRT.TV" href="http://vrt.tv/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/vrt.jpg" class="grid__cell-img" height="130" >
+						</a>
+						<a href="https://electrostal.ru/novosti/ofitsial-naya-informatsiya/registriruisya-v-yedinoi-sisteme-identifikatsii-i-autentifikatsii-yesia/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/es.jpg" class="grid__cell-img" height="130" >
+						</a>
+						<a href="https://electrostal.ru/nash-gorod/budushchyee-goroda/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/park.jpg" class="grid__cell-img" height="130" >
+						</a>
+						
+                    	<a title="Активное долголетие" href="https://electrostal.ru/novosti/novosti-goroda/realizatsiya-programmy-aktivnoye-dolgoletiye/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/Активное долголетие.png" class="grid__cell-img" height="130" >
+						</a>
+					     <a title="Зеркальный реестр проверок" href="https://mb.mosreg.ru/content/Полезное" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/Зеркальный реестр проверок.png" class="grid__cell-img" height="130" >
+						</a>
+					     <a title="фонд развития микрофинансирования" href="https://www.mofmicro.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/фонд развития микро.png" class="grid__cell-img" height="130" >
+						</a>
+                        <a title="Юнармия" href="https://elcpv.ru/objedinenie/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/Yunarmy.jpg" class="grid__cell-img" height="130" >
+						</a>
+                         <a title="Портал" href="https://ds.mosreg.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/Портал.jpg" class="grid__cell-img" height="130" >
+						</a>
+                       <a title="Города Победы" href="https://www.городагерои.рф/proekty/ " class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/Города Победы.jpg" class="grid__cell-img" height="130" >
+						</a>
+                        <a title="Госуслуги MO" href="https://uslugi.mosreg.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/госуслуги.png" class="grid__cell-img" height="130" >
+						</a> 
+                       <a title="Магистерская программа" href="https://mgkh.mgimo.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/Мага.png" class="grid__cell-img" height="130" >
+						</a>
+						<a title="Начни свой бизнес" href="https://easuz.mosreg.ru/torgi" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/Начни бизнес.png" class="grid__cell-img">
+                       </a>
+         		       <a title="Коммерция_МО" href="https://easuz.mosreg.ru/torgi" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/Коммерция_МО.png" class="grid__cell-img">
+                       </a>              
+                       <a title="Единый портал торгов Московской области" href="http://torgi.mosreg.ru/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item">
+							<img src="/img/торги.png" class="grid__cell-img">
+                       </a>
+                       <a title="ЕПТ_МО_Торги ИЖС ЛПХ" href="https://torgi.mosreg.ru/#/" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/ЕПТ_МО_Торги ИЖС ЛПХ.png" class="grid__cell-img" height="130" >
+						</a>                       
+                       <a title="Борщевик" href="img/борщевик.jpg" class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/борщевик.jpg" class="grid__cell-img" height="130" >
+						</a>
+                         <a title="Некоммерческие организации" href="https://msr.mosreg.ru/deyatelnost/vzaimodeistvie-s-negosudarstvennymi-organizaciyami/informaciya-dlya-nko " class="grid__col-3 grid__col-sm-3 grid__col-md-3 footer-photes_item" style="margin-top: 14px;">
+							<img src="/img/НКО.jpg" class="grid__cell-img" height="130" >
+						</a>
+                  
+                     
+					</div>
+				</div>
+				<div class="grid">
+					<div class="footer-bot grid">					
+						<div class="grid__col-12 grid__col-xs-12 grid__col-sm-12 grid__col-md-7 footer-col">
+							<div class="copyright">
+								Copyright © 2001–2020 Администрация городского округа Электросталь. 
+							</div>
+                            <div class="copyright">   
+                                 Пресс-служба: pressa@electrostal.ru.  Общий отдел: (496) 571-98-54, (496) 573-88-22
+							</div>
+						</div>
+						<div class="grid__col-12 grid__col-xs-12 grid__col-sm-6 grid__col-md-3 footer-col">
+							<div class="socials socials_on_off">
+								<a href="https://vk.com/officialelectrostal" class="socials_on_off_item">
+									<svg class="icon_on"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-1664,.cls-2664{fill:silver;}.cls-2664{fill-rule:evenodd;}</style></defs><title>icon</title><path class="cls-1664" d="M22,1a2,2,0,0,1,2,2V22a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V3A2,2,0,0,1,3,1H22m0-1H3A3,3,0,0,0,0,3V22a3,3,0,0,0,3,3H22a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3Z"/><path class="cls-2664" d="M19.31,16.87l-2,0a1.39,1.39,0,0,1-1-.31c-.75-.53-1.46-1.91-2-1.73s-.54,1.42-.54,1.42a.69.69,0,0,1-.12.41.75.75,0,0,1-.41.18h-.9a5.06,5.06,0,0,1-3.72-1.75A25.33,25.33,0,0,1,5,9s-.1-.27,0-.39.44-.15.44-.15H7.63A.91.91,0,0,1,8,8.62a.69.69,0,0,1,.19.26A15,15,0,0,0,9,10.6c.9,1.59,1.31,1.94,1.62,1.77s.31-2.25.31-2.25a2.31,2.31,0,0,0-.22-1.05A1,1,0,0,0,10,8.72c-.12,0,.08-.31.33-.43a4.72,4.72,0,0,1,1.87-.2,3.74,3.74,0,0,1,1.05.11c.74.18.49.89.49,2.6,0,.55-.1,1.31.29,1.57.16.11.57,0,1.57-1.74a13.7,13.7,0,0,0,.83-1.81.64.64,0,0,1,.2-.25.5.5,0,0,1,.29-.05h2.25s.68-.08.79.23-.25,1.1-1.17,2.37c-1.51,2.08-1.68,1.88-.43,3.09A6.86,6.86,0,0,1,19.86,16C20.36,16.81,19.31,16.87,19.31,16.87Z"/></svg>									
+									<svg class="icon_hover"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-111{fill:#ed1c24;}.cls-222{fill:#fff;fill-rule:evenodd;}</style></defs><title>icon</title><rect class="cls-111" width="25" height="25" rx="3" ry="3"/><path class="cls-222" d="M19.31,16.87l-2,0a1.39,1.39,0,0,1-1-.31c-.75-.53-1.46-1.91-2-1.73s-.54,1.42-.54,1.42a.69.69,0,0,1-.12.41.75.75,0,0,1-.41.18h-.9a5.06,5.06,0,0,1-3.72-1.75A25.33,25.33,0,0,1,5,9s-.1-.27,0-.39.44-.15.44-.15H7.63A.91.91,0,0,1,8,8.62a.69.69,0,0,1,.19.26A15,15,0,0,0,9,10.6c.9,1.59,1.31,1.94,1.62,1.77s.31-2.25.31-2.25a2.31,2.31,0,0,0-.22-1.05A1,1,0,0,0,10,8.72c-.12,0,.08-.31.33-.43a4.72,4.72,0,0,1,1.87-.2,3.74,3.74,0,0,1,1.05.11c.74.18.49.89.49,2.6,0,.55-.1,1.31.29,1.57.16.11.57,0,1.57-1.74a13.7,13.7,0,0,0,.83-1.81.64.64,0,0,1,.2-.25.5.5,0,0,1,.29-.05h2.25s.68-.08.79.23-.25,1.1-1.17,2.37c-1.51,2.08-1.68,1.88-.43,3.09A6.86,6.86,0,0,1,19.86,16C20.36,16.81,19.31,16.87,19.31,16.87Z"/></svg>
+								</a>
+							<!--	<a href="https://www.facebook.com/admelstal/" class="socials_on_off_item">
+									<svg class="icon_on"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-11235,.cls-21231{fill:silver;}.cls-21231{fill-rule:evenodd;}</style></defs><title>icon</title><path class="cls-11235" d="M22,1a2,2,0,0,1,2,2V22a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V3A2,2,0,0,1,3,1H22m0-1H3A3,3,0,0,0,0,3V22a3,3,0,0,0,3,3H22a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3Z"/><path class="cls-21231" d="M16,7.28H14.28c-.27,0-1-.06-1,.56V9.48H16l-.54,2.75H13.31v8.24H10.62V12.23H9V9.48h1.61V7.83c0-1.3.12-3.3,2.69-3.3H16Z"/>
+									</svg>			
+									<svg class="icon_hover"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs>
+									<style>
+										.cls-11{fill:#ed1c24;}
+										.cls-22{fill:#fff;fill-rule:evenodd;}
+									</style>
+									</defs><title>icon</title><rect class="cls-11" width="25" height="25" rx="3" ry="3"/><path class="cls-22" d="M16,7.28H14.28c-.27,0-1-.06-1,.56V9.48H16l-.54,2.75H13.31v8.24H10.62V12.23H9V9.48h1.61V7.83c0-1.3.12-3.3,2.69-3.3H16Z"/></svg>							
+								</a>-->
+								<a href="https://ok.ru/profile/587495218488" class="socials_on_off_item">
+									<svg class="icon_on"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-12,.cls-21{fill:silver;}.cls-21s{fill-rule:evenodd;}</style></defs><title>icon</title><path class="cls-12" d="M22,1a2,2,0,0,1,2,2V22a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V3A2,2,0,0,1,3,1H22m0-1H3A3,3,0,0,0,0,3V22a3,3,0,0,0,3,3H22a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3Z"/><path class="cls-21" d="M12.54,12.92a4.11,4.11,0,0,0,4.16-4,4.17,4.17,0,0,0-8.33,0A4.11,4.11,0,0,0,12.54,12.92Zm0-5.7a1.66,1.66,0,1,1-1.71,1.66A1.68,1.68,0,0,1,12.54,7.22Zm3.21,8.32C17.34,15,17.18,14,17.18,14h0a1.11,1.11,0,0,0-.74-1,.52.52,0,0,0-.28-.08H16l-.09,0a1.74,1.74,0,0,0-.74.21,6.93,6.93,0,0,1-2.78.69,4.88,4.88,0,0,1-2.62-.77A1.8,1.8,0,0,0,9.12,13a1.11,1.11,0,0,0-.15,0,1.15,1.15,0,0,0-.53.14.92.92,0,0,0-.61.94s0,0,0,0v0s0,.06,0,.1a1.06,1.06,0,0,0,.09.3l0,0c.54,1.12,2.91,1.5,2.91,1.5L8.46,18.24l0,0a1.15,1.15,0,0,0-.26.69,1.21,1.21,0,0,0,1.94.95l0,0,2.38-2.23,2.3,2.23,0,0L15,20v0h0a1.21,1.21,0,0,0,1.81-1,1.15,1.15,0,0,0-.26-.7l0,0L14.25,16A9.18,9.18,0,0,0,15.76,15.54Z"/></svg>
+									<svg class="icon_hover"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-13{fill:#ed1c24;}.cls-24{fill:#fff;fill-rule:evenodd;}</style></defs><title>icon</title><rect class="cls-13" width="25" height="25" rx="3" ry="3"/><path class="cls-24" d="M12.54,12.92a4.11,4.11,0,0,0,4.16-4,4.17,4.17,0,0,0-8.33,0A4.11,4.11,0,0,0,12.54,12.92Zm0-5.7a1.66,1.66,0,1,1-1.71,1.66A1.68,1.68,0,0,1,12.54,7.22Zm3.21,8.32C17.34,15,17.18,14,17.18,14h0a1.11,1.11,0,0,0-.74-1,.52.52,0,0,0-.28-.08H16l-.09,0a1.74,1.74,0,0,0-.74.21,6.93,6.93,0,0,1-2.78.69,4.88,4.88,0,0,1-2.62-.77A1.8,1.8,0,0,0,9.12,13a1.11,1.11,0,0,0-.15,0,1.15,1.15,0,0,0-.53.14.92.92,0,0,0-.61.94s0,0,0,0v0s0,.06,0,.1a1.06,1.06,0,0,0,.09.3l0,0c.54,1.12,2.91,1.5,2.91,1.5L8.46,18.24l0,0a1.15,1.15,0,0,0-.26.69,1.21,1.21,0,0,0,1.94.95l0,0,2.38-2.23,2.3,2.23,0,0L15,20v0h0a1.21,1.21,0,0,0,1.81-1,1.15,1.15,0,0,0-.26-.7l0,0L14.25,16A9.18,9.18,0,0,0,15.76,15.54Z"/></svg>									
+								</a>
+							<!--	<a href="https://www.instagram.com/gorodelektrostal/" class="socials_on_off_item">
+									<svg class="icon_on"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-131{fill:silver;}</style></defs><title>icon</title><path class="cls-131" d="M22,1a2,2,0,0,1,2,2V22a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V3A2,2,0,0,1,3,1H22m0-1H3A3,3,0,0,0,0,3V22a3,3,0,0,0,3,3H22a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3Z"/><path class="cls-131" d="M17.1,5H7.9A2.9,2.9,0,0,0,5,7.9v9.2A2.9,2.9,0,0,0,7.9,20h9.2A2.9,2.9,0,0,0,20,17.1V7.9A2.9,2.9,0,0,0,17.1,5Zm.83,1.73h.33V9.27H15.73V6.74ZM10.36,11a2.63,2.63,0,1,1-.5,1.54A2.63,2.63,0,0,1,10.36,11Zm8.17,6.14a1.43,1.43,0,0,1-1.44,1.43H7.9A1.43,1.43,0,0,1,6.46,17.1V11H8.7a4.1,4.1,0,1,0,7.59,0h2.24Z"/></svg>
+									<svg class="icon_hover"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-156{fill:#ed1c24;fill-rule:evenodd;}.cls-256{fill:#fff;}</style></defs><title>icon</title><path class="cls-156" d="M3,0H22a3,3,0,0,1,3,3V22a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0Z"/><path class="cls-256" d="M17.1,5H7.9A2.9,2.9,0,0,0,5,7.9v9.2A2.9,2.9,0,0,0,7.9,20h9.2A2.9,2.9,0,0,0,20,17.1V7.9A2.9,2.9,0,0,0,17.1,5Zm.83,1.73h.33V9.27H15.73V6.74ZM10.36,11a2.63,2.63,0,1,1-.5,1.54A2.63,2.63,0,0,1,10.36,11Zm8.17,6.14a1.43,1.43,0,0,1-1.44,1.43H7.9A1.43,1.43,0,0,1,6.46,17.1V11H8.7a4.1,4.1,0,1,0,7.59,0h2.24Z"/></svg>								
+								</a>-->
+								<a href="https://twitter.com/admelectrostal" class="socials_on_off_item">
+									<svg class="icon_on"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-109{fill:silver;}</style></defs><title>icon</title><path class="cls-109" d="M22,1a2,2,0,0,1,2,2V22a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V3A2,2,0,0,1,3,1H22m0-1H3A3,3,0,0,0,0,3V22a3,3,0,0,0,3,3H22a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3Z"/><path class="cls-109" d="M9.9,18.1a8.05,8.05,0,0,0,8.17-8c0-.12,0-.24,0-.37A5.8,5.8,0,0,0,19.5,8.22a5.8,5.8,0,0,1-1.65.44A2.85,2.85,0,0,0,19.11,7.1a5.81,5.81,0,0,1-1.82.69,2.91,2.91,0,0,0-4.06-.12,2.8,2.8,0,0,0-.83,2.7,8.2,8.2,0,0,1-5.92-3,2.8,2.8,0,0,0,.89,3.78,2.88,2.88,0,0,1-1.3-.35v0a2.84,2.84,0,0,0,2.3,2.77,2.91,2.91,0,0,1-1.3,0,2.87,2.87,0,0,0,2.68,2,5.82,5.82,0,0,1-3.57,1.21,6,6,0,0,1-.68,0A8.23,8.23,0,0,0,9.9,18.1"/></svg>
+									<svg class="icon_hover"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-188{fill:#ed1c24;fill-rule:evenodd;}.cls-288{fill:#fff;}</style></defs><title>icon</title><path class="cls-188" d="M3,0H22a3,3,0,0,1,3,3V22a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0Z"/><path class="cls-288" d="M9.9,18.1a8.05,8.05,0,0,0,8.17-8c0-.12,0-.24,0-.37A5.8,5.8,0,0,0,19.5,8.22a5.8,5.8,0,0,1-1.65.44A2.85,2.85,0,0,0,19.11,7.1a5.81,5.81,0,0,1-1.82.69,2.91,2.91,0,0,0-4.06-.12,2.8,2.8,0,0,0-.83,2.7,8.2,8.2,0,0,1-5.92-3,2.8,2.8,0,0,0,.89,3.78,2.88,2.88,0,0,1-1.3-.35v0a2.84,2.84,0,0,0,2.3,2.77,2.91,2.91,0,0,1-1.3,0,2.87,2.87,0,0,0,2.68,2,5.82,5.82,0,0,1-3.57,1.21,6,6,0,0,1-.68,0A8.23,8.23,0,0,0,9.9,18.1"/></svg>
+								</a>
+								<a href="https://www.youtube.com/channel/UCNtD4LI7yZMLkDU3vpA1vYA" class="socials_on_off_item">
+									<svg class="icon_on"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-1302{fill:silver;}</style></defs><title>icon</title><path class="cls-1302" d="M22,1a2,2,0,0,1,2,2V22a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V3A2,2,0,0,1,3,1H22m0-1H3A3,3,0,0,0,0,3V22a3,3,0,0,0,3,3H22a3,3,0,0,0,3-3V3a3,3,0,0,0-3-3Z"/><path class="cls-1302" d="M19.85,9.5A3.24,3.24,0,0,0,19.25,8a2.14,2.14,0,0,0-1.5-.64c-2.1-.15-5.25-.15-5.25-.15h0s-3.15,0-5.25.15A2.15,2.15,0,0,0,5.75,8a3.24,3.24,0,0,0-.6,1.49A22.67,22.67,0,0,0,5,11.93v1.14a22.68,22.68,0,0,0,.15,2.43A3.24,3.24,0,0,0,5.75,17a2.54,2.54,0,0,0,1.65.64c1.2.11,5.1.15,5.1.15s3.15,0,5.25-.16a2.14,2.14,0,0,0,1.5-.64,3.24,3.24,0,0,0,.6-1.49A22.7,22.7,0,0,0,20,13.07V11.93A22.7,22.7,0,0,0,19.85,9.5ZM11,14.44V10.24l4,2.11Z"/></svg>
+									<svg class="icon_hover"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><style>.cls-1421{fill:#ed1c24;fill-rule:evenodd;}.cls-2421{fill:#fff;}</style></defs><title>icon</title><path class="cls-1421" d="M3,0H22a3,3,0,0,1,3,3V22a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0Z"/><path class="cls-2421" d="M19.85,9.5A3.24,3.24,0,0,0,19.25,8a2.14,2.14,0,0,0-1.5-.64c-2.1-.15-5.25-.15-5.25-.15h0s-3.15,0-5.25.15A2.15,2.15,0,0,0,5.75,8a3.24,3.24,0,0,0-.6,1.49A22.67,22.67,0,0,0,5,11.93v1.14a22.68,22.68,0,0,0,.15,2.43A3.24,3.24,0,0,0,5.75,17a2.54,2.54,0,0,0,1.65.64c1.2.11,5.1.15,5.1.15s3.15,0,5.25-.16a2.14,2.14,0,0,0,1.5-.64,3.24,3.24,0,0,0,.6-1.49A22.7,22.7,0,0,0,20,13.07V11.93A22.7,22.7,0,0,0,19.85,9.5ZM11,14.44V10.24l4,2.11Z"/></svg>
+								</a>
+							</div>
+						</div>	
+						<div class="grid__col-12 grid__col-xs-12 grid__col-sm-4 grid__col-md-2 footer-col">
+							<div class="oldAndMap">
+								<a href="javascript:void(0)">Карта сайта</a> 
+								<!-- <a href="http://elplace.ru/">Старая версия</a> -->
+							</div>
+						</div>
+							<!--LiveInternet counter-->
+							<script type="text/javascript">
+								document.write("<a class='grid__col-12' href='//www.liveinternet.ru/click' "+
+								"target=_blank><img src='//counter.yadro.ru/hit?t26.1;r"+
+								escape(document.referrer)+((typeof(screen)=="undefined")?"":
+								";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+								screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+								";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+								"' alt='' title='LiveInternet: показано число посетителей за"+
+								" сегодня' "+
+								"border='0' width='88' height='15'><\/a>")
+							</script>
+							<!--/LiveInternet-->						
+					</div>				
+				</div>
+			</footer>
+		<!-- ФУТЕР КОНЕЦ -->
+		
+	</div>    
+
+<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+<script src="/production/js/main.min.js"></script>
+<div class="overlay" id="overlay"></div>
+
+<div class="questionModal modal" id="questionModal">
+	<div class="closeModal">
+		<svg class="icon">
+			<use xlink:href="#icon-error" />
+		</svg>		
+	</div>
+	<form class="questionModalHolder" id="questionModalForm">
+		<input type="hidden" name="_csrf-frontend" value="aElvZ1M4RDkiMBgiMH4uQwB4NSplbS16WSVeU2ZoCWBcexcuJA0HUw==" />
+		<div class="modalTitle">
+			Задать вопрос главе города
+		</div>
+		<div class="inputGroup">
+			<label for="questionModal_name">Фио<span>*</span></label>
+			<input id="questionModal_name" type="text" name="name" required="">
+		</div>
+		<div class="inputGroup">
+			<label for="questionModal_msg">Вопрос<span>*</span></label>
+			<textarea id="questionModal_msg" name="msg" required=""></textarea>
+		</div>
+		<div class="uploadFile inputGroup">
+			<div class="label">Добавить файл</div>
+		    <label for="questionModal_file" id="questionModal_file_label" class="button">
+		    	<svg class="icon">
+				  <use xlink:href="#icon-icon_attach" />
+				</svg>
+			    <span id="questionModal_file_label_inner">Прикрепить</span>
+		    </label>
+		    <input type="file" id="questionModal_file" name="file" />
+		</div>
+		<div class="inputGroup flexStart">
+			<label>Выберите способ получения ответа</label>
+			<div class="inputGroupInner">
+				<span>
+					<input type="checkbox" name="wayEmail" id="questionModal_mail" value="mail" checked="">
+					<label for="questionModal_mail">По электронной почте</label>
+				</span>
+				<span style="margin-bottom: 0">
+					<input type="checkbox" name="wayPhone" id="questionModal_index" value="index">
+					<label for="questionModal_index">По телефону</label>		
+				</span>
+			</div>	
+		</div>
+		<div class="inputGroup">
+			<label for="questionModal_mail">E-mail<span>*</span></label>
+			<input type="email" id="questionModal_mail" name="mail" required="">
+		</div>
+
+		<div class="inputGroup">
+			<label for="questionModal_phone">Телефон</label>
+			<input type="text" id="questionModal_phone" name="phone">
+		</div>		
+
+		<div class="inputGroup spec">
+			<input type="checkbox" id="questionModal_comp" name="comp" checked="" required="">
+			<label for="questionModal_comp">
+				Настоящим подтверждаю согласие на 
+				использование персональных данных<span>*</span>
+			</label>			
+		</div>
+  
+		<input type="hidden" id="recaptcha-reCaptcha" name="reCaptcha"><div class="g-recaptcha col-sm-offset-3" data-sitekey="6Lc29CAUAAAAAMmp41cs0ZLOvrbzWfhkRH1d0mxT" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpiredCallback"></div>		
+
+		<button class="btn">Отправить</button>
+	</form>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position: absolute;">	
+		<symbol id="icon-administration" viewbox="0 0 24 24">
+			<path d="M23.3 7.5C22.5 7 12.8.2 12.8.2c-.4-.3-1.2-.3-1.6 0C11.2.2 1.4 7 .7 7.5c-.6.4-.7 1-.7 1V9c0 .5.4 1 .9 1H2v12H1c-.6 0-1 .5-1 1v1h24v-1c0-.6-.5-1-1-1h-1V10h1c.5 0 1-.4 1-1v-.5s.1-.4-.7-1zM12 2l8.9 6H3.1L12 2zM3 22V10h2v12H3zm3 0V10h4v12H6zm5 0V10h2v12h-2zm3 0V10h4v12h-4zm7 0h-2V10h2v12z"/>
+		</symbol>
+	
+		<symbol id="icon-building" viewbox="0 0 24 24">
+			<path d="M23 10h-5V1c0-.6-.4-1-1-1H7c-.6 0-1 .4-1 1v9H1c-.6 0-1 .4-1 1v13h24V11c0-.6-.4-1-1-1zM2 22V12h4v10H2zm6 0V2h8v20H8zm10 0V12h4v10h-4z"/><path d="M4 13h1v2H4zm0 3h1v2H4zm15-3h1v2h-1zm0 3h1v2h-1zM10 4h1v2h-1zm0 3h1v2h-1zm0 3h1v2h-1zm0 3h1v2h-1zm0 3h1v2h-1zm3-12h1v2h-1zm0 3h1v2h-1zm0 3h1v2h-1zm0 3h1v2h-1zm0 3h1v2h-1z"/>
+		</symbol>
+	
+		<symbol id="icon-clocks" viewbox="0 0 14.2 14.2">
+			<path d="M7.1 0C3.2 0 0 3.2 0 7.1s3.2 7.1 7.1 7.1 7.1-3.2 7.1-7.1S11 0 7.1 0zm0 12.4c-2.9 0-5.3-2.4-5.3-5.3s2.4-5.3 5.3-5.3 5.3 2.4 5.3 5.3-2.4 5.3-5.3 5.3z"/><path d="M10.5 8.7L7.7 6.8V3.5c0-.1 0-.2-.1-.2 0 0-.1-.1-.2-.1h-.7c-.1 0-.2 0-.2.1-.1.1-.1.1-.1.2v3.8c0 .1 0 .2.1.2l.1.1 3.3 2.2h.3c.1 0 .1-.1.2-.1l.4-.7c-.1-.1-.1-.2-.3-.3z"/>
+		</symbol>
+	
+		<symbol id="icon-documents" viewbox="0 0 13 16">
+			<path d="M0 0v16h13V0H0zm11 13H2v-2h9v2zm0-4H2V7h9v2zm0-4H2V3h9v2z"/>
+		</symbol>
+	
+		<symbol id="icon-en" viewbox="0 0 24.6 12.6">
+			<path d="M6 0C2.7 0 0 2.4 0 6.3c0 3.7 2.7 6.3 6.3 6.3 1.6 0 3.3-.6 4.5-1.7l-.7-1.2c-1 .9-2.4 1.4-3.7 1.4-2.5 0-4.6-1.7-4.7-4.8H11v-.8C11 2.6 9.3 0 6 0zM1.8 5.1C2.2 2.7 3.9 1.4 6 1.4c1.8 0 3.3 1.2 3.4 3.7H1.8zM20.5 0c-2.8 0-4.4 2-4.9 3.1 0 0 .1-.4.1-1V.3h-1.6v12.1h1.6V6.5c0-2.8 2-4.9 4.6-4.9 2.3 0 2.6 1.7 2.6 3.6v7.2h1.6V4.7c.1-3-1-4.7-4-4.7z"/>
+		</symbol>
+	
+		<symbol id="icon-error" viewbox="0 0 52 52">
+			<path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/><path d="M35.707 16.293a.999.999 0 0 0-1.414 0L26 24.586l-8.293-8.293a.999.999 0 1 0-1.414 1.414L24.586 26l-8.293 8.293a.999.999 0 1 0 1.414 1.414L26 27.414l8.293 8.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L27.414 26l8.293-8.293a.999.999 0 0 0 0-1.414z"/>
+		</symbol>
+	
+		<symbol id="icon-eye" viewbox="0 0 24.6 15.6">
+			<path d="M12.3 0C5.5 0 0 5.6 0 7.8s5.5 7.8 12.3 7.8S24.6 10 24.6 7.8 19.1 0 12.3 0zm0 14.5c-6.2 0-11.2-4.8-11.2-6.7s5-6.7 11.2-6.7c6.2 0 11.2 4.8 11.2 6.7s-5 6.7-11.2 6.7zm0-8.4c-.9 0-1.7.8-1.7 1.7 0 .9.8 1.7 1.7 1.7S14 8.7 14 7.8c0-.9-.8-1.7-1.7-1.7zm0-3.9c-3.1 0-5.6 2.5-5.6 5.6 0 3.1 2.5 5.6 5.6 5.6 3.1 0 5.6-2.5 5.6-5.6 0-3.1-2.5-5.6-5.6-5.6zm0 10.1c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/>
+		</symbol>
+	
+		<symbol id="icon-factory" viewbox="0 0 24 24">
+			<path d="M12 9c0-1.7-1.3-3-3-3S6 7.3 6 9s1.3 3 3 3 3-1.3 3-3zm-3 2c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/><path d="M23 15h-1.2l.8-.8c.4-.4.4-1 0-1.4l-1.4-1.4c-.4-.4-1-.4-1.4 0l-.8.8V11c0-.6-.4-1-1-1V7c0-.6-.4-1-1-1h-.7l.6-.6c.4-.4.4-1 0-1.4L14 1.2c-.4-.4-1-.4-1.4 0l-.6.6V1c0-.6-.4-1-1-1H7c-.6 0-1 .4-1 1v.7l-.5-.5c-.4-.4-1-.4-1.4 0L1.3 4c-.4.4-.4 1 0 1.4l.5.6H1c-.6 0-1 .4-1 1v4c0 .6.4 1 1 1h.8l-.5.5c-.4.4-.4 1 0 1.4l2.8 2.8c.4.4 1 .4 1.4 0l.5-.4v.7c0 .6.4 1 1 1h3c0 .6.4 1 1 1h1.2l-.8.8c-.4.4-.4 1 0 1.4l1.4 1.4c.4.4 1 .4 1.4 0l.8-.8V23c0 .6.4 1 1 1h2c.6 0 1-.4 1-1v-1.2l.8.8c.4.4 1 .4 1.4 0l1.4-1.4c.4-.4.4-1 0-1.4l-.8-.8H23c.6 0 1-.4 1-1v-2c0-.6-.4-1-1-1zM8 16v-1.1c-.9-.2-1.7-.5-2.5-1l-.7.7-1.4-1.4.7-.7c-.5-.7-.9-1.6-1-2.5H2V8h1.1c.2-.9.5-1.8 1.1-2.5l-.8-.8 1.4-1.4.8.8c.7-.5 1.5-.8 2.4-1V2h2v1.1c.9.2 1.8.5 2.5 1l.8-.8 1.4 1.4-.8.8c.5.7.9 1.5 1 2.5H16v2h-1.1c-.1.9-.5 1.7-1 2.4l.8.8-1.4 1.4-.8-.8c-.7.5-1.6.9-2.5 1.1V16H8zm15 2h-1.1c-.1.6-.4 1.2-.7 1.8l.8.8-1.5 1.4-.8-.8c-.5.3-1.1.6-1.8.7V23h-2v-1.1c-.6-.1-1.2-.4-1.8-.7l-.8.8-1.4-1.4.8-.8c-.3-.5-.6-1.1-.7-1.8h-1c.6 0 1-.4 1-1v-.8l.6.6c.4.4 1 .4 1.4 0v.3c0 1.7 1.3 3 3 3s3-1.3 3-3-1.3-3-3-3h-.3l-2.4 2.4 2.5-2.5c.4-.4.4-1 0-1.4l-.5-.6h.7c.6 0 1-.4 1-1v1.1c.6.1 1.2.4 1.8.7l.8-.8 1.4 1.4-.8.8c.3.5.6 1.1.7 1.8H23v2zm-8-1c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/>
+		</symbol>
+		
+		<symbol id="icon-buisiness" viewbox="0 0 24 24">
+			<path d="M23,0H1C0.4,0,0,0.4,0,1v23h24V1C24,0.4,23.6,0,23,0z M19,2v7h-2V2H19z M16,2v7h-2V2H16z M13,2v7h-2V2H13z M10,2v7H8V2H10z
+		 M7,2v7H5V2H7z M2,2h2v7H2V2z M15,22v-4h1v-1h-1v-4h4v9H15z M22,22h-2V12h-6v10H2V10h20V22z M22,9h-2V2h2V9z"/>
+	<path d="M13,12H4v9h9V12z M12,20H5v-7h7V20z"/>
+		</symbol>
+	
+		<symbol id="icon-gamburger" viewbox="0 0 23 15">
+			<path d="M0 0v3h23V0H0zm0 9h23V6H0v3zm0 6h23v-3H0v3z"/>
+		</symbol>
+	
+		<symbol id="icon-globus" viewbox="0 0 72 72">
+			<path d="M59.8 26.4c0 .5.5.6.5 1.2 0 .4-.4 1 .4 1.2.1.5.9.6 1 .1-.5 0 0-.8-.3-.8 0-.2-.2-.2-.2-.5h.6c0-.3-.4-.5-.4-.7-.1 0-.5.4-.4 0 0-.4-.1-.2-.3-.5-.1 0-.3-.5-.2-.6.2 0 .2.1.5 0 0 0 .7-.2.4-.2-.3-.3-.1-.7-.7-.5-.3.1-.5.5-.9.5 0 0-.4.8 0 .8zm-2 .7c0-.9-.7-.7-.9-1.2-.2 0-.3-.2-.7-.2-.2-.1-.4 0-.5.2-.5.2-.2-.2-.6-.2 0-.5-.2-.6-.7-.6-.3.7-.8 1.1-.7 1.9.2.1.2.1.1.3.3 0 2.1-.1 2.1-.3.1 0 .4.7.4.1.3 0 .4.6 1 .4 0 .2 1-.4.5-.4zM28.6 36v.1h.1s0-.1-.1-.1z"/><path d="M36 0C16.1 0 0 16.1 0 36s16.1 36 36 36 36-16.1 36-36S55.9 0 36 0zm8.1 23.2c-.4.1-.1-.3-.1-.6 0 0 1 0 .4-.1 0-.5-.1-.7-.6-.7 0-.3-.1-.3-.2-.7-.1-.6.4 0 .6-.6.4 0 0 .3 0 .3.1 0 0 .3 0 .3.4 0 .4-.2.6-.3-.1.3-.4.4-.1.7.2.1.4.3.3.5.5 0 .5.4.4.9.2 0 .2 0 .2-.2.2.1.2.3 0 .3-.2.4-.8.4-1.2.4.1-.3.1-.3-.3-.2zm.1.4c0 .1-.2.2-.3 0 0 0 .1 0 0 0h.3zm3.5 3.7c.1.3.1.2.1-.1.2 0 .2.9-.3.7.1-.2-.1-.6.2-.6zm-.1-.6c.2.1.3.1.3-.1.3.1 0 .3-.1.5-.2-.2-.1-.2-.2-.4zm.5 2.3v-.1c.4.1 1 1.5.9 1.8h.7c0 .3.6.4.8.4.4 0 1.4 0 1.4-.5.3 0 .5.2.5.5.3 0 2.2.1 2.1.5.3 0 .3.5.6.5-.1.3.3 1.2.6 1.2 0 .3.2.8.4 1 .1.4.6 1.3 1 1.5-.2.3.3.6.4.9 0 0 .1.5.2.6 0 .3.7 1.7 1.1 1.7 0 .2-.4.2.1.3.1 0 .5 0 .5-.1.4 0 1-.1 1.4-.2 0 .6-.5 1-.4 1.6-.3 0-.2.4-.2.5-.2.1-.3.4-.5.5 0 .3-.6.7-.8 1-.2.3-.8.7-.9 1.1 0-.1-1.1 1.2-.9 1.2 0 .2-.3 2.1.1 2.1 0 .2.4 1.8.1 1.8 0 .5-.3.8-.3 1.2-.2.1-.4.2-.5.3-.3 0-.4.6-.6.6 0 .7-.2 1.1-.2 1.9.1 0-.4 1.1-.4 1.1-.3.2-1.2 1.1-1.2 1.5 0 0-.6.9-.7 1-.2 0-1.6.3-1.6.4-.3 0-1.1.2-1.3 0 0-.3-.2-.7-.2-1.1-.1 0-.2-.6-.3-.6 0-.1-.9-1.9-.8-1.9 0-.2-.2-.8-.2-.8 0-.7-.5-1.2-.5-1.8-.1 0-.4-1.3-.3-1.3 0-.7.2-1.1.3-1.9.1-.8-.1-1.4-.2-2-.1 0-.4-.5-.4-.6-.4-.3-.5-.8-.5-1.2.2-.3.3-1.3.3-1.7-.5-.2-.7-.1-1.2-.1-.3-.6-2.4-.2-2.9-.2 0 .3-1.4-.1-1.6-.3-.3 0-1-.7-1-1.1-.4-.3-1-1.5-1-1.9-.3-.2-.2-.8 0-.8 0-.2-.1-.7-.2-1-.1-.2.2-.4.2-.7 0-.7 0-1 .4-1.7.1-.2.3-.4.4-.7.2-.5.3 0 .5-.5.3-.1.4-.5.7-.8.1-.2.1-.2 0-.3.1 0 .3-.7.3-.9.4-.5.1-.3.5-.2.1-.1.4-.5.6-.5.1-.2.3-.3.5-.3 0 .3.8-.1.9-.1.1-.3 1-.6 1.2-.6.1-.5 1.8-.1 2.1-.2zm.7-.3c.1-.3.2-.1.4 0 .4.1.2 0 .5-.1 0 .7-.4.1-.9.1zM60 48.4c0-.2 0-.2.1-.2.1.2.2.2-.1.2zM42.5 23.1c-.3-.3 0-.4 0-.7-.5-.1.5-.3.5-.4-.2 0-.3-.2-.2-.3.1-.2.2.2.3.1.2 0 .6-.3.4.2-.1.7-.3 1.1-1 1.1zm-4.2-5.4s.5-.2.6-.2c0 .1-.1.1 0 .1v.3c0 .1.7-.1.8-.1.6-.1.7-.5.7.1.3.1.2-.1.5-.2 0 .2.2.2-.1.4-.3.2-.5.2-.8.2-.1 0-.9.1-.9 0-.3 0-.5-.1-.9-.2 0 0 .6-.4.1-.4zm20.4 32c.2.1.3.4.5 0-.3-.1-.3-.2-.1-.5.2.1.9.4.9-.1-.5 0 .1-.9.1-.3.5 0 .2-.6.4-.8 0 .2.1.9.3 1 .4.3-.3.5-.3.7-.2.1-.1.4-.1.5h-.2c0 .5-.2 1-.2 1.4-.2 0-.2.8-.2 1.3-.1.2-.2.3-.3.5-1.4 0-1-3.2-.8-3.7zm6.1-16.1c-.4 0-.9-.1-1-.2-.9 0-1.7-.9-2.7-.6 0 0 0-.1 0 0 .1-.2-.7-1.6-1-1-.1.2.3.8.4.9 0 .1.1.4.2.5.3.3-.1.4 0 .5.3 0 .3-.1.4-.6h.1c0 .2 0 .4.1.5.3.5-.1 0 .1.4.5 0 .9-.3 1.2-.9.2.1 0 .3.1.4.2.2.3.3.2.5-.1.1.4.4.3-.1.5.1.4.8 0 1 0 .2-.2.3-.2.6 0 .2-.2.6-.3.6 0 .1-1.4.7-1.3 1-.2 0-1.1.2-1.3.6-.2 0-.9.3-.9.4-.9 0-.7-1-1.1-1 0-.2-.1-.3-.2-.4.3 0-.8-2.1-.8-2.4-.2-.1-.4-.7-.4-.9-.2-.2-.5-.7-.6-.9-.2-.2-.8-.9-.9-1.2.3 0 .9.1.9-.3-.2 0-.3-.3 0-.3-.1-.3.2-.5.2-.7.1-.3.2-.7.2-1-.3 0-.4.1-.7.1 0 .2-.6 0-.7 0-.1-.2-1 .3-1.3-.2-.4-.4-.3-.7-.4-1.2-.1-.3-.4-.3-.6-.3-.6-.1-.2.7-.2.9.4 0-.2.5-.2.7-.6-.1-.4-.9-.8-1-.1-.2 0-.3-.3-.3 0-.3.1-.7-.1-.8 0-.1-.5-.2-.6-.3-.3 0-1.1-1.3-1.4-.8-.5.2-.2.2-.2.4.5-.1.4.8 1 .7v.4c.4-.1.4.3.6.3-.2.2-.7-.3-.5.1.1.3 0 .5-.3.8 0-.3 0-1.1-.3-1.1-.2-.4-.8-.3-1.1-.7-.2 0-.3-.7-.7-.7-.1.1-.3.2-.4.2-.2.4-1.3 0-1.3.1 0 0-.6 1.5-.7 1.7-.1.4-.4.4-.5.8-.1.2-1.3.1-1.3.3-.5-.2-1-.6-1-1.1 0 0 .1-1.5.2-1.7.1 0 .1.1.2.2.3-.1 1.1.1 1.1-.3.3 0 .4.1.3.4.3.1.8.1.8-.3-.2 0-.2 0-.2-.2.6-.6-.4-1.1-.4-1.4-.2-.1-.6-.5-.3-.3.2.1 1.1.4.8-.2.1.1.5.5.5.1.1 0 .6-.3.2-.3v-.5c.6.3.3-.2.6-.4 0 .4.3-.2.5-.2.2-.3.8-.1.9-.5-.3-.1-.2-.8-.2-1.1.3.1.7-.5.8-.1 0 .1 0 .5.1.6.5.3.4-.2.4-.4-.2 0-.4-.6-.4-.9-.1 0-.4.1-.4.2-.5 0-.9-.2-1.3-.2 0-.1-.5-.6-.5-.6-.3-.5.3-.4.4-.4 0-.5 1.9-.4 2-1.1-.6 0 .7-1.1.7-1.1.4-.4.7-.7 1.2-.7.2 0 2.8-.7 2.8-.4.3 0 1.8 0 1.8.2.3 0 .8.3 1 .2.3-.2 1.6.4 1.6.8-.6 0-1.4.1-2.2.1 0 .2.1 0 0 .2.3 0 .8.7.7.9.4 0 .5-.3.8-.3 0 .3.4.4.5 0-.3 0-.1-.4-.1-.4.2-.3.6 0 .8-.4 3.7 4.3 6.1 9.9 6.6 16.1zM16.3 14.8c.1 0 .5-.2.5-.2 0 .3-.1.3 0 .7.1 0 .3.5.3.7.3 0 .6-.2.7.1h-.4c.1.7-.3.3-.7.3 0 0-1-.5-.6.2.1 0 .1.2.4.3.4.1.8.2 1.1.3.3 0 .5-.1.8-.1 0 0 .6-.3.2-.3.1-.3-.1-.3-.3-.3 0-.3.7-.1.9-.1.2-.3 0-.3.2-.6.2-.4.5-.1.6-.4.2.1.4.2.5.5.2.1 1 1.4 1 .5.3.1.5.7.5 1 .6-.1.6-.5.6-.9.1 0 0-.2 0-.3.2-.1.5.2.5-.1.1 0 .1.1.1.2.3.1.5 0 .7 0 .1 0 .1.7 0 .9-.1.3-.6.3-.6.4-.6.5.7.7.9 1-.1 0-.6-.1-.6-.1-.3 0-1 .3-1.3.1.4 0 .5-.5.6-.9-.4-.1-.8.1-.9.4-.2.6-.5 0-.7.4-.1 0-.8.3-.8.2-.8.1-.6.8-.6 1.5.3.2.9.7.9 1 .7.1.9.2 1.6.3.1.1.3.2.4.2 0 .4.4.3.7.3 0-.5.6.4.7.6-.1 0 .1.5.2.7-.1 0-.1 0-.1.1.3.1.8.1.9-.2-.3 0-.2-.3-.2-.5-.3-.2-.3-.6 0-.7 0 .3 1-.2.4-.4.1-.3.2-.8 0-1-.1-.2-.3 0-.4-.2.4-.1.1-.8.1-1.1.1 0 .4.1.4 0 .4 0 1 .5 1.2-.1.6.3.1.5.8.3 0 .1.7.9.8.9 0 0 0 .2.1.2 0 .2-.1-.1-.1.2.1 0 .6.1.6-.1.3 0 .5-.4.5-.7.2-.1.5 1 .8 1 .2.3.7.6.7.9.1.1.2.1.2.4.1 0 .4-.6.4 0 .1 0 .5.3.6.5-.3 0 0 .3-.2.3 0 .3-.7.1-.9 0-.2 1-1.6.3-2.4.5-.4.1-1.3 1.1-1.3 1.6.5 0 .8-.5 1.2-.6.4 0 .5-.2.8-.3 0 .1.1 0 .1.1-.7 0-.3.4-.1.8.2.3.4.4.7.4-.1.2-.4 0-.4.3-.1 0-.4.1-.4.2-.8.1-.4 0-.3-.2 0 .1.3 0 .3 0 0-.2-.1-.2 0-.3-.4 0-.6.2-.9.2-.1.1-.3.4-.5.4-.1.3-.3.8-.6 1 0-.1-.7.4-.6.4-.2.2-.3.2-.4.6 0 0-.2.7-.2.8-.3.2-.4 1-.9 1-.3.6-.9.5-.9 1.3.2.2.3 1 .3 1.3.1.3.2.7-.3.7l-.3-.5c0-.2-.2-.8-.4-1-.2-.3-.5 0-.8-.1-.1-.2-.9-.3-1.2-.3 0 .2.2.2.2.4-.2.1-.4.2-.6.2-.4-.1-.4-.4-.8-.3-.7 0-1.3.6-1.3 1.3-.1 0-.1 1.4 0 1.4 0 .4.3.7.3 1 .3 0 .7.7 1 .7 0 .3-.2.3.4.3 0 0 .3-.2.3-.4-.4-.1 0-.6.2-.7 0 .3.5-.1.5-.1.1 0 .5-.2.5-.2 0-.4.4 0 .1.2-.3 0-.2.4-.4.4l-.3.9c-.1.4.2.4.1.7.4.1.8 0 1.1 0V37c.5 0 0 1 .4 1 0 .4.2.7.2.9.3.2.4.4.3.7.3 0 1 .1 1-.3.5 0 .5.3.5.7 1 0 .4-.9.8-.9 0-.2.1-.2.2-.1.2.1.3-.2.5-.3 0 0 .2-.1.3-.1.1.1.1.1.2.1.3 0 .5-.1.7-.3.3 0 .2.8.9.8.3 0 .8.1 1.1-.1.1 0 .3.1.3.2.2 0 .2.2.3.2 0 0 .1.1.1 0 0 .1.2.1.3.3 0 .2.4.2.4.4.3.2-.1.2.4.3.3.1.5.2.8.2.1-.3.4 0 .5 0 .1.2.1 0 .2.2.4.4.1.2.3.6.2.1.3.6.3.9-.2 0 0 .6 0 .7-.2 0 .5.4.5-.1.3 0 .5.4.7.4-.1.3.3.5.3 0 .4 0 .3.7.3.9.4 0 .4-.3.8-.2.2 0 .4.2.5-.1.5.2.8.4 1.1.7.6.5.7 1.9.1 2.4 0 .1-.7.9-.7.9v1c0 .2-.1 1.2-.3 1.2 0 .5-.3.6-.5 1.1-.3.2-1.1.6-1.2.8-.2 0-.4.2-.6.2 0 .1-.5.5-.4.5 0 .3 0 1.1-.2 1.3-.1.1-.3.1-.2.4-.3 0 0 .2-.4.2-.3 0-.7.4-.7.7 0 .4-.1.7-.5.9 0 .1-.6.2-.6.5.1 0 0 .6 0 .7-.2 0-.6.2-.7.3-.6 0-.5.1-.9.3 0 .1-.1.4-.1.4 0 .5-.3 0-.6.3.1 0 .2.5.2.5 0 .4-.3.5-.5.8-.1.1-.2.4-.3.4 0 .3-.1.5-.1.8.1 0 0 .1 0 .2.1 0 .1-.2.2-.2 0-.2.4.1.1.1-.2.3-.4.3-.5.7-.3 0-.6.9-.3.9 0 .2.1.3.1.4-.8-.2-1.5-.5-2.3-.7 0-.9 0-3.1.3-3.1 0-.1.1-.8.2-.8v-1.3c-.1-.3.2-.6.3-1.1.5-.3.2-3 .6-3 0-1.4.3-2.2.1-3.4.1 0-.6-.8-.6-.8-.7 0-1.2-1.1-1.2-1.6-.1-.2-.2-.5-.2-.8.2 0-1-1.7-1-1.7-.6-.3 0-.8.1-1.4-.5-.2 0-1.6.2-1.6 0-.2.1-.3.3-.4.1.5.7-.2.2-.2v-1.1c0-.5-.4-1.4-.8-.4-.4-.2-1.2-.1-1.3-.7.1-.3-.5-.8-.7-.9.2-.5-1-1.1-1.4-1.1 0-.1-.2-.1-.3-.2-.4 0-.5-.6-1-.6s-1.1-.4-1.6-.4c-.2-.3-1-.2-1.1-.6-.4 0-.6-.8-.6-1.1 0-.3-.3-1.6-.8-1.6 0-.3-.7-.8-.9-.8 0-.1-.3-.7-.4-.7 0-.2-.7-1.1-.8-.7-.1.3.5.6.5.9.1 0 .6.9.7 1.1 1.1 1.8-.8.6-.8-.2-.2-.1-.6-1-.6-1.3-.1-.1-.6-1-.5-1 0-.6-.3-.9-.9-.9 0-.1-.6-.8-.6-.8 0-.2-.4-1-.7-1.1 0-.5-.3-1.1-.1-1.6 0-.9 0-2-.8-2.7 1.5-2.7 3.7-5.7 6.4-8.2zm14.3 10.4c0 .2-.1.3-.4.3.1-.2.1-.2.4-.3zm-1.5 10.9c-.1 0-.3.1-.2-.1 0 0 .2 0 .2.1zm-2.1 0c-.1.1-.7.1-.8 0 .2 0 .4.1.7 0 0-.1-.1-.2-.2-.4.3 0 .5.2.9.2 0-.2-.1 0 0-.2.1 0 .5.4.5.5-.5-.1-.5-.1-1.1-.1zm.4 2.2c0 .1 0 .1-.2.1v-.2c.1.1.2.1.2.1zM25 34.9c-.2 0-.7-.2-.9-.4.2 0 .5.1.6-.1.6.1.7.5 1.1.5.1.2.6.5.1.6-.3 0-.8-.3-.9-.6zm.7 1.3h-.3c0-.2.2-.4.3 0zm-.4.1c-.2 0-.5.1-.3-.3.2 0 .3.1.3.3zm-1.7-1.8c0 .3-.6.4-.5-.1h.1c.2.2.3.1.4.1z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_attach" viewbox="0 0 17 16.08">
+			<defs/><title>icon</title><path d="M6.12.74L15 9.65a3.15 3.15 0 0 1-4.45 4.45L1.67 5.2a2.1 2.1 0 0 1 3-3l8.17 8.17a.79.79 0 1 1-1.11 1.11L5.75 5.57 5 6.31l5.94 5.94a1.84 1.84 0 0 0 2.6-2.6L5.38 1.48A3.15 3.15 0 0 0 .92 5.94l8.91 8.91a4.2 4.2 0 0 0 5.94-5.94L6.86 0z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_facebook_off" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M22 1a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h19m0-1H3a3 3 0 0 0-3 3v19a3 3 0 0 0 3 3h19a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/><path d="M16 7.28h-1.72c-.27 0-1-.06-1 .56v1.64H16l-.54 2.75h-2.15v8.24h-2.69v-8.24H9V9.48h1.61V7.83c0-1.3.12-3.3 2.69-3.3H16z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_facebook_on" viewbox="0 0 25 25">
+			<defs/><title>icon</title><rect width="25" height="25" rx="3" ry="3"/><path d="M16 7.28h-1.72c-.27 0-1-.06-1 .56v1.64H16l-.54 2.75h-2.15v8.24h-2.69v-8.24H9V9.48h1.61V7.83c0-1.3.12-3.3 2.69-3.3H16z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_instagram_on" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M3 0h19a3 3 0 0 1 3 3v19a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/><path d="M17.1 5H7.9A2.9 2.9 0 0 0 5 7.9v9.2A2.9 2.9 0 0 0 7.9 20h9.2a2.9 2.9 0 0 0 2.9-2.9V7.9A2.9 2.9 0 0 0 17.1 5zm.83 1.73h.33v2.54h-2.53V6.74zM10.36 11a2.63 2.63 0 1 1-.5 1.54 2.63 2.63 0 0 1 .5-1.54zm8.17 6.14a1.43 1.43 0 0 1-1.44 1.43H7.9a1.43 1.43 0 0 1-1.44-1.47V11H8.7a4.1 4.1 0 1 0 7.59 0h2.24z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_instagramm_off" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M22 1a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h19m0-1H3a3 3 0 0 0-3 3v19a3 3 0 0 0 3 3h19a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/><path d="M17.1 5H7.9A2.9 2.9 0 0 0 5 7.9v9.2A2.9 2.9 0 0 0 7.9 20h9.2a2.9 2.9 0 0 0 2.9-2.9V7.9A2.9 2.9 0 0 0 17.1 5zm.83 1.73h.33v2.54h-2.53V6.74zM10.36 11a2.63 2.63 0 1 1-.5 1.54 2.63 2.63 0 0 1 .5-1.54zm8.17 6.14a1.43 1.43 0 0 1-1.44 1.43H7.9a1.43 1.43 0 0 1-1.44-1.47V11H8.7a4.1 4.1 0 1 0 7.59 0h2.24z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_ok_off" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M22 1a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h19m0-1H3a3 3 0 0 0-3 3v19a3 3 0 0 0 3 3h19a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/><path d="M12.54 12.92a4.11 4.11 0 0 0 4.16-4 4.17 4.17 0 0 0-8.33 0 4.11 4.11 0 0 0 4.17 4zm0-5.7a1.66 1.66 0 1 1-1.71 1.66 1.68 1.68 0 0 1 1.71-1.66zm3.21 8.32C17.34 15 17.18 14 17.18 14a1.11 1.11 0 0 0-.74-1 .52.52 0 0 0-.28-.08h-.25a1.74 1.74 0 0 0-.74.21 6.93 6.93 0 0 1-2.78.69 4.88 4.88 0 0 1-2.62-.77 1.8 1.8 0 0 0-.65-.05 1.11 1.11 0 0 0-.15 0 1.15 1.15 0 0 0-.53.14.92.92 0 0 0-.61.94v.1a1.06 1.06 0 0 0 .09.3c.54 1.12 2.91 1.5 2.91 1.5l-2.37 2.26a1.15 1.15 0 0 0-.26.69 1.21 1.21 0 0 0 1.94.95l2.38-2.23 2.3 2.23.18.12a1.21 1.21 0 0 0 1.81-1 1.15 1.15 0 0 0-.26-.7l-2.3-2.3a9.18 9.18 0 0 0 1.51-.46z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_ok_on" viewbox="0 0 25 25">
+			<defs/><title>icon</title><rect width="25" height="25" rx="3" ry="3"/><path d="M12.54 12.92a4.11 4.11 0 0 0 4.16-4 4.17 4.17 0 0 0-8.33 0 4.11 4.11 0 0 0 4.17 4zm0-5.7a1.66 1.66 0 1 1-1.71 1.66 1.68 1.68 0 0 1 1.71-1.66zm3.21 8.32C17.34 15 17.18 14 17.18 14a1.11 1.11 0 0 0-.74-1 .52.52 0 0 0-.28-.08h-.25a1.74 1.74 0 0 0-.74.21 6.93 6.93 0 0 1-2.78.69 4.88 4.88 0 0 1-2.62-.77 1.8 1.8 0 0 0-.65-.05 1.11 1.11 0 0 0-.15 0 1.15 1.15 0 0 0-.53.14.92.92 0 0 0-.61.94v.1a1.06 1.06 0 0 0 .09.3c.54 1.12 2.91 1.5 2.91 1.5l-2.37 2.26a1.15 1.15 0 0 0-.26.69 1.21 1.21 0 0 0 1.94.95l2.38-2.23 2.3 2.23.18.12a1.21 1.21 0 0 0 1.81-1 1.15 1.15 0 0 0-.26-.7l-2.3-2.3a9.18 9.18 0 0 0 1.51-.46z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_twitter_off" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M22 1a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h19m0-1H3a3 3 0 0 0-3 3v19a3 3 0 0 0 3 3h19a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/><path d="M9.9 18.1a8.05 8.05 0 0 0 8.17-8v-.37a5.8 5.8 0 0 0 1.43-1.51 5.8 5.8 0 0 1-1.65.44 2.85 2.85 0 0 0 1.26-1.56 5.81 5.81 0 0 1-1.82.69 2.91 2.91 0 0 0-4.06-.12 2.8 2.8 0 0 0-.83 2.7 8.2 8.2 0 0 1-5.92-3 2.8 2.8 0 0 0 .89 3.78 2.88 2.88 0 0 1-1.3-.35 2.84 2.84 0 0 0 2.3 2.77 2.91 2.91 0 0 1-1.3 0 2.87 2.87 0 0 0 2.68 2 5.82 5.82 0 0 1-3.57 1.21 6 6 0 0 1-.68 0 8.23 8.23 0 0 0 4.4 1.32"/>
+		</symbol>
+	
+		<symbol id="icon-icon_twitter_on" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M3 0h19a3 3 0 0 1 3 3v19a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/><path d="M9.9 18.1a8.05 8.05 0 0 0 8.17-8v-.37a5.8 5.8 0 0 0 1.43-1.51 5.8 5.8 0 0 1-1.65.44 2.85 2.85 0 0 0 1.26-1.56 5.81 5.81 0 0 1-1.82.69 2.91 2.91 0 0 0-4.06-.12 2.8 2.8 0 0 0-.83 2.7 8.2 8.2 0 0 1-5.92-3 2.8 2.8 0 0 0 .89 3.78 2.88 2.88 0 0 1-1.3-.35 2.84 2.84 0 0 0 2.3 2.77 2.91 2.91 0 0 1-1.3 0 2.87 2.87 0 0 0 2.68 2 5.82 5.82 0 0 1-3.57 1.21 6 6 0 0 1-.68 0 8.23 8.23 0 0 0 4.4 1.32"/>
+		</symbol>
+	
+		<symbol id="icon-icon_vk_off" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M22 1a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h19m0-1H3a3 3 0 0 0-3 3v19a3 3 0 0 0 3 3h19a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/><path d="M19.31 16.87h-2a1.39 1.39 0 0 1-1-.31c-.75-.53-1.46-1.91-2-1.73s-.54 1.42-.54 1.42a.69.69 0 0 1-.12.41.75.75 0 0 1-.41.18h-.9a5.06 5.06 0 0 1-3.72-1.75A25.33 25.33 0 0 1 5 9s-.1-.27 0-.39.44-.15.44-.15h2.19a.91.91 0 0 1 .37.16.69.69 0 0 1 .19.26A15 15 0 0 0 9 10.6c.9 1.59 1.31 1.94 1.62 1.77s.31-2.25.31-2.25a2.31 2.31 0 0 0-.22-1.05 1 1 0 0 0-.71-.35c-.12 0 .08-.31.33-.43a4.72 4.72 0 0 1 1.87-.2 3.74 3.74 0 0 1 1.05.11c.74.18.49.89.49 2.6 0 .55-.1 1.31.29 1.57.16.11.57 0 1.57-1.74a13.7 13.7 0 0 0 .83-1.81.64.64 0 0 1 .2-.25.5.5 0 0 1 .29-.05h2.25s.68-.08.79.23-.25 1.1-1.17 2.37c-1.51 2.08-1.68 1.88-.43 3.09a6.86 6.86 0 0 1 1.5 1.79c.5.81-.55.87-.55.87z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_vk_on" viewbox="0 0 25 25">
+			<defs/><title>icon</title><rect width="25" height="25" rx="3" ry="3"/><path d="M19.31 16.87h-2a1.39 1.39 0 0 1-1-.31c-.75-.53-1.46-1.91-2-1.73s-.54 1.42-.54 1.42a.69.69 0 0 1-.12.41.75.75 0 0 1-.41.18h-.9a5.06 5.06 0 0 1-3.72-1.75A25.33 25.33 0 0 1 5 9s-.1-.27 0-.39.44-.15.44-.15h2.19a.91.91 0 0 1 .37.16.69.69 0 0 1 .19.26A15 15 0 0 0 9 10.6c.9 1.59 1.31 1.94 1.62 1.77s.31-2.25.31-2.25a2.31 2.31 0 0 0-.22-1.05 1 1 0 0 0-.71-.35c-.12 0 .08-.31.33-.43a4.72 4.72 0 0 1 1.87-.2 3.74 3.74 0 0 1 1.05.11c.74.18.49.89.49 2.6 0 .55-.1 1.31.29 1.57.16.11.57 0 1.57-1.74a13.7 13.7 0 0 0 .83-1.81.64.64 0 0 1 .2-.25.5.5 0 0 1 .29-.05h2.25s.68-.08.79.23-.25 1.1-1.17 2.37c-1.51 2.08-1.68 1.88-.43 3.09a6.86 6.86 0 0 1 1.5 1.79c.5.81-.55.87-.55.87z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_youtube_off" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M22 1a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h19m0-1H3a3 3 0 0 0-3 3v19a3 3 0 0 0 3 3h19a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/><path d="M19.85 9.5a3.24 3.24 0 0 0-.6-1.5 2.14 2.14 0 0 0-1.5-.64c-2.1-.15-5.25-.15-5.25-.15s-3.15 0-5.25.15a2.15 2.15 0 0 0-1.5.64 3.24 3.24 0 0 0-.6 1.49A22.67 22.67 0 0 0 5 11.93v1.14a22.68 22.68 0 0 0 .15 2.43 3.24 3.24 0 0 0 .6 1.5 2.54 2.54 0 0 0 1.65.64c1.2.11 5.1.15 5.1.15s3.15 0 5.25-.16a2.14 2.14 0 0 0 1.5-.64 3.24 3.24 0 0 0 .6-1.49 22.7 22.7 0 0 0 .15-2.43v-1.14a22.7 22.7 0 0 0-.15-2.43zM11 14.44v-4.2l4 2.11z"/>
+		</symbol>
+	
+		<symbol id="icon-icon_youtube_on" viewbox="0 0 25 25">
+			<defs/><title>icon</title><path d="M3 0h19a3 3 0 0 1 3 3v19a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/><path d="M19.85 9.5a3.24 3.24 0 0 0-.6-1.5 2.14 2.14 0 0 0-1.5-.64c-2.1-.15-5.25-.15-5.25-.15s-3.15 0-5.25.15a2.15 2.15 0 0 0-1.5.64 3.24 3.24 0 0 0-.6 1.49A22.67 22.67 0 0 0 5 11.93v1.14a22.68 22.68 0 0 0 .15 2.43 3.24 3.24 0 0 0 .6 1.5 2.54 2.54 0 0 0 1.65.64c1.2.11 5.1.15 5.1.15s3.15 0 5.25-.16a2.14 2.14 0 0 0 1.5-.64 3.24 3.24 0 0 0 .6-1.49 22.7 22.7 0 0 0 .15-2.43v-1.14a22.7 22.7 0 0 0-.15-2.43zM11 14.44v-4.2l4 2.11z"/>
+		</symbol>
+	
+		<symbol id="icon-mail" viewbox="0 0 72.1 48.7">
+			<path d="M71.9 45.7c.1-.4.2-.9.2-1.4v-40c0-.5-.1-.9-.2-1.3L48.4 23.2l23.5 22.5zM36.1 28l6.2-5 3.1-2.6L69 .2c-.4-.1-.8-.2-1.2-.2H4.3c-.4 0-.8.1-1.2.2l23.6 20.2 3.1 2.6 6.3 5z"/><path d="M67.8 48.7c.4 0 .8-.1 1.2-.2L45.2 25.7 36 33.2l-9.2-7.5L3.2 48.5c.4.1.8.2 1.2.2h63.4zM.2 3c-.1.4-.2.9-.2 1.3v40c0 .5.1.9.2 1.4l23.5-22.6L.2 3z"/>
+		</symbol>
+	
+		<symbol id="icon-major" viewbox="0 0 24 24">
+			<path d="M15 8c-2.3 0-4.2-1.5-4.8-3.6C8.9 5.1 8 6.4 8 8c0 2.2 1.8 4 4 4s4-1.8 4-4v-.1c-.3.1-.7.1-1 .1z"/><path d="M17 7.6c0-.4-.1-.7-.2-1-.3.1-.6.3-.9.3-.3.1-.6.1-.9.1-1.8 0-3.4-1.2-3.8-2.9-.1-.3-.2-.6-.2-1-.3.1-.7.2-1 .3-1.7.8-3 2.5-3 4.6 0 2.8 2.2 5 5 5s5-2.2 5-5v-.4zM12 12c-2.2 0-4-1.8-4-4 0-1.6.9-2.9 2.2-3.6C10.9 6.5 12.7 8 15 8c.3 0 .7 0 1-.1V8c0 2.2-1.8 4-4 4zm6 2H6c-3.3 0-6 2.7-6 6v3c0 .6.4 1 1 1h22c.6 0 1-.4 1-1v-3c0-3.3-2.7-6-6-6zm4 8h-9l.7-1-1.7-2.4-1.7 2.4.7 1H2v-2c0-2.2 1.8-4 4-4h3.4l2.6 2.6 2.6-2.6H18c2.2 0 4 1.8 4 4v2z"/><path d="M8.7 13C7.1 11.9 6 10.1 6 8c0-3.3 2.7-6 6-6s6 2.7 6 6c0 2.1-1.1 3.9-2.7 5h2.9c1.1-1.4 1.8-3.1 1.8-5 0-4.4-3.6-8-8-8S4 3.6 4 8c0 1.9.7 3.6 1.8 5h2.9z"/>
+		</symbol>
+	
+		<symbol id="icon-obshestv" viewbox="0 0 24 24">
+			<path d="M7 10h10c0-2.1-1.3-3.9-3.2-4.6C14.5 4.8 15 4 15 3c0-1.7-1.3-3-3-3S9 1.3 9 3c0 1 .5 1.8 1.2 2.4C8.3 6.1 7 7.9 7 10zm3-7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm2 3c1.9 0 3.4 1.3 3.9 3H8.1c.5-1.7 2-3 3.9-3zm8.8 13.4c.7-.6 1.2-1.4 1.2-2.4 0-1.7-1.3-3-3-3s-3 1.3-3 3c0 1 .5 1.8 1.2 2.4-1.9.7-3.2 2.5-3.2 4.6h10c0-2.1-1.3-3.9-3.2-4.6zM17 17c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm2 3c1.9 0 3.4 1.3 3.9 3h-7.7c.4-1.7 1.9-3 3.8-3zm-12.2-.6C7.5 18.8 8 18 8 17c0-1.7-1.3-3-3-3s-3 1.3-3 3c0 1 .5 1.8 1.2 2.4C1.3 20.1 0 21.9 0 24h10c0-2.1-1.3-3.9-3.2-4.6zM3 17c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm-1.9 6c.4-1.7 2-3 3.9-3s3.4 1.3 3.9 3H1.1zM5 6h2V5H5c-.6 0-1 .4-1 1v7h1V6zm14 7h1V6c0-.6-.4-1-1-1h-2v1h2v7z"/>
+		</symbol>
+	
+		<symbol id="icon-organizations" viewbox="0 0 24 24">
+			<path d="M23 12h-4.1C18.5 8.9 16 6.5 13 6.1V4h1c.6 0 1-.4 1-1s-.4-1-1-1h-1V1c0-.6-.4-1-1-1s-1 .4-1 1v1h-1c-.6 0-1 .4-1 1s.4 1 1 1h1v2.1c-3.1.4-5.5 2.8-5.9 5.9H1c-.6 0-1 .4-1 1v11h24V13c0-.6-.4-1-1-1zM5 22v-3c0-1.1.9-2 2-2s2 .9 2 2v3H5zm5 0v-3c0-1.1.9-2 2-2s2 .9 2 2v3h-4zm5 0v-3c0-1.1.9-2 2-2s2 .9 2 2v3h-4zm7 0h-2v-3c0-1.7-1.3-3-3-3-1 0-2 .5-2.5 1.3C14 16.5 13 16 12 16s-2 .5-2.5 1.3C9 16.5 8 16 7 16c-1.7 0-3 1.3-3 3v3H2v-8h5v-1c0-2.8 2.2-5 5-5s5 2.2 5 5v1h5v8z"/><path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 3c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
+		</symbol>
+	
+		<symbol id="icon-search" viewbox="0 0 25 25">
+			<path d="M24.7 23.3l-7.8-7.8c1.3-1.6 2.1-3.7 2.1-6C19 4.3 14.7 0 9.5 0S0 4.3 0 9.5 4.3 19 9.5 19c2.3 0 4.3-.8 6-2.1l7.8 7.8c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4zM2 9.5C2 5.4 5.4 2 9.5 2S17 5.4 17 9.5 13.6 17 9.5 17 2 13.6 2 9.5z"/>
+		</symbol>
+	
+		<symbol id="icon-sovet" viewbox="0 0 24 24">
+			<path d="M19 10.5c1.2-1.1 2-2.7 2-4.5 0-3.3-2.7-6-6-6-3 0-5.4 2-5.9 5H9c-3.3 0-6 2.7-6 6 0 1.8.8 3.4 2 4.5-1.8.4-3.5 1.5-5 3.5v4c0 .6.4 1 1 1h16c.6 0 1-.4 1-1v-4h5c.6 0 1-.4 1-1v-4c-1.4-2-3.2-3.1-5-3.5zM15 2c2.2 0 4 1.8 4 4s-1.7 4-4 4c0-2.1-1.9-3.9-3.9-4.6C11.4 3.5 13 2 15 2zM5 11c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm11 11H2v-2s2-3 7-3 7 3 7 3v2zm6-5h-5.9c-1-.8-2-1.3-3.1-1.5 1-.9 1.7-2.1 1.9-3.5h.1c5 0 7 3 7 3v2z"/>
+		</symbol>
+	
+		<symbol id="icon-time" viewbox="0 0 60 60">
+			<path d="M30 0C13.458 0 0 13.458 0 30s13.458 30 30 30 30-13.458 30-30S46.542 0 30 0zm0 58C14.561 58 2 45.439 2 30S14.561 2 30 2s28 12.561 28 28-12.561 28-28 28z"/><path d="M30 6a1 1 0 0 0-1 1v23H14a1 1 0 1 0 0 2h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z"/>
+		</symbol>
+	
+		<symbol id="icon-town" viewbox="0 0 24 24">
+			<path d="M23 6h-8V1c0-.6-.4-1-1-1H1C.4 0 0 .4 0 1v23h24V7c0-.6-.4-1-1-1zm-1 2v14h-7V8h7zm-9-6v20h-3v-5H5v5H2V2h11zM6 22v-4h3v4H6z"/><path d="M7 4H4v3h3V4zM6 6H5V5h1v1zm1 2H4v3h3V8zm-1 2H5V9h1v1zm1 2H4v3h3v-3zm-1 2H5v-1h1v1zm5-10H8v3h3V4zm-1 2H9V5h1v1zm1 2H8v3h3V8zm-1 2H9V9h1v1zm1 2H8v3h3v-3zm-1 2H9v-1h1v1zm10-4h-3v3h3v-3zm-1 2h-1v-1h1v1zm1 2h-3v3h3v-3zm-1 2h-1v-1h1v1z"/>
+		</symbol>
+	
+		<symbol id="icon-u4rejdeniya" viewbox="0 0 24 24">
+			<path d="M23 8h-4V1c0-.6-.7-1-1.3-1h-12C5.2 0 5 .4 5 1v7H1c-.6 0-1 .4-1 1v15h24V9c0-.6-.4-1-1-1zm-9 14h-4v-4h4v4zm8 0h-7v-5H9v5H2V10h5V2h10v8h5v12z"/><path d="M13 13h2v2h-2zm-4 0h2v2H9zm-4 0h2v2H5zm12 0h2v2h-2zm0 4h2v2h-2zM5 17h2v2H5zm8-13h-2v2H9v2h2v2h2V8h2V6h-2z"/>
+		</symbol>	
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="odnoklassniki-logo" viewBox="0 0 95.481 95.481"><title>odnoklassniki-logo</title><path d="M43.041,67.254c-7.402-0.772-14.076-2.595-19.79-7.064c-0.709-0.556-1.441-1.092-2.088-1.713 c-2.501-2.402-2.753-5.153-0.774-7.988c1.693-2.426,4.535-3.075,7.489-1.682c0.572,0.27,1.117,0.607,1.639,0.969 c10.649,7.317,25.278,7.519,35.967,0.329c1.059-0.812,2.191-1.474,3.503-1.812c2.551-0.655,4.93,0.282,6.299,2.514 c1.564,2.549,1.544,5.037-0.383,7.016c-2.956,3.034-6.511,5.229-10.461,6.761c-3.735,1.448-7.826,2.177-11.875,2.661 c0.611,0.665,0.899,0.992,1.281,1.376c5.498,5.524,11.02,11.025,16.5,16.566c1.867,1.888,2.257,4.229,1.229,6.425 c-1.124,2.4-3.64,3.979-6.107,3.81c-1.563-0.108-2.782-0.886-3.865-1.977c-4.149-4.175-8.376-8.273-12.441-12.527 c-1.183-1.237-1.752-1.003-2.796,0.071c-4.174,4.297-8.416,8.528-12.683,12.735c-1.916,1.889-4.196,2.229-6.418,1.15 c-2.362-1.145-3.865-3.556-3.749-5.979c0.08-1.639,0.886-2.891,2.011-4.014c5.441-5.433,10.867-10.88,16.295-16.322 C42.183,68.197,42.518,67.813,43.041,67.254z"/><path d="M47.55,48.329c-13.205-0.045-24.033-10.992-23.956-24.218C23.67,10.739,34.505-0.037,47.84,0 c13.362,0.036,24.087,10.967,24.02,24.478C71.792,37.677,60.889,48.375,47.55,48.329z M59.551,24.143 c-0.023-6.567-5.253-11.795-11.807-11.801c-6.609-0.007-11.886,5.316-11.835,11.943c0.049,6.542,5.324,11.733,11.896,11.709 C54.357,35.971,59.573,30.709,59.551,24.143z"/>
+	</symbol>
+	<symbol id="instagram-symbol" viewBox="0 0 438.536 438.536"><title>instagram-symbol</title><path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562 C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563 h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243 C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982 c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379 c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379 C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416 c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575 H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685 c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38 c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99 c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522 c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854 c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
+	</symbol>
+	<symbol id="facebook-logo" viewBox="0 0 96.124 96.123"><title>facebook-logo</title><path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803 c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654 c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246 c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+	</symbol>
+	<symbol id="video" viewBox="0 0 304.36 304.36"><title>video</title><path id="XMLID_807_" style="fill-rule:evenodd;clip-rule:evenodd;" d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982 c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474 c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587 c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641 c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07 c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521 c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434 c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799 c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663 c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366 c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258 c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072 C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576"/>
+	</symbol>
+</svg>
+
+
+<script type="text/javascript">
+       (function(d, t, p) {
+           var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+           j.src = ("https:" == p ? "https:" : "http:") + "//stat.sputnik.ru/cnt.js";
+           var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+       })(document, "script", document.location.protocol);
+    </script>
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/js/visually_impaired.css" />
+<script type="text/javascript" src="/js/visually_impaired.min.js"></script>
+
+<script type="text/javascript">
+	var uhe       = 2;
+	var lng       = 'ru';
+	var has       = 0;
+	var imgs      = 1;
+	var bg        = 1;
+	var hwidth    = 0;
+	var bgs       = [1, 2 ];
+	var fonts     = [18,20,22,24,26,28];
+	jQuery(function ($) {
+		document.body.insertAdjacentHTML('afterBegin', '<a id="uhvb"></a>');
+		uhpv(has);
+	});
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-230427-hUiRG';</script>
+    
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter46887339 = new Ya.Metrika({ id:46887339, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/46887339" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+<!-- ВИДЖЕТ -->        <script>Widget("https://pos.gosuslugi.ru/form", 482)</script>
+</body>
+</html>

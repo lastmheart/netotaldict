@@ -1,0 +1,1186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+                <title>ПсковГУ - Псковский Государственный Университет</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta name="allow-search" content="yes">
+    <meta name="searchtitle" content="">
+
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="1 day">
+    <meta name="robots" content="all">
+    <meta name="audience" content="all">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="ru" name="">
+
+    <link rel="stylesheet"
+          href="/app/pskgu/layouts/style/less/theme.blue.less.css?v=3"/>
+    <link rel="stylesheet" href="/app/pskgu/layouts/style/seleznev.css"/>
+    <!--link rel="stylesheet" href="style/less/style.less<?PHP if ($_SERVER['REMOTE_ADDR']!='127.0.0.1') echo '.css'; ?>" /-->
+
+    <!--link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"-->
+    <link rel="stylesheet" type="text/css" href="/app/pskgu/layouts/style/font/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/app/pskgu/layouts/style/icofont/css/icofont.css"/>
+    <!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="/app/pskgu/layouts/style/font/font-awesome-ie7.min.css" />
+			<!--link rel="stylesheet" type="text/css" href="/app/pskgu/layouts/style/ie.css" /-->
+    <![endif]-->
+
+    <script type='text/javascript' src="/app/pskgu/layouts/style/modernizr.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="/app/pskgu/layouts/style/css3-mediaqueries.js"></script>
+    <script src="/app/pskgu/layouts/style/html5.js"></script>
+    <script src="/app/pskgu/layouts/style/respond.js"></script>
+    <![endif]-->
+
+    <script src="/app/pskgu/layouts/style/bootstrap/js/jquery.js"></script>
+    <script src="/app/pskgu/layouts/style/jquery.cookie.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/app/pskgu/layouts/style/jquery.colorbox/colorbox.css" media="screen"/>
+    <script src="/app/pskgu/layouts/style/jquery.colorbox/jquery.colorbox.min.js"></script>
+    <script src="/app/pskgu/layouts/style/jquery.colorbox/jquery.colorbox.init.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/app/pskgu/layouts/style/calendar/datepicker.css">
+    <script src="/app/pskgu/layouts/style/calendar/bootstrap-datepicker.js"></script>
+
+    <script type="text/javascript" src="/app/pskgu/layouts/style/special_style/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/app/pskgu/layouts/style/special_style/special_style.js"></script>
+
+    <!--Select2-->
+    <link href="/select2/dist/css/select2.min.css" rel="stylesheet"/>
+    <script src="/select2/dist/js/select2.min.js"></script>
+
+        <meta property="og:description" content="ПсковГУ"/>
+
+    <!-- moment.js -->
+    <script src='/libs/moment.js'></script>
+
+    <!-- basictable - инструмент для респонзитивных таблиц -->
+    <script type="text/javascript" src='/libs/basictable/jquery.basictable.min.js'></script>
+    <link href="/libs/basictable/basictable.css" rel="stylesheet"/>
+
+    <script src="/app/pskgu/layouts/js/seleznev.js"></script>
+</head>
+
+<body class="light2 v2 v2-2 blue">
+
+
+
+    <section class="mistake_reporter" style="display: none">
+    <div class="mistake-form-container span6" style="padding-bottom: 30px">
+        <form id="mistake-form" action="/mistake/report">
+            <h4>Сообщить об ошибке</h4>
+            <input type="hidden" name="url" id="mistake-url" required>
+            <input type="hidden" name="text" id="mistake-text" required>
+            <input type="hidden" name="page" value="c83aeb3b-a37c-4e71-b5b1-a48e096fdc49" required>
+            <h5>
+                Текст ошибки:<br>
+            </h5>
+            <blockquote class="mistake-text"></blockquote>
+            <h5>
+                Опишите ошибку
+            </h5>
+            <textarea name="description" required></textarea><br>
+            <button
+                    class="g-recaptcha btn btn-warning"
+                    data-sitekey="6LdFZ0UUAAAAAICDSSIBrqVAnqNdj4y81W2jv2K1"
+                    data-callback="sendMistake">
+                Сообщить об ошибке
+            </button>
+                    </form>
+        <div class="mistake-success" style="display: none">
+            <p style="margin-top: 20px;">
+                Спасибо, за сообщение! Мы постараемся исправить ошибку в ближайшее время.
+            </p>
+        </div>
+        <div class="mistake-errors"></div>
+    </div>
+</section>
+
+
+
+
+<script type="text/javascript">
+    window.reporterMarkup=null
+    function sendMistake() {
+        console.log('send...');
+        /** Разметка формы отправки отчета */
+        window.reporterMarkup.find('form#mistake-form').submit();
+    }
+    $(document).ready(function () {
+        /** Разметка формы отправки отчета */
+        window.reporterMarkup=$('.mistake_reporter > .mistake-form-container');
+
+        $('body').keydown(function (e) {
+            var text=getSelectionText();
+            if (e.ctrlKey && e.keyCode === 13) {
+                if (text!=null) {
+                    window.cb = $.colorbox({
+                        'html': window.reporterMarkup
+                    });
+                    bindSubmit(window.reporterMarkup);
+                    $('input#mistake-url').val(window.location.href);
+                    $('input#mistake-text').val(text);
+                    $('.mistake-text').text(text);
+                }
+            }
+        });
+    });
+
+    /**
+     * Повесить обработчик событий на форму в разметке.
+     * Его нужно каждый раз заново вешать при открытии colorbox, иначе ничего не работает
+     * @param markup
+     */
+    function bindSubmit(markup) {
+        console.log('bind...');
+        markup.find('form#mistake-form').submit(function(e){
+            console.log('submit...');
+            e.preventDefault();
+            e.stopPropagation();
+            var errDiv=$('.mistake-errors');
+            var succDiv=$('.mistake-success');
+            var form=$(this);
+            errDiv.empty();
+            $.post(
+                $(this).attr('action'),
+                $(this).serialize(),
+                function (data) {
+                    if (data.errors!=undefined) {
+                        $.each(data.errors,function (index,error) {
+                            errDiv.append(error);
+                            errDiv.append('<br>');
+                        });
+                    } else {
+                        succDiv.show();
+                        form.hide();
+                        $.colorbox.resize();
+                        setTimeout(function () {
+                            $.colorbox.close();
+                            succDiv.hide();
+                            form.show();
+                        },5000);
+                    }
+                },
+                'json'
+            );
+            return false;
+        });
+    }
+
+    function getSelectionText() {
+        var text = "";
+        if (window.getSelection) {
+            text = window.getSelection().toString();
+        } else if (document.selection && document.selection.type != "Control") {
+            text = document.selection.createRange().text;
+        }
+        return text;
+    }
+</script>
+<div class="wrapper">
+    <div class="container">
+                                    <section class="subnav">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span5">
+                    <ul class="nav nav-pills topmenu topnav">
+                        <!--li><a href="#">Регистрация</a></li-->
+                                                <li class="dropdown">
+                            <a class="dropdown-toggle" title="Подразделения" data-toggle="dropdown" href="#">
+                                Подразделения
+                            </a>
+                            <ul class="dropdown-menu row inline-block" aria-labelledby="dLabel" role="menu">
+                                <li class="row_ span12">
+                                    <div class="_span12">
+                                        <div class="span4">
+                                            <h3>Институты</h3>
+                                            <ul class="unstyled ">
+                                                <li>
+                                                    <p style="font-size: 19.5px;"><a
+                                                                href="https://pskgu.ru/page/1574ca10-5bda-4e94-afa1-2d1a300002b1">Институт
+                                                            гуманитарных наук и языковых коммуникаций</a></p>
+                                                </li>
+                                                <li>
+                                                    <p style="font-size: 19.5px;"><a
+                                                                href="https://pskgu.ru/page/67988c46-6d68-4c0c-8ad1-75c131671090">Институт
+                                                            инженерных наук</a></p>
+                                                </li>
+                                                <li>
+                                                    <p style="font-size: 19.5px;"><a
+                                                                href="https://pskgu.ru/page/9b7c37b0-7a66-48f3-9066-245e67373797">Институт
+                                                            математического моделирования и игропрактики</a></p>
+                                                </li>
+                                                <li>
+                                                    <p style="font-size: 19.5px;"><a
+                                                                href="https://pskgu.ru/page/68161a30-a22b-4277-b447-1637661430be">Институт
+                                                            медицины и экспериментальной биологии</a></p>
+                                                </li>
+                                                <li>
+                                                    <p style="font-size: 19.5px;"><a
+                                                                href="https://pskgu.ru/page/6c24ac09-703a-4017-be0d-ba6c4340ffbc">Институт
+                                                            права, экономики и управления</a></p>
+                                                </li>
+                                                <li class="last-child">
+                                                    <p style="font-size: 19.5px;"><a
+                                                                href="https://pskgu.ru/page/d3224989-0228-42d9-a92f-bf2ea89d1030">Институт
+                                                            образования и социальных наук</a></p>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="span4">
+                                            <p style="font-size: 19.5px;"><a
+                                                        href="https://pskgu.ru/structure/department/428C4341E04696FE39C9414663A8CE37">Межфакультетская
+                                                    кафедра физической культуры</a></p>
+                                            <p style="font-size: 19.5px;"><a href="http://majmin.pskgu.ru/ ">Открытый
+                                                    институт русского языка и культуры имени Е.А. Маймина</a></p>
+                                            <p style="font-size: 19.5px;"><a href="http://ino1.pskgu.ru/">Институт
+                                                    непрерывного образования</a></p>
+                                            <p style="font-size: 19.5px;"><a href="https://filialpskovgu.ru/">Филиал
+                                                    ПсковГУ в г. Великие Луки</a></p>
+                                            <p style="font-size: 19.5px;"><a href="http://college.pskgu.ru/">Колледж
+                                                    ПсковГУ</a></p>
+                                            <p style="font-size: 19.5px;"><a href="https://abit.pskgu.ru/">Приемная
+                                                    комиссия</a></p>
+                                            <p style="font-size: 19.5px;"><a href="http://lib.pskgu.ru/">Библиотека</a>
+                                            </p>
+                                            <p style="font-size: 19.5px;"><a href="http://universant.pskgu.ru/">Бассейн
+                                                    "Универсант"</a></p>
+                                            <p style="font-size: 19.5px;"><a
+                                                        href="https://med.pskgu.ru/page/4555d415-ab32-4c1f-acb5-14145bac473c">Поликлиника</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+			<li><a href="https://mfc.pskgu.ru" target="_blank">Студенческий МФЦ</a></li>
+                                                                                                                                            </ul>
+                </div>
+                <!--div class="span2">
+                    <p class="_pull-right">
+
+                    <?PHP
+                        //include("_social3.tpl");
+                    ?>
+                    </p>
+                </div-->
+                <div class="span7">
+                    <ul class="nav nav-pills pull-right topnav" id="main_topmenu">
+                                                                                                <!--li><a href="#">Регистрация</a></li-->
+                        <li><a href="http://mail.pskgu.ru" title="Корпоративная почта ПсковГУ" target="_blank"><i
+                                        class="icon icon-envelope"></i></a></li>
+                        <li class="dropdown design">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Стиль</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <li class="blue"><a href="#blue_style"
+                                                    onclick="$.cookie('style','blue',{path:'/'});location.reload();"><i
+                                                class="icon icon-ok"></i> <i class="icon icon-stop"></i> Синий</a></li>
+                                <li class="green"><a href="#green_style"
+                                                     onclick="$.cookie('style','green',{path:'/'});location.reload();"><i
+                                                class="icon icon-ok"></i> <i class="icon icon-stop"></i> Зеленый</a>
+                                </li>
+                                <li class="cyan"><a href="#cyan_style"
+                                                    onclick="$.cookie('style','cyan',{path:'/'});location.reload();"> <i
+                                                class="icon icon-ok"></i> <i class="icon icon-stop"></i> Цианистый</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/page/13b2913a-15bc-4279-8a05-b9c704ae7299"
+                               title="Веб-камеры строительства нового студенческого городка на берегу реки Великой"><i
+                                        class="icon icon-facetime-video"></i></a></li>
+                                                    <li><a href="#loginForm" data-toggle="modal" title="Личный кабинет"><i
+                                            class="icon-signin"></i>Вход</a></a></li>
+                                                                        <li id="vk"><a href="https://vk.com/pskgu" title="ПсковГУ ВКонтакте"><i
+                                        class="icon icon-vk"></i></a></li>
+                        <li><a href="https://t.me/pskovuniversity" title="ПсковГУ в Telegram"><i style="color: inherit" class="icofont icofont-social-telegram"></i></a></li>
+                        <li><a href="http://pskgu.ru/rss/" title="RSS новости ПсковГУ"><i
+                                        class="icon icon-rss"></i><!--img src="images/rss.png" /--></a></li>
+
+                        <li class="dropdown lang">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Русский язык сайта"><span
+                                        class="rus"></span></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <li><a href="http://pskovuniversity.com/en/"><span
+                                                class="eng"></span>English</a></li>
+                                <li><a href="http://pskgu.ru" title="Русский язык сайта"><span
+                                                class="rus"></span>Русcкий</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span7">
+                    <p class="brand">
+                        <a href="http://pskgu.ru" title=""><img src="/app/pskgu/layouts/style/images/logo_blank.png"
+                                                                       class="logo pull-left">Псковский Государственный
+                            Университет
+                            <span class="description" style="color: #c53d36">Победитель программы Министерства науки и высшего образования РФ «Приоритет 2030»</span></a>
+                    </p>
+                </div>
+                <div class="span5">
+                    <form class="navbar-search span4 pull-right"
+                          action="https://pskgu.ru/page/9ef3024c-9b14-48eb-a4fd-d7cd6c8fa5b2">
+                        <div class="input-append">
+                            <nobr>
+                                <input type="text" class="search-query" name="serch_keys" placeholder="Поиск" style="width: 85%">
+                                <span class="add-on">
+                                    <button style="background:transparent;border:none;outline:none;font-weight:400" class="icon-search"></button>
+                                </span>
+                            </nobr>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+                                                                                                                                
+    
+    <div id="loginForm" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="loginFormLabel"
+         aria-hidden="true">
+
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="loginFormLabel">Вход в личный кабинет</h3>
+        </div>
+        <div class="modal-body">
+            <form enctype="application/x-www-form-urlencoded" method="post" action="/auth/login/"
+                  class="form-horizontal">
+                <div class="error" id="auth-errors"></div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="text" name="login" id="login" autofocus placeholder="Пользователь*"
+                               AUTOCOMPLETE="OFF">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="password" name="password" id="password" placeholder="Пароль*" value=""
+                               AUTOCOMPLETE="OFF"/>
+                    </div>
+                </div>
+                <hr>
+                <div class="control-group">
+                    <label class="control-label">&nbsp;</label>
+                    <div class="controls">
+                        <button class="btn btn-large btn-danger" name="submit" id="submit" onclick="submit()"> Войти
+                            &rarr;
+                        </button>
+                        &nbsp; <!--button class="btn" data-dismiss="modal" aria-hidden="true">Отменить</button-->
+                        <!--a href="#">Забыли&nbsp;пароль?</a-->
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <section class="menu_">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+                                                        <div class="navbar mainMenu">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">Меню</a>
+                <div class="nav-collapse">
+
+                    <ul class="nav">
+                        <li class="home"><a class="active" href="http://pskgu.ru">&nbsp;<i class="icon-home"></i></a></li>
+
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="http://pskgu.ru/page/10184895-2425-4caf-bb41-b7c03b5e1d45">Университет</a>
+                            <ul class="dropdown-menu">
+                                
+    <li><a href="/page/dc0acae4-8c06-4b03-96e1-3e8068817c76">О ПсковГУ</a></li>
+    <li><a href="/page/d02a76c6-8f19-4d0b-9d42-5f01ed0228c8">Руководство</a></li>
+    <li><a href="/page/67f6ef86-f95e-45a2-80e1-18e4456b3b5e">Структура</a></li>
+    <li><a href="/page/fa6ff2bd-a1e9-4cb9-9fcf-7871dcdd3aed">Институты</a></li>
+    <li><a href="/page/4f4e0c5f-8c2d-4834-ac9c-64ed80ed5542">Сведения об образовательной организации</a></li>
+    <li><a href="/page/4a18c4de-d087-4218-bd07-31ad5c1efae2">Документы</a></li>
+    <li><a href="/page/30fd0f27-a445-4e0a-ab7f-0571372dd4b3">График приёма граждан по личным вопросам</a></li>
+    <li><a href="/page/62e5426a-af69-412a-85b8-c485b409cfa4">Платные услуги</a></li>
+    <li><a href="/page/b4b9f60e-8856-4f5c-b082-783fa50b1b26">Противодействие терроризму</a></li>
+    <li><a href="/page/9c6247e6-1a45-4d7d-891b-de42114f272d">Обращения граждан</a></li>
+    <li><a href="/page/57346986-9370-4ce8-8018-08fdf1b612ed">Сведения о доходах </a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="http://pskgu.ru/page/e83e233e-186f-4e91-8735-f0be12c5d3fb">Образование</a>
+                            <ul class="dropdown-menu">
+                                
+    <li><a href="/page/86d1b397-43ff-485c-ae5e-fbfcb6db2abb">Повышение квалификации по персональным цифровым сертификатам</a></li>
+    <li><a href="/page/3e4f74e9-b4ea-4775-84c0-55186d09a6c1">Основные образовательные программы</a></li>
+    <li><a href="/page/3c838ff1-40ae-4426-ad09-a2db94b5a929">Федеральные государственные образовательные стандарты</a></li>
+    <li><a href="/page/7401bafe-facf-4277-9ccf-20f616e77c30">Дополнительные образовательные программы</a></li>
+    <li><a href="/page/235457b9-b244-4381-b918-38a8c700d01d">Финансовая грамотность</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="http://pskgu.ru/page/410c3530-a18b-4fe9-a56b-5cc51252394e">Наука и инновации</a>
+                            <ul class="dropdown-menu">
+                                
+    <li><a href="/page/a38b117d-83c8-452b-9d91-b6d9aba4dfe0">Приоритетные направления научных исследований</a></li>
+    <li><a href="/page/417510d5-637a-4428-93c3-d674fd880fd2">Научные лаборатории</a></li>
+    <li><a href="/page/39962431-956d-40d1-9020-5a187b0d9be5">Научные центры</a></li>
+    <li><a href="/page/3ecb0f49-48cc-4f21-adc9-a9b233a44fff">Научные издания</a></li>
+    <li><a href="/page/b89c4b3a-d2ac-4da2-bae0-07e82269925f">Научные и научно-образовательные проекты</a></li>
+    <li><a href="/page/9cef68a2-1b81-4cb1-ad1d-58f3950b97f6">Инструменты стимулирования научной деятельности</a></li>
+    <li><a href="/page/01836129-f244-492c-b2a2-b62d237b4845">Основные научные мероприятия ПсковГУ в 2022 году</a></li>
+    <li><a href="/page/697c6fd2-0464-460f-8cf7-2ce5accdbe1b">Молодежная наука</a></li>
+    <li><a href="/page/30f60906-4138-45a0-9214-ace11f72c86f">Наука ПсковГУ в СМИ</a></li>
+    <li><a href="/page/6f507b19-1294-441e-826d-8e426daf1a9d">Научные семинары</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="http://pskgu.ru/page/22d674bc-7dc9-4be3-aee7-f0da21522530">Ученый совет</a>
+                            <ul class="dropdown-menu">
+                                
+    <li><a href="/page/2866debe-33df-4bff-9c3a-72e430101df1">Состав Ученого совета </a></li>
+    <li><a href="/page/c7382bf0-9c60-4350-b902-cd0d1a6a808d">Секретариат Ученого совета</a></li>
+    <li><a href="/page/906e762f-8c4f-4056-aeed-1ea44e31de05">Заседания Ученого совета</a></li>
+    <li><a href="/page/2a8f0d26-d02f-46f7-a038-7bd3bba2e6ef">Конкурс. Выборы</a></li>
+    <li><a href="/page/fe5c9711-86f4-4338-917c-58706d030fa2">Соискателю ученого звания</a></li>
+    <li><a href="/page/ac980821-83af-4b0d-a5fe-2c5329b6556e">Документы, принятые Ученым советом</a></li>
+    <li><a href="/page/9809c7d5-2997-4ad9-8323-7c828f660abd">Комиссии Ученого совета</a></li>
+    <li><a href="/page/430c0203-9758-44a8-8071-33b809562c31">Ученые советы институтов и филиала</a></li>
+    <li><a href="/page/5dd171c0-1d62-4434-b0a2-d528b8d4e882">Конференции работников и обучающихся ПсковГУ</a></li>
+    <li><a href="/page/d656e324-9578-4319-a604-fd27fe798a34">Аттестация преподавателей СПО</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="http://pskgu.ru/page/a0f17579-aa72-4e2d-8843-6e7808ca03be">Молодежная политика</a>
+                            <ul class="dropdown-menu">
+                                
+    <li><a href="/page/1e88e738-3cca-42d7-b077-5fb465a15a63">Отчеты</a></li>
+    <li><a href="/page/867daa3a-af2f-43bb-ba7d-f73b9589fdff">Коллективы и клубы</a></li>
+    <li><a href="/page/85471ded-ceaf-4a68-b3d4-dd2621268fe2">Волонтерская деятельность</a></li>
+    <li><a href="/page/ee491520-f0de-46f0-aa1a-4edb99559639">Объединенный Совет обучающихся </a></li>
+    <li><a href="/page/8ba95966-2434-4ef4-86ce-28abf3ab91a4">Для сотрудников и преподавателей</a></li>
+    <li><a href="/page/41c0232c-a565-44b5-91f4-af1c82e6b547">Социальная защита</a></li>
+    <li><a href="/page/0d288d0e-6c6a-4f70-b598-a9c423bb850b">Социально-психологическая служба</a></li>
+    <li><a href="/page/b484d35f-54ff-433e-b25e-75ddf1db8c30">Взаимодействие ПсковГУ с РУМЦ СЗФО «Череповецкий государственный университет»</a></li>
+    <li><a href="/page/fb9d591f-e9ba-4d64-87ba-6063d5f7e43e">Проекты</a></li>
+    <li><a href="/page/3465e744-7ddf-4983-9d97-519dc7b08ff4">Архив мероприятий</a></li>
+    <li><a href="/page/722c899b-2a91-4f5a-b2a2-0b23b4a4901e">Штаб студенческих отрядов</a></li>
+    <li><a href="/page/feb410cb-dd5a-45d8-b368-73a9e89f0f5d">Студенческий спортивный клуб «Псковские барсы»</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="http://pskgu.ru/page/07bcfbc2-e111-4cd9-b846-8eafc14ea558">Международная деятельность</a>
+                            <ul class="dropdown-menu">
+                                
+    <li><a href="/page/70279695-54ef-414d-9cb0-1d5927be7922">Студентам и преподавателям</a></li>
+    <li><a href="/page/76b920d6-f8c1-4239-b5db-5ba54625b90b">Управление международной деятельности ПсковГУ</a></li>
+    <li><a href="/page/1f909bf7-9903-4522-9732-eb2dd31de8c2">Академическая мобильность</a></li>
+    <li><a href="/page/6b2a5477-4024-48b1-83c4-c1999127b97b">Международное сотрудничество</a></li>
+    <li><a href="/page/cbd55d8a-835f-44d6-81ec-7e9e70106819">Русский язык для иностранцев</a></li>
+    <li><a href="/page/c46043d3-5220-453e-bfab-914dbc9fa4dc">Европейское приложение к диплому</a></li>
+    <li><a href="/page/e3c6f308-eef7-4ba7-a693-5c2aed15ca99">Интернационализация высшего образования</a></li>
+    <li><a href="/page/5734df0f-b8fd-450a-b611-ef963f2902cd">Памятка по прибытию в РФ (COVID-19)</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="http://pskgu.ru/page/bd827731-57f8-4cc2-a118-305fb93bba95">Медиа</a>
+                            <ul class="dropdown-menu">
+                                
+    <li><a href="/page/f27a5e39-b916-487e-9558-4d379d59f263">Пресс-центр</a></li>
+    <li><a href="/page/09a8a501-ef70-4ed5-bc6c-d0ac90b297b2">Символика университета</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://pskgu.ru/page/a55cc327-e5c1-4782-8f91-d4cce275b6de">Приоритет 2030</a>
+                        </li>
+                                            </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                    </div>
+                <!--div class="span3">
+                    <a href="#sendMessageFormModal" data-toggle="modal" class="btn btn-large btn-danger pull-right">Задать вопрос?</a>
+                </div-->
+            </div>
+        </div>
+    </section>
+
+        
+                    <br/>
+
+    <section class="news_slider">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span9 slider">
+                        <div class="carousel slide" data-ride="carousel" data-show-indicators="true" data-show-controls="true" data-wrap="false" data-interval="5000" data-pause="false">
+		<div class="carousel-inner">
+            			<div class="item">
+				 <a href="/page/350a9f77-c7f0-4073-9d46-2ddd030f922c" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/IMAGES/350a9f77-c7f0-4073-9d46-2ddd030f922c/DADDA0298807F996AD08605BAEBBD0C8" alt="Научный полк ПсковГУ"></a>
+	             <div class="carousel-caption">
+					<h4>Научный полк ПсковГУ</h4>
+	             </div>
+			</div>
+            			<div class="item">
+				 <a href="/page/56d4d459-364e-4228-9495-031a797cd211" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/IMAGES/56d4d459-364e-4228-9495-031a797cd211/6FEB4E5356921FA1406035B205F55AE1" alt="ПсковГУ объявляет набор на бесплатное обучение, переподготовку и повышение квалификации  по ряду программ"></a>
+	             <div class="carousel-caption">
+					<h4>ПсковГУ объявляет набор на бесплатное обучение, переподготовку и повышение квалификации  по ряду программ</h4>
+	             </div>
+			</div>
+            			<div class="item">
+				 <a href="/page/a55cc327-e5c1-4782-8f91-d4cce275b6de" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/IMAGES/a55cc327-e5c1-4782-8f91-d4cce275b6de/F32F3BFF0D6E33FE637047988488E703" alt="Приоритет 2030"></a>
+	             <div class="carousel-caption">
+					<h4>Приоритет 2030</h4>
+	             </div>
+			</div>
+            			<div class="item">
+				 <a href="/page/74dac15e-5311-43a6-a5ed-c2c419693c8b" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/IMAGES/74dac15e-5311-43a6-a5ed-c2c419693c8b/F9245AFDAC478CA862B8D93229BB2A97" alt="Создавая будущее: все об Институтах и Колледже ПсковГУ"></a>
+	             <div class="carousel-caption">
+					<h4>Создавая будущее: все об Институтах и Колледже ПсковГУ</h4>
+	             </div>
+			</div>
+            			<div class="item">
+				 <a href="/page/1093b00c-4417-4521-a61a-fd34ebc961ee" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/IMAGES/1093b00c-4417-4521-a61a-fd34ebc961ee/1DD153241456C0ECB3A5919B07DD7273" alt="Ученый, успешный, наш: 10 нескучных фактов об истории ПсковГУ"></a>
+	             <div class="carousel-caption">
+					<h4>Ученый, успешный, наш: 10 нескучных фактов об истории ПсковГУ</h4>
+	             </div>
+			</div>
+            			<div class="item">
+				 <a href="/page/d5716e9a-a88a-4ec0-a583-6941f12ba5bd" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/IMAGES/d5716e9a-a88a-4ec0-a583-6941f12ba5bd/22E376525C79EF0E9151B592C8FBA359" alt="Как найти свое расписание? Памятка для студентов ПсковГУ"></a>
+	             <div class="carousel-caption">
+					<h4>Как найти свое расписание? Памятка для студентов ПсковГУ</h4>
+	             </div>
+			</div>
+            			<div class="item">
+				 <a href="/page/04c80352-00c9-4aba-8e13-e00e4d937da1" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/IMAGES/04c80352-00c9-4aba-8e13-e00e4d937da1/052ECBC712B32F1E85721AA75C170B55" alt="ПсковГУ поддерживает развитие региона и даёт повышенные стипендии абитуриентам"></a>
+	             <div class="carousel-caption">
+					<h4>ПсковГУ поддерживает развитие региона и даёт повышенные стипендии абитуриентам</h4>
+	             </div>
+			</div>
+            		</div>
+	</div>
+
+
+
+
+                </div>
+
+
+                <div class="span3 abiturient_line">
+
+                    <!--p>Высшее образование</p-->
+                    <br/>
+                    <ul class="unstyled menu">
+                        <li>
+                            <div class="icon-type"><i class="icon icon-circle-arrow-right"></i> <a
+                                        href="https://abit.pskgu.ru">АБИТУРИЕНТУ</a></div>
+                        </li>
+                        <li>
+                            <div class="icon-type"><i class="icon icon-circle-arrow-right"></i> <a
+                                        href="https://pskgu.ru/page/d84698b6-1c6e-4d30-a7f6-d09ed7591df5">СТУДЕНТУ</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-type"><i class="icon icon-circle-arrow-right"></i> <a
+                                        href="https://pskgu.ru/page/de17a884-d0c3-4c66-ad7a-2f5868745ae0">ИНОСТРАННОМУ
+                                    СТУДЕНТУ</a></div>
+                        </li>
+                        <li>
+                            <div class="icon-type"><i class="icon icon-circle-arrow-right"></i> <a
+                                        href="https://pskgu.ru/page/73ae1658-a944-45e2-ad37-e3cb824a9406">РАБОТНИКУ</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-type"><i class="icon icon-circle-arrow-right"></i> <a
+                                        href="https://pskgu.ru/page/cf8d3d3f-5753-4e3d-9647-eb68a699b705">АСПИРАНТУ</a>
+                            </div>
+                        </li>
+                                                                                                                                                                    </ul>
+
+                    <!--p><a href="http://abit.pskgu.ru/project/64D64630C77CF33D29CE1ECE8348F4BE">Среднее профессиональное образование</a></p-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#news" data-toggle="tab">Новости</a></li>
+                                                <li><a href="#calendar_tab" data-toggle="tab">Календарь событий</a></li>
+                    </ul>
+                    <div class="tab-content faq">
+                        <div class="tab-pane active well" id="news">
+                            <p class="more pull-right"><i class="icon-copy"></i> <a
+                                        href="http://pskgu.ru/page/03d067ef-0f1c-4795-aa02-12b2944007d3">Все
+                                    новости</a></p>
+                            <ul class="news_ unstyled">
+                                                                                                        
+    <li class="media">
+        <a href="#" class="_thumbnail noborder pull-left"><img src="/download.php/pskgu/files/PAGES/IMAGES/2f97aca8-98f1-43e6-a151-9b26e0c5369a/A824BC333C3FC302557E26F94C7CC485?size=240&thumb=1/w=100&t=0" width="100" class="media-object"></a>
+        <div class="media-body">
+            <p><a href="/page/2f97aca8-98f1-43e6-a151-9b26e0c5369a">Студентов вуза приглашают к участию в соревнованиях по плаванию «Летнее открытое первенство ПсковГУ»</a></p>
+            В бассейне «Универсант» пройдут ежегодные спортивные соревнования по плаванию «Летнее открытое первенство ПсковГУ». Пройдет мероприятие 20-21 мая, открытие начнется в 10:00. <br /><br />
+            <!--p><small><i class="icon-calendar"></i> 13.05.2015, 15:20</small></p-->
+        </div>
+    </li>
+                                        
+    <li class="media">
+        <a href="#" class="_thumbnail noborder pull-left"><img src="/download.php/pskgu/files/PAGES/IMAGES/7c928160-4cca-46a2-b386-41f68d1bad1c/B871C28A1F60D471F5D927839B80ED3B?size=240&thumb=1/w=100&t=0" width="100" class="media-object"></a>
+        <div class="media-body">
+            <p><a href="/page/7c928160-4cca-46a2-b386-41f68d1bad1c">СМИ о нас: В ПсковГУ пройдёт конференция в честь 625-летия Псковской судной грамоты </a></p>
+            С 22 по 24 сентября в Пскове будет проходить международная конференция в честь Псковской судной грамоты. Об этом сообщила директор Института гуманитарных наук и языковых коммуникаций ПсковГУ Людмила Алиева во время пресс-конференции в медиацентре ПАИ 27 апреля. <br /><br />
+            <!--p><small><i class="icon-calendar"></i> 13.05.2015, 15:20</small></p-->
+        </div>
+    </li>
+                                        
+    <li class="media">
+        <a href="#" class="_thumbnail noborder pull-left"><img src="/download.php/pskgu/files/PAGES/IMAGES/b5b9b5e4-870f-411d-b499-df7098945b2e/A7A4D453DC2959ECC3EB3F29CD9D5338?size=240&thumb=1/w=100&t=0" width="100" class="media-object"></a>
+        <div class="media-body">
+            <p><a href="/page/b5b9b5e4-870f-411d-b499-df7098945b2e">Победителей Псковского регионального фестиваля «Российская студенческая весна» наградили в ПсковГУ. ФОТО</a></p>
+            В Псковском государственном университете состоялось награждение победителей XXX Псковского регионального фестиваля «Российская студенческая весна». В конкурсе приняли участие студенты образовательных организаций высшего образования и профессиональных образовательных организаций области. <br /><br />
+            <!--p><small><i class="icon-calendar"></i> 13.05.2015, 15:20</small></p-->
+        </div>
+    </li>
+                                        
+    <li class="media">
+        <a href="#" class="_thumbnail noborder pull-left"><img src="/download.php/pskgu/files/PAGES/IMAGES/35651392-8412-47a2-a584-dce720b00412/4289CAD2E298AD39A3624C019CD7B71A?size=240&thumb=1/w=100&t=0" width="100" class="media-object"></a>
+        <div class="media-body">
+            <p><a href="/page/35651392-8412-47a2-a584-dce720b00412">Студенты ПсковГУ могут посетить лекцию искусствоведа Элины Адриановой по Пушкинской карте</a></p>
+            В ближайшую субботу, 30 апреля, в Креативном пространстве «Лофт» (ул. Спортивная, д. 1Б) состоится лекция искусствоведа Элины Адриановой. Темой выступления станет «Краткая история русской музыки: от Глинки до Скрябина». Начало в 14:00. <br /><br />
+            <!--p><small><i class="icon-calendar"></i> 13.05.2015, 15:20</small></p-->
+        </div>
+    </li>
+                                        
+    <li class="media">
+        <a href="#" class="_thumbnail noborder pull-left"><img src="/download.php/pskgu/files/PAGES/IMAGES/1aa99b66-6133-49f3-88e9-1b6eb2d3e679/74119AA0E9937691E27E1069EFA3EC45?size=240&thumb=1/w=100&t=0" width="100" class="media-object"></a>
+        <div class="media-body">
+            <p><a href="/page/1aa99b66-6133-49f3-88e9-1b6eb2d3e679">Брейн-ринг и педагогическая гостиная: Институт образования и социальных наук приглашает на День открытых дверей</a></p>
+            День открытых дверей пройдет в Институте образования и социальных наук ПсковГУ 30 апреля в 12:00 по адресу: Крестовское шоссе, 2а. <br /><br />
+            <!--p><small><i class="icon-calendar"></i> 13.05.2015, 15:20</small></p-->
+        </div>
+    </li>
+
+                            </ul>
+                        </div>
+
+                                                                                                                                                
+                        <div class="tab-pane well" id="calendar_tab">
+                            <div class="row-fluid">
+                                <div class="span5">
+                                    <div id="calendar" data-date=""></div>
+                                    <p class="well small"><i class="icon-info icon-large"></i> Выберите интересующую вас
+                                        дату на календаре и справа отобразатся новости, соответствующие выбранной дате.
+                                    </p>
+                                </div>
+                                <div class="span7" id="pages_list">
+                                    <ul class="unstyled" id="pages_list_tmp">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="span3">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#news" data-toggle="tab">Объявления</a></li>
+                    </ul>
+                    <div class="tab-content faq">
+                        <div class="tab-pane active well" id="announcements">
+
+                            <ul class="unstyled">
+                                <p class="more pull-right"><i class="icon-copy"></i> <a
+                                            href="http://pskgu.ru/page/1fd7e932-7a63-4937-ba1a-d2eb660e0297">Все
+                                        объявления</a></p>
+                                    <li>
+        <p><a href="/page/a60270d3-4596-4d82-921f-cd2702b9586c">Вьетнам приглашает российских студентов на обучение и языковые стажировки</a></p>
+                <p class="small">В соответствии с Соглашением между Минобрнауки РФ и Министерством образования и подготовки кадров Социалистической Республики Вьетнам в области образования от 24 июня 2005 года вьетнамская сторона предоставляет стипендии российским кандидатам на обучение и языковые стажировки по вьетнамскому языку в университетах Социалистической Республики Вьетнам.
+
+</p>
+            </li>
+    <li>
+        <p><a href="/page/a101c915-af50-4380-ac05-1fdb34022297">В ПсковГУ объявлен конкурс по переводу студентов-платников на бюджетные места</a></p>
+                <p class="small">В Псковском государственном университете объявлен конкурс по переводу обучающихся, осваивающих образовательные программы высшего образования, с платного обучения на бесплатное. Срок подачи обучающимися заявлений на перевод – до 19 февраля 2022 года.</p>
+            </li>
+    <li>
+        <p><a href="/page/a3183442-ce81-46ea-bb07-c01e42419cd3">Идёт приём заявок на участие в программе академической мобильности в вузах Словакии в 2022/2023 учебном году</a></p>
+                <p class="small">Основная и дополнительная информация по программе представлена на сайте Департамента международного сотрудничества Министерства науки и высшего образования РФ и странице Министерства образования, науки, исследований и спорта Словацкой республики.
+
+</p>
+            </li>
+    <li>
+        <p><a href="/page/701db81f-66ee-4c7b-842d-c2f5bd308462">В ПсковГУ объявлен конкурс по переводу обучающихся с платного обучения на бесплатное по программам среднего профессионального образования</a></p>
+                <p class="small">В Псковском государственном университете объявлен конкурс по переводу обучающихся, осваивающих образовательные программы среднего профессионального образования, с платного обучения на бесплатное. 
+
+Срок подачи заявлений на перевод – до 21 января 2022 года.</p>
+            </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-pane well" id="video">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="span3">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#info" data-toggle="tab" class="btn active">Информация</a></li>
+                        <li><a href="#projects" data-toggle="tab">Проекты</a></li>
+                    </ul>
+                    <div class="tab-content faq">
+                        <div class="tab-pane active well" id="info">
+                            <ul class="unstyled">
+                                                                                                                                <li><a href="https://pskgu.ru/page/4f4e0c5f-8c2d-4834-ac9c-64ed80ed5542">Сведения
+                                        об организации</a></li>
+                                <li><a href="https://pskgu.ru/page/5947dde4-fce0-4c94-9f96-0a2f70faf1b1">Противодействие
+                                        коррупции</a></li>
+                                <li><a href="https://pskgu.ru/page/57346986-9370-4ce8-8018-08fdf1b612ed">Сведения
+                                        о доходах</a></li>
+                                <li><a href="https://pskgu.ru/page/b4b9f60e-8856-4f5c-b082-783fa50b1b26">Антитеррор</a>
+                                </li>
+                                <!--li><a href="/page/4f4e0c5f-8c2d-4834-ac9c-64ed80ed5542">Сведения об организации</a></li-->
+                                                                                                <li><a href="https://pskgu.ru/page/cbd55d8a-835f-44d6-81ec-7e9e70106819">Русский язык для иностранцев</a></li>
+
+                                                                                                                                <li><a href="https://pskgu.ru/feedback" title="Написать обращение">Обращения
+                                        граждан</a></li>
+                                <li><a href="https://pskgu.ru/page/3ba5df1f-be12-49a2-8db8-30df84f27598">Обучение
+                                        лиц предпенсионного возраста</a></li>
+                                <li><a href="https://pskgu.ru/page/1e9239ea-0605-4ef0-8f6a-d82833c684d3">Первичная
+                                        профессиональная аккредитация специалистов здравоохранения</a></li>
+                                <li><a href="https://pskgu.ru/page/a6b9c3c5-69b4-4090-a04b-08914cb8ae82">Порядок предоставления архивных справок и документов из личных дел</a></li>
+                                                                
+                            </ul>
+                        </div>
+                        <div class="tab-pane well" id="projects">
+                            <ul class="unstyled">
+                                
+    <li><a href="/page/0f89573e-da89-4387-98db-7c0fecfbdadc">Музей Победы ПсковГУ</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#info" data-toggle="tab" class="btn_">Видео</a></li>
+                    </ul>
+                    <div class="tab-content faq">
+                        <div class="tab-pane active well">
+                            <p class="more pull-right"><i class="icon-copy"></i> <a
+                                        href="https://pskgu.ru/page/72a6325b-8ecc-4665-b27d-d6308b120c4a">Все
+                                    видео</a></p>
+                                    <a href="/page/f623c827-4e4b-42a0-bebc-83c1667eb491" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/IMAGES/f623c827-4e4b-42a0-bebc-83c1667eb491/5B8C2B19C666735D388F35D3F52C0630?size=240&thumb=1" class="_thumbnail"></a>
+        <p><a href="/page/f623c827-4e4b-42a0-bebc-83c1667eb491">Преподаватель ПсковГУ Валентин Мельник о цифровом модуле, узких специалистах и спорах между «физиками» и «лириками»</a></p>
+        В новом учебном году на всех направлениях обучения ПсковГУ стартует реализация «цифрового модуля»: у всех бакалавров и специалистов начнутся занятия на стыке математики, информатики и статистики, исходя из целей и задач реализации программы «Приоритет 2030».<br><br>
+        <p><small><i class="icon-calendar"></i> 31.03.2022, 08:35</small></p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function getPages(dat) {
+            var date = getDate(dat);
+            $.ajax({
+                url: "/page/get_by_tags/",
+                type: "POST",
+                data: {
+                    dates: date,
+                    parent: ["03d067ef-0f1c-4795-aa02-12b2944007d3", "1fd7e932-7a63-4937-ba1a-d2eb660e0297"],
+                    submit: 1,
+                    limit: 6,
+                    format: "json",
+                    rt: "ajax"
+                },
+                success: function (data, status) {
+                    var d = data;
+                    removePages();
+                    if (d.success) {
+                        addPages(d);
+                    } else {
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+
+                }
+            });
+            return false;
+        }
+
+        function removePages() {
+            var form = document.getElementById("pages_list_tmp");
+            if (form)
+                form.parentNode.removeChild(form);
+        }
+
+        function getDate(dat) {
+            if (dat) {
+                var dat1 = formatDate1(new Date(dat / 1));
+                var dat2 = formatDate1(new Date((dat + 86400000) / 1));
+                return {
+                    from: dat1,
+                    to: dat2
+                };
+            }
+            return null;
+
+        }
+
+        function addPages(d) {
+            var pages_list = document.createElement("ul");
+            pages_list.setAttribute("class", "unstyled");
+            pages_list.setAttribute("id", "pages_list_tmp");
+            if (d.data && d.data.length > 0) {
+                for (var i = 0; i < d.data.length; i++) {
+                    var li1 = document.createElement("li");
+                    var p1 = document.createElement("p");
+                    var a1 = document.createElement("a");
+                    a1.setAttribute("href", "/page/" + d.data[i].SYS_GUID);
+                    var txt1 = document.createTextNode(d.data[i].NAME);
+                    a1.appendChild(txt1);
+                    p1.appendChild(a1);
+                    li1.appendChild(p1);
+                    var p2 = document.createElement("p");
+                    p2.setAttribute("class", "small");
+                    p2.innerHTML = d.data[i].DESCRIPTION;
+                    li1.appendChild(p2);
+                    pages_list.appendChild(li1);
+                }
+            } else {
+                var li = document.createElement("li");
+                li.setAttribute("class", "row-fluid");
+                var p = document.createElement("p");
+                p.setAttribute("class", "small");
+                p.innerHTML = "Публикаций с задаными праметрами не найдено!";
+                li.appendChild(p);
+                pages_list.appendChild(li);
+            }
+            document.getElementById("pages_list").appendChild(pages_list);
+        }
+
+        function ParseData(date1) {
+            var d = new Date(date1 * 1000);
+            return formatDate(d);
+        }
+
+        function formatDate(date) {
+            var dd = date.getDate();
+            if (dd < 10) dd = '0' + dd;
+
+            var mm = date.getMonth() + 1;
+            if (mm < 10) mm = '0' + mm;
+
+            var yy = date.getFullYear();
+
+            return dd + '.' + mm + '.' + yy;
+        }
+
+        function formatDate1(date) {
+            var dd = date.getDate();
+            if (dd < 10) dd = '0' + dd;
+
+            var mm = date.getMonth() + 1;
+            if (mm < 10) mm = '0' + mm;
+
+            var yy = date.getFullYear();
+
+            return dd + '-' + mm + '-' + yy;
+        }
+
+        $(function () {
+            window.prettyPrint && prettyPrint();
+            var checkin = $("#calendar").datepicker().on("changeDate", function (ev) {
+                getPages(ev.date.valueOf());
+            }).data("datepicker");
+        });
+
+        window.onload = function () {
+            getPages();
+        };
+    </script>
+
+                                <br/>
+    <section class="banners_slider">
+        <div class="container">
+            <div class="row-fluid">
+                <hr class="_shadow"/>
+                    <style>
+    .carousel.multi-item .carousel-inner [class*="span"] {
+        margin: 0 1.8em auto 0;
+    }
+    .carousel.multi-item .item [class*="span"]:last-child { margin-right: 0; }
+    .carousel.multi-item .carousel-indicators { display: none; }
+    .carousel.multi-item .carousel-control { margin-top: -.6em; opacity: .7;}
+    .carousel.multi-item .carousel-control:hover { opacity: 1;}
+
+</style>
+
+<div class="carousel multi-item slide" data-show-indicators="false" data-show-controls="true" data-wrap="false" data-interval="5000" data-pause="true">
+    <div class="carousel-inner bottom">
+                                    <div class="item">
+                        
+            <div class="span3">
+                <a href="https://priority2030.ru/" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/FILE/8b4bd8db-1e21-4dc3-8ba6-77181a54c3da/5F5407D8F07B820C3006FB01DEB95019?title=Приоритет-2030.jpg" alt=""></a>
+            </div>
+                                                        
+            <div class="span3">
+                <a href="http://www.minobrnauki.gov.ru/" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/FILE/8b4bd8db-1e21-4dc3-8ba6-77181a54c3da/8AE46DCE8675B31B897E7FA2B7474F46?title=Министерство.jpg" alt=""></a>
+            </div>
+                                                        
+            <div class="span3">
+                <a href="https://xn--80aahfebmi6bfqjd0ai9k.xn--p1ai/ " class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/FILE/8b4bd8db-1e21-4dc3-8ba6-77181a54c3da/4D28385FA4E20A294E4790C090252A7A?title=Гранты президента.jpg" alt=""></a>
+            </div>
+                                                        
+            <div class="span3">
+                <a href="https://bus.gov.ru/pub/home" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/FILE/8b4bd8db-1e21-4dc3-8ba6-77181a54c3da/5FF059FFA52C2E7B1F925C6DCEB71305?title=Информация о госучреждениях.jpg" alt=""></a>
+            </div>
+                            </div>
+                <div class="item">
+                                                        
+            <div class="span3">
+                <a href="" class="thumbnail noborder"><img src="/download.php/pskgu/files/PAGES/FILE/8b4bd8db-1e21-4dc3-8ba6-77181a54c3da/4013B9D84F0D41022018D5AE6BEA4E90?title=Уполномоченный по правам студентов.jpg" alt=""></a>
+            </div>
+                                        </div>
+                
+                        </div>
+</div>
+<br />
+
+                                                            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <hr class="_shadow"/>
+            <!--a id="top" href="#" class="label pull-right"><i class="icon icon-chevron-up"></i></a-->
+            <div class="row-fluid">
+                <div class="span6">
+                    <p>
+                        <b>Псковский государственный университет:</b><br/><br/>
+                        <i class="icon icon-globe"></i> 180000, Псков, площадь Ленина, дом 2. <br/>
+                        <i class="icon icon-phone"></i> Телефон: +7(8112) 201-699.<br/>
+                        <i class="icon icon-envelope"></i> Электронная почта: <a href="mailto:rector@pskgu.ru">rector@pskgu.ru</a><br/>
+                    </p>
+                </div>
+                <div class="span6">
+                    <p>
+                        <b>Приемная комиссия:</b><br/><br/>
+                        <i class="icon icon-globe"></i> 180000, Псков, площадь Ленина, дом 2, каб. 1, <br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;вход со стороны университетского сквера <br/>
+                        <i class="icon icon-phone"></i> Телефон +7(8112) 201-695.<br/>
+                        <i class="icon icon-envelope"></i> Электронная почта: <a href="mailto:priem@pskgu.ru">priem@pskgu.ru</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer addresses">
+        <div class="container">
+            <hr class="_shadow"/>
+            <div class="row-fluid">
+                <div class="span4">
+                    <p>
+                        &copy; 2011&ndash;2022, <a href="http://pskgu.ru">Псковский
+                            Государственный Университет</a>
+                    </p>
+                </div>
+                <div class="span5">
+                    <ul class="nav nav-pills">
+                        <li><a href="http://pskgu.ru/page/8a85698f-6399-4f18-a5e6-21af59972053">Карта сайта</a>
+                        </li>
+                        <li><a href="http://pskgu.ru/page/4a874018-9a04-4784-84aa-f6109b88e6f2">Обратная
+                                связь</a></li>
+                        <li><a href="http://pskgu.ru/page/fd58153d-a494-4656-8f1d-0953b4ab3185">Схема проезда</a>
+                        </li>
+                        <li><a href="http://pskgu.ru/page/ff36930a-ae5b-4568-9879-9e75345e72e6">Контакты</a></li>
+                        <li><a href="http://pskgu.ru/personaldata">О персональных данных</a></li>
+                        <li class="normal_css hidden"><span itemprop="copy"><a
+                                        href="http://pskgu.ru/?special_style"
+                                        title="Версия официального сайта ПсковГУ для слабовидящих"><i
+                                            class="icon icon-eye-open"></i>Версия официального сайта ПсковГУ для слабовидящих</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span3">
+                    <p class="pull-right">Разработка сайта — «ПсковГУ»</p>
+                    <!-- liveinternet -->
+<a href="//www.liveinternet.ru/click" target="_blank">
+    <img id="licnt881B" width="88" height="31" style="border:0" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""/>
+</a>
+<script>
+    (function (d, s) {
+        d.getElementById("licnt881B").src =
+            "//counter.yadro.ru/hit?t11.1;r" + escape(d.referrer) +
+            ((typeof (s) == "undefined") ? "" : ";s" + s.width + "*" + s.height + "*" +
+                (s.colorDepth ? s.colorDepth : s.pixelDepth)) + ";u" + escape(d.URL) +
+            ";h" + escape(d.title.substring(0, 150)) + ";" + Math.random()
+    }) (document, screen)
+</script>
+<!-- liveinternet -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(87548857, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/87548857" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->                </div>
+            </div>
+        </div>
+    </footer>
+
+            <!-- Button to trigger modal -->
+<a href="#abiturientModal" role="button" class="btn btn-primary btn-large abiturientModalBtn" data-toggle="modal">Хочу поступить!</a>
+
+<!-- Modal -->
+<div id="abiturientModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="abiturientModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="abiturientModalLabel">Абитуриенту</h3>
+    </div>
+    <div class="modal-body">
+        <ol class="abiturientList">
+            <li>
+                Выбрать направление подготовки
+                <ul>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/15c16e5a-db87-412d-974e-3e84062188d9" target="_blank">Бакалавриат/специалитет</a>
+                    </li>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/2a1bdb1c-a993-45db-a74a-ee474a6f4b8b" target="_blank">Магистратура</a>
+                    </li>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/f36d4e0c-a9e9-4885-9193-3236c71b75b9" target="_blank">Среднее профессиональное образование</a>
+                    </li>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/25605939-f8c5-4a66-9f64-a894110f39c9" target="_blank">Аспирантура</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Подать документы
+                <ul>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/03f494eb-5b73-429a-8619-39b36539e89f" target="_blank">Необходимые документы</a>
+                    </li>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/33af0602-f485-4535-815e-4db87f10160a" target="_blank">Сроки приема</a>
+                    </li>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/33af0602-f485-4535-815e-4db87f10160a" target="_blank">Способы подачи документов</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Подать документы
+                <ul>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/72f02170-c66c-4094-b2d2-18f1d2628958" target="_blank">Перечень вступительных испытаний</a>
+                    </li>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/4dba146e-b800-42dd-a08c-61b81b707720" target="_blank">Программы вступительных испытаний</a>
+                    </li>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/813e056d-7db9-45f4-ace2-11d326195770" target="_blank">Сроки проведения вступительных испытаний</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Убедиться в поступлении
+                <ul>
+                    <li>
+                        <a href="https://abit.pskgu.ru/page/1480d220-0a90-4a1b-8451-362032be80b8" target="_blank">Списки поступающих</a>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="modal-footer">
+        <a href="https://abit.pskgu.ru/" class="btn btn-primary" target="_blank">Перейти в раздел "Абитуриенту"</a>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+    </div>
+</div>    
+    <!--script src="style/bootstrap/js/bootstrap-slider.js"></script-->
+    <script src="/app/pskgu/layouts/style/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="/app/pskgu/layouts/style/bootstrap-tabcollapse.js"></script>
+    <script src="/app/pskgu/layouts/style/bootstrap-tabcollapse.init.js"></script>
+
+    <script src="/app/pskgu/layouts/style/functions.js"></script>
+    <script src="/app/pskgu/layouts/style/mny.js"></script>
+        <link rel="stylesheet" type="text/css" href="/app/pskgu/layouts/style/mny.css"/>
+
+    <script src="/app/pskgu/layouts/style/carousel.cor.js"></script>
+    <script src="/app/pskgu/layouts/style/menu.cor.js"></script>
+
+
+            </div>
+</div>
+</body>
+
+</html>
